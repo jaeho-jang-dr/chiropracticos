@@ -4,8 +4,8 @@
 // 이 값은 사용자가 Supabase 콘솔에서 받아온 후 교체합니다.
 // Project Settings → API → URL · anon public key
 
-window.SUPABASE_URL      = "REPLACE_ME_PROJECT_URL";
-window.SUPABASE_ANON_KEY = "REPLACE_ME_ANON_KEY";
+window.SUPABASE_URL      = "https://nfnjjroaohalrtduzvfm.supabase.co";
+window.SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5mbmpqcm9hb2hhbHJ0ZHV6dmZtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyMjE1ODMsImV4cCI6MjA5Mjc5NzU4M30.OMUCUv48zJWhvDXDRSTmMdUZFxSWOzHBlX9n3jGEtIE";
 
 // 공개(로그인 불필요) 페이지 — 정확한 파일명 매칭
 window.PUBLIC_PAGES = new Set([
