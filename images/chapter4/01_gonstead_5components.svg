@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">Gonstead 5요소 분석 (Five Components)</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">진단의 정확성을 5각형 검증으로 — 1923 Clarence Gonstead 정립</text>
+
+  <!-- Pentagon center -->
+  <circle cx="480" cy="320" r="80" fill="#fff7e0" stroke="#d4a017" stroke-width="2.5"/>
+  <text x="480" y="316" class="label title" text-anchor="middle" font-size="18" fill="#8a5a00">중심:</text>
+  <text x="480" y="340" class="label title" text-anchor="middle" font-size="18" fill="#8a5a00">병변 분절</text>
+
+  <!-- Component 1: History -->
+  <rect x="60" y="130" width="200" height="80" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="160" y="160" class="label title" text-anchor="middle" font-size="17">① 병력 (History)</text>
+  <text x="160" y="184" class="label sub" text-anchor="middle" font-size="12">발병·악화·완화·red flag</text>
+
+  <!-- Component 2: Posture -->
+  <rect x="350" y="100" width="260" height="80" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="480" y="130" class="label title" text-anchor="middle" font-size="17">② 자세 분석 (Posture)</text>
+  <text x="480" y="154" class="label sub" text-anchor="middle" font-size="12">정면·측면 비대칭 · pelvic tilt · head carriage</text>
+
+  <!-- Component 3: Instrumentation (Nervoscope) -->
+  <rect x="700" y="130" width="200" height="80" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="800" y="160" class="label title" text-anchor="middle" font-size="17">③ 기구 (Nervoscope)</text>
+  <text x="800" y="184" class="label sub" text-anchor="middle" font-size="12">분절별 피부 온도 비대칭</text>
+
+  <!-- Component 4: Static & Motion Palpation -->
+  <rect x="60" y="430" width="240" height="80" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="180" y="460" class="label title" text-anchor="middle" font-size="17">④ 촉진 (Palpation)</text>
+  <text x="180" y="484" class="label sub" text-anchor="middle" font-size="12">정적 + 운동 (motion palpation)</text>
+
+  <!-- Component 5: X-ray -->
+  <rect x="660" y="430" width="240" height="80" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="780" y="460" class="label title" text-anchor="middle" font-size="17">⑤ 영상 (X-ray)</text>
+  <text x="780" y="484" class="label sub" text-anchor="middle" font-size="12">listing · level disc · wedging</text>
+
+  <!-- Lines from each component to center -->
+  <line x1="245" y1="180" x2="410" y2="290" stroke="#3182ce" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 3"/>
+  <line x1="480" y1="180" x2="480" y2="240" stroke="#3182ce" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 3"/>
+  <line x1="715" y1="180" x2="550" y2="290" stroke="#3182ce" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 3"/>
+  <line x1="295" y1="450" x2="420" y2="370" stroke="#3182ce" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 3"/>
+  <line x1="660" y1="450" x2="540" y2="370" stroke="#3182ce" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 3"/>
+
+  <!-- Footer note -->
+  <text x="480" y="540" class="label sub" text-anchor="middle" font-size="11">5요소가 모두 같은 분절을 가리킬 때 비로소 specific adjustment 결정</text>
+</svg>

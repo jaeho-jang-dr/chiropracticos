@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">Cox 3 Protocols — 단계별 치료 계획</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">급성 → 아급성 → 유지 단계의 force·protocol 조정</text>
+
+  <!-- Protocol I -->
+  <rect x="40" y="120" width="290" height="380" rx="14" fill="#fee2e2" stroke="#c0392b" stroke-width="2"/>
+  <text x="185" y="150" class="label title" text-anchor="middle" font-size="18" fill="#8a1c12">Protocol I — 급성</text>
+  <text x="185" y="172" class="label sub" text-anchor="middle" font-size="12">acute · radiculopathy</text>
+
+  <text x="60" y="210" class="label title" font-size="13">적응증</text>
+  <text x="60" y="232" class="label" font-size="12">• 급성 요추 디스크 탈출</text>
+  <text x="60" y="252" class="label" font-size="12">• 급성 신경근증 (radiculopathy)</text>
+  <text x="60" y="272" class="label" font-size="12">• SLR 양성, 방사통</text>
+
+  <text x="60" y="305" class="label title" font-size="13">기법</text>
+  <text x="60" y="327" class="label" font-size="12">• Long y-axis distraction만</text>
+  <text x="60" y="347" class="label" font-size="12">• HVLA thrust 절대 금지</text>
+  <text x="60" y="367" class="label" font-size="12">• Force: 가벼운 ~ 중간 (25-30 lbs)</text>
+  <text x="60" y="387" class="label" font-size="12">• Cycle: 7-25-7 sec, 4-5회</text>
+
+  <text x="60" y="420" class="label title" font-size="13">빈도</text>
+  <text x="60" y="442" class="label" font-size="12">주 3회 × 2-3주</text>
+
+  <text x="185" y="478" class="label sub" text-anchor="middle" font-size="11">→ 통증 50% 감소까지</text>
+
+  <!-- Protocol II -->
+  <rect x="345" y="120" width="290" height="380" rx="14" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="490" y="150" class="label title" text-anchor="middle" font-size="18" fill="#8a5a00">Protocol II — 아급성</text>
+  <text x="490" y="172" class="label sub" text-anchor="middle" font-size="12">subacute · gentle HVLA 추가</text>
+
+  <text x="365" y="210" class="label title" font-size="13">적응증</text>
+  <text x="365" y="232" class="label" font-size="12">• 통증 일부 호전된 환자</text>
+  <text x="365" y="252" class="label" font-size="12">• 신경근증 호전 단계</text>
+  <text x="365" y="272" class="label" font-size="12">• 기능 회복 시작</text>
+
+  <text x="365" y="305" class="label title" font-size="13">기법</text>
+  <text x="365" y="327" class="label" font-size="12">• Distraction (Protocol I 유지)</text>
+  <text x="365" y="347" class="label" font-size="12">• <tspan font-weight="700">+ Gentle HVLA</tspan> (low force)</text>
+  <text x="365" y="367" class="label" font-size="12">• Force: 중간 (35-40 lbs)</text>
+  <text x="365" y="387" class="label" font-size="12">• Lateral flexion 추가 가능</text>
+
+  <text x="365" y="420" class="label title" font-size="13">빈도</text>
+  <text x="365" y="442" class="label" font-size="12">주 2-3회 × 4주</text>
+
+  <text x="490" y="478" class="label sub" text-anchor="middle" font-size="11">→ 일상 기능 80% 회복</text>
+
+  <!-- Protocol III -->
+  <rect x="650" y="120" width="270" height="380" rx="14" fill="#e8f5e9" stroke="#2d7a3a" stroke-width="2"/>
+  <text x="785" y="150" class="label title" text-anchor="middle" font-size="18" fill="#1d5a2a">Protocol III — 유지</text>
+  <text x="785" y="172" class="label sub" text-anchor="middle" font-size="12">maintenance · 재활</text>
+
+  <text x="670" y="210" class="label title" font-size="13">적응증</text>
+  <text x="670" y="232" class="label" font-size="12">• 통증 거의 소실</text>
+  <text x="670" y="252" class="label" font-size="12">• 만성 LBP 유지 단계</text>
+  <text x="670" y="272" class="label" font-size="12">• 재발 예방</text>
+
+  <text x="670" y="305" class="label title" font-size="13">기법</text>
+  <text x="670" y="327" class="label" font-size="12">• 짧은 distraction (체크용)</text>
+  <text x="670" y="347" class="label" font-size="12">• 운동 처방 위주</text>
+  <text x="670" y="367" class="label" font-size="12">• Core stability · McKenzie</text>
+  <text x="670" y="387" class="label" font-size="12">• Force: 가벼움 (20-25 lbs)</text>
+
+  <text x="670" y="420" class="label title" font-size="13">빈도</text>
+  <text x="670" y="442" class="label" font-size="12">주 1회 또는 PRN</text>
+
+  <text x="785" y="478" class="label sub" text-anchor="middle" font-size="11">→ 자가관리 전환</text>
+
+  <text x="480" y="540" class="label sub" text-anchor="middle" font-size="11">근거: Gudavalli 2016 RCT (Protocol I+II 조합 vs. exercise만 — Cox 군 우위 🟡 Moderate)</text>
+</svg>

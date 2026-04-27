@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">Derifield-Thompson Leg Check</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">상대적 다리 길이 비대칭 → 골반·경추 syndrome 분류</text>
+
+  <!-- Three test positions -->
+
+  <!-- Position 1: Both legs neutral -->
+  <rect x="30" y="120" width="290" height="280" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="175" y="150" class="label title" text-anchor="middle" font-size="16">① 기본 자세 (Neutral)</text>
+  <text x="175" y="170" class="label sub" text-anchor="middle" font-size="12">prone, 발끝 신발 정렬</text>
+
+  <!-- Patient prone -->
+  <ellipse cx="175" cy="240" rx="70" ry="25" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="175" y="247" class="label sub" text-anchor="middle" font-size="10">상체 prone</text>
+
+  <!-- Legs equal -->
+  <line x1="135" y1="270" x2="135" y2="345" stroke="#3182ce" stroke-width="3"/>
+  <line x1="215" y1="270" x2="215" y2="345" stroke="#3182ce" stroke-width="3"/>
+  <line x1="125" y1="345" x2="145" y2="345" stroke="#3182ce" stroke-width="3"/>
+  <line x1="205" y1="345" x2="225" y2="345" stroke="#3182ce" stroke-width="3"/>
+
+  <text x="175" y="380" class="label" text-anchor="middle" font-size="12">양 다리 길이 비교</text>
+
+  <!-- Position 2: Heads turned right -->
+  <rect x="335" y="120" width="290" height="280" rx="14" fill="#e8f5e9" stroke="#2d7a3a" stroke-width="2"/>
+  <text x="480" y="150" class="label title" text-anchor="middle" font-size="16">② 머리 우측 회전</text>
+  <text x="480" y="170" class="label sub" text-anchor="middle" font-size="12">cervical compensation 평가</text>
+
+  <ellipse cx="480" cy="240" rx="70" ry="25" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="480" y="247" class="label sub" text-anchor="middle" font-size="10">머리 → 우측</text>
+
+  <!-- Right leg shortens -->
+  <line x1="440" y1="270" x2="440" y2="345" stroke="#3182ce" stroke-width="3"/>
+  <line x1="520" y1="270" x2="520" y2="335" stroke="#2d7a3a" stroke-width="3"/>
+  <line x1="430" y1="345" x2="450" y2="345" stroke="#3182ce" stroke-width="3"/>
+  <line x1="510" y1="335" x2="530" y2="335" stroke="#2d7a3a" stroke-width="3"/>
+
+  <text x="480" y="380" class="label" text-anchor="middle" font-size="12">우측 다리 짧아지면 → Cervical syndrome</text>
+
+  <!-- Position 3: Heads turned left -->
+  <rect x="640" y="120" width="290" height="280" rx="14" fill="#fee2e2" stroke="#c0392b" stroke-width="2"/>
+  <text x="785" y="150" class="label title" text-anchor="middle" font-size="16" fill="#8a1c12">③ 무변화 (No change)</text>
+  <text x="785" y="170" class="label sub" text-anchor="middle" font-size="12">pelvic syndrome 의심</text>
+
+  <ellipse cx="785" cy="240" rx="70" ry="25" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+
+  <line x1="745" y1="270" x2="745" y2="345" stroke="#3182ce" stroke-width="3"/>
+  <line x1="825" y1="270" x2="825" y2="335" stroke="#c0392b" stroke-width="3"/>
+  <line x1="735" y1="345" x2="755" y2="345" stroke="#3182ce" stroke-width="3"/>
+  <line x1="815" y1="335" x2="835" y2="335" stroke="#c0392b" stroke-width="3"/>
+
+  <text x="785" y="380" class="label" text-anchor="middle" font-size="12">머리 회전에도 비대칭 그대로 → Pelvic</text>
+
+  <!-- Interpretation table -->
+  <rect x="30" y="430" width="900" height="115" rx="14" fill="#fff" stroke="#d2d2d7" stroke-width="1.5"/>
+  <text x="480" y="458" class="label title" text-anchor="middle" font-size="15">분류 (Thompson syndrome)</text>
+
+  <text x="60" y="485" class="label title" font-size="13" fill="#3182ce">Cervical syndrome</text>
+  <text x="60" y="505" class="label" font-size="12">• 머리 회전 시 다리 길이 변화 → 경추 분절 교정</text>
+  <text x="60" y="525" class="label" font-size="12">• 회전된 측 다리가 짧아짐</text>
+
+  <text x="500" y="485" class="label title" font-size="13" fill="#c0392b">Pelvic syndrome</text>
+  <text x="500" y="505" class="label" font-size="12">• 머리 회전에도 비대칭 그대로 → 골반 교정</text>
+  <text x="500" y="525" class="label" font-size="12">• AS·PI ilium 또는 sacrum listing</text>
+
+  <text x="480" y="555" class="label sub" text-anchor="middle" font-size="11">⚠ Leg check 단독 신뢰도는 🟠 Limited (Schneider 2010 SR) — 다른 평가와 결합 권장</text>
+</svg>

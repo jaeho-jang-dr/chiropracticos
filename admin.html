@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>관리자 | Chiropractic</title>
+  <link rel="stylesheet" href="./assets/main.css" />
+  <script src="./assets/config.js"></script>
+  <script type="module" src="./assets/auth-guard.js"></script>
+  <style>
+    .admin-wrap{max-width:1100px;margin:6rem auto;padding:0 2rem}
+    .admin-wrap h1{margin:0 0 .5rem}
+    .admin-wrap .lead{color:#666;margin-bottom:2rem}
+    .filter-bar{display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap}
+    .filter-bar button{padding:.45rem 1rem;border:1px solid #d2d2d7;border-radius:999px;background:#fff;cursor:pointer;font-size:.88em}
+    .filter-bar button.active{background:#0a84ff;color:#fff;border-color:#0a84ff}
+    table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+    th,td{padding:.75rem 1rem;text-align:left;font-size:.88em;border-bottom:1px solid #eef0f2}
+    th{background:#f7f7f9;font-weight:600;color:#444;font-size:.8em;text-transform:uppercase;letter-spacing:.04em}
+    .badge{display:inline-block;padding:.15rem .55rem;border-radius:999px;font-size:.72em;font-weight:600}
+    .badge.pending{background:#fff3d6;color:#876200}
+    .badge.approved{background:#d4edda;color:#155724}
+    .badge.blocked{background:#f8d7da;color:#721c24}
+    .badge.admin{background:#e1d4f7;color:#4a2480}
+    .badge.free{background:#e4e9ee;color:#34495e}
+    .actions button{padding:.3rem .65rem;font-size:.78em;border-radius:6px;border:1px solid #d2d2d7;background:#fff;cursor:pointer;margin-right:.25rem}
+    .actions button.approve{background:#34c759;color:#fff;border-color:#34c759}
+    .actions button.block  {background:#ff3b30;color:#fff;border-color:#ff3b30}
+    .actions button.unblock{background:#0a84ff;color:#fff;border-color:#0a84ff}
+    .meta{color:#888;font-size:.78em}
+    .empty{text-align:center;padding:3rem;color:#999}
+    .stats{display:flex;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap}
+    .stat{flex:1;min-width:140px;background:#fff;padding:1rem 1.25rem;border-radius:12px;border:1px solid #eef0f2}
+    .stat .num{font-size:1.7rem;font-weight:700;color:#0a84ff}
+    .stat .label{font-size:.78em;color:#888}
+  </style>
+</head>
+<body>
+  <nav class="site-nav"><div class="nav-inner">
+    <a class="nav-brand" href="./index.html"><span class="mark"></span><span>Chiropractic</span></a>
+    <div class="nav-actions"></div>
+  </div></nav>
+
+  <div class="admin-wrap">
+    <h1>관리자 패널</h1>
+    <p class="lead">사용자 가입 신청을 검토하고 승인하거나 차단하세요. 모든 변경은 admin_logs 에 기록됩니다.</p>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="filter-bar">
+      <button data-filter="pending_approval" class="active">⏳ 승인 대기</button>
+      <button data-filter="approved">✅ 승인됨</button>
+      <button data-filter="blocked">🚫 차단</button>
+      <button data-filter="all">전체</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>이메일</th><th>이름</th><th>직군</th><th>소속</th><th>면허/학번</th><th>상태</th><th>가입</th><th>작업</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr><td colspan="8" class="empty">로딩 중...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script type="module">
+    import { supabase, getCurrentUser } from "./assets/supabase-client.js";
+
+    let currentFilter = "pending_approval";
+
+    async function loadStats() {
+      const { data: all } = await supabase.from("users").select("access_level, blocked_at, role");
+      if (!all) return;
+      const stats = {
+        total:    all.length,
+        pending:  all.filter(u => u.access_level === "pending_approval" && !u.blocked_at).length,
+        approved: all.filter(u => u.access_level === "approved" && !u.blocked_at).length,
+        blocked:  all.filter(u => u.blocked_at).length,
+        admin:    all.filter(u => u.role === "admin").length,
+      };
+      document.getElementById("stats").innerHTML = `
+        <div class="stat"><div class="num">${stats.total}</div><div class="label">전체 가입자</div></div>
+        <div class="stat"><div class="num">${stats.pending}</div><div class="label">⏳ 대기</div></div>
+        <div class="stat"><div class="num">${stats.approved}</div><div class="label">✅ 승인</div></div>
+        <div class="stat"><div class="num">${stats.blocked}</div><div class="label">🚫 차단</div></div>
+        <div class="stat"><div class="num">${stats.admin}</div><div class="label">관리자</div></div>
+      `;
+    }
+
+    async function loadUsers() {
+      let q = supabase.from("users").select("*").order("created_at", { ascending: false });
+      if (currentFilter === "blocked") {
+        q = q.not("blocked_at", "is", null);
+      } else if (currentFilter !== "all") {
+        q = q.eq("access_level", currentFilter).is("blocked_at", null);
+      }
+      const { data, error } = await q;
+      const tbody = document.getElementById("tbody");
+      if (error) { tbody.innerHTML = `<tr><td colspan=8 class=empty>오류: ${error.message}</td></tr>`; return; }
+      if (!data || data.length === 0) { tbody.innerHTML = `<tr><td colspan=8 class=empty>해당하는 사용자가 없습니다.</td></tr>`; return; }
+      tbody.innerHTML = data.map(u => {
+        let statusBadges = '';
+        if (u.role === 'admin') statusBadges += '<span class="badge admin">관리자</span> ';
+        if (u.blocked_at) {
+          statusBadges += '<span class="badge blocked">차단</span>';
+        } else {
+          statusBadges += `<span class="badge ${u.access_level}">${u.access_level === 'pending_approval' ? '대기' : u.access_level === 'approved' ? '승인' : 'free'}</span>`;
+        }
+        const created = new Date(u.created_at).toLocaleDateString('ko-KR');
+        const actions = u.blocked_at
+          ? `<button class="unblock" data-act="unblock" data-id="${u.id}">차단해제</button>`
+          : (u.access_level === 'approved'
+              ? `<button class="block" data-act="block" data-id="${u.id}">차단</button>`
+              : `<button class="approve" data-act="approve" data-id="${u.id}">승인</button>
+                 <button class="block" data-act="block" data-id="${u.id}">차단</button>`);
+        return `<tr>
+          <td>${escapeHtml(u.email)}</td>
+          <td>${escapeHtml(u.full_name || '-')}</td>
+          <td>${escapeHtml(u.profession || '-')}</td>
+          <td>${escapeHtml(u.affiliation || '-')}</td>
+          <td>${escapeHtml(u.license_number || '-')}</td>
+          <td>${statusBadges}</td>
+          <td class="meta">${created}</td>
+          <td class="actions">${actions}</td>
+        </tr>`;
+      }).join('');
+      tbody.querySelectorAll("button[data-act]").forEach(btn => {
+        btn.onclick = () => actOnUser(btn.dataset.act, btn.dataset.id);
+      });
+    }
+
+    async function actOnUser(action, userId) {
+      const me = await getCurrentUser();
+      const { data: before } = await supabase.from("users").select("access_level, blocked_at, blocked_reason").eq("id", userId).single();
+      let patch = {};
+      let reason = null;
+      if (action === "approve") {
+        patch = { access_level: "approved", approved_at: new Date().toISOString(), blocked_at: null, blocked_reason: null };
+      } else if (action === "block") {
+        reason = prompt("차단 사유 (admin_logs에 기록됨):", "자격 미확인");
+        if (reason === null) return;
+        patch = { blocked_at: new Date().toISOString(), blocked_reason: reason };
+      } else if (action === "unblock") {
+        patch = { blocked_at: null, blocked_reason: null };
+      }
+      const { error: e1 } = await supabase.from("users").update(patch).eq("id", userId);
+      if (e1) { alert("실패: " + e1.message); return; }
+      await supabase.from("admin_logs").insert({
+        admin_id: me.id, target_user_id: userId, action, before_value: before, after_value: patch, reason,
+      });
+      await loadUsers();
+      await loadStats();
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    document.querySelectorAll(".filter-bar button").forEach(btn => {
+      btn.onclick = () => {
+        document.querySelectorAll(".filter-bar button").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentFilter = btn.dataset.filter;
+        loadUsers();
+      };
+    });
+
+    await loadStats();
+    await loadUsers();
+  </script>
+</body>
+</html>

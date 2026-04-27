@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .t     { font-weight:700; }
+      .s     { fill:#6e6e73; font-weight:400; }
+    </style>
+  </defs>
+  <rect width="900" height="560" fill="#fbfbfd"/>
+  <text x="450" y="45" class="label t" text-anchor="middle" font-size="26">Assessment 5단계 계층 모델</text>
+  <text x="450" y="70" class="label s" text-anchor="middle" font-size="13">"You cannot treat what you cannot measure"</text>
+
+  <rect x="120" y="100" width="660" height="64" rx="10" fill="#e6f3ff" stroke="#3182ce" stroke-width="2"/>
+  <text x="150" y="132" class="label t" font-size="18">① History</text>
+  <text x="150" y="152" class="label s" font-size="12">OPQRST + FN 추가 (두부 외상·어지럼·시각·인지·자율) · Red Flag 스크리닝</text>
+
+  <rect x="120" y="184" width="660" height="64" rx="10" fill="#e6f7ed" stroke="#27ae60" stroke-width="2"/>
+  <text x="150" y="216" class="label t" font-size="18">② Observation</text>
+  <text x="150" y="236" class="label s" font-size="12">자세 (정·측·후면) · 보행 · 피부 · 표정 · 무의식적 움직임</text>
+
+  <rect x="120" y="268" width="660" height="74" rx="10" fill="#fff8e6" stroke="#d4a017" stroke-width="2"/>
+  <text x="150" y="300" class="label t" font-size="18">③ 기본 신경학 · 정형학 검사</text>
+  <text x="150" y="320" class="label s" font-size="12">뇌신경 I-XII · DTR 0-4+ · 병적 반사 · MMT · 감각 · 특수검사 (SLR·Spurling 등)</text>
+  <text x="150" y="335" class="label s" font-size="11" fill="#c0392b">🔴 Hoffman·Babinski·Clonus 양성 → 즉시 신경과 의뢰</text>
+
+  <rect x="120" y="362" width="660" height="100" rx="10" fill="#fdecec" stroke="#c0392b" stroke-width="2"/>
+  <text x="150" y="394" class="label t" font-size="18">④ FN 특화 검사 ⭐</text>
+  <text x="150" y="414" class="label s" font-size="12">• 소뇌: Finger-to-nose · RAM · Romberg · Tandem gait</text>
+  <text x="150" y="430" class="label s" font-size="12">• 전정: Dix-Hallpike · HIT · Head Shake · Fukuda · DVA</text>
+  <text x="150" y="446" class="label s" font-size="12">• 안구: VOR · Saccade · Smooth Pursuit · Fixation · NPC · VOMS (Mucha 2014)</text>
+
+  <rect x="120" y="482" width="660" height="60" rx="10" fill="#f5f5f7" stroke="#86868b" stroke-width="2"/>
+  <text x="150" y="512" class="label t" font-size="16">⑤ 영상 · 실험실 · 전문의 의뢰</text>
+  <text x="150" y="530" class="label s" font-size="12">ACR 적응증에 따라 X-ray · MRI · CT · 혈액 · 전정 검사실 · 신경과·이비인후과</text>
+
+  <text x="82" y="140"  class="label s" font-size="18" fill="#6e6e73">1</text>
+  <text x="82" y="222"  class="label s" font-size="18" fill="#6e6e73">2</text>
+  <text x="82" y="310"  class="label s" font-size="18" fill="#6e6e73">3</text>
+  <text x="82" y="418"  class="label s" font-size="18" fill="#6e6e73">4</text>
+  <text x="82" y="518"  class="label s" font-size="18" fill="#6e6e73">5</text>
+</svg>

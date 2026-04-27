@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>강의록 뷰어 · 카이로프랙틱정형외과</title>
+<link rel="stylesheet" href="./assets/main.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.5.1/github-markdown-light.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<style>
+  .viewer-shell { max-width: 960px; margin: 32px auto 96px; padding: 0 24px; }
+  .viewer-toolbar {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 12px; margin-bottom: 16px; flex-wrap: wrap;
+  }
+  .viewer-toolbar .src {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 12px; color: #6e6e73; word-break: break-all;
+  }
+  .btn-back {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 14px; border-radius: 980px;
+    background: #f5f5f7; color: #1d1d1f; text-decoration: none;
+    font-size: 14px; font-weight: 500;
+    transition: background .15s ease;
+  }
+  .btn-back:hover { background: #ebebed; }
+  .markdown-body {
+    background: #fff; border-radius: 18px; padding: 44px 56px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.04);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #1d1d1f;
+  }
+  .markdown-body h1, .markdown-body h2, .markdown-body h3,
+  .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+    border-bottom: none; margin-top: 1.6em;
+  }
+  .markdown-body h1 { font-size: 2em; }
+  .markdown-body h2 { font-size: 1.55em; }
+  .markdown-body pre {
+    background: #f5f5f7; border-radius: 10px; padding: 16px 20px;
+  }
+  .markdown-body code {
+    background: rgba(0,0,0,.04); border-radius: 5px; padding: 0 5px;
+  }
+  .markdown-body table {
+    display: table; width: 100%;
+  }
+  .error-box {
+    background: #fff2f0; border: 1px solid #ffccc7;
+    color: #a8071a; padding: 20px; border-radius: 12px;
+    font-size: 14px;
+  }
+  @media (max-width: 640px) {
+    .markdown-body { padding: 24px 20px; }
+  }
+</style>
+  <script src="./assets/config.js"></script>
+  <script type="module" src="./assets/auth-guard.js"></script>
+</head>
+<body>
+
+<nav class="glass-nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="./index.html">
+      <span class="brand-mark">📚</span>
+      <span class="brand-name">카이로프랙틱정형외과</span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html">홈</a>
+    </div>
+  </div>
+</nav>
+
+<main class="viewer-shell">
+  <div class="viewer-toolbar">
+    <a class="btn-back" href="javascript:history.back()">← 돌아가기</a>
+    <span class="src" id="srcLabel"></span>
+  </div>
+
+  <article id="mdContent" class="markdown-body">불러오는 중…</article>
+</main>
+
+<script>
+(async () => {
+  const params = new URLSearchParams(location.search);
+  const src = params.get('src');
+  const label = document.getElementById('srcLabel');
+  const target = document.getElementById('mdContent');
+
+  if (!src) {
+    target.innerHTML = '<div class="error-box">⚠ <code>?src=경로/파일.md</code> 파라미터가 필요합니다.</div>';
+    return;
+  }
+
+  // Restrict to relative paths within this site (no protocol, no leading /)
+  if (/^[a-z]+:\/\//i.test(src) || src.startsWith('/')) {
+    target.innerHTML = '<div class="error-box">⚠ 외부·절대 경로는 열 수 없습니다.</div>';
+    return;
+  }
+
+  label.textContent = src;
+  document.title = src.split('/').pop() + ' · 강의록';
+
+  try {
+    const res = await fetch(src);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const text = await res.text();
+
+    // Configure marked: GFM, breaks on, smart lists
+    marked.setOptions({ gfm: true, breaks: false, headerIds: true, mangle: false });
+
+    // Render Mermaid blocks specially — marked turns ```mermaid into <pre><code class="language-mermaid">
+    const rendered = marked.parse(text);
+    const safe = DOMPurify.sanitize(rendered, { ADD_TAGS: ['iframe'], ADD_ATTR: ['frameborder', 'allowfullscreen'] });
+    target.innerHTML = safe;
+
+    // Replace ```mermaid code blocks with Mermaid-rendered SVGs
+    target.querySelectorAll('code.language-mermaid').forEach((el, idx) => {
+      const pre = el.parentElement;
+      const code = el.textContent;
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = code;
+      pre.replaceWith(div);
+    });
+    if (window.mermaid) {
+      mermaid.initialize({ startOnLoad: false, theme: 'default' });
+      await mermaid.run({ querySelector: '.mermaid' });
+    }
+
+    // Adjust relative links inside rendered content so they still resolve from the MD's folder
+    const baseDir = src.substring(0, src.lastIndexOf('/') + 1);
+    target.querySelectorAll('a[href]').forEach(a => {
+      const href = a.getAttribute('href');
+      if (!href) return;
+      if (/^[a-z]+:\/\//i.test(href) || href.startsWith('#') || href.startsWith('/')) return;
+      // MD-to-MD: reroute through viewer
+      if (href.endsWith('.md') || href.includes('.md#')) {
+        const absolute = new URL(baseDir + href, location.href).pathname;
+        // strip leading / for relative
+        const rel = absolute.replace(/^\//, '');
+        a.setAttribute('href', './viewer.html?src=' + encodeURI(rel));
+      } else {
+        // Other relative: resolve from MD's folder
+        a.setAttribute('href', baseDir + href);
+      }
+    });
+
+    // Relative images
+    target.querySelectorAll('img[src]').forEach(img => {
+      const s = img.getAttribute('src');
+      if (!s || /^[a-z]+:\/\//i.test(s) || s.startsWith('/')) return;
+      img.setAttribute('src', baseDir + s);
+    });
+
+  } catch (e) {
+    target.innerHTML = '<div class="error-box">⚠ 파일을 불러올 수 없습니다: ' + src + '<br/><small>' + e.message + '</small></div>';
+  }
+})();
+</script>
+
+</body>
+</html>

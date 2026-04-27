@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">CBP Postural Mirror Image — 거울상 자세 교정</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">Harrison 1980s · 환자 비대칭의 거울상 자세·운동·견인으로 정상화</text>
+
+  <!-- Three columns -->
+
+  <!-- Column 1: Pathology -->
+  <rect x="40" y="120" width="280" height="380" rx="14" fill="#fee2e2" stroke="#c0392b" stroke-width="2"/>
+  <text x="180" y="150" class="label title" text-anchor="middle" font-size="16" fill="#8a1c12">① 병적 자세</text>
+  <text x="180" y="170" class="label sub" text-anchor="middle" font-size="11">측면 — 일자목 (military neck)</text>
+
+  <!-- Stylized neck/head pathological -->
+  <line x1="180" y1="200" x2="180" y2="280" stroke="#c0392b" stroke-width="3"/>
+  <line x1="180" y1="280" x2="220" y2="380" stroke="#c0392b" stroke-width="3"/>
+  <circle cx="180" cy="200" r="22" fill="#fff" stroke="#c0392b" stroke-width="2"/>
+  <text x="180" y="206" class="label sub" text-anchor="middle" font-size="11">head</text>
+
+  <text x="180" y="420" class="label" text-anchor="middle" font-size="13">cervical lordosis: <tspan font-weight="700">10°</tspan></text>
+  <text x="180" y="442" class="label sub" text-anchor="middle" font-size="11">정상 42° (Harrison 표준)</text>
+  <text x="180" y="475" class="label sub" text-anchor="middle" font-size="11">증상: 두통 · 경추통 · 어지럼</text>
+
+  <!-- Arrow -->
+  <path d="M 330 290 L 360 290" stroke="#0071e3" stroke-width="2.5" fill="none"/>
+  <polygon points="360,290 350,284 350,296" fill="#0071e3"/>
+
+  <!-- Column 2: Mirror image (treatment) -->
+  <rect x="370" y="120" width="280" height="380" rx="14" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="510" y="150" class="label title" text-anchor="middle" font-size="16" fill="#8a5a00">② Mirror image 자세</text>
+  <text x="510" y="170" class="label sub" text-anchor="middle" font-size="11">병적 자세의 거울상</text>
+
+  <!-- Mirror image neck (over-corrected lordosis) -->
+  <path d="M 510 200 Q 480 250 510 320 Q 540 360 540 380" stroke="#d4a017" stroke-width="3" fill="none"/>
+  <circle cx="510" cy="200" r="22" fill="#fff" stroke="#d4a017" stroke-width="2"/>
+  <text x="510" y="206" class="label sub" text-anchor="middle" font-size="11">head</text>
+
+  <text x="510" y="420" class="label" text-anchor="middle" font-size="13">cervical lordosis: <tspan font-weight="700">70°</tspan></text>
+  <text x="510" y="442" class="label sub" text-anchor="middle" font-size="11">과교정으로 평형 회복</text>
+  <text x="510" y="475" class="label sub" text-anchor="middle" font-size="11">방법: traction · exercise · adjustment</text>
+
+  <!-- Arrow -->
+  <path d="M 660 290 L 690 290" stroke="#2d7a3a" stroke-width="2.5" fill="none"/>
+  <polygon points="690,290 680,284 680,296" fill="#2d7a3a"/>
+
+  <!-- Column 3: Result -->
+  <rect x="700" y="120" width="220" height="380" rx="14" fill="#e8f5e9" stroke="#2d7a3a" stroke-width="2"/>
+  <text x="810" y="150" class="label title" text-anchor="middle" font-size="16" fill="#1d5a2a">③ 정상 자세</text>
+  <text x="810" y="170" class="label sub" text-anchor="middle" font-size="11">치료 후</text>
+
+  <!-- Normal lordosis -->
+  <path d="M 810 200 Q 795 240 810 320 Q 815 360 825 380" stroke="#2d7a3a" stroke-width="3" fill="none"/>
+  <circle cx="810" cy="200" r="22" fill="#fff" stroke="#2d7a3a" stroke-width="2"/>
+  <text x="810" y="206" class="label sub" text-anchor="middle" font-size="11">head</text>
+
+  <text x="810" y="420" class="label" text-anchor="middle" font-size="13">cervical lordosis: <tspan font-weight="700">42°</tspan></text>
+  <text x="810" y="442" class="label sub" text-anchor="middle" font-size="11">정상 곡선 회복</text>
+  <text x="810" y="475" class="label sub" text-anchor="middle" font-size="11">증상 호전 · 6-12개월 지속</text>
+
+  <text x="480" y="540" class="label sub" text-anchor="middle" font-size="11">근거: Fortner 2020 SR 🟡 Moderate · X-ray 노출 증가는 비판 진행 중</text>
+</svg>

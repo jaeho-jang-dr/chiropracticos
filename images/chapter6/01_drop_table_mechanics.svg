@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">Thompson Drop Table — 기계적 thrust 보조</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">J. Clay Thompson 1950s · 환자 부담 ↓ · 술자 thrust force ↓</text>
+
+  <!-- Before drop -->
+  <rect x="40" y="120" width="430" height="200" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="255" y="148" class="label title" text-anchor="middle" font-size="16">① Pre-thrust — Drop piece 위로 잠김</text>
+
+  <!-- Patient on table -->
+  <rect x="80" y="220" width="350" height="20" rx="3" fill="#fff" stroke="#3182ce" stroke-width="2"/>
+  <rect x="80" y="240" width="350" height="40" rx="3" fill="#f0faff" stroke="#3182ce" stroke-width="1.5"/>
+  <text x="255" y="262" class="label sub" text-anchor="middle" font-size="11">Drop piece (잠긴 상태)</text>
+
+  <!-- Patient body silhouette -->
+  <ellipse cx="255" cy="200" rx="120" ry="18" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="255" y="207" class="label sub" text-anchor="middle" font-size="11">환자 prone</text>
+
+  <!-- Doctor hand -->
+  <ellipse cx="200" cy="190" rx="20" ry="10" fill="#ffe1a8" stroke="#d4a017" stroke-width="2"/>
+  <text x="200" y="172" class="label" text-anchor="middle" font-size="11" fill="#8a5a00">CH</text>
+
+  <!-- Spring symbol -->
+  <text x="430" y="270" class="label" font-size="11">↑↓</text>
+  <text x="450" y="270" class="label sub" font-size="11">spring</text>
+
+  <text x="80" y="305" class="label" font-size="12">Tension 설정 (light/med/heavy)</text>
+
+  <!-- After drop -->
+  <rect x="490" y="120" width="430" height="200" rx="14" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="705" y="148" class="label title" text-anchor="middle" font-size="16" fill="#8a5a00">② Thrust + Drop (동시)</text>
+
+  <rect x="530" y="220" width="350" height="20" rx="3" fill="#fff" stroke="#d4a017" stroke-width="2"/>
+  <rect x="530" y="245" width="350" height="40" rx="3" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5" opacity="0.5"/>
+  <rect x="530" y="265" width="350" height="20" rx="3" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="705" y="305" class="label sub" text-anchor="middle" font-size="11">Drop piece 약 1-2 cm 하강</text>
+
+  <ellipse cx="705" cy="200" rx="120" ry="18" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+
+  <ellipse cx="650" cy="190" rx="20" ry="10" fill="#ffe1a8" stroke="#d4a017" stroke-width="2"/>
+  <path d="M 650 175 L 650 200" stroke="#d4a017" stroke-width="3" fill="none"/>
+  <polygon points="650,200 643,188 657,188" fill="#d4a017"/>
+
+  <!-- Mechanics box -->
+  <rect x="40" y="360" width="880" height="180" rx="14" fill="#fff" stroke="#d2d2d7" stroke-width="1.5"/>
+  <text x="480" y="388" class="label title" text-anchor="middle" font-size="17">생체역학 — Newton's Third Law</text>
+
+  <text x="60" y="425" class="label" font-size="13">• 술자 thrust force만으로는 부족 → drop piece 하강이 추가 운동량 제공</text>
+  <text x="60" y="450" class="label" font-size="13">• 환자 segment에 가해지는 net force ≈ thrust force + (drop piece mass × deceleration)</text>
+  <text x="60" y="475" class="label" font-size="13">• 환자 부담 동등하지만 술자 wrist·shoulder 부담은 50% 이상 감소</text>
+  <text x="60" y="500" class="label" font-size="13">• 임산부·고령자에 적합 — body torsion 최소화 (face piece 등 분절 자세 유지)</text>
+  <text x="60" y="525" class="label sub" font-size="11">근거: 비교 연구에서 cavitation 발생률 동등, audible release 일관성 ↑ (Polkinghorn 1995)</text>
+</svg>

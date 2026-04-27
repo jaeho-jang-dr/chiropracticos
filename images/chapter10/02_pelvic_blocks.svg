@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">SOT Pelvic Block 배치</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">중력·체중을 이용한 sustained 골반 정렬 — 5-15분 자가 교정</text>
+
+  <!-- Patient prone schematic, top-down -->
+  <ellipse cx="480" cy="220" rx="200" ry="80" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="480" y="226" class="label sub" text-anchor="middle" font-size="11">환자 prone — 골반 영역</text>
+
+  <!-- Spine line -->
+  <line x1="480" y1="140" x2="480" y2="300" stroke="#3182ce" stroke-width="2" stroke-dasharray="5 3"/>
+
+  <!-- Block 1 -->
+  <rect x="380" y="195" width="50" height="20" rx="4" fill="#0071e3" stroke="#1d1d1f" stroke-width="1.5"/>
+  <text x="405" y="190" class="label sub" text-anchor="middle" font-size="10">Block 1</text>
+
+  <!-- Block 2 -->
+  <rect x="530" y="225" width="50" height="20" rx="4" fill="#0071e3" stroke="#1d1d1f" stroke-width="1.5"/>
+  <text x="555" y="262" class="label sub" text-anchor="middle" font-size="10">Block 2</text>
+
+  <!-- Force arrow -->
+  <text x="700" y="225" class="label sub" font-size="11">→ 중력 + 체중</text>
+  <text x="700" y="245" class="label sub" font-size="11">→ 5-15분 sustained</text>
+
+  <!-- Block diagrams below -->
+  <rect x="40" y="340" width="280" height="180" rx="14" fill="#fff" stroke="#d2d2d7" stroke-width="1.5"/>
+  <text x="180" y="368" class="label title" text-anchor="middle" font-size="15">블록 사양</text>
+  <rect x="80" y="395" width="200" height="40" rx="6" fill="#0071e3" stroke="#1d1d1f" stroke-width="1.5"/>
+  <text x="180" y="420" class="label" text-anchor="middle" font-size="13" fill="#fff">발포 패딩 wedge</text>
+  <text x="60" y="455" class="label" font-size="12">• 길이: ~25 cm · 폭: ~7 cm</text>
+  <text x="60" y="478" class="label" font-size="12">• 높이 (얇은 측): 1-2 cm</text>
+  <text x="60" y="501" class="label" font-size="12">• 높이 (두꺼운 측): 5-7 cm</text>
+
+  <rect x="340" y="340" width="280" height="180" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="1.5"/>
+  <text x="480" y="368" class="label title" text-anchor="middle" font-size="15">Cat I — 단순 배치</text>
+  <text x="360" y="395" class="label" font-size="13">• Block 1: 좌측 ASIS 아래</text>
+  <text x="360" y="418" class="label" font-size="13">• Block 2: 우측 ischium 아래</text>
+  <text x="360" y="441" class="label" font-size="13">• 또는 cross-pattern</text>
+  <text x="360" y="464" class="label sub" font-size="11">→ 중력으로 골반 회전 교정</text>
+  <text x="360" y="487" class="label sub" font-size="11">→ 환자 5-15분 그대로 누움</text>
+  <text x="360" y="510" class="label sub" font-size="11">→ thrust 없음, 자가 교정</text>
+
+  <rect x="640" y="340" width="280" height="180" rx="14" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="780" y="368" class="label title" text-anchor="middle" font-size="15" fill="#8a5a00">Cat II — 정밀 배치</text>
+  <text x="660" y="395" class="label" font-size="13">• arm fossa test 결과에 따라</text>
+  <text x="660" y="418" class="label" font-size="13">• 단축측 ASIS 아래 block</text>
+  <text x="660" y="441" class="label" font-size="13">• 반대측 ischium 아래 block</text>
+  <text x="660" y="464" class="label" font-size="13">• respiration assist 추가 가능</text>
+  <text x="660" y="490" class="label sub" font-size="11">근거: 산후 골반통 RCT 🟡 Moderate</text>
+</svg>

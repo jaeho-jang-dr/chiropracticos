@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0071e3"/>
+      <stop offset="100%" stop-color="#004c99"/>
+    </linearGradient>
+    <style>
+      .t-brand { font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif; font-weight: 500; fill: rgba(255,255,255,0.7); }
+      .t-chapter { font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif; font-weight: 600; fill: rgba(255,255,255,0.9); letter-spacing: 0.05em; }
+      .t-title { font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif; font-weight: 800; fill: #ffffff; letter-spacing: -0.02em; }
+      .t-sub { font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif; font-weight: 400; fill: rgba(255,255,255,0.85); }
+      .t-tag { font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif; font-weight: 400; fill: rgba(255,255,255,0.65); }
+    </style>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <text x="80" y="80" class="t-brand" font-size="22">Chiropractic &nbsp;|&nbsp; 카이로프랙틱 · PODCAST</text>
+
+  <rect x="80" y="230" width="60" height="4" fill="#ffffff" rx="2"/>
+  <text x="80" y="215" class="t-chapter" font-size="24">CHAPTER 2 · DEEP DIVE · 60+ MIN</text>
+
+  <text x="80" y="340" class="t-title" font-size="90">디버시파이드 HVLA</text>
+  <text x="80" y="420" class="t-sub" font-size="38">4주 통합 심층 팟캐스트 (2인 대화형)</text>
+
+  <text x="80" y="510" class="t-tag" font-size="28">역사·생체역학·평가·교정·근거·안전</text>
+  <text x="80" y="555" class="t-tag" font-size="22">Evidence-Based Deep Dive · 2-Host Dialogue Format</text>
+
+  <text x="80" y="665" class="t-brand" font-size="18">Evidence-Based Chiropractic Curriculum · Dr. Jang · RMIT DC · ACA Member</text>
+
+  <!-- Audio waveform icon -->
+  <g opacity="0.25" transform="translate(1050, 520)">
+    <rect x="0"   y="20"  width="8" height="40" fill="#ffffff" rx="4"/>
+    <rect x="16"  y="0"   width="8" height="80" fill="#ffffff" rx="4"/>
+    <rect x="32"  y="10"  width="8" height="60" fill="#ffffff" rx="4"/>
+    <rect x="48"  y="-10" width="8" height="100" fill="#ffffff" rx="4"/>
+    <rect x="64"  y="5"   width="8" height="70" fill="#ffffff" rx="4"/>
+    <rect x="80"  y="-5"  width="8" height="90" fill="#ffffff" rx="4"/>
+    <rect x="96"  y="15"  width="8" height="50" fill="#ffffff" rx="4"/>
+    <rect x="112" y="0"   width="8" height="80" fill="#ffffff" rx="4"/>
+    <rect x="128" y="20"  width="8" height="40" fill="#ffffff" rx="4"/>
+  </g>
+</svg>

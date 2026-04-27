@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>로그인 처리 중...</title>
+  <script src="./assets/config.js"></script>
+  <style>body{font-family:system-ui;text-align:center;padding:6rem 2rem;color:#555}</style>
+</head>
+<body>
+  <p>로그인 처리 중...</p>
+  <script type="module">
+    import { supabase } from "./assets/supabase-client.js";
+    // detectSessionInUrl=true 라 자동 처리됨
+    await new Promise(r => setTimeout(r, 300));
+    const params = new URLSearchParams(location.search);
+    const next = params.get("next") || "/index.html";
+    location.replace(next);
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">교정 강도 스펙트럼 (Force Comparison)</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">기법별 force 단위 비교 — Logan은 가장 가벼운 끝</text>
+
+  <!-- Horizontal scale -->
+  <line x1="80" y1="350" x2="880" y2="350" stroke="#1d1d1f" stroke-width="2"/>
+
+  <!-- Tick marks -->
+  <line x1="80" y1="345" x2="80" y2="355" stroke="#1d1d1f" stroke-width="2"/>
+  <line x1="280" y1="345" x2="280" y2="355" stroke="#1d1d1f" stroke-width="2"/>
+  <line x1="480" y1="345" x2="480" y2="355" stroke="#1d1d1f" stroke-width="2"/>
+  <line x1="680" y1="345" x2="680" y2="355" stroke="#1d1d1f" stroke-width="2"/>
+  <line x1="880" y1="345" x2="880" y2="355" stroke="#1d1d1f" stroke-width="2"/>
+
+  <!-- Scale labels -->
+  <text x="80" y="375" class="label sub" text-anchor="middle" font-size="11">10 N</text>
+  <text x="280" y="375" class="label sub" text-anchor="middle" font-size="11">100 N</text>
+  <text x="480" y="375" class="label sub" text-anchor="middle" font-size="11">300 N</text>
+  <text x="680" y="375" class="label sub" text-anchor="middle" font-size="11">600 N</text>
+  <text x="880" y="375" class="label sub" text-anchor="middle" font-size="11">1000+ N</text>
+
+  <text x="480" y="395" class="label title" text-anchor="middle" font-size="14">Force (N)</text>
+
+  <!-- Logan -->
+  <rect x="50" y="160" width="100" height="60" rx="10" fill="#e8f5e9" stroke="#2d7a3a" stroke-width="2"/>
+  <text x="100" y="185" class="label title" text-anchor="middle" font-size="13" fill="#1d5a2a">Logan</text>
+  <text x="100" y="206" class="label sub" text-anchor="middle" font-size="11">0.6–2.8 N</text>
+  <line x1="100" y1="220" x2="80" y2="345" stroke="#2d7a3a" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Activator -->
+  <rect x="220" y="160" width="120" height="60" rx="10" fill="#e8f5e9" stroke="#2d7a3a" stroke-width="2"/>
+  <text x="280" y="185" class="label title" text-anchor="middle" font-size="13" fill="#1d5a2a">Activator</text>
+  <text x="280" y="206" class="label sub" text-anchor="middle" font-size="11">~140 N (3 ms)</text>
+  <line x1="280" y1="220" x2="280" y2="345" stroke="#2d7a3a" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Toggle Recoil -->
+  <rect x="380" y="240" width="160" height="60" rx="10" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="460" y="265" class="label title" text-anchor="middle" font-size="13" fill="#8a5a00">Toggle Recoil</text>
+  <text x="460" y="286" class="label sub" text-anchor="middle" font-size="11">50–100 N (100 ms)</text>
+  <line x1="460" y1="300" x2="460" y2="345" stroke="#d4a017" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Cox -->
+  <rect x="460" y="160" width="160" height="60" rx="10" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="540" y="185" class="label title" text-anchor="middle" font-size="13" fill="#8a5a00">Cox (sustained)</text>
+  <text x="540" y="206" class="label sub" text-anchor="middle" font-size="11">110–220 N · 7-25-7s</text>
+  <line x1="540" y1="220" x2="540" y2="345" stroke="#d4a017" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Diversified HVLA -->
+  <rect x="640" y="240" width="200" height="60" rx="10" fill="#fee2e2" stroke="#c0392b" stroke-width="2"/>
+  <text x="740" y="265" class="label title" text-anchor="middle" font-size="13" fill="#8a1c12">Diversified HVLA</text>
+  <text x="740" y="286" class="label sub" text-anchor="middle" font-size="11">400–1000 N (100-150 ms)</text>
+  <line x1="740" y1="300" x2="740" y2="345" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Bottom indication -->
+  <rect x="80" y="430" width="800" height="110" rx="14" fill="#fff" stroke="#d2d2d7" stroke-width="1.5"/>
+  <text x="480" y="458" class="label title" text-anchor="middle" font-size="14">환자별 권장 강도</text>
+
+  <text x="100" y="486" class="label" font-size="12">• <tspan font-weight="700" fill="#2d7a3a">Logan / Activator</tspan>: 임산부 · 영유아 · 고령 · 골다공증 · 불안 환자</text>
+  <text x="100" y="508" class="label" font-size="12">• <tspan font-weight="700" fill="#8a5a00">Toggle / Cox</tspan>: 일반 성인 · 디스크 환자 · 중간 강도</text>
+  <text x="100" y="530" class="label" font-size="12">• <tspan font-weight="700" fill="#8a1c12">Diversified HVLA</tspan>: 건강한 성인 · audible release 필요한 케이스</text>
+</svg>

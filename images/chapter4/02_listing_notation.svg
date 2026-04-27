@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+      .mono  { font-family: "JetBrains Mono", "Consolas", monospace; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">Gonstead Listing 표기 — 분절 편위의 약어</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">방향 약자의 조합으로 분절 부정렬을 단일 기호로 — 예: PRS-Inf</text>
+
+  <!-- Vertebra silhouette -->
+  <rect x="100" y="180" width="250" height="320" rx="12" fill="#fff" stroke="#d2d2d7" stroke-width="2"/>
+  <text x="225" y="210" class="label title" text-anchor="middle" font-size="18">분절 측면도 (Lateral)</text>
+
+  <!-- Vertebral body -->
+  <ellipse cx="225" cy="350" rx="60" ry="40" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="225" y="356" class="label sub" text-anchor="middle" font-size="13">Vertebral Body</text>
+
+  <!-- Spinous process -->
+  <polygon points="285,350 320,330 320,370" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="318" y="318" class="label sub" font-size="12">Spinous</text>
+
+  <!-- Direction arrows -->
+  <path d="M 225 280 L 225 220" stroke="#0071e3" stroke-width="2" fill="none"/>
+  <polygon points="225,220 219,232 231,232" fill="#0071e3"/>
+  <text x="200" y="230" class="label" font-size="12" fill="#0071e3">S</text>
+
+  <path d="M 225 420 L 225 470" stroke="#0071e3" stroke-width="2" fill="none"/>
+  <polygon points="225,470 219,458 231,458" fill="#0071e3"/>
+  <text x="200" y="465" class="label" font-size="12" fill="#0071e3">I</text>
+
+  <path d="M 165 350 L 110 350" stroke="#0071e3" stroke-width="2" fill="none"/>
+  <polygon points="110,350 122,344 122,356" fill="#0071e3"/>
+  <text x="115" y="368" class="label" font-size="12" fill="#0071e3">A</text>
+
+  <path d="M 285 350 L 340 350" stroke="#0071e3" stroke-width="2" fill="none"/>
+  <polygon points="340,350 328,344 328,356" fill="#0071e3"/>
+  <text x="335" y="368" class="label" font-size="12" fill="#0071e3">P</text>
+
+  <!-- Notation table on right -->
+  <rect x="430" y="120" width="490" height="400" rx="14" fill="#fff" stroke="#d2d2d7" stroke-width="1"/>
+  <text x="675" y="150" class="label title" text-anchor="middle" font-size="18">방향 약자 (Direction codes)</text>
+
+  <text x="450" y="190" class="label title" font-size="14">기본 6방향</text>
+  <text x="450" y="215" class="label mono" font-size="13">A</text><text x="475" y="215" class="label" font-size="13">Anterior (앞쪽)</text>
+  <text x="450" y="237" class="label mono" font-size="13">P</text><text x="475" y="237" class="label" font-size="13">Posterior (뒤쪽)</text>
+  <text x="450" y="259" class="label mono" font-size="13">R</text><text x="475" y="259" class="label" font-size="13">Right (오른쪽)</text>
+  <text x="450" y="281" class="label mono" font-size="13">L</text><text x="475" y="281" class="label" font-size="13">Left (왼쪽)</text>
+  <text x="450" y="303" class="label mono" font-size="13">S</text><text x="475" y="303" class="label" font-size="13">Superior (위쪽)</text>
+  <text x="450" y="325" class="label mono" font-size="13">I</text><text x="475" y="325" class="label" font-size="13">Inferior (아래쪽)</text>
+
+  <text x="700" y="190" class="label title" font-size="14">대표 조합 예시</text>
+  <text x="700" y="215" class="label mono" font-size="13" fill="#d4a017">PRS</text><text x="755" y="215" class="label" font-size="13">후·우·상방 편위</text>
+  <text x="700" y="237" class="label mono" font-size="13" fill="#d4a017">PLI</text><text x="755" y="237" class="label" font-size="13">후·좌·하방 편위</text>
+  <text x="700" y="259" class="label mono" font-size="13" fill="#d4a017">AS</text><text x="755" y="259" class="label" font-size="13">전·상방 (장골 기울기)</text>
+  <text x="700" y="281" class="label mono" font-size="13" fill="#d4a017">PI</text><text x="755" y="281" class="label" font-size="13">후·하방</text>
+  <text x="700" y="303" class="label mono" font-size="13" fill="#d4a017">EX</text><text x="755" y="303" class="label" font-size="13">External (외방회전)</text>
+  <text x="700" y="325" class="label mono" font-size="13" fill="#d4a017">IN</text><text x="755" y="325" class="label" font-size="13">Internal (내방회전)</text>
+
+  <!-- Footer note -->
+  <rect x="450" y="360" width="450" height="140" rx="10" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="675" y="388" class="label title" text-anchor="middle" font-size="14" fill="#8a5a00">교정 LOD = listing 반대 방향</text>
+  <text x="475" y="415" class="label" font-size="13">PRS listing → LOD: A + L + I</text>
+  <text x="475" y="438" class="label" font-size="13">PLI listing → LOD: A + R + S</text>
+  <text x="475" y="461" class="label sub" font-size="12">즉 편위의 거울상으로 척추체를 되돌리는 thrust 방향</text>
+  <text x="475" y="484" class="label sub" font-size="12">접촉점은 spinous · transverse · mammillary 중 분절·소견에 따라 선택</text>
+</svg>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .t { font-weight:700; }
+      .s { fill:#6e6e73; font-weight:400; }
+      .w { fill:#fff; }
+    </style>
+  </defs>
+  <rect width="900" height="500" fill="#fbfbfd"/>
+  <text x="450" y="45" class="label t" text-anchor="middle" font-size="26">근거 피라미드 — FN 임상 주장의 검증 기준</text>
+  <text x="450" y="70" class="label s" text-anchor="middle" font-size="13">높을수록 근거 수준 강함</text>
+
+  <polygon points="430,100 470,100 490,145 410,145" fill="#1f7a3f"/>
+  <text x="450" y="128" class="label w t" text-anchor="middle" font-size="14">SR / Cochrane</text>
+
+  <polygon points="410,145 490,145 520,195 380,195" fill="#27ae60"/>
+  <text x="450" y="178" class="label w t" text-anchor="middle" font-size="14">Meta-analysis</text>
+
+  <polygon points="380,195 520,195 560,245 340,245" fill="#52c986"/>
+  <text x="450" y="228" class="label w t" text-anchor="middle" font-size="14">RCT</text>
+
+  <polygon points="340,245 560,245 610,300 290,300" fill="#d4a017"/>
+  <text x="450" y="280" class="label w t" text-anchor="middle" font-size="14">Cohort / Case-control</text>
+
+  <polygon points="290,300 610,300 670,355 230,355" fill="#e6a94f"/>
+  <text x="450" y="335" class="label w t" text-anchor="middle" font-size="14">Case Series / Reports</text>
+
+  <polygon points="230,355 670,355 740,415 160,415" fill="#c0392b"/>
+  <text x="450" y="392" class="label w t" text-anchor="middle" font-size="14">Expert Opinion · Tradition</text>
+
+  <text x="780" y="128" class="label s" font-size="12">🟢 Strong</text>
+  <text x="780" y="178" class="label s" font-size="12">🟢 Strong</text>
+  <text x="780" y="228" class="label s" font-size="12">🟡 Moderate</text>
+  <text x="780" y="278" class="label s" font-size="12">🟡 Moderate</text>
+  <text x="780" y="332" class="label s" font-size="12">🟠 Limited</text>
+  <text x="780" y="388" class="label s" font-size="12">🔴 Weak</text>
+
+  <text x="130" y="128" class="label s" font-size="11" text-anchor="end">Hillier Cochrane 2015</text>
+  <text x="130" y="178" class="label s" font-size="11" text-anchor="end">Gross 2015</text>
+  <text x="130" y="228" class="label s" font-size="11" text-anchor="end">Schneider 2014 RCT</text>
+  <text x="130" y="278" class="label s" font-size="11" text-anchor="end">척추 수기 cohort</text>
+  <text x="130" y="332" class="label s" font-size="11" text-anchor="end">Carrick 증례 보고</text>
+  <text x="130" y="388" class="label s" font-size="11" text-anchor="end">"Innate Intelligence"</text>
+
+  <text x="450" y="460" class="label s" text-anchor="middle" font-size="12">근거 수준이 낮은 주장일수록 과장·오류 가능성 증가 → 비판적 수용 필수</text>
+</svg>

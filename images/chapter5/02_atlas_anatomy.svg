@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">상부경추 해부 — 환축관절과 척추동맥</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">Toggle Recoil 표적 부위 + VAD 위험 구조 동시 파악</text>
+
+  <!-- Atlas (C1) - top down view -->
+  <text x="240" y="130" class="label title" text-anchor="middle" font-size="18">환추 (Atlas, C1) — 상면도</text>
+
+  <!-- Atlas ring -->
+  <ellipse cx="240" cy="280" rx="180" ry="120" fill="#fff" stroke="#1d1d1f" stroke-width="2"/>
+  <ellipse cx="240" cy="280" rx="80" ry="60" fill="#fbfbfd" stroke="#1d1d1f" stroke-width="2"/>
+
+  <!-- Lateral masses -->
+  <ellipse cx="100" cy="280" rx="32" ry="42" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <ellipse cx="380" cy="280" rx="32" ry="42" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+
+  <!-- Transverse processes -->
+  <ellipse cx="60" cy="280" rx="22" ry="14" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <ellipse cx="420" cy="280" rx="22" ry="14" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+
+  <!-- Transverse foramen (vertebral artery) -->
+  <circle cx="60" cy="280" r="6" fill="#c0392b"/>
+  <circle cx="420" cy="280" r="6" fill="#c0392b"/>
+
+  <!-- Posterior arch -->
+  <text x="240" y="230" class="label sub" text-anchor="middle" font-size="11">전궁 (Anterior arch)</text>
+  <text x="240" y="395" class="label sub" text-anchor="middle" font-size="11">후궁 (Posterior arch)</text>
+
+  <!-- Labels -->
+  <text x="100" y="285" class="label sub" text-anchor="middle" font-size="11">Lateral</text>
+  <text x="100" y="298" class="label sub" text-anchor="middle" font-size="11">mass</text>
+
+  <text x="40" y="240" class="label" font-size="12" fill="#8a5a00">TP</text>
+  <text x="40" y="255" class="label sub" font-size="10">contact</text>
+
+  <text x="20" y="320" class="label" font-size="12" fill="#c0392b">VA</text>
+  <text x="20" y="335" class="label sub" font-size="10">⚠ 위험</text>
+
+  <!-- Vertebral artery path -->
+  <path d="M 60 280 Q 60 200 240 170" stroke="#c0392b" stroke-width="3" fill="none" stroke-dasharray="6 3"/>
+  <path d="M 420 280 Q 420 200 240 170" stroke="#c0392b" stroke-width="3" fill="none" stroke-dasharray="6 3"/>
+
+  <!-- Right side: Risk and approach -->
+  <rect x="500" y="120" width="430" height="240" rx="14" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="715" y="148" class="label title" text-anchor="middle" font-size="16" fill="#8a5a00">Toggle Recoil 표적 — 환추 횡돌기 (TP)</text>
+  <text x="520" y="178" class="label" font-size="13">• 접촉점: 환추 TP 외측면 (pisiform)</text>
+  <text x="520" y="200" class="label" font-size="13">• Listing: ASR / ASL / ASRA / ASLA / Lateral</text>
+  <text x="520" y="222" class="label" font-size="13">• LOD: medial-superior (TP 방향 안쪽 위로)</text>
+  <text x="520" y="244" class="label" font-size="13">• 자세: 측와위 + drop headpiece</text>
+  <text x="520" y="266" class="label" font-size="13">• Force: 50–100 N · 100 ms thrust · no follow-through</text>
+  <text x="520" y="295" class="label sub" font-size="12">근거: 안전성 Cassidy 2008 (VAD 위험 일반의 방문과 동등)</text>
+  <text x="520" y="317" class="label sub" font-size="12">근거: HIO 전신 효과 No reliable evidence — Meyer 2017 SR</text>
+
+  <rect x="500" y="380" width="430" height="160" rx="14" fill="#fee2e2" stroke="#c0392b" stroke-width="2"/>
+  <text x="715" y="408" class="label title" text-anchor="middle" font-size="16" fill="#8a1c12">⚠ 척추동맥 박리(VAD) 위험</text>
+  <text x="520" y="438" class="label" font-size="13">• 환추 횡공(transverse foramen)에 척추동맥 통과</text>
+  <text x="520" y="460" class="label" font-size="13">• 과도한 회전·신전 thrust로 동맥내막 손상 가능</text>
+  <text x="520" y="482" class="label" font-size="13">• 위험 환자: 결합조직질환·고혈압·VBI 의심·5Ds</text>
+  <text x="520" y="504" class="label" font-size="13">• Toggle Recoil은 측방 thrust로 이 위험 최소화 의도</text>
+  <text x="520" y="526" class="label sub" font-size="11">5Ds = Dizziness · Diplopia · Dysarthria · Dysphagia · Drop attack</text>
+</svg>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">Activator Basic Scan Protocol</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">표준화된 스캔 → leg length reactivity로 분절 식별 → 교정</text>
+
+  <!-- Step 1 -->
+  <rect x="40" y="120" width="170" height="160" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="125" y="150" class="label title" text-anchor="middle" font-size="14">① Position 1</text>
+  <text x="125" y="170" class="label sub" text-anchor="middle" font-size="11">기본 prone</text>
+  <text x="125" y="200" class="label" text-anchor="middle" font-size="13">양 다리</text>
+  <text x="125" y="220" class="label" text-anchor="middle" font-size="13">비교</text>
+  <text x="125" y="252" class="label sub" text-anchor="middle" font-size="11">단축측 식별</text>
+  <text x="125" y="270" class="label sub" text-anchor="middle" font-size="11">→ short leg side</text>
+
+  <!-- Arrow -->
+  <path d="M 220 200 L 250 200" stroke="#0071e3" stroke-width="2.5" fill="none"/>
+  <polygon points="250,200 240,194 240,206" fill="#0071e3"/>
+
+  <!-- Step 2 -->
+  <rect x="260" y="120" width="170" height="160" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="345" y="150" class="label title" text-anchor="middle" font-size="14">② Position 2</text>
+  <text x="345" y="170" class="label sub" text-anchor="middle" font-size="11">머리 회전 ± 무릎 굴곡</text>
+  <text x="345" y="200" class="label" text-anchor="middle" font-size="13">변화 패턴</text>
+  <text x="345" y="220" class="label" text-anchor="middle" font-size="13">관찰</text>
+  <text x="345" y="252" class="label sub" text-anchor="middle" font-size="11">cervical · pelvic</text>
+  <text x="345" y="270" class="label sub" text-anchor="middle" font-size="11">분기 시작</text>
+
+  <!-- Arrow -->
+  <path d="M 440 200 L 470 200" stroke="#0071e3" stroke-width="2.5" fill="none"/>
+  <polygon points="470,200 460,194 460,206" fill="#0071e3"/>
+
+  <!-- Step 3 -->
+  <rect x="480" y="120" width="170" height="160" rx="14" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="565" y="150" class="label title" text-anchor="middle" font-size="14">③ Isolation</text>
+  <text x="565" y="170" class="label sub" text-anchor="middle" font-size="11">분절별 challenge</text>
+  <text x="565" y="200" class="label" text-anchor="middle" font-size="13">분절에</text>
+  <text x="565" y="220" class="label" text-anchor="middle" font-size="13">압박 → leg test</text>
+  <text x="565" y="252" class="label sub" text-anchor="middle" font-size="11">pressure 시 변화</text>
+  <text x="565" y="270" class="label sub" text-anchor="middle" font-size="11">→ 표적 분절 확정</text>
+
+  <!-- Arrow -->
+  <path d="M 660 200 L 690 200" stroke="#d4a017" stroke-width="2.5" fill="none"/>
+  <polygon points="690,200 680,194 680,206" fill="#d4a017"/>
+
+  <!-- Step 4 -->
+  <rect x="700" y="120" width="220" height="160" rx="14" fill="#e8f5e9" stroke="#2d7a3a" stroke-width="2"/>
+  <text x="810" y="150" class="label title" text-anchor="middle" font-size="14" fill="#1d5a2a">④ Adjust</text>
+  <text x="810" y="170" class="label sub" text-anchor="middle" font-size="11">표적 분절 교정</text>
+  <text x="810" y="200" class="label" text-anchor="middle" font-size="13">Activator</text>
+  <text x="810" y="220" class="label" text-anchor="middle" font-size="13">기구 thrust</text>
+  <text x="810" y="252" class="label sub" text-anchor="middle" font-size="11">Force 1-4 단계</text>
+  <text x="810" y="270" class="label sub" text-anchor="middle" font-size="11">분절·환자 매칭</text>
+
+  <!-- Loop arrow back -->
+  <path d="M 810 290 Q 810 360 480 360 Q 125 360 125 295" stroke="#0071e3" stroke-width="2" fill="none" stroke-dasharray="6 4"/>
+  <polygon points="125,295 119,310 131,310" fill="#0071e3"/>
+  <text x="480" y="380" class="label sub" text-anchor="middle" font-size="11" fill="#0071e3">교정 후 재평가 → leg length 정렬 확인 → 다음 분절</text>
+
+  <!-- Bottom: Theory + Limitation -->
+  <rect x="40" y="410" width="430" height="130" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="1.5"/>
+  <text x="255" y="438" class="label title" text-anchor="middle" font-size="14">이론 — Leg Length Reactivity</text>
+  <text x="60" y="462" class="label" font-size="12">• 분절 dysfunction → 근긴장 비대칭 → 골반 회전</text>
+  <text x="60" y="482" class="label" font-size="12">• → 다리 길이 차이 (실제 + 외관상)</text>
+  <text x="60" y="502" class="label" font-size="12">• 교정 → 정렬 회복 → 다리 길이 일치</text>
+  <text x="60" y="522" class="label sub" font-size="11">근거: Huggins 2012 JMPT 🟡 Moderate</text>
+
+  <rect x="490" y="410" width="430" height="130" rx="14" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="705" y="438" class="label title" text-anchor="middle" font-size="14" fill="#8a5a00">한계와 비판</text>
+  <text x="510" y="462" class="label" font-size="12">• Leg check 검사자 간 신뢰도 🟠 Limited</text>
+  <text x="510" y="482" class="label" font-size="12">• "Reactivity"의 신경생리 기전 미증명</text>
+  <text x="510" y="502" class="label" font-size="12">• 단독 진단 도구로는 부족 → 타 평가와 통합</text>
+  <text x="510" y="522" class="label sub" font-size="11">근거: Sivers 2008 RCT 비교 효과 동등(수기 vs Activator)</text>
+</svg>

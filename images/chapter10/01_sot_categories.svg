@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">SOT 카테고리 진단 — 3분류</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">DeJarnette 1920s · 골반·천장관절·요추 기능장애의 위계 분류</text>
+
+  <!-- Category I -->
+  <rect x="40" y="120" width="290" height="380" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="185" y="150" class="label title" text-anchor="middle" font-size="20">Category I</text>
+  <text x="185" y="172" class="label sub" text-anchor="middle" font-size="12">경증 · pelvic torque</text>
+
+  <!-- Pelvis schematic for cat I -->
+  <ellipse cx="185" cy="230" rx="80" ry="40" fill="#fff" stroke="#3182ce" stroke-width="2"/>
+  <line x1="105" y1="230" x2="265" y2="230" stroke="#3182ce" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <line x1="185" y1="195" x2="185" y2="265" stroke="#3182ce" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <text x="185" y="285" class="label sub" text-anchor="middle" font-size="11">골반 정렬 거의 정상</text>
+
+  <text x="60" y="320" class="label title" font-size="13">소견</text>
+  <text x="60" y="342" class="label" font-size="12">• arm fossa test 음성 또는 미약</text>
+  <text x="60" y="362" class="label" font-size="12">• 환자 자세 거의 대칭</text>
+  <text x="60" y="382" class="label" font-size="12">• 만성 호소·기능적 불편</text>
+
+  <text x="60" y="412" class="label title" font-size="13">치료</text>
+  <text x="60" y="434" class="label" font-size="12">• Pelvic blocks (가벼운 배치)</text>
+  <text x="60" y="454" class="label" font-size="12">• 자세 교정 운동</text>
+  <text x="60" y="474" class="label" font-size="12">• 빈도: 주 1회 → 격주</text>
+
+  <text x="185" y="498" class="label sub" text-anchor="middle" font-size="11">근거: 🟡 Moderate (구조적 호전)</text>
+
+  <!-- Category II -->
+  <rect x="345" y="120" width="290" height="380" rx="14" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="490" y="150" class="label title" text-anchor="middle" font-size="20" fill="#8a5a00">Category II</text>
+  <text x="490" y="172" class="label sub" text-anchor="middle" font-size="12">중등 · SI joint 기능장애</text>
+
+  <ellipse cx="490" cy="230" rx="80" ry="40" fill="#fff" stroke="#d4a017" stroke-width="2"/>
+  <ellipse cx="445" cy="225" rx="20" ry="10" fill="#ffe1a8"/>
+  <ellipse cx="535" cy="235" rx="20" ry="10" fill="#ffe1a8"/>
+  <text x="445" y="228" class="label sub" text-anchor="middle" font-size="9">L SIJ</text>
+  <text x="535" y="238" class="label sub" text-anchor="middle" font-size="9">R SIJ</text>
+  <text x="490" y="285" class="label sub" text-anchor="middle" font-size="11">SI joint 비대칭</text>
+
+  <text x="365" y="320" class="label title" font-size="13">소견</text>
+  <text x="365" y="342" class="label" font-size="12">• arm fossa test 양성</text>
+  <text x="365" y="362" class="label" font-size="12">• 산후 골반통</text>
+  <text x="365" y="382" class="label" font-size="12">• 일측 SI joint 압통</text>
+
+  <text x="365" y="412" class="label title" font-size="13">치료</text>
+  <text x="365" y="434" class="label" font-size="12">• Pelvic blocks (정확 배치)</text>
+  <text x="365" y="454" class="label" font-size="12">• SI joint 교정 (HVLA 또는 mobilization)</text>
+  <text x="365" y="474" class="label" font-size="12">• 빈도: 주 2회 × 4주</text>
+
+  <text x="490" y="498" class="label sub" text-anchor="middle" font-size="11">근거: 🟡 Moderate (산후 골반통)</text>
+
+  <!-- Category III -->
+  <rect x="650" y="120" width="270" height="380" rx="14" fill="#fee2e2" stroke="#c0392b" stroke-width="2"/>
+  <text x="785" y="150" class="label title" text-anchor="middle" font-size="20" fill="#8a1c12">Category III</text>
+  <text x="785" y="172" class="label sub" text-anchor="middle" font-size="12">중증 · 디스크 동반</text>
+
+  <ellipse cx="785" cy="230" rx="80" ry="40" fill="#fff" stroke="#c0392b" stroke-width="2"/>
+  <line x1="785" y1="190" x2="785" y2="270" stroke="#c0392b" stroke-width="3"/>
+  <text x="785" y="285" class="label sub" text-anchor="middle" font-size="11">L4-L5 / L5-S1 디스크</text>
+
+  <text x="670" y="320" class="label title" font-size="13">소견</text>
+  <text x="670" y="342" class="label" font-size="12">• 요추 디스크 탈출 동반</text>
+  <text x="670" y="362" class="label" font-size="12">• 신경근증 (radiculopathy)</text>
+  <text x="670" y="382" class="label" font-size="12">• SLR 양성</text>
+
+  <text x="670" y="412" class="label title" font-size="13">치료</text>
+  <text x="670" y="434" class="label" font-size="12">• Cat I+II 기법</text>
+  <text x="670" y="454" class="label" font-size="12">• <tspan font-weight="700">+ Cox flexion-distraction</tspan></text>
+  <text x="670" y="474" class="label" font-size="12">• MD 의뢰 검토 (MRI)</text>
+
+  <text x="785" y="498" class="label sub" text-anchor="middle" font-size="11">근거: 🟠 Limited (단독 효과)</text>
+
+  <text x="480" y="540" class="label sub" text-anchor="middle" font-size="11">⚠ Cranial bones rhythmic motion 진단·CMRT visceral 주장은 본 강의 제외 — 골반 기능 측면만</text>
+</svg>

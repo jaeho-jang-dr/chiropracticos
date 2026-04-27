@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d1d1f"/>
+      <stop offset="100%" stop-color="#2c2c2e"/>
+    </linearGradient>
+    <style>
+      .t-brand { font-family: 'Pretendard', 'Apple SD Gothic Neo', -apple-system, sans-serif; font-weight: 500; fill: #86868b; }
+      .t-chapter { font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif; font-weight: 600; fill: #0071e3; letter-spacing: 0.05em; }
+      .t-title { font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif; font-weight: 800; fill: #ffffff; letter-spacing: -0.02em; }
+      .t-sub { font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif; font-weight: 400; fill: #d2d2d7; }
+      .t-tag { font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif; font-weight: 400; fill: #86868b; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top brand bar -->
+  <text x="80" y="80" class="t-brand" font-size="22">Chiropractic &nbsp;|&nbsp; 카이로프랙틱</text>
+
+  <!-- Apple blue accent bar -->
+  <rect x="80" y="230" width="60" height="4" fill="#0071e3" rx="2"/>
+
+  <!-- Chapter label -->
+  <text x="80" y="215" class="t-chapter" font-size="24">CHAPTER 2 · PART 1 of 2</text>
+
+  <!-- Main Title -->
+  <text x="80" y="340" class="t-title" font-size="96">디버시파이드 HVLA</text>
+  <text x="80" y="420" class="t-sub" font-size="42">전반부 (Week 1 - 2)</text>
+
+  <!-- Tags -->
+  <text x="80" y="510" class="t-tag" font-size="28">정의 · 생체역학 · 환자 평가 · 진단</text>
+  <text x="80" y="555" class="t-tag" font-size="22">Diversified HVLA · Biomechanics · Assessment &amp; Diagnosis</text>
+
+  <!-- Bottom bar -->
+  <text x="80" y="665" class="t-brand" font-size="18">Evidence-Based Chiropractic Curriculum · Dr. Jang · RMIT DC · ACA Member</text>
+
+  <!-- Play icon bottom-right -->
+  <g opacity="0.15">
+    <circle cx="1150" cy="550" r="90" fill="#ffffff"/>
+    <polygon points="1128,510 1128,590 1195,550" fill="#1d1d1f"/>
+  </g>
+</svg>

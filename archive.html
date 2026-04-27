@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>레거시 아카이브 · 카이로프랙틱정형외과</title>
+<link rel="stylesheet" href="./assets/main.css" />
+<style>
+  .archive-shell { max-width: 1180px; margin: 32px auto 96px; padding: 0 24px; }
+  .archive-hero {
+    background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+    border-radius: 18px; padding: 48px 40px; margin-bottom: 36px;
+    border: 1px solid rgba(0,0,0,.06);
+  }
+  .archive-hero h1 { margin: 0 0 12px; font-size: 2.2em; }
+  .archive-hero p.lead { margin: 0; color: #424245; font-size: 1.05em; line-height: 1.6; }
+  .archive-section { margin: 48px 0; }
+  .archive-section h2 {
+    font-size: 1.6em; margin: 0 0 20px; padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+  }
+  .asset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .asset-card {
+    background: #fff; border: 1px solid rgba(0,0,0,.08); border-radius: 14px;
+    padding: 18px; transition: all .15s ease;
+    text-decoration: none; color: inherit; display: block;
+  }
+  .asset-card:hover {
+    border-color: rgba(0,113,227,.3);
+    box-shadow: 0 4px 16px rgba(0,0,0,.08);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+  .asset-card .icon { font-size: 1.6em; margin-bottom: 8px; display: block; }
+  .asset-card .title {
+    font-weight: 600; color: #1d1d1f; margin-bottom: 4px;
+    font-size: .95em; line-height: 1.35;
+  }
+  .asset-card .meta { font-size: .78em; color: #86868b; }
+  .video-thumb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+  }
+  .video-card {
+    background: #fff; border: 1px solid rgba(0,0,0,.08); border-radius: 14px;
+    overflow: hidden;
+  }
+  .video-card video {
+    width: 100%; height: 200px; background: #000; object-fit: contain;
+  }
+  .video-card .info { padding: 12px 16px; }
+  .video-card .title { font-weight: 600; font-size: .95em; margin-bottom: 2px; }
+  .video-card .meta { font-size: .78em; color: #86868b; }
+  .ch-tag {
+    display: inline-block; padding: 2px 8px; border-radius: 10px;
+    background: #f5f5f7; color: #424245;
+    font-size: .7em; font-weight: 500; margin-left: 6px;
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+  }
+  .image-grid a {
+    display: block; aspect-ratio: 4/3; overflow: hidden;
+    border-radius: 10px; border: 1px solid rgba(0,0,0,.08);
+    background: #f5f5f7;
+  }
+  .image-grid img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform .2s ease;
+  }
+  .image-grid a:hover img { transform: scale(1.05); }
+
+  /* Harvest grid */
+  .harvest-toolbar {
+    display: flex; gap: 12px; align-items: center; margin-bottom: 20px; flex-wrap: wrap;
+  }
+  .harvest-toolbar input, .harvest-toolbar select {
+    padding: 10px 14px; border: 1px solid rgba(0,0,0,.12); border-radius: 10px;
+    font-size: .95em; background: #fff;
+  }
+  .harvest-toolbar input { flex: 1; min-width: 260px; }
+  .harvest-count { color: #86868b; font-size: .88em; }
+  .harvest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  .harvest-card {
+    background: #fff; border: 1px solid rgba(0,0,0,.08); border-radius: 12px;
+    overflow: hidden; cursor: pointer; transition: all .15s ease;
+  }
+  .harvest-card:hover {
+    border-color: rgba(0,113,227,.3);
+    box-shadow: 0 4px 14px rgba(0,0,0,.1);
+    transform: translateY(-2px);
+  }
+  .harvest-card .thumb-wrap {
+    position: relative; aspect-ratio: 16/10; background: #000; overflow: hidden;
+  }
+  .harvest-card img {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+  .harvest-card video {
+    width: 100%; height: 100%; object-fit: contain; background: #000;
+    display: none;
+  }
+  .harvest-card.playing video { display: block; }
+  .harvest-card.playing img { display: none; }
+  .harvest-card .duration {
+    position: absolute; right: 8px; bottom: 8px;
+    background: rgba(0,0,0,.7); color: #fff;
+    font-size: .75em; padding: 2px 8px; border-radius: 4px;
+  }
+  .harvest-card .play-icon {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 48px; height: 48px; border-radius: 50%;
+    background: rgba(0,0,0,.6); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3em;
+  }
+  .harvest-card .meta-box { padding: 10px 12px; }
+  .harvest-card .name {
+    font-size: .82em; font-weight: 600; color: #1d1d1f;
+    line-height: 1.4; word-break: break-all;
+  }
+  .harvest-card .ppt-tag {
+    font-size: .72em; color: #0071e3; margin-top: 4px;
+    font-weight: 500;
+  }
+</style>
+  <script src="./assets/config.js"></script>
+  <script type="module" src="./assets/auth-guard.js"></script>
+</head>
+<body>
+
+<nav class="glass-nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="./index.html">
+      <span class="brand-mark">📚</span>
+      <span class="brand-name">카이로프랙틱정형외과</span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html">홈</a>
+      <a href="./archive.html">아카이브</a>
+    </div>
+  </div>
+</nav>
+
+<main class="archive-shell">
+
+  <section class="archive-hero">
+    <h1>📂 레거시 아카이브</h1>
+    <p class="lead">
+      2006-2015년 사용자(장재호)의 카이로프랙틱 강의·시연 자료 통합 라이브러리. 신경학 검사 영상 · 기법 시연 · 정형통증학회 발표 자료 · 환자 X-ray 케이스 · 카이로프랙틱 교재 서가 · 초음파 영상 · 장비 사진.
+    </p>
+  </section>
+
+  <!-- Neurologic Exam Videos -->
+  <section class="archive-section" id="neurologic-exam">
+    <h2>🧠 신경학 검사 시연 영상 (8부)<span class="ch-tag">Ch 2 FN 보조자료</span></h2>
+    <div class="video-thumb-grid">
+      <div class="video-card"><video src="./archive/videos/neurologic_exam/01 Sensory Pain.MP4" controls preload="metadata"></video><div class="info"><div class="title">01. Sensory Pain</div><div class="meta">감각 통증 검사</div></div></div>
+      <div class="video-card"><video src="./archive/videos/neurologic_exam/02 Weber vibration.MP4" controls preload="metadata"></video><div class="info"><div class="title">02. Weber Vibration</div><div class="meta">진동 감각 검사</div></div></div>
+      <div class="video-card"><video src="./archive/videos/neurologic_exam/03 Motor.MP4" controls preload="metadata"></video><div class="info"><div class="title">03. Motor</div><div class="meta">운동 신경 검사</div></div></div>
+      <div class="video-card"><video src="./archive/videos/neurologic_exam/04 Reflexes.MP4" controls preload="metadata"></video><div class="info"><div class="title">04. Reflexes</div><div class="meta">심부건 반사 검사</div></div></div>
+      <div class="video-card"><video src="./archive/videos/neurologic_exam/05 CNF test (1).mp4" controls preload="metadata"></video><div class="info"><div class="title">05. CNF Test — Part 1</div><div class="meta">Chiropractic Neurological Function</div></div></div>
+      <div class="video-card"><video src="./archive/videos/neurologic_exam/05 CNF test (2).mp4" controls preload="metadata"></video><div class="info"><div class="title">05. CNF Test — Part 2</div><div class="meta">Chiropractic Neurological Function</div></div></div>
+      <div class="video-card"><video src="./archive/videos/neurologic_exam/06 LOC.MP4" controls preload="metadata"></video><div class="info"><div class="title">06. LOC</div><div class="meta">Level of Consciousness</div></div></div>
+      <div class="video-card"><video src="./archive/videos/neurologic_exam/07 posturegait.MP4" controls preload="metadata"></video><div class="info"><div class="title">07. Posture & Gait</div><div class="meta">자세·보행 검사</div></div></div>
+      <div class="video-card"><video src="./archive/videos/neurologic_exam/08 Supine exam.MP4" controls preload="metadata"></video><div class="info"><div class="title">08. Supine Exam</div><div class="meta">누운 자세 검사</div></div></div>
+    </div>
+  </section>
+
+  <!-- Technique Demonstrations -->
+  <section class="archive-section" id="technique-demos">
+    <h2>🔨 카이로프랙틱 기법 시연 영상 (18부)<span class="ch-tag">KOA 2015 사용자 직접 시연</span></h2>
+    <div class="video-thumb-grid">
+      <div class="video-card"><video src="./archive/videos/techniques/diversified_nelson_pull.mp4" controls preload="metadata"></video><div class="info"><div class="title">Diversified Nelson Pull<span class="ch-tag">Ch 3</span></div><div class="meta">측와위 Nelson pull 기법</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/spinous_push_and_pull.mp4" controls preload="metadata"></video><div class="info"><div class="title">Spinous Push & Pull<span class="ch-tag">Ch 3</span></div><div class="meta">극돌기 접촉 기법</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/bilateral_hypothenar_push.mp4" controls preload="metadata"></video><div class="info"><div class="title">Bilateral Hypothenar Push<span class="ch-tag">Ch 3</span></div><div class="meta">양측 소지구 접촉</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/ap_thoracic.mp4" controls preload="metadata"></video><div class="info"><div class="title">AP Thoracic<span class="ch-tag">Ch 3</span></div><div class="meta">앞뒤 흉추 교정</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/gonstead_sitting.mp4" controls preload="metadata"></video><div class="info"><div class="title">Gonstead Sitting<span class="ch-tag">Ch 4</span></div><div class="meta">좌위 Gonstead 교정</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/hypothenar_ilium_push.mp4" controls preload="metadata"></video><div class="info"><div class="title">Hypothenar Ilium Push<span class="ch-tag">Ch 4</span></div><div class="meta">장골 교정</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/hypothenar_sacral_apex_push.mp4" controls preload="metadata"></video><div class="info"><div class="title">Hypothenar Sacral Apex Push<span class="ch-tag">Ch 4</span></div><div class="meta">천골 첨부 교정</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/index_atlas_push_prone_rt.mp4" controls preload="metadata"></video><div class="info"><div class="title">Index Atlas Push — Prone Rt<span class="ch-tag">Ch 5</span></div><div class="meta">복와위 환추 교정</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/index_atlas_push_sup_lt.mp4" controls preload="metadata"></video><div class="info"><div class="title">Index Atlas Push — Supine Lt<span class="ch-tag">Ch 5</span></div><div class="meta">앙와위 좌측 환추</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/index_atlas_push_sup_rt.mp4" controls preload="metadata"></video><div class="info"><div class="title">Index Atlas Push — Supine Rt<span class="ch-tag">Ch 5</span></div><div class="meta">앙와위 우측 환추</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/index_pillar_push_sup_rt.mp4" controls preload="metadata"></video><div class="info"><div class="title">Index Pillar Push — Supine Rt<span class="ch-tag">Ch 5</span></div><div class="meta">Pillar pushing</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/thompson_tech.mp4" controls preload="metadata"></video><div class="info"><div class="title">Thompson Technique<span class="ch-tag">Ch 6</span></div><div class="meta">드롭 테이블 기법</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/activator_tech.mp4" controls preload="metadata"></video><div class="info"><div class="title">Activator Technique<span class="ch-tag">Ch 7</span></div><div class="meta">기구 교정</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/leander_tech.mp4" controls preload="metadata"></video><div class="info"><div class="title">Leander Technique<span class="ch-tag">Ch 8</span></div><div class="meta">자동 유연도 테이블</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/cbp_tech_head.mp4" controls preload="metadata"></video><div class="info"><div class="title">CBP Technique — Head<span class="ch-tag">Ch 11</span></div><div class="meta">두부 Mirror Image®</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/cbp_tech_trunk.mp4" controls preload="metadata"></video><div class="info"><div class="title">CBP Technique — Trunk<span class="ch-tag">Ch 11</span></div><div class="meta">체간 Mirror Image®</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/nimmo_tech.mp4" controls preload="metadata"></video><div class="info"><div class="title">Nimmo Technique<span class="ch-tag">보조</span></div><div class="meta">Receptor-Tonus 기법</div></div></div>
+      <div class="video-card"><video src="./archive/videos/techniques/thumb_movement.mp4" controls preload="metadata"></video><div class="info"><div class="title">Thumb Movement<span class="ch-tag">보조</span></div><div class="meta">접촉 교정 기본</div></div></div>
+    </div>
+  </section>
+
+  <!-- Harvested videos (PPT-tagged filenames) -->
+  <section class="archive-section" id="harvest-videos">
+    <h2>🎬 전체 시연 영상 라이브러리 (80부)<span class="ch-tag">PPT 파일명 prefix 자동 부여</span></h2>
+    <p class="section-lead" style="color:#424245;margin:0 0 16px">
+      모든 드라이브 폴더의 카이로프랙틱/adjust 시연 영상을 PPT 파일명으로 정리한 통합 라이브러리. 썸네일 클릭으로 재생. 파일명은 <code>&lt;PPT-이름&gt;__&lt;영상-이름&gt;.mp4</code> 형식. 추후 사용자가 직접 rename 가능.
+    </p>
+
+    <div class="harvest-toolbar">
+      <input type="search" id="harvest-search" placeholder="🔎 파일명 검색 (예: Atlas, 동영상, Gonstead)"/>
+      <select id="harvest-filter">
+        <option value="">전체 PPT 출처</option>
+      </select>
+      <span class="harvest-count" id="harvest-count"></span>
+    </div>
+
+    <div class="harvest-grid" id="harvest-grid">로딩 중…</div>
+  </section>
+
+  <!-- Lecture Documents -->
+  <section class="archive-section" id="lectures">
+    <h2>📊 강의 자료 (2006-2015)</h2>
+    <div class="asset-grid">
+      <a class="asset-card" href="./archive/lectures/Neurologic Exam 2015.pdf" target="_blank"><span class="icon">📑</span><div class="title">Neurologic Exam 2015</div><div class="meta">PDF · 신경학 검사 강의</div></a>
+      <a class="asset-card" href="./archive/lectures/Chiropractic Neurology.pdf" target="_blank"><span class="icon">📑</span><div class="title">Chiropractic Neurology</div><div class="meta">PDF · Carrick FN 강의</div></a>
+      <a class="asset-card" href="./archive/lectures/Chiropractic (SMT)-장재호.pdf" target="_blank"><span class="icon">📑</span><div class="title">Chiropractic (SMT)</div><div class="meta">PDF · 사용자 발표</div></a>
+      <a class="asset-card" href="./archive/lectures/Chiropractic.pdf" target="_blank"><span class="icon">📑</span><div class="title">Chiropractic</div><div class="meta">PDF · 개요</div></a>
+      <a class="asset-card" href="./archive/lectures/2006chiro광주발표.pdf" target="_blank"><span class="icon">📑</span><div class="title">2006 광주 발표</div><div class="meta">PDF · 초기 발표</div></a>
+      <a class="asset-card" href="./archive/lectures/Chirosymposium.pdf" target="_blank"><span class="icon">📑</span><div class="title">Chiro Symposium</div><div class="meta">PDF · 정형통증학회 2010</div></a>
+      <a class="asset-card" href="./archive/lectures/Chirotech.pdf" target="_blank"><span class="icon">📑</span><div class="title">Chiro Tech</div><div class="meta">PDF · 기법 강의</div></a>
+      <a class="asset-card" href="./archive/lectures/Neurologic examination.docx" target="_blank"><span class="icon">📝</span><div class="title">Neurologic Examination</div><div class="meta">DOCX · 검사 매뉴얼</div></a>
+      <a class="asset-card" href="./archive/lectures/도수치료.hwp" target="_blank"><span class="icon">📝</span><div class="title">도수치료</div><div class="meta">HWP · 한글 문서</div></a>
+      <a class="asset-card" href="./archive/lectures/도수치료-교과서.hwp" target="_blank"><span class="icon">📝</span><div class="title">도수치료 교과서</div><div class="meta">HWP · 한글 문서</div></a>
+    </div>
+  </section>
+
+  <!-- Clinical Cases (X-rays) -->
+  <section class="archive-section" id="clinical-cases">
+    <h2>🩻 환자 X-ray 케이스 (29건)<span class="ch-tag">2015 진료 데이터</span></h2>
+    <p class="section-lead" style="color:#424245;margin:0 0 16px">
+      Spine · Pelvis · Knee arthritis · Ankle/Wrist/Radial head 골절 · Malleolar fracture 등
+    </p>
+    <div class="image-grid" id="xray-grid">로딩 중…</div>
+  </section>
+
+  <!-- Ultrasound -->
+  <section class="archive-section" id="ultrasound">
+    <h2>🔊 초음파 영상 (9건)<span class="ch-tag">Ch 2 FN 해부 보조</span></h2>
+    <div class="image-grid" id="ultrasound-grid">로딩 중…</div>
+  </section>
+
+  <!-- Chiropractic Tables -->
+  <section class="archive-section" id="equipment">
+    <h2>🛠 카이로프랙틱 장비 (18건)</h2>
+    <div class="image-grid" id="equipment-grid">로딩 중…</div>
+  </section>
+
+  <!-- Textbook Library -->
+  <section class="archive-section" id="textbooks">
+    <h2>📚 카이로프랙틱 서가 (13권)<span class="ch-tag">사용자 개인 보유 교재</span></h2>
+    <div class="image-grid" id="textbook-grid">로딩 중…</div>
+  </section>
+
+</main>
+
+<script>
+  async function loadGallery(jsonCategory, gridId) {
+    const res = await fetch('./images/legacy_manifest.json');
+    const m = await res.json();
+    const items = m[jsonCategory] || [];
+    const grid = document.getElementById(gridId);
+    grid.innerHTML = items.map(it =>
+      `<a href="./${it.dst}" target="_blank" title="${it.name}"><img src="./${it.dst}" alt="${it.name}" loading="lazy"/></a>`
+    ).join('');
+  }
+  loadGallery('xray', 'xray-grid');
+  loadGallery('ultrasound', 'ultrasound-grid');
+  loadGallery('table', 'equipment-grid');
+  loadGallery('textbook', 'textbook-grid');
+
+  let harvestData = [];
+  function fmtDuration(s) {
+    if (!s) return '';
+    const m = Math.floor(s / 60), ss = Math.floor(s % 60);
+    return `${m}:${String(ss).padStart(2, '0')}`;
+  }
+  function renderHarvest(filter = '', pptFilter = '') {
+    const grid = document.getElementById('harvest-grid');
+    const q = filter.toLowerCase();
+    const shown = harvestData.filter(v => {
+      const matchText = !q || v.base_name.toLowerCase().includes(q) ||
+                        v.origins.some(o => (o.filename || '').toLowerCase().includes(q));
+      const matchPpt = !pptFilter || v.origins.some(o => o.ppt === pptFilter);
+      return matchText && matchPpt;
+    });
+    document.getElementById('harvest-count').textContent = `${shown.length} / ${harvestData.length}`;
+    grid.innerHTML = shown.map(v => {
+      const firstOrigin = v.origins[0] || {};
+      const pptName = firstOrigin.ppt || '';
+      return `<div class="harvest-card" data-mp4="./${v.mp4}">
+        <div class="thumb-wrap">
+          <img src="./${v.thumb}" alt="${v.base_name}" loading="lazy"/>
+          <video src="./${v.mp4}" controls preload="none"></video>
+          <div class="play-icon">▶</div>
+          <div class="duration">${fmtDuration(v.duration_s)}</div>
+        </div>
+        <div class="meta-box">
+          <div class="name">${v.base_name}.mp4</div>
+          <div class="ppt-tag">${pptName}</div>
+        </div>
+      </div>`;
+    }).join('');
+    grid.querySelectorAll('.harvest-card').forEach(card => {
+      card.addEventListener('click', e => {
+        if (card.classList.contains('playing')) return;
+        card.classList.add('playing');
+        card.querySelector('.play-icon')?.remove();
+        const v = card.querySelector('video');
+        v.play().catch(() => {});
+      });
+    });
+  }
+  async function loadHarvest() {
+    const res = await fetch('./archive/harvest_manifest.json');
+    harvestData = await res.json();
+    harvestData.sort((a, b) => a.base_name.localeCompare(b.base_name, 'ko'));
+    // Populate PPT filter
+    const pptSet = new Set();
+    harvestData.forEach(v => v.origins.forEach(o => o.ppt && pptSet.add(o.ppt)));
+    const sel = document.getElementById('harvest-filter');
+    [...pptSet].sort().forEach(p => {
+      const opt = document.createElement('option');
+      opt.value = p; opt.textContent = p;
+      sel.appendChild(opt);
+    });
+    document.getElementById('harvest-search').addEventListener('input', e => {
+      renderHarvest(e.target.value, sel.value);
+    });
+    sel.addEventListener('change', () => {
+      renderHarvest(document.getElementById('harvest-search').value, sel.value);
+    });
+    renderHarvest();
+  }
+  loadHarvest();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 560" width="780" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .t { font-weight:700; }
+      .s { fill:#6e6e73; font-weight:400; }
+    </style>
+  </defs>
+  <rect width="780" height="560" fill="#fbfbfd"/>
+  <text x="390" y="42" class="label t" text-anchor="middle" font-size="25">임상 사이클 — Assessment 중심의 반복 루프</text>
+  <text x="390" y="68" class="label s" text-anchor="middle" font-size="13">Re-Assessment 없는 치료는 FN이 아니다</text>
+
+  <rect x="280" y="100" width="220" height="70" rx="12" fill="#e6f3ff" stroke="#3182ce" stroke-width="2"/>
+  <text x="390" y="128" class="label t" text-anchor="middle" font-size="17">① Assessment</text>
+  <text x="390" y="150" class="label s" text-anchor="middle" font-size="12">신경·이학·기능 평가</text>
+
+  <rect x="520" y="220" width="220" height="70" rx="12" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="630" y="248" class="label t" text-anchor="middle" font-size="17">② 자극 선정</text>
+  <text x="630" y="270" class="label s" text-anchor="middle" font-size="12">HVLA · VOR · 시운동 · 고유수용</text>
+
+  <rect x="440" y="370" width="220" height="70" rx="12" fill="#f0faf2" stroke="#27ae60" stroke-width="2"/>
+  <text x="550" y="398" class="label t" text-anchor="middle" font-size="17">③ 중추 처리</text>
+  <text x="550" y="420" class="label s" text-anchor="middle" font-size="12">척수 → 뇌간 → 소뇌 → 피질</text>
+
+  <rect x="120" y="370" width="220" height="70" rx="12" fill="#f0faf2" stroke="#27ae60" stroke-width="2"/>
+  <text x="230" y="398" class="label t" text-anchor="middle" font-size="17">④ Efferent 변화</text>
+  <text x="230" y="420" class="label s" text-anchor="middle" font-size="12">근긴장·자세·자율·통증 지각</text>
+
+  <rect x="40" y="220" width="220" height="70" rx="12" fill="#e6f3ff" stroke="#3182ce" stroke-width="2"/>
+  <text x="150" y="248" class="label t" text-anchor="middle" font-size="17">⑤ Re-Assessment</text>
+  <text x="150" y="270" class="label s" text-anchor="middle" font-size="12">전·후 지표 비교</text>
+
+  <path d="M 500 140 Q 580 180 540 220" stroke="#86868b" stroke-width="2.5" fill="none"/>
+  <polygon points="540,220 545,208 555,215" fill="#86868b"/>
+
+  <path d="M 630 290 Q 640 330 600 370" stroke="#86868b" stroke-width="2.5" fill="none"/>
+  <polygon points="600,370 610,362 615,374" fill="#86868b"/>
+
+  <path d="M 440 405 L 340 405" stroke="#86868b" stroke-width="2.5" fill="none"/>
+  <polygon points="340,405 352,399 352,411" fill="#86868b"/>
+
+  <path d="M 180 370 Q 140 330 150 290" stroke="#86868b" stroke-width="2.5" fill="none"/>
+  <polygon points="150,290 158,299 146,302" fill="#86868b"/>
+
+  <path d="M 260 220 Q 320 180 280 140" stroke="#86868b" stroke-width="2.5" fill="none"/>
+  <polygon points="280,140 271,150 285,153" fill="#86868b"/>
+
+  <text x="390" y="310" class="label s" text-anchor="middle" font-size="14" font-style="italic">효과 있으면 지속 · 없으면 자극 수정</text>
+
+  <text x="390" y="530" class="label s" text-anchor="middle" font-size="11">모든 단계에서 근거 기반 판단. Vitalism·과장 주장 배제.</text>
+</svg>

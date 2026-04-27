@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">Afferentation · Deafferentation · Efferentation</text>
+  <text x="480" y="78" class="label sub"   text-anchor="middle" font-size="14">본 강의 전 기법의 공통 해석 프레임</text>
+
+  <rect x="340" y="180" width="280" height="200" rx="18" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="480" y="220" class="label title" text-anchor="middle" font-size="22">중추신경계 (CNS)</text>
+  <text x="480" y="245" class="label sub"   text-anchor="middle" font-size="13">척수 · 뇌간 · 소뇌 · 시상 · 피질</text>
+  <text x="480" y="285" class="label"        text-anchor="middle" font-size="14">• 통합·처리·학습</text>
+  <text x="480" y="308" class="label"        text-anchor="middle" font-size="14">• Gate Control · 하행 조절</text>
+  <text x="480" y="331" class="label"        text-anchor="middle" font-size="14">• Neuroplasticity</text>
+  <text x="480" y="360" class="label sub"    text-anchor="middle" font-size="12">Kandel · Sherrington</text>
+
+  <rect x="40" y="200" width="220" height="120" rx="14" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="150" y="235" class="label title" text-anchor="middle" font-size="18" fill="#8a5a00">Afferentation</text>
+  <text x="150" y="256" class="label sub"   text-anchor="middle" font-size="12">구심성 입력</text>
+  <text x="150" y="285" class="label"        text-anchor="middle" font-size="13">기계수용기 I-IV · 근방추</text>
+  <text x="150" y="305" class="label"        text-anchor="middle" font-size="13">시각 · 전정 · 피부</text>
+
+  <path d="M 260 260 L 340 260" stroke="#0071e3" stroke-width="3" fill="none"/>
+  <polygon points="340,260 325,252 325,268" fill="#0071e3"/>
+
+  <rect x="700" y="200" width="220" height="120" rx="14" fill="#f0faf2" stroke="#27ae60" stroke-width="2"/>
+  <text x="810" y="235" class="label title" text-anchor="middle" font-size="18" fill="#1f7a3f">Efferentation</text>
+  <text x="810" y="256" class="label sub"   text-anchor="middle" font-size="12">원심성 출력</text>
+  <text x="810" y="285" class="label"        text-anchor="middle" font-size="13">α · γ · Renshaw</text>
+  <text x="810" y="305" class="label"        text-anchor="middle" font-size="13">자율 · 하행 조절</text>
+
+  <path d="M 620 260 L 700 260" stroke="#0071e3" stroke-width="3" fill="none"/>
+  <polygon points="700,260 685,252 685,268" fill="#0071e3"/>
+
+  <rect x="280" y="430" width="400" height="90" rx="14" fill="#fdecec" stroke="#c0392b" stroke-width="2"/>
+  <text x="480" y="462" class="label title" text-anchor="middle" font-size="18" fill="#a62528">Deafferentation</text>
+  <text x="480" y="483" class="label sub"   text-anchor="middle" font-size="12">구심성 입력 감소 상태 · 관절 hypomobility · 감각 저하</text>
+  <text x="480" y="505" class="label"       text-anchor="middle" font-size="12">→ 중추 '정보 공백' · 근긴장·자세·통증 감작</text>
+
+  <path d="M 150 320 L 150 475 L 280 475" stroke="#c0392b" stroke-width="3" fill="none" stroke-dasharray="6,4"/>
+  <polygon points="280,475 265,467 265,483" fill="#c0392b"/>
+
+  <path d="M 810 320 Q 810 410 480 430" stroke="#0071e3" stroke-width="3" fill="none" stroke-dasharray="4,3"/>
+  <text x="840" y="400" class="label sub" font-size="11">feedback</text>
+
+  <text x="480" y="545" class="label sub" text-anchor="middle" font-size="11">Pickar 2002 Spine J · Haavik 2012 JEMK · Woolf 2011 Pain · Melzack &amp; Wall 1965 Science</text>
+</svg>

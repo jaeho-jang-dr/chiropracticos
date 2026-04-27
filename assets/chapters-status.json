@@ -1,0 +1,383 @@
+{
+  "1": {
+    "meta": {
+      "num": 1,
+      "slug": null,
+      "file": "chapter01_introduction.html",
+      "title": "서설",
+      "subtitle": "카이로프랙틱 역사·철학·원칙"
+    },
+    "status": {
+      "podcast": null,
+      "video_part1": null,
+      "video_part2": null,
+      "slides": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "reports": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "lecture_md": null,
+      "html": "chapter01_introduction.html"
+    },
+    "ready": 0
+  },
+  "2": {
+    "meta": {
+      "num": 2,
+      "slug": "functional_neurology",
+      "file": "chapter02_functional_neurology.html",
+      "title": "Functional Neurology",
+      "subtitle": "⭐ 진단·치료·평가의 근간",
+      "assets_dir": "functional_neurology/v2",
+      "lecture_dir": "functional_neurology/lecture",
+      "notebook_id": "e4f43415-ed66-4621-a902-c4c450a6925d"
+    },
+    "status": {
+      "podcast": "functional_neurology/v2/01_podcast.m4a",
+      "video_part1": "functional_neurology/v2/02_video_part1_theory.mp4",
+      "video_part2": "functional_neurology/v2/03_video_part2_clinical.mp4",
+      "slides": [
+        "functional_neurology/v2/04_slides_part1_basics.pptx",
+        "functional_neurology/v2/05_slides_part2_aff_def_eff.pptx",
+        "functional_neurology/v2/06_slides_part3_assessment.pptx",
+        "functional_neurology/v2/07_slides_part4_clinical.pptx"
+      ],
+      "reports": [
+        "functional_neurology/v2/08_report_part1.md",
+        "functional_neurology/v2/09_report_part2.md",
+        "functional_neurology/v2/10_report_part3.md",
+        "functional_neurology/v2/11_report_part4.md"
+      ],
+      "lecture_md": "functional_neurology/lecture/chapter02_functional_neurology.md",
+      "html": "chapter02_functional_neurology.html"
+    },
+    "ready": 11
+  },
+  "3": {
+    "meta": {
+      "num": 3,
+      "slug": "diversified",
+      "file": "chapter03_diversified.html",
+      "title": "Diversified HVLA",
+      "subtitle": "미국 DC 95.9% 사용 · 기본기",
+      "assets_dir": "diversified",
+      "lecture_dir": "diversified/lecture",
+      "notebook_id": "291e66c6-c8b5-4de0-9ef9-f3bab92ac4ff"
+    },
+    "status": {
+      "podcast": "diversified/01_podcast_deepdive.m4a",
+      "video_part1": "diversified/02_video_part1_week12.mp4",
+      "video_part2": "diversified/03_video_part2_week34.mp4",
+      "slides": [
+        "diversified/04_slides_week1.pptx",
+        "diversified/05_slides_week2.pptx",
+        "diversified/06_slides_week3.pptx",
+        "diversified/07_slides_week4.pptx"
+      ],
+      "reports": [
+        "diversified/08_report_week1.md",
+        "diversified/09_report_week2.md",
+        "diversified/10_report_week3.md",
+        "diversified/11_report_week4.md"
+      ],
+      "lecture_md": "diversified/lecture/week1_history_foundations.md",
+      "html": "chapter03_diversified.html"
+    },
+    "ready": 11
+  },
+  "4": {
+    "meta": {
+      "num": 4,
+      "slug": "gonstead",
+      "file": "chapter04_gonstead.html",
+      "title": "Gonstead Technique",
+      "subtitle": "5 Components · X-ray listing",
+      "assets_dir": "gonstead",
+      "lecture_dir": "gonstead/lecture",
+      "notebook_id": "4e8b2040-ae5a-438c-90ad-a8acc7a542f2"
+    },
+    "status": {
+      "podcast": "gonstead/01_podcast.m4a",
+      "video_part1": "gonstead/02_video_part1.mp4",
+      "video_part2": "gonstead/03_video_part2.mp4",
+      "slides": [
+        "gonstead/04_slides_part1.pptx",
+        "gonstead/05_slides_part2.pptx",
+        "gonstead/06_slides_part3.pptx",
+        "gonstead/07_slides_part4.pptx"
+      ],
+      "reports": [
+        "gonstead/08_report_week1.md",
+        "gonstead/09_report_week2.md",
+        "gonstead/010_report_week3.md",
+        "gonstead/011_report_week4.md"
+      ],
+      "lecture_md": "gonstead/lecture/chapter04_gonstead.md",
+      "html": "chapter04_gonstead.html"
+    },
+    "ready": 11
+  },
+  "5": {
+    "meta": {
+      "num": 5,
+      "slug": "toggle_recoil",
+      "file": "chapter05_toggle_recoil.html",
+      "title": "Toggle Recoil (HIO)",
+      "subtitle": "상부경추 특이 · 🔴 HIO 비판",
+      "assets_dir": "toggle_recoil",
+      "lecture_dir": "toggle_recoil/lecture",
+      "notebook_id": "2b8b7956-cc5e-4591-a0c1-b0904f95d591"
+    },
+    "status": {
+      "podcast": "toggle_recoil/01_podcast.m4a",
+      "video_part1": "toggle_recoil/02_video_part1.mp4",
+      "video_part2": "toggle_recoil/03_video_part2.mp4",
+      "slides": [
+        "toggle_recoil/04_slides_part1.pptx",
+        "toggle_recoil/05_slides_part2.pptx",
+        "toggle_recoil/06_slides_part3.pptx",
+        "toggle_recoil/07_slides_part4.pptx"
+      ],
+      "reports": [
+        "toggle_recoil/08_report_week1.md",
+        "toggle_recoil/09_report_week2.md",
+        "toggle_recoil/010_report_week3.md",
+        "toggle_recoil/011_report_week4.md"
+      ],
+      "lecture_md": "toggle_recoil/lecture/chapter05_toggle_recoil.md",
+      "html": "chapter05_toggle_recoil.html"
+    },
+    "ready": 11
+  },
+  "6": {
+    "meta": {
+      "num": 6,
+      "slug": "thompson",
+      "file": "chapter06_thompson.html",
+      "title": "Thompson",
+      "subtitle": "드롭 테이블 · Derifield leg check",
+      "assets_dir": "thompson",
+      "lecture_dir": "thompson/lecture",
+      "notebook_id": "b01b6979-fff3-432e-b62c-d351a389b853"
+    },
+    "status": {
+      "podcast": "thompson/01_podcast.m4a",
+      "video_part1": "thompson/02_video_part1.mp4",
+      "video_part2": "thompson/03_video_part2.mp4",
+      "slides": [
+        "thompson/04_slides_part1.pptx",
+        "thompson/05_slides_part2.pptx",
+        "thompson/06_slides_part3.pptx",
+        "thompson/07_slides_part4.pptx"
+      ],
+      "reports": [
+        "thompson/08_report_week1.md",
+        "thompson/09_report_week2.md",
+        "thompson/010_report_week3.md",
+        "thompson/011_report_week4.md"
+      ],
+      "lecture_md": "thompson/lecture/chapter06_thompson.md",
+      "html": "chapter06_thompson.html"
+    },
+    "ready": 11
+  },
+  "7": {
+    "meta": {
+      "num": 7,
+      "slug": "activator",
+      "file": "chapter07_activator.html",
+      "title": "Activator Methods",
+      "subtitle": "기구 교정 · NIH grant 수혜",
+      "assets_dir": "activator",
+      "lecture_dir": "activator/lecture",
+      "notebook_id": "b250bba3-2ff3-44e1-9bd0-3b0fb26aaabd"
+    },
+    "status": {
+      "podcast": "activator/01_podcast.m4a",
+      "video_part1": "activator/02_video_part1.mp4",
+      "video_part2": "activator/03_video_part2.mp4",
+      "slides": [
+        "activator/04_slides_part1.pptx",
+        "activator/05_slides_part2.pptx",
+        "activator/06_slides_part3.pptx",
+        "activator/07_slides_part4.pptx"
+      ],
+      "reports": [
+        "activator/08_report_week1.md",
+        "activator/09_report_week2.md",
+        "activator/010_report_week3.md",
+        "activator/011_report_week4.md"
+      ],
+      "lecture_md": "activator/lecture/chapter07_activator.md",
+      "html": "chapter07_activator.html"
+    },
+    "ready": 11
+  },
+  "8": {
+    "meta": {
+      "num": 8,
+      "slug": "cox",
+      "file": "chapter08_cox.html",
+      "title": "Cox Flexion-Distraction",
+      "subtitle": "척추 감압 · 디스크·신경근증",
+      "assets_dir": "cox",
+      "lecture_dir": "cox/lecture",
+      "notebook_id": "4c81bbd8-19e9-4727-9e48-eaf5a0a389b2"
+    },
+    "status": {
+      "podcast": "cox/01_podcast.m4a",
+      "video_part1": "cox/02_video_part1.mp4",
+      "video_part2": "cox/03_video_part2.mp4",
+      "slides": [
+        "cox/04_slides_part1.pptx",
+        "cox/05_slides_part2.pptx",
+        "cox/06_slides_part3.pptx",
+        "cox/07_slides_part4.pptx"
+      ],
+      "reports": [
+        "cox/08_report_week1.md",
+        "cox/09_report_week2.md",
+        "cox/010_report_week3.md",
+        "cox/011_report_week4.md"
+      ],
+      "lecture_md": "cox/lecture/chapter08_cox.md",
+      "html": "chapter08_cox.html"
+    },
+    "ready": 11
+  },
+  "9": {
+    "meta": {
+      "num": 9,
+      "slug": "logan",
+      "file": "chapter09_logan.html",
+      "title": "Logan Basic",
+      "subtitle": "천골 저강도 · 임산부·소아",
+      "assets_dir": "logan",
+      "lecture_dir": "logan/lecture",
+      "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968"
+    },
+    "status": {
+      "podcast": "logan/01_podcast.m4a",
+      "video_part1": "logan/02_video_part1.mp4",
+      "video_part2": "logan/03_video_part2.mp4",
+      "slides": [
+        "logan/04_slides_part1.pptx",
+        "logan/05_slides_part2.pptx",
+        "logan/06_slides_part3.pptx",
+        "logan/07_slides_part4.pptx"
+      ],
+      "reports": [
+        "logan/08_report_week1.md",
+        "logan/09_report_week2.md",
+        "logan/010_report_week3.md",
+        "logan/011_report_week4.md"
+      ],
+      "lecture_md": "logan/lecture/chapter09_logan.md",
+      "html": "chapter09_logan.html"
+    },
+    "ready": 11
+  },
+  "10": {
+    "meta": {
+      "num": 10,
+      "slug": "sot",
+      "file": "chapter10_sot.html",
+      "title": "Sacro-Occipital Technique",
+      "subtitle": "Category I/II/III · 🔴 Cranial 비판",
+      "assets_dir": "sot",
+      "lecture_dir": "sot/lecture",
+      "notebook_id": "2b73a534-51e0-4404-8538-7b60bc4dc780"
+    },
+    "status": {
+      "podcast": "sot/01_podcast.m4a",
+      "video_part1": "sot/02_video_part1.mp4",
+      "video_part2": "sot/03_video_part2.mp4",
+      "slides": [
+        "sot/04_slides_part1.pptx",
+        "sot/05_slides_part2.pptx",
+        "sot/06_slides_part3.pptx",
+        "sot/07_slides_part4.pptx"
+      ],
+      "reports": [
+        "sot/08_report_week1.md",
+        "sot/09_report_week2.md",
+        "sot/010_report_week3.md",
+        "sot/011_report_week4.md"
+      ],
+      "lecture_md": "sot/lecture/chapter10_sot.md",
+      "html": "chapter10_sot.html"
+    },
+    "ready": 11
+  },
+  "11": {
+    "meta": {
+      "num": 11,
+      "slug": "cbp",
+      "file": "chapter11_cbp.html",
+      "title": "Harrison CBP",
+      "subtitle": "수학 기반 · Mirror Image® · Denneroll",
+      "assets_dir": "cbp",
+      "lecture_dir": "cbp/lecture",
+      "notebook_id": "37eea36e-8142-45af-b223-108d078ebd09"
+    },
+    "status": {
+      "podcast": "cbp/01_podcast.m4a",
+      "video_part1": "cbp/02_video_part1.mp4",
+      "video_part2": "cbp/03_video_part2.mp4",
+      "slides": [
+        "cbp/04_slides_part1.pptx",
+        "cbp/05_slides_part2.pptx",
+        "cbp/06_slides_part3.pptx",
+        "cbp/07_slides_part4.pptx"
+      ],
+      "reports": [
+        "cbp/08_report_week1.md",
+        "cbp/09_report_week2.md",
+        "cbp/010_report_week3.md",
+        "cbp/011_report_week4.md"
+      ],
+      "lecture_md": "cbp/lecture/chapter11_cbp.md",
+      "html": "chapter11_cbp.html"
+    },
+    "ready": 11
+  },
+  "12": {
+    "meta": {
+      "num": 12,
+      "slug": "ak",
+      "file": "chapter12_ak.html",
+      "title": "Applied Kinesiology",
+      "subtitle": "MMT · 🔴 AK 확장 진단 근거 없음",
+      "assets_dir": "ak",
+      "lecture_dir": "ak/lecture",
+      "notebook_id": "416ef164-398d-46f0-8d11-45558467bd7f"
+    },
+    "status": {
+      "podcast": "ak/01_podcast.m4a",
+      "video_part1": "ak/02_video_part1.mp4",
+      "video_part2": "ak/03_video_part2.mp4",
+      "slides": [
+        "ak/04_slides_part1.pptx",
+        "ak/05_slides_part2.pptx",
+        "ak/06_slides_part3.pptx",
+        "ak/07_slides_part4.pptx"
+      ],
+      "reports": [
+        "ak/08_report_week1.md",
+        "ak/09_report_week2.md",
+        "ak/010_report_week3.md",
+        "ak/011_report_week4.md"
+      ],
+      "lecture_md": "ak/lecture/chapter12_ak.md",
+      "html": "chapter12_ak.html"
+    },
+    "ready": 11
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "textbook": [
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\01 bergmann.jpg",
+      "dst": "images/chapter1/references/01 bergmann.jpg",
+      "name": "01 bergmann.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\02 Greenmann Princ of Man Med.jpg",
+      "dst": "images/chapter1/references/02 Greenmann Princ of Man Med.jpg",
+      "name": "02 Greenmann Princ of Man Med.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\03 state manual.jpg",
+      "dst": "images/chapter1/references/03 state manual.jpg",
+      "name": "03 state manual.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\04Motion Palpation.jpg",
+      "dst": "images/chapter1/references/04Motion Palpation.jpg",
+      "name": "04Motion Palpation.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\05Neuroanatomy carpenter.jpg",
+      "dst": "images/chapter1/references/05Neuroanatomy carpenter.jpg",
+      "name": "05Neuroanatomy carpenter.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\06Neurologic Diff Dx Patten.jpg",
+      "dst": "images/chapter1/references/06Neurologic Diff Dx Patten.jpg",
+      "name": "06Neurologic Diff Dx Patten.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\07Neural scienct Kandel & Sch.jpg",
+      "dst": "images/chapter1/references/07Neural scienct Kandel & Sch.jpg",
+      "name": "07Neural scienct Kandel & Sch.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\08Upper cervical Sub Complex.jpg",
+      "dst": "images/chapter1/references/08Upper cervical Sub Complex.jpg",
+      "name": "08Upper cervical Sub Complex.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\09Myofascial pain Janet.jpg",
+      "dst": "images/chapter1/references/09Myofascial pain Janet.jpg",
+      "name": "09Myofascial pain Janet.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\10 activator.jpg",
+      "dst": "images/chapter1/references/10 activator.jpg",
+      "name": "10 activator.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\11AK.jpg",
+      "dst": "images/chapter1/references/11AK.jpg",
+      "name": "11AK.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\12Neuroanatomy Fitzgerald.jpg",
+      "dst": "images/chapter1/references/12Neuroanatomy Fitzgerald.jpg",
+      "name": "12Neuroanatomy Fitzgerald.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로책\\13Foundation of chiropractic Gatterman.jpg",
+      "dst": "images/chapter1/references/13Foundation of chiropractic Gatterman.jpg",
+      "name": "13Foundation of chiropractic Gatterman.jpg"
+    }
+  ],
+  "ultrasound": [
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\초음파영상\\C6 Nerve Root.jpg",
+      "dst": "images/chapter2/ultrasound/C6 Nerve Root.jpg",
+      "name": "C6 Nerve Root.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\초음파영상\\L Spine Fascet.jpg",
+      "dst": "images/chapter2/ultrasound/L Spine Fascet.jpg",
+      "name": "L Spine Fascet.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\초음파영상\\L Spine Lamina.jpg",
+      "dst": "images/chapter2/ultrasound/L Spine Lamina.jpg",
+      "name": "L Spine Lamina.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\초음파영상\\L Spine SP.jpg",
+      "dst": "images/chapter2/ultrasound/L Spine SP.jpg",
+      "name": "L Spine SP.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\초음파영상\\L Spine TP.jpg",
+      "dst": "images/chapter2/ultrasound/L Spine TP.jpg",
+      "name": "L Spine TP.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\초음파영상\\L Spine Transverse view.jpg",
+      "dst": "images/chapter2/ultrasound/L Spine Transverse view.jpg",
+      "name": "L Spine Transverse view.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\초음파영상\\MCL Ruptured.jpg",
+      "dst": "images/chapter2/ultrasound/MCL Ruptured.jpg",
+      "name": "MCL Ruptured.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\초음파영상\\Sacrum S1 foramen.jpg",
+      "dst": "images/chapter2/ultrasound/Sacrum S1 foramen.jpg",
+      "name": "Sacrum S1 foramen.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\초음파영상\\최문자.jpg",
+      "dst": "images/chapter2/ultrasound/최문자.jpg",
+      "name": "최문자.jpg"
+    }
+  ],
+  "stance": [
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Fencer stance.jpg",
+      "dst": "images/chapter5/stances/Fencer stance.jpg",
+      "name": "Fencer stance.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Toggle stance.jpg",
+      "dst": "images/chapter5/stances/Toggle stance.jpg",
+      "name": "Toggle stance.jpg"
+    }
+  ],
+  "table": [
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150610_IMG_0396.JPG",
+      "dst": "images/equipment/tables/20150405150610_IMG_0396.JPG",
+      "name": "20150405150610_IMG_0396.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150610_IMG_0396.JPG",
+      "dst": "images/equipment/tables/20150405150610_IMG_0396.JPG",
+      "name": "20150405150610_IMG_0396.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150614_IMG_0397.JPG",
+      "dst": "images/equipment/tables/20150405150614_IMG_0397.JPG",
+      "name": "20150405150614_IMG_0397.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150614_IMG_0397.JPG",
+      "dst": "images/equipment/tables/20150405150614_IMG_0397.JPG",
+      "name": "20150405150614_IMG_0397.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150701_IMG_0398.JPG",
+      "dst": "images/equipment/tables/20150405150701_IMG_0398.JPG",
+      "name": "20150405150701_IMG_0398.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150701_IMG_0398.JPG",
+      "dst": "images/equipment/tables/20150405150701_IMG_0398.JPG",
+      "name": "20150405150701_IMG_0398.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150707_IMG_0399.JPG",
+      "dst": "images/equipment/tables/20150405150707_IMG_0399.JPG",
+      "name": "20150405150707_IMG_0399.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150707_IMG_0399.JPG",
+      "dst": "images/equipment/tables/20150405150707_IMG_0399.JPG",
+      "name": "20150405150707_IMG_0399.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150723_IMG_0400.JPG",
+      "dst": "images/equipment/tables/20150405150723_IMG_0400.JPG",
+      "name": "20150405150723_IMG_0400.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150723_IMG_0400.JPG",
+      "dst": "images/equipment/tables/20150405150723_IMG_0400.JPG",
+      "name": "20150405150723_IMG_0400.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150736_IMG_0401.JPG",
+      "dst": "images/equipment/tables/20150405150736_IMG_0401.JPG",
+      "name": "20150405150736_IMG_0401.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150736_IMG_0401.JPG",
+      "dst": "images/equipment/tables/20150405150736_IMG_0401.JPG",
+      "name": "20150405150736_IMG_0401.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150909_IMG_0402.JPG",
+      "dst": "images/equipment/tables/20150405150909_IMG_0402.JPG",
+      "name": "20150405150909_IMG_0402.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150909_IMG_0402.JPG",
+      "dst": "images/equipment/tables/20150405150909_IMG_0402.JPG",
+      "name": "20150405150909_IMG_0402.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150915_IMG_0403.JPG",
+      "dst": "images/equipment/tables/20150405150915_IMG_0403.JPG",
+      "name": "20150405150915_IMG_0403.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\20150405150915_IMG_0403.JPG",
+      "dst": "images/equipment/tables/20150405150915_IMG_0403.JPG",
+      "name": "20150405150915_IMG_0403.JPG"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\Leander table.jpg",
+      "dst": "images/equipment/tables/Leander table.jpg",
+      "name": "Leander table.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\카이로테이블\\Leander table.jpg",
+      "dst": "images/equipment/tables/Leander table.jpg",
+      "name": "Leander table.jpg"
+    }
+  ],
+  "xray": [
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\ankle ap arthritis 1 금춘연.jpg",
+      "dst": "images/clinical_cases/xrays/ankle ap arthritis 1 금춘연.jpg",
+      "name": "ankle ap arthritis 1 금춘연.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\ankle lat arthritis 1 금춘연.jpg",
+      "dst": "images/clinical_cases/xrays/ankle lat arthritis 1 금춘연.jpg",
+      "name": "ankle lat arthritis 1 금춘연.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\arthritis g2 ap 안종원.jpg",
+      "dst": "images/clinical_cases/xrays/arthritis g2 ap 안종원.jpg",
+      "name": "arthritis g2 ap 안종원.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\arthritis g2 lat 안종원.jpg",
+      "dst": "images/clinical_cases/xrays/arthritis g2 lat 안종원.jpg",
+      "name": "arthritis g2 lat 안종원.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\both knee ap g 4 남성자.jpg",
+      "dst": "images/clinical_cases/xrays/both knee ap g 4 남성자.jpg",
+      "name": "both knee ap g 4 남성자.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\both knee g 1 2 ap 허재석.jpg",
+      "dst": "images/clinical_cases/xrays/both knee g 1 2 ap 허재석.jpg",
+      "name": "both knee g 1 2 ap 허재석.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\both knee g 1 ap 배진선.jpg",
+      "dst": "images/clinical_cases/xrays/both knee g 1 ap 배진선.jpg",
+      "name": "both knee g 1 ap 배진선.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\both knee g 4 ap 김순자.jpg",
+      "dst": "images/clinical_cases/xrays/both knee g 4 ap 김순자.jpg",
+      "name": "both knee g 4 ap 김순자.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\knee arthritis g4 ap 김순조.jpg",
+      "dst": "images/clinical_cases/xrays/knee arthritis g4 ap 김순조.jpg",
+      "name": "knee arthritis g4 ap 김순조.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\L spine lat 다발성척추골절 진인순.jpg",
+      "dst": "images/clinical_cases/xrays/L spine lat 다발성척추골절 진인순.jpg",
+      "name": "L spine lat 다발성척추골절 진인순.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\lat maleolar tip fx ap 손진흥.jpg",
+      "dst": "images/clinical_cases/xrays/lat maleolar tip fx ap 손진흥.jpg",
+      "name": "lat maleolar tip fx ap 손진흥.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\lat mall fx ap 박분옥.jpg",
+      "dst": "images/clinical_cases/xrays/lat mall fx ap 박분옥.jpg",
+      "name": "lat mall fx ap 박분옥.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\lat mall fx lat 박분옥.jpg",
+      "dst": "images/clinical_cases/xrays/lat mall fx lat 박분옥.jpg",
+      "name": "lat mall fx lat 박분옥.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\lat mall fx mortise 박분옥.jpg",
+      "dst": "images/clinical_cases/xrays/lat mall fx mortise 박분옥.jpg",
+      "name": "lat mall fx mortise 박분옥.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\lat malleolar fx ap 신현자.jpg",
+      "dst": "images/clinical_cases/xrays/lat malleolar fx ap 신현자.jpg",
+      "name": "lat malleolar fx ap 신현자.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\lat malleolar fx ap 연금연.jpg",
+      "dst": "images/clinical_cases/xrays/lat malleolar fx ap 연금연.jpg",
+      "name": "lat malleolar fx ap 연금연.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\lat malleolar fx lat 신현자.jpg",
+      "dst": "images/clinical_cases/xrays/lat malleolar fx lat 신현자.jpg",
+      "name": "lat malleolar fx lat 신현자.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\med malleolar fx ap 홍주신.jpg",
+      "dst": "images/clinical_cases/xrays/med malleolar fx ap 홍주신.jpg",
+      "name": "med malleolar fx ap 홍주신.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\med malleolar fx lat 홍주신.jpg",
+      "dst": "images/clinical_cases/xrays/med malleolar fx lat 홍주신.jpg",
+      "name": "med malleolar fx lat 홍주신.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\medial and post mall fx ap 신장섭.jpg",
+      "dst": "images/clinical_cases/xrays/medial and post mall fx ap 신장섭.jpg",
+      "name": "medial and post mall fx ap 신장섭.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\medial and post mall fx mortise  신장섭.jpg",
+      "dst": "images/clinical_cases/xrays/medial and post mall fx mortise  신장섭.jpg",
+      "name": "medial and post mall fx mortise  신장섭.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\김갑선 38082 Radial head Fx ap.jpg",
+      "dst": "images/clinical_cases/xrays/김갑선 38082 Radial head Fx ap.jpg",
+      "name": "김갑선 38082 Radial head Fx ap.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\김갑선 38082 Radial head Fx lat.jpg",
+      "dst": "images/clinical_cases/xrays/김갑선 38082 Radial head Fx lat.jpg",
+      "name": "김갑선 38082 Radial head Fx lat.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\김윤영 Whole spine Ap.jpg",
+      "dst": "images/clinical_cases/xrays/김윤영 Whole spine Ap.jpg",
+      "name": "김윤영 Whole spine Ap.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\김윤영 Whole spine lat.jpg",
+      "dst": "images/clinical_cases/xrays/김윤영 Whole spine lat.jpg",
+      "name": "김윤영 Whole spine lat.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\박숙이 Wrist colles fx lat.jpg",
+      "dst": "images/clinical_cases/xrays/박숙이 Wrist colles fx lat.jpg",
+      "name": "박숙이 Wrist colles fx lat.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\박숙이 Wrist colles fxap.jpg",
+      "dst": "images/clinical_cases/xrays/박숙이 Wrist colles fxap.jpg",
+      "name": "박숙이 Wrist colles fxap.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\양옥인 Pelvis Ap.jpg",
+      "dst": "images/clinical_cases/xrays/양옥인 Pelvis Ap.jpg",
+      "name": "양옥인 Pelvis Ap.jpg"
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\환자케이스 2015 01\\이현선 84004 GReat toe fx ap.jpg",
+      "dst": "images/clinical_cases/xrays/이현선 84004 GReat toe fx ap.jpg",
+      "name": "이현선 84004 GReat toe fx ap.jpg"
+    }
+  ]
+}

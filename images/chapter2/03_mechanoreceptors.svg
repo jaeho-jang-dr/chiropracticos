@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="960" height="480">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .t     { font-weight:700; }
+      .s     { fill:#6e6e73; font-weight:400; }
+    </style>
+  </defs>
+  <rect width="960" height="480" fill="#fbfbfd"/>
+
+  <text x="480" y="45" class="label t" text-anchor="middle" font-size="26">관절 기계수용기 4유형 (Freeman &amp; Wyke 1967)</text>
+  <text x="480" y="70" class="label s" text-anchor="middle" font-size="13">HVLA 추력·MOB·운동이 각 유형을 선택적으로 활성화</text>
+
+  <rect x="40"  y="110" width="210" height="310" rx="14" fill="#fff" stroke="#d2d2d7"/>
+  <circle cx="145" cy="165" r="32" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="145" y="172" class="label t" text-anchor="middle" font-size="20" fill="#8a5a00">I</text>
+  <text x="145" y="225" class="label t" text-anchor="middle" font-size="17">Ruffini</text>
+  <text x="60"  y="260" class="label s" font-size="13">위치: 관절낭 표층</text>
+  <text x="60"  y="285" class="label s" font-size="13">적응: 서서히</text>
+  <text x="60"  y="310" class="label s" font-size="13">자극: 정적 압력</text>
+  <text x="60"  y="340" class="label t" font-size="13">임상 의의</text>
+  <text x="60"  y="360" class="label s" font-size="12">• 정적 자세 감지</text>
+  <text x="60"  y="380" class="label s" font-size="12">• 관절 위치감각</text>
+  <text x="60"  y="400" class="label s" font-size="12">• 끝범위 시작 감지</text>
+
+  <rect x="270" y="110" width="210" height="310" rx="14" fill="#fff" stroke="#d2d2d7"/>
+  <circle cx="375" cy="165" r="32" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="375" y="172" class="label t" text-anchor="middle" font-size="20" fill="#8a5a00">II</text>
+  <text x="375" y="225" class="label t" text-anchor="middle" font-size="17">Pacinian</text>
+  <text x="290" y="260" class="label s" font-size="13">위치: 심부 관절낭·인대</text>
+  <text x="290" y="285" class="label s" font-size="13">적응: 빠르게</text>
+  <text x="290" y="310" class="label s" font-size="13">자극: 진동·가속</text>
+  <text x="290" y="340" class="label t" font-size="13">임상 의의</text>
+  <text x="290" y="360" class="label s" font-size="12">• 빠른 움직임 감지</text>
+  <text x="290" y="380" class="label s" font-size="12">• HVLA의 주 타겟</text>
+  <text x="290" y="400" class="label s" font-size="12">• 진동 치료 반응</text>
+
+  <rect x="500" y="110" width="210" height="310" rx="14" fill="#fff" stroke="#d2d2d7"/>
+  <circle cx="605" cy="165" r="32" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="605" y="172" class="label t" text-anchor="middle" font-size="20" fill="#8a5a00">III</text>
+  <text x="605" y="225" class="label t" text-anchor="middle" font-size="17">Golgi (인대)</text>
+  <text x="520" y="260" class="label s" font-size="13">위치: 인대</text>
+  <text x="520" y="285" class="label s" font-size="13">적응: 고역치</text>
+  <text x="520" y="310" class="label s" font-size="13">자극: 끝범위·장력</text>
+  <text x="520" y="340" class="label t" font-size="13">임상 의의</text>
+  <text x="520" y="360" class="label s" font-size="12">• 관절 보호 반사</text>
+  <text x="520" y="380" class="label s" font-size="12">• 과도 스트레치 차단</text>
+  <text x="520" y="400" class="label s" font-size="12">• MET 주요 기전</text>
+
+  <rect x="730" y="110" width="210" height="310" rx="14" fill="#fff" stroke="#d2d2d7"/>
+  <circle cx="835" cy="165" r="32" fill="#fdecec" stroke="#c0392b" stroke-width="2"/>
+  <text x="835" y="172" class="label t" text-anchor="middle" font-size="20" fill="#a62528">IV</text>
+  <text x="835" y="225" class="label t" text-anchor="middle" font-size="17">자유신경종말</text>
+  <text x="750" y="260" class="label s" font-size="13">위치: 전조직 분포</text>
+  <text x="750" y="285" class="label s" font-size="13">적응: 다양</text>
+  <text x="750" y="310" class="label s" font-size="13">자극: 통각·염증</text>
+  <text x="750" y="340" class="label t" font-size="13">임상 의의</text>
+  <text x="750" y="360" class="label s" font-size="12">• 통증 감지 (Aδ·C)</text>
+  <text x="750" y="380" class="label s" font-size="12">• 염증성 통증</text>
+  <text x="750" y="400" class="label s" font-size="12">• 만성 감작 시 과민</text>
+
+  <text x="480" y="460" class="label s" text-anchor="middle" font-size="11">Wyke BD. Articular neurology — a review. Physiotherapy 1972;58:94-99.</text>
+</svg>

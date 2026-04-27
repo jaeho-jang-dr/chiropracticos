@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gonstead Technique | Chiropractic</title>
+  <meta name="description" content="Chapter 4. Gonstead Technique — 5 Components 특이적 분석 · X-ray listing · Level Disc Theory. 근거 기반, 비판적 시각 포함." />
+  <link rel="stylesheet" href="./assets/main.css" />
+
+<style id="gonstead-protocol-css">
+/* Gonstead per-region protocol cards */
+.gs-region {
+  margin: 2.5rem 0;
+  padding: 0;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,.05);
+}
+.gs-region-head {
+  padding: 24px 32px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.gs-region-head h3 { margin: 0 0 6px; font-size: 1.45em; }
+.gs-region-head .sub { color: #64748b; font-size: .95em; }
+.gs-region-body { padding: 24px 32px; }
+
+/* Required X-ray views box */
+.gs-xray-needs {
+  background: #fef3c7;
+  border-left: 4px solid #f59e0b;
+  padding: 16px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.gs-xray-needs h4 { margin: 0 0 8px; font-size: 1em; color: #78350f; }
+.gs-xray-needs ul { margin: 0; padding-left: 1.4rem; font-size: .92em; }
+.gs-xray-needs li { margin: 4px 0; }
+
+/* Listing card: 2-col grid (X-ray+schema | treatment details) */
+.gs-listing {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 24px;
+  margin: 1.75rem 0 1.5rem;
+  padding: 20px;
+  background: #fafbfc;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 14px;
+}
+@media (max-width: 900px) {
+  .gs-listing { grid-template-columns: 1fr; }
+}
+.gs-listing h4 {
+  margin: 0 0 10px;
+  font-size: 1.18em;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+.gs-listing h5 {
+  margin: 1rem 0 6px;
+  font-size: .95em;
+  color: #1d1d1f;
+}
+.gs-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.gs-xray-box {
+  aspect-ratio: 4/5;
+  background: #1e293b;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cbd5e1;
+  font-size: .82em;
+  padding: 16px;
+  text-align: center;
+  line-height: 1.5;
+  position: relative;
+}
+.gs-xray-box.has-image { padding: 0; }
+.gs-xray-box img { width: 100%; height: 100%; object-fit: contain; border-radius: 8px; }
+.gs-xray-box .caption {
+  position: absolute; bottom: 6px; left: 6px; right: 6px;
+  background: rgba(0,0,0,.65); color: #fff;
+  font-size: .72em; padding: 4px 8px; border-radius: 4px;
+  line-height: 1.3;
+}
+.gs-schema {
+  padding: 12px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 8px;
+  text-align: center;
+}
+.gs-schema svg { max-width: 100%; height: auto; }
+.gs-schema .cap { font-size: .78em; color: #64748b; margin-top: 4px; }
+
+/* Treatment detail grid */
+.gs-detail-grid {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px 14px;
+  font-size: .92em;
+}
+.gs-detail-grid dt {
+  font-weight: 700;
+  color: #475569;
+  padding-top: 2px;
+}
+.gs-detail-grid dd { margin: 0; color: #1e293b; }
+.gs-symptoms {
+  background: #fef2f2;
+  border-left: 3px solid #dc2626;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin: 8px 0 12px;
+  font-size: .9em;
+}
+.gs-symptoms strong { color: #7f1d1d; }
+.gs-lod {
+  background: #ecfdf5;
+  border-left: 3px solid #059669;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin: 10px 0;
+  font-size: .92em;
+}
+.gs-lod strong { color: #065f46; }
+
+/* Learning resources (videos) per region */
+.gs-learning {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px dashed rgba(0,0,0,.08);
+}
+.gs-learning h4 {
+  margin: 0 0 1rem;
+  font-size: 1.1em;
+  color: #1e293b;
+}
+.gs-video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 760px) {
+  .gs-video-grid { grid-template-columns: 1fr; }
+}
+.gs-video-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.gs-video-card iframe {
+  width: 100%;
+  height: 260px;
+  border: 0;
+  display: block;
+  background: #000;
+}
+.gs-video-card .gs-vc-head {
+  padding: 10px 14px;
+  font-size: .9em;
+  font-weight: 600;
+}
+.gs-video-card.gonstead .gs-vc-head { background: #fef3c7; color: #78350f; }
+.gs-video-card.anatomy .gs-vc-head { background: #dbeafe; color: #1e3a8a; }
+.gs-video-card .gs-vc-meta {
+  padding: 6px 14px 10px;
+  font-size: .78em;
+  color: #64748b;
+}
+</style>
+
+<style id="legacy-archive-css">
+.archive-inline { margin: 3rem 0; }
+.archive-inline .video-thumb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 1rem;
+}
+.archive-inline .video-card {
+  background: #fff; border: 1px solid rgba(0,0,0,.08); border-radius: 14px; overflow: hidden;
+}
+.archive-inline .video-card video {
+  width: 100%; height: 180px; background: #000; object-fit: contain;
+}
+.archive-inline .video-card .info { padding: 10px 14px; }
+.archive-inline .video-card .title { font-weight: 600; font-size: .92em; }
+.archive-inline .video-card .meta { font-size: .78em; color: #86868b; }
+</style>
+  <script src="./assets/config.js"></script>
+  <script type="module" src="./assets/auth-guard.js"></script>
+</head>
+<body>
+
+  <!-- archive link injected -->
+  <nav class="site-nav" aria-label="주 메뉴">
+    <div class="nav-inner">
+      <a class="nav-brand" href="./index.html"><span class="mark"></span><span>Chiropractic</span></a>
+      <ul class="nav-links">
+        <li><a href="./index.html#core">철학</a></li>
+        <li><a href="./index.html#history">역사</a></li>
+        <li><a href="./index.html#curriculum">커리큘럼</a></li>
+        <li><a href="./index.html#format">학습 포맷</a></li>
+        <li><a href="./index.html#principle">원칙</a></li>
+        <li><a href="./archive.html">📂 아카이브</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-ghost btn-sm" href="./login.html">로그인</a>
+        <a class="btn btn-primary btn-sm" href="./index.html#curriculum">커리큘럼</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-chapter">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="./index.html">Chiropractic</a>&nbsp;/&nbsp;<a href="./index.html#curriculum">커리큘럼</a>&nbsp;/&nbsp;Chapter 4
+      </div>
+      <h1>Chapter 4. Gonstead Technique</h1>
+      <h2>5 Components 특이적 분석 · X-ray listing · Level Disc Theory</h2>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="챕터 섹션" style="top: var(--nav-h); background: var(--glass-bg-strong);">
+    <div class="nav-inner" style="justify-content: center;">
+      <ul class="nav-links" style="justify-content: center;">
+        <li><a href="#diagrams">📊 다이어그램</a></li>
+        <li><a href="#overview">개요</a></li>
+        <li><a href="#theory">이론·기전</a></li>
+        <li><a href="#protocols">⭐ 부위별 진단·교정</a></li>
+        <li><a href="#clinical">임상 적용</a></li>
+        <li><a href="#evidence">근거 수준</a></li>
+        <li><a href="#critical">🔴 비판적 시각</a></li>
+        <li><a href="#resources">자료</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+
+    <section id="diagrams" style="scroll-margin-top: 120px;">
+      <h2>📊 핵심 다이어그램</h2>
+      <p class="section-lead">이 챕터의 핵심 개념을 시각화한 도식.</p>
+      <figure style="margin: 1.5rem 0;">
+        <img src="./images/chapter4/01_gonstead_5components.svg" alt="Gonstead 5요소 분석 — History·Posture·Instrumentation·Palpation·X-ray" loading="lazy" style="width:100%; max-width:960px; border:1px solid var(--c-border-light); border-radius:var(--r-md);" />
+        <figcaption style="margin-top: 0.5rem; font-size: 0.9em; color: var(--c-text-muted);">Gonstead 5요소 분석 — History·Posture·Instrumentation·Palpation·X-ray</figcaption>
+      </figure>
+      <figure style="margin: 1.5rem 0;">
+        <img src="./images/chapter4/02_listing_notation.svg" alt="Listing 표기법 — 분절 편위의 약어와 LOD" loading="lazy" style="width:100%; max-width:960px; border:1px solid var(--c-border-light); border-radius:var(--r-md);" />
+        <figcaption style="margin-top: 0.5rem; font-size: 0.9em; color: var(--c-text-muted);">Listing 표기법 — 분절 편위의 약어와 LOD</figcaption>
+      </figure>
+    </section>
+
+    <section id="editorial">
+      <div class="callout callout-info">
+        <h4>📘 편집 원칙</h4>
+        <p>근거 기반 의학(EBM) 관점. Vitalism · 전신질환 인과론 · AK 진단 확장 · Cranial rhythm 등 No evidence 주장은 🔴 제외 또는 비판적으로만 언급합니다.</p>
+      </div>
+    </section>
+
+    <section id="overview">
+      <h2>개요</h2>
+      <div class="principle-card">
+        <h3>본 챕터가 다루는 기법</h3>
+        <p>Clarence S. Gonstead(1898-1978)가 1923년부터 정립한 <strong>특이적 분석 시스템</strong>. 골반 foundation + Level Disc Theory + 5 Components(History·Posture·Instrumentation/Nervoscope·Palpation·X-ray) 일치 시에만 교정. Gonstead listing 체계로 변위 특이 기록.</p>
+      </div>
+      <h3>근거 수준 한눈에</h3>
+      <div class="callout callout-tip"><h4>근거</h4><p>🟡 Moderate — 요통·경추통 SMT (Cochrane)</p></div>
+    </section>
+
+    <section id="theory">
+      <h2>이론·기전</h2>
+      <p class="section-lead">모든 카이로프랙틱 기법은 <strong>Afferentation → 중추 처리 → Efferentation</strong> 프레임(Chapter 2 참조)에서 해석합니다. 이 기법이 어떤 구심성 입력을 만들고 어떤 원심 출력을 조절하는지.</p>
+      <div class="placeholder"><strong>[상세 이론 본문 자리]</strong> 창시자·역사·생체역학·신경생리 — 추후 확장 예정. Chapter 2 Functional Neurology의 Aff/Def/Eff 프레임으로 이 기법을 재해석.</div>
+    </section>
+
+    <!-- ================================================ -->
+    <!-- ⭐ Gonstead 부위별 진단·교정 프로토콜 상세       -->
+    <!-- ================================================ -->
+    <section id="protocols">
+      <h2>⭐ Gonstead 부위별 진단·교정 프로토콜</h2>
+      <p class="section-lead">
+        Gonstead 임상의 두 축 — <strong>Listing(변위 특이 기록)</strong>과 <strong>Line of Drive(LOD, 교정 방향)</strong>.
+        부위마다 필요한 X-ray view, 흔한 listing, 주 증상, 그리고 환자 자세 · 접촉점 · 스태빌라이징 · LOD · 보조 도구까지 단계별로 기술합니다.
+      </p>
+
+      <div class="callout callout-info">
+        <h4>🔵 Listing 표기 기본 규칙 (복습)</h4>
+        <ul>
+          <li><strong>1번 글자</strong> — 시상면 변위 (P = Posterior, A = Anterior)</li>
+          <li><strong>2번 글자</strong> — 수평면 회전 (R = Right, L = Left). <em>극돌기 방향 = 추체 반대</em></li>
+          <li><strong>3번 글자</strong>(선택) — 관상면 wedge (S = Superior, I = Inferior)</li>
+          <li>천장관절은 별도 체계 — <strong>AS / PI / EX / IN</strong></li>
+          <li><strong>교정 벡터(LOD) = listing 반대 방향</strong></li>
+        </ul>
+      </div>
+
+      <!-- ============================================== -->
+      <!-- 전체 Gonstead Listing 체계 종합 표              -->
+      <!-- ============================================== -->
+      <h3 id="listing-master" style="margin-top:2rem">📋 전체 Gonstead Listing 체계 — 표기법과 listings 전체 목록</h3>
+      <p class="section-lead">
+        Gonstead listing은 부위에 따라 표기 구조가 다릅니다. 아래 표는 <strong>부위별 표기 규칙 · 가능한 listing 조합 전체 · 접촉점 · 표준 자세</strong>를 한눈에 보여줍니다.
+        세부 임상 설명은 아래 region card에서 이어집니다.
+      </p>
+
+      <h4>① 부위별 표기 구조 요약</h4>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>부위</th>
+            <th>글자 수</th>
+            <th>표기 구조</th>
+            <th>대표 예시</th>
+            <th>필수 X-ray</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>C1 (Atlas)</strong></td>
+            <td>2-4글자</td>
+            <td>[AS/AI] + [R/L] + <em>(P/A 선택)</em></td>
+            <td>ASR · ASLP · AIL</td>
+            <td>APOM + Lateral Cerv</td>
+          </tr>
+          <tr>
+            <td><strong>C2-C7 · T1-T12 · L1-L5</strong></td>
+            <td>2-3글자</td>
+            <td>P + [R/L] + <em>(S/I 선택)</em></td>
+            <td>PR · PLS · PRI</td>
+            <td>A-P + Lateral 해당 부위</td>
+          </tr>
+          <tr>
+            <td><strong>Ilium (장골)</strong></td>
+            <td>2-4글자</td>
+            <td>[R/L] + [AS/PI] + <em>(EX/IN 선택)</em></td>
+            <td>R AS · L PI · R PIEX</td>
+            <td>A-P Pelvis + Lateral</td>
+          </tr>
+          <tr>
+            <td><strong>Sacrum</strong></td>
+            <td>2-4글자</td>
+            <td>P + [R/L] + <em>(/I 선택, apex 방향)</em></td>
+            <td>Base P-R · P-L/I</td>
+            <td>A-P Pelvis + Ferguson</td>
+          </tr>
+          <tr>
+            <td><strong>Coccyx</strong></td>
+            <td>1-3글자</td>
+            <td>A + <em>(R/L 선택)</em></td>
+            <td>A · A-R · A-L</td>
+            <td>Lateral Coccyx</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>② Atlas (C1) — 가능한 listings 전체 8가지 (+확장 8가지)</h4>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>기본 listing</th>
+            <th>의미</th>
+            <th>+ P(Posterior 회전) 조합</th>
+            <th>+ A(Anterior 회전) 조합</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>ASR</strong></td><td>Anterior-Superior Right</td><td>ASRP</td><td>ASRA</td></tr>
+          <tr><td><strong>ASL</strong></td><td>Anterior-Superior Left</td><td>ASLP</td><td>ASLA</td></tr>
+          <tr><td><strong>AIR</strong></td><td>Anterior-Inferior Right</td><td>AIRP</td><td>AIRA</td></tr>
+          <tr><td><strong>AIL</strong></td><td>Anterior-Inferior Left</td><td>AILP</td><td>AILA</td></tr>
+          <tr><td colspan="4" style="background:#f8fafc;text-align:center;font-size:.88em;color:#64748b">S = 편위 측이 Superior / I = Inferior · R = Right laterality / L = Left laterality</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:.5rem;font-size:.88em;color:#64748b">
+        <strong>표기 해석</strong>: <code>ASLP</code> = Anterior(전방) + Superior(상방) + Left(좌측 laterality) + Posterior(후방 회전 동반).
+        Atlas는 occipito-atlantal 관절 특수성 때문에 6면 운동(상/하·좌/우·전/후) 조합이 모두 가능.
+      </p>
+
+      <h4>③ 일반 척추 (C2-C7, T1-T12, L1-L5) — 6가지 listings (×24 분절)</h4>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Listing</th>
+            <th>구성</th>
+            <th>극돌기 위치</th>
+            <th>추체 회전</th>
+            <th>관상면 wedge</th>
+            <th>LOD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>PR</strong></td><td>Post + Right</td><td>후방·우측</td><td>좌측 회전</td><td>—</td><td>A + Left</td></tr>
+          <tr><td><strong>PL</strong></td><td>Post + Left</td><td>후방·좌측</td><td>우측 회전</td><td>—</td><td>A + Right</td></tr>
+          <tr><td><strong>PRS</strong></td><td>Post + Right + Sup wedge</td><td>후방·우측</td><td>좌측 회전</td><td>우측 상방 open</td><td>A + Left + Inferior</td></tr>
+          <tr><td><strong>PRI</strong></td><td>Post + Right + Inf wedge</td><td>후방·우측</td><td>좌측 회전</td><td>우측 하방 open</td><td>A + Left + Superior</td></tr>
+          <tr><td><strong>PLS</strong></td><td>Post + Left + Sup wedge</td><td>후방·좌측</td><td>우측 회전</td><td>좌측 상방 open</td><td>A + Right + Inferior</td></tr>
+          <tr><td><strong>PLI</strong></td><td>Post + Left + Inf wedge</td><td>후방·좌측</td><td>우측 회전</td><td>좌측 하방 open</td><td>A + Right + Superior</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:.5rem;font-size:.88em;color:#64748b">
+        적용 분절: C2 · C3 · C4 · C5 · C6 · C7 · T1-T12 · L1-L5 — 총 <strong>24개 분절 × 6 listings = 144</strong>가지 이론적 listing 조합.
+      </p>
+
+      <h4>④ Ilium (장골) — 8가지 + flare modifiers</h4>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Listing</th>
+            <th>구성</th>
+            <th>장골 회전</th>
+            <th>접촉점</th>
+            <th>LOD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>R AS</strong></td><td>Right + Anterior-Superior</td><td>우측 전·상방 회전</td><td>우측 PSIS</td><td>Posterior + Inferior</td></tr>
+          <tr><td><strong>L AS</strong></td><td>Left + Anterior-Superior</td><td>좌측 전·상방 회전</td><td>좌측 PSIS</td><td>Posterior + Inferior</td></tr>
+          <tr><td><strong>R PI</strong></td><td>Right + Posterior-Inferior</td><td>우측 후·하방 회전</td><td>우측 ischial tuberosity</td><td>Anterior + Superior</td></tr>
+          <tr><td><strong>L PI</strong></td><td>Left + Posterior-Inferior</td><td>좌측 후·하방 회전</td><td>좌측 ischial tuberosity</td><td>Anterior + Superior</td></tr>
+          <tr><td><strong>R AS-EX</strong></td><td>R AS + External flare</td><td>AS + 외측 벌어짐</td><td>PSIS + ASIS 외측</td><td>P + I + Medial</td></tr>
+          <tr><td><strong>R AS-IN</strong></td><td>R AS + Internal flare</td><td>AS + 내측 수렴</td><td>PSIS + ilium outer</td><td>P + I + Lateral</td></tr>
+          <tr><td><strong>R PIEX</strong></td><td>R PI + External flare</td><td>PI + 외측 벌어짐</td><td>Ischial tuberosity + 외측</td><td>A + S + Medial</td></tr>
+          <tr><td><strong>R PI-IN</strong></td><td>R PI + Internal flare</td><td>PI + 내측 수렴</td><td>Ischial tuberosity + 내측</td><td>A + S + Lateral</td></tr>
+          <tr><td colspan="5" style="background:#f8fafc;text-align:center;font-size:.85em;color:#64748b">좌측(L)도 동일 8가지 · 합 16 listings. EX/IN은 <strong>obturator foramen 모양</strong>과 <strong>ilium wing spread</strong>로 진단.</td></tr>
+        </tbody>
+      </table>
+
+      <h4>⑤ Sacrum — Base 편위 기준</h4>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Listing</th>
+            <th>의미</th>
+            <th>Ferguson 소견</th>
+            <th>LOD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Base P</strong></td><td>Sacral base 후방 (양측 대칭)</td><td>Base angle 증가 (hyperlordosis)</td><td>Anterior · 전방 thrust</td></tr>
+          <tr><td><strong>Base P-R</strong></td><td>Base 우측 후방</td><td>우측 SI 간극 상부 좁음</td><td>Anterior + Left</td></tr>
+          <tr><td><strong>Base P-L</strong></td><td>Base 좌측 후방</td><td>좌측 SI 간극 상부 좁음</td><td>Anterior + Right</td></tr>
+          <tr><td><strong>Base P-R/I</strong></td><td>Base 우측 후방 + apex 하방 편위</td><td>우측 SI 좁음 상부 + 천골 우측 edge 하강</td><td>A + L + Superior</td></tr>
+          <tr><td><strong>Base P-L/I</strong></td><td>Base 좌측 후방 + apex 하방</td><td>좌측 SI 좁음 상부 + 좌측 edge 하강</td><td>A + R + Superior</td></tr>
+        </tbody>
+      </table>
+
+      <h4>⑥ Coccyx (미골) — Anterior 변위 위주</h4>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Listing</th>
+            <th>의미</th>
+            <th>임상적 상관</th>
+            <th>LOD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>A</strong></td><td>Anterior (정중 전방 편위)</td><td>출산 후 · 낙상 후 coccyx pain</td><td>Posterior 견인</td></tr>
+          <tr><td><strong>A-R</strong></td><td>Anterior + Right</td><td>우측 기립근·항문거근 경련</td><td>P + Left</td></tr>
+          <tr><td><strong>A-L</strong></td><td>Anterior + Left</td><td>좌측 동일</td><td>P + Right</td></tr>
+          <tr><td colspan="4" style="background:#fff7ed;text-align:center;font-size:.85em;color:#9a3412">⚠ Coccyx 교정은 <strong>intra-rectal(직장 내)</strong> 접근이 원칙 → 환자 동의·장갑·윤활·신뢰 관계 필수. 한국 임상에서는 외부 approach도 사용.</td></tr>
+        </tbody>
+      </table>
+
+      <h4>⑦ 총 listing 조합 개수 정리</h4>
+      <div class="callout callout-tip">
+        <h4>📊 이론적 Gonstead listings 총 개수</h4>
+        <ul>
+          <li><strong>C1 Atlas</strong>: 4 기본 + 8 확장 = 12</li>
+          <li><strong>C2-L5 (24 분절 × 6 listings)</strong>: 144</li>
+          <li><strong>Ilium (R/L × 8 types)</strong>: 16</li>
+          <li><strong>Sacrum (base listings)</strong>: 5 주요 + 변형 다수</li>
+          <li><strong>Coccyx</strong>: 3 주요</li>
+          <li style="border-top:1px solid rgba(0,0,0,.1);margin-top:.4rem;padding-top:.4rem"><strong>합계 ≈ 180+ 이론적 조합</strong> — 실제 임상에서 흔한 것은 <strong>30-40개 listing</strong></li>
+        </ul>
+      </div>
+
+      <h4>⑧ 표기 읽기 예시</h4>
+      <table class="data-table">
+        <thead>
+          <tr><th>기록</th><th>해석</th><th>Line of Drive</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>C1 ASRP</code></td><td>C1이 전방·상방·우측 편위 + 후방 회전</td><td>Posterior + Inferior + Left + Anterior rotation</td></tr>
+          <tr><td><code>C5 PLI</code></td><td>C5 극돌기 후·좌 + 좌측 하부 wedge</td><td>Anterior + Right + Superior</td></tr>
+          <tr><td><code>T8 PRS</code></td><td>T8 극돌기 후·우 + 우측 상부 wedge</td><td>Anterior + Left + Inferior</td></tr>
+          <tr><td><code>L5 PLI</code></td><td>L5 극돌기 후·좌 + 좌측 하부 wedge</td><td>Anterior + Right + Superior</td></tr>
+          <tr><td><code>R AS-EX Ilium</code></td><td>우측 장골 전·상 + 외측 flare</td><td>Posterior + Inferior + Medial</td></tr>
+          <tr><td><code>Sacrum Base P-L/I</code></td><td>Sacral base 좌측 후방 + apex 좌측 하강</td><td>Anterior + Right + Superior</td></tr>
+          <tr><td><code>Coccyx A-R</code></td><td>미골 전방 + 우측 편위</td><td>Posterior + Left</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-warn" style="margin-top:1.5rem">
+        <h4>📝 Listing 결정은 단독 X-ray로 하지 않는다 (Gonstead 원칙)</h4>
+        <p><strong>5 Components 일치 원칙</strong>: History · Observation · Instrumentation (Nervoscope) · Static/Motion Palpation · X-ray — 5가지 소견이 <strong>일치할 때에만</strong> 해당 분절을 교정. X-ray 단독 listing 결정은 Gonstead 철학에서도 🔴 금지.</p>
+        <ul>
+          <li>실제 임상에서는 <strong>Palpation이 X-ray보다 우선</strong> (Gonstead 원전 원칙)</li>
+          <li>X-ray는 <strong>확인(confirmation) 도구</strong>이지 진단의 유일한 근거 아님</li>
+          <li>Listing 결정 후 즉시 교정 금지 — <strong>Instrumentation으로 열·자율신경 비대칭 확인</strong> 필수</li>
+        </ul>
+      </div>
+
+      <!-- ================================== -->
+      <!-- 1. Atlas & 상부경추 (Occ/C1/C2) -->
+      <!-- ================================== -->
+      <div class="gs-region" id="region-atlas">
+        <div class="gs-region-head">
+          <h3>① Atlas & 상부경추 (Occiput · C1 · C2)</h3>
+          <p class="sub">가장 섬세한 부위. Palmer/Gonstead 전통에서 "upper cervical specifics"로 분류 · 추력 강도 최소 · 정확도 최고 요구.</p>
+        </div>
+        <div class="gs-region-body">
+
+          <div class="gs-xray-needs">
+            <h4>📸 필수 X-ray View</h4>
+            <ul>
+              <li><strong>APOM</strong> (Anterior-Posterior Open Mouth) — C1 laterality·Dens 중심 정렬 평가</li>
+              <li><strong>Lateral Cervical</strong> (neutral) — Atlas plane line·George's line·ADI 측정</li>
+              <li><strong>A-P Lower Cervical</strong> — C2 spinous·lamina 회전 평가</li>
+              <li><strong>Davis Series</strong>(flexion/extension lateral) — 선택적 · 불안정성 의심 시</li>
+            </ul>
+          </div>
+
+          <!-- Listing 1: ASR -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box">
+                📸 APOM X-ray 자리<br/><br/>
+                <small>Dens 중심축으로부터 C1 우측 transverse process가 위로 들림 · 우측 atlantodental 간극 좁음 · 좌측 넓음</small>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <!-- Atlas ring schematic (superior view equivalent on APOM) -->
+                  <ellipse cx="120" cy="85" rx="80" ry="45" fill="none" stroke="#1e293b" stroke-width="2"/>
+                  <!-- Dens -->
+                  <rect x="112" y="68" width="16" height="34" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+                  <text x="120" y="88" font-size="8" text-anchor="middle" fill="#fff">Dens</text>
+                  <!-- Left TP (lower on image for superior finding on right) -->
+                  <circle cx="40" cy="90" r="10" fill="#60a5fa"/>
+                  <text x="40" y="93" font-size="8" text-anchor="middle" fill="#fff">L TP</text>
+                  <!-- Right TP (higher = Superior laterality) -->
+                  <circle cx="200" cy="75" r="10" fill="#ef4444"/>
+                  <text x="200" y="78" font-size="8" text-anchor="middle" fill="#fff">R TP ↑</text>
+                  <!-- Arrow showing displacement -->
+                  <path d="M200 95 L200 80" stroke="#ef4444" stroke-width="2" marker-end="url(#arrU)"/>
+                  <defs><marker id="arrU" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0 0, 6 3, 0 6" fill="#ef4444"/></marker></defs>
+                  <text x="120" y="20" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">ASR Atlas</text>
+                  <text x="120" y="150" font-size="9" text-anchor="middle" fill="#64748b">Right TP · Superior · Right laterality</text>
+                </svg>
+                <div class="cap">우측 TP가 상방으로 편위 (ASR schematic)</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>ASR</strong> (Atlas Superior Right)</h4>
+              <p>C1이 <strong>우측</strong>으로 편위(laterality) + <strong>상방</strong> wedge. 우측 transverse process가 기준선보다 위로 올라간 상태.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — 우측 후두부·측두부 두통 (occipital neuralgia 양상) · 환측(우측) 경부 회전 제한 · 아침 기상 시 심화 · 동측 어지럼·이명 · 턱 관절 편위 동반 가능
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p>환자 <strong>측와위(좌측 아래)</strong> — Gonstead 전용 cervical chair 또는 hi-lo table에서 prone.<br/>
+              머리는 <strong>약간 좌측 회전 + 측굴</strong>로 우측 TP 노출.</p>
+
+              <h5>👆 접촉점 (Contact Point)</h5>
+              <p>검사자 <strong>우측 index MCP(2번째 손가락 뿌리 관절) 또는 pisiform</strong> —<br/>
+              환자 <strong>우측 C1 transverse process</strong>(mastoid 직하 1cm, 후이개 하방).</p>
+
+              <h5>✋ 스태빌라이징 핸드</h5>
+              <p>검사자 좌측 손으로 환자 <strong>좌측 두정측 두개골</strong> 지지 — 반대쪽으로 머리 굴림 방지.</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive (LOD)</strong><br/>
+                ASR의 반대 — <strong>Medial + Inferior</strong> 방향.<br/>
+                정확히는 "환자 반대측 턱끝을 향해 약 45°, 아래 방향"으로 short HVLA thrust.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt>
+                <dd>Gonstead Cervical Chair 또는 Hi-Lo Table · 일부는 toggle board 사용 (HIO 변형)</dd>
+                <dt>⚡ Thrust 특성</dt>
+                <dd>100-120ms · 진폭 1-2mm · 최저 강도 (약 100-200N)</dd>
+                <dt>🚨 금기</dt>
+                <dd>VBI 증상·RA·Down syndrome·급성 경추 외상·동맥 박리 의심</dd>
+              </dl>
+            </div>
+          </div>
+
+          <!-- Listing 2: AIL -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box">
+                📸 APOM X-ray 자리<br/><br/>
+                <small>C1 좌측 TP가 Dens 하방으로 처짐 · 좌측 atlantodental 간극 넓음 · 좌측 occipital condyle과 C1 간극 좁음</small>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <ellipse cx="120" cy="80" rx="80" ry="45" fill="none" stroke="#1e293b" stroke-width="2"/>
+                  <rect x="112" y="63" width="16" height="34" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+                  <text x="120" y="83" font-size="8" text-anchor="middle" fill="#fff">Dens</text>
+                  <circle cx="40" cy="95" r="10" fill="#ef4444"/>
+                  <text x="40" y="98" font-size="8" text-anchor="middle" fill="#fff">L TP ↓</text>
+                  <circle cx="200" cy="75" r="10" fill="#60a5fa"/>
+                  <text x="200" y="78" font-size="8" text-anchor="middle" fill="#fff">R TP</text>
+                  <path d="M40 80 L40 95" stroke="#ef4444" stroke-width="2" marker-end="url(#arrD)"/>
+                  <defs><marker id="arrD" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0 0, 6 3, 0 6" fill="#ef4444"/></marker></defs>
+                  <text x="120" y="20" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">AIL Atlas</text>
+                  <text x="120" y="150" font-size="9" text-anchor="middle" fill="#64748b">Left TP · Inferior · Left laterality</text>
+                </svg>
+                <div class="cap">좌측 TP가 하방으로 편위 (AIL)</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>AIL</strong> (Atlas Inferior Left)</h4>
+              <p>C1 좌측 TP가 <strong>하방</strong>으로 편위. ASR의 거울상은 ASL, AIR은 AIL의 거울상.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — 좌측 후두하 뻐근함 · 좌측 목 측굴 제한 · 수면 후 증상 심화 · 안근 피로(환측) · 불면 동반 가능
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p>환자 <strong>우측 측와위</strong> (반대측 기준). 머리 약간 우측 회전.</p>
+
+              <h5>👆 접촉점</h5>
+              <p>검사자 <strong>좌측 index</strong> → 환자 <strong>좌측 C1 TP</strong>. 접촉시 표면에 수직 성분 + 약간 외측 성분.</p>
+
+              <h5>✋ 스태빌라이징 핸드</h5>
+              <p>우측 손으로 환자 반대측 두개골·하악 지지.</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive</strong><br/>
+                AIL 반대 — <strong>Medial + Superior</strong>. 환자 반대측 턱·이마 방향으로 위쪽 비스듬히 thrust.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt><dd>Hi-Lo Table with cervical drop · Cervical chair</dd>
+                <dt>⚡ Thrust</dt><dd>100-120ms · 1-2mm · 100-200N</dd>
+                <dt>🚨 금기</dt><dd>ASR과 동일</dd>
+              </dl>
+            </div>
+          </div>
+
+          <!-- Listing 3: C2 PLS-sp -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box">
+                📸 A-P Lower Cervical + Lateral<br/><br/>
+                <small>C2 극돌기가 좌측으로 편위 · 좌측 lamina가 후방으로 더 돌출 · 우측 articular pillar 높이 증가</small>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <rect x="60" y="40" width="120" height="80" rx="18" fill="none" stroke="#1e293b" stroke-width="2"/>
+                  <!-- Body -->
+                  <text x="120" y="70" font-size="10" text-anchor="middle" fill="#64748b">C2 body</text>
+                  <!-- Spinous rotated to left-posterior -->
+                  <polygon points="120,120 108,145 105,145" fill="#ef4444" stroke="#1e293b" stroke-width="1.5"/>
+                  <text x="95" y="155" font-size="9" fill="#ef4444">SP ← L</text>
+                  <!-- Rotation arrow -->
+                  <path d="M150 100 Q130 120 112 135" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrL)"/>
+                  <defs><marker id="arrL" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0 0, 6 3, 0 6" fill="#ef4444"/></marker></defs>
+                  <text x="120" y="20" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">C2 PLS</text>
+                  <text x="120" y="30" font-size="8" text-anchor="middle" fill="#64748b">Post + Left + Superior wedge</text>
+                </svg>
+                <div class="cap">C2 극돌기 후방·좌측·상방 (PLS)</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>C2 PLS</strong> (Posterior-Left-Superior)</h4>
+              <p>C2(axis) 극돌기가 <strong>후방 + 좌측 회전 + 상방 wedge</strong>. Body는 우측 회전 + 우측 측굴된 상태.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — 후두하 통증(좌측 > 우측) · 좌측 회전 제한 · 좌측 광대·측두부 방사통 · Greater occipital neuralgia 흔함
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p><strong>환자 앉은 자세 (Cervical chair)</strong> 또는 <strong>hi-lo prone</strong>. 머리 중립 또는 약 5° 좌측 회전.</p>
+
+              <h5>👆 접촉점</h5>
+              <p>검사자 <strong>우측 thumb 또는 index PIP</strong> → 환자 <strong>좌측 C2 lamina/articular pillar</strong>.</p>
+
+              <h5>✋ 스태빌라이징 핸드</h5>
+              <p>좌측 손 — 환자 우측 두정·하악 지지 + 약간 우측 측굴 조절 (pre-tension).</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive</strong><br/>
+                PLS 반대 — <strong>Anterior + Right + Inferior</strong>. 환자 반대쪽 어깨·하방을 향해 45°.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt><dd>Gonstead Cervical Chair · Cervical drop-piece</dd>
+                <dt>⚡ Thrust</dt><dd>100-150ms · 1-2mm · 150-300N</dd>
+                <dt>🚨 금기</dt><dd>VBI · 경추 불안정성 · 디스크 herniation c radiculopathy</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="gs-learning">
+            <h4>🎓 학습 자료 — 시연 영상 · 3D 해부</h4>
+            <div class="gs-video-grid">
+              <div class="gs-video-card gonstead">
+                <div class="gs-vc-head">🎬 Gonstead Atlas Adjustment 시연</div>
+                <iframe src="https://www.youtube.com/embed/IUrx0nccx4Q" title="Gonstead Atlas Adjustment — Dallas TX" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="gs-vc-meta">Upper Cervical Atlas Adjustment · Dr. Pearlman (Dallas, TX)</div>
+              </div>
+              <div class="gs-video-card anatomy">
+                <div class="gs-vc-head">🧠 3D 해부 — Atlas &amp; Axis (C1-C2)</div>
+                <iframe src="https://www.youtube.com/embed/U3wx14CWPCQ" title="Atlas &amp; Axis Cervical Vertebrae Anatomy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="gs-vc-meta">Ninja Nerd Lectures · Prof. Zach Murphy · 해부학 3D 시각화</div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- gs-region-body -->
+      </div><!-- gs-region end Atlas -->
+
+      <!-- ================================== -->
+      <!-- 2. 하부경추 (C3-C7) -->
+      <!-- ================================== -->
+      <div class="gs-region" id="region-lower-cervical">
+        <div class="gs-region-head">
+          <h3>② 하부경추 (C3 · C4 · C5 · C6 · C7)</h3>
+          <p class="sub">수근·상지 방사통·두통의 주요 근원. Articular pillar 접촉이 표준.</p>
+        </div>
+        <div class="gs-region-body">
+
+          <div class="gs-xray-needs">
+            <h4>📸 필수 X-ray View</h4>
+            <ul>
+              <li><strong>A-P Lower Cervical</strong>(Davis) — 극돌기 laterality · lamina 회전</li>
+              <li><strong>Lateral Cervical</strong>(neutral, flexion, extension) — disc wedge · 전만각(lordosis) · ADI</li>
+              <li><strong>Oblique (Both)</strong> — IVF patency · uncinate joint</li>
+              <li><strong>Cervical Motion Study</strong>(선택) — 분절 hypermobility/hypomobility</li>
+            </ul>
+          </div>
+
+          <!-- C5 PLI example -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box">
+                📸 A-P Cervical + Lateral<br/><br/>
+                <small>C5 극돌기 좌측 편위 · 좌측 disc space 하부 좁음 · 좌측 uncinate process 변성 동반 흔함</small>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <rect x="60" y="35" width="120" height="90" rx="12" fill="none" stroke="#1e293b" stroke-width="2"/>
+                  <text x="120" y="65" font-size="10" text-anchor="middle" fill="#64748b">C5 body</text>
+                  <!-- Disc wedge, open inferior left -->
+                  <line x1="60" y1="125" x2="180" y2="125" stroke="#94a3b8" stroke-dasharray="3,3"/>
+                  <polygon points="60,115 180,128 180,115 60,115" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+                  <text x="72" y="145" font-size="8" fill="#78350f">↓ open L-inf</text>
+                  <!-- Spinous P-L -->
+                  <polygon points="120,125 108,152 105,152" fill="#ef4444" stroke="#1e293b" stroke-width="1.5"/>
+                  <text x="95" y="160" font-size="9" fill="#ef4444">SP ← L</text>
+                  <text x="120" y="20" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">C5 PLI</text>
+                </svg>
+                <div class="cap">극돌기 좌·후방 + 좌측 inferior wedge</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>C5 PLI</strong> (Posterior-Left-Inferior)</h4>
+              <p>C5 극돌기가 후방 좌측 + <strong>좌측 하부 disc 쐐기 열림</strong>. Body는 우측 회전 + 좌측 측굴된 상태.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — 좌측 C6 dermatome 방사통 (엄지 · 요측 전완) · 경추-어깨 경계 통증 · 좌측 bicep reflex 감소 가능 · 야간 수부 저림
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p>환자 <strong>앉은 자세 (Cervical Chair)</strong>. 머리 중립.</p>
+
+              <h5>👆 접촉점</h5>
+              <p>검사자 <strong>우측 index PIP 또는 thumb</strong> → 환자 <strong>좌측 C5 articular pillar</strong> (lamina-articular process 연접부).</p>
+
+              <h5>✋ 스태빌라이징 핸드</h5>
+              <p>좌측 손 → 환자 우측 두정·광대 지지. Pre-tension에서 미세 측굴/회전 조절.</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive</strong><br/>
+                PLI 반대 — <strong>Anterior + Right + Superior</strong>. 환자 반대측 눈·상방 방향.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt><dd>Gonstead Cervical Chair · toggle board 선택</dd>
+                <dt>⚡ Thrust</dt><dd>120-150ms · 2-3mm · 200-400N</dd>
+                <dt>🚨 금기</dt><dd>심한 경추 radiculopathy · 디스크 추출 · VBI</dd>
+              </dl>
+            </div>
+          </div>
+
+          <!-- C7 PR example -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box">
+                📸 A-P Cervical<br/><br/>
+                <small>C7 극돌기 우측 편위 · body는 좌측 회전 · 좌측 articular pillar 후방 돌출</small>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <rect x="60" y="40" width="120" height="80" rx="10" fill="none" stroke="#1e293b" stroke-width="2"/>
+                  <text x="120" y="70" font-size="10" text-anchor="middle" fill="#64748b">C7 body</text>
+                  <polygon points="120,120 134,145 137,145" fill="#ef4444" stroke="#1e293b" stroke-width="1.5"/>
+                  <text x="155" y="155" font-size="9" fill="#ef4444">SP R →</text>
+                  <path d="M90 100 Q110 120 130 135" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrR)"/>
+                  <defs><marker id="arrR" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0 0, 6 3, 0 6" fill="#ef4444"/></marker></defs>
+                  <text x="120" y="20" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">C7 PR</text>
+                </svg>
+                <div class="cap">C7 극돌기 후방 우측</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>C7 PR</strong> (Posterior-Right)</h4>
+              <p>Cervico-thoracic junction의 흔한 변위. 극돌기 후방 + 우측 편위. Body 좌측 회전.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — 견갑골 내측연·상승모근 긴장 (좌측 > 우측) · 양측 견갑골 사이 뻐근 · T1 방사통 가능 · PC 작업자 흔함
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p><strong>Prone on Hi-Lo Table</strong>. 머리 turn toward right (환측 쪽으로 회전).</p>
+
+              <h5>👆 접촉점</h5>
+              <p>검사자 좌측 <strong>pisiform</strong> → 환자 <strong>우측 C7 articular pillar</strong>.</p>
+
+              <h5>✋ 스태빌라이징 핸드</h5>
+              <p>우측 손 — 환자 좌측 승모근 위 압력.</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive</strong><br/>
+                PR 반대 — <strong>Anterior + Left</strong>. 환자 반대편 액와 방향으로 직하방 압박 후 short thrust.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt><dd>Hi-Lo Table · Thoracic drop piece 활용 가능</dd>
+                <dt>⚡ Thrust</dt><dd>150ms · 2-3mm · 300-500N</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="gs-learning">
+            <h4>🎓 학습 자료 — 시연 영상 · 3D 해부</h4>
+            <div class="gs-video-grid">
+              <div class="gs-video-card gonstead">
+                <div class="gs-vc-head">🎬 Gonstead Cervical Chair 시연</div>
+                <iframe src="https://www.youtube.com/embed/aRqOt-3qDRY" title="Gonstead cervical chair adjustment" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="gs-vc-meta">Dr. Waller · Gonstead Cervical Chair 앉은 자세 교정</div>
+              </div>
+              <div class="gs-video-card anatomy">
+                <div class="gs-vc-head">🧠 3D 해부 — Cervical Spine (C3-C7)</div>
+                <iframe src="https://www.youtube.com/embed/bqW_HdDl5pw" title="Cervical Spine Anatomy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="gs-vc-meta">Typical cervical vertebrae · 목 근육 · 해부학 설명</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================================== -->
+      <!-- 3. 상부흉추 (T1-T6) -->
+      <!-- ================================== -->
+      <div class="gs-region" id="region-upper-thoracic">
+        <div class="gs-region-head">
+          <h3>③ 상부흉추 (T1 - T6)</h3>
+          <p class="sub">늑골·어깨 영향 · 견갑골 내측연 통증의 주 근원. Transverse process 접촉이 핵심.</p>
+        </div>
+        <div class="gs-region-body">
+
+          <div class="gs-xray-needs">
+            <h4>📸 필수 X-ray View</h4>
+            <ul>
+              <li><strong>A-P Upper Thoracic</strong> — 극돌기·늑골 회전 평가</li>
+              <li><strong>Lateral Upper Thoracic</strong> — kyphosis 각도·disc wedge</li>
+              <li><strong>Swimmer's View</strong>(선택) — T1-T3 상부를 쇄골 간섭 없이</li>
+              <li><strong>전장(full spine) A-P</strong> — 상·하부 척추 전체 pattern (Gonstead 전통)</li>
+            </ul>
+          </div>
+
+          <!-- T3 PRS -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box">
+                📸 A-P Upper Thoracic<br/><br/>
+                <small>T3 극돌기 우측 편위 · 우측 TP 상방 · 우측 늑골 후방 돌출 (rib head 회전)</small>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <ellipse cx="120" cy="80" rx="80" ry="45" fill="none" stroke="#1e293b" stroke-width="2"/>
+                  <text x="120" y="80" font-size="10" text-anchor="middle" fill="#64748b">T3 body</text>
+                  <!-- Superior wedge on Right -->
+                  <polygon points="40,70 200,55 200,80 40,80" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+                  <text x="200" y="50" font-size="8" fill="#78350f" text-anchor="end">↑ Sup R</text>
+                  <!-- Spinous P-R -->
+                  <polygon points="120,125 132,152 135,152" fill="#ef4444" stroke="#1e293b" stroke-width="1.5"/>
+                  <text x="145" y="160" font-size="9" fill="#ef4444">SP R →</text>
+                  <text x="120" y="20" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">T3 PRS</text>
+                </svg>
+                <div class="cap">극돌기 후방·우측 + 우측 상부 wedge</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>T3 PRS</strong> (Posterior-Right-Superior)</h4>
+              <p>T3 극돌기 후방·우측 + <strong>우측 상부 disc wedge 열림</strong>. 흔히 첫번째 늑골(1st rib) 제한 동반.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — 우측 견갑골 상연 통증·상승모근 팽팽함 · 호흡 제한감 · Rhomboid point 압통 · 자세성 상부 흉추 통증
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p><strong>Prone on Hi-Lo Table</strong> · 양팔을 side/bench 밑으로 내리거나 cross-arm.</p>
+
+              <h5>👆 접촉점</h5>
+              <p>검사자 좌측 <strong>pisiform</strong> → 환자 <strong>T3 우측 TP</strong>(극돌기에서 외측 2cm).</p>
+
+              <h5>✋ 스태빌라이징 핸드</h5>
+              <p>우측 손 — 환자 좌측 T3 TP 위 cross-bilateral 지지, 반동 제한.</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive</strong><br/>
+                PRS 반대 — <strong>Anterior + Left + Inferior</strong>. 환자 반대측 엉덩이 방향 약 35°.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt><dd>Hi-Lo Table (thoracic drop piece) · 쐐기 쿠션</dd>
+                <dt>⚡ Thrust</dt><dd>150ms · 2-4mm · 400-600N</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="gs-learning">
+            <h4>🎓 학습 자료 — 시연 영상 · 3D 해부</h4>
+            <div class="gs-video-grid">
+              <div class="gs-video-card gonstead">
+                <div class="gs-vc-head">🎬 Gonstead Thoracic T5 Double-TP Contact</div>
+                <iframe src="https://www.youtube.com/embed/F6HbNungN-M" title="Gonstead Thoracic Adjustment T5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="gs-vc-meta">Carlsbad Chiropractor · T5 double TP 접촉 시연</div>
+              </div>
+              <div class="gs-video-card anatomy">
+                <div class="gs-vc-head">🧠 3D 해부 — Thoracic Vertebra &amp; 가동성</div>
+                <iframe src="https://www.youtube.com/embed/8I3FIxTvHtg" title="Thoracic vertebra mobility" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="gs-vc-meta">Thoracic vertebra · costal facets · 흉추 회전 mobility</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================================== -->
+      <!-- 4. 하부흉추 & 요추 (T7-L5) -->
+      <!-- ================================== -->
+      <div class="gs-region" id="region-lumbar">
+        <div class="gs-region-head">
+          <h3>④ 하부흉추 & 요추 (T7 - L5)</h3>
+          <p class="sub">Side posture가 표준 자세. Mamillary process(요추) / TP(흉추) 접촉. Gonstead의 시그니처 영역.</p>
+        </div>
+        <div class="gs-region-body">
+
+          <div class="gs-xray-needs">
+            <h4>📸 필수 X-ray View</h4>
+            <ul>
+              <li><strong>A-P Lumbar (14×17)</strong> — <strong>femur heads 반드시 포함</strong> (pelvis 참조 필수)</li>
+              <li><strong>Lateral Lumbar</strong> — disc wedge · spondylolisthesis · L5-S1 각도</li>
+              <li><strong>Oblique Lumbar (R &amp; L)</strong> — pars interarticularis (spondylolysis 배제)</li>
+              <li><strong>Ferguson Sacral View</strong>(선택) — sacral base angle 정밀 측정</li>
+            </ul>
+          </div>
+
+          <!-- L5 PLI -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box has-image">
+                <img src="./images/clinical_cases/xrays/case_whole_spine_ap.jpg" alt="실제 전장척추 A-P X-ray 임상 케이스" loading="lazy"/>
+                <div class="caption">📸 전장척추 A-P — 골반·요추 정렬 관찰</div>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <rect x="55" y="35" width="130" height="60" rx="8" fill="none" stroke="#1e293b" stroke-width="2"/>
+                  <text x="120" y="60" font-size="10" text-anchor="middle" fill="#64748b">L5 body</text>
+                  <line x1="55" y1="95" x2="185" y2="95" stroke="#94a3b8" stroke-dasharray="3,3"/>
+                  <polygon points="55,90 185,102 185,90 55,90" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+                  <text x="72" y="115" font-size="8" fill="#78350f">↓ open L-inf disc</text>
+                  <polygon points="55,105 185,110 165,140 75,135" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+                  <text x="120" y="125" font-size="9" text-anchor="middle" fill="#334155">Sacrum</text>
+                  <polygon points="120,95 108,125 105,125" fill="#ef4444" stroke="#1e293b" stroke-width="1.5"/>
+                  <text x="95" y="135" font-size="9" fill="#ef4444">SP ← L</text>
+                  <text x="120" y="20" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">L5 PLI</text>
+                </svg>
+                <div class="cap">L5 극돌기 후·좌 + 좌측 하부 disc wedge</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>L5 PLI</strong> (Posterior-Left-Inferior)</h4>
+              <p>요추 이환 중 가장 흔한 listing 중 하나. L5 극돌기가 후·좌측 + 좌측 하부 disc 쐐기가 열림 = <strong>좌측 facet 압박 + L5 nerve root 자극 가능</strong>.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — 좌측 L5 dermatome 방사통 (좌측 둔부 → 대퇴 외측 → 종아리 외측 → 엄지) · 좌측 EHL 약화 가능 · 기립 30분 이상 통증 악화 · 허리 회전(좌→우) 제한
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p><strong>Right side posture</strong> (환측 위) — 환자 오른측 측와위 · 왼쪽 다리 굴곡 · 오른쪽 다리 신전 · 오른팔 견인선.</p>
+
+              <h5>👆 접촉점</h5>
+              <p>검사자 <strong>우측 pisiform</strong> → 환자 <strong>L5 좌측 mamillary process</strong>(극돌기에서 외측 1.5cm, 상후방 1cm).</p>
+
+              <h5>✋ 스태빌라이징 핸드</h5>
+              <p>좌측 손·팔뚝으로 환자 <strong>왼쪽 어깨</strong> 지지 — pre-tension에서 체간 rotation과 lateral flexion 조정.</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive</strong><br/>
+                PLI 반대 — <strong>Anterior + Right + Superior</strong>. 환자 반대측(아래쪽) 어깨 방향으로 45° + 위쪽 성분.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt><dd>Gonstead Pelvic Bench (side posture 전용) · 쿠션 pelvic roll</dd>
+                <dt>⚡ Thrust</dt><dd>100-150ms · 2-4mm · 400-800N (부위 따라)</dd>
+                <dt>🚨 금기</dt><dd>급성 디스크 extrusion · cauda equina 증상 · 심한 spondylolisthesis(II도 이상)</dd>
+              </dl>
+            </div>
+          </div>
+
+          <!-- L3 PR -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box">
+                📸 A-P Lumbar<br/><br/>
+                <small>L3 극돌기 우측 편위 · body 좌측 회전 · 좌측 mamillary 후방 돌출</small>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <rect x="55" y="40" width="130" height="70" rx="8" fill="none" stroke="#1e293b" stroke-width="2"/>
+                  <text x="120" y="70" font-size="10" text-anchor="middle" fill="#64748b">L3 body</text>
+                  <polygon points="120,110 134,140 137,140" fill="#ef4444" stroke="#1e293b" stroke-width="1.5"/>
+                  <text x="150" y="148" font-size="9" fill="#ef4444">SP R →</text>
+                  <path d="M85 85 Q110 105 130 125" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrR2)"/>
+                  <defs><marker id="arrR2" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0 0, 6 3, 0 6" fill="#ef4444"/></marker></defs>
+                  <text x="120" y="20" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">L3 PR</text>
+                </svg>
+                <div class="cap">L3 극돌기 후방 + 우측 (wedge 없음)</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>L3 PR</strong> (Posterior-Right)</h4>
+              <p>중위 요추의 2-letter listing. Body 좌측 회전. Wedge 없음.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — 중위 요통 (belt line) · 우측 회전 제한 · 좌측 양측 대요근(Psoas) 긴장 · 배횡근근(Transverse abdominis) 약화
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p><strong>Left side posture</strong> (환측 위 = 우측 위, 아래 좌측).</p>
+
+              <h5>👆 접촉점</h5>
+              <p>검사자 <strong>좌측 pisiform</strong> → 환자 <strong>L3 우측 mamillary</strong>.</p>
+
+              <h5>✋ 스태빌라이징 핸드</h5>
+              <p>우측 팔 — 환자 오른쪽 어깨 지지.</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive</strong><br/>
+                PR 반대 — <strong>Anterior + Left</strong>. 환자 반대측 어깨 방향으로 90° 반대.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt><dd>Pelvic Bench · Lumbar roll</dd>
+                <dt>⚡ Thrust</dt><dd>120ms · 2-3mm · 400-600N</dd>
+              </dl>
+            </div>
+          </div>
+
+          <!-- T10 PLS -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box has-image">
+                <img src="./images/clinical_cases/xrays/case_lumbar_lat_multifracture.jpg" alt="Lumbar Lateral X-ray 임상 케이스 — 다발성 분절 변형" loading="lazy"/>
+                <div class="caption">📸 Lateral L-spine — disc wedge 방향 측정</div>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <rect x="60" y="45" width="120" height="60" rx="8" fill="none" stroke="#1e293b" stroke-width="2"/>
+                  <text x="120" y="70" font-size="10" text-anchor="middle" fill="#64748b">T10 body</text>
+                  <polygon points="60,50 200,40 200,55 60,55" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+                  <text x="60" y="35" font-size="8" fill="#78350f">↑ Sup L wedge</text>
+                  <polygon points="120,105 108,130 105,130" fill="#ef4444" stroke="#1e293b" stroke-width="1.5"/>
+                  <text x="95" y="140" font-size="9" fill="#ef4444">SP ← L</text>
+                  <text x="120" y="20" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">T10 PLS</text>
+                </svg>
+                <div class="cap">극돌기 후·좌 + 좌측 상부 wedge</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>T10 PLS</strong> (Posterior-Left-Superior)</h4>
+              <p>하부 흉추의 흔한 listing. Body 우측 회전 + 우측 측굴.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — T10 dermatome 대상성 통증(배꼽 주위) · 늑간신경 자극 · 좌측 반흉근 위축감 · 좌측 신장부위 둔통 가능
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p><strong>Right side posture</strong> 또는 <strong>Prone on Hi-Lo</strong>(thoracic drop 활용 시).</p>
+
+              <h5>👆 접촉점</h5>
+              <p>Side posture: <strong>우측 pisiform → 좌측 T10 TP/mamillary</strong>. Prone: 좌측 pisiform → 우측 TP cross-contact.</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive</strong><br/>
+                PLS 반대 — <strong>Anterior + Right + Inferior</strong>.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt><dd>Hi-Lo Table (thoracic drop) or Pelvic Bench (side posture)</dd>
+                <dt>⚡ Thrust</dt><dd>120ms · 3mm · 400-700N</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="gs-learning">
+            <h4>🎓 학습 자료 — 시연 영상 · 3D 해부</h4>
+            <div class="gs-video-grid">
+              <div class="gs-video-card gonstead">
+                <div class="gs-vc-head">🎬 Gonstead Lumbar L5 Side Posture</div>
+                <iframe src="https://www.youtube.com/embed/y1U3WoUVxkM" title="Gonstead Lumbar L5 Side Posture" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="gs-vc-meta">Carlsbad Chiropractor · L5 측와위 교정 · slack 제거 · 추력 방향</div>
+              </div>
+              <div class="gs-video-card anatomy">
+                <div class="gs-vc-head">🧠 3D 해부 — Lumbar Spine &amp; Disc</div>
+                <iframe src="https://www.youtube.com/embed/ZnFhzgY8u6Y" title="Lumbar spine 3D animation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="gs-vc-meta">요추 3D 애니메이션 · 구조·기능·움직임</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================================== -->
+      <!-- 5. 골반 & 천골 -->
+      <!-- ================================== -->
+      <div class="gs-region" id="region-pelvis">
+        <div class="gs-region-head">
+          <h3>⑤ 골반 (Ilium) & 천골 (Sacrum)</h3>
+          <p class="sub"><strong>Gonstead의 Foundation 원칙</strong> — 골반이 모든 척추 보상의 시작점. 반드시 첫 번째로 분석·교정.</p>
+        </div>
+        <div class="gs-region-body">
+
+          <div class="gs-xray-needs">
+            <h4>📸 필수 X-ray View</h4>
+            <ul>
+              <li><strong>A-P Pelvis</strong>(14×17) — iliac crest high·PSIS·ischial tuberosity 비교</li>
+              <li><strong>A-P Full Spine</strong> — 골반 위 spine 전체 (Gonstead 표준)</li>
+              <li><strong>Lateral Lumbopelvic</strong> — sacral base angle(Ferguson's angle)</li>
+              <li><strong>Sacral A-P (Ferguson)</strong> — sacral base listing 정밀</li>
+            </ul>
+          </div>
+
+          <!-- Right AS Ilium -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box has-image">
+                <img src="./images/clinical_cases/xrays/case_pelvis_ap.jpg" alt="A-P Pelvis X-ray 임상 케이스" loading="lazy"/>
+                <div class="caption">📸 A-P Pelvis — iliac crest 높이·SI 간극·acetabulum 정렬 비교</div>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <!-- Pelvis outline -->
+                  <path d="M60 70 Q50 50 70 45 L170 42 Q192 48 184 70 L180 120 Q160 140 120 142 Q80 140 60 120 Z" fill="none" stroke="#1e293b" stroke-width="2"/>
+                  <!-- Sacrum -->
+                  <polygon points="100,80 140,80 135,130 105,130" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+                  <text x="120" y="110" font-size="9" text-anchor="middle" fill="#334155">Sacrum</text>
+                  <!-- Left ilium (normal) -->
+                  <text x="85" y="65" font-size="9" fill="#64748b">L Ilium</text>
+                  <!-- Right ilium (AS - rotated anterior-superior) -->
+                  <text x="155" y="60" font-size="9" fill="#ef4444" font-weight="bold">R AS ↑↑</text>
+                  <!-- Rotation arrow -->
+                  <path d="M155 75 Q170 65 180 55" fill="none" stroke="#ef4444" stroke-width="1.8" marker-end="url(#arrAS)"/>
+                  <defs><marker id="arrAS" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0 0, 6 3, 0 6" fill="#ef4444"/></marker></defs>
+                  <text x="120" y="20" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">Right AS Ilium</text>
+                  <text x="120" y="32" font-size="8" text-anchor="middle" fill="#64748b">(Anterior-Superior rotation)</text>
+                </svg>
+                <div class="cap">우측 장골이 전방·상방 회전</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>Right AS Ilium</strong> (Anterior-Superior)</h4>
+              <p>우측 장골이 천골에 대해 <strong>전방 회전 + 상방 편위</strong>. 동측 하지가 <strong>functionally longer</strong>(~1-2cm). Gonstead에서 가장 자주 만나는 pelvic listing.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — 우측 서혜부(groin) 통증 · 우측 전상방 장골극(ASIS) 압통 · 우측 대퇴 굴곡 제한 · 앉을 때 우측 둔부 압박감 · 보행 시 우측 short stride
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p><strong>Left side posture</strong> (환측 위 = 우측 위) · 아래 다리 신전 · 위 다리 굴곡 90°.</p>
+
+              <h5>👆 접촉점</h5>
+              <p>검사자 <strong>우측 pisiform</strong> → 환자 <strong>우측 PSIS</strong>(Posterior Superior Iliac Spine) 또는 <strong>우측 ischial tuberosity</strong> (PI 보정 시).</p>
+
+              <h5>✋ 스태빌라이징 핸드</h5>
+              <p>좌측 팔뚝으로 환자 우측 어깨 지지 · 체간 rotation lock.</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive</strong><br/>
+                AS 반대 — <strong>Posterior + Inferior</strong>. PSIS를 아래·뒤로 밀어 ilium posterior-rotation 유도.<br/>
+                정확한 각도: 환자 몸 긴축에 대해 ~30° 아래·후방.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt><dd><strong>Gonstead Pelvic Bench</strong>(필수) · 환자 아래 다리 cradle</dd>
+                <dt>⚡ Thrust</dt><dd>100-150ms · 3-5mm · 500-1000N (Gonstead 영역 중 가장 큰 force)</dd>
+                <dt>🚨 금기</dt><dd>임신 20주 이상 · 골다공증 severe · 고관절 치환술 &lt; 3개월 · SI joint 감염</dd>
+              </dl>
+            </div>
+          </div>
+
+          <!-- Left PI Ilium -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box">
+                📸 A-P Pelvis<br/><br/>
+                <small>좌측 iliac crest가 낮음 · 좌측 PSIS가 반대측보다 아래·후방 · 좌측 SI 간극 하부 좁음</small>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <path d="M60 72 Q50 50 70 45 L170 48 Q192 52 184 72 L180 120 Q160 142 120 144 Q80 142 60 120 Z" fill="none" stroke="#1e293b" stroke-width="2"/>
+                  <polygon points="100,82 140,82 135,132 105,132" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+                  <text x="120" y="112" font-size="9" text-anchor="middle" fill="#334155">Sacrum</text>
+                  <text x="75" y="62" font-size="9" fill="#ef4444" font-weight="bold">L PI ↓↓</text>
+                  <text x="160" y="62" font-size="9" fill="#64748b">R Ilium</text>
+                  <path d="M75 75 Q60 95 55 115" fill="none" stroke="#ef4444" stroke-width="1.8" marker-end="url(#arrPI)"/>
+                  <defs><marker id="arrPI" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0 0, 6 3, 0 6" fill="#ef4444"/></marker></defs>
+                  <text x="120" y="20" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">Left PI Ilium</text>
+                  <text x="120" y="32" font-size="8" text-anchor="middle" fill="#64748b">(Posterior-Inferior rotation)</text>
+                </svg>
+                <div class="cap">좌측 장골이 후방·하방 회전</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>Left PI Ilium</strong> (Posterior-Inferior)</h4>
+              <p>AS의 거울상. 좌측 장골이 <strong>후방 회전 + 하방 편위</strong>. 동측 하지가 <strong>functionally shorter</strong>.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — 좌측 후방 둔부·천장관절 압통 · 좌측 햄스트링 긴장 · 좌측 sciatic 방사통 (L5-S1) · 앉은 자세에서 좌측 기울임
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p><strong>Right side posture</strong> (환측 위 = 좌측 위).</p>
+
+              <h5>👆 접촉점</h5>
+              <p>검사자 <strong>좌측 pisiform</strong> → 환자 <strong>좌측 ischial tuberosity</strong> (하방 편위 교정) 또는 <strong>좌측 lower PSIS</strong>.</p>
+
+              <h5>✋ 스태빌라이징 핸드</h5>
+              <p>우측 팔로 환자 좌측 어깨 지지.</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive</strong><br/>
+                PI 반대 — <strong>Anterior + Superior</strong>. Ischial tuberosity를 전상방으로 밀어 ilium anterior-rotation + superior-lift 유도.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt><dd>Gonstead Pelvic Bench</dd>
+                <dt>⚡ Thrust</dt><dd>120-150ms · 3-5mm · 500-900N</dd>
+                <dt>🚨 금기</dt><dd>임신 후기 · 디스크 extrusion + 좌측 하지 운동 결손</dd>
+              </dl>
+            </div>
+          </div>
+
+          <!-- Sacrum P-L (Base Posterior-Left) -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box">
+                📸 Ferguson Sacral View + A-P Pelvis<br/><br/>
+                <small>Sacral base가 좌측 상부 후방 · Ferguson's angle 증가 · 좌측 L5-S1 disc 우측 wedge</small>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <!-- Sacrum wedge view -->
+                  <polygon points="70,50 170,55 160,130 80,125" fill="#e2e8f0" stroke="#1e293b" stroke-width="2"/>
+                  <text x="120" y="95" font-size="11" text-anchor="middle" fill="#334155">Sacrum</text>
+                  <!-- Base line indicating posterior-left rotation -->
+                  <path d="M65 45 L170 60" stroke="#ef4444" stroke-width="2.5" marker-end="url(#arrSAC)"/>
+                  <defs><marker id="arrSAC" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0 0, 6 3, 0 6" fill="#ef4444"/></marker></defs>
+                  <text x="60" y="38" font-size="9" fill="#ef4444" font-weight="bold">Base L-post ↖</text>
+                  <!-- L5 Above -->
+                  <rect x="80" y="20" width="80" height="25" rx="4" fill="none" stroke="#64748b" stroke-dasharray="3"/>
+                  <text x="120" y="35" font-size="9" text-anchor="middle" fill="#64748b">L5</text>
+                  <text x="120" y="155" font-size="8" text-anchor="middle" fill="#64748b">Sacrum Base Posterior-Left</text>
+                </svg>
+                <div class="cap">Sacral base 좌측 상방이 후방으로</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>Sacrum Base P-L</strong> (Base Posterior-Left)</h4>
+              <p>Sacral base(S1 위면)가 <strong>좌측 상부가 후방</strong>으로 회전 · Ferguson's angle 증가.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — 좌측 천장관절 심부 둔통 · 좌측 천골골절 압통 · L5-S1 중심 요통 · 장시간 기립 시 악화 · 야간 자세 변경 곤란
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p><strong>Prone on Hi-Lo Table</strong> 또는 <strong>Right side posture</strong>. 골반 아래 쐐기 쿠션.</p>
+
+              <h5>👆 접촉점</h5>
+              <p>검사자 <strong>우측 pisiform</strong> → 환자 <strong>좌측 sacral base</strong>(S1 level, PSIS 내측).</p>
+
+              <h5>✋ 스태빌라이징 핸드</h5>
+              <p>좌측 팔로 환자 상체·어깨 지지 (prone) 또는 cross-arm side posture.</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive</strong><br/>
+                Base P-L 반대 — <strong>Anterior + Right</strong>. Base를 전방·우측으로 돌려 sacrum rotation 교정.<br/>
+                Thrust 직전 sacrum을 slight flexion으로 pre-loading.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt><dd>Hi-Lo Table (Pelvic drop piece) · Sacral wedge</dd>
+                <dt>⚡ Thrust</dt><dd>120ms · 3-5mm · 500-800N</dd>
+                <dt>🚨 금기</dt><dd>임신 · sacroiliitis · sacral fx · AS (ankylosing spondylitis)</dd>
+              </dl>
+            </div>
+          </div>
+
+          <!-- Right PIEX Ilium -->
+          <div class="gs-listing">
+            <div class="gs-visual">
+              <div class="gs-xray-box">
+                📸 A-P Pelvis<br/><br/>
+                <small>우측 ilium 후하방 + 외측 벌어짐(EX) · 좌측 대비 장골 wings spread · obturator foramen 좁음 동측</small>
+              </div>
+              <div class="gs-schema">
+                <svg viewBox="0 0 240 160" width="100%">
+                  <path d="M60 72 Q50 50 70 45 L170 48 Q200 55 195 80 L188 125 Q165 145 120 144 Q75 142 55 120 Z" fill="none" stroke="#1e293b" stroke-width="2"/>
+                  <polygon points="100,82 140,82 135,132 105,132" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+                  <text x="75" y="62" font-size="9" fill="#64748b">L</text>
+                  <text x="165" y="60" font-size="9" fill="#ef4444" font-weight="bold">R PIEX ↓→</text>
+                  <path d="M170 75 Q190 100 195 130" fill="none" stroke="#ef4444" stroke-width="1.8" marker-end="url(#arrPIEX)"/>
+                  <defs><marker id="arrPIEX" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><polygon points="0 0, 6 3, 0 6" fill="#ef4444"/></marker></defs>
+                  <text x="120" y="20" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">Right PIEX</text>
+                  <text x="120" y="32" font-size="8" text-anchor="middle" fill="#64748b">(Post-Inf + External flare)</text>
+                </svg>
+                <div class="cap">PI + 외측 벌어짐</div>
+              </div>
+            </div>
+            <div>
+              <h4>Listing: <strong>Right PIEX</strong> (Posterior-Inferior-External)</h4>
+              <p>PI(후·하) + <strong>EX</strong>(External flare — ilium wing이 외측으로 벌어짐) 복합 listing. 보통 만성 요통·천장통에서 보임.</p>
+
+              <div class="gs-symptoms">
+                <strong>주 증상</strong> — 우측 천장관절·좌측 L5-S1 요통 혼합 · 우측 햄스트링 당김 · 우측 둔부·대퇴 후방 통증 · 오랜 운전·좌식 작업자 흔함
+              </div>
+
+              <h5>🛏 환자 자세</h5>
+              <p><strong>Left side posture</strong> (우측 위).</p>
+
+              <h5>👆 접촉점</h5>
+              <p>우측 pisiform → <strong>우측 ischial tuberosity</strong> + slight medial 성분.</p>
+
+              <h5>✋ 스태빌라이징 핸드</h5>
+              <p>좌측 팔로 우측 어깨 지지.</p>
+
+              <div class="gs-lod">
+                <strong>🎯 Line of Drive</strong><br/>
+                PIEX 반대 — <strong>Anterior + Superior + Medial</strong>. 전·상·내측 3 vector 복합.
+              </div>
+
+              <dl class="gs-detail-grid">
+                <dt>🛠 보조 도구</dt><dd>Pelvic Bench · ischial tuberosity 정확 접촉이 중요</dd>
+                <dt>⚡ Thrust</dt><dd>150ms · 4-5mm · 600-1000N</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="gs-learning">
+            <h4>🎓 학습 자료 — 시연 영상 · 3D 해부</h4>
+            <div class="gs-video-grid">
+              <div class="gs-video-card gonstead">
+                <div class="gs-vc-head">🎬 Gonstead Pelvic Bench 환자 자세</div>
+                <iframe src="https://www.youtube.com/embed/gYWD9-gkIAo" title="Chiropractic Pelvic Bench patient positioning" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="gs-vc-meta">Dr. Rahim · Pelvic Bench side posture 세팅 · 접촉점 · 추력 준비</div>
+              </div>
+              <div class="gs-video-card anatomy">
+                <div class="gs-vc-head">🧠 3D 해부 — 천장관절 (SI Joint)</div>
+                <iframe src="https://www.youtube.com/embed/n4z8pXhVqWU" title="Sacroiliac Joint Anatomy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="gs-vc-meta">Dr. Nabil Ebraheim · SI 관절 구조·인대·dysfunction</div>
+              </div>
+            </div>
+            <div class="gs-video-grid" style="margin-top:16px">
+              <div class="gs-video-card gonstead">
+                <div class="gs-vc-head">🎬 Gonstead PIEX Ilium Pull</div>
+                <iframe src="https://www.youtube.com/embed/ILkaIRcN7H4" title="Gonstead PIEX Ilium Pull" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="gs-vc-meta">Carlsbad Chiropractor · PIEX listing pull maneuver</div>
+              </div>
+              <div class="gs-video-card gonstead">
+                <div class="gs-vc-head">🎬 Gonstead 종합 분석 &amp; 교정</div>
+                <iframe src="https://www.youtube.com/embed/m4l9j_mI3zA" title="Gonstead Technique Chiropractic Adjustment" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="gs-vc-meta">Dr. Scott Taylor · Gonstead Technique 전체 개요</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Summary table -->
+      <h3>🗂 전체 부위별 핵심 요약</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>부위</th><th>핵심 X-ray</th><th>흔한 Listing</th><th>표준 자세</th><th>접촉점</th><th>LOD 원리</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Atlas/상부경추</strong></td>
+            <td>APOM + Lateral Cerv</td>
+            <td>ASR · AIL · C2 PLS</td>
+            <td>Cervical Chair · Hi-Lo Prone</td>
+            <td>C1 TP / C2 Lamina</td>
+            <td>Listing 반대 3-vector</td>
+          </tr>
+          <tr>
+            <td><strong>하부경추</strong></td>
+            <td>A-P Lower Cerv + Oblique</td>
+            <td>C5 PLI · C7 PR</td>
+            <td>Cervical Chair</td>
+            <td>Articular Pillar</td>
+            <td>A + 반대 lateral + wedge 반대</td>
+          </tr>
+          <tr>
+            <td><strong>상부흉추</strong></td>
+            <td>A-P Upper Thor + Lateral</td>
+            <td>T3 PRS · T1 PLS</td>
+            <td>Prone Hi-Lo</td>
+            <td>Transverse Process</td>
+            <td>A + 반대 lateral + wedge 반대</td>
+          </tr>
+          <tr>
+            <td><strong>하부흉추·요추</strong></td>
+            <td>A-P Lumbar (femur 포함)</td>
+            <td>L5 PLI · L3 PR · T10 PLS</td>
+            <td>Side Posture</td>
+            <td>Mamillary Process</td>
+            <td>A + 반대 lateral + wedge 반대</td>
+          </tr>
+          <tr>
+            <td><strong>골반 · 천골</strong></td>
+            <td>A-P Pelvis · Ferguson</td>
+            <td>R AS · L PI · R PIEX · Sac Base P-L</td>
+            <td>Side Posture / Prone</td>
+            <td>PSIS · Ischial Tub · Sac Base</td>
+            <td>Ilium/Sacrum 회전 반대</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-danger" style="margin-top:1.5rem">
+        <h4>⚠ 안전·윤리 원칙</h4>
+        <ul>
+          <li><strong>X-ray 피폭 최소화</strong> — EOS 저선량 시스템·디지털 · 임산부·소아 최대한 회피</li>
+          <li><strong>5 Components 일치 원칙</strong> — Instrumentation·Palpation·History 일치 시에만 교정 (X-ray만으로 결정 금지)</li>
+          <li><strong>Red flag 배제 후</strong> 시술 (cauda equina, fracture, neoplasm, infection, VAD)</li>
+          <li><strong>Post-adjustment neurological check</strong> — DTR·MMT·감각 변화 없어야 함</li>
+          <li>악화 시 즉시 중단 · 영상 재검토 · 상급 의뢰</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section id="clinical">
+      <h2>임상 적용</h2>
+      <div class="placeholder"><strong>[임상 프로토콜 본문 자리]</strong> 적응증·환자 자세·접촉점·추력 벡터·주의점·안전. 다학제 협진 맥락에서의 위치.</div>
+    </section>
+
+    <section id="evidence">
+      <h2>근거 수준</h2>
+      <table class="data-table">
+        <thead><tr><th>적응증</th><th>근거 수준</th><th>비고</th></tr></thead>
+        <tbody>
+          <tr><td>본 기법 주된 적응증</td><td>🟡 Moderate — 요통·경추통 SMT (Cochrane)</td><td>상세는 강의록 MD 참조</td></tr>
+          <tr style="background:#fff3f3;"><td>🔴 전신질환·내장·자폐·ADHD·천식·고혈압 치료</td><td><span class="evidence ev-none">🔴 No evidence</span></td><td>Cochrane·PubMed 근거 없음</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="critical" style="scroll-margin-top: 120px;">
+      <h2>🔴 비판적 시각</h2>
+      <div class="callout callout-danger">
+        <h4>X-ray 의존도 높음</h4>
+        <p>전장척추 X-ray 필수 — 임산부·반복 피폭 주의. 분석 신뢰도는 중간 수준. 현대 의학에서 수용되지 않는 'wedging이 모든 질환 원인'류 확장 주장은 🔴 No evidence.</p>
+      </div>
+      <p>상세 비판 문헌 리뷰와 과장 vs 근거 비교표는 강의록 MD 확장판에서 다룹니다.</p>
+    </section>
+
+    <section id="resources">
+      <h2>강의 자료</h2>
+      <p class="section-lead"><strong>11/11</strong> 자료 준비 완료.</p>
+      <h3>📖 강의록</h3>
+      <div class="resource-row">
+        <a class="resource-link" href="./viewer.html?src=gonstead/lecture/chapter04_gonstead.md"><span class="icon">📖</span><span><strong>상세 강의록 MD</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>근거 기반 · 참고문헌</small></span></a>
+      </div>
+      <h3>🎧 팟캐스트</h3>
+      <div class="resource-row">
+        <a class="resource-link" href="./gonstead/01_podcast.m4a"><span class="icon">🎧</span><span><strong>Deep Dive 2인 대화 60분+</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>evidence-based · 비판적 시각</small></span></a>
+      </div>
+      <h3>🎥 AI 동영상</h3>
+      <div class="resource-row">
+        <a class="resource-link" href="./gonstead/02_video_part1.mp4"><span class="icon">🎥</span><span><strong>Part 1 (이론)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
+        <a class="resource-link" href="./gonstead/03_video_part2.mp4"><span class="icon">🎥</span><span><strong>Part 2 (임상·비판)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
+      </div>
+      <h3>🎴 PPTX 슬라이드 (4개 × 15장)</h3>
+      <div class="resource-row">
+        <a class="resource-link" href="./gonstead/04_slides_part1.pdf"><span class="icon">🎴</span><span><strong>Part 1 · 기초</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./gonstead/05_slides_part2.pdf"><span class="icon">🎴</span><span><strong>Part 2 · Aff/Def/Eff</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./gonstead/06_slides_part3.pdf"><span class="icon">🎴</span><span><strong>Part 3 · Assessment</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./gonstead/07_slides_part4.pdf"><span class="icon">🎴</span><span><strong>Part 4 · 임상·비판</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+      </div>
+      <h3>📄 Report Markdown</h3>
+      <div class="resource-row">
+        <a class="resource-link" href="./viewer.html?src=gonstead/08_report_week1.md"><span class="icon">📄</span><span><strong>Report 1/4</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>NotebookLM 자동 생성</small></span></a>
+        <a class="resource-link" href="./viewer.html?src=gonstead/09_report_week2.md"><span class="icon">📄</span><span><strong>Report 2/4</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>NotebookLM 자동 생성</small></span></a>
+        <a class="resource-link" href="./viewer.html?src=gonstead/010_report_week3.md"><span class="icon">📄</span><span><strong>Report 3/4</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>NotebookLM 자동 생성</small></span></a>
+        <a class="resource-link" href="./viewer.html?src=gonstead/011_report_week4.md"><span class="icon">📄</span><span><strong>Report 4/4</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>NotebookLM 자동 생성</small></span></a>
+      </div>
+      <p style="margin-top:1rem">NotebookLM 노트북: <a href="https://notebooklm.google.com/notebook/4e8b2040-ae5a-438c-90ad-a8acc7a542f2" target="_blank" rel="noopener">열기 →</a></p>
+    </section>
+
+    <section id="extra-lectures">
+      <h2>📜 사용자 직접 강의 자료 (전남대학교)</h2>
+      <p class="section-lead">2007년 전남대학교에서 사용자가 직접 강의한 Gonstead Technique 자료입니다. 요추·천골·골반 영역 중심.</p>
+      <div class="resource-row">
+        <a class="resource-link" href="./archive/Chiropractic%20Technical%20Symposium%20in%20Lumbar%20Spine%2C%20Sacrum%20and%20Pelvis.docx" download><span class="icon">📜</span><span><strong>Chiropractic Technical Symposium in Lumbar Spine, Sacrum and Pelvis</strong> <span class="status-badge ready">✅ 원본 자료</span><br/><small>2007년 전남대 강의 · DOCX 4MB · 다운로드</small></span></a>
+      </div>
+    </section>
+
+      <section id="legacy-demos" class="archive-inline">
+      <h2>🎬 레거시 시연 영상 (사용자 직접 시연)</h2>
+      <p class="section-lead">2015년 KOA 학회 및 임상 시연 당시 사용자가 촬영한 원본 영상입니다. 참고용 · 직접 시연 중심이므로 이론 설명은 챕터 본문을 참고하세요.</p>
+      <div class="video-thumb-grid">
+        <div class="video-card"><video src="./archive/videos/techniques/gonstead_sitting.mp4" controls preload="metadata"></video><div class="info"><div class="title">Gonstead Sitting</div><div class="meta">좌위 교정</div></div></div><div class="video-card"><video src="./archive/videos/techniques/hypothenar_ilium_push.mp4" controls preload="metadata"></video><div class="info"><div class="title">Hypothenar Ilium Push</div><div class="meta">장골 교정</div></div></div><div class="video-card"><video src="./archive/videos/techniques/hypothenar_sacral_apex_push.mp4" controls preload="metadata"></video><div class="info"><div class="title">Hypothenar Sacral Apex Push</div><div class="meta">천골 첨부 교정</div></div></div>
+      </div>
+    </section>
+    
+</main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5>챕터 탐색</h5>
+          <ul>
+            <li><a href="./index.html">← 메인</a></li>
+            <li><a href="./chapter03_diversified.html">← 3. Diversified</a></li>
+            <li><strong>Chapter 4 (현재)</strong></li>
+            <li><a href="./chapter05_toggle_recoil.html">5. Toggle Recoil →</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>이 챕터 자료</h5>
+          <ul>
+            <li><em>강의록 MD (작성 예정)</em></li>
+            <li><em>팟캐스트 · 영상 (Google 생성 중)</em></li>
+            <li><em>PPTX (추후 제출)</em></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>외부 근거</h5>
+          <ul>
+            <li><a href="https://www.cochranelibrary.com/" target="_blank" rel="noopener">Cochrane Library</a></li>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a></li>
+            <li><a href="https://notebooklm.google.com/notebook/4e8b2040-ae5a-438c-90ad-a8acc7a542f2" target="_blank" rel="noopener">이 챕터 NotebookLM</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>계정</h5>
+          <ul>
+            <li><a href="./login.html">로그인</a></li>
+            <li><a href="./signup.html">가입</a></li>
+            <li><a href="./admin.html">관리자</a></li>
+            <li><a href="mailto:drjang00@gmail.com">문의</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>(C) 2026 Dr. Jang · Chapter 4. Gonstead Technique</span>
+        <span>교육 목적 · 임상 판단은 담당 의료진의 책임</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

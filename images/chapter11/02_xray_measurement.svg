@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">CBP X-ray 측정 — Harrison Posterior Tangent</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">측면 경추 X-ray에서 lordosis angle 측정 표준</text>
+
+  <!-- Cervical X-ray representation -->
+  <rect x="80" y="120" width="380" height="400" rx="10" fill="#1d1d1f"/>
+  <text x="270" y="148" class="label sub" text-anchor="middle" font-size="11" fill="#fff">Lateral cervical X-ray</text>
+
+  <!-- Vertebrae stylized -->
+  <g transform="translate(270 180)">
+    <!-- C2 -->
+    <rect x="-30" y="0" width="60" height="35" rx="3" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+    <text x="0" y="22" class="label sub" text-anchor="middle" font-size="10">C2</text>
+    <!-- C3 -->
+    <rect x="-30" y="45" width="60" height="35" rx="3" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+    <text x="0" y="67" class="label sub" text-anchor="middle" font-size="10">C3</text>
+    <!-- C4 -->
+    <rect x="-32" y="90" width="60" height="35" rx="3" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+    <text x="-2" y="112" class="label sub" text-anchor="middle" font-size="10">C4</text>
+    <!-- C5 -->
+    <rect x="-30" y="135" width="60" height="35" rx="3" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+    <text x="0" y="157" class="label sub" text-anchor="middle" font-size="10">C5</text>
+    <!-- C6 -->
+    <rect x="-25" y="180" width="60" height="35" rx="3" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+    <text x="5" y="202" class="label sub" text-anchor="middle" font-size="10">C6</text>
+    <!-- C7 -->
+    <rect x="-15" y="225" width="60" height="35" rx="3" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+    <text x="15" y="247" class="label sub" text-anchor="middle" font-size="10">C7</text>
+  </g>
+
+  <!-- Posterior tangent lines -->
+  <line x1="270" y1="180" x2="270" y2="215" stroke="#0071e3" stroke-width="2"/>
+  <text x="245" y="200" class="label sub" font-size="10" fill="#0071e3">tangent C2</text>
+
+  <line x1="285" y1="405" x2="305" y2="440" stroke="#c0392b" stroke-width="2"/>
+  <text x="240" y="425" class="label sub" font-size="10" fill="#c0392b">tangent C7</text>
+
+  <!-- Angle arc -->
+  <path d="M 270 250 A 40 40 0 0 1 310 270" fill="none" stroke="#d4a017" stroke-width="2"/>
+  <text x="320" y="280" class="label title" font-size="16" fill="#8a5a00">α = 42°</text>
+
+  <!-- Right side: explanation -->
+  <rect x="510" y="120" width="410" height="200" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="715" y="150" class="label title" text-anchor="middle" font-size="16">측정 절차 (Harrison Method)</text>
+  <text x="530" y="180" class="label" font-size="13">① C2 후방 가장자리 접선 그리기</text>
+  <text x="530" y="202" class="label" font-size="13">② C7 후방 가장자리 접선 그리기</text>
+  <text x="530" y="224" class="label" font-size="13">③ 두 접선이 이루는 각 = cervical lordosis</text>
+  <text x="530" y="246" class="label" font-size="13">④ 정상 범위: <tspan font-weight="700">34°-49°</tspan> (평균 42°)</text>
+  <text x="530" y="268" class="label" font-size="13">⑤ 측정 재현성: r = 0.96 (Harrison RT)</text>
+  <text x="530" y="295" class="label sub" font-size="11">근거: Harrison D et al. 1996 Spine reproducibility</text>
+
+  <!-- Bottom: classification -->
+  <rect x="510" y="340" width="410" height="180" rx="14" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="715" y="370" class="label title" text-anchor="middle" font-size="16" fill="#8a5a00">분류 + 임상 의의</text>
+  <text x="530" y="400" class="label" font-size="13"><tspan font-weight="700">42° ± 7°</tspan>: 정상 (normal)</text>
+  <text x="530" y="422" class="label" font-size="13"><tspan font-weight="700">20-34°</tspan>: 경도 hypolordosis</text>
+  <text x="530" y="444" class="label" font-size="13"><tspan font-weight="700">&lt; 20°</tspan>: 중등 hypolordosis (military neck)</text>
+  <text x="530" y="466" class="label" font-size="13"><tspan font-weight="700">&gt; 49°</tspan>: hyperlordosis</text>
+  <text x="530" y="488" class="label" font-size="13"><tspan font-weight="700">음수 (kyphosis)</tspan>: 가장 비정상</text>
+  <text x="530" y="510" class="label sub" font-size="11">⚠ X-ray 반복 노출 위험 — 효과·위험 비교 평가 필요</text>
+</svg>

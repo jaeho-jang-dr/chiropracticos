@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">Toggle Recoil 생체역학 (HIO)</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">B.J. Palmer 1930s · 상부경추 특이 교정 — pisiform contact + drop headpiece</text>
+
+  <!-- Phase 1: Pre-load -->
+  <rect x="40" y="130" width="270" height="380" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="175" y="160" class="label title" text-anchor="middle" font-size="18">① Pre-load (Set)</text>
+  <text x="175" y="184" class="label sub" text-anchor="middle" font-size="12">접촉점에 가벼운 압박</text>
+
+  <!-- Stylized atlas + hand -->
+  <ellipse cx="175" cy="280" rx="70" ry="40" fill="#fff" stroke="#3182ce" stroke-width="1.5"/>
+  <text x="175" y="285" class="label sub" text-anchor="middle" font-size="11">Atlas TP</text>
+  <ellipse cx="175" cy="240" rx="35" ry="20" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="175" y="245" class="label sub" text-anchor="middle" font-size="10">pisiform</text>
+
+  <text x="175" y="380" class="label" text-anchor="middle" font-size="13">• Skin slack 제거</text>
+  <text x="175" y="402" class="label" text-anchor="middle" font-size="13">• Drop headpiece 미작동</text>
+  <text x="175" y="424" class="label" text-anchor="middle" font-size="13">• 환자 측와위·이완</text>
+  <text x="175" y="465" class="label sub" text-anchor="middle" font-size="11">Force = 가벼운 손가락 무게</text>
+  <text x="175" y="488" class="label sub" text-anchor="middle" font-size="11">Time = 5–10초 정렬 확인</text>
+
+  <!-- Arrow 1->2 -->
+  <path d="M 320 320 L 360 320" stroke="#0071e3" stroke-width="3" fill="none"/>
+  <polygon points="360,320 348,313 348,327" fill="#0071e3"/>
+
+  <!-- Phase 2: Toggle thrust -->
+  <rect x="370" y="130" width="270" height="380" rx="14" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="505" y="160" class="label title" text-anchor="middle" font-size="18" fill="#8a5a00">② Toggle Thrust</text>
+  <text x="505" y="184" class="label sub" text-anchor="middle" font-size="12">고속 단발 충격</text>
+
+  <ellipse cx="505" cy="280" rx="70" ry="40" fill="#fff" stroke="#d4a017" stroke-width="1.5"/>
+  <ellipse cx="505" cy="245" rx="35" ry="20" fill="#ffe1a8" stroke="#d4a017" stroke-width="2"/>
+
+  <!-- Force arrows -->
+  <path d="M 505 215 L 505 270" stroke="#d4a017" stroke-width="3" fill="none"/>
+  <polygon points="505,270 498,258 512,258" fill="#d4a017"/>
+  <text x="540" y="245" class="label title" font-size="14" fill="#8a5a00">F</text>
+
+  <text x="505" y="370" class="label" text-anchor="middle" font-size="13">• Velocity ≈ 100–150 ms</text>
+  <text x="505" y="392" class="label" text-anchor="middle" font-size="13">• Amplitude &lt; 3 mm</text>
+  <text x="505" y="414" class="label" text-anchor="middle" font-size="13">• Drop piece 동시 하강</text>
+  <text x="505" y="455" class="label sub" text-anchor="middle" font-size="11">Force = 50–100 N (저강도)</text>
+  <text x="505" y="478" class="label sub" text-anchor="middle" font-size="11">No follow-through (recoil)</text>
+
+  <!-- Arrow 2->3 -->
+  <path d="M 650 320 L 690 320" stroke="#0071e3" stroke-width="3" fill="none"/>
+  <polygon points="690,320 678,313 678,327" fill="#0071e3"/>
+
+  <!-- Phase 3: Recoil & rest -->
+  <rect x="700" y="130" width="240" height="380" rx="14" fill="#e8f5e9" stroke="#2d7a3a" stroke-width="2"/>
+  <text x="820" y="160" class="label title" text-anchor="middle" font-size="18" fill="#1d5a2a">③ Recoil + Rest</text>
+  <text x="820" y="184" class="label sub" text-anchor="middle" font-size="12">즉시 손 떼기 + 안정</text>
+
+  <ellipse cx="820" cy="270" rx="70" ry="40" fill="#fff" stroke="#2d7a3a" stroke-width="1.5"/>
+  <text x="820" y="275" class="label sub" text-anchor="middle" font-size="11">교정된 분절</text>
+
+  <text x="820" y="350" class="label" text-anchor="middle" font-size="13">• 즉시 손 분리</text>
+  <text x="820" y="372" class="label" text-anchor="middle" font-size="13">• 환자 5–15분 안정</text>
+  <text x="820" y="394" class="label" text-anchor="middle" font-size="13">• 측와위 → 좌위 → 보행</text>
+  <text x="820" y="435" class="label sub" text-anchor="middle" font-size="11">근육 재학습 시간 확보</text>
+  <text x="820" y="458" class="label sub" text-anchor="middle" font-size="11">post-adjustment rest 핵심</text>
+
+  <!-- Footer warning -->
+  <text x="480" y="545" class="label sub" text-anchor="middle" font-size="11" fill="#c0392b">⚠ HIO의 전신 질환 치료 주장은 No reliable evidence — 본 강의는 술기적 측면만 채택</text>
+</svg>

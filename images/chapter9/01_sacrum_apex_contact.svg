@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">Logan Basic — 천골 Apex 접촉점</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">Hugh B. Logan 1931 · sacrotuberous ligament 기부 · 2-10 oz 극저강도</text>
+
+  <!-- Pelvis posterior view -->
+  <text x="240" y="130" class="label title" text-anchor="middle" font-size="16">골반 후면도 (Posterior view)</text>
+
+  <!-- Sacrum -->
+  <path d="M 200 180 L 280 180 L 295 250 L 270 320 L 240 360 L 210 320 L 185 250 Z"
+        fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="240" y="220" class="label sub" text-anchor="middle" font-size="12">Sacrum</text>
+  <text x="240" y="240" class="label sub" text-anchor="middle" font-size="11">S1-S5</text>
+
+  <!-- Sacrum apex marker -->
+  <circle cx="240" cy="345" r="10" fill="#c0392b"/>
+  <text x="280" y="350" class="label" font-size="13" fill="#c0392b">Apex</text>
+  <text x="280" y="365" class="label sub" font-size="10">S2-S3 분기</text>
+
+  <!-- Iliac bones -->
+  <path d="M 100 170 Q 80 250 130 320 Q 160 330 185 280 Q 175 220 160 175 Z"
+        fill="#fff" stroke="#1d1d1f" stroke-width="2"/>
+  <text x="135" y="240" class="label sub" text-anchor="middle" font-size="11">L Ilium</text>
+
+  <path d="M 380 170 Q 400 250 350 320 Q 320 330 295 280 Q 305 220 320 175 Z"
+        fill="#fff" stroke="#1d1d1f" stroke-width="2"/>
+  <text x="345" y="240" class="label sub" text-anchor="middle" font-size="11">R Ilium</text>
+
+  <!-- PSIS markers -->
+  <circle cx="170" cy="200" r="5" fill="#3182ce"/>
+  <circle cx="310" cy="200" r="5" fill="#3182ce"/>
+  <text x="100" y="195" class="label sub" font-size="10">PSIS</text>
+  <text x="335" y="195" class="label sub" font-size="10">PSIS</text>
+
+  <!-- Coccyx -->
+  <ellipse cx="240" cy="385" rx="10" ry="20" fill="#fff" stroke="#1d1d1f" stroke-width="1.5"/>
+  <text x="270" y="395" class="label sub" font-size="11">Coccyx</text>
+
+  <!-- Contact arrow -->
+  <path d="M 80 380 L 220 350" stroke="#c0392b" stroke-width="3" fill="none"/>
+  <polygon points="220,350 207,346 211,358" fill="#c0392b"/>
+  <text x="60" y="400" class="label" font-size="13" fill="#c0392b">접촉점</text>
+
+  <!-- Right side info panel -->
+  <rect x="500" y="120" width="430" height="200" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="715" y="150" class="label title" text-anchor="middle" font-size="16">접촉 기법</text>
+  <text x="520" y="180" class="label" font-size="13">• Position: 환자 prone</text>
+  <text x="520" y="202" class="label" font-size="13">• Contact: thumb pad on sacrum apex</text>
+  <text x="520" y="224" class="label" font-size="13">• Vector: 두측·전방 (cephalad·anterior)</text>
+  <text x="520" y="246" class="label" font-size="13">• Force: 2–10 oz (57–283 g)</text>
+  <text x="520" y="268" class="label" font-size="13">• Duration: 30 sec ~ 5 min sustained</text>
+  <text x="520" y="290" class="label sub" font-size="11">접촉점 = sacrotuberous ligament 기부 (S2-S3)</text>
+  <text x="520" y="307" class="label sub" font-size="11">⚠ 절대 thrust 없음 — 오직 sustained pressure</text>
+
+  <!-- Bottom: indications + evidence -->
+  <rect x="500" y="340" width="430" height="200" rx="14" fill="#e8f5e9" stroke="#2d7a3a" stroke-width="2"/>
+  <text x="715" y="370" class="label title" text-anchor="middle" font-size="16" fill="#1d5a2a">적응증 + 안전 프로파일</text>
+
+  <text x="520" y="400" class="label title" font-size="13">🟢 적응증</text>
+  <text x="520" y="422" class="label" font-size="12">• 임산부 요통 / 골반통</text>
+  <text x="520" y="442" class="label" font-size="12">• 영유아·고령자 (저강도)</text>
+  <text x="520" y="462" class="label" font-size="12">• 측만증 보조 치료</text>
+  <text x="520" y="482" class="label" font-size="12">• 월경통 (보고 있음)</text>
+
+  <text x="520" y="510" class="label sub" font-size="11">근거: 🟠 Limited-Moderate (NCT00728572 surface EMG)</text>
+  <text x="520" y="528" class="label sub" font-size="11">🔴 Universal Innate Intelligence vitalism은 본 강의 제외</text>
+</svg>

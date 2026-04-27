@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="50" class="label title" text-anchor="middle" font-size="28">Activator Instrument — 기구 보조 저강도 교정</text>
+  <text x="480" y="78" class="label sub" text-anchor="middle" font-size="14">Arlan Fuhr 1967 · 스프링 기구 · 1985 NIH grant 수혜 (카이로프랙틱 최초)</text>
+
+  <!-- Instrument schematic -->
+  <rect x="60" y="120" width="500" height="280" rx="14" fill="#fff" stroke="#d2d2d7" stroke-width="2"/>
+  <text x="310" y="150" class="label title" text-anchor="middle" font-size="17">Activator V 기구 구조</text>
+
+  <!-- Body of instrument -->
+  <rect x="100" y="200" width="60" height="180" rx="10" fill="#1d1d1f"/>
+  <text x="130" y="298" class="label sub" text-anchor="middle" font-size="10" fill="#fff">Handle</text>
+
+  <!-- Trigger -->
+  <rect x="100" y="350" width="35" height="50" rx="6" fill="#3a3a3c"/>
+  <text x="118" y="378" class="label sub" text-anchor="middle" font-size="9" fill="#fff">trigger</text>
+
+  <!-- Shaft -->
+  <rect x="160" y="220" width="180" height="30" rx="5" fill="#fff7e0" stroke="#d4a017" stroke-width="2"/>
+  <text x="250" y="240" class="label sub" text-anchor="middle" font-size="11" fill="#8a5a00">spring chamber</text>
+
+  <!-- Force adjustment dial -->
+  <circle cx="200" cy="250" r="12" fill="#fff" stroke="#d4a017" stroke-width="2"/>
+  <text x="200" y="280" class="label sub" text-anchor="middle" font-size="9">force dial</text>
+  <text x="200" y="291" class="label sub" text-anchor="middle" font-size="9">1-4</text>
+
+  <!-- Stylus tip -->
+  <rect x="340" y="225" width="60" height="20" rx="5" fill="#1d1d1f"/>
+  <polygon points="400,225 430,235 400,245" fill="#1d1d1f"/>
+  <text x="400" y="200" class="label sub" text-anchor="middle" font-size="10">rubber tip</text>
+  <text x="400" y="265" class="label sub" text-anchor="middle" font-size="9">Δ 0.3-1.6mm</text>
+
+  <!-- Force vector arrow -->
+  <path d="M 430 235 L 480 235" stroke="#0071e3" stroke-width="3" fill="none"/>
+  <polygon points="480,235 468,228 468,242" fill="#0071e3"/>
+
+  <!-- Specifications panel -->
+  <rect x="600" y="120" width="320" height="280" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="760" y="150" class="label title" text-anchor="middle" font-size="17">기구 사양</text>
+
+  <text x="620" y="190" class="label" font-size="14">• Thrust force: <tspan font-weight="700">~140 N</tspan></text>
+  <text x="620" y="218" class="label" font-size="14">• Pulse duration: <tspan font-weight="700">3 ms</tspan></text>
+  <text x="620" y="246" class="label" font-size="14">• Stylus displacement: <tspan font-weight="700">0.3–1.6 mm</tspan></text>
+  <text x="620" y="274" class="label" font-size="14">• Frequency: <tspan font-weight="700">1 thrust/sec</tspan></text>
+  <text x="620" y="302" class="label" font-size="14">• Force settings: <tspan font-weight="700">4 levels</tspan></text>
+  <text x="620" y="330" class="label" font-size="14">• Stylus material: rubber tip</text>
+  <text x="620" y="358" class="label" font-size="14">• 분절별 각도 가이드 동봉</text>
+  <text x="760" y="385" class="label sub" text-anchor="middle" font-size="11">spring force × 분절·환자 체형 매칭</text>
+
+  <!-- Bottom panel: Comparison -->
+  <rect x="60" y="430" width="860" height="115" rx="14" fill="#fff7e0" stroke="#d4a017" stroke-width="1.5"/>
+  <text x="490" y="458" class="label title" text-anchor="middle" font-size="16" fill="#8a5a00">수기 HVLA 대비 비교</text>
+
+  <text x="80" y="488" class="label title" font-size="12">수기 HVLA</text>
+  <text x="80" y="508" class="label" font-size="11">Force: 400-1000N · Pulse: 100-150ms · Δ: 1-3mm</text>
+  <text x="80" y="528" class="label sub" font-size="11">cavitation, audible release 동반</text>
+
+  <text x="500" y="488" class="label title" font-size="12">Activator</text>
+  <text x="500" y="508" class="label" font-size="11">Force: 140N · Pulse: 3ms · Δ: 0.3-1.6mm</text>
+  <text x="500" y="528" class="label sub" font-size="11">고령·소아·임산부·골다공증·불안 환자에 적합</text>
+</svg>
