@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>레거시 아카이브 · 카이로프랙틱정형외과</title>
-<link rel="stylesheet" href="./assets/main.css?v=20260427h" />
+<link rel="stylesheet" href="./assets/main.css?v=20260427j" />
 <style>
   .archive-shell { max-width: 1180px; margin: 32px auto 96px; padding: 0 24px; }
   .archive-hero {
@@ -135,8 +135,8 @@
     font-weight: 500;
   }
 </style>
-  <script src="./assets/config.js?v=20260427h"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260427h"></script>
+  <script src="./assets/config.js?v=20260427j"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260427j"></script>
 </head>
 <body>
 
@@ -158,7 +158,7 @@
   <section class="archive-hero">
     <h1>📂 레거시 아카이브</h1>
     <p class="lead">
-      2006-2015년 사용자(장재호)의 카이로프랙틱 강의·시연 자료 통합 라이브러리. 신경학 검사 영상 · 기법 시연 · 정형통증학회 발표 자료 · 환자 X-ray 케이스 · 카이로프랙틱 교재 서가 · 초음파 영상 · 장비 사진.
+      2006-2015년 사용자(장재호)의 카이로프랙틱 강의·시연 자료 통합 라이브러리. 신경학 검사 영상 · 기법 시연 · 정형통증학회 발표 자료 · 카이로프랙틱 교재 서가 · 장비 사진.
     </p>
   </section>
 
@@ -238,24 +238,9 @@
     </div>
   </section>
 
-  <!-- Clinical Cases (X-rays) -->
-  <section class="archive-section" id="clinical-cases">
-    <h2>🩻 환자 X-ray 케이스 (29건)<span class="ch-tag">2015 진료 데이터</span></h2>
-    <p class="section-lead" style="color:#424245;margin:0 0 16px">
-      Spine · Pelvis · Knee arthritis · Ankle/Wrist/Radial head 골절 · Malleolar fracture 등
-    </p>
-    <div class="image-grid" id="xray-grid">로딩 중…</div>
-  </section>
-
-  <!-- Ultrasound -->
-  <section class="archive-section" id="ultrasound">
-    <h2>🔊 초음파 영상 (9건)<span class="ch-tag">Ch 2 FN 해부 보조</span></h2>
-    <div class="image-grid" id="ultrasound-grid">로딩 중…</div>
-  </section>
-
   <!-- Chiropractic Tables -->
   <section class="archive-section" id="equipment">
-    <h2>🛠 카이로프랙틱 장비 (18건)</h2>
+    <h2>🛠 카이로프랙틱 장비 (1건 — Leander only)</h2>
     <div class="image-grid" id="equipment-grid">로딩 중…</div>
   </section>
 
@@ -277,8 +262,6 @@
       `<a href="./${it.dst}" target="_blank" title="${it.name}"><img src="./${it.dst}" alt="${it.name}" loading="lazy"/></a>`
     ).join('');
   }
-  loadGallery('xray', 'xray-grid');
-  loadGallery('ultrasound', 'ultrasound-grid');
   loadGallery('table', 'equipment-grid');
   loadGallery('textbook', 'textbook-grid');
 
