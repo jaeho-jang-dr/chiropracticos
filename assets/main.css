@@ -225,9 +225,16 @@ h1, h2, h3, h4, h5 {
   margin-left: auto;
   position: relative;
   transition: background .18s var(--ease), transform .18s var(--ease), border-color .18s var(--ease);
+  /* fallback color in case the bars span doesn't render */
+  color: var(--c-text);
+  font-size: 1.25rem;
+  line-height: 1;
 }
 .nav-toggle:hover { background: rgba(255,255,255,.8); border-color: rgba(0,0,0,.12); }
 .nav-toggle:active { transform: scale(.96); }
+.nav-toggle .hb-fallback {
+  display: none; /* hidden when .bars renders properly */
+}
 .nav-toggle .bars {
   position: relative;
   width: 18px;

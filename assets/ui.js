@@ -21,7 +21,9 @@
       btn.className = 'nav-toggle';
       btn.setAttribute('aria-label', '메뉴 열기');
       btn.setAttribute('aria-expanded', 'false');
-      btn.innerHTML = '<span class="bars"><span></span></span>';
+      // ☰ unicode is the visible fallback if CSS for .bars fails to load.
+      // CSS hides .hb-fallback when .bars renders correctly.
+      btn.innerHTML = '<span class="bars" aria-hidden="true"><span></span></span><span class="hb-fallback" aria-hidden="true">☰</span>';
 
       // Mirror nav-actions into the dropdown so login/start buttons stay reachable on mobile
       const actions = nav.querySelector('.nav-actions');
