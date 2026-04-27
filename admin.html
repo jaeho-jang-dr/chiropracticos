@@ -47,6 +47,25 @@
 
     <div class="stats" id="stats"></div>
 
+    <div id="db-usage" style="background:#fff;border:1px solid #eef0f2;border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:1.5rem">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">
+        <h3 style="margin:0;font-size:1rem">💾 Supabase DB 사용량 <span style="font-weight:400;color:#888;font-size:.85em">— 500MB Free 한도</span></h3>
+        <button id="cleanup-btn" style="padding:.35rem .85rem;font-size:.8em;border-radius:6px;border:1px solid #d2d2d7;background:#fff;cursor:pointer">🧹 즉시 정리</button>
+      </div>
+      <div id="db-bar-wrap" style="height:8px;background:#f0f0f3;border-radius:999px;overflow:hidden;margin-bottom:.5rem">
+        <div id="db-bar" style="height:100%;background:linear-gradient(90deg,#34c759,#0a84ff);width:0%;transition:width .3s"></div>
+      </div>
+      <div id="db-summary" style="font-size:.85em;color:#666">로딩 중...</div>
+      <table style="width:100%;margin-top:1rem;font-size:.82em">
+        <thead><tr style="text-align:left;color:#888"><th style="padding:.35rem 0">테이블</th><th>Rows</th><th>크기</th></tr></thead>
+        <tbody id="db-tables"></tbody>
+      </table>
+      <p style="font-size:.78em;color:#888;margin:.85rem 0 0;line-height:1.5">
+        access_logs는 30일, downloads는 90일 후 자동 삭제됩니다 (매일 12:00 KST · pg_cron).
+        삭제 전 daily_chapter_views로 일자별 통계가 영구 집계됩니다.
+      </p>
+    </div>
+
     <div class="filter-bar">
       <button data-filter="pending_approval" class="active">⏳ 승인 대기</button>
       <button data-filter="approved">✅ 승인됨</button>
@@ -168,8 +187,44 @@
       };
     });
 
+    async function loadDbUsage() {
+      const [{ data: stats }, { data: total }] = await Promise.all([
+        supabase.rpc("db_stats"),
+        supabase.rpc("db_total_size"),
+      ]);
+      const t = total?.[0];
+      if (t) {
+        const pct = Number(t.percent_of_500mb || 0);
+        const color = pct < 50 ? "#34c759" : pct < 80 ? "#ff9500" : "#ff3b30";
+        document.getElementById("db-bar").style.width = Math.min(pct, 100) + "%";
+        document.getElementById("db-bar").style.background = `linear-gradient(90deg,${color},${color})`;
+        document.getElementById("db-summary").innerHTML = `
+          <strong>${t.total_pretty}</strong> / 500 MB
+          <span style="color:${color};font-weight:600">(${pct}%)</span>
+          ${pct >= 80 ? '<span style="color:#ff3b30;margin-left:.5rem">⚠ 한도 임박</span>' : ''}
+        `;
+      }
+      const tbody = document.getElementById("db-tables");
+      tbody.innerHTML = (stats || []).map(r => `
+        <tr style="border-top:1px solid #f0f0f3">
+          <td style="padding:.35rem 0"><code>${r.table_name}</code></td>
+          <td>${Number(r.row_count).toLocaleString()}</td>
+          <td>${r.size_pretty}</td>
+        </tr>`).join('');
+    }
+
+    document.getElementById("cleanup-btn").onclick = async () => {
+      if (!confirm("지금 즉시 30일 초과 access_logs, 90일 초과 downloads를 삭제합니다. 진행할까요?")) return;
+      const { data, error } = await supabase.rpc("cleanup_old_logs");
+      if (error) { alert("실패: " + error.message); return; }
+      const r = data?.[0];
+      alert(`정리 완료\n• 일자 집계 upsert: ${r?.rolled_up ?? 0}건\n• access_logs 삭제: ${r?.access_deleted ?? 0}건\n• downloads 삭제: ${r?.downloads_deleted ?? 0}건`);
+      await loadDbUsage();
+    };
+
     await loadStats();
     await loadUsers();
+    await loadDbUsage();
   </script>
 </body>
 </html>
