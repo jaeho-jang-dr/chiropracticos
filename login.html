@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>로그인 | Chiropractic</title>
-  <link rel="stylesheet" href="./assets/main.css?v=20260427d" />
-  <script src="./assets/config.js?v=20260427d"></script>
+  <link rel="stylesheet" href="./assets/main.css?v=20260427f" />
+  <script src="./assets/config.js?v=20260427f"></script>
   <style>
     .auth-card{max-width:420px;margin:5rem auto;padding:2.5rem;background:#fff;border:1px solid #e0e0e3;border-radius:18px;box-shadow:0 8px 32px rgba(0,0,0,.04)}
     .auth-card h1{margin:0 0 .5rem;font-size:1.7rem}
@@ -52,16 +52,18 @@
     </form>
 
     <div class="alt">계정이 없으신가요? <a href="./signup.html">가입하기</a></div>
-    <div class="info">디버그가 필요하면 URL 끝에 <code>#debug=1</code> 추가 후 새로고침</div>
+    <div class="alt"><a href="?fresh=1" style="color:#888;font-size:.85em">↻ 다른 계정으로 / 강제 재로그인</a></div>
+    <div class="info">문제 시 <a href="/debug">/debug</a>에서 강제 로그아웃 가능</div>
   </div>
 
   <script type="module">
-    import { supabase, sessionReady, signInWithGoogle } from "./assets/supabase-client.js?v=20260427d";
+    import { supabase, sessionReady, signInWithGoogle, signInWithEmail, clearStaleAuth } from "./assets/supabase-client.js?v=20260427f";
 
     const params = new URLSearchParams(location.search);
     let next = params.get("next") || "/";
-    // redirect loop 방지: next가 /login으로 시작하면 / 로 강제
     if (next.startsWith("/login")) next = "/";
+    // ?fresh=1 또는 ?force=1 → 기존 세션 무시, 강제 신선 재로그인
+    const isFresh = params.has("fresh") || params.has("force");
     const errBox = document.getElementById("err");
 
     function showErr(msg) {
@@ -69,35 +71,32 @@
       errBox.classList.add("show");
     }
 
-    // 이미 로그인된 사용자는 즉시 next로
-    const session = await sessionReady;
-    if (session) {
-      location.replace(next);
+    if (isFresh) {
+      // 모든 stale 청소 — 페이지에 머물러서 사용자가 새로 입력 가능
+      clearStaleAuth();
+      try { await supabase.auth.signOut(); } catch {}
+    } else {
+      // 평소: 이미 로그인된 사용자는 next로 자동 이동
+      const session = await sessionReady;
+      if (session) location.replace(next);
     }
 
-    // URL hash에 OAuth 결과가 있으면 sessionReady가 처리해 줌 (위에서)
-
-    // 에러가 hash에 들어 있는 경우 표시
+    // 에러가 hash에 있으면 표시
     const hash = new URLSearchParams(location.hash.replace(/^#/, ""));
     if (hash.get("error")) {
       showErr(`OAuth 오류: ${hash.get("error_description") || hash.get("error")}`);
       history.replaceState(null, "", location.pathname + location.search);
     }
 
+    // 모든 로그인 버튼은 stale 자동 청소 후 신선 시작
     document.getElementById("google-btn").onclick = () => signInWithGoogle(next);
 
     document.getElementById("email-form").onsubmit = async (e) => {
       e.preventDefault();
       errBox.classList.remove("show");
       const fd = new FormData(e.target);
-      const { data, error } = await supabase.auth.signInWithPassword({
-        email: fd.get("email"),
-        password: fd.get("password"),
-      });
-      if (error) {
-        showErr(error.message);
-        return;
-      }
+      const { error } = await signInWithEmail(fd.get("email"), fd.get("password"));
+      if (error) { showErr(error.message); return; }
       location.replace(next);
     };
   </script>

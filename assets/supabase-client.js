@@ -110,27 +110,60 @@ export async function getCurrentUser() {
 export async function signOut() {
   trace("signOut");
   await supabase.auth.signOut();
+  clearStaleAuth();
   location.href = "/";
 }
 
+// Stale 세션 강제 청소 — 로그인 시도 직전 호출
+// supabase signOut만으로 못 잡는 경우(SDK 깨짐, 다른 탭에서 로그아웃 등)도 cover
+export function clearStaleAuth() {
+  trace("clearStaleAuth");
+  const keys = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k && (k.startsWith("sb-") || k.includes("supabase"))) {
+      keys.push(k);
+    }
+  }
+  keys.forEach((k) => localStorage.removeItem(k));
+  // sessionStorage 도 청소 (혹시 SDK가 남긴 게 있으면)
+  for (let i = sessionStorage.length - 1; i >= 0; i--) {
+    const k = sessionStorage.key(i);
+    if (k && (k.startsWith("sb-") || k.includes("supabase"))) sessionStorage.removeItem(k);
+  }
+  trace("clearStaleAuth done", { removed: keys.length });
+  return keys.length;
+}
+
 // Google login — current page를 next로 사용
+// stale 세션 자동 청소 → 매번 깨끗한 신규 OAuth flow
 export async function signInWithGoogle(nextPath) {
   let next = nextPath || (location.pathname.startsWith("/login") ? "/" : location.pathname);
-  // .html 제거 (cleanUrl 형식) — Vercel 308 회피 + Supabase whitelist 매치 정확
   next = next.replace(/\.html(\?|$)/, "$1");
-  // 빈 path는 /로
   if (!next || next === "") next = "/";
+  // 청소: 옛 세션 토큰 + 메모리 + 서버 sign-out
+  clearStaleAuth();
+  try { await supabase.auth.signOut(); } catch {}
   const redirectTo = location.origin + next;
   trace("signInWithGoogle", { redirectTo });
   const { error } = await supabase.auth.signInWithOAuth({
     provider: "google",
     options: {
       redirectTo,
-      scopes: "openid email profile",  // openid 추가 — id_token 받음
+      scopes: "openid email profile",
+      queryParams: { prompt: "select_account" },  // Google 계정 선택 화면 강제 — 다른 계정 로그인 가능
     },
   });
   if (error) {
     alert("Google 로그인 시작 실패: " + error.message);
     trace("signInWithGoogle error", error);
   }
+}
+
+// Email login — stale 세션 청소 후 재로그인
+export async function signInWithEmail(email, password) {
+  clearStaleAuth();
+  try { await supabase.auth.signOut(); } catch {}
+  trace("signInWithEmail", { email });
+  return supabase.auth.signInWithPassword({ email, password });
 }
