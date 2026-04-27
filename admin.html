@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>관리자 | Chiropractic</title>
-  <link rel="stylesheet" href="./assets/main.css?v=20260427b" />
-  <script src="./assets/config.js?v=20260427b"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260427b"></script>
+  <link rel="stylesheet" href="./assets/main.css?v=20260427d" />
+  <script src="./assets/config.js?v=20260427d"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260427d"></script>
   <style>
     .admin-wrap{max-width:1180px;margin:5rem auto 4rem;padding:0 1.5rem}
     .admin-wrap h1{margin:0 0 .25rem}
@@ -83,6 +83,7 @@
     <h1>관리자 패널</h1>
     <p class="lead">계정·로그인·파일 통합 관리. 모든 변경은 admin_logs에 기록됩니다.</p>
 
+    <div id="alerts-bar"></div>
     <div class="stats" id="stats"></div>
 
     <div id="db-usage">
@@ -98,21 +99,36 @@
       <button class="tab active" data-tab="accounts">👤 계정 관리</button>
       <button class="tab" data-tab="logins">🔑 로그인 관리</button>
       <button class="tab" data-tab="files">📁 파일 관리</button>
+      <button class="tab" data-tab="audit">📋 감사 로그</button>
     </div>
 
     <!-- ============ TAB 1: 계정 관리 ============ -->
     <section class="tab-panel active" id="tab-accounts">
-      <div class="filter-bar">
-        <button data-filter="pending_approval" class="active">⏳ 승인 대기</button>
-        <button data-filter="approved">✅ 승인됨</button>
-        <button data-filter="blocked">🚫 차단</button>
-        <button data-filter="all">전체</button>
+      <div style="display:flex;gap:.5rem;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:.6rem">
+        <div class="filter-bar" style="margin:0">
+          <button data-filter="pending_approval" class="active">⏳ 승인 대기</button>
+          <button data-filter="approved">✅ 승인됨</button>
+          <button data-filter="blocked">🚫 차단</button>
+          <button data-filter="all">전체</button>
+        </div>
+        <div style="display:flex;gap:.4rem">
+          <input type="text" id="acc-search" placeholder="🔍 이메일·이름·소속 검색"
+            style="padding:.4rem .75rem;border:1px solid #d2d2d7;border-radius:6px;font-family:inherit;font-size:.85em;width:220px" />
+          <button class="small-btn" id="acc-csv">📥 CSV</button>
+        </div>
+      </div>
+      <div id="bulk-bar" style="display:none;background:#e8f3ff;border:1px solid #b6d9ff;border-radius:8px;padding:.6rem 1rem;margin-bottom:.6rem;font-size:.88em">
+        <strong id="bulk-count">0</strong>명 선택됨 ·
+        <button class="small-btn" id="bulk-approve" style="background:#34c759;color:#fff;border-color:#34c759">일괄 승인</button>
+        <button class="small-btn" id="bulk-block"   style="background:#ff3b30;color:#fff;border-color:#ff3b30">일괄 차단</button>
+        <button class="small-btn" id="bulk-clear">선택 해제</button>
       </div>
       <table>
         <thead><tr>
+          <th style="width:36px"><input type="checkbox" id="acc-check-all" /></th>
           <th>이메일</th><th>이름</th><th>직군</th><th>소속</th><th>면허</th><th>상태</th><th>가입</th><th>작업</th>
         </tr></thead>
-        <tbody id="accounts-tbody"><tr><td colspan="8" class="empty">로딩 중...</td></tr></tbody>
+        <tbody id="accounts-tbody"><tr><td colspan="9" class="empty">로딩 중...</td></tr></tbody>
       </table>
     </section>
 
@@ -154,10 +170,24 @@
         <tbody id="files-tbody"><tr><td colspan="6" class="empty">로딩 중...</td></tr></tbody>
       </table>
     </section>
+
+    <!-- ============ TAB 4: 감사 로그 ============ -->
+    <section class="tab-panel" id="tab-audit">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem">
+        <p class="meta" style="margin:0">관리자 모든 변경 기록 (영구 보존). 누가·언제·무엇을·왜 변경했는지 추적.</p>
+        <button class="small-btn" id="audit-csv">📥 CSV</button>
+      </div>
+      <table>
+        <thead><tr>
+          <th>시각</th><th>관리자</th><th>액션</th><th>대상 사용자</th><th>변경 전 → 후</th><th>사유</th>
+        </tr></thead>
+        <tbody id="audit-tbody"><tr><td colspan="6" class="empty">탭 클릭 시 로딩</td></tr></tbody>
+      </table>
+    </section>
   </div>
 
   <script type="module">
-    import { supabase, getCurrentUser, signOut } from "./assets/supabase-client.js?v=20260427b";
+    import { supabase, getCurrentUser, signOut } from "./assets/supabase-client.js?v=20260427d";
 
     // ============ Tab switching ============
     document.querySelectorAll(".tab").forEach(t => {
@@ -169,6 +199,7 @@
         // lazy-load on tab open
         if (t.dataset.tab === "logins") loadLogins();
         if (t.dataset.tab === "files")  loadFiles();
+        if (t.dataset.tab === "audit")  loadAudit();
       };
     });
 
@@ -221,54 +252,82 @@
       loadDbUsage();
     };
 
-    // ============ TAB 1: Accounts ============
+    // ============ TAB 1: Accounts (with bulk + search + CSV) ============
     let accFilter = "pending_approval";
+    let accSearch = "";
+    let accCache = [];
+    const selected = new Set();
 
     async function loadAccounts() {
       let q = supabase.from("users").select("*").order("created_at", { ascending: false });
       if (accFilter === "blocked") q = q.not("blocked_at", "is", null);
       else if (accFilter !== "all") q = q.eq("access_level", accFilter).is("blocked_at", null);
       const { data, error } = await q;
+      accCache = data || [];
+      renderAccounts();
+      if (error) document.getElementById("accounts-tbody").innerHTML = `<tr><td colspan=9 class=empty>오류: ${error.message}</td></tr>`;
+    }
+
+    function renderAccounts() {
       const tbody = document.getElementById("accounts-tbody");
-      if (error) return tbody.innerHTML = `<tr><td colspan=8 class=empty>오류: ${error.message}</td></tr>`;
-      if (!data?.length) return tbody.innerHTML = `<tr><td colspan=8 class=empty>해당 사용자 없음</td></tr>`;
-      tbody.innerHTML = data.map(u => {
+      const s = accSearch.toLowerCase();
+      const filtered = s
+        ? accCache.filter(u => [u.email, u.full_name, u.affiliation, u.profession, u.license_number].some(x => (x || "").toLowerCase().includes(s)))
+        : accCache;
+      if (!filtered.length) { tbody.innerHTML = `<tr><td colspan=9 class=empty>해당 사용자 없음</td></tr>`; updateBulkBar(); return; }
+      tbody.innerHTML = filtered.map(u => {
         let status = '';
         if (u.role === 'admin') status += '<span class="badge admin">관리자</span> ';
         status += u.blocked_at ? '<span class="badge blocked">차단</span>'
           : `<span class="badge ${u.access_level}">${u.access_level === 'pending_approval' ? '대기' : u.access_level === 'approved' ? '승인' : 'free'}</span>`;
         const created = new Date(u.created_at).toLocaleDateString('ko-KR');
         const acts = u.blocked_at
-          ? `<button class="unblock" data-act="unblock" data-id="${u.id}">차단해제</button>`
+          ? `<button class="unblock" data-act="unblock" data-id="${u.id}">해제</button>`
           : (u.access_level === 'approved'
               ? `<button class="block" data-act="block" data-id="${u.id}">차단</button>`
               : `<button class="approve" data-act="approve" data-id="${u.id}">승인</button>
                  <button class="block" data-act="block" data-id="${u.id}">차단</button>`);
+        const checked = selected.has(u.id) ? "checked" : "";
         return `<tr>
+          <td><input type="checkbox" class="acc-check" data-id="${u.id}" ${checked}></td>
           <td>${esc(u.email)}</td><td>${esc(u.full_name)}</td><td>${esc(u.profession)}</td>
           <td>${esc(u.affiliation)}</td><td>${esc(u.license_number)}</td>
           <td>${status}</td><td class="meta">${created}</td><td class="actions">${acts}</td>
         </tr>`;
       }).join('');
       tbody.querySelectorAll("button[data-act]").forEach(b => b.onclick = () => actAccount(b.dataset.act, b.dataset.id));
+      tbody.querySelectorAll(".acc-check").forEach(cb => cb.onchange = (e) => {
+        if (e.target.checked) selected.add(e.target.dataset.id);
+        else selected.delete(e.target.dataset.id);
+        updateBulkBar();
+      });
+      updateBulkBar();
     }
 
-    async function actAccount(action, userId) {
+    function updateBulkBar() {
+      const bar = document.getElementById("bulk-bar");
+      bar.style.display = selected.size > 0 ? "block" : "none";
+      document.getElementById("bulk-count").textContent = selected.size;
+    }
+
+    async function actAccount(action, userId, silent) {
       const me = await getCurrentUser();
       const { data: before } = await supabase.from("users").select("access_level, blocked_at, blocked_reason").eq("id", userId).single();
       let patch = {}, reason = null;
       if (action === "approve") patch = { access_level: "approved", approved_at: new Date().toISOString(), blocked_at: null, blocked_reason: null };
       else if (action === "block") {
-        reason = prompt("차단 사유:", "자격 미확인");
-        if (reason === null) return;
+        if (!silent) {
+          reason = prompt("차단 사유:", "자격 미확인");
+          if (reason === null) return false;
+        } else { reason = "일괄 차단"; }
         patch = { blocked_at: new Date().toISOString(), blocked_reason: reason };
       } else if (action === "unblock") patch = { blocked_at: null, blocked_reason: null };
       const { error } = await supabase.from("users").update(patch).eq("id", userId);
-      if (error) return alert("실패: " + error.message);
+      if (error) { if (!silent) alert("실패: " + error.message); return false; }
       await supabase.from("admin_logs").insert({
         admin_id: me.id, target_user_id: userId, action, before_value: before, after_value: patch, reason,
       });
-      loadAccounts(); loadStats();
+      return true;
     }
 
     document.querySelectorAll("#tab-accounts .filter-bar button").forEach(b => {
@@ -276,9 +335,55 @@
         document.querySelectorAll("#tab-accounts .filter-bar button").forEach(x => x.classList.remove("active"));
         b.classList.add("active");
         accFilter = b.dataset.filter;
+        selected.clear();
         loadAccounts();
       };
     });
+
+    document.getElementById("acc-search").oninput = (e) => { accSearch = e.target.value; renderAccounts(); };
+
+    document.getElementById("acc-check-all").onchange = (e) => {
+      if (e.target.checked) accCache.forEach(u => selected.add(u.id));
+      else selected.clear();
+      renderAccounts();
+    };
+
+    document.getElementById("bulk-clear").onclick = () => { selected.clear(); renderAccounts(); };
+
+    document.getElementById("bulk-approve").onclick = async () => {
+      if (!confirm(`선택한 ${selected.size}명을 일괄 승인합니다.`)) return;
+      let ok = 0;
+      for (const id of [...selected]) {
+        if (await actAccount("approve", id, true)) ok++;
+      }
+      alert(`${ok}/${selected.size}명 승인 완료`);
+      selected.clear();
+      loadAccounts(); loadStats();
+    };
+
+    document.getElementById("bulk-block").onclick = async () => {
+      const reason = prompt(`선택한 ${selected.size}명을 일괄 차단. 사유:`, "관리자 검토 후 자격 미확인");
+      if (reason === null) return;
+      let ok = 0;
+      for (const id of [...selected]) {
+        const me = await getCurrentUser();
+        const { data: before } = await supabase.from("users").select("access_level, blocked_at, blocked_reason").eq("id", id).single();
+        const patch = { blocked_at: new Date().toISOString(), blocked_reason: reason };
+        const { error } = await supabase.from("users").update(patch).eq("id", id);
+        if (!error) {
+          await supabase.from("admin_logs").insert({ admin_id: me.id, target_user_id: id, action: "block", before_value: before, after_value: patch, reason });
+          ok++;
+        }
+      }
+      alert(`${ok}/${selected.size}명 차단 완료`);
+      selected.clear();
+      loadAccounts(); loadStats();
+    };
+
+    document.getElementById("acc-csv").onclick = () => {
+      const cols = ["email","full_name","profession","affiliation","license_number","role","access_level","blocked_at","blocked_reason","created_at","approved_at"];
+      downloadCsv(`accounts-${dateStamp()}.csv`, cols, accCache);
+    };
 
     // ============ TAB 2: Logins ============
     let loginsLoaded = false;
@@ -436,6 +541,53 @@
     document.getElementById("file-search").addEventListener("input", () => filesLoaded && loadFiles());
     document.getElementById("files-refresh").onclick = loadFiles;
 
+    // ============ TAB 4: Audit log ============
+    let auditLoaded = false;
+    let auditCache = [];
+    async function loadAudit() {
+      if (auditLoaded) return;
+      auditLoaded = true;
+      const { data, error } = await supabase
+        .from("admin_logs")
+        .select("at, action, reason, before_value, after_value, admin:admin_id(email,full_name), target:target_user_id(email,full_name)")
+        .order("at", { ascending: false })
+        .limit(200);
+      auditCache = data || [];
+      const tb = document.getElementById("audit-tbody");
+      if (error) return tb.innerHTML = `<tr><td colspan=6 class=empty>오류: ${error.message}</td></tr>`;
+      if (!auditCache.length) return tb.innerHTML = `<tr><td colspan=6 class=empty>아직 감사 로그 없음</td></tr>`;
+      tb.innerHTML = auditCache.map(r => {
+        const actBadge = r.action === 'approve' ? '<span class="badge approved">승인</span>'
+          : r.action === 'block' ? '<span class="badge blocked">차단</span>'
+          : r.action === 'unblock' ? '<span class="badge admin">차단해제</span>'
+          : `<span class="badge free">${esc(r.action)}</span>`;
+        const before = r.before_value ? `<code style="color:#888;font-size:.78em">${esc(r.before_value.access_level || '-')}${r.before_value.blocked_at ? ' (차단)' : ''}</code>` : '-';
+        const after  = r.after_value  ? `<code style="color:#1f7a3f;font-size:.78em">${esc(r.after_value.access_level || '-')}${r.after_value.blocked_at ? ' (차단)' : ''}</code>` : '-';
+        return `<tr>
+          <td class="meta" style="white-space:nowrap">${new Date(r.at).toLocaleString('ko-KR')}</td>
+          <td>${esc(r.admin?.full_name || r.admin?.email || '-')}</td>
+          <td>${actBadge}</td>
+          <td>${esc(r.target?.full_name || r.target?.email || '-')}</td>
+          <td>${before} → ${after}</td>
+          <td class="meta">${esc(r.reason) || '-'}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    document.getElementById("audit-csv").onclick = () => {
+      const cols = ["at","action","admin_email","target_email","before","after","reason"];
+      const flat = auditCache.map(r => ({
+        at: r.at,
+        action: r.action,
+        admin_email: r.admin?.email || '',
+        target_email: r.target?.email || '',
+        before: JSON.stringify(r.before_value || {}),
+        after: JSON.stringify(r.after_value || {}),
+        reason: r.reason || '',
+      }));
+      downloadCsv(`audit-logs-${dateStamp()}.csv`, cols, flat);
+    };
+
     // ============ Helpers ============
     function esc(s) {
       return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -447,11 +599,62 @@
       if (n < 1024 * 1024 * 1024) return (n / 1024 / 1024).toFixed(1) + " MB";
       return (n / 1024 / 1024 / 1024).toFixed(2) + " GB";
     }
+    function dateStamp() {
+      return new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
+    }
+    function downloadCsv(filename, cols, rows) {
+      const csv = [
+        cols.join(","),
+        ...rows.map(r => cols.map(c => {
+          const v = r[c];
+          if (v == null) return "";
+          const s = typeof v === "object" ? JSON.stringify(v) : String(v);
+          return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+        }).join(","))
+      ].join("\n");
+      const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url; a.download = filename;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    // ============ Alerts widget ============
+    async function loadAlerts() {
+      const { data } = await supabase.from("db_alerts").select("*")
+        .eq("acknowledged", false)
+        .order("created_at", { ascending: false }).limit(10);
+      const bar = document.getElementById("alerts-bar");
+      if (!data?.length) { bar.innerHTML = ""; return; }
+      bar.innerHTML = `<div style="margin-bottom:1rem">${data.map(a => {
+        const color = a.level === "critical" ? "#ff3b30" : a.level === "warn" ? "#ff9500" : "#0a84ff";
+        const icon  = a.level === "critical" ? "🚨" : a.level === "warn" ? "⚠" : "ℹ";
+        return `<div style="background:#fff;border:1px solid ${color};border-left:4px solid ${color};padding:.7rem 1rem;border-radius:8px;margin-bottom:.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.88em">
+          <span><strong>${icon}</strong> ${esc(a.message)} <span class="meta" style="margin-left:.5rem">${new Date(a.created_at).toLocaleString('ko-KR')}</span></span>
+          <button class="small-btn" data-ack="${a.id}">확인</button>
+        </div>`;
+      }).join('')}
+      <button class="small-btn" id="run-health-now" style="margin-top:.25rem">🔄 지금 health check 실행</button>
+      </div>`;
+      bar.querySelectorAll("button[data-ack]").forEach(b => b.onclick = async () => {
+        const me = await getCurrentUser();
+        await supabase.from("db_alerts").update({ acknowledged: true, acked_at: new Date().toISOString(), acked_by: me.id }).eq("id", b.dataset.ack);
+        loadAlerts();
+      });
+      bar.querySelector("#run-health-now").onclick = async () => {
+        const { data, error } = await supabase.rpc("daily_health_check");
+        if (error) return alert("실패: " + error.message);
+        alert(`Health check 실행 — ${data?.[0]?.alerts_inserted ?? 0}개 알림 추가됨`);
+        loadAlerts();
+      };
+    }
 
     // ============ Init ============
     loadStats();
     loadDbUsage();
     loadAccounts();
+    loadAlerts();
   </script>
 </body>
 </html>

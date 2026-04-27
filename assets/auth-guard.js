@@ -53,13 +53,21 @@ import { supabase, sessionReady, getCurrentUserWithRow, signOut } from "./supaba
   }
 
   if (!row || row.access_level === "pending_approval" || row.access_level === "free") {
-    showFullPage(`<h1>⏳ 관리자 승인 대기 중</h1>
-      <p style="color:#555;line-height:1.7">가입은 완료되었습니다. 본 강의 자료는 의료인(MD/PT) 전용으로, 자격 확인 후 관리자가 승인합니다.</p>
-      <p style="color:#888;font-size:.9em;margin-top:1.5rem">문의: <a href="mailto:drjang00@gmail.com">drjang00@gmail.com</a></p>
-      <div style="margin-top:2rem;display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
-        <a href="/" class="btn btn-ghost">← 메인</a>
-        <a href="/chapter01_introduction" class="btn btn-primary">Ch 1 (공개)</a>
-        <button class="btn btn-ghost" onclick="window.__signOut()">로그아웃</button>
+    const greeting = row?.full_name ? `${escapeHtml(row.full_name)}님, ` : "";
+    showFullPage(`<h1 style="margin:0 0 .8rem">⏳ 관리자 승인 대기 중</h1>
+      <p style="color:#444;line-height:1.7;font-size:.95em">${greeting}가입은 완료되었습니다.</p>
+      <p style="color:#666;line-height:1.7;font-size:.9em;background:#f7f7f9;padding:1rem 1.25rem;border-radius:10px;text-align:left">
+        본 강의 자료는 <strong>의료인(MD/PT) 전용</strong>으로 운영됩니다.<br>
+        제공해주신 자격 정보(직군·소속·면허번호)를 관리자가 검토 후 승인합니다.<br>
+        보통 <strong>1-2 영업일</strong> 이내 처리되며, 승인되면 별도 안내 없이 모든 챕터에 접근 가능합니다.
+      </p>
+      <p style="color:#888;font-size:.85em;margin:1rem 0">자격 증빙 자료 추가 제출이 필요하면 이메일로 보내주세요.</p>
+      <p style="color:#0a84ff;font-size:.92em;margin:1rem 0">📧 <a href="mailto:drjang00@gmail.com">drjang00@gmail.com</a></p>
+      <div style="margin-top:1.75rem;display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap">
+        <a href="/" class="btn btn-ghost btn-sm">← 메인</a>
+        <a href="/chapter01_introduction" class="btn btn-primary btn-sm">Ch 1 (공개)</a>
+        <a href="/guide" class="btn btn-ghost btn-sm">📖 사용 가이드</a>
+        <button class="btn btn-ghost btn-sm" onclick="window.__signOut()">로그아웃</button>
       </div>`);
     window.__signOut = signOut;
     return;

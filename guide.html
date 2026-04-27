@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>사용 가이드 | Chiropractic</title>
+  <link rel="stylesheet" href="./assets/main.css?v=20260427d" />
+  <script src="./assets/config.js?v=20260427d"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260427d"></script>
+  <style>
+    .guide-wrap{max-width:760px;margin:5rem auto 6rem;padding:0 1.5rem;line-height:1.7}
+    .guide-wrap h1{margin:0 0 .5rem;font-size:2rem}
+    .guide-wrap .lead{color:#666;font-size:1em;margin-bottom:2rem}
+    .guide-wrap h2{margin:2.5rem 0 .75rem;font-size:1.3rem;border-bottom:2px solid #e8e8eb;padding-bottom:.5rem}
+    .guide-wrap h3{margin:1.5rem 0 .5rem;font-size:1rem;color:#0a84ff}
+    .step{display:flex;gap:1rem;margin:1rem 0;padding:1rem 1.25rem;background:#f7f9fc;border-radius:10px;border-left:3px solid #0a84ff}
+    .step .num{flex-shrink:0;width:32px;height:32px;background:#0a84ff;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.95em}
+    .step .body{flex:1}
+    .step strong{color:#0a84ff}
+    .faq{margin:1rem 0;padding:1rem 1.25rem;background:#fff;border:1px solid #e8e8eb;border-radius:10px}
+    .faq summary{cursor:pointer;font-weight:600;color:#222;padding:.25rem 0}
+    .faq summary:hover{color:#0a84ff}
+    .faq p{margin:.75rem 0 0;color:#555;font-size:.93em}
+    .notice{background:#fff8e6;border-left:3px solid #f5a623;padding:.85rem 1rem;border-radius:6px;font-size:.92em;color:#664500;margin:1rem 0}
+    .ok-box{background:#e8f5e9;border-left:3px solid #34c759;padding:.85rem 1rem;border-radius:6px;font-size:.92em;color:#1e4620;margin:1rem 0}
+    table.access-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.9em}
+    table.access-table th,table.access-table td{padding:.6rem 1rem;border-bottom:1px solid #eef0f2;text-align:left}
+    table.access-table th{background:#f7f7f9;font-weight:600;font-size:.82em}
+    .badge{display:inline-block;padding:.13rem .55rem;border-radius:999px;font-size:.7em;font-weight:600}
+    .badge.public{background:#d4edda;color:#155724}
+    .badge.gated{background:#fff3d6;color:#876200}
+  </style>
+</head>
+<body>
+  <nav class="site-nav"><div class="nav-inner">
+    <a class="nav-brand" href="./index.html"><span class="mark"></span><span>Chiropractic</span></a>
+    <div class="nav-actions"></div>
+  </div></nav>
+
+  <div class="guide-wrap">
+    <h1>📖 사용 가이드</h1>
+    <p class="lead">이 강의 시스템을 시작하는 방법, 콘텐츠 접근 권한, 자주 묻는 질문.</p>
+
+    <h2>🚀 시작하기 (3단계)</h2>
+
+    <div class="step">
+      <div class="num">1</div>
+      <div class="body">
+        <strong>가입</strong> — <a href="/signup">/signup</a>에서 이메일 또는 Google 계정으로 가입.
+        직군(MD/PT/DC/학생)·소속·면허번호를 함께 입력해주세요. <strong>이메일 인증 없이 즉시 활성</strong>됩니다.
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">2</div>
+      <div class="body">
+        <strong>관리자 승인 대기</strong> — 본 강의는 의료인 전용이라, 관리자가 자격을 확인합니다.
+        보통 <strong>1-2 영업일 이내</strong> 처리. 별도 통보 없이 자동으로 모든 챕터 열립니다.
+        대기 중에는 Ch 1 (서설)과 아카이브에 접근 가능.
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="num">3</div>
+      <div class="body">
+        <strong>학습 시작</strong> — 승인 후 메인 페이지의 12 챕터 카드에서 시작.
+        각 챕터는 강의록(MD) · 팟캐스트 · AI 영상 × 2 · 슬라이드 × 4 · 리포트 × 4 = <strong>11 아티팩트</strong>로 구성.
+      </div>
+    </div>
+
+    <h2>🔐 접근 권한 표</h2>
+
+    <table class="access-table">
+      <thead><tr><th>페이지</th><th>비로그인</th><th>가입+대기</th><th>승인됨</th><th>관리자</th></tr></thead>
+      <tbody>
+        <tr><td>/ (메인)</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>/chapter01_introduction (서설)</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>/archive (레거시 자료)</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>/guide (이 페이지)</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+        <tr><td>/chapter02 ~ /chapter12</td><td>❌</td><td>⏳ 대기 화면</td><td>✅</td><td>✅</td></tr>
+        <tr><td>/admin (관리자 패널)</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td></tr>
+      </tbody>
+    </table>
+
+    <h2>📚 챕터별 콘텐츠 구성</h2>
+
+    <p>각 기법(Ch 2 Functional Neurology부터 Ch 12 Applied Kinesiology까지)은 다음 11개 자료로 구성:</p>
+
+    <ul>
+      <li><strong>📖 강의록 MD</strong> — 근거 기반 본문 (참고문헌 포함, viewer 사용)</li>
+      <li><strong>🎧 팟캐스트</strong> — Deep Dive 2인 대화 60분+ (NotebookLM 생성)</li>
+      <li><strong>🎥 AI 영상 × 2</strong> — Part 1 이론, Part 2 임상·비판 (각 7-15분)</li>
+      <li><strong>🎴 PPTX 슬라이드 × 4</strong> — Part 1 기초 / 2 진단 / 3 교정 / 4 임상·비판 (각 15장)</li>
+      <li><strong>📄 Report MD × 4</strong> — Briefing Doc / Study Guide</li>
+    </ul>
+
+    <div class="notice">
+      <strong>⚠ 미디어 파일 안내 (2026-04-27 현재)</strong><br>
+      현재 Vercel 배포에서는 영상(.mp4)·오디오(.m4a)·PPT(.pptx) 파일 직접 재생이 제한됩니다.
+      Phase 2(R2 마이그레이션) 완료 시 모든 미디어가 라이브로 동작합니다. 그 전까지는 Google Drive 원본 또는 PDF로 보세요.
+    </div>
+
+    <h2>❓ 자주 묻는 질문</h2>
+
+    <details class="faq">
+      <summary>가입했는데 챕터 2 이상에 못 들어가요</summary>
+      <p>관리자 승인 대기 상태입니다. 보통 1-2일 안에 처리됩니다. 자격 증빙(면허증 사본 등)을 <a href="mailto:drjang00@gmail.com">drjang00@gmail.com</a>으로 보내주시면 더 빠르게 처리됩니다.</p>
+    </details>
+
+    <details class="faq">
+      <summary>비밀번호를 잊어버렸어요</summary>
+      <p>현재 자동 비밀번호 재설정 기능은 준비 중입니다. <a href="mailto:drjang00@gmail.com">drjang00@gmail.com</a>으로 연락주시면 관리자가 재설정해드립니다. 또는 같은 이메일로 Google 로그인을 사용하시면 우회 가능.</p>
+    </details>
+
+    <details class="faq">
+      <summary>한 번 로그인했는데 다시 들어가니 로그아웃됐어요</summary>
+      <p>세션은 1시간 유효합니다. 1시간 이상 비활성화 후 다시 들어가면 자동 갱신되지만, 브라우저 쿠키/스토리지가 지워졌으면 재로그인이 필요합니다. 도움이 안 되면 <a href="/debug">/debug</a>에서 "전체 localStorage 비우기" 후 새로 로그인 해보세요.</p>
+    </details>
+
+    <details class="faq">
+      <summary>한국에서 NotebookLM 영상이 한국어로 안 나와요</summary>
+      <p>모든 영상·팟캐스트는 한국어로 생성·검수됐습니다. 만약 영어로 들리면 새로고침 또는 캐시 삭제 후 재생해보세요. 그래도 문제가 있으면 알려주세요.</p>
+    </details>
+
+    <details class="faq">
+      <summary>본인 계정 정보를 수정하고 싶어요</summary>
+      <p>현재는 셀프 수정 UI가 없습니다. 이메일 변경·이름 수정 등은 관리자에게 요청하시면 됩니다 (<a href="mailto:drjang00@gmail.com">drjang00@gmail.com</a>).</p>
+    </details>
+
+    <details class="faq">
+      <summary>탈퇴하고 싶어요</summary>
+      <p>이메일로 탈퇴 요청 보내주시면 관리자가 계정 + 모든 로그를 삭제합니다 (CASCADE).</p>
+    </details>
+
+    <h2>📜 라이선스 및 저작권</h2>
+
+    <div class="ok-box">
+      비영리 교육 목적 · MD/PT 인증 후 접근 · 일부 콘텐츠 원저작자 사전 허가 · <strong>무단 복제·재배포·상업 이용 금지</strong>.
+      States Manual 등 원전 인용은 교육 발췌 인용 원칙(공정 이용)을 따릅니다.
+    </div>
+
+    <p style="margin-top:3rem;text-align:center"><a href="/" class="btn btn-primary">메인으로 돌아가기</a></p>
+  </div>
+</body>
+</html>

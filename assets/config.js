@@ -17,6 +17,7 @@ window.PUBLIC_PAGES = new Set([
   "/archive", "/archive.html",
   "/chapter01_introduction", "/chapter01_introduction.html",
   "/debug", "/debug.html",
+  "/guide", "/guide.html",
 ]);
 
 // admin 전용 페이지
