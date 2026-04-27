@@ -8,31 +8,69 @@
   <script src="./assets/config.js"></script>
   <script type="module" src="./assets/auth-guard.js"></script>
   <style>
-    .admin-wrap{max-width:1100px;margin:6rem auto;padding:0 2rem}
-    .admin-wrap h1{margin:0 0 .5rem}
-    .admin-wrap .lead{color:#666;margin-bottom:2rem}
-    .filter-bar{display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap}
-    .filter-bar button{padding:.45rem 1rem;border:1px solid #d2d2d7;border-radius:999px;background:#fff;cursor:pointer;font-size:.88em}
+    .admin-wrap{max-width:1180px;margin:5rem auto 4rem;padding:0 1.5rem}
+    .admin-wrap h1{margin:0 0 .25rem}
+    .admin-wrap .lead{color:#666;margin-bottom:1.5rem;font-size:.92em}
+
+    /* Stats cards */
+    .stats{display:flex;gap:.85rem;margin-bottom:1.25rem;flex-wrap:wrap}
+    .stat{flex:1;min-width:120px;background:#fff;padding:.95rem 1.1rem;border-radius:12px;border:1px solid #eef0f2}
+    .stat .num{font-size:1.55rem;font-weight:700;color:#0a84ff;line-height:1.1}
+    .stat .label{font-size:.74em;color:#888;margin-top:.2rem}
+
+    /* DB usage */
+    #db-usage{background:#fff;border:1px solid #eef0f2;border-radius:12px;padding:1.1rem 1.4rem;margin-bottom:1.5rem}
+    #db-bar-wrap{height:8px;background:#f0f0f3;border-radius:999px;overflow:hidden;margin:.5rem 0}
+    #db-bar{height:100%;background:linear-gradient(90deg,#34c759,#0a84ff);width:0%;transition:width .3s}
+
+    /* Tabs */
+    .tabs{display:flex;gap:.4rem;margin-bottom:1.5rem;border-bottom:1px solid #e8e8eb}
+    .tab{padding:.7rem 1.4rem;background:transparent;border:none;border-bottom:3px solid transparent;cursor:pointer;font-size:.95em;color:#666;font-weight:500;font-family:inherit}
+    .tab.active{color:#0a84ff;border-bottom-color:#0a84ff;font-weight:600}
+    .tab-panel{display:none}
+    .tab-panel.active{display:block}
+
+    /* Filter chips */
+    .filter-bar{display:flex;gap:.4rem;margin-bottom:1rem;flex-wrap:wrap}
+    .filter-bar button{padding:.4rem .9rem;border:1px solid #d2d2d7;border-radius:999px;background:#fff;cursor:pointer;font-size:.83em;font-family:inherit}
     .filter-bar button.active{background:#0a84ff;color:#fff;border-color:#0a84ff}
+
+    /* Tables */
     table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-    th,td{padding:.75rem 1rem;text-align:left;font-size:.88em;border-bottom:1px solid #eef0f2}
-    th{background:#f7f7f9;font-weight:600;color:#444;font-size:.8em;text-transform:uppercase;letter-spacing:.04em}
-    .badge{display:inline-block;padding:.15rem .55rem;border-radius:999px;font-size:.72em;font-weight:600}
-    .badge.pending{background:#fff3d6;color:#876200}
+    th,td{padding:.7rem 1rem;text-align:left;font-size:.85em;border-bottom:1px solid #eef0f2;vertical-align:middle}
+    th{background:#f7f7f9;font-weight:600;color:#444;font-size:.76em;text-transform:uppercase;letter-spacing:.04em}
+    tbody tr:hover{background:#fafafc}
+
+    /* Badges */
+    .badge{display:inline-block;padding:.13rem .5rem;border-radius:999px;font-size:.7em;font-weight:600;line-height:1.4}
+    .badge.pending_approval{background:#fff3d6;color:#876200}
     .badge.approved{background:#d4edda;color:#155724}
     .badge.blocked{background:#f8d7da;color:#721c24}
     .badge.admin{background:#e1d4f7;color:#4a2480}
     .badge.free{background:#e4e9ee;color:#34495e}
-    .actions button{padding:.3rem .65rem;font-size:.78em;border-radius:6px;border:1px solid #d2d2d7;background:#fff;cursor:pointer;margin-right:.25rem}
+
+    /* Action buttons */
+    .actions button{padding:.28rem .6rem;font-size:.76em;border-radius:6px;border:1px solid #d2d2d7;background:#fff;cursor:pointer;margin-right:.2rem;font-family:inherit}
     .actions button.approve{background:#34c759;color:#fff;border-color:#34c759}
-    .actions button.block  {background:#ff3b30;color:#fff;border-color:#ff3b30}
+    .actions button.block{background:#ff3b30;color:#fff;border-color:#ff3b30}
     .actions button.unblock{background:#0a84ff;color:#fff;border-color:#0a84ff}
+    .actions button.danger{background:#ff3b30;color:#fff;border-color:#ff3b30}
+
     .meta{color:#888;font-size:.78em}
-    .empty{text-align:center;padding:3rem;color:#999}
-    .stats{display:flex;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap}
-    .stat{flex:1;min-width:140px;background:#fff;padding:1rem 1.25rem;border-radius:12px;border:1px solid #eef0f2}
-    .stat .num{font-size:1.7rem;font-weight:700;color:#0a84ff}
-    .stat .label{font-size:.78em;color:#888}
+    .empty{text-align:center;padding:3rem;color:#999;font-size:.92em}
+    .small-btn{padding:.35rem .85rem;font-size:.8em;border-radius:6px;border:1px solid #d2d2d7;background:#fff;cursor:pointer;font-family:inherit}
+
+    /* File upload */
+    .uploader{background:#fff;border:2px dashed #d2d2d7;border-radius:12px;padding:1.5rem;margin-bottom:1.25rem;text-align:center;transition:all .15s}
+    .uploader.drag{border-color:#0a84ff;background:#f0f7ff}
+    .uploader input[type=file]{display:none}
+    .uploader label{cursor:pointer;color:#0a84ff;font-weight:600}
+    .uploader .hint{color:#888;font-size:.82em;margin-top:.4rem}
+
+    /* Daily chart */
+    .chart-row{display:flex;align-items:flex-end;gap:.3rem;height:80px;margin-bottom:.4rem}
+    .chart-bar{flex:1;background:linear-gradient(180deg,#0a84ff,#5eb3ff);border-radius:3px 3px 0 0;min-height:4px;position:relative}
+    .chart-bar:hover::after{content:attr(data-tip);position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#222;color:#fff;font-size:.7em;padding:.25rem .5rem;border-radius:4px;white-space:nowrap;margin-bottom:4px}
   </style>
 </head>
 <body>
@@ -43,149 +81,116 @@
 
   <div class="admin-wrap">
     <h1>관리자 패널</h1>
-    <p class="lead">사용자 가입 신청을 검토하고 승인하거나 차단하세요. 모든 변경은 admin_logs 에 기록됩니다.</p>
+    <p class="lead">계정·로그인·파일 통합 관리. 모든 변경은 admin_logs에 기록됩니다.</p>
 
     <div class="stats" id="stats"></div>
 
-    <div id="db-usage" style="background:#fff;border:1px solid #eef0f2;border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:1.5rem">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">
-        <h3 style="margin:0;font-size:1rem">💾 Supabase DB 사용량 <span style="font-weight:400;color:#888;font-size:.85em">— 500MB Free 한도</span></h3>
-        <button id="cleanup-btn" style="padding:.35rem .85rem;font-size:.8em;border-radius:6px;border:1px solid #d2d2d7;background:#fff;cursor:pointer">🧹 즉시 정리</button>
+    <div id="db-usage">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div><strong>💾 Supabase DB</strong> <span style="color:#888;font-size:.85em">/ 500MB Free</span></div>
+        <button class="small-btn" id="cleanup-btn">🧹 즉시 정리</button>
       </div>
-      <div id="db-bar-wrap" style="height:8px;background:#f0f0f3;border-radius:999px;overflow:hidden;margin-bottom:.5rem">
-        <div id="db-bar" style="height:100%;background:linear-gradient(90deg,#34c759,#0a84ff);width:0%;transition:width .3s"></div>
-      </div>
+      <div id="db-bar-wrap"><div id="db-bar"></div></div>
       <div id="db-summary" style="font-size:.85em;color:#666">로딩 중...</div>
-      <table style="width:100%;margin-top:1rem;font-size:.82em">
-        <thead><tr style="text-align:left;color:#888"><th style="padding:.35rem 0">테이블</th><th>Rows</th><th>크기</th></tr></thead>
-        <tbody id="db-tables"></tbody>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="accounts">👤 계정 관리</button>
+      <button class="tab" data-tab="logins">🔑 로그인 관리</button>
+      <button class="tab" data-tab="files">📁 파일 관리</button>
+    </div>
+
+    <!-- ============ TAB 1: 계정 관리 ============ -->
+    <section class="tab-panel active" id="tab-accounts">
+      <div class="filter-bar">
+        <button data-filter="pending_approval" class="active">⏳ 승인 대기</button>
+        <button data-filter="approved">✅ 승인됨</button>
+        <button data-filter="blocked">🚫 차단</button>
+        <button data-filter="all">전체</button>
+      </div>
+      <table>
+        <thead><tr>
+          <th>이메일</th><th>이름</th><th>직군</th><th>소속</th><th>면허</th><th>상태</th><th>가입</th><th>작업</th>
+        </tr></thead>
+        <tbody id="accounts-tbody"><tr><td colspan="8" class="empty">로딩 중...</td></tr></tbody>
       </table>
-      <p style="font-size:.78em;color:#888;margin:.85rem 0 0;line-height:1.5">
-        access_logs는 30일, downloads는 90일 후 자동 삭제됩니다 (매일 12:00 KST · pg_cron).
-        삭제 전 daily_chapter_views로 일자별 통계가 영구 집계됩니다.
-      </p>
-    </div>
+    </section>
 
-    <div class="filter-bar">
-      <button data-filter="pending_approval" class="active">⏳ 승인 대기</button>
-      <button data-filter="approved">✅ 승인됨</button>
-      <button data-filter="blocked">🚫 차단</button>
-      <button data-filter="all">전체</button>
-    </div>
+    <!-- ============ TAB 2: 로그인 관리 ============ -->
+    <section class="tab-panel" id="tab-logins">
+      <h3 style="font-size:1rem;margin:0 0 .5rem">📊 일자별 챕터 조회 (최근 14일)</h3>
+      <p class="meta" style="margin:0 0 1rem">access_logs 30일 보존 · daily_chapter_views 영구 집계</p>
+      <div id="daily-chart" style="background:#fff;border:1px solid #eef0f2;border-radius:12px;padding:1.25rem;margin-bottom:1.5rem">로딩...</div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>이메일</th><th>이름</th><th>직군</th><th>소속</th><th>면허/학번</th><th>상태</th><th>가입</th><th>작업</th>
-        </tr>
-      </thead>
-      <tbody id="tbody">
-        <tr><td colspan="8" class="empty">로딩 중...</td></tr>
-      </tbody>
-    </table>
+      <h3 style="font-size:1rem;margin:0 0 .5rem">🕐 최근 로그인 (auth.users)</h3>
+      <table>
+        <thead><tr>
+          <th>이메일</th><th>방식</th><th>마지막 로그인</th><th>이번 가입일</th><th>상태</th>
+        </tr></thead>
+        <tbody id="logins-tbody"><tr><td colspan="5" class="empty">로딩 중...</td></tr></tbody>
+      </table>
+    </section>
+
+    <!-- ============ TAB 3: 파일 관리 ============ -->
+    <section class="tab-panel" id="tab-files">
+      <div class="uploader" id="uploader">
+        <input type="file" id="file-input" multiple />
+        <div>
+          <label for="file-input">📤 파일 선택</label> 또는 여기에 드래그
+        </div>
+        <div class="hint">최대 50MB · PDF · 이미지 · PPTX · DOCX · MP4 · MP3 등</div>
+        <div id="upload-status" style="margin-top:.75rem;font-size:.88em"></div>
+      </div>
+
+      <div style="display:flex;gap:.5rem;margin-bottom:1rem;align-items:center">
+        <input type="text" id="file-search" placeholder="파일명 검색..." style="flex:1;padding:.55rem .9rem;border:1px solid #d2d2d7;border-radius:8px;font-family:inherit" />
+        <button class="small-btn" id="files-refresh">🔄 새로고침</button>
+      </div>
+
+      <table>
+        <thead><tr>
+          <th>파일명</th><th>설명</th><th>크기</th><th>업로드</th><th>업로더</th><th>작업</th>
+        </tr></thead>
+        <tbody id="files-tbody"><tr><td colspan="6" class="empty">로딩 중...</td></tr></tbody>
+      </table>
+    </section>
   </div>
 
   <script type="module">
-    import { supabase, getCurrentUser } from "./assets/supabase-client.js";
+    import { supabase, getCurrentUser, signOut } from "./assets/supabase-client.js";
 
-    let currentFilter = "pending_approval";
+    // ============ Tab switching ============
+    document.querySelectorAll(".tab").forEach(t => {
+      t.onclick = () => {
+        document.querySelectorAll(".tab").forEach(x => x.classList.remove("active"));
+        document.querySelectorAll(".tab-panel").forEach(x => x.classList.remove("active"));
+        t.classList.add("active");
+        document.getElementById("tab-" + t.dataset.tab).classList.add("active");
+        // lazy-load on tab open
+        if (t.dataset.tab === "logins") loadLogins();
+        if (t.dataset.tab === "files")  loadFiles();
+      };
+    });
 
+    // ============ Common: stats + db usage ============
     async function loadStats() {
       const { data: all } = await supabase.from("users").select("access_level, blocked_at, role");
       if (!all) return;
-      const stats = {
-        total:    all.length,
-        pending:  all.filter(u => u.access_level === "pending_approval" && !u.blocked_at).length,
+      const s = {
+        total: all.length,
+        pending: all.filter(u => u.access_level === "pending_approval" && !u.blocked_at).length,
         approved: all.filter(u => u.access_level === "approved" && !u.blocked_at).length,
-        blocked:  all.filter(u => u.blocked_at).length,
-        admin:    all.filter(u => u.role === "admin").length,
+        blocked: all.filter(u => u.blocked_at).length,
+        admin: all.filter(u => u.role === "admin").length,
       };
       document.getElementById("stats").innerHTML = `
-        <div class="stat"><div class="num">${stats.total}</div><div class="label">전체 가입자</div></div>
-        <div class="stat"><div class="num">${stats.pending}</div><div class="label">⏳ 대기</div></div>
-        <div class="stat"><div class="num">${stats.approved}</div><div class="label">✅ 승인</div></div>
-        <div class="stat"><div class="num">${stats.blocked}</div><div class="label">🚫 차단</div></div>
-        <div class="stat"><div class="num">${stats.admin}</div><div class="label">관리자</div></div>
+        <div class="stat"><div class="num">${s.total}</div><div class="label">전체</div></div>
+        <div class="stat"><div class="num">${s.pending}</div><div class="label">⏳ 대기</div></div>
+        <div class="stat"><div class="num">${s.approved}</div><div class="label">✅ 승인</div></div>
+        <div class="stat"><div class="num">${s.blocked}</div><div class="label">🚫 차단</div></div>
+        <div class="stat"><div class="num">${s.admin}</div><div class="label">관리자</div></div>
       `;
     }
-
-    async function loadUsers() {
-      let q = supabase.from("users").select("*").order("created_at", { ascending: false });
-      if (currentFilter === "blocked") {
-        q = q.not("blocked_at", "is", null);
-      } else if (currentFilter !== "all") {
-        q = q.eq("access_level", currentFilter).is("blocked_at", null);
-      }
-      const { data, error } = await q;
-      const tbody = document.getElementById("tbody");
-      if (error) { tbody.innerHTML = `<tr><td colspan=8 class=empty>오류: ${error.message}</td></tr>`; return; }
-      if (!data || data.length === 0) { tbody.innerHTML = `<tr><td colspan=8 class=empty>해당하는 사용자가 없습니다.</td></tr>`; return; }
-      tbody.innerHTML = data.map(u => {
-        let statusBadges = '';
-        if (u.role === 'admin') statusBadges += '<span class="badge admin">관리자</span> ';
-        if (u.blocked_at) {
-          statusBadges += '<span class="badge blocked">차단</span>';
-        } else {
-          statusBadges += `<span class="badge ${u.access_level}">${u.access_level === 'pending_approval' ? '대기' : u.access_level === 'approved' ? '승인' : 'free'}</span>`;
-        }
-        const created = new Date(u.created_at).toLocaleDateString('ko-KR');
-        const actions = u.blocked_at
-          ? `<button class="unblock" data-act="unblock" data-id="${u.id}">차단해제</button>`
-          : (u.access_level === 'approved'
-              ? `<button class="block" data-act="block" data-id="${u.id}">차단</button>`
-              : `<button class="approve" data-act="approve" data-id="${u.id}">승인</button>
-                 <button class="block" data-act="block" data-id="${u.id}">차단</button>`);
-        return `<tr>
-          <td>${escapeHtml(u.email)}</td>
-          <td>${escapeHtml(u.full_name || '-')}</td>
-          <td>${escapeHtml(u.profession || '-')}</td>
-          <td>${escapeHtml(u.affiliation || '-')}</td>
-          <td>${escapeHtml(u.license_number || '-')}</td>
-          <td>${statusBadges}</td>
-          <td class="meta">${created}</td>
-          <td class="actions">${actions}</td>
-        </tr>`;
-      }).join('');
-      tbody.querySelectorAll("button[data-act]").forEach(btn => {
-        btn.onclick = () => actOnUser(btn.dataset.act, btn.dataset.id);
-      });
-    }
-
-    async function actOnUser(action, userId) {
-      const me = await getCurrentUser();
-      const { data: before } = await supabase.from("users").select("access_level, blocked_at, blocked_reason").eq("id", userId).single();
-      let patch = {};
-      let reason = null;
-      if (action === "approve") {
-        patch = { access_level: "approved", approved_at: new Date().toISOString(), blocked_at: null, blocked_reason: null };
-      } else if (action === "block") {
-        reason = prompt("차단 사유 (admin_logs에 기록됨):", "자격 미확인");
-        if (reason === null) return;
-        patch = { blocked_at: new Date().toISOString(), blocked_reason: reason };
-      } else if (action === "unblock") {
-        patch = { blocked_at: null, blocked_reason: null };
-      }
-      const { error: e1 } = await supabase.from("users").update(patch).eq("id", userId);
-      if (e1) { alert("실패: " + e1.message); return; }
-      await supabase.from("admin_logs").insert({
-        admin_id: me.id, target_user_id: userId, action, before_value: before, after_value: patch, reason,
-      });
-      await loadUsers();
-      await loadStats();
-    }
-
-    function escapeHtml(s) {
-      return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    }
-
-    document.querySelectorAll(".filter-bar button").forEach(btn => {
-      btn.onclick = () => {
-        document.querySelectorAll(".filter-bar button").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        currentFilter = btn.dataset.filter;
-        loadUsers();
-      };
-    });
 
     async function loadDbUsage() {
       const [{ data: stats }, { data: total }] = await Promise.all([
@@ -193,38 +198,260 @@
         supabase.rpc("db_total_size"),
       ]);
       const t = total?.[0];
-      if (t) {
-        const pct = Number(t.percent_of_500mb || 0);
-        const color = pct < 50 ? "#34c759" : pct < 80 ? "#ff9500" : "#ff3b30";
-        document.getElementById("db-bar").style.width = Math.min(pct, 100) + "%";
-        document.getElementById("db-bar").style.background = `linear-gradient(90deg,${color},${color})`;
-        document.getElementById("db-summary").innerHTML = `
-          <strong>${t.total_pretty}</strong> / 500 MB
-          <span style="color:${color};font-weight:600">(${pct}%)</span>
-          ${pct >= 80 ? '<span style="color:#ff3b30;margin-left:.5rem">⚠ 한도 임박</span>' : ''}
-        `;
-      }
-      const tbody = document.getElementById("db-tables");
-      tbody.innerHTML = (stats || []).map(r => `
-        <tr style="border-top:1px solid #f0f0f3">
-          <td style="padding:.35rem 0"><code>${r.table_name}</code></td>
-          <td>${Number(r.row_count).toLocaleString()}</td>
-          <td>${r.size_pretty}</td>
-        </tr>`).join('');
+      if (!t) return;
+      const pct = Number(t.percent_of_500mb || 0);
+      const color = pct < 50 ? "#34c759" : pct < 80 ? "#ff9500" : "#ff3b30";
+      document.getElementById("db-bar").style.width = Math.min(pct, 100) + "%";
+      document.getElementById("db-bar").style.background = `linear-gradient(90deg,${color},${color})`;
+      const breakdown = (stats || []).map(r => `${r.table_name}: ${r.size_pretty}`).join(" · ");
+      document.getElementById("db-summary").innerHTML = `
+        <strong>${t.total_pretty}</strong> / 500MB
+        <span style="color:${color};font-weight:600">(${pct}%)</span>
+        ${pct >= 80 ? '<span style="color:#ff3b30;margin-left:.5rem">⚠ 한도 임박</span>' : ''}
+        <div style="margin-top:.4rem;font-size:.78em;color:#888">${breakdown}</div>
+      `;
     }
 
     document.getElementById("cleanup-btn").onclick = async () => {
-      if (!confirm("지금 즉시 30일 초과 access_logs, 90일 초과 downloads를 삭제합니다. 진행할까요?")) return;
+      if (!confirm("30일 초과 access_logs, 90일 초과 downloads를 즉시 삭제합니다.")) return;
       const { data, error } = await supabase.rpc("cleanup_old_logs");
-      if (error) { alert("실패: " + error.message); return; }
+      if (error) return alert("실패: " + error.message);
       const r = data?.[0];
-      alert(`정리 완료\n• 일자 집계 upsert: ${r?.rolled_up ?? 0}건\n• access_logs 삭제: ${r?.access_deleted ?? 0}건\n• downloads 삭제: ${r?.downloads_deleted ?? 0}건`);
-      await loadDbUsage();
+      alert(`정리 완료\n• 일자 집계 upsert: ${r?.rolled_up ?? 0}\n• access_logs 삭제: ${r?.access_deleted ?? 0}\n• downloads 삭제: ${r?.downloads_deleted ?? 0}`);
+      loadDbUsage();
     };
 
-    await loadStats();
-    await loadUsers();
-    await loadDbUsage();
+    // ============ TAB 1: Accounts ============
+    let accFilter = "pending_approval";
+
+    async function loadAccounts() {
+      let q = supabase.from("users").select("*").order("created_at", { ascending: false });
+      if (accFilter === "blocked") q = q.not("blocked_at", "is", null);
+      else if (accFilter !== "all") q = q.eq("access_level", accFilter).is("blocked_at", null);
+      const { data, error } = await q;
+      const tbody = document.getElementById("accounts-tbody");
+      if (error) return tbody.innerHTML = `<tr><td colspan=8 class=empty>오류: ${error.message}</td></tr>`;
+      if (!data?.length) return tbody.innerHTML = `<tr><td colspan=8 class=empty>해당 사용자 없음</td></tr>`;
+      tbody.innerHTML = data.map(u => {
+        let status = '';
+        if (u.role === 'admin') status += '<span class="badge admin">관리자</span> ';
+        status += u.blocked_at ? '<span class="badge blocked">차단</span>'
+          : `<span class="badge ${u.access_level}">${u.access_level === 'pending_approval' ? '대기' : u.access_level === 'approved' ? '승인' : 'free'}</span>`;
+        const created = new Date(u.created_at).toLocaleDateString('ko-KR');
+        const acts = u.blocked_at
+          ? `<button class="unblock" data-act="unblock" data-id="${u.id}">차단해제</button>`
+          : (u.access_level === 'approved'
+              ? `<button class="block" data-act="block" data-id="${u.id}">차단</button>`
+              : `<button class="approve" data-act="approve" data-id="${u.id}">승인</button>
+                 <button class="block" data-act="block" data-id="${u.id}">차단</button>`);
+        return `<tr>
+          <td>${esc(u.email)}</td><td>${esc(u.full_name)}</td><td>${esc(u.profession)}</td>
+          <td>${esc(u.affiliation)}</td><td>${esc(u.license_number)}</td>
+          <td>${status}</td><td class="meta">${created}</td><td class="actions">${acts}</td>
+        </tr>`;
+      }).join('');
+      tbody.querySelectorAll("button[data-act]").forEach(b => b.onclick = () => actAccount(b.dataset.act, b.dataset.id));
+    }
+
+    async function actAccount(action, userId) {
+      const me = await getCurrentUser();
+      const { data: before } = await supabase.from("users").select("access_level, blocked_at, blocked_reason").eq("id", userId).single();
+      let patch = {}, reason = null;
+      if (action === "approve") patch = { access_level: "approved", approved_at: new Date().toISOString(), blocked_at: null, blocked_reason: null };
+      else if (action === "block") {
+        reason = prompt("차단 사유:", "자격 미확인");
+        if (reason === null) return;
+        patch = { blocked_at: new Date().toISOString(), blocked_reason: reason };
+      } else if (action === "unblock") patch = { blocked_at: null, blocked_reason: null };
+      const { error } = await supabase.from("users").update(patch).eq("id", userId);
+      if (error) return alert("실패: " + error.message);
+      await supabase.from("admin_logs").insert({
+        admin_id: me.id, target_user_id: userId, action, before_value: before, after_value: patch, reason,
+      });
+      loadAccounts(); loadStats();
+    }
+
+    document.querySelectorAll("#tab-accounts .filter-bar button").forEach(b => {
+      b.onclick = () => {
+        document.querySelectorAll("#tab-accounts .filter-bar button").forEach(x => x.classList.remove("active"));
+        b.classList.add("active");
+        accFilter = b.dataset.filter;
+        loadAccounts();
+      };
+    });
+
+    // ============ TAB 2: Logins ============
+    let loginsLoaded = false;
+    async function loadLogins() {
+      if (loginsLoaded) return;
+      loginsLoaded = true;
+
+      // Daily chart from daily_chapter_views (last 14 days)
+      const { data: daily } = await supabase
+        .from("daily_chapter_views")
+        .select("view_date, view_count")
+        .gte("view_date", new Date(Date.now() - 14 * 86400000).toISOString().slice(0, 10))
+        .order("view_date", { ascending: true });
+
+      const chartEl = document.getElementById("daily-chart");
+      if (!daily?.length) {
+        chartEl.innerHTML = '<div class="empty" style="padding:1.5rem">아직 집계된 데이터 없음 (cleanup_old_logs가 매일 12:00 KST에 어제 데이터 집계)</div>';
+      } else {
+        const byDate = {};
+        daily.forEach(r => { byDate[r.view_date] = (byDate[r.view_date] || 0) + r.view_count; });
+        const dates = Object.keys(byDate).sort();
+        const max = Math.max(...Object.values(byDate));
+        chartEl.innerHTML = `
+          <div class="chart-row">
+            ${dates.map(d => {
+              const v = byDate[d];
+              const h = (v / max * 100).toFixed(0);
+              return `<div class="chart-bar" style="height:${h}%" data-tip="${d}: ${v} views"></div>`;
+            }).join('')}
+          </div>
+          <div style="display:flex;justify-content:space-between;color:#888;font-size:.72em">
+            <span>${dates[0]}</span><span>${dates[dates.length-1]}</span>
+          </div>`;
+      }
+
+      // Recent users + last_login (use auth.users via admin_logs proxy if available)
+      // Since we don't have auth.users.last_sign_in_at directly accessible via PostgREST,
+      // show users sorted by created_at and their access_level instead.
+      const { data: users } = await supabase
+        .from("users")
+        .select("email, provider, created_at, access_level, blocked_at, role")
+        .order("created_at", { ascending: false })
+        .limit(50);
+      const tb = document.getElementById("logins-tbody");
+      if (!users?.length) return tb.innerHTML = `<tr><td colspan=5 class=empty>가입자 없음</td></tr>`;
+      tb.innerHTML = users.map(u => {
+        const status = u.blocked_at ? '<span class="badge blocked">차단</span>'
+          : u.role === 'admin' ? '<span class="badge admin">관리자</span>'
+          : `<span class="badge ${u.access_level}">${u.access_level === 'pending_approval' ? '대기' : u.access_level === 'approved' ? '승인' : 'free'}</span>`;
+        return `<tr>
+          <td>${esc(u.email)}</td>
+          <td><span class="badge ${u.provider === 'google' ? 'admin' : 'free'}">${esc(u.provider)}</span></td>
+          <td class="meta">최근 세션 정보 없음</td>
+          <td class="meta">${new Date(u.created_at).toLocaleString('ko-KR')}</td>
+          <td>${status}</td>
+        </tr>`;
+      }).join('');
+    }
+
+    // ============ TAB 3: Files ============
+    let filesLoaded = false;
+    async function loadFiles() {
+      filesLoaded = true;
+      const search = document.getElementById("file-search").value.trim().toLowerCase();
+      let q = supabase.from("files").select("*, uploader:uploaded_by(email,full_name)").order("uploaded_at", { ascending: false }).limit(200);
+      const { data, error } = await q;
+      const tb = document.getElementById("files-tbody");
+      if (error) return tb.innerHTML = `<tr><td colspan=6 class=empty>오류: ${error.message}</td></tr>`;
+      const filtered = search ? data.filter(f => (f.display_name || f.storage_path).toLowerCase().includes(search)) : data;
+      if (!filtered?.length) return tb.innerHTML = `<tr><td colspan=6 class=empty>${search ? '검색 결과 없음' : '아직 업로드된 파일 없음'}</td></tr>`;
+      tb.innerHTML = filtered.map(f => `
+        <tr>
+          <td><strong>${esc(f.display_name || f.storage_path)}</strong><br><span class="meta">${esc(f.storage_path)}</span></td>
+          <td class="meta">${esc(f.description) || '-'}</td>
+          <td>${formatBytes(f.bytes)}</td>
+          <td class="meta">${new Date(f.uploaded_at).toLocaleDateString('ko-KR')}</td>
+          <td class="meta">${esc(f.uploader?.full_name || f.uploader?.email || '-')}</td>
+          <td class="actions">
+            <button data-act="download" data-path="${esc(f.storage_path)}">⬇</button>
+            <button data-act="rename" data-id="${f.id}" data-name="${esc(f.display_name || '')}">✏</button>
+            <button class="danger" data-act="delete" data-id="${f.id}" data-path="${esc(f.storage_path)}">🗑</button>
+          </td>
+        </tr>`).join('');
+      tb.querySelectorAll("button[data-act]").forEach(b => b.onclick = () => actFile(b.dataset));
+    }
+
+    async function actFile({ act, path, id, name }) {
+      if (act === "download") {
+        const { data, error } = await supabase.storage.from("admin-uploads").createSignedUrl(path, 60);
+        if (error) return alert("실패: " + error.message);
+        window.open(data.signedUrl, "_blank");
+      } else if (act === "rename") {
+        const newName = prompt("새 표시 이름:", name);
+        if (!newName) return;
+        const { error } = await supabase.from("files").update({ display_name: newName }).eq("id", id);
+        if (error) return alert("실패: " + error.message);
+        loadFiles();
+      } else if (act === "delete") {
+        if (!confirm("파일을 영구 삭제합니다. 진행할까요?")) return;
+        // trigger가 storage object도 같이 삭제
+        const { error } = await supabase.from("files").delete().eq("id", id);
+        if (error) return alert("실패: " + error.message);
+        loadFiles();
+      }
+    }
+
+    // Upload
+    const uploader = document.getElementById("uploader");
+    const fileInput = document.getElementById("file-input");
+    const upStatus = document.getElementById("upload-status");
+
+    ["dragenter", "dragover"].forEach(ev => uploader.addEventListener(ev, e => { e.preventDefault(); uploader.classList.add("drag"); }));
+    ["dragleave", "drop"].forEach(ev => uploader.addEventListener(ev, e => { e.preventDefault(); uploader.classList.remove("drag"); }));
+    uploader.addEventListener("drop", e => {
+      e.preventDefault();
+      handleUpload(e.dataTransfer.files);
+    });
+    fileInput.addEventListener("change", e => handleUpload(e.target.files));
+
+    async function handleUpload(fileList) {
+      if (!fileList?.length) return;
+      const me = await getCurrentUser();
+      const results = [];
+      for (const f of fileList) {
+        const safe = f.name.replace(/[^\w\.\-가-힣]/g, "_");
+        const path = `${Date.now()}_${safe}`;
+        upStatus.innerHTML = `⏳ ${esc(f.name)} 업로드 중... (${formatBytes(f.size)})`;
+        const { error: upErr } = await supabase.storage.from("admin-uploads").upload(path, f, {
+          contentType: f.type || "application/octet-stream",
+          upsert: false,
+        });
+        if (upErr) {
+          results.push(`❌ ${f.name}: ${upErr.message}`);
+          continue;
+        }
+        const { error: metaErr } = await supabase.from("files").insert({
+          storage_path: path,
+          display_name: f.name,
+          bytes: f.size,
+          mime_type: f.type || null,
+          uploaded_by: me.id,
+        });
+        if (metaErr) {
+          results.push(`⚠ ${f.name}: 업로드는 성공했으나 메타 저장 실패 (${metaErr.message})`);
+        } else {
+          results.push(`✅ ${f.name}`);
+        }
+      }
+      upStatus.innerHTML = results.join('<br>');
+      fileInput.value = "";
+      loadFiles();
+      loadDbUsage();
+    }
+
+    document.getElementById("file-search").addEventListener("input", () => filesLoaded && loadFiles());
+    document.getElementById("files-refresh").onclick = loadFiles;
+
+    // ============ Helpers ============
+    function esc(s) {
+      return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+    }
+    function formatBytes(n) {
+      if (!n && n !== 0) return "-";
+      if (n < 1024) return n + " B";
+      if (n < 1024 * 1024) return (n / 1024).toFixed(1) + " KB";
+      if (n < 1024 * 1024 * 1024) return (n / 1024 / 1024).toFixed(1) + " MB";
+      return (n / 1024 / 1024 / 1024).toFixed(2) + " GB";
+    }
+
+    // ============ Init ============
+    loadStats();
+    loadDbUsage();
+    loadAccounts();
   </script>
 </body>
 </html>

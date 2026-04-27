@@ -27,3 +27,5 @@ node_modules/
 # **/*.pdf
 # **/*.pptx
 # **/*.docx
+
+.vercel

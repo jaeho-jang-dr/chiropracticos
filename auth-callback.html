@@ -4,17 +4,49 @@
   <meta charset="UTF-8" />
   <title>로그인 처리 중...</title>
   <script src="./assets/config.js"></script>
-  <style>body{font-family:system-ui;text-align:center;padding:6rem 2rem;color:#555}</style>
+  <style>
+    body{font-family:system-ui;text-align:center;padding:5rem 2rem;color:#444;background:#fafafc}
+    .card{max-width:380px;margin:0 auto;padding:2.5rem;background:#fff;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.04);border:1px solid #e8e8eb}
+    .spinner{width:32px;height:32px;border:3px solid #e8e8eb;border-top-color:#0a84ff;border-radius:50%;margin:0 auto 1.25rem;animation:spin .8s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .err{color:#c62828;margin-top:1rem;font-size:.9em}
+    a{color:#0a84ff}
+  </style>
 </head>
 <body>
-  <p>로그인 처리 중...</p>
+  <div class="card">
+    <div class="spinner"></div>
+    <div id="msg">로그인 처리 중...</div>
+    <div class="err" id="err"></div>
+  </div>
   <script type="module">
-    import { supabase } from "./assets/supabase-client.js";
-    // detectSessionInUrl=true 라 자동 처리됨
-    await new Promise(r => setTimeout(r, 300));
+    import { supabase, sessionReady } from "./assets/supabase-client.js";
+
     const params = new URLSearchParams(location.search);
     const next = params.get("next") || "/index.html";
-    location.replace(next);
+
+    try {
+      // sessionReady waits for INITIAL_SESSION OR SIGNED_IN — covers both
+      // OAuth hash callback and direct visits with stored session.
+      const session = await sessionReady;
+      if (!session) {
+        // PKCE code exchange may need explicit call when search has ?code=
+        const code = params.get("code");
+        if (code) {
+          const { error } = await supabase.auth.exchangeCodeForSession(code);
+          if (error) throw error;
+        } else {
+          throw new Error("세션이 생성되지 않았습니다. 다시 로그인해 주세요.");
+        }
+      }
+      // Clean the URL hash before redirect (avoid leaving tokens in history)
+      history.replaceState(null, "", "/auth-callback.html");
+      location.replace(next);
+    } catch (e) {
+      document.getElementById("msg").textContent = "로그인 실패";
+      document.getElementById("err").innerHTML = (e?.message || String(e)) +
+        '<br><a href="/login.html">← 다시 시도</a>';
+    }
   </script>
 </body>
 </html>
