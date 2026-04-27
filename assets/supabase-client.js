@@ -27,9 +27,17 @@ export const supabase = createClient(window.SUPABASE_URL, window.SUPABASE_ANON_K
   },
 });
 
+// OAuth callback 진행 중인지 감지 (URL hash나 search에 토큰/code 있음)
+const hasOAuthInUrl =
+  /[#&](access_token|refresh_token|provider_token|id_token)=/.test(location.hash) ||
+  /[?&](code|error)=/.test(location.search);
+
 // 세션 복원/OAuth callback 처리 완료까지 기다림
+// - 일반 페이지: 빠른 timeout (3s)
+// - OAuth callback 진행 중: 긴 timeout (15s) — INITIAL_SESSION 후에도 SIGNED_IN 기다림
 export const sessionReady = new Promise((resolve) => {
   let settled = false;
+  let initialFired = false;
   const finish = (session, why) => {
     if (settled) return;
     settled = true;
@@ -37,25 +45,40 @@ export const sessionReady = new Promise((resolve) => {
     resolve(session);
   };
 
-  // INITIAL_SESSION 또는 SIGNED_IN 둘 중 먼저 오는 것
+  trace("init", { hasOAuthInUrl, hash: location.hash.slice(0, 60), search: location.search.slice(0, 60) });
+
   supabase.auth.onAuthStateChange((event, session) => {
     trace("authStateChange", { event, hasSession: !!session });
-    if (event === "INITIAL_SESSION" || event === "SIGNED_IN") finish(session, event);
+    // OAuth callback 진행 중에는 INITIAL_SESSION(null)을 무시하고 SIGNED_IN 기다림
+    if (event === "SIGNED_IN") {
+      finish(session, event);
+    } else if (event === "INITIAL_SESSION") {
+      initialFired = true;
+      // 세션이 있으면 즉시 resolve. 없는데 OAuth 진행 중이면 SIGNED_IN 기다림.
+      if (session) finish(session, event);
+      else if (!hasOAuthInUrl) finish(null, "initial-no-session");
+    } else if (event === "TOKEN_REFRESHED" && session) {
+      finish(session, event);
+    }
   });
 
-  // 안전망: 2초 내 이벤트 없으면 직접 조회
+  // 안전망 timeout — OAuth 진행 시 길게
+  const timeoutMs = hasOAuthInUrl ? 15000 : 3000;
   setTimeout(async () => {
+    if (settled) return;
     const { data } = await supabase.auth.getSession();
-    finish(data.session, "timeout");
-  }, 2000);
+    finish(data.session, `timeout-${timeoutMs}ms`);
+  }, timeoutMs);
 });
 
-export async function getCurrentUserWithRow(retries = 3) {
+export async function getCurrentUserWithRow(retries = 6) {
   await sessionReady;
   const { data: { user } } = await supabase.auth.getUser();
   trace("getCurrentUserWithRow", { user: user?.email });
   if (!user) return { user: null, row: null };
 
+  // 백오프: 300, 600, 1200, 2000, 3000, 4000 ms = 최대 ~11초 대기
+  const delays = [300, 600, 1200, 2000, 3000, 4000];
   for (let i = 0; i < retries; i++) {
     const { data, error } = await supabase
       .from("users")
@@ -63,18 +86,18 @@ export async function getCurrentUserWithRow(retries = 3) {
       .eq("id", user.id)
       .single();
     if (data) {
-      trace("user row loaded", data);
+      trace("user row loaded", { attempt: i + 1, role: data.role });
       return { user, row: data };
     }
     if (error?.code === "PGRST116") {
-      trace("trigger race, retry", { attempt: i + 1 });
-      await new Promise((r) => setTimeout(r, 500 * (i + 1)));
+      trace("trigger race, retry", { attempt: i + 1, nextDelay: delays[i] });
+      await new Promise((r) => setTimeout(r, delays[i] || 4000));
       continue;
     }
     trace("user row error", error);
     return { user, row: null };
   }
-  trace("user row not found after retries");
+  trace("user row not found after all retries");
   return { user, row: null };
 }
 
@@ -92,14 +115,19 @@ export async function signOut() {
 
 // Google login — current page를 next로 사용
 export async function signInWithGoogle(nextPath) {
-  const next = nextPath || (location.pathname.startsWith("/login") ? "/" : location.pathname);
-  // redirectTo는 cleanUrl 형식 (.html 없이) — Vercel 308 리다이렉트 회피
-  // 그리고 next는 path로 인코딩 (Supabase가 이걸 그대로 따라감)
+  let next = nextPath || (location.pathname.startsWith("/login") ? "/" : location.pathname);
+  // .html 제거 (cleanUrl 형식) — Vercel 308 회피 + Supabase whitelist 매치 정확
+  next = next.replace(/\.html(\?|$)/, "$1");
+  // 빈 path는 /로
+  if (!next || next === "") next = "/";
   const redirectTo = location.origin + next;
   trace("signInWithGoogle", { redirectTo });
   const { error } = await supabase.auth.signInWithOAuth({
     provider: "google",
-    options: { redirectTo },
+    options: {
+      redirectTo,
+      scopes: "openid email profile",  // openid 추가 — id_token 받음
+    },
   });
   if (error) {
     alert("Google 로그인 시작 실패: " + error.message);

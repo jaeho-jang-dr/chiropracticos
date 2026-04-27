@@ -24,6 +24,8 @@ import { supabase, sessionReady, getCurrentUserWithRow, signOut } from "./supaba
   }
 
   if (!session) {
+    // redirect loop 방지: 이미 /login에 있으면 다시 redirect 안 함
+    if (location.pathname.startsWith("/login")) return;
     const next = encodeURIComponent(location.pathname + location.search);
     location.replace(`/login?next=${next}`);
     return;

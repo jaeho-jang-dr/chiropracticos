@@ -59,7 +59,9 @@
     import { supabase, sessionReady, signInWithGoogle } from "./assets/supabase-client.js";
 
     const params = new URLSearchParams(location.search);
-    const next = params.get("next") || "/";
+    let next = params.get("next") || "/";
+    // redirect loop 방지: next가 /login으로 시작하면 / 로 강제
+    if (next.startsWith("/login")) next = "/";
     const errBox = document.getElementById("err");
 
     function showErr(msg) {
