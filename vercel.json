@@ -21,8 +21,5 @@
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
-  ],
-  "redirects": [
-    { "source": "/", "destination": "/index.html", "permanent": false }
   ]
 }
