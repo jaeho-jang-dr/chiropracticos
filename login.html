@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="./assets/main.css" />
   <script src="./assets/config.js"></script>
   <style>
-    .auth-card{max-width:420px;margin:6rem auto;padding:2.5rem;background:#fff;border:1px solid #e0e0e3;border-radius:18px;box-shadow:0 8px 32px rgba(0,0,0,.04)}
+    .auth-card{max-width:420px;margin:5rem auto;padding:2.5rem;background:#fff;border:1px solid #e0e0e3;border-radius:18px;box-shadow:0 8px 32px rgba(0,0,0,.04)}
     .auth-card h1{margin:0 0 .5rem;font-size:1.7rem}
-    .auth-card p.lead{color:#666;margin:0 0 1.75rem;font-size:.95em}
+    .auth-card p.lead{color:#666;margin:0 0 1.5rem;font-size:.92em}
     .auth-card label{display:block;font-size:.85em;color:#444;margin:1rem 0 .35rem;font-weight:600}
     .auth-card input{width:100%;padding:.75rem 1rem;border:1px solid #d2d2d7;border-radius:10px;font-size:.95em;font-family:inherit;box-sizing:border-box}
     .auth-card input:focus{outline:none;border-color:#0a84ff}
@@ -17,11 +17,13 @@
     .auth-card .divider{text-align:center;margin:1.5rem 0;color:#999;font-size:.85em;position:relative}
     .auth-card .divider::before,.auth-card .divider::after{content:"";position:absolute;top:50%;width:40%;height:1px;background:#e8e8eb}
     .auth-card .divider::before{left:0}.auth-card .divider::after{right:0}
-    .auth-card .btn-google{width:100%;padding:.75rem;border:1px solid #d2d2d7;border-radius:10px;background:#fff;font-weight:500;cursor:pointer;font-size:.95em;display:flex;align-items:center;justify-content:center;gap:.6rem}
+    .auth-card .btn-google{width:100%;padding:.75rem;border:1px solid #d2d2d7;border-radius:10px;background:#fff;font-weight:500;cursor:pointer;font-size:.95em;display:flex;align-items:center;justify-content:center;gap:.6rem;font-family:inherit}
     .auth-card .btn-google:hover{background:#f8f8fa}
     .auth-card .alt{text-align:center;margin-top:1.5rem;font-size:.88em;color:#666}
     .auth-card .alt a{color:#0a84ff;text-decoration:none}
-    .err{color:#c62828;font-size:.85em;margin-top:.5rem;min-height:1em}
+    .err{color:#c62828;font-size:.88em;margin-top:.5rem;min-height:1em;line-height:1.4;background:#fdecea;padding:.5rem .75rem;border-radius:6px;display:none}
+    .err.show{display:block}
+    .info{font-size:.8em;color:#888;text-align:center;margin-top:1rem}
   </style>
 </head>
 <body>
@@ -50,38 +52,51 @@
     </form>
 
     <div class="alt">계정이 없으신가요? <a href="./signup.html">가입하기</a></div>
+    <div class="info">디버그가 필요하면 URL 끝에 <code>#debug=1</code> 추가 후 새로고침</div>
   </div>
 
   <script type="module">
-    import { supabase } from "./assets/supabase-client.js";
+    import { supabase, sessionReady, signInWithGoogle } from "./assets/supabase-client.js";
 
     const params = new URLSearchParams(location.search);
-    const next = params.get("next") || "/index.html";
+    const next = params.get("next") || "/";
+    const errBox = document.getElementById("err");
 
-    // 이미 로그인된 사용자는 next로 바로 이동
-    const { data: { session } } = await supabase.auth.getSession();
-    if (session) location.replace(next);
+    function showErr(msg) {
+      errBox.textContent = msg;
+      errBox.classList.add("show");
+    }
 
-    document.getElementById("google-btn").onclick = async () => {
-      const { error } = await supabase.auth.signInWithOAuth({
-        provider: "google",
-        options: { redirectTo: location.origin + "/auth-callback.html?next=" + encodeURIComponent(next) },
-      });
-      if (error) document.getElementById("err").textContent = error.message;
-    };
+    // 이미 로그인된 사용자는 즉시 next로
+    const session = await sessionReady;
+    if (session) {
+      location.replace(next);
+    }
+
+    // URL hash에 OAuth 결과가 있으면 sessionReady가 처리해 줌 (위에서)
+
+    // 에러가 hash에 들어 있는 경우 표시
+    const hash = new URLSearchParams(location.hash.replace(/^#/, ""));
+    if (hash.get("error")) {
+      showErr(`OAuth 오류: ${hash.get("error_description") || hash.get("error")}`);
+      history.replaceState(null, "", location.pathname + location.search);
+    }
+
+    document.getElementById("google-btn").onclick = () => signInWithGoogle(next);
 
     document.getElementById("email-form").onsubmit = async (e) => {
       e.preventDefault();
+      errBox.classList.remove("show");
       const fd = new FormData(e.target);
-      const { error } = await supabase.auth.signInWithPassword({
+      const { data, error } = await supabase.auth.signInWithPassword({
         email: fd.get("email"),
         password: fd.get("password"),
       });
       if (error) {
-        document.getElementById("err").textContent = error.message;
-      } else {
-        location.replace(next);
+        showErr(error.message);
+        return;
       }
+      location.replace(next);
     };
   </script>
 </body>

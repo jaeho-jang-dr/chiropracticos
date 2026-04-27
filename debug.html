@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Auth Debug</title>
+  <script src="./assets/config.js"></script>
+  <style>
+    body{font-family:ui-monospace,monospace;padding:2rem;max-width:900px;margin:0 auto;background:#fafafc;color:#222}
+    h1{font-family:system-ui}
+    pre{background:#fff;border:1px solid #e0e0e3;border-radius:8px;padding:1rem;overflow:auto;font-size:.85em}
+    .row{margin-bottom:1.5rem}
+    button{padding:.5rem 1rem;border-radius:8px;border:1px solid #d2d2d7;background:#fff;cursor:pointer;margin-right:.5rem;font-family:inherit}
+    .ok{color:#2e7d32}.err{color:#c62828}
+  </style>
+</head>
+<body>
+  <h1>🔍 Auth Debug</h1>
+  <p>이 페이지는 로그인 흐름을 진단합니다. URL에 <code>#debug=1</code>가 있으면 console에도 로그 출력.</p>
+
+  <div class="row">
+    <button onclick="localStorage.setItem('auth_debug','1');location.reload()">디버그 로그 켜기</button>
+    <button onclick="localStorage.removeItem('auth_debug');location.reload()">끄기</button>
+    <button onclick="localStorage.clear();location.reload()" style="color:#c62828">전체 localStorage 비우기 (강제 로그아웃)</button>
+    <a href="/login"><button>로그인 페이지로</button></a>
+    <a href="/"><button>메인으로</button></a>
+  </div>
+
+  <div class="row">
+    <h3>📦 config.js</h3>
+    <pre id="config-out">로딩...</pre>
+  </div>
+
+  <div class="row">
+    <h3>🔐 Supabase Session</h3>
+    <pre id="session-out">로딩...</pre>
+  </div>
+
+  <div class="row">
+    <h3>👤 Current User</h3>
+    <pre id="user-out">로딩...</pre>
+  </div>
+
+  <div class="row">
+    <h3>🗃 public.users row</h3>
+    <pre id="row-out">로딩...</pre>
+  </div>
+
+  <div class="row">
+    <h3>📜 Auth Event Log (가장 최근부터)</h3>
+    <pre id="log-out">로딩...</pre>
+  </div>
+
+  <div class="row">
+    <h3>💾 localStorage (sb-* 키)</h3>
+    <pre id="ls-out">로딩...</pre>
+  </div>
+
+  <div class="row">
+    <h3>🌐 URL 정보</h3>
+    <pre id="url-out"></pre>
+  </div>
+
+  <script type="module">
+    import { supabase, sessionReady, getCurrentUserWithRow } from "./assets/supabase-client.js";
+
+    const j = (x) => JSON.stringify(x, null, 2);
+
+    document.getElementById("config-out").textContent = j({
+      SUPABASE_URL: window.SUPABASE_URL,
+      SUPABASE_ANON_KEY: (window.SUPABASE_ANON_KEY || "").slice(0, 40) + "...",
+      PUBLIC_PAGES: [...(window.PUBLIC_PAGES || [])],
+      ADMIN_PAGES: [...(window.ADMIN_PAGES || [])],
+    });
+
+    document.getElementById("url-out").textContent = j({
+      href: location.href,
+      pathname: location.pathname,
+      search: location.search,
+      hash: location.hash,
+    });
+
+    document.getElementById("ls-out").textContent = (() => {
+      const out = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (k.startsWith("sb-") || k.includes("supabase") || k === "auth_debug") {
+          const v = localStorage.getItem(k);
+          out[k] = v.length > 200 ? v.slice(0, 100) + "...[" + v.length + " chars]" : v;
+        }
+      }
+      return j(out);
+    })();
+
+    const session = await sessionReady;
+    document.getElementById("session-out").innerHTML =
+      session
+        ? `<span class="ok">✅ 세션 있음</span>\n${j({
+            user_id: session.user?.id,
+            email: session.user?.email,
+            provider: session.user?.app_metadata?.provider,
+            expires_at: new Date((session.expires_at || 0) * 1000).toLocaleString('ko-KR'),
+          })}`
+        : `<span class="err">❌ 세션 없음 (비로그인 상태)</span>`;
+
+    if (session) {
+      const { user, row } = await getCurrentUserWithRow();
+      document.getElementById("user-out").textContent = j({
+        id: user?.id,
+        email: user?.email,
+        provider: user?.app_metadata?.provider,
+        identities: user?.identities?.length,
+      });
+      document.getElementById("row-out").innerHTML = row
+        ? `<span class="ok">✅ row 있음 (role=${row.role}, access_level=${row.access_level})</span>\n${j(row)}`
+        : `<span class="err">❌ public.users row 없음 — trigger가 동작 안 했거나 RLS로 막힘</span>`;
+    } else {
+      document.getElementById("user-out").textContent = "(세션 없음)";
+      document.getElementById("row-out").textContent = "(세션 없음)";
+    }
+
+    document.getElementById("log-out").textContent =
+      (window.__authLog || []).slice().reverse().map(e => `${e.t} ${e.msg}${e.extra ? " " + JSON.stringify(e.extra) : ""}`).join("\n");
+  </script>
+</body>
+</html>

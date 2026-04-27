@@ -7,18 +7,19 @@
 window.SUPABASE_URL      = "https://nfnjjroaohalrtduzvfm.supabase.co";
 window.SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5mbmpqcm9hb2hhbHJ0ZHV6dmZtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyMjE1ODMsImV4cCI6MjA5Mjc5NzU4M30.OMUCUv48zJWhvDXDRSTmMdUZFxSWOzHBlX9n3jGEtIE";
 
-// 공개(로그인 불필요) 페이지 — 정확한 파일명 매칭
+// 공개(로그인 불필요) 페이지 — cleanUrl 변형도 함께
 window.PUBLIC_PAGES = new Set([
   "/",
-  "/index.html",
-  "/login.html",
-  "/signup.html",
-  "/auth-callback.html",
-  "/archive.html",
-  "/chapter01_introduction.html",
+  "/index", "/index.html",
+  "/login", "/login.html",
+  "/signup", "/signup.html",
+  "/auth-callback", "/auth-callback.html",
+  "/archive", "/archive.html",
+  "/chapter01_introduction", "/chapter01_introduction.html",
+  "/debug", "/debug.html",
 ]);
 
 // admin 전용 페이지
 window.ADMIN_PAGES = new Set([
-  "/admin.html",
+  "/admin", "/admin.html",
 ]);

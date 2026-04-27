@@ -1,50 +1,59 @@
 // Supabase JS SDK v2 (ESM via esm.sh CDN)
+// 단순화: implicit flow (기본값), detectSessionInUrl로 OAuth 자동 처리.
+// 모든 페이지가 이 모듈을 로드하면 supabase-js가 URL hash/code를 자동 처리.
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
+const DEBUG = location.hash.includes("debug=1") || localStorage.getItem("auth_debug") === "1";
+const log = (...a) => DEBUG && console.log("[auth]", ...a);
+window.__authLog = [];
+const trace = (msg, extra) => {
+  const entry = { t: new Date().toISOString().slice(11, 23), msg, extra };
+  window.__authLog.push(entry);
+  log(msg, extra ?? "");
+};
+
 if (!window.SUPABASE_URL || window.SUPABASE_URL.startsWith("REPLACE_ME")) {
-  console.error("[supabase-client] config.js의 SUPABASE_URL/ANON_KEY가 아직 설정되지 않았습니다.");
+  alert("[config error] config.js의 SUPABASE_URL/ANON_KEY가 설정되지 않았습니다.");
 }
+
+trace("createClient", { url: window.SUPABASE_URL });
 
 export const supabase = createClient(window.SUPABASE_URL, window.SUPABASE_ANON_KEY, {
   auth: {
     persistSession: true,
     autoRefreshToken: true,
     detectSessionInUrl: true,
-    flowType: "pkce",
+    // implicit flow가 기본 — hash로 토큰 옴, 별도 code exchange 불필요
   },
 });
 
-// Promise that resolves once Supabase has finished restoring/processing the
-// initial session (from localStorage or OAuth callback URL hash).
-// This is the key fix for the "first login not recognized" race condition.
+// 세션 복원/OAuth callback 처리 완료까지 기다림
 export const sessionReady = new Promise((resolve) => {
   let settled = false;
-  const finish = (session) => {
+  const finish = (session, why) => {
     if (settled) return;
     settled = true;
+    trace("sessionReady resolved", { session: !!session, why });
     resolve(session);
   };
 
-  // Subscribe to auth state — INITIAL_SESSION fires once on init,
-  // SIGNED_IN fires after OAuth/email callback URL is processed.
-  const { data: sub } = supabase.auth.onAuthStateChange((event, session) => {
-    if (event === "INITIAL_SESSION" || event === "SIGNED_IN") {
-      finish(session);
-    }
+  // INITIAL_SESSION 또는 SIGNED_IN 둘 중 먼저 오는 것
+  supabase.auth.onAuthStateChange((event, session) => {
+    trace("authStateChange", { event, hasSession: !!session });
+    if (event === "INITIAL_SESSION" || event === "SIGNED_IN") finish(session, event);
   });
 
-  // Safety timeout: don't hang forever if SDK is silent (rare)
+  // 안전망: 2초 내 이벤트 없으면 직접 조회
   setTimeout(async () => {
     const { data } = await supabase.auth.getSession();
-    finish(data.session);
-  }, 1500);
+    finish(data.session, "timeout");
+  }, 2000);
 });
 
-// 현재 사용자의 access_level + role 가져오기 (trigger race retry 포함)
-// returns: { user, row } or { user: null }
 export async function getCurrentUserWithRow(retries = 3) {
   await sessionReady;
   const { data: { user } } = await supabase.auth.getUser();
+  trace("getCurrentUserWithRow", { user: user?.email });
   if (!user) return { user: null, row: null };
 
   for (let i = 0; i < retries; i++) {
@@ -53,23 +62,20 @@ export async function getCurrentUserWithRow(retries = 3) {
       .select("role, access_level, blocked_at, full_name, email")
       .eq("id", user.id)
       .single();
-    if (data) return { user, row: data };
+    if (data) {
+      trace("user row loaded", data);
+      return { user, row: data };
+    }
     if (error?.code === "PGRST116") {
-      // row not yet created by trigger — wait and retry
-      await new Promise((r) => setTimeout(r, 400 * (i + 1)));
+      trace("trigger race, retry", { attempt: i + 1 });
+      await new Promise((r) => setTimeout(r, 500 * (i + 1)));
       continue;
     }
-    console.warn("[getCurrentUserWithRow] error", error);
+    trace("user row error", error);
     return { user, row: null };
   }
+  trace("user row not found after retries");
   return { user, row: null };
-}
-
-export async function getAccessLevel() {
-  const { row } = await getCurrentUserWithRow();
-  if (!row) return null;
-  if (row.blocked_at) return "blocked";
-  return row.access_level;
 }
 
 export async function getCurrentUser() {
@@ -79,6 +85,24 @@ export async function getCurrentUser() {
 }
 
 export async function signOut() {
+  trace("signOut");
   await supabase.auth.signOut();
-  location.href = "/index.html";
+  location.href = "/";
+}
+
+// Google login — current page를 next로 사용
+export async function signInWithGoogle(nextPath) {
+  const next = nextPath || (location.pathname.startsWith("/login") ? "/" : location.pathname);
+  // redirectTo는 cleanUrl 형식 (.html 없이) — Vercel 308 리다이렉트 회피
+  // 그리고 next는 path로 인코딩 (Supabase가 이걸 그대로 따라감)
+  const redirectTo = location.origin + next;
+  trace("signInWithGoogle", { redirectTo });
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: "google",
+    options: { redirectTo },
+  });
+  if (error) {
+    alert("Google 로그인 시작 실패: " + error.message);
+    trace("signInWithGoogle error", error);
+  }
 }
