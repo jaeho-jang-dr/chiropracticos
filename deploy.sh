@@ -21,11 +21,18 @@ set -euo pipefail
 
 cd "$(dirname "$0")"
 
-# ---- Config ----
-PROJECT_ALIAS="chiropractic-kr.vercel.app"
-VERCEL_SCOPE="perseus-projects-4bc3b911"
-: "${VERCEL_TOKEN:?Set VERCEL_TOKEN env var: export VERCEL_TOKEN=vcp_xxx (https://vercel.com/account/tokens)}"
-NPM_BIN="/c/Users/antigravity/AppData/Roaming/npm"
+# ---- Load .env if exists (gitignored, holds secrets) ----
+if [[ -f .env ]]; then
+  set -a
+  source .env
+  set +a
+fi
+
+# ---- Config (from .env or env vars) ----
+PROJECT_ALIAS="${VERCEL_PROJECT_ALIAS:-chiropractic-kr.vercel.app}"
+VERCEL_SCOPE="${VERCEL_SCOPE:-perseus-projects-4bc3b911}"
+: "${VERCEL_TOKEN:?Set VERCEL_TOKEN in .env or env. Get from https://vercel.com/account/tokens}"
+NPM_BIN="${NPM_BIN:-/c/Users/antigravity/AppData/Roaming/npm}"
 
 COMMIT_MSG="${1:-deploy: routine update $(date +%Y-%m-%d)}"
 
