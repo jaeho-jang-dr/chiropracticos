@@ -1,0 +1,14 @@
+{
+  "name": "chiropractic-kr",
+  "version": "0.1.0",
+  "private": true,
+  "description": "근거 기반 카이로프랙틱 — Vercel + Supabase + R2 (admin file management)",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.624.0",
+    "@aws-sdk/s3-request-presigner": "^3.624.0",
+    "@supabase/supabase-js": "^2.45.0"
+  }
+}

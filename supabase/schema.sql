@@ -122,6 +122,20 @@ create table if not exists public.daily_chapter_views (
 );
 
 -- =========================================================================
+-- 6b. hidden_assets — admin이 즉시 감출 자산 (URL 기반, public read)
+-- =========================================================================
+create table if not exists public.hidden_assets (
+  id          bigserial primary key,
+  url         text unique not null,
+  page_path   varchar(80),
+  reason      varchar(200),
+  hidden_by   uuid references public.users(id) on delete set null,
+  hidden_at   timestamptz not null default now()
+);
+create index if not exists hidden_assets_url_idx    on public.hidden_assets(url);
+create index if not exists hidden_assets_recent_idx on public.hidden_assets(hidden_at desc);
+
+-- =========================================================================
 -- 7. Trigger: auth 가입 시 public.users 자동 생성 (admin 두 이메일 자동 승격)
 -- =========================================================================
 create or replace function public.handle_new_user()
@@ -323,6 +337,17 @@ drop policy if exists "dcv admin read"   on public.daily_chapter_views;
 create policy "dcv admin read" on public.daily_chapter_views for select
   using ( public.is_admin() );
 -- cleanup_old_logs()는 security definer라 RLS 우회 — insert 정책 불필요
+
+-- ---- hidden_assets (public read · admin write) ----
+alter table public.hidden_assets enable row level security;
+drop policy if exists "hidden_assets public read" on public.hidden_assets;
+drop policy if exists "hidden_assets admin write" on public.hidden_assets;
+create policy "hidden_assets public read" on public.hidden_assets for select using (true);
+create policy "hidden_assets admin write" on public.hidden_assets for all
+  using (public.is_admin()) with check (public.is_admin());
+grant select on public.hidden_assets to anon, authenticated;
+grant insert, update, delete on public.hidden_assets to authenticated;
+grant usage, select on sequence public.hidden_assets_id_seq to authenticated;
 
 -- =========================================================================
 -- 13. Seed admin 승격 (이미 가입한 경우 안전망)

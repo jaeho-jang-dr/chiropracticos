@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./assets/main.css?v=20260428k" />
 <script defer src="./assets/ui.js?v=20260428k"></script>
 <script defer src="./assets/download-guard.js?v=20260428k"></script>
+<script defer src="./assets/hide-guard.js?v=20260428m"></script>
 <script defer src="./assets/pdf-viewer.js?v=20260428k"></script>
   <script src="./assets/config.js?v=20260428k"></script>
   <script type="module" src="./assets/auth-guard.js?v=20260428k"></script>
@@ -74,6 +75,33 @@
     .chart-row{display:flex;align-items:flex-end;gap:.3rem;height:80px;margin-bottom:.4rem}
     .chart-bar{flex:1;background:linear-gradient(180deg,#0a84ff,#5eb3ff);border-radius:3px 3px 0 0;min-height:4px;position:relative}
     .chart-bar:hover::after{content:attr(data-tip);position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#222;color:#fff;font-size:.7em;padding:.25rem .5rem;border-radius:4px;white-space:nowrap;margin-bottom:4px}
+
+    /* Hide section — mobile-friendly */
+    .hide-section{background:#fff;border:1px solid #eef0f2;border-radius:14px;padding:1.25rem;margin-bottom:1.5rem}
+    .hide-section h3{margin:0 0 .35rem;font-size:1.1rem}
+    .hide-form{display:flex;flex-direction:column;gap:.6rem;margin:.8rem 0}
+    .hide-form input[type=text]{padding:.85rem 1rem;font-size:1rem;border:1px solid #d2d2d7;border-radius:10px;font-family:inherit}
+    .hide-form input[type=text]:focus{outline:none;border-color:#0a84ff;box-shadow:0 0 0 3px rgba(10,132,255,.15)}
+    .big-btn{padding:.95rem 1.2rem;font-size:1rem;font-weight:600;border-radius:10px;border:none;background:#ff3b30;color:#fff;cursor:pointer;font-family:inherit;min-height:52px}
+    .big-btn:hover{background:#e0322a}
+    .big-btn:disabled{opacity:.6;cursor:wait}
+    .big-btn.success{background:#34c759}
+    .restore-btn{padding:.6rem 1rem;font-size:.85em;font-weight:500;border-radius:8px;border:1px solid #d2d2d7;background:#fff;cursor:pointer;font-family:inherit;min-height:40px}
+    .restore-btn:hover{background:#f5f5f7}
+    .hidden-list{margin-top:1rem;border-top:1px solid #eef0f2;padding-top:.75rem}
+    .hidden-row{display:flex;align-items:center;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #f5f5f7}
+    .hidden-row:last-child{border-bottom:none}
+    .hidden-row .url{flex:1;font-size:.84em;word-break:break-all;color:#444}
+    .hidden-row .reason{font-size:.75em;color:#888;margin-top:.15rem}
+    @media (max-width:640px){
+      .admin-wrap{padding:0 .85rem;margin:4rem auto 3rem}
+      .tabs{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
+      .tab{flex-shrink:0;font-size:.86em;padding:.65rem 1.1rem}
+      .hide-form input[type=text]{font-size:.95rem;padding:.85rem .9rem}
+      .big-btn{font-size:.95rem}
+      table{font-size:.78em}
+      th,td{padding:.5rem .55rem}
+    }
   </style>
 </head>
 <body>
@@ -99,10 +127,12 @@
     </div>
 
     <div class="tabs" role="tablist">
-      <button class="tab active" data-tab="accounts">👤 계정 관리</button>
-      <button class="tab" data-tab="logins">🔑 로그인 관리</button>
-      <button class="tab" data-tab="files">📁 파일 관리</button>
-      <button class="tab" data-tab="audit">📋 감사 로그</button>
+      <button class="tab active" data-tab="accounts">👤 계정</button>
+      <button class="tab" data-tab="logins">🔑 로그인</button>
+      <button class="tab" data-tab="files">📁 파일</button>
+      <button class="tab" data-tab="r2">🌐 R2 미디어</button>
+      <button class="tab" data-tab="content">📝 콘텐츠</button>
+      <button class="tab" data-tab="audit">📋 감사</button>
     </div>
 
     <!-- ============ TAB 1: 계정 관리 ============ -->
@@ -152,6 +182,21 @@
 
     <!-- ============ TAB 3: 파일 관리 ============ -->
     <section class="tab-panel" id="tab-files">
+
+      <!-- 즉시 감추기 (hidden_assets) -->
+      <div class="hide-section" id="hide-section">
+        <h3>🙈 자산 즉시 감추기</h3>
+        <p class="meta" style="margin:0">잘못 올라간 자산의 URL을 입력하면 즉시 모든 페이지에서 가립니다. <strong>다음 페이지 로드부터</strong> 반영됩니다. 파일 자체는 그대로 — 영구 삭제는 아래 R2 매니저로.</p>
+        <form class="hide-form" id="hide-form" onsubmit="return false">
+          <input type="text" id="hide-url" placeholder="자산 URL 또는 경로 (예: https://pub-e44b…r2.dev/diversified/04_slides_week1.pdf)" required autocomplete="off" />
+          <input type="text" id="hide-reason" placeholder="사유 (선택)" autocomplete="off" />
+          <button type="submit" class="big-btn" id="hide-submit">🙈 즉시 감추기</button>
+        </form>
+        <div class="hidden-list" id="hidden-list">
+          <em class="meta">로딩 중...</em>
+        </div>
+      </div>
+
       <div class="uploader" id="uploader">
         <input type="file" id="file-input" multiple />
         <div>
@@ -172,6 +217,66 @@
         </tr></thead>
         <tbody id="files-tbody"><tr><td colspan="6" class="empty">로딩 중...</td></tr></tbody>
       </table>
+    </section>
+
+    <!-- ============ TAB R2: 직접 미디어 관리 ============ -->
+    <section class="tab-panel" id="tab-r2">
+      <div class="hide-section">
+        <h3>🌐 Cloudflare R2 미디어 매니저</h3>
+        <p class="meta" style="margin:0">버킷의 모든 파일을 직접 보고/올리고/삭제합니다. <strong>삭제는 영구</strong>이며 되돌릴 수 없습니다.</p>
+
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin:.9rem 0">
+          <select id="r2-prefix" class="small-btn" style="min-width:160px;padding:.55rem .9rem">
+            <option value="">— 전체 —</option>
+            <option value="diversified/">diversified/</option>
+            <option value="functional_neurology/">functional_neurology/</option>
+            <option value="gonstead/">gonstead/</option>
+            <option value="thompson/">thompson/</option>
+            <option value="activator/">activator/</option>
+            <option value="cox/">cox/</option>
+            <option value="logan/">logan/</option>
+            <option value="sot/">sot/</option>
+            <option value="cbp/">cbp/</option>
+            <option value="ak/">ak/</option>
+            <option value="toggle_recoil/">toggle_recoil/</option>
+            <option value="archive/">archive/</option>
+          </select>
+          <input type="text" id="r2-search" placeholder="파일명 부분 일치" style="flex:1;min-width:160px;padding:.55rem .9rem;border:1px solid #d2d2d7;border-radius:8px;font-family:inherit" />
+          <button class="small-btn" id="r2-refresh">🔄 새로고침</button>
+        </div>
+
+        <div class="uploader" id="r2-uploader" style="margin:.6rem 0">
+          <input type="file" id="r2-file-input" multiple />
+          <div>
+            <label for="r2-file-input">📤 R2에 업로드</label> 또는 여기에 드래그 — 키 = 선택된 prefix + 파일명
+          </div>
+          <div class="hint">presigned PUT으로 브라우저 → R2 직접. 큰 파일도 OK.</div>
+          <div id="r2-up-status" style="margin-top:.55rem;font-size:.85em"></div>
+        </div>
+
+        <div id="r2-list" class="hidden-list" style="border-top:none;padding-top:0">
+          <em class="meta">prefix를 선택하고 새로고침을 누르세요.</em>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TAB CONTENT: HTML/MD 편집 ============ -->
+    <section class="tab-panel" id="tab-content">
+      <div class="hide-section">
+        <h3>📝 GitHub 콘텐츠 편집</h3>
+        <p class="meta" style="margin:0">repo의 HTML·MD 파일을 직접 편집해 commit합니다. push되면 자동으로 라이브에 반영됩니다.</p>
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin:.9rem 0">
+          <input type="text" id="ct-path" placeholder="파일 경로 (예: chapter02_functional_neurology.html)" style="flex:1;min-width:220px;padding:.55rem .9rem;border:1px solid #d2d2d7;border-radius:8px;font-family:inherit" />
+          <button class="small-btn" id="ct-load">📥 불러오기</button>
+        </div>
+        <textarea id="ct-body" placeholder="파일 내용이 여기에…" style="width:100%;min-height:380px;padding:.85rem;border:1px solid #d2d2d7;border-radius:10px;font-family:'SF Mono','Consolas',monospace;font-size:.85em;resize:vertical;display:none"></textarea>
+        <div id="ct-meta" style="margin:.55rem 0;font-size:.82em;color:#666"></div>
+        <div id="ct-controls" style="display:none;gap:.5rem;flex-direction:column;margin-top:.6rem">
+          <input type="text" id="ct-msg" placeholder="커밋 메시지" style="padding:.85rem 1rem;border:1px solid #d2d2d7;border-radius:10px;font-family:inherit;font-size:1rem" />
+          <button class="big-btn" id="ct-save" style="background:#0a84ff">💾 커밋 & 푸시</button>
+        </div>
+        <div id="ct-status" style="margin-top:.6rem;font-size:.88em"></div>
+      </div>
     </section>
 
     <!-- ============ TAB 4: 감사 로그 ============ -->
@@ -201,7 +306,8 @@
         document.getElementById("tab-" + t.dataset.tab).classList.add("active");
         // lazy-load on tab open
         if (t.dataset.tab === "logins") loadLogins();
-        if (t.dataset.tab === "files")  loadFiles();
+        if (t.dataset.tab === "files")  { loadFiles(); loadHidden(); }
+        if (t.dataset.tab === "r2")     loadR2();
         if (t.dataset.tab === "audit")  loadAudit();
       };
     });
@@ -543,6 +649,227 @@
 
     document.getElementById("file-search").addEventListener("input", () => filesLoaded && loadFiles());
     document.getElementById("files-refresh").onclick = loadFiles;
+
+    // ============ Hide assets (hidden_assets) ============
+    async function loadHidden() {
+      const list = document.getElementById("hidden-list");
+      const { data, error } = await supabase
+        .from("hidden_assets")
+        .select("id, url, reason, hidden_at, page_path, hidden_by_user:hidden_by(email)")
+        .order("hidden_at", { ascending: false })
+        .limit(200);
+      if (error) { list.innerHTML = `<em class="meta">로딩 오류: ${esc(error.message)}</em>`; return; }
+      if (!data?.length) { list.innerHTML = `<em class="meta">현재 감춰진 자산 없음</em>`; return; }
+      list.innerHTML = `<div class="meta" style="margin-bottom:.4rem;font-weight:500">현재 감춰진 자산 (${data.length})</div>` + data.map(r => `
+        <div class="hidden-row" data-id="${r.id}">
+          <div style="flex:1;min-width:0">
+            <div class="url">${esc(r.url)}</div>
+            ${r.reason ? `<div class="reason">📝 ${esc(r.reason)}</div>` : ''}
+            <div class="reason">${new Date(r.hidden_at).toLocaleString('ko-KR')} · ${esc(r.hidden_by_user?.email || '')}</div>
+          </div>
+          <button class="restore-btn" data-act="restore" data-id="${r.id}">↩ 복원</button>
+        </div>`).join('');
+      list.querySelectorAll('button[data-act="restore"]').forEach(b => b.onclick = async () => {
+        if (!confirm("복원하면 모든 사용자에게 다시 보입니다. 진행할까요?")) return;
+        const { error } = await supabase.from("hidden_assets").delete().eq("id", b.dataset.id);
+        if (error) return alert("실패: " + error.message);
+        loadHidden();
+      });
+    }
+
+    document.getElementById("hide-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const url = document.getElementById("hide-url").value.trim();
+      const reason = document.getElementById("hide-reason").value.trim();
+      if (!url) return;
+      const btn = document.getElementById("hide-submit");
+      btn.disabled = true; btn.textContent = "⏳ 처리 중...";
+      const me = await getCurrentUser();
+      const { error } = await supabase.from("hidden_assets").insert({
+        url, reason: reason || null, hidden_by: me.id,
+      });
+      if (error) {
+        if (/duplicate|unique/i.test(error.message)) alert("이미 감춰진 URL입니다.");
+        else alert("실패: " + error.message);
+      } else {
+        document.getElementById("hide-url").value = "";
+        document.getElementById("hide-reason").value = "";
+        btn.classList.add("success");
+        btn.textContent = "✅ 감춰짐";
+        setTimeout(() => { btn.classList.remove("success"); btn.textContent = "🙈 즉시 감추기"; }, 1500);
+        loadHidden();
+      }
+      btn.disabled = false;
+    });
+
+    // ============ TAB R2: Cloudflare R2 직접 매니저 ============
+    async function r2Token() {
+      const { data: { session } } = await supabase.auth.getSession();
+      return session?.access_token || '';
+    }
+    async function r2Fetch(url, init = {}) {
+      const token = await r2Token();
+      const headers = Object.assign({}, init.headers || {}, { Authorization: `Bearer ${token}` });
+      if (init.body && typeof init.body === 'object' && !(init.body instanceof Blob) && !(init.body instanceof FormData)) {
+        headers['Content-Type'] = 'application/json';
+        init.body = JSON.stringify(init.body);
+      }
+      const r = await fetch(url, Object.assign({}, init, { headers }));
+      if (!r.ok) {
+        let msg = r.statusText;
+        try { msg = (await r.json()).error || msg; } catch {}
+        throw new Error(`${r.status} ${msg}`);
+      }
+      return r.json();
+    }
+
+    let r2Cache = [];
+    async function loadR2() {
+      const list = document.getElementById("r2-list");
+      const prefix = document.getElementById("r2-prefix").value;
+      list.innerHTML = `<em class="meta">로딩 중…</em>`;
+      try {
+        const r = await r2Fetch(`/api/r2?op=list&prefix=${encodeURIComponent(prefix)}`);
+        r2Cache = r.objects || [];
+        renderR2();
+      } catch (e) {
+        list.innerHTML = `<em class="meta" style="color:#ff3b30">❌ ${esc(e.message)}</em>`;
+      }
+    }
+    function renderR2() {
+      const list = document.getElementById("r2-list");
+      const search = document.getElementById("r2-search").value.trim().toLowerCase();
+      const items = search ? r2Cache.filter(o => o.key.toLowerCase().includes(search)) : r2Cache;
+      if (!items.length) { list.innerHTML = `<em class="meta">결과 없음</em>`; return; }
+      list.innerHTML = `<div class="meta" style="margin:.4rem 0;font-weight:500">총 ${items.length}개</div>` + items.map(o => `
+        <div class="hidden-row" data-key="${esc(o.key)}">
+          <div style="flex:1;min-width:0">
+            <div class="url"><strong>${esc(o.key.split('/').pop())}</strong></div>
+            <div class="reason">${esc(o.key)} · ${formatBytes(o.size)} · ${o.last_modified ? new Date(o.last_modified).toLocaleString('ko-KR') : ''}</div>
+          </div>
+          <button class="restore-btn" data-act="hide" data-key="${esc(o.key)}" data-url="${esc(o.public_url || '')}">🙈 감추기</button>
+          <button class="restore-btn" data-act="open" data-url="${esc(o.public_url || '')}">↗ 열기</button>
+          <button class="restore-btn" data-act="delete" data-key="${esc(o.key)}" style="background:#ff3b30;color:#fff;border-color:#ff3b30">🗑 삭제</button>
+        </div>`).join('');
+      list.querySelectorAll('button[data-act]').forEach(b => b.onclick = () => r2Action(b.dataset));
+    }
+    async function r2Action({ act, key, url }) {
+      if (act === 'open' && url) { window.open(url, '_blank'); return; }
+      if (act === 'hide' && url) {
+        const reason = prompt("감춤 사유 (선택):");
+        if (reason === null) return;
+        const me = await getCurrentUser();
+        const { error } = await supabase.from("hidden_assets").insert({ url, reason: reason || null, hidden_by: me.id });
+        if (error && /duplicate|unique/i.test(error.message)) alert("이미 감춰진 URL입니다.");
+        else if (error) alert("실패: " + error.message);
+        else alert("감춰졌습니다 ✓");
+        return;
+      }
+      if (act === 'delete') {
+        if (!confirm(`R2에서 영구 삭제합니다.\n\n키: ${key}\n\n이 작업은 되돌릴 수 없습니다. 진행할까요?`)) return;
+        try {
+          await r2Fetch(`/api/r2?op=delete`, { method: 'POST', body: { keys: [key] } });
+          r2Cache = r2Cache.filter(o => o.key !== key);
+          renderR2();
+        } catch (e) { alert("삭제 실패: " + e.message); }
+      }
+    }
+
+    document.getElementById("r2-prefix").addEventListener("change", loadR2);
+    document.getElementById("r2-refresh").onclick = loadR2;
+    document.getElementById("r2-search").addEventListener("input", () => renderR2());
+
+    // R2 upload (presigned PUT)
+    const r2Up = document.getElementById("r2-uploader");
+    const r2In = document.getElementById("r2-file-input");
+    const r2St = document.getElementById("r2-up-status");
+    ["dragenter","dragover"].forEach(ev => r2Up.addEventListener(ev, e => { e.preventDefault(); r2Up.classList.add("drag"); }));
+    ["dragleave","drop"].forEach(ev => r2Up.addEventListener(ev, e => { e.preventDefault(); r2Up.classList.remove("drag"); }));
+    r2Up.addEventListener("drop", e => { e.preventDefault(); handleR2Upload(e.dataTransfer.files); });
+    r2In.addEventListener("change", e => handleR2Upload(e.target.files));
+
+    async function handleR2Upload(files) {
+      if (!files?.length) return;
+      const prefix = document.getElementById("r2-prefix").value;
+      const results = [];
+      for (const f of files) {
+        const safe = f.name.replace(/[^\w.\-가-힣]/g, "_");
+        const key = `${prefix}${safe}`;
+        r2St.innerHTML = `⏳ ${esc(f.name)} 업로드 중… (${formatBytes(f.size)})`;
+        try {
+          const presign = await r2Fetch(`/api/r2?op=presign-upload`, {
+            method: 'POST',
+            body: { key, contentType: f.type || 'application/octet-stream' },
+          });
+          const putRes = await fetch(presign.url, {
+            method: 'PUT',
+            headers: { 'Content-Type': f.type || 'application/octet-stream' },
+            body: f,
+          });
+          if (!putRes.ok) throw new Error(`R2 PUT ${putRes.status}`);
+          results.push(`✅ ${f.name} → ${key}`);
+        } catch (e) {
+          results.push(`❌ ${f.name}: ${e.message}`);
+        }
+      }
+      r2St.innerHTML = results.join('<br>');
+      r2In.value = "";
+      loadR2();
+    }
+
+    // ============ TAB CONTENT: GitHub Contents API ============
+    async function ctFetch(url, init = {}) {
+      const token = await r2Token();
+      const headers = Object.assign({}, init.headers || {}, { Authorization: `Bearer ${token}` });
+      if (init.body && typeof init.body === 'object' && !(init.body instanceof Blob)) {
+        headers['Content-Type'] = 'application/json';
+        init.body = JSON.stringify(init.body);
+      }
+      const r = await fetch(url, Object.assign({}, init, { headers }));
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(data.error || r.statusText);
+      return data;
+    }
+
+    let ctSha = null;
+    document.getElementById("ct-load").onclick = async () => {
+      const path = document.getElementById("ct-path").value.trim();
+      if (!path) return;
+      const stat = document.getElementById("ct-status");
+      stat.textContent = "⏳ 불러오는 중…";
+      try {
+        const r = await ctFetch(`/api/content?path=${encodeURIComponent(path)}`);
+        ctSha = r.sha;
+        document.getElementById("ct-body").value = r.content;
+        document.getElementById("ct-body").style.display = "block";
+        document.getElementById("ct-controls").style.display = "flex";
+        document.getElementById("ct-meta").textContent =
+          `${r.path} · ${r.size} bytes · sha=${r.sha?.slice(0, 7)}`;
+        document.getElementById("ct-msg").value = `update: ${path}`;
+        stat.textContent = "✅ 로드됨";
+      } catch (e) {
+        stat.textContent = "❌ " + e.message;
+      }
+    };
+
+    document.getElementById("ct-save").onclick = async () => {
+      const path = document.getElementById("ct-path").value.trim();
+      const content = document.getElementById("ct-body").value;
+      const message = document.getElementById("ct-msg").value.trim() || `update: ${path}`;
+      if (!path || !ctSha) return alert("먼저 파일을 불러오세요");
+      const stat = document.getElementById("ct-status");
+      stat.textContent = "⏳ 커밋 중…";
+      try {
+        const r = await ctFetch(`/api/content`, {
+          method: 'PUT',
+          body: { path, content, sha: ctSha, message },
+        });
+        ctSha = r.sha;
+        stat.textContent = `✅ 커밋됨 (${r.commit?.slice(0, 7)}). Vercel이 자동 배포합니다.`;
+      } catch (e) {
+        stat.textContent = "❌ " + e.message;
+      }
+    };
 
     // ============ TAB 4: Audit log ============
     let auditLoaded = false;
