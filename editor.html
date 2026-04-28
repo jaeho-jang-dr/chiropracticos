@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>편집자 약력 | Chiropractic</title>
   <meta name="description" content="편집자 Jae-Ho Jang, M.D., BAppSc(Chiro)., D.C., PhD 약력 및 카이로프랙틱 자격증 갤러리." />
-  <link rel="stylesheet" href="./assets/main.css?v=20260428z" />
-  <script defer src="./assets/ui.js?v=20260428z"></script>
-  <script defer src="./assets/download-guard.js?v=20260428z"></script>
-  <script defer src="./assets/hide-guard.js?v=20260428z"></script>
-  <script defer src="./assets/pdf-viewer.js?v=20260428z"></script>
-  <script defer src="./assets/image-lightbox.js?v=20260428z"></script>
-  <script defer src="./assets/screenshot-guard.js?v=20260428z"></script>
-  <script src="./assets/config.js?v=20260428z"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260428z"></script>
+  <link rel="stylesheet" href="./assets/main.css?v=20260428z2" />
+  <script defer src="./assets/ui.js?v=20260428z2"></script>
+  <script defer src="./assets/download-guard.js?v=20260428z2"></script>
+  <script defer src="./assets/hide-guard.js?v=20260428z2"></script>
+  <script defer src="./assets/pdf-viewer.js?v=20260428z2"></script>
+  <script defer src="./assets/image-lightbox.js?v=20260428z2"></script>
+  <script defer src="./assets/screenshot-guard.js?v=20260428z2"></script>
+  <script src="./assets/config.js?v=20260428z2"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260428z2"></script>
   <style>
     .editor-shell { max-width: 1180px; margin: 32px auto 96px; padding: 0 24px; }
     .editor-hero {
@@ -87,12 +87,18 @@
       display: block; text-decoration: none; color: inherit;
       background: #fff; border: 1px solid rgba(0,0,0,.08);
       border-radius: 14px; overflow: hidden;
-      margin-bottom: 16px;
+      margin: 0 auto 16px;
       transition: all .18s ease;
       /* button reset */
-      width: 100%; padding: 0; text-align: left;
+      width: 67%; padding: 0; text-align: left;
       font: inherit; cursor: zoom-in;
       appearance: none; -webkit-appearance: none;
+    }
+    @media (max-width: 880px) {
+      .cred-card { width: 80%; }
+    }
+    @media (max-width: 540px) {
+      .cred-card { width: 100%; }
     }
     .cred-card:hover {
       border-color: rgba(0,113,227,.3);
@@ -333,13 +339,13 @@
         <h2>자격증 갤러리 <span class="count">(2)</span></h2>
 
         <button type="button" class="cred-card"
-                data-img-zoom="./images/credentials/rmit_certification.jpg?v=20260428z"
+                data-img-zoom="./images/credentials/rmit_certification.jpg?v=20260428z2"
                 data-img-alt="RMIT University · Bachelor of Applied Science (Chiropractic) Certificate"
                 data-img-title="RMIT Chiropractic Certification"
                 aria-label="RMIT 자격증 확대 보기">
           <span class="thumb">
             <span class="pdf-tag">CERT</span>
-            <img src="./images/credentials/rmit_certification.jpg?v=20260428z"
+            <img src="./images/credentials/rmit_certification.jpg?v=20260428z2"
                  alt="RMIT University · Bachelor of Applied Science (Chiropractic) Certificate"
                  loading="lazy" />
             <span class="preview-hint">🔍 클릭하여 확대</span>
@@ -357,13 +363,13 @@
         </button>
 
         <button type="button" class="cred-card"
-                data-img-zoom="./images/credentials/aca_membership.jpg?v=20260428z"
+                data-img-zoom="./images/credentials/aca_membership.jpg?v=20260428z2"
                 data-img-alt="American Chiropractic Association (ACA) Membership Certificate"
                 data-img-title="ACA Membership"
                 aria-label="ACA Membership 자격증 확대 보기">
           <span class="thumb">
             <span class="pdf-tag">CERT</span>
-            <img src="./images/credentials/aca_membership.jpg?v=20260428z"
+            <img src="./images/credentials/aca_membership.jpg?v=20260428z2"
                  alt="American Chiropractic Association (ACA) Membership Certificate"
                  loading="lazy" />
             <span class="preview-hint">🔍 클릭하여 확대</span>

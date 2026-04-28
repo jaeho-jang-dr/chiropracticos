@@ -21,12 +21,17 @@
       '.imgz-overlay.is-open{display:flex}' +
       '@keyframes imgz-fade{from{opacity:0}to{opacity:1}}' +
       '.imgz-frame{position:relative;max-width:96vw;max-height:96vh;' +
-      'display:flex;align-items:center;justify-content:center;cursor:default}' +
+      'display:flex;align-items:center;justify-content:center;cursor:default;' +
+      'overflow:auto}' +
       '.imgz-img{max-width:96vw;max-height:96vh;width:auto;height:auto;' +
       'object-fit:contain;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.6);' +
       '-webkit-user-select:none;user-select:none;' +
       '-webkit-user-drag:none;-webkit-touch-callout:none;' +
-      'pointer-events:auto}' +
+      'pointer-events:auto;cursor:zoom-in;transition:max-width .2s ease,max-height .2s ease}' +
+      '.imgz-img.is-1to1{max-width:none;max-height:none;width:auto;height:auto;' +
+      'cursor:zoom-out;border-radius:0}' +
+      '.imgz-frame.is-1to1{max-width:100vw;max-height:100vh;width:100vw;height:100vh;' +
+      'overflow:auto;align-items:flex-start;justify-content:flex-start;padding:0}' +
       '.imgz-close{position:absolute;top:-44px;right:-4px;' +
       'appearance:none;border:0;background:rgba(0,0,0,.55);color:#fff;' +
       'width:36px;height:36px;border-radius:50%;font-size:1.1rem;' +
@@ -57,7 +62,7 @@
       '<div class="imgz-frame">' +
         '<button type="button" class="imgz-close" aria-label="닫기">✕</button>' +
         '<img class="imgz-img" alt="" draggable="false" />' +
-        '<div class="imgz-bar">🔒 미리보기 전용 · 다운로드 제한 · ESC 또는 바깥 클릭으로 닫기</div>' +
+        '<div class="imgz-bar">🔒 미리보기 전용 · 다운로드 제한 · 클릭하면 원본 크기 · ESC 닫기</div>' +
       '</div>';
     document.body.appendChild(ov);
 
@@ -75,6 +80,18 @@
     img.addEventListener('mousedown', function (e) {
       // 길게 누르기로 「이미지 저장」 다이얼로그 회피용
       if (e.button === 2) e.preventDefault();
+    });
+
+    // 이미지 클릭 → 1:1 원본 픽셀 크기 토글
+    img.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var frame = ov.querySelector('.imgz-frame');
+      var on = img.classList.toggle('is-1to1');
+      frame.classList.toggle('is-1to1', on);
+      var bar = ov.querySelector('.imgz-bar');
+      if (bar) bar.textContent = on
+        ? '🔍 원본 크기 (1:1) · 다시 클릭하면 축소 · ESC 닫기'
+        : '🔒 미리보기 전용 · 다운로드 제한 · 클릭하면 원본 크기 · ESC 닫기';
     });
 
     // ESC
@@ -101,7 +118,14 @@
     if (!ov) return;
     ov.classList.remove('is-open');
     var img = ov.querySelector('.imgz-img');
-    if (img) img.src = '';
+    var frame = ov.querySelector('.imgz-frame');
+    if (img) {
+      img.src = '';
+      img.classList.remove('is-1to1');
+    }
+    if (frame) frame.classList.remove('is-1to1');
+    var bar = ov.querySelector('.imgz-bar');
+    if (bar) bar.textContent = '🔒 미리보기 전용 · 다운로드 제한 · 클릭하면 원본 크기 · ESC 닫기';
     document.body.style.overflow = '';
   }
 
