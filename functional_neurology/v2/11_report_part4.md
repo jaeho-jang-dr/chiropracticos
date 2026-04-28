@@ -1,4 +1,4 @@
-# [증거기반 보고서 4/4] 기능 신경학(FN)의 치료 원리, 임상적 근거 및 비판적 분석
+# [증거기반 보고서 4/4] 기능 신경학(<abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr>)의 치료 원리, 임상적 근거 및 비판적 분석
 
 본 보고서는 기능 신경학(Functional Neurology, FN)의 주요 치료 매커니즘을 상세히 규명하고, 현대 신경과학의 주류 이론인 '대규모 네트워크 모델'과의 괴리를 분석하여 임상적 유용성과 한계를 비판적으로 검토합니다.
 
@@ -14,15 +14,15 @@
 *   **역치(Threshold)와 반복(Repetition):** 효과적인 가소성을 유도하려면 자극이 신경 세포의 활성 역치를 넘어야 하지만, 세포의 대사 한계를 초과하는 과부하(Metabolic fatigue)는 피해야 합니다. 자극의 '일관된 반복'만이 장기 강화(LTP)를 형성할 수 있습니다.
 
 ### 의사결정 트리 및 수기 기전
-*   **신경학적 수기 (Haavik et al. 2017):** 관절 수기(HVLA, MOB, MET)는 단순한 골격 정렬이 아닙니다. 이는 고유수용성 수용기를 통해 뇌로 전달되는 강력한 '신경학적 신호'입니다. 특히 분절적 분사(Segmental firing)를 통해 감각-운동 통합(Sensorimotor integration) 과정에서 전두엽 및 소뇌의 가소성을 자극하는 도구로 활용됩니다.
+*   **신경학적 수기 (Haavik et al. 2017):** 관절 수기(<abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr>, MOB, MET)는 단순한 골격 정렬이 아닙니다. 이는 고유수용성 수용기를 통해 뇌로 전달되는 강력한 '신경학적 신호'입니다. 특히 분절적 분사(Segmental firing)를 통해 감각-운동 통합(Sensorimotor integration) 과정에서 전두엽 및 소뇌의 가소성을 자극하는 도구로 활용됩니다.
 
 ### 재활 드릴(Drill) 상세화
 *   **시운동 재훈련 (Visual Rehab):**
-    *   *Saccade:* 급속 안구 운동을 통해 전두엽 안구 운동 영역(FEF) 활성화.
+    *   *Saccade:* 급속 안구 운동을 통해 전두엽 안구 운동 영역(<abbr class="med-abbr" title="Frontal Eye Field · 전두안구야 (수의적 안구운동 중추)">FEF</abbr>) 활성화.
     *   *Pursuit:* 안구 추적 운동을 통해 뇌간 및 소뇌의 통합력 개선.
     *   *NPC(Near Point Convergence):** 근점 폭주 훈련으로 중뇌의 신경핵 자극 및 집중력 보완.
 *   **전정 재활 (Vestibular Rehab):**
-    *   *VOR x1/x2:* 머리 회전 시 시선 고정을 통해 전정-안구 반사 강화 및 어지럼증 완화.
+    *   *<abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> x1/x2:* 머리 회전 시 시선 고정을 통해 전정-안구 반사 강화 및 어지럼증 완화.
     *   *Gaze Stabilization:* 주시 안정화 훈련으로 시각적 혼란 및 자세 제어 능력 향상.
 *   **고유수용성 재훈련 (Proprioceptive Rehab):**
     *   *BAPS/Foam/Tandem:* 불안정한 지표면을 활용하여 체성감각 피질과 소뇌 간의 피드백 루프 재구축.
@@ -38,8 +38,8 @@
 ### 객관적 지표와 PROM 매칭
 | 분류 | 객관적 지표 (Standardized Tests) | 환자 보고 성과 지표 (PROM) |
 | :--- | :--- | :--- |
-| **통증 및 척추 기능** | 관절 가동 범위(ROM), 도수 근력 테스트(MMT) | VAS, NPRS, ODI, NDI |
-| **전정 및 균형** | VNG(안구 운동 기록), Posturography | DHI(어지럼증), PCSS(뇌진탕 지표) |
+| **통증 및 척추 기능** | 관절 가동 범위(<abbr class="med-abbr" title="Range of Motion · 관절가동범위">ROM</abbr>), 도수 근력 테스트(<abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr>) | <abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도">VAS</abbr>, <abbr class="med-abbr" title="Numeric Pain Rating Scale · 숫자통증등급 (0-10)">NPRS</abbr>, <abbr class="med-abbr" title="Oswestry Disability Index · Oswestry 요통 장애지수 (0-100)">ODI</abbr>, <abbr class="med-abbr" title="Neck Disability Index · 경부장애지수 (0-50)">NDI</abbr> |
+| **전정 및 균형** | VNG(안구 운동 기록), Posturography | <abbr class="med-abbr" title="Dizziness Handicap Inventory · 어지럼장애지수 (0-100, ≥18 변화 = MCID)">DHI</abbr>(어지럼증), <abbr class="med-abbr" title="Post-Concussion Symptom Scale · 뇌진탕 후 증상 척도">PCSS</abbr>(뇌진탕 지표) |
 | **삶의 질 및 심리** | 심박 변이도(HRV), 혈압 변화 | SF-36(삶의 질), 벡 우울 척도(BDI) |
 
 ### 반응의 4가지 임상적 해석
@@ -52,12 +52,12 @@
 
 ## 3. Part VII. 임상 적용 — 근거 수준별(Grade) 정리
 
-AHRQ(2007)의 EBM 기준을 적용한 기능 신경학적 중재의 유효성 분류입니다.
+AHRQ(2007)의 <abbr class="med-abbr" title="Evidence-Based Medicine · 근거 기반 의학">EBM</abbr> 기준을 적용한 기능 신경학적 중재의 유효성 분류입니다.
 
-*   **🟢 Strong (강함):** 양질의 RCT 및 메타분석 존재.
-    *   BPPV 관관절 이석 정복술, 말초 전정 기관 손상 후 전정 재활 훈련, 낙상 방지를 위한 균형 훈련.
+*   **🟢 Strong (강함):** 양질의 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 및 메타분석 존재.
+    *   <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 (이석 이탈)">BPPV</abbr> 관관절 이석 정복술, 말초 전정 기관 손상 후 전정 재활 훈련, 낙상 방지를 위한 균형 훈련.
 *   **🟡 Moderate (보통):** 특정 상황에서 유효성 입증.
-    *   뇌진탕 후유증(Vestibular/Ocular), 경추성 두통의 SMT, 만성 요통의 보충적 관리.
+    *   뇌진탕 후유증(Vestibular/Ocular), 경추성 두통의 <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr>, 만성 요통의 보충적 관리.
 *   **🟠 Limited (제한적):** 증례 보고 중심.
     *   중추 감작 통증 교육(Moseley 2015), 복합부위통증증후군(CRPS)의 거울 치료.
 *   **🔴 No evidence (근거 없음):** 과학적 입증 부족 및 과장 주장.
@@ -79,7 +79,7 @@ AHRQ(2007)의 EBM 기준을 적용한 기능 신경학적 중재의 유효성 �
 
 > [!CAUTION]
 > **자격 및 인증의 투명성 (Callout)**
-> *   **DACNB (Diplomate of the ACNB):** 이는 미국 연방 정부가 부여하는 의사 면허가 아니라, 사설 기관(ACNB)의 **민간 인증**입니다. 
+> *   **<abbr class="med-abbr" title="Diplomate of American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 전문의">DACNB</abbr> (Diplomate of the <abbr class="med-abbr" title="American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 위원회">ACNB</abbr>):** 이는 미국 연방 정부가 부여하는 의사 면허가 아니라, 사설 기관(ACNB)의 **민간 인증**입니다. 
 > *   **국내 효력:** 한국 내 의사 면허 및 전문의 자격과 무관하며, 이를 통해 전문의 행세를 하거나 단독 의료 행위를 하는 것은 법적 문제가 될 수 있습니다.
 
 ### 과장 주장 vs 근거 기반 주장 비교표
@@ -157,7 +157,7 @@ AHRQ(2007)의 EBM 기준을 적용한 기능 신경학적 중재의 유효성 �
 27. Silber JH, et al. (2000). The hospital and patient characteristics of failure-to-rescue. *Med Care*.
 28. Taub E, et al. (2002). Constraint-induced movement therapy. *Arch Phys Med Rehabil*.
 29. Tourangeau AE, et al. (2002). Nursing-related determinants of 30-day mortality. *Nursing Research*.
-30. Van Essen DC, et al. (2013). The WU-Minn Human Connectome Project. *NeuroImage*.
+30. Van Essen <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>, et al. (2013). The WU-Minn Human Connectome Project. *NeuroImage*.
 31. Yardley L, et al. (2004). Vestibular rehabilitation for dizziness. *Cochrane Database Syst Rev*.
 32. Zedlitz AM, et al. (2012). Cognitive treatment for post-stroke fatigue. *Stroke*.
 33. Zetzsche T, et al. (2001). Neural mechanisms of visual orientation. *Nature*.

@@ -1,4 +1,4 @@
-# 응용 근신경학(Applied Kinesiology, AK) 종합 학습 가이드
+# 응용 근신경학(Applied Kinesiology, <abbr class="med-abbr" title="Applied Kinesiology · 응용 운동학 (George Goodheart, 1964)">AK</abbr>) 종합 학습 가이드
 
 이 문서는 1964년 조지 굿하트(George J. Goodheart, Jr.) 박사에 의해 시작된 응용 근신경학(Applied Kinesiology, 이하 AK)의 역사, 이론적 배경, 생리학적 원리 및 진단 기법을 체계적으로 정리한 학습 가이드입니다.
 
@@ -51,7 +51,7 @@ AK는 인간의 건강을 세 가지 상호 연결된 측면으로 파악합니�
     *   **과긴장(Hypertonic):** 매우 강하게 느껴지지만, 정상적인 자극에도 약화되지 않는 상태(동결된 상태).
 
 ### 진단 보조 기법
-*   **치료 국소화 (Therapy Localization, TL):** 환자가 기능 이상이 의심되는 부위에 손을 대고 근육 검사를 반복하는 방법입니다.
+*   **치료 국소화 (Therapy Localization, <abbr class="med-abbr" title="Therapy Localization · 치료 위치화 (AK)">TL</abbr>):** 환자가 기능 이상이 의심되는 부위에 손을 대고 근육 검사를 반복하는 방법입니다.
 *   **챌린지 (Challenge):** 물리적 자극, 화학적 물질(입에 넣기), 감정적 스트레스 등을 가한 후 근육의 반응 변화를 살피는 방법입니다.
 
 ### 반사점 및 시스템

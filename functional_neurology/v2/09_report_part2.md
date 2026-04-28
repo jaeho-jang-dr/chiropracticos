@@ -1,4 +1,4 @@
-# [Evidence-Based] FN Report 2/4: 구심성(Afferentation), 탈구심성(Deafferentation), 원심성(Efferentation) 기전과 임상적 적용
+# [Evidence-Based] <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> Report 2/4: 구심성(Afferentation), 탈구심성(Deafferentation), 원심성(Efferentation) 기전과 임상적 적용
 
 ## 1. 서론: 통합 행동 모델의 기초
 
@@ -66,7 +66,7 @@ Pickar(2002)는 척추 분절의 움직임 제한이 기계수용기의 신호�
 Hemisphericity는 교감 신경의 과활성화를 유도합니다. 이는 빈맥(Tachycardia), 혈압 상승뿐만 아니라 **'산소 관류 저하(Reduced oxygen perfusion)'**를 초래하여 조직의 회복을 방해하고 통증 민감도를 더욱 증가시킵니다. HRV는 이러한 자율 신경의 조절 능력을 정량화하는 핵심 지표입니다.
 
 **4.3 하행 통증 조절 시스템**
-PAG, LC, RVM을 경유하는 내인성 오피오이드 체계는 뇌의 통합 상태가 건강할 때 효율적으로 작동합니다. Vicenzino(2001) 등에 따르면, 적절한 구심성 자극은 이 하행성 억제 시스템을 활성화하여 만성 통증 상태를 개선합니다.
+<abbr class="med-abbr" title="Periaqueductal Gray · 수도주위회백질 (내인성 통증 조절)">PAG</abbr>, LC, <abbr class="med-abbr" title="Rostral Ventromedial Medulla · 입쪽 배내측 연수 (하행 통증 억제)">RVM</abbr>을 경유하는 내인성 오피오이드 체계는 뇌의 통합 상태가 건강할 때 효율적으로 작동합니다. Vicenzino(2001) 등에 따르면, 적절한 구심성 자극은 이 하행성 억제 시스템을 활성화하여 만성 통증 상태를 개선합니다.
 
 ## 5. Part III.4 임상 사이클 (Clinical Cycle)
 
@@ -77,7 +77,7 @@ PAG, LC, RVM을 경유하는 내인성 오피오이드 체계는 뇌의 통합 �
     *   **Coupled Cervical Adjustments:** 경추의 자연스러운 관절 각도(Side-bending과 Rotation이 같은 방향)를 활용하는 '커플드 모션' 교정은 관절에 가해지는 부담이 적고, 특정 편측 뇌 자극(Unilateral brain stimulation)을 훨씬 정교하게 수행할 수 있습니다.
     *   **Fast-Stretch:** 근긴장도의 장기적 정상화를 위해 활용합니다.
 3.  **Processing (신경 처리):** 선택된 자극이 뇌로 유입되어 신경 가소적 변화와 CIS의 최적화를 유도합니다.
-4.  **Efferent Change (원심성 변화):** 교정 후 즉각적인 근긴장도 정상화, HRV 안정, 혈압 감소, 그리고 TOS(흉곽출구증후군), 카팔 터널 증후군과 같은 말초 신경 포착 증후군의 개선 여부를 확인합니다.
+4.  **Efferent Change (원심성 변화):** 교정 후 즉각적인 근긴장도 정상화, HRV 안정, 혈압 감소, 그리고 <abbr class="med-abbr" title="Thoracic Outlet Syndrome · 흉곽출구 증후군">TOS</abbr>(흉곽출구증후군), 카팔 터널 증후군과 같은 말초 신경 포착 증후군의 개선 여부를 확인합니다.
 5.  **Re-Assessment (재평가):** 지표의 변화를 즉각 확인하여 치료 계획을 수정하거나 강화합니다.
 
 ## 6. 결론 및 요약

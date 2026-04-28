@@ -1,4 +1,4 @@
-# 응용 근신경학(Applied Kinesiology: AK) 종합 브리핑 보고서
+# 응용 근신경학(Applied Kinesiology: <abbr class="med-abbr" title="Applied Kinesiology · 응용 운동학 (George Goodheart, 1964)">AK</abbr>) 종합 브리핑 보고서
 
 ## 1. 서론 (Executive Summary)
 
@@ -44,7 +44,7 @@ AK는 고유수용기(Proprioceptors)의 신호 조절을 통해 근육 톤을 �
 
 > **"신체의 언어는 절대 거짓말을 하지 않는다. 근육을 신체 언어의 지표로 사용함으로써 신체를 이해하는 능력이 향상된다."**
 > — *조지 J. 굿하트 박사 (AK 창시자)*
-*   **맥락:** 근육 검사(MMT)가 단순한 힘의 측정이 아니라 신체 내부의 상태를 실시간으로 보여주는 진단 도구임을 강조한 발언이다.
+*   **맥락:** 근육 검사(<abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr>)가 단순한 힘의 측정이 아니라 신체 내부의 상태를 실시간으로 보여주는 진단 도구임을 강조한 발언이다.
 
 > **"스트레스는 어떤 요구에 대한 신체의 비특이적 반응이다."**
 > — *한스 셀리에 (Hans Selye)*
@@ -64,7 +64,7 @@ AK는 고유수용기(Proprioceptors)의 신호 조절을 통해 근육 톤을 �
 3.  **과긴장(Hypertonic/Frozen):** 강하게 버티지만, 정상적인 약화 자극에도 반응하지 않고 '얼어붙은' 상태. 만성 스트레스나 고유수용기 오류를 시사.
 
 ### 4.2 주요 진단 기법
-*   **치료 국소화 (Therapy Localization: TL):** 환자가 신체의 특정 부위(통증점, 반사점 등)에 손을 대고 근육 검사를 실시하여 해당 부위의 기능 이상 유무를 판별하는 기법.
+*   **치료 국소화 (Therapy Localization: <abbr class="med-abbr" title="Therapy Localization · 치료 위치화 (AK)">TL</abbr>):** 환자가 신체의 특정 부위(통증점, 반사점 등)에 손을 대고 근육 검사를 실시하여 해당 부위의 기능 이상 유무를 판별하는 기법.
 *   **챌린지 (Challenge):** 물리적 자극, 화학적 물질(입안에 넣기), 정서적 자극을 가한 후 근육 반응의 변화를 관찰하는 기법.
 
 ---

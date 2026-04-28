@@ -175,8 +175,8 @@ T:   IH tractions cephalad and laterally flexes over contact (homolateral to
 | 해부 구획 | 필요 리스팅 (최소) | 1차 출처 | 보완 출처 |
 |-----------|---------------------|-----------|------------|
 | **Occiput** | PS·AS·SC(Superior Condyle)·Lateral·Inferior | ✅ 보유 스캔 p.37–42 | Bergmann Ch 5 |
-| **Atlas (C1)** | AS·AI·ASR·AIL·ASL·AIR·Lateral | ✅ 보유 스캔 p.54~ | Bergmann Ch 5 · NUCCA 문헌 |
-| **C2–C7** | PR/PL·PRS/PRI·PLS/PLI·Rotary·Lateral flex | 일부 ✅ p.46 Sitting Rotary | States Manual C2–C7 섹션 (미보유) |
+| **Atlas (C1)** | AS·AI·<abbr class="med-abbr" title="Atlas Superior Right · C1 상-우 listing">ASR</abbr>·AIL·<abbr class="med-abbr" title="Atlas Superior Left · C1 상-좌 listing">ASL</abbr>·AIR·Lateral | ✅ 보유 스캔 p.54~ | Bergmann Ch 5 · NUCCA 문헌 |
+| **C2–C7** | PR/PL·<abbr class="med-abbr" title="Posterior-Right-Superior · Gonstead listing 후-우-상">PRS</abbr>/<abbr class="med-abbr" title="Posterior-Right-Inferior · Gonstead listing 후-우-하">PRI</abbr>·<abbr class="med-abbr" title="Posterior-Left-Superior · Gonstead listing 후-좌-상">PLS</abbr>/<abbr class="med-abbr" title="Posterior-Left-Inferior · Gonstead listing 후-좌-하">PLI</abbr>·Rotary·Lateral flex | 일부 ✅ p.46 Sitting Rotary | States Manual C2–C7 섹션 (미보유) |
 | **T1–T12** | PR/PL·P·PRS·PLI·Hyperkyphosis·Hypokyphosis | 🟥 미보유 | States Manual Part One 후반·Bergmann Ch 6 |
 | **L1–L5** | PR/PL·PRS/PRI·PLS/PLI·Lateral flex·Spinous·Mammillary | 🟥 미보유 | States Manual Part One 후반·Bergmann Ch 7 |
 | **Sacrum** | Base posterior·Apex posterior·L/R base post.·S2 tender | 🟥 미보유 | States Manual Part Two·Bergmann Ch 8 |
@@ -231,11 +231,11 @@ T:   IH tractions cephalad and laterally flexes over contact (homolateral to
 | **Gonstead** | Gonstead Chiropractic Science and Art | Herbst · 2014 재간 | ❌ | [Amazon 종이](https://www.amazon.com/Gonstead-Chiropractic-Science-and-Art/dp/1543954693) (Gonstead Clinical Studies Society 직영) |
 | **Activator Method** | The Activator Method 2nd Ed | Fuhr · Elsevier 2008 | ✅ | [Kindle B005CXXFHK](https://www.amazon.com/dp/B005CXXFHK) · [Elsevier 공식](https://shop.elsevier.com/books/the-activator-method/fuhr/978-0-323-04852-1) · [ebooks.com](https://www.ebooks.com/en-us/book/1903857/the-activator-method/arlan-w-fuhr-dc/) |
 | **Thompson** | Analysis and Technique for the Chiropractic Professional (Life J. Clay Thompson Vol 1) | J. Clay Thompson, Thompson-Zogg | ❌ | [Amazon 종이](https://www.amazon.com/Analysis-Technique-Chiropractic-Professional-Thompson/dp/1886011028) · [thompsonchiropractictechnique.com](http://www.thompsonchiropractictechnique.com/products) |
-| **SOT (Sacro Occipital Technique)** | Compendium of SOT: Peer-Reviewed Literature 1984–2000 | SOT Research | 🟡 E-book | [IAHE 공식](https://shop.iahe.com/Product-List/EBooks/EBOOK-Compendium-of-Sacro-Occipital-Technique-Peer-Reviewed-Literature-1984-2000) |
+| **<abbr class="med-abbr" title="Sacro-Occipital Technique · 천골-후두 기법 (DeJarnette)">SOT</abbr> (Sacro Occipital Technique)** | Compendium of SOT: Peer-Reviewed Literature 1984–2000 | SOT Research | 🟡 E-book | [IAHE 공식](https://shop.iahe.com/Product-List/EBooks/EBOOK-Compendium-of-Sacro-Occipital-Technique-Peer-Reviewed-Literature-1984-2000) |
 | **SOT 해부생리** | Chiropractic Anatomy and Physiology of SOT | Howat | ❌ | [Google Books](https://books.google.com/books?id=mgQGPQAACAAJ) · 종이만 |
 | **NUCCA / Upper Cervical** | Upper Cervical Institute 자료집 | UCI | 🟢/🟡 | [UCI e-books](https://uppercervicalinstitute.com/e-books/) |
 | **Applied Kinesiology** | Applied Kinesiology Synopsis 2nd Ed | Walther · SDC 2000 | ✅ | [Kindle B01CTMI9FO](https://www.amazon.com/dp/B01CTMI9FO) |
-| **AK Clinical (Lower Body)** | AK Clinical Techniques for Lower Body Dysfunctions | Cuthbert, Walther | ✅ | [Kindle B087NP3DD7](https://www.amazon.com/dp/B087NP3DD7) |
+| **<abbr class="med-abbr" title="Applied Kinesiology · 응용 운동학 (George Goodheart, 1964)">AK</abbr> Clinical (Lower Body)** | AK Clinical Techniques for Lower Body Dysfunctions | Cuthbert, Walther | ✅ | [Kindle B087NP3DD7](https://www.amazon.com/dp/B087NP3DD7) |
 | **AK Essentials** | Applied Kinesiology Essentials | Cuthbert et al. | ✅ | [Kindle B087WJ7438](https://www.amazon.com/dp/B087WJ7438) |
 
 ### F-3. 백과·기초·이론서

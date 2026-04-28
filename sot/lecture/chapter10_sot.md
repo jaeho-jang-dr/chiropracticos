@@ -1,4 +1,4 @@
-# Chapter 10. Sacro-Occipital Technique (SOT)
+# Chapter 10. Sacro-Occipital Technique (<abbr class="med-abbr" title="Sacro-Occipital Technique · 천골-후두 기법 (DeJarnette)">SOT</abbr>)
 
 > **Major Bertrand DeJarnette 1920s-1992 · Category I/II/III · Pelvic Blocks 🟡 / 🔴 Cranial·Visceral 주장은 No evidence**
 
@@ -23,7 +23,7 @@
 
 **Sacro-Occipital Technique (SOT)**는 Major Bertrand DeJarnette이 1920년대부터 1992년까지 약 70년간 개발·수정한 **종합적 카이로프랙틱·통합 기법**. 천골(sacrum)과 후두골(occiput)의 생체역학적 연관을 핵심으로 함.
 
-- 미국 DC의 **41.3%** 사용 (ACA)
+- 미국 <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>의 **41.3%** 사용 (ACA)
 - **이중적 위상**:
   - 🟡 **Pelvic Blocks**·Category 진단·천장관절 관리는 근거 있음
   - 🔴 **Cranial bones rhythmic motion·Visceral manipulation**은 No evidence
@@ -32,7 +32,7 @@
 
 본 강의는 SOT를 **두 파트로 분리해 다룸**:
 - **🟡 채택**: Category I/II/III · Pelvic Blocks · SI joint 기계적 관리
-- **🔴 비판적으로만 언급**: Cranial (두개천골)·CMRT (내장 반사)
+- **🔴 비판적으로만 언급**: Cranial (두개천골)·<abbr class="med-abbr" title="Chiropractic Manipulative Reflex Technique · 카이로프랙틱 수기 반사 기법">CMRT</abbr> (내장 반사)
 
 ---
 
@@ -110,7 +110,7 @@ SOT의 가장 **과학적으로 방어 가능**한 핵심.
 
 ### 근거
 
-- **R + C Factors and SOT Orthopedic Blocking: VAS Pilot Study** (PMC)
+- **R + C Factors and SOT Orthopedic Blocking: <abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도">VAS</abbr> Pilot Study** (PMC)
 - **Getzoff H** — Asia-Pacific Chiropractic Journal 다수 SOT 연구
 - **University of Johannesburg**: SI manipulation + pelvic blocking on gluteus medius trigger points 효과 연구
 - 한국 산학기술학회 만성 요통 환자 대상 SOT 효과 연구
@@ -119,7 +119,7 @@ SOT의 가장 **과학적으로 방어 가능**한 핵심.
 
 - Pelvic blocks는 **안전 · 저강도 · 기계적 효과 있음**
 - Category 기반 적용 유용
-- HVLA 금기 환자에서 SI joint 관리 대안
+- <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 금기 환자에서 SI joint 관리 대안
 
 ---
 
@@ -159,7 +159,7 @@ SOT Cranial (Craniopathy):
 ### 🔴 평가
 
 - Chapman reflex points 해부학적 존재는 🟡 제한적으로 기록됨 (StatPearls 언급)
-- 그러나 **반사점 자극으로 장기 질환 치료 효과**는 RCT 근거 없음
+- 그러나 **반사점 자극으로 장기 질환 치료 효과**는 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 근거 없음
 - Applied Kinesiology(Ch 12)와 유사한 확장 주장
 
 ### 🔴 본 강의 입장

@@ -1,4 +1,4 @@
-# SOT(천추 후두골 테크닉) 및 채프먼 반사점(Chapman Reflex Points) 종합 학습 가이드
+# <abbr class="med-abbr" title="Sacro-Occipital Technique · 천골-후두 기법 (DeJarnette)">SOT</abbr>(천추 후두골 테크닉) 및 채프먼 반사점(Chapman Reflex Points) 종합 학습 가이드
 
 본 가이드는 제공된 자료를 바탕으로 신체의 구조적 안정성, 내장 기능 평가, 그리고 신경학적 조절 시스템을 다루는 두 가지 핵심 체계인 **채프먼 반사점(Chapman Reflex Points)**과 **천추 후두골 테크닉(Sacro Occipital Technique, SOT)**에 대한 포괄적인 정보를 제공합니다.
 
@@ -37,7 +37,7 @@ SOT는 환자의 상태를 세 가지 임상적 카테고리로 분류하여 맞
 
 | 분류 | 주요 초점 및 상태 | 치료 접근법 |
 | :--- | :--- | :--- |
-| **카테고리 1** | 자율신경계, 뇌척수액(CSF) 흐름, 내장 기능 | CMRT(내장 반사 테크닉), 두개골 조정, CSF 순환 촉진 |
+| **카테고리 1** | 자율신경계, 뇌척수액(CSF) 흐름, 내장 기능 | <abbr class="med-abbr" title="Chiropractic Manipulative Reflex Technique · 카이로프랙틱 수기 반사 기법">CMRT</abbr>(내장 반사 테크닉), 두개골 조정, CSF 순환 촉진 |
 | **카테고리 2** | 체중 부하 구조, 천장관절(SI joint) 안정성 | 골반 블록을 이용한 SI 관절 교정, 팔-와 테스트(Arm-Fossa Test) |
 | **카테고리 3** | 급성 통증, 디스크 허리통증, 좌골신경통 | 매우 부드러운 접근, 특정 각도의 골반 블록 배치, 통증 완화 위주 |
 
@@ -107,6 +107,6 @@ SOT의 3가지 카테고리 분류 시스템이 환자의 급성기와 만성기
 *   **러벳 브라더스 (Lovett Brothers):** 척추의 양 끝단(경추와 요추)이 상호 대응하여 움직이거나 반응한다는 원리.
 *   **골반 블록 (Pelvic Blocks):** 골반 밑에 특정 각도로 배치하여 환자의 체중을 이용해 비틀림을 교정하는 쐐기 모양의 도구.
 *   **팔-와 테스트 (Arm-Fossa Test):** 서혜인대 자극을 통해 천장관절의 체중 부하 안정성을 평가하는 SOT 카테고리 2의 핵심 진단법.
-*   **서혜인대 (Poupart's Ligament):** 골반의 ASIS와 치골 사이에 위치한 인대로, SOT에서는 이곳의 수용체가 천장관절 상태를 반영한다고 봄.
+*   **서혜인대 (Poupart's Ligament):** 골반의 <abbr class="med-abbr" title="Anterior Superior Iliac Spine · 전상장골극">ASIS</abbr>와 치골 사이에 위치한 인대로, SOT에서는 이곳의 수용체가 천장관절 상태를 반영한다고 봄.
 *   **CMRT (Chiropractic Manipulative Reflex Technique):** SOT 카테고리 1에서 사용하는 내장기 수기 반사 치료법.
 *   **골지건기관 (GTO):** 근육과 건의 접합부에 위치한 수용체로, 후두골 섬유 시스템의 신경학적 기초가 됨.

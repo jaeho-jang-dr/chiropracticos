@@ -25,7 +25,7 @@
 
 **Cox® Technic Flexion-Distraction**은 추간판 감압(disc decompression)을 수기·기계적으로 유도하는 기법. 추간판 탈출·신경근증 보존치료에서 가장 근거가 축적된 카이로프랙틱 기법 중 하나.
 
-- 미국 DC의 **58.0%** 사용 (ACA)
+- 미국 <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>의 **58.0%** 사용 (ACA)
 - **Gudavalli 연방 연구** — 국립 지원 생체역학 연구로 추간판 내압 감소 등 실측 검증
 - 요추 디스크 + 신경근증에서 🟡 Moderate evidence · 수술 전 보존 옵션
 
@@ -103,7 +103,7 @@ nucleus pulposus 중심으로 이동 (일부)
 ### Protocol II — 신연 + 수기 조작
 
 - **대상**: 방사통 해소 후 아급성·만성기
-- **동작**: Protocol I + HVLA manipulation
+- **동작**: Protocol I + <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> manipulation
 - 신연 상태에서 추력 → 안전하게 분절 재정렬
 
 ### Protocol III — 재활
@@ -185,15 +185,15 @@ nucleus pulposus 중심으로 이동 (일부)
 2. **Gudavalli MR, Cambron JA et al.** Cox decompression traction compared to active exercise. *JMPT* series
    - 신경근증 환자에서 Cox 우위 시사
 
-3. **Kruse RA, Cambron JA et al.** Chiropractic management using Cox flexion-distraction for cervical disc herniation. *JMPT* 2011.
+3. **Kruse <abbr class="med-abbr" title="Rheumatoid Arthritis · 류마티스 관절염">RA</abbr>, Cambron JA et al.** Chiropractic management using Cox flexion-distraction for cervical disc herniation. *JMPT* 2011.
    - 경추 디스크 증례 시리즈
 
 4. **ClinicalTrials.gov** 등록 시험
-   - 다수 Cox Technic 관련 RCT 등록 · 일부 진행 중
+   - 다수 Cox Technic 관련 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 등록 · 일부 진행 중
 
 ### Cochrane 맥락
 
-- 별도 Cox Cochrane review는 없지만, 일반 SMT·traction Cochrane 리뷰에 포함
+- 별도 Cox Cochrane review는 없지만, 일반 <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr>·traction Cochrane 리뷰에 포함
 - Traction 단독 효과는 🟠 제한적 · **Cox는 traction + 특이 조작** 결합으로 효과적
 
 ### 인증·교육
@@ -224,7 +224,7 @@ nucleus pulposus 중심으로 이동 (일부)
 
 ### 프레임 정합성
 
-Cox는 **"구조적 disc·신경근 문제 → 구심성 감소 → 중추 처리 왜곡 → 통증·운동 이상"**이라는 FN 프레임에 가장 잘 맞는 기법 중 하나. 감압 기전이 직접적 · 측정 가능 · 재현 가능.
+Cox는 **"구조적 disc·신경근 문제 → 구심성 감소 → 중추 처리 왜곡 → 통증·운동 이상"**이라는 <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> 프레임에 가장 잘 맞는 기법 중 하나. 감압 기전이 직접적 · 측정 가능 · 재현 가능.
 
 ---
 
@@ -248,7 +248,7 @@ Cox는 **"구조적 disc·신경근 문제 → 구심성 감소 → 중추 처�
 
 - 요추 디스크 + 신경근증 환자에서 **수술 전 8-12주 보존치료 옵션**으로 제안
 - 진행성 결손·마미·심한 결함 있으면 지체 없이 신경외과·정형외과 의뢰
-- MRI 결과 확인 후 시술 · 치료 경과 중 재평가 (MRI 재검은 필요 시)
+- <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr> 결과 확인 후 시술 · 치료 경과 중 재평가 (MRI 재검은 필요 시)
 
 ---
 

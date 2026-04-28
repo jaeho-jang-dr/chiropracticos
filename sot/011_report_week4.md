@@ -1,4 +1,4 @@
-# 천골 후두 기술(SOT) 및 천천후 반사점(Chapman Reflex Points) 분석 브리핑 문서
+# 천골 후두 기술(<abbr class="med-abbr" title="Sacro-Occipital Technique · 천골-후두 기법 (DeJarnette)">SOT</abbr>) 및 천천후 반사점(Chapman Reflex Points) 분석 브리핑 문서
 
 이 문서는 천골 후두 기술(Sacro Occipital Technique, SOT)의 범주 체계, 진단 지표, 치료 프로토콜과 천천후 반사점(Chapman Reflex Points)의 해부학적 위치 및 임상적 활용에 대한 포괄적인 분석을 제공합니다.
 
@@ -8,7 +8,7 @@
 
 본 브리핑은 1925년 Major B. DeJarnette 박사에 의해 창시된 **천골 후두 기술(SOT)**과 내장 기능 장애를 평가하기 위한 **천천후 반사점**을 중심으로 구성되었습니다. SOT는 공학, 골병학(Osteopathy), 카이로프랙틱의 원리를 결합하여 신체를 세 가지 임상적 범주(Category 1, 2, 3)로 분류하며, 특히 골반과 두개골(후두골) 사이의 기능적 상호관계를 중시합니다.
 
-주요 분석 결과, SOT는 '지표(Indicators)' 시스템을 통해 환자의 상태를 객관적으로 평가하며, 골반 블록(Pelvic Blocks)과 같은 중력 이용 기법을 통해 비침습적이고 부드러운 교정을 수행합니다. 또한, 천천후 반사점은 특정 내부 장기와 연결된 신체 표면의 촉진 지점을 제공하여 가시적인 기능 장애를 평가하는 보조적 수단으로 활용됩니다. 최근 연구에 따르면 SOT와 카이로프랙틱 수기 반사 기술(CMRT)의 결합은 심박 변이도(HRV)를 통해 확인되듯 부교감 신경의 톤을 높이는 데 효과가 있는 것으로 나타났습니다.
+주요 분석 결과, SOT는 '지표(Indicators)' 시스템을 통해 환자의 상태를 객관적으로 평가하며, 골반 블록(Pelvic Blocks)과 같은 중력 이용 기법을 통해 비침습적이고 부드러운 교정을 수행합니다. 또한, 천천후 반사점은 특정 내부 장기와 연결된 신체 표면의 촉진 지점을 제공하여 가시적인 기능 장애를 평가하는 보조적 수단으로 활용됩니다. 최근 연구에 따르면 SOT와 카이로프랙틱 수기 반사 기술(<abbr class="med-abbr" title="Chiropractic Manipulative Reflex Technique · 카이로프랙틱 수기 반사 기법">CMRT</abbr>)의 결합은 심박 변이도(HRV)를 통해 확인되듯 부교감 신경의 톤을 높이는 데 효과가 있는 것으로 나타났습니다.
 
 ---
 
@@ -35,7 +35,7 @@ Category 2는 신체의 체중 지지 시스템, 특히 천장관절의 인대�
     *   L5 ↔ C1 (또는 경상돌기)
     *   L4 ↔ C2 / L3 ↔ C3 / L2 ↔ C4 / L1 ↔ C5
 *   **장요근(Psoas) 기법:** 머리 위 팔 길이 비교(Overhead arm check)를 통해 단축된 쪽을 진단하고 수기 접촉을 통해 이완시킵니다.
-*   **골반 블록 배치:** 복와위(Prone)에서 다리 길이를 측정한 후, 장골능(ASIS)과 고관절구(Acetabulum) 아래에 특정 각도로 블록을 배치하여 골반 비틀림을 제거합니다.
+*   **골반 블록 배치:** 복와위(Prone)에서 다리 길이를 측정한 후, 장골능(<abbr class="med-abbr" title="Anterior Superior Iliac Spine · 전상장골극">ASIS</abbr>)과 고관절구(Acetabulum) 아래에 특정 각도로 블록을 배치하여 골반 비틀림을 제거합니다.
 
 ---
 

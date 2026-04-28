@@ -1,7 +1,7 @@
 # Chapter 6. Thompson Drop Table
 
 > **J. Clay Thompson 1950s · Segmental Drop Table · Derifield-Thompson Leg Check**
-> 고령·임산부·수기 거부 환자에 유용한 저침습 HVLA
+> 고령·임산부·수기 거부 환자에 유용한 저침습 <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr>
 
 ---
 
@@ -23,7 +23,7 @@
 
 **Thompson Terminal Point Technique**는 Palmer Package 4대 기법 중 **기계 공학을 도입한 첫 세대** 기법. Newton 운동 법칙에 기반한 드롭 테이블로 추력을 증폭하며, 술자와 환자 모두의 부담을 최소화.
 
-- 미국 DC의 ~55.9% 사용 (ACA)
+- 미국 <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>의 ~55.9% 사용 (ACA)
 - 고령·임산부·골다공증·수기 교정 공포 환자에 특히 적합
 
 ---
@@ -160,7 +160,7 @@ Chapter 2 프레임으로 Thompson 재해석:
 
 | 적응증 | 근거 | 출처 |
 |--------|------|------|
-| 요통 SMT 범주 | 🟡 Moderate | Rubinstein Cochrane 2013 |
+| 요통 <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr> 범주 | 🟡 Moderate | Rubinstein Cochrane 2013 |
 | 경부통 SMT 범주 | 🟡 Moderate | Gross Cochrane 2015 |
 | 두통 | 🟠 Limited-Moderate | Bryans 2011 |
 | 고령·임산부 안전성 | 🟢 Strong (저침습 특성) | 안전 프로파일 |
@@ -190,7 +190,7 @@ Chapter 2 프레임으로 Thompson 재해석:
 
 ### 3. 확장 주장 없음 (다행)
 
-Thompson은 Gonstead·HIO와 달리 **"전신 질환 치료" 같은 확장 주장을 별로 하지 않음**. 기계적 SMT 도구로서의 정체성이 비교적 명확.
+Thompson은 Gonstead·<abbr class="med-abbr" title="Hole-In-One · B.J. Palmer 상부경추 단일 교정 이론 (Toggle Recoil)">HIO</abbr>와 달리 **"전신 질환 치료" 같은 확장 주장을 별로 하지 않음**. 기계적 SMT 도구로서의 정체성이 비교적 명확.
 
 ### 4. 단점
 

@@ -1,7 +1,7 @@
 # Week 4 — 임상 적용과 안전 (Clinical Application & Safety)
 
 > 근거 기반 · 통합 치료 · 한국 임상 현장 적용
-> Diversified HVLA를 **실제 환자**에게 쓰기 위한 최종 단계
+> Diversified <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr>를 **실제 환자**에게 쓰기 위한 최종 단계
 
 ---
 
@@ -34,7 +34,7 @@
                └──────────────────┘
 ```
 
-### 1.2 Diversified/SMT 적응증별 근거 수준
+### 1.2 Diversified/<abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr> 적응증별 근거 수준
 
 | 적응증 | 근거 수준 | 대표 연구 |
 |--------|-----------|-----------|
@@ -48,7 +48,7 @@
 | 🔴 **고혈압·천식·소화기·ADHD** | 🔴 No evidence | 부정적 · 비판적 언급만 |
 | 🔴 **Vitalism-based systemic disease** | 🔴 No evidence | 근거 없음 |
 
-### 1.3 EBM에서 Diversified의 위치
+### 1.3 <abbr class="med-abbr" title="Evidence-Based Medicine · 근거 기반 의학">EBM</abbr>에서 Diversified의 위치
 
 - **보조 치료(adjunctive)**가 현대 EBM 주류: 운동치료·교육과 **병행**
 - SMT 단독 치료는 자주 사용되지만, **다학제 접근**이 권장
@@ -62,7 +62,7 @@
 
 #### Step 1. Screening
 - Red Flag 11가지 확인 → 음성이면 진행
-- VAS 0-10 기록 (baseline)
+- <abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도">VAS</abbr> 0-10 기록 (baseline)
 
 #### Step 2. Assessment
 - Motion Palpation L1-S1
@@ -78,7 +78,7 @@
 
 #### Step 4. 경과 평가
 - 4-6주 내 50% 통증 감소가 목표
-- 호전 없음 → MRI · 전문의 의뢰
+- 호전 없음 → <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr> · 전문의 의뢰
 
 ### 2.2 만성 요통 (> 12주)
 
@@ -110,7 +110,7 @@
 ### 3.1 기계적 경추통
 
 #### 초진
-1. Red Flag + VBI 5Ds+3Ns 확인
+1. Red Flag + <abbr class="med-abbr" title="Vertebrobasilar Insufficiency · 척추기저동맥부전">VBI</abbr> 5Ds+3Ns 확인
 2. Cervical range of motion 측정
 3. Neurological 전 상지 evaluation
 4. Spurling / Distraction / Shoulder abduction tests
@@ -135,7 +135,7 @@
 
 ### 3.4 Whiplash (외상성 경부 손상)
 
-- **급성기 (1-2주)**: Diversified 삼가, soft collar + NSAID
+- **급성기 (1-2주)**: Diversified 삼가, soft collar + <abbr class="med-abbr" title="Non-Steroidal Anti-Inflammatory Drug · 비스테로이드성 소염진통제">NSAID</abbr>
 - **아급성 (3-6주)**: 저force Diversified 가능, motion 회복 목적
 - **만성 (>12주)**: 조심스런 HVLA + 운동 병행
 
@@ -167,7 +167,7 @@
 - Carpal bone mobilization
 - Neural mobilization (median nerve glide)
 - Ergonomic education
-- 중증 (EMG 확정) → 외과 의뢰
+- 중증 (<abbr class="med-abbr" title="Electromyography · 근전도 검사">EMG</abbr> 확정) → 외과 의뢰
 
 ### 4.4 Knee Osteoarthritis
 

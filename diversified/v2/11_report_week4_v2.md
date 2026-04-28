@@ -1,16 +1,16 @@
-# [v2 Evidence-Based] Diversified HVLA Week 4 강의록 — 근거·안전·통합 치료
+# [v2 Evidence-Based] Diversified <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> Week 4 강의록 — 근거·안전·통합 치료
 
 ## 1. 서론: 근거 기반 현장 활용 원칙과 학습 목표
 
-본 강의는 단순한 수기 기술의 습득을 넘어, 현대 의학의 표준인 **근거 중심 의학(Evidence-Based Medicine, EBM)** 체계 내에서 Diversified 기법을 엄격하게 재정립하는 데 목적이 있습니다. 과거의 경험적 신비주의나 검증되지 않은 초자연적 가설(Innate Intelligence 등)을 단호히 배제하고, 동료 검토(Peer-reviewed)된 연구 데이터와 생체역학적 원리에 기반한 치료를 지향합니다.
+본 강의는 단순한 수기 기술의 습득을 넘어, 현대 의학의 표준인 **근거 중심 의학(Evidence-Based Medicine, <abbr class="med-abbr" title="Evidence-Based Medicine · 근거 기반 의학">EBM</abbr>)** 체계 내에서 Diversified 기법을 엄격하게 재정립하는 데 목적이 있습니다. 과거의 경험적 신비주의나 검증되지 않은 초자연적 가설(Innate Intelligence 등)을 단호히 배제하고, 동료 검토(Peer-reviewed)된 연구 데이터와 생체역학적 원리에 기반한 치료를 지향합니다.
 
 *   **근거 기반 실무(EBP)의 3대 요소:**
-    1.  **연구 근거(Research Evidence):** 체계적 문헌고찰(SR) 및 RCT를 통한 객관적 데이터 확보.
+    1.  **연구 근거(Research Evidence):** 체계적 문헌고찰(SR) 및 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr>를 통한 객관적 데이터 확보.
     2.  **임상 전문성(Clinical Expertise):** 숙련된 술자의 정확한 진단 및 기술 적용 능력(The Art of Chiropractic).
     3.  **환자 가치(Patient Values):** 환자의 선호도와 개별적 임상 상황의 반영.
 *   **학습 목표:** 
     *   **조절 가능한 병변(Manipulable Lesion)**에 대한 생체역학적 이해 및 감별.
-    *   SMT(Spinal Manipulative Therapy)의 부위별 근거 등급과 임상적 한계 명확화.
+    *   <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr>(Spinal Manipulative Therapy)의 부위별 근거 등급과 임상적 한계 명확화.
     *   VAD(척추동맥박리) 등 중증 부작용에 대한 과학적 팩트 체크 및 안전 스크리닝 능력 배양.
 
 ---
@@ -36,7 +36,7 @@ Source Context에 근거하여 SMT의 효과를 객관적으로 분석한 결과
 
 | 연구 및 연도 | 대상 질환 | 근거 수준 및 질 | 핵심 결론 및 전문가 총평 |
 | :--- | :--- | :---: | :--- |
-| **Rubinstein SM et al. (2011/2013)** | 요통 (LBP) | 🔴/🟠 Low-Very Low | 2011년 45개 SR 분석 결과, 어떤 조건에서도 효과를 "설득력 있게 입증하지 못함". 단기적 통증 완화는 운동요법과 대등함. |
+| **Rubinstein SM et al. (2011/2013)** | 요통 (<abbr class="med-abbr" title="Low Back Pain · 요통">LBP</abbr>) | 🔴/🟠 Low-Very Low | 2011년 45개 SR 분석 결과, 어떤 조건에서도 효과를 "설득력 있게 입증하지 못함". 단기적 통증 완화는 운동요법과 대등함. |
 | **Gross A et al. (2015)** | 경추통 (Neck Pain) | 🟡 Moderate | 가동술(MOB)과 대등한 효과. 단독 시행보다 운동 병행 시 유의미한 우위 확보. |
 | **Franke H et al. (2014)** | 골관절염/요통 | 🟠 Low | Osteopathic 보존치료(OMT)와 비교 시 통증 완화 가능성 제시. 연구의 질은 대체로 낮음. |
 | **Bryans R / Chaibi A (2011)** | 두통/편두통 | 🟠 Low-Mod | 경인성 두통에 보조적 효과. Migraine에 대해서는 여전히 근거가 부족함. |
@@ -100,7 +100,7 @@ WHO(2005) 가이드라인 및 Bergmann의 지침에 따라 다음 환자군에�
 
 | 분류 | 주요 상태 및 질환 | 임상적 조치 |
 | :--- | :--- | :--- |
-| **절대적 금기 (🔴)** | 마미증후군, 척수 압박, 골수염/감염, 악성 종양, 급성 골절, 혈관 박리 진행 중, RA(상부경추 불안정성) | **즉시 응급실/전문의 의뢰** |
+| **절대적 금기 (🔴)** | 마미증후군, 척수 압박, 골수염/감염, 악성 종양, 급성 골절, 혈관 박리 진행 중, <abbr class="med-abbr" title="Rheumatoid Arthritis · 류마티스 관절염">RA</abbr>(상부경추 불안정성) | **즉시 응급실/전문의 의뢰** |
 | **상대적 금기 (🟡)** | 중증 골다공증(T-score < -2.5), 장기 스테로이드 복용, 항응고제 사용, 75세 이상 고령, 중증 추간판 탈출증 | **저강도 가동술(Mobilization)로 대체** |
 | **비정상 징후** | 갑작스러운 심한 두통, 구토, 복시, 어지럼증 | **VAD 의심 및 정밀 검사 의뢰** |
 
@@ -127,7 +127,7 @@ WHO(2005) 가이드라인 및 Bergmann의 지침에 따라 다음 환자군에�
 ## 11. 제10부. 한국 임상 현장 및 법적 맥락
 
 *   **제도 맥락:** 본 강의는 의사·물리치료사가 수행하는 '도수치료(비급여/실손)' 임상 환경을 기준으로 한다.
-*   **면허와 범위:** 국내 DC 면허 체계 부재로 인해, 해외 학위 소지자라도 반드시 국내 면허 범위(의사/물리치료사) 내에서 의료법을 준수해야 함.
+*   **면허와 범위:** 국내 <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr> 면허 체계 부재로 인해, 해외 학위 소지자라도 반드시 국내 면허 범위(의사/물리치료사) 내에서 의료법을 준수해야 함.
 *   **증거의 의무:** 실손보험 및 법적 분쟁 방지를 위해, 단순 '시원함'이 아닌 '객관적 기능 개선'을 임상 기록(Soap Note)에 상세히 기술해야 함.
 
 ---
@@ -137,8 +137,8 @@ WHO(2005) 가이드라인 및 Bergmann의 지침에 따라 다음 환자군에�
 다음은 과학적 근거가 전무한 **유사과학(Pseudoscience)**적 주장이며, 전문가로서의 신뢰도를 실추시키는 행위이므로 강력히 규탄하며 배제해야 합니다.
 
 1.  **내과적 질환 완치 주장:** SMT로 고혈압, 천식, 당뇨, 소화불량, 영유아 산후통(Colic) 등을 치료할 수 있다는 주장은 Cochrane Review 결과 근거가 전혀 없음.
-2.  **HIO (Hole-In-One) 가설 비판:** 상부 경추(C1-C2) 교정만으로 전신 질환을 고친다는 주장은 생체역학적으로 불가능한 **신비주의적 망상**에 불과함.
-3.  **응용 근신경학(AK) 남용:** 단순 근력 테스트로 알레르기나 영양 상태를 진단하는 행위는 의학적 타당성이 전무한 기만적 행위임.
+2.  **<abbr class="med-abbr" title="Hole-In-One · B.J. Palmer 상부경추 단일 교정 이론 (Toggle Recoil)">HIO</abbr> (Hole-In-One) 가설 비판:** 상부 경추(C1-C2) 교정만으로 전신 질환을 고친다는 주장은 생체역학적으로 불가능한 **신비주의적 망상**에 불과함.
+3.  **응용 근신경학(<abbr class="med-abbr" title="Applied Kinesiology · 응용 운동학 (George Goodheart, 1964)">AK</abbr>) 남용:** 단순 근력 테스트로 알레르기나 영양 상태를 진단하는 행위는 의학적 타당성이 전무한 기만적 행위임.
 4.  **Innate Intelligence 인용:** 치료의 기전을 '지능적 생명 에너지'와 같은 형이상학적 개념으로 설명하는 것은 현대 의학 교육을 받은 전문가의 자세가 아님.
 
 ---

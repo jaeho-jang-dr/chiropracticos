@@ -1,4 +1,4 @@
-# Week 1. Diversified HVLA — 정의·생체역학·근거 개요
+# Week 1. Diversified <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> — 정의·생체역학·근거 개요
 
 > **대상: 한국 정형외과·재활의학과 의사 및 도수치료 훈련 물리치료사**
 > **관점: 근거 기반 의학(Evidence-Based Medicine) — 카이로프랙틱 pseudoscience는 비판적·최소 언급에 한함**
@@ -15,7 +15,7 @@
 4. **Cavitation의 과학적 기전**(Kawchuk 2015)을 설명하고, pop 소리와 임상 효과 사이의 상관관계에 대한 현행 근거를 평가할 수 있다
 5. 전통적 "Subluxation 이론"의 한계와 현대 **Joint Dysfunction 모델**의 전환 근거를 논할 수 있다
 6. Diversified HVLA의 **근거 수준**을 요통·경추통·두통별로 개략적으로 제시할 수 있다 (상세는 Week 4)
-7. Carrick Functional Neurology, CBP, AK 등의 주변 테크닉 중 **현대 의학에서 수용 가능한 부분과 수용되지 않는 부분**을 구별할 수 있다
+7. Carrick Functional Neurology, <abbr class="med-abbr" title="Chiropractic BioPhysics · 카이로프랙틱 바이오피직스 (자세·구조 교정)">CBP</abbr>, <abbr class="med-abbr" title="Applied Kinesiology · 응용 운동학 (George Goodheart, 1964)">AK</abbr> 등의 주변 테크닉 중 **현대 의학에서 수용 가능한 부분과 수용되지 않는 부분**을 구별할 수 있다
 
 ---
 
@@ -64,7 +64,7 @@
 
 | Modality | 직역 | 수행 주체 | 힘·속도 특성 | 주요 차이 |
 |----------|------|----------|-------------|----------|
-| **Diversified HVLA (DC)** | 카이로프랙틱 | DC | 고속·저진폭 추력 | **분절 특이적 진단**(Motion Palpation) + 추력 |
+| **Diversified HVLA (<abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>)** | 카이로프랙틱 | DC | 고속·저진폭 추력 | **분절 특이적 진단**(Motion Palpation) + 추력 |
 | **Osteopathic HVLA (OMT)** | 접골 HVLA | DO | 고속·저진폭 추력 | 상위 5 Osteopathic models — Biomechanical·Respiratory 등 통합 |
 | **Joint Mobilization (MOB)** | 관절 가동술 | PT | **저속·반복** (Maitland I-IV) | Thrust 없음 — 진동성 oscillation 중심 |
 | **Muscle Energy Technique (MET)** | 근육에너지기법 | DO/PT | 환자 **등척성 수축** 활용 | 수동 교정 + 환자 자발 근 활성 |
@@ -153,7 +153,7 @@ flowchart LR
 
 <figure>
   <img src="./images/wk1_rom_zones.jpg" alt="Joint range of motion zones — diagrammatic" />
-  <figcaption><strong>그림 1-1.</strong> 관절 운동범위의 4구역 모델. HVLA는 Passive ROM 말단의 Elastic Barrier 직전에서 Paraphysiological Space로 분절을 짧게 이동시킨다. <em>(일러스트 준비: 벡터 드로잉 또는 ResearchGate/JMPT 도표 재사용 CC 라이선스 확인)</em></figcaption>
+  <figcaption><strong>그림 1-1.</strong> 관절 운동범위의 4구역 모델. HVLA는 Passive <abbr class="med-abbr" title="Range of Motion · 관절가동범위">ROM</abbr> 말단의 Elastic Barrier 직전에서 Paraphysiological Space로 분절을 짧게 이동시킨다. <em>(일러스트 준비: 벡터 드로잉 또는 ResearchGate/JMPT 도표 재사용 CC 라이선스 확인)</em></figcaption>
 </figure>
 
 | 구역 | 범위 | 임상 의미 |
@@ -190,8 +190,8 @@ graph TD
 
 ### 근거 수준 🟡 Moderate
 
-- **통증 감소 기전**: Pickar JG (*Spine J* 2002) — SMT가 척수 구심성 입력 변화를 유도함을 보임
-- **근전도(EMG) 변화**: Multiple studies — paraspinal 근긴장 30-45초 지속 감소
+- **통증 감소 기전**: Pickar JG (*Spine J* 2002) — <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr>가 척수 구심성 입력 변화를 유도함을 보임
+- **근전도(<abbr class="med-abbr" title="Electromyography · 근전도 검사">EMG</abbr>) 변화**: Multiple studies — paraspinal 근긴장 30-45초 지속 감소
 - **내장 효과 주장**: 🔴 **제한적 근거** — 부분적 자율신경 영향 보고되나 임상적 의미 논쟁적. 내장 질환 치료에 카이로프랙틱 SMT 권장되지 **않음**
 
 > **⚠️ 중요**
@@ -201,7 +201,7 @@ graph TD
 
 # 🎈 제4부. Cavitation — 과학적 기전과 임상 해석
 
-## 4.1 Kawchuk 2015 실시간 MRI 연구
+## 4.1 Kawchuk 2015 실시간 <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr> 연구
 
 **Kawchuk GN et al. Real-Time Visualization of Joint Cavitation. PLOS ONE 2015;10(4):e0119470.**
 
@@ -322,7 +322,7 @@ flowchart TD
 | **기계적 경추통** | 🟡 Moderate — MOB과 동등 | *Gross A et al. Cochrane 2015* |
 | **긴장성 두통·경인성 두통** | 🟠 Limited-Moderate | *Bryans R et al. JMPT 2011* |
 | **편두통 보조** | 🟠 Limited | *Chaibi A et al. J Headache Pain 2011* |
-| **척추관 협착증** | 🟠 Limited (주의) | 증례 중심, RCT 부족 |
+| **척추관 협착증** | 🟠 Limited (주의) | 증례 중심, <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 부족 |
 | **천식·고혈압·월경통 등** | 🔴 **근거 없음 — 권장되지 않음** | Systematic reviews 부정적 결론 |
 
 ## 7.2 Cochrane Reviews 주요 결론
@@ -339,7 +339,7 @@ flowchart TD
 - "교정이 소아 천식을 개선한다" (Cochrane 2005 — *No evidence*)
 - "교정이 월경통·소화불량·야뇨증을 치료한다" (근거 부재)
 - "교정이 면역계를 강화한다" (근거 부재)
-- "한 번의 상부경추 교정이 전신 신경계를 재조정한다" (B.J. Palmer HIO 가설 — **의학적 근거 없음**)
+- "한 번의 상부경추 교정이 전신 신경계를 재조정한다" (B.J. Palmer <abbr class="med-abbr" title="Hole-In-One · B.J. Palmer 상부경추 단일 교정 이론 (Toggle Recoil)">HIO</abbr> 가설 — **의학적 근거 없음**)
 
 ---
 
@@ -511,7 +511,7 @@ flowchart LR
 | Static Palpation | 정적 촉진 | Static palpation |
 | Listing | 분절 변위 분류 | Vertebral position classification |
 | Red Flag | **위험 징후** | Red flag |
-| Vertebrobasilar Artery Insufficiency (VBAI) | **척추기저동맥 부전** | VBAI / VBI |
+| Vertebrobasilar Artery Insufficiency (VBAI) | **척추기저동맥 부전** | VBAI / <abbr class="med-abbr" title="Vertebrobasilar Insufficiency · 척추기저동맥부전">VBI</abbr> |
 | Cavitation | **관절 공동화** | Joint cavitation |
 | Paraphysiological Space | **부생리 공간** | Paraphysiological space |
 

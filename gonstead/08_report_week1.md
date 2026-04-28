@@ -33,7 +33,7 @@
 
 *   **기본 구조:** 'P'는 후방 변위(Posteriority), 'R/L'은 극돌기의 우측/좌측 회전, 'S/I'는 척추체의 상방/하방 기울기를 의미합니다.
 *   **예시:**
-    *   **PRS:** 후방(P), 우측 회전(R), 상방 기울기(S).
+    *   **<abbr class="med-abbr" title="Posterior-Right-Superior · Gonstead listing 후-우-상">PRS</abbr>:** 후방(P), 우측 회전(R), 상방 기울기(S).
     *   **PIEX (Ilium):** 장골의 후하방(PI) 및 외방(EX) 변위.
     *   **ASRA (Atlas):** 환추(C1)의 전상방(AS), 우측 측방 변위(R), 전방 회전(A).
 

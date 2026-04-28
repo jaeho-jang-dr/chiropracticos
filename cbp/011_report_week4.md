@@ -1,4 +1,4 @@
-# Chiropractic BioPhysics® (CBP®): 척추 구조 교정 및 재활을 위한 과학적 접근
+# Chiropractic BioPhysics® (<abbr class="med-abbr" title="Chiropractic BioPhysics · 카이로프랙틱 바이오피직스 (자세·구조 교정)">CBP</abbr>®): 척추 구조 교정 및 재활을 위한 과학적 접근
 
 이 브리핑 문서는 Chiropractic BioPhysics®(CBP®) 기술의 기원, 이론적 토대, 임상 프로토콜 및 과학적 근거를 상세히 분석합니다. CBP®는 단순한 통증 완화를 넘어 척추의 구조적 정렬을 정상화하여 신경 생리학적 기능을 최적화하는 데 중점을 둔 고도로 연구된 척추 재활 방법론입니다.
 
@@ -8,7 +8,7 @@
 
 Chiropractic BioPhysics®(CBP®)는 기계 공학 및 응용 수학 원리를 척추 치료에 통합한 **구조적 재활(Structural Rehabilitation)** 접근법입니다. 1980년 도널드 해리슨(Donald D. Harrison) 박사에 의해 창시된 이 기술은 단순한 '기능적' 운동이나 스트레칭을 넘어, 척추를 이상적인 모델에 가깝게 재정렬하는 것을 목표로 합니다.
 
-CBP®의 핵심은 **미러 이미지(Mirror Image®)** 원리로, 환자의 비정상적인 자세를 수학적으로 반전시킨 위치에서 교정, 운동, 견인을 수행합니다. 이 기술은 300편 이상의 피어 리뷰(Peer-reviewed) 논문과 다수의 무작위 대조군 연구(RCT)에 의해 뒷받침되는, 현대 카이로프랙틱 분야에서 가장 과학적으로 검증된 기법 중 하나로 평가받습니다.
+CBP®의 핵심은 **미러 이미지(Mirror Image®)** 원리로, 환자의 비정상적인 자세를 수학적으로 반전시킨 위치에서 교정, 운동, 견인을 수행합니다. 이 기술은 300편 이상의 피어 리뷰(Peer-reviewed) 논문과 다수의 무작위 대조군 연구(<abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr>)에 의해 뒷받침되는, 현대 카이로프랙틱 분야에서 가장 과학적으로 검증된 기법 중 하나로 평가받습니다.
 
 ---
 

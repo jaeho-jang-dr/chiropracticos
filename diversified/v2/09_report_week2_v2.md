@@ -1,4 +1,4 @@
-# [v2 Evidence-Based] Diversified HVLA 강의록: 환자 평가와 진단
+# [v2 Evidence-Based] Diversified <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 강의록: 환자 평가와 진단
 
 ## 1. 서론: 분석 중심의 교정 철학
 
@@ -18,15 +18,15 @@
 1.  **History (병력 청취)**: 증상 분석(OPQRST) 및 감별 진단을 위한 기초 데이터 수집.
 2.  **Inspection (관찰)**: 정적 자세 및 동적 보행 패턴 분석을 통한 생체역학적 추론.
 3.  **Palpation (촉진)**: 정적 촉진(Static) 및 동적 가동성 촉진(Motion Palpation).
-4.  **Special Tests (특수 검사)**: 신경학적 검사(MMT, DTR) 및 정형학적 유발 검사.
+4.  **Special Tests (특수 검사)**: 신경학적 검사(<abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr>, DTR) 및 정형학적 유발 검사.
 5.  **Imaging (영상 진단)**: ACR 가이드라인에 기반한 임상적 필요성 판단.
 
 ### 초진 및 재진의 차이
 *   **초진 (Initial Evaluation)**: 전체적인 해부학적 변위와 기능 부전의 기저선(Baseline) 설정, Red Flags 배제에 집중.
-*   **재진 (Re-evaluation)**: 치료적 중재에 따른 가동 범위(ROM)의 정량적 변화 및 통증 역치 개선 여부를 추적하여 Plan 수정.
+*   **재진 (Re-evaluation)**: 치료적 중재에 따른 가동 범위(<abbr class="med-abbr" title="Range of Motion · 관절가동범위">ROM</abbr>)의 정량적 변화 및 통증 역치 개선 여부를 추적하여 Plan 수정.
 
 ### SOAP 차팅 표준 템플릿
-> **[S] Subjective**: 환자의 주소증, 발생 기전(OPQRST), 일상생활 제한(ADL) 정도.
+> **[S] Subjective**: 환자의 주소증, 발생 기전(OPQRST), 일상생활 제한(<abbr class="med-abbr" title="Activities of Daily Living · 일상생활동작">ADL</abbr>) 정도.
 > **[O] Objective**:
 > *   **Range of Motion (ROM)**: 능동/수동 가동 범위 측정 결과.
 > *   **Palpation**: Motion Palpation(SSS 부위), Soft tissue 긴장도.
@@ -68,7 +68,7 @@
 ### 체계적 관찰 지표 (Landmarks)
 1.  **정면 (Anterior)**: 안구의 수평도, 흉쇄유돌근(SCM)의 대칭성, 쇄골 및 견봉의 높이 차이.
 2.  **측면 (Lateral)**: 귀(EAM) - 견봉 - 요추체 중심 - 대전자(Greater Trochanter) - 외과(Lateral Malleolus)를 잇는 추선(Plumb Line) 정렬.
-3.  **후면 (Posterior)**: 후두골 정렬, 견갑골 내측연의 거상 또는 익상(Winging), 장골능(Iliac Crest) 및 PSIS의 수평도.
+3.  **후면 (Posterior)**: 후두골 정렬, 견갑골 내측연의 거상 또는 익상(Winging), 장골능(Iliac Crest) 및 <abbr class="med-abbr" title="Posterior Superior Iliac Spine · 후상장골극">PSIS</abbr>의 수평도.
 
 ### Posture & Gait 분석
 *   **Gait & Compensation**: 보행 시 한쪽 골반이 처지는 Trendelenburg 징후나 통증 회피 보행(Antalgic gait)은 특정 분절의 가동성 저하를 보상하기 위한 기전입니다. 이를 통해 일차적인 고정(Fixation) 부위를 추론합니다.
@@ -106,7 +106,7 @@ Evidence-Based 관점에서의 **Subluxation(Joint Dysfunction)**은 X-ray 상�
 
 ### Plumb Line 기준 및 측정
 1.  **거북목 (Forward Head Posture)**: 귀(EAM)가 견봉보다 전방으로 이동한 거리를 측정하며, 흉추의 과후만과 연관됩니다.
-2.  **골반 경사 (Pelvic Tilt)**: ASIS와 PSIS의 높이 차이를 통해 전방 경사(Anterior Tilt, 장요근 단축 시사) 또는 후방 경사를 평가합니다.
+2.  **골반 경사 (Pelvic Tilt)**: <abbr class="med-abbr" title="Anterior Superior Iliac Spine · 전상장골극">ASIS</abbr>와 PSIS의 높이 차이를 통해 전방 경사(Anterior Tilt, 장요근 단축 시사) 또는 후방 경사를 평가합니다.
 
 ---
 
@@ -135,7 +135,7 @@ Evidence-Based 관점에서의 **Subluxation(Joint Dysfunction)**은 X-ray 상�
 
 ## 10. 제9부. Red Flags — 응급 의뢰 의사결정
 
-*   🔴 **마미증후군**: 안장 감각 소실 확인 시 **즉시 MRI 및 신경외과 응급 의뢰**.
+*   🔴 **마미증후군**: 안장 감각 소실 확인 시 **즉시 <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr> 및 신경외과 응급 의뢰**.
 *   🔴 **척수 압박**: 보행 장애, 병적 반사 양성 시 HVLA 절대 금기.
 *   🔴 **골절/감염**: 70세 이상 고령자, 스테로이드 장기 복용자, 원인 불명의 발열 시 영상 진단 우선.
 

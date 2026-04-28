@@ -1,9 +1,9 @@
-# [v2 Evidence-Based] Diversified HVLA Week 1 강의록: 정의, 생체역학 및 근거 개요
+# [v2 Evidence-Based] Diversified <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> Week 1 강의록: 정의, 생체역학 및 근거 개요
 
 ## 1. 서론: 강의의 철학적 배경 및 학습 목표
 
 **의학적 편집 원칙 (Evidence-Based Philosophy)**
-본 강의는 전통적 카이로프랙틱의 형이상학적 요소인 Vitalism(생기론) 및 "Innate Intelligence(선천적 지능)"를 완전히 배제하고, 현대 임상 생체역학 및 정형외과학적 근거(EBM)를 기반으로 작성되었습니다. 🔴 **No reliable evidence**: "척추 교정(Adjustment)으로 내부 장기 질환이나 전신 질환을 치료한다"는 주장은 Cochrane Review를 포함한 현대 의학계에서 명백히 부정되었습니다. 우리는 척추를 질병의 근원이 아닌, 근골격계 기능 부전의 대상으로 정의합니다.
+본 강의는 전통적 카이로프랙틱의 형이상학적 요소인 Vitalism(생기론) 및 "Innate Intelligence(선천적 지능)"를 완전히 배제하고, 현대 임상 생체역학 및 정형외과학적 근거(<abbr class="med-abbr" title="Evidence-Based Medicine · 근거 기반 의학">EBM</abbr>)를 기반으로 작성되었습니다. 🔴 **No reliable evidence**: "척추 교정(Adjustment)으로 내부 장기 질환이나 전신 질환을 치료한다"는 주장은 Cochrane Review를 포함한 현대 의학계에서 명백히 부정되었습니다. 우리는 척추를 질병의 근원이 아닌, 근골격계 기능 부전의 대상으로 정의합니다.
 
 **학습 목표**
 *   HVLA(High-Velocity, Low-Amplitude) 추력의 정밀한 의학적 파라미터 정의
@@ -12,7 +12,7 @@
 *   Cavitation(관절 내 소리)의 과학적 기전(Tribonucleation) 및 임상적 무관성 인식
 *   SSS(Stiffest Spinal Site) 프로토콜을 통한 검사자 간 신뢰도 확보
 *   질환별 근거 수준(Evidence Level)에 따른 적응증 선별
-*   한국 보건의료 체계 내 MD-PT-DC 간 다학제적 협진 모델 구축
+*   한국 보건의료 체계 내 MD-PT-<abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr> 간 다학제적 협진 모델 구축
 
 **대상 독자**
 본 강의록은 대한민국 전문의(MD) 및 물리치료사(PT)를 위한 전문 임상 지침입니다.
@@ -22,7 +22,7 @@
 ## 2. 제1부. Diversified HVLA의 의학적 정의 및 분류
 
 **기술적 카테고리**
-*   **HVLA (High-Velocity, Low-Amplitude):** 생리학적 운동 범위(Passive ROM)를 넘어 Elastic Barrier를 통과하여 파라피지올로지컬 구역(Paraphysiological space)에 고속(<150ms), 저진폭(1-3mm)의 추진력을 가하는 수기 치료법입니다.
+*   **HVLA (High-Velocity, Low-Amplitude):** 생리학적 운동 범위(Passive <abbr class="med-abbr" title="Range of Motion · 관절가동범위">ROM</abbr>)를 넘어 Elastic Barrier를 통과하여 파라피지올로지컬 구역(Paraphysiological space)에 고속(<150ms), 저진폭(1-3mm)의 추진력을 가하는 수기 치료법입니다.
 
 **의학 코드 매핑 및 브릿지**
 임상 현장에서 HVLA는 다음의 코드를 통해 제도권 의학으로 편입됩니다.
@@ -47,7 +47,7 @@
 *   **Harvey Lillard 사건:** D.D. Palmer가 T4 분절 교정으로 환자의 청력을 회복시켰다는 전설이 있으나, 생체역학적 관점에서 이는 **불가능**합니다. T4 척수 신경과 내이(Inner ear) 사이에는 직접적인 해부학적 경로가 존재하지 않습니다. 이를 "치료적 사실"로 가르치는 것은 과학적 기만이며, **"역사적 신화"**로 분류해야 합니다.
 
 **가설의 기각 및 규제 기구의 견해**
-*   🔴 **No reliable evidence:** "신경 간섭이 전신 질환의 원인"이라는 B.J. Palmer의 HIO 가설은 현대 생리학에서 폐기되었습니다.
+*   🔴 **No reliable evidence:** "신경 간섭이 전신 질환의 원인"이라는 B.J. Palmer의 <abbr class="med-abbr" title="Hole-In-One · B.J. Palmer 상부경추 단일 교정 이론 (Toggle Recoil)">HIO</abbr> 가설은 현대 생리학에서 폐기되었습니다.
 *   **영국 GCC(General Chiropractic Council) 선언:** 척추 하부탈구 복합체(Vertebral Subluxation Complex)가 질병의 원인이라는 주장은 임상적 연구 근거가 전혀 없음을 명시하고 있습니다.
 
 **Straight vs. Mixer 학파의 분절**
@@ -73,13 +73,13 @@
 
 **신경생리학적 기전 (Pickar, 2002)**
 *   **기계수용기 활성화:** 고속 추력이 Type I-IV 수용기를 자극하여 척수 후각의 Gate Control 기전을 활성화합니다.
-*   **α·γ-motor neuron 재조정:** 추력 후 30-45초간 Paraspinal EMG 활성도가 지속적으로 감소하며, 이는 근긴장의 '신경적 재설정(Resetting)'을 의미합니다.
+*   **α·γ-motor neuron 재조정:** 추력 후 30-45초간 Paraspinal <abbr class="med-abbr" title="Electromyography · 근전도 검사">EMG</abbr> 활성도가 지속적으로 감소하며, 이는 근긴장의 '신경적 재설정(Resetting)'을 의미합니다.
 
 ---
 
 ## 5. 제4부. Cavitation — Kawchuk(2015)의 과학적 분석
 
-**실시간 MRI 연구 (Kawchuk et al., 2015)**
+**실시간 <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr> 연구 (Kawchuk et al., 2015)**
 *   과거에는 기포가 '터지는' 소리라고 믿었으나, MRI 분석 결과 'Pop' 소리는 관절면 분리 시 발생하는 저압에 의해 기포가 **"형성(Tribonucleation)"**되는 순간에 발생함이 밝혀졌습니다.
 
 **임상적 상관성 — "The Sound Myth"**

@@ -1,14 +1,14 @@
-# [Evidence-Based] FN Report 1/4 — 이론 기초 (Part I·II)
+# [Evidence-Based] <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> Report 1/4 — 이론 기초 (Part I·II)
 
 ## 1. 서론: 편집 원칙 및 대상
 
 본 보고서는 한국의 의사(MD) 및 물리치료사(PT)를 대상으로, 기능 신경학(Functional Neurology, 이하 FN)을 현대 신경과학의 관점에서 재해석하여 임상 현장에서 활용할 수 있도록 돕는 보완 지침서입니다. 본 보고서는 Carrick Institute의 전통적인 개념을 수용하되, 동료 검토(Peer-reviewed) 문헌과 생리학적 기전에 근거한 엄격한 기준을 적용하며 다음의 편집 원칙을 준수합니다.
 
 *   🟢 **포함 원칙:** 신경생리학적 기초, 근거 기반의 조작적 정의(Operational Definition), 비침습적 재활 기전, 정량적 기능 평가, 최신 신경가소성 연구.
-*   🔴 **제외 원칙:** 두개천골 요법(CST), 내장 교정, AK(Applied Kinesiology) 진단법 등 과학적 근거가 부족하거나 생리학적 기전이 입증되지 않은 대안 요법.
+*   🔴 **제외 원칙:** 두개천골 요법(CST), 내장 교정, <abbr class="med-abbr" title="Applied Kinesiology · 응용 운동학 (George Goodheart, 1964)">AK</abbr>(Applied Kinesiology) 진단법 등 과학적 근거가 부족하거나 생리학적 기전이 입증되지 않은 대안 요법.
 
 ### Paradigm Shift: 하드웨어(Hardware)에서 소프트웨어(Software)로
-전통적인 임상 신경학이 MRI나 CT와 같은 영상 진단을 통해 뇌의 구조적 손상(Hardware, 예: 병변, 종양, 출혈)을 찾는 데 주력한다면, 기능 신경학은 신경계의 정보 처리 효율성과 네트워크의 운영 상태, 즉 **소프트웨어(Software)**적 측면에 집중합니다. 이는 기능 신경학이 표준 의학적 치료를 대체하는 것이 아니라, 기존의 진단 시스템에서 명확한 원인을 찾지 못하는 '회색 지대(Grey Area)' 환자들을 위한 **보완적 패러다임(Complementary Paradigm)**임을 의미합니다.
+전통적인 임상 신경학이 <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr>나 CT와 같은 영상 진단을 통해 뇌의 구조적 손상(Hardware, 예: 병변, 종양, 출혈)을 찾는 데 주력한다면, 기능 신경학은 신경계의 정보 처리 효율성과 네트워크의 운영 상태, 즉 **소프트웨어(Software)**적 측면에 집중합니다. 이는 기능 신경학이 표준 의학적 치료를 대체하는 것이 아니라, 기존의 진단 시스템에서 명확한 원인을 찾지 못하는 '회색 지대(Grey Area)' 환자들을 위한 **보완적 패러다임(Complementary Paradigm)**임을 의미합니다.
 
 ---
 
@@ -28,7 +28,7 @@
 | **주요 도구** | MRI, CT, 혈액 검사, 약물/수술 | 안구 운동 분석, 균형 평가, 비침습적 재활 |
 
 ### 2.3. 기관 및 인증 체계
-1979년 설립된 **Carrick Institute**는 기능 신경학 교육을 체계화한 선구 기관입니다. 현재 미국 기능 신경학 위원회(**ACNB**, American Chiropractic Neurology Board)는 국제적인 공신력을 갖춘 **DACNB**(Diplomate) 인증 과정을 통해 전문가의 임상 역량을 관리하고 있습니다.
+1979년 설립된 **Carrick Institute**는 기능 신경학 교육을 체계화한 선구 기관입니다. 현재 미국 기능 신경학 위원회(**<abbr class="med-abbr" title="American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 위원회">ACNB</abbr>**, American Chiropractic Neurology Board)는 국제적인 공신력을 갖춘 **<abbr class="med-abbr" title="Diplomate of American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 전문의">DACNB</abbr>**(Diplomate) 인증 과정을 통해 전문가의 임상 역량을 관리하고 있습니다.
 
 ### 2.4. 근거 수준의 정직한 평가
 *   🟢 **높음:** 기초 신경생리학, 신경가소성(Neuroplasticity)의 기전, 전정 재활(Vestibular Rehab).
@@ -43,7 +43,7 @@
 신경계를 고도화된 정보 처리 장치로 보는 모델은 다음과 같습니다.
 
 > **1. Input (입력):** 감각 수용기 활성화 (Receptor Activation) — 시각, 전정계, 고유 수용 감각 등.  
-> **2. Process (통합):** 중추신경계(CNS) 내에서의 연산 및 CIS 통합 과정.  
+> **2. Process (통합):** 중추신경계(<abbr class="med-abbr" title="Central Nervous System · 중추신경계 (뇌 + 척수)">CNS</abbr>) 내에서의 연산 및 CIS 통합 과정.  
 > **3. Output (출력):** 운동 반응(Motor Response) 및 자율신경계 조절.
 
 ### 3.2. 뇌 반구 편중성 (Brain Hemisphericity)
@@ -54,12 +54,12 @@
 ### 3.3. 소뇌와 뇌간 (Cerebellum & Brainstem)
 소뇌는 운동 정밀 조절뿐만 아니라 Schmahmann이 제안한 '소뇌 인지 정서 증후군(CCAS)'을 통해 감정과 인지 조절에도 관여함이 밝혀졌습니다. 
 *   **최신 지견:** 최근 연구(medRxiv 등)에 따르면 소뇌는 **식욕 조절(Dysregulation of appetite)**의 구조적 기전과도 연관되어 있습니다.
-*   **임상적 중요성:** 소뇌 기능 부전은 **척추 심부 근육(Spinal intrinsic muscle)의 약화**와 척추 불안정성을 유발하며, 이는 국소적인 분절 교정만으로는 해결되지 않는 만성 통증의 원인이 됩니다. 뇌간의 망상활성계(RAS)와 전정안구반사(VOR)는 자율신경계 및 시각적 안정성을 유지하는 핵심 기전입니다.
+*   **임상적 중요성:** 소뇌 기능 부전은 **척추 심부 근육(Spinal intrinsic muscle)의 약화**와 척추 불안정성을 유발하며, 이는 국소적인 분절 교정만으로는 해결되지 않는 만성 통증의 원인이 됩니다. 뇌간의 망상활성계(<abbr class="med-abbr" title="Reticular Activating System · 망상활성계">RAS</abbr>)와 전정안구반사(<abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr>)는 자율신경계 및 시각적 안정성을 유지하는 핵심 기전입니다.
 
 ### 3.4. 척수 후각과 통증 조절
 Melzack & Wall(1965)의 **관문 조절설(Gate Control Theory)**은 FN 치료의 핵심 근거입니다. 굵은 신경 섬유인 **Aβ(고유 수용 감각 및 촉각)**의 입력 비중이 가느다란 **C 섬유(통증)**의 입력보다 높을 때, 척수 후각에서의 통증 신호 전달이 억제됩니다. FN은 정교한 감각 입력을 통해 이 비중을 조절하여 약물 없이 통증을 제어합니다.
 
-### 3.5. 자율신경계(ANS)의 조절
+### 3.5. 자율신경계(<abbr class="med-abbr" title="Autonomic Nervous System · 자율신경계 (교감·부교감)">ANS</abbr>)의 조절
 FN은 심박수(HR), 혈압(BP), 산소 관류량을 실시간 지표로 활용합니다. 뇌 반구의 불균형은 교감신경의 과활성화(빈맥, 혈압 상승)를 유발하여 통증 민감도를 높이고 조직 회복을 지연시킵니다. 따라서 부교감 신경계와의 균형을 회복하는 것이 재활의 핵심 목표입니다.
 
 ---
@@ -81,7 +81,7 @@ FN은 심박수(HR), 혈압(BP), 산소 관류량을 실시간 지표로 활용�
 *   **진단 및 평가:** 
     *   안구 운동 분석 (Saccade, Pursuit 평가)
     *   동적 균형 측정 (Computerized Posturography)
-    *   말초 신경 포착 증후군 검사 (TOS, 수근관 증후군, 비골신경 압박 등)
+    *   말초 신경 포착 증후군 검사 (<abbr class="med-abbr" title="Thoracic Outlet Syndrome · 흉곽출구 증후군">TOS</abbr>, 수근관 증후군, 비골신경 압박 등)
 *   **치료 기법:**
     *   **결합형 경추 교정(Coupled cervical adjustments):** 전통적인 '비결합(Uncoupled)' 방식보다 경추 후관절의 자연스러운 움직임을 활용하여 척추에 무리를 주지 않으면서(Kinder to the spine) 특정 뇌 반구에 정밀한 **편측성 자극(Unilateral brain stimulation)**을 전달합니다.
     *   **빠른 신장 중재(Fast-stretch adjustments):** 관절 및 인대 수용기를 자극하여 뇌 기반 기전으로 근육 톤(Muscle Tone)을 정상화하고 관절 유착을 해제합니다.

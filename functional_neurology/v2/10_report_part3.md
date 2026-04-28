@@ -1,10 +1,10 @@
-# [Evidence-Based] FN Report 3/4 — ⭐ Assessment 심화 (Part IV)
+# [Evidence-Based] <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> Report 3/4 — ⭐ Assessment 심화 (Part IV)
 
 ### 1. 서론: 기능 신경학적 평가의 임상적 당위성
 
 기능 신경학(Functional Neurology, FN) 임상 현장에서 **'측정할 수 없는 것은 치료할 수 없다(You cannot treat what you cannot measure)'**는 원칙은 평가의 당위성을 관통하는 핵심 철학입니다. 기능 신경학적 평가는 단순한 질병의 유무를 판단하는 진단학적 범주를 넘어, 신경계의 기능적 건전성을 정량화하는 과정입니다.
 
-*   **하드웨어(구조)와 소프트웨어(기능):** 전통적인 의학적 접근이 MRI나 CT를 통해 종양이나 골절 같은 '하드웨어'의 파손을 찾는다면, FN은 신경 회로의 효율성과 정보 처리 능력인 '소프트웨어(Grey area)'의 기능 이상을 평가합니다. 뇌 영상이 정상임에도 환자가 느끼는 어지럼증, 인지 저하, 만성 통증은 대개 이 '소프트웨어'적 불균형에서 기인합니다.
+*   **하드웨어(구조)와 소프트웨어(기능):** 전통적인 의학적 접근이 <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr>나 CT를 통해 종양이나 골절 같은 '하드웨어'의 파손을 찾는다면, FN은 신경 회로의 효율성과 정보 처리 능력인 '소프트웨어(Grey area)'의 기능 이상을 평가합니다. 뇌 영상이 정상임에도 환자가 느끼는 어지럼증, 인지 저하, 만성 통증은 대개 이 '소프트웨어'적 불균형에서 기인합니다.
 *   **치료 타겟 결정 및 CIS 분석:** 평가는 뇌 균형(Hemisphericity)의 불균형 지점을 파악하고, 개별 신경 세포의 중추 통합 상태(Central Integrative State, CIS)를 분석하여 자극의 역치와 재활 강도를 결정하는 근거가 됩니다.
 *   **기준선(Baseline) 설정:** 치료 전 객관적인 기준선을 설정함으로써 신경 가소성(Neuroplasticity)에 의한 긍정적 변화를 추적하고 환자와 데이터 기반으로 소통합니다.
 *   **Red Flag 배제:** 기능적 재활 이전에 생명을 위협하거나 즉각적인 수술이 필요한 기질적 병변(Ablative Lesions)을 선별하여 임상적 안전성을 확보합니다.
@@ -17,7 +17,7 @@
 
 1.  **1단계: 병력 청취(History)** - 주소증 파악 및 신경학적 배경 탐색 (OPQRST + FN)
 2.  **2단계: 관찰(Observation)** - 정적/동적 자세, 보행, 피부 상태를 통한 비언어적 징후 포착
-3.  **3단계: 기본 신경학 검사(Basic Neurology)** - 뇌신경, DTR, 병적 반사, 근력(MMT) 확인
+3.  **3단계: 기본 신경학 검사(Basic Neurology)** - 뇌신경, DTR, 병적 반사, 근력(<abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr>) 확인
 4.  **4단계: FN 특화 검사(Functional Neurology Specifics)** - 안구 운동, 전정 기관, 소뇌, 자율신경계 및 뇌 균형 정밀 분석
 5.  **5단계: 영상 및 실험실 의뢰(Imaging/Lab Referral)** - 기질적 병변 확진을 위한 MRI, CT, 혈액 검사 의뢰
 
@@ -32,10 +32,10 @@
 | **Onset** | 발병 시기 및 상황 | 기질적(갑작스러운 외상) vs 기능적(점진적 불균형) 감별 |
 | **Provocation** | 악화/완화 요인 | 특정 머리 움직임, 빛/소리 과민성, 자세에 따른 증상 변화 |
 | **Quality** | 증상의 성격 | 둔한 통증, 박동성, 회전성 어지럼증, 인지적 안개(Brain Fog) |
-| **Region** | 발생 부위 | 피부분절(Dermatome) 및 말초신경 포착 지점(TOS, 수근관 등) 확인 |
-| **Severity** | 강도 (VAS 0-10) | 자율신경계 과활성(교감신경 항진)과의 상관관계 파악 |
+| **Region** | 발생 부위 | 피부분절(Dermatome) 및 말초신경 포착 지점(<abbr class="med-abbr" title="Thoracic Outlet Syndrome · 흉곽출구 증후군">TOS</abbr>, 수근관 등) 확인 |
+| **Severity** | 강도 (<abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도">VAS</abbr> 0-10) | 자율신경계 과활성(교감신경 항진)과의 상관관계 파악 |
 | **Timing** | 시간적 패턴 | 지속성 vs 간헐성, 하루 중 증상이 심해지는 시간대 분석 |
-| **FN 특화** | **TBI/Concussion** | 과거 두부 외상력, 의식 소실 여부, 외상 후 인지/감각 변화 |
+| **FN 특화** | **<abbr class="med-abbr" title="Traumatic Brain Injury · 외상성 뇌손상">TBI</abbr>/Concussion** | 과거 두부 외상력, 의식 소실 여부, 외상 후 인지/감각 변화 |
 | **FN 특화** | **자율신경 징후** | 기립성 어지럼증, 소화 불량, 심계항진(Tachycardia), 수면 장애 |
 
 ---
@@ -89,14 +89,14 @@
 
 ### 8. 4.7 전정 기관 검사 (Vestibular Assessment)
 
-전정-안구 반사(VOR)와 전정-척수 경로의 통합 상태를 평가합니다.
+전정-안구 반사(<abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr>)와 전정-척수 경로의 통합 상태를 평가합니다.
 
 | 검사명 | 수행 방법 및 임상적 유의성 | 양성 기준 및 의미 |
 | :--- | :--- | :--- |
-| **Dix-Hallpike** | 머리를 45도 회전 후 빠르게 눕혀 안진 유도 | 양성 시 BPPV(이석증) 시사 |
-| **Head Impulse (HIT)** | 시선을 고정시킨 채 머리를 빠르게 회전 | 시선 고정 실패(Saccade 발생) 시 VOR 기능 저하 |
+| **Dix-Hallpike** | 머리를 45도 회전 후 빠르게 눕혀 안진 유도 | 양성 시 <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 (이석 이탈)">BPPV</abbr>(이석증) 시사 |
+| **Head Impulse (<abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 (Halmagyi)">HIT</abbr>)** | 시선을 고정시킨 채 머리를 빠르게 회전 | 시선 고정 실패(Saccade 발생) 시 VOR 기능 저하 |
 | **Fukuda Stepping** | 눈을 감고 제자리에서 50~100보 보행 | 45도 이상 회전 시 해당 방향의 전정 기능 저하 가능성 |
-| **DVA (Dynamic Visual Acuity)** | 머리를 흔들며 시력판을 읽는 능력 평가 | 전정 기관의 시각적 안정화 능력(VOR) 분석 |
+| **<abbr class="med-abbr" title="Dynamic Visual Acuity · 동적시력 (VOR 기능 정량)">DVA</abbr> (Dynamic Visual Acuity)** | 머리를 흔들며 시력판을 읽는 능력 평가 | 전정 기관의 시각적 안정화 능력(VOR) 분석 |
 
 ---
 
@@ -108,7 +108,7 @@
 *   **Saccade (단조성 운동):** 새로운 타겟으로 눈을 빠르게 이동시키는 능력. 과소/과대 측정(Dysmertia)은 소뇌 및 전두엽 안구 운동 영역의 불균형을 반영합니다.
 *   **Smooth Pursuit (추적 운동):** 움직이는 타겟을 부드럽게 따라가는 능력. 끊어짐 현상(Saccadic intrusion)은 두정엽 및 소뇌 기능 저하와 관련됩니다.
 *   **NPC (눈 모음 근접점):** 정상 범위는 코끝에서 **5-6cm** 이내입니다. 뇌진탕(Concussion) 환자에게서 빈번하게 확장됩니다.
-*   **VOMS (Mucha 2014) 프로토콜:**
+*   **<abbr class="med-abbr" title="Vestibular/Ocular Motor Screening · 전정-안구운동 선별검사 (Mucha 2014)">VOMS</abbr> (Mucha 2014) 프로토콜:**
     *   **단계:** Smooth Pursuit → Saccades → Convergence → VOR (Horizontal/Vertical) → Visual Motion Sensitivity (VMS).
     *   **평가:** 각 항목 수행 후 두통, 어지럼증, 메스꺼움, 흐릿함 증상을 **0-10 척도**로 기록하여 증상 유발 여부를 정밀 분석합니다.
 

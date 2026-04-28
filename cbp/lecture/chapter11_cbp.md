@@ -1,4 +1,4 @@
-# Chapter 11. Chiropractic BioPhysics (CBP)
+# Chapter 11. Chiropractic BioPhysics (<abbr class="med-abbr" title="Chiropractic BioPhysics · 카이로프랙틱 바이오피직스 (자세·구조 교정)">CBP</abbr>)
 
 > **Donald D. Harrison 부자 · 수학·선형대수 기반 · Mirror Image® · Denneroll 3D 견인**
 
@@ -32,7 +32,7 @@
 
 ## 역사 — Donald·Deed Harrison 부자 {#역사}
 
-### Donald D. Harrison, DC, MSE, PhD (1952-2013)
+### Donald D. Harrison, <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>, MSE, PhD (1952-2013)
 
 - 기계공학 학위 후 카이로프랙틱 진입
 - 1980-90년대 Harrison Normal Spinal Model 발표
@@ -103,7 +103,7 @@ CBP의 상징적 도구. **환자가 집에서 사용 가능한** 저강도 지�
 
 CBP의 **3M (Mirror-image)** 접근:
 
-1. **Mirror-image Adjustments** — 표준 HVLA 또는 drop-table · mirror 방향
+1. **Mirror-image Adjustments** — 표준 <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 또는 drop-table · mirror 방향
 2. **Mirror-image Exercises** — 고유 mirror 자세 유지 훈련
 3. **Mirror-image Traction** — Denneroll 등 지속 견인
 
@@ -157,7 +157,7 @@ CBP의 **3M (Mirror-image)** 접근:
 ### Afferentation
 
 - Denneroll 지속 견인 → Ruffini·근방추 지속 stretch → 구심성 변화
-- Mirror-image 운동 → 고유수용감각 재학습 (CNS 가소성)
+- Mirror-image 운동 → 고유수용감각 재학습 (<abbr class="med-abbr" title="Central Nervous System · 중추신경계 (뇌 + 척수)">CNS</abbr> 가소성)
 - 반복 → 수개월 재교육
 
 ### Deafferentation 해소
@@ -198,7 +198,7 @@ CBP는 **neuroplasticity 기반 자세 재교육** — 매우 현대 재활의�
 - 가정 Denneroll 구입
 - 전체 비용 $3,000-8,000 USD 수준
 
-### 4. RCT 부족
+### 4. <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 부족
 
 - 대부분 case series · observational
 - Sham 대조 RCT 드묾

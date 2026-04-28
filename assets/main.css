@@ -1301,3 +1301,21 @@ footer {
 .chip.ready   { background: #e6f7ed; color: #1f7a3f; }
 .chip.partial { background: #fff7e0; color: #8a5a00; }
 .chip.empty   { background: #f8f8f9; color: #a8a8ad; }
+
+/* 의학 약어 학습 보조 — 호버 시 풀네임 툴팁 */
+abbr.med-abbr {
+  text-decoration: none;
+  border-bottom: 1.5px dotted #0071e3;
+  cursor: help;
+  font-weight: 600;
+  color: #0050a0;
+  padding-bottom: 1px;
+  white-space: nowrap;
+}
+abbr.med-abbr:hover {
+  background: #eff6ff;
+  border-bottom-color: #0050a0;
+  border-bottom-style: solid;
+}
+strong abbr.med-abbr { color: inherit; }
+.markdown-body abbr.med-abbr { color: #0050a0; }

@@ -1,4 +1,4 @@
-# Chiropractic BioPhysics® (CBP®) 기술: 척추 구조 재활 및 자세 교정 접근법 브리핑
+# Chiropractic BioPhysics® (<abbr class="med-abbr" title="Chiropractic BioPhysics · 카이로프랙틱 바이오피직스 (자세·구조 교정)">CBP</abbr>®) 기술: 척추 구조 재활 및 자세 교정 접근법 브리핑
 
 ## 1. 핵심 요약 (Executive Summary)
 
@@ -6,7 +6,7 @@
 
 CBP는 인체 자세의 회전(Rotations)과 병진(Translations)을 데카르트 좌표계(Cartesian coordinate system)를 통해 분석하며, 이를 방사선 평가 결과와 비교하여 진단한다. 핵심 치료 기전은 환자의 비정상적인 자세를 정확히 반대로 수행하는 **'거울 이미지(Mirror Image®)'** 원리에 기반한 교정 운동, 교정 견인(Traction), 그리고 추나 교정이다. 
 
-CBP 기술은 300편 이상의 피어 리뷰(Peer-reviewed) 논문과 다수의 무작위 대조군 연구(RCT)를 통해 통증 완화, 장애 감소 및 삶의 질 개선 효과가 입증된 증거 기반(Evidence-based) 접근법이다. 특히 임상 데이터에 따르면, 구조적 개선이 동반된 통증 완화는 치료 중단 1년 후에도 유지되는 반면, 일반적인 물리치료는 시간이 지남에 따라 통증이 재발하는 경향을 보인다.
+CBP 기술은 300편 이상의 피어 리뷰(Peer-reviewed) 논문과 다수의 무작위 대조군 연구(<abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr>)를 통해 통증 완화, 장애 감소 및 삶의 질 개선 효과가 입증된 증거 기반(Evidence-based) 접근법이다. 특히 임상 데이터에 따르면, 구조적 개선이 동반된 통증 완화는 치료 중단 1년 후에도 유지되는 반면, 일반적인 물리치료는 시간이 지남에 따라 통증이 재발하는 경향을 보인다.
 
 ---
 

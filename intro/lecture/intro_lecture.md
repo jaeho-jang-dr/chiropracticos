@@ -9,7 +9,7 @@
 ## 🎯 이 챕터의 학습 목표
 
 - **1.** 카이로프랙틱을 **현대 의학 용어**로 정의하고, 기계적 근골격 통증 치료 범주에 위치시킬 수 있다
-- **2.** 1895년 창립부터 2026년 EBM 기반 현재까지의 **세속화 과정**을 역사적으로 이해한다
+- **2.** 1895년 창립부터 2026년 <abbr class="med-abbr" title="Evidence-Based Medicine · 근거 기반 의학">EBM</abbr> 기반 현재까지의 **세속화 과정**을 역사적으로 이해한다
 - **3.** **창시자 16인의 기여**와 각 학파의 원천 사상·기여를 단문으로 식별한다
 - **4.** 본 강의의 **포함/제외 기준** (🟢 EBM-tier vs 🔴 vitalism)을 분명히 인지한다
 - **5.** 12 챕터 로드맵에서 **Ch 2 Functional Neurology가 근간**이고 Ch 3-12가 분기 기법임을 이해한다
@@ -23,7 +23,7 @@
 **Chiropractic** — *관절·근육·신경계 기능장애를 손기술 또는 기구로 자극하여, 기계적 근골격 기능을 회복시키는 의료 행위 범주.*
 
 대표 수기 5분류:
-1. **HVLA Manipulation** (High-Velocity Low-Amplitude) — 1.0–4.5 ms thrust, audible cavitation 동반 가능
+1. **<abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> Manipulation** (High-Velocity Low-Amplitude) — 1.0–4.5 ms thrust, audible cavitation 동반 가능
 2. **Mobilization** — 저속 반복 운동, audible release 없음
 3. **Instrument-Assisted Adjustment** — Activator (스프링 기구), Cox table 등
 4. **Flexion-Distraction** — Cox technique 등 척추 감압 기계
@@ -99,10 +99,10 @@
 
 - **1990s**: Manga Report (캐나다, 1993) — 요통 보존치료 비용효과성에서 카이로프랙틱 우위 보고
 - **1995**: 카이로프랙틱 100주년
-- **2000s**: Cochrane Reviews 시작 — 요통·경추통·두통에 대한 SMT 효과 평가 메타분석
+- **2000s**: Cochrane Reviews 시작 — 요통·경추통·두통에 대한 <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr> 효과 평가 메타분석
 - **2007**: Bronfort et al. *Effectiveness of Manual Therapies: The UK Evidence Report* — SMT 효과 분야별 grading
 - **2008**: Cassidy 사례-대조 연구 — 척추동맥 박리(VAD) 사후 카이로프랙틱 방문율과 일반의 방문율 차이 없음 (인과 관계 부정)
-- **2010s**: Cox/Activator 등 RCT 누적, 일부 NIH grant 수혜
+- **2010s**: Cox/Activator 등 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 누적, 일부 NIH grant 수혜
 - **2020s**: 한국 도수치료(2014 도입), Functional Neurology 활용 증가, 카이로프랙틱 면허 국제 표준화 논의
 
 본 강의는 이 **EBM 30년의 누적 데이터**를 토대로 한다.
@@ -125,7 +125,7 @@
 | 인물 | 생몰 | 핵심 기여 | 본 강의에서의 위치 |
 |------|------|-----------|-------------------|
 | **D.D. Palmer** | 1845–1913 | 1895 첫 척추 교정 · 카이로프랙틱 명명 | 역사적 시조 · 임상 주장은 비판적 |
-| **B.J. Palmer** | 1882–1961 | Palmer School Developer · HIO 가설 정립 | Toggle Recoil(Ch 5) — 비판적 재평가 |
+| **B.J. Palmer** | 1882–1961 | Palmer School Developer · <abbr class="med-abbr" title="Hole-In-One · B.J. Palmer 상부경추 단일 교정 이론 (Toggle Recoil)">HIO</abbr> 가설 정립 | Toggle Recoil(Ch 5) — 비판적 재평가 |
 
 ### 3.2 학파별 정립자
 
@@ -137,9 +137,9 @@
 | **Arlan W. Fuhr** | 1936– | Activator instrument 개발 · 1985 NIH grant 수혜 | Ch 7 |
 | **James M. Cox** | 1934– | Cox Flexion-Distraction · 척추 감압 표준화 | Ch 8 |
 | **Hugh B. Logan** | 1881–1944 | 천골 apex 저강도 교정 · Logan College 설립 | Ch 9 |
-| **Major B. DeJarnette** | 1899–1992 | SOT (Sacro-Occipital Technique) · 카테고리 I/II/III | Ch 10 |
-| **Donald D. Harrison** | 1944– | Chiropractic BioPhysics (CBP) · 수학적 척추 모델 | Ch 11 |
-| **George Goodheart** | 1918–2008 | Applied Kinesiology · 1964 MMT 연관 진단 도입 | Ch 12 |
+| **Major B. DeJarnette** | 1899–1992 | <abbr class="med-abbr" title="Sacro-Occipital Technique · 천골-후두 기법 (DeJarnette)">SOT</abbr> (Sacro-Occipital Technique) · 카테고리 I/II/III | Ch 10 |
+| **Donald D. Harrison** | 1944– | Chiropractic BioPhysics (<abbr class="med-abbr" title="Chiropractic BioPhysics · 카이로프랙틱 바이오피직스 (자세·구조 교정)">CBP</abbr>) · 수학적 척추 모델 | Ch 11 |
+| **George Goodheart** | 1918–2008 | Applied Kinesiology · 1964 <abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr> 연관 진단 도입 | Ch 12 |
 | **Frederick R. Carrick** | 1952– | Functional Neurology · Carrick Institute | Ch 2 |
 
 ### 3.3 인물별 1-2 문장 평가 (본 강의의 입장)
@@ -166,7 +166,7 @@
 
 **George Goodheart** — *MMT(Manual Muscle Testing)를 진단에 결부. 근골격계 적용은 일부 유효(🟠 Limited reliability), 그러나 muscle-organ-meridian 가설·알레르기 진단은 No evidence — 본 강의 Ch 12에서 비판적 검토.*
 
-**Frederick Carrick** — *카이로프랙틱 신경학을 임상 평가·재평가 사이클로 체계화. VOMS·VBI screen·cerebellar test 등 현대 신경과 진단 기법을 카이로프랙틱 context에 적용. 본 강의 Ch 2의 근간.*
+**Frederick Carrick** — *카이로프랙틱 신경학을 임상 평가·재평가 사이클로 체계화. <abbr class="med-abbr" title="Vestibular/Ocular Motor Screening · 전정-안구운동 선별검사 (Mucha 2014)">VOMS</abbr>·<abbr class="med-abbr" title="Vertebrobasilar Insufficiency · 척추기저동맥부전">VBI</abbr> screen·cerebellar test 등 현대 신경과 진단 기법을 카이로프랙틱 context에 적용. 본 강의 Ch 2의 근간.*
 
 ### 3.4 본 강의가 다루지 않는 인물
 
@@ -200,7 +200,7 @@
 | **아동 발달·자폐·ADHD 치료 주장** | No reliable evidence + 윤리적 문제 |
 | **Cranial bones rhythmic motion 진단** | 측정 불가능, 검사자 간 일치도 없음 |
 | **Visceral manipulation 장기별 치료** | 해부학적 경로 미증명 |
-| **AK MMT로 알레르기·영양 진단** | 위약 통제 시 무작위 결과 |
+| **<abbr class="med-abbr" title="Applied Kinesiology · 응용 운동학 (George Goodheart, 1964)">AK</abbr> MMT로 알레르기·영양 진단** | 위약 통제 시 무작위 결과 |
 | **추상 에너지 개념** (Qi, prana 등) | 측정·반증 불가능 |
 
 ### 4.3 🚫 본 강의의 명시적 추가 금지 사항
@@ -251,7 +251,7 @@
 |----|------|-----------|-----------|
 | 1 | 서설 (현재) | 역사·철학·편집 원칙·로드맵 | Cochrane, WHO |
 | **⭐ 2** | **Functional Neurology** | **Assessment · Aff/Def/Eff** | Carrick Institute |
-| 3 | Diversified HVLA | 미국 DC 95.9% 사용 · 표준 HVLA | Bergmann, States Manual |
+| 3 | Diversified HVLA | 미국 <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr> 95.9% 사용 · 표준 HVLA | Bergmann, States Manual |
 | 4 | Gonstead | 5요소 분석 · X-ray listing | Herbst, Gonstead Clinical |
 | 5 | Toggle Recoil (HIO) | 상부경추 특이 교정 · 비판적 재평가 | Cassidy 2008 |
 | 6 | Thompson | 드롭 테이블 · Derifield leg check | Thompson Vol 1 |
@@ -291,7 +291,7 @@
 | 단계 | 활용 |
 |------|------|
 | **초진** | 환자 평가 시 Ch 2 Functional Neurology 기반 신경학 검사 추가 (5-10분 내) |
-| **영상** | X-ray·MRI 판독 시 Ch 4 Gonstead의 listing·level disc 추론 보조 |
+| **영상** | X-ray·<abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr> 판독 시 Ch 4 Gonstead의 listing·level disc 추론 보조 |
 | **보존 치료** | 도수치료 처방 시 Ch 3 Diversified · Ch 8 Cox의 술기 권고 |
 | **수술 결정** | Ch 8 Cox로 절대 금기 확인(cauda equina 등), 의뢰 정확화 |
 | **수술 후** | Ch 7 Activator·Ch 9 Logan으로 저강도 재활 단계 |
@@ -336,7 +336,7 @@
 3. Part III — 기계수용기 4유형 (관절·근육·피부·시각·전정)
 4. Part IV — Assessment 5단계 계층
 5. Part V — 치료 사이클 루프 (평가→교정→재평가)
-6. **Part VI — 재평가 MCID** (VOMS ≥2, DHI 18, PCSS 26.5, RPQ 2/8)
+6. **Part VI — 재평가 <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이">MCID</abbr>** (VOMS ≥2, <abbr class="med-abbr" title="Dizziness Handicap Inventory · 어지럼장애지수 (0-100, ≥18 변화 = MCID)">DHI</abbr> 18, <abbr class="med-abbr" title="Post-Concussion Symptom Scale · 뇌진탕 후 증상 척도">PCSS</abbr> 26.5, <abbr class="med-abbr" title="Rivermead Post-Concussion Symptoms Questionnaire">RPQ</abbr> 2/8)
 7. Part VII — 근거 피라미드 · 비판 시각
 
 ### 7.2 Ch 2 학습이 끝나면

@@ -1,4 +1,4 @@
-# Chiropractic BioPhysics® (CBP®) 기술: 척추 구조 재활 및 자세 교정 브리핑 보고서
+# Chiropractic BioPhysics® (<abbr class="med-abbr" title="Chiropractic BioPhysics · 카이로프랙틱 바이오피직스 (자세·구조 교정)">CBP</abbr>®) 기술: 척추 구조 재활 및 자세 교정 브리핑 보고서
 
 ## 1. 개요 (Executive Summary)
 
@@ -9,7 +9,7 @@ CBP®는 도널드 D. 해리슨(Donald D. Harrison) 박사에 의해 창시되�
 *   **수학적 기초:** 데카르트 좌표계를 활용하여 머리, 흉곽, 골반의 위치를 3차원적으로 분석하고 교정합니다.
 *   **해리슨 정상 척추 모델:** 타원형 곡선 모델을 골드 스탠더드로 삼아 치료 목표를 설정합니다.
 *   **미러 이미지(Mirror Image®) 원리:** 환자의 비정상적인 자세와 정반대되는 자세를 통해 척추를 교정하는 고유한 접근법입니다.
-*   **임상적 입증:** 다수의 무작위 대조 시험(RCT)과 비무작위 대조 시험(nRCT)을 통해 통증 감소, 장애 개선 및 삶의 질 향상이 구조적 교정과 직접적으로 연관되어 있음을 입증했습니다.
+*   **임상적 입증:** 다수의 무작위 대조 시험(<abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr>)과 비무작위 대조 시험(nRCT)을 통해 통증 감소, 장애 개선 및 삶의 질 향상이 구조적 교정과 직접적으로 연관되어 있음을 입증했습니다.
 
 ## 2. 핵심 테마 심층 분석
 

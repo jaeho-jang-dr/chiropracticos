@@ -4,7 +4,7 @@
 > 공학적 배경의 척추 교정 시스템 — 1923년 Clarence S. Gonstead에 의해 정립
 >
 > **대상**: 한국 정형외과·재활의학과 의사 · 도수치료 훈련 물리치료사 · 카이로프랙틱 상급 학생
-> **편집 원칙**: 근거 기반 의학(EBM). 5 Components 중 과학적으로 검증 가능한 부분은 🟢 채택, Nervoscope 등 과학적 재현성이 논쟁적인 부분은 비판적으로 명시. Vitalism·전신질환 인과론 제외.
+> **편집 원칙**: 근거 기반 의학(<abbr class="med-abbr" title="Evidence-Based Medicine · 근거 기반 의학">EBM</abbr>). 5 Components 중 과학적으로 검증 가능한 부분은 🟢 채택, Nervoscope 등 과학적 재현성이 논쟁적인 부분은 비판적으로 명시. Vitalism·전신질환 인과론 제외.
 
 ---
 
@@ -27,7 +27,7 @@
 
 ## 서론 — Gonstead 기법의 위상
 
-**Gonstead Technique**는 미국 DC의 약 58.5%가 사용하는 (ACA 통계) 특이적(specific) 교정 시스템이다. Palmer Package 4대 테크닉 중 **진단 정밀도**에서 가장 체계화된 기법으로 인정받는다.
+**Gonstead Technique**는 미국 <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>의 약 58.5%가 사용하는 (ACA 통계) 특이적(specific) 교정 시스템이다. Palmer Package 4대 테크닉 중 **진단 정밀도**에서 가장 체계화된 기법으로 인정받는다.
 
 ### 핵심 특징
 
@@ -36,7 +36,7 @@
 | 분석 깊이 | 5 Components 일치 요구 | Motion Palpation 중심 |
 | 영상 의존 | **필수** (14×36 전장 X-ray) | 필요 시 사용 |
 | 교정 특이성 | 단일 분절 정확 타겟 | 다분절 가능 |
-| 추력 | HVLA | HVLA |
+| 추력 | <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> | HVLA |
 | 학습 곡선 | 🟠 가파름 | 🟡 중간 |
 
 ### 본 강의의 편집 입장
@@ -153,7 +153,7 @@ Gonstead의 **핵심 방법론** — 교정 전 5요소 모두를 평가하고, 
 
 - Gonstead Chiropractic Technique (PMC2646953) — GCT에 대한 peer-reviewed 리뷰 존재
 - 5 Components 일치 요구가 임상 결정의 **신뢰성(reliability)**을 높인다는 전문가 합의
-- 단, RCT 기반 효과 비교는 제한적
+- 단, <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 기반 효과 비교는 제한적
 
 ### 🔴 X-ray 의존의 문제
 
@@ -162,7 +162,7 @@ Gonstead의 **핵심 방법론** — 교정 전 5요소 모두를 평가하고, 
 - **임산부 금기**
 - **반복 촬영 위험** — 치료 전후 반복이면 누적 선량 증가
 - ACR 가이드라인 기준 — 외상·Red Flag·만성 6주+ 시에만 X-ray 정당화 (Gonstead의 "모든 환자 X-ray" 원칙과 충돌)
-- **대안**: EOS 저선량 시스템·디지털 플레인 필름·MRI (필요 시)
+- **대안**: EOS 저선량 시스템·디지털 플레인 필름·<abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr> (필요 시)
 
 ---
 
@@ -174,8 +174,8 @@ Gonstead listing은 변위의 **3차원 방향**을 간결하게 표기.
 
 - **PL** (Posterior-Left) — 극돌기가 후방 좌측으로 이동
 - **PR** (Posterior-Right) — 후방 우측
-- **PLS** (Posterior-Left-Superior) — 후방 좌측 상방
-- **PRI** (Posterior-Right-Inferior) — 후방 우측 하방
+- **<abbr class="med-abbr" title="Posterior-Left-Superior · Gonstead listing 후-좌-상">PLS</abbr>** (Posterior-Left-Superior) — 후방 좌측 상방
+- **<abbr class="med-abbr" title="Posterior-Right-Inferior · Gonstead listing 후-우-하">PRI</abbr>** (Posterior-Right-Inferior) — 후방 우측 하방
 
 ### 천장관절 Listing
 
@@ -212,14 +212,14 @@ Gonstead 전용 테이블. 수직(standing) 위치에서 수평(prone)으로 빠
 
 요추·천장관절 교정의 표준 자세:
 - 환자 측와위 · 아래 다리 신전 · 위 다리 굴곡
-- 접촉점: mamillary process (요추) 또는 PSIS (천장관절)
+- 접촉점: mamillary process (요추) 또는 <abbr class="med-abbr" title="Posterior Superior Iliac Spine · 후상장골극">PSIS</abbr> (천장관절)
 - 추력 벡터: listing에 따라 결정
 
 ---
 
 ## Afferentation / Deafferentation / Efferentation 해석
 
-**Chapter 2 FN 프레임**으로 Gonstead를 재해석:
+**Chapter 2 <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> 프레임**으로 Gonstead를 재해석:
 
 ### Gonstead 교정의 Afferentation
 
@@ -249,7 +249,7 @@ Gonstead의 **"특이 분절 targeting"** 철학은 Chapter 2의 Aff/Def/Eff 프
 
 | 적응증 | 근거 수준 | 비고 |
 |--------|----------|------|
-| 만성·아급성 요통 | 🟡 Moderate | Cochrane 요통 SMT (기법 불특정) |
+| 만성·아급성 요통 | 🟡 Moderate | Cochrane 요통 <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr> (기법 불특정) |
 | 경추통 | 🟡 Moderate | MOB와 동등 (Gross 2015) |
 | 요추 디스크 탈출 + 신경근증 | 🟡 Moderate (Gonstead 중심 증례 다수) | GCSS Case Studies |
 | 천장관절 기능장애 | 🟡 Moderate | |
@@ -271,7 +271,7 @@ Gonstead의 **"특이 분절 targeting"** 철학은 Chapter 2의 Aff/Def/Eff 프
 - 마미증후군 · 척수 압박 징후
 - 척추 감염·종양·급성 골절
 - 항응고제 치료 중 (교정 시 출혈 위험)
-- 환축관절 불안정성 (Down syndrome·RA) — 경추 교정 시
+- 환축관절 불안정성 (Down syndrome·<abbr class="med-abbr" title="Rheumatoid Arthritis · 류마티스 관절염">RA</abbr>) — 경추 교정 시
 - 임산부 X-ray 촬영 금지 (Gonstead 전형적 워크플로우 변경 필요)
 
 ---
@@ -377,7 +377,7 @@ Functional Neurology 리뷰이지만, Gonstead 포함 모든 카이로프랙틱 
 ### 영상 의학
 
 10. American College of Radiology. *ACR Appropriateness Criteria — Low Back Pain, Neck Pain*. 2020 update.
-11. Bhattacharyya N et al. Clinical Practice Guideline — BPPV (Otolaryngol HNS 2017). (전정·경추 맥락)
+11. Bhattacharyya N et al. Clinical Practice Guideline — <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 (이석 이탈)">BPPV</abbr> (Otolaryngol HNS 2017). (전정·경추 맥락)
 
 ### 조직·교육
 

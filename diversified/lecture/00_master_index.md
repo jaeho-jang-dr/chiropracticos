@@ -1,4 +1,4 @@
-# Diversified HVLA Spinal Manipulation — 종합 강의록 (Master Index)
+# Diversified <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> Spinal Manipulation — 종합 강의록 (Master Index)
 
 > **한국 정형외과·재활의학과 의사 및 도수치료 훈련 물리치료사 대상**
 > 4주 × 1시간 강의 × Evidence-Based 주해판
@@ -63,7 +63,7 @@ Diversified의 창시자 D.D. Palmer의 초기 철학(1895-1910s)은 vitalism과
 - 제6부. Diversified vs OMT·MOB·MET 비교
 - 제7부. 근거 수준 개요 (Cochrane 요약)
 - 제8부. 임상 프레이밍 — 적응/금기/다학제 협진
-- 요약 · 자기평가 퀴즈 10문항 · 참고문헌 · DC↔MD/PT 용어 매핑
+- 요약 · 자기평가 퀴즈 10문항 · 참고문헌 · <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>↔MD/PT 용어 매핑
 
 ### [Week 2: 분석과 진단](./week2_analysis_diagnosis.md)
 > 어디를 · 왜 · 어떻게 교정할지 결정하는 임상 의사결정

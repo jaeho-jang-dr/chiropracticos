@@ -1,4 +1,4 @@
-# 천추 후두골 기술(Sacro Occipital Technique, SOT) 및 임상 반사 체계에 관한 종합 브리핑 보고서
+# 천추 후두골 기술(Sacro Occipital Technique, <abbr class="med-abbr" title="Sacro-Occipital Technique · 천골-후두 기법 (DeJarnette)">SOT</abbr>) 및 임상 반사 체계에 관한 종합 브리핑 보고서
 
 ## 1. 개요 (Executive Summary)
 
@@ -12,7 +12,7 @@ SOT는 신체의 불균형 상태를 세 가지 단계로 구분하여 맞춤형
 
 | 범주 | 주요 초점 및 상태 | 치료 목표 및 특징 |
 | :--- | :--- | :--- |
-| **Category 1** | 자율신경계, 두개골, 내장기, 뇌척수액(CSF) 흐름 | 자율신경계와 중추신경계의 균형 회복. CMRT(내장기 반사 기술) 및 두개골 조정법 활용. |
+| **Category 1** | 자율신경계, 두개골, 내장기, 뇌척수액(CSF) 흐름 | 자율신경계와 중추신경계의 균형 회복. <abbr class="med-abbr" title="Chiropractic Manipulative Reflex Technique · 카이로프랙틱 수기 반사 기법">CMRT</abbr>(내장기 반사 기술) 및 두개골 조정법 활용. |
 | **Category 2** | 체중 부하 구조 시스템, 천장관절(SI Joint)의 기능적 안정성 | 신경계의 고유 수용기(Proprioception) 반응 복구 및 구조적 안정화. '암-포사(Arm-Fossa) 테스트'가 핵심 진단 도구. |
 | **Category 3** | 급성 통증, 디스크 탈출증, 좌골신경통 | 골반 블록을 이용한 통증 완화 및 조직 기능 회복. 가장 부드러운 접근 방식이 요구되는 단계. |
 
@@ -55,7 +55,7 @@ SOT는 신체의 불균형 상태를 세 가지 단계로 구분하여 맞춤형
 2.  **장요근 이완 (Psoas Technique):** 환자를 바로 눕힌 상태에서 '오버헤드 암 체크(Overhead arm check)'를 통해 단축된 쪽을 파악하고 부드럽게 이완시킨다.
 3.  **다리 길이 측정:** 엎드린 자세에서 30초간 발목 견인을 실시한 후 내측 복사뼈 위치를 비교하여 짧은 다리 쪽을 판별한다.
 4.  **골반 블록 배치 (Pelvic Blocking):**
-    *   긴 다리 쪽: ASIS(상전장골극) 아래에 배치.
+    *   긴 다리 쪽: <abbr class="med-abbr" title="Anterior Superior Iliac Spine · 전상장골극">ASIS</abbr>(상전장골극) 아래에 배치.
     *   짧은 다리 쪽: 비구(Acetabulum) 아래에 배치.
     *   환자의 반응에 따라 블록의 각도를 10도씩 조정하며 최적의 통증 완화 지점을 찾는다.
 5.  **이완 및 모니터링:** 최적의 위치에서 15~60분간 휴식을 취하며 경추 지표의 개선 여부를 확인한다.

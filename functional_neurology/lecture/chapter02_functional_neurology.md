@@ -4,7 +4,7 @@
 > Assessment를 중심으로 한 신경학적 임상 사이클 — Afferentation · Central Processing · Efferentation
 >
 > **대상**: 한국 정형외과·재활의학과 의사, 도수치료 훈련 물리치료사, 카이로프랙틱 상급 학생
-> **편집 원칙**: 근거 기반 의학(EBM) 기준 — 과학적·신경생리학적으로 검증된 내용만. Vitalism·생기론·측정 불가능한 추상 개념 전면 제외. Carrick Functional Neurology의 주장 중 근거 수준이 낮은 부분은 비판적으로 명시.
+> **편집 원칙**: 근거 기반 의학(<abbr class="med-abbr" title="Evidence-Based Medicine · 근거 기반 의학">EBM</abbr>) 기준 — 과학적·신경생리학적으로 검증된 내용만. Vitalism·생기론·측정 불가능한 추상 개념 전면 제외. Carrick Functional Neurology의 주장 중 근거 수준이 낮은 부분은 비판적으로 명시.
 
 ---
 
@@ -123,7 +123,7 @@
 
 ## 1.1 정의와 패러다임
 
-**Chiropractic Functional Neurology (CFN)**, 또는 이를 포함하는 보다 넓은 범주인 **Functional Neurology (FN)**는, 전통적인 구조 중심(병변 중심) 신경학과 달리, **신경계의 기능적 상태를 임상적으로 평가하고, 감각 자극(stimulation)·운동 훈련(motor training)·자세 조절(postural adjustment) 등을 통해 이를 **modulate(조절)**하는 임상 접근이다.
+**Chiropractic Functional Neurology (CFN)**, 또는 이를 포함하는 보다 넓은 범주인 **Functional Neurology (<abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr>)**는, 전통적인 구조 중심(병변 중심) 신경학과 달리, **신경계의 기능적 상태를 임상적으로 평가하고, 감각 자극(stimulation)·운동 훈련(motor training)·자세 조절(postural adjustment) 등을 통해 이를 **modulate(조절)**하는 임상 접근이다.
 
 **본 강의의 조작적 정의**(근거 기반 축소 정의):
 
@@ -133,7 +133,7 @@
 
 ### 왜 "Chiropractic" Functional Neurology인가
 
-카이로프랙틱 분야에서 이 프레임을 본격 발전시킨 사람이 **Frederick R. Carrick DC, PhD**이고, 그가 1979년 설립한 **Carrick Institute**를 중심으로 1980년대부터 **Diplomate of the American Chiropractic Neurology Board (DACNB)** 자격 체계가 구축되었다. 오늘날 "Chiropractic Functional Neurology"라 할 때는 이 카리큘럼·임상 전통을 가리킨다.
+카이로프랙틱 분야에서 이 프레임을 본격 발전시킨 사람이 **Frederick R. Carrick <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>, PhD**이고, 그가 1979년 설립한 **Carrick Institute**를 중심으로 1980년대부터 **Diplomate of the American Chiropractic Neurology Board (<abbr class="med-abbr" title="Diplomate of American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 전문의">DACNB</abbr>)** 자격 체계가 구축되었다. 오늘날 "Chiropractic Functional Neurology"라 할 때는 이 카리큘럼·임상 전통을 가리킨다.
 
 그러나 본 강의는 카이로프랙틱 내부 학파에 국한되지 않고, **신경생리학·재활의학·물리치료·신경외과** 등 여러 분야의 근거를 통합적으로 활용한다.
 
@@ -143,7 +143,7 @@
 |------|------|------|
 | 1970s 후반 | Frederick Carrick이 임상 신경학 기반 교육 시작 | CFN의 태동 |
 | 1979 | Carrick Institute 설립 (Cape Canaveral, Florida) | 전문 교육기관 출범 |
-| 1980s | ACNB (American Chiropractic Neurology Board) 설립 | DACNB 자격 인증 체계화 |
+| 1980s | <abbr class="med-abbr" title="American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 위원회">ACNB</abbr> (American Chiropractic Neurology Board) 설립 | DACNB 자격 인증 체계화 |
 | 1990s | 전정 재활·소뇌 재활 프로토콜 확장 | 기능 평가 방법론 정립 |
 | 2000s | 뇌진탕 관리 프로토콜 개발 | NFL·NHL 등 프로 스포츠와의 협업 |
 | 2010s | Heidi Haavik 등이 척추 수기의 중추 신경 효과를 다수 PMC 논문으로 발표 | 기초 과학적 근거 축적 |
@@ -157,7 +157,7 @@
 | 항목 | 임상 신경학 (Mainstream) | 기능 신경학 (FN) |
 |------|--------------------------|-----------------|
 | **초점** | 구조적 병변 진단 (종양·경색·탈수초·염증) | 기능적 상태 평가와 조절 |
-| **주요 도구** | MRI · CT · EMG · 혈액·뇌척수액 검사 | 자세·안구운동·소뇌·전정 기능 검사 |
+| **주요 도구** | <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr> · CT · <abbr class="med-abbr" title="Electromyography · 근전도 검사">EMG</abbr> · 혈액·뇌척수액 검사 | 자세·안구운동·소뇌·전정 기능 검사 |
 | **병변 발견 시** | 해당 병변 중심 치료 (수술·약물) | 여전히 기능적 평가와 재활 접근 강조 |
 | **치료 수단** | 약물 · 수술 · 재활 의뢰 | 수기·운동·감각 자극·재활 |
 | **근거 수준** | 🟢 Strong (주요 진단·치료에서) | 🟡-🟠 중간~제한적 (중재별 편차 큼) |
@@ -174,8 +174,8 @@ FN 내부 주장들의 근거 수준은 크게 차이가 난다:
 |------|----------|------|
 | 기계수용기·근방추의 신경생리학 | 🟢 Strong | Sherrington 이래 확립된 기초 생리 |
 | 척추 수기가 신경생리학적 효과를 낸다는 사실 | 🟡 Moderate | Pickar(2002), Haavik(2011+) 등 다수 연구 |
-| VOR·전정 재활이 특정 어지럼증에 효과 | 🟢 Strong | Cochrane 전정재활 SR |
-| 뇌진탕 후 vestibular/oculomotor 재활 | 🟡 Moderate | 증례·소규모 RCT 축적 |
+| <abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr>·전정 재활이 특정 어지럼증에 효과 | 🟢 Strong | Cochrane 전정재활 SR |
+| 뇌진탕 후 vestibular/oculomotor 재활 | 🟡 Moderate | 증례·소규모 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 축적 |
 | 소뇌 자극으로 전신 기능 전반을 개선한다는 광의 주장 | 🟠 Limited | 개별 증례 중심 |
 | 단일 수기 교정으로 "뇌 기능을 재조정한다"는 광의 주장 | 🔴 No reliable evidence | 과장 주장 |
 | 특정 자극으로 자폐·ADHD·학습장애를 치료한다는 주장 | 🔴 No reliable evidence | 부분 과학적 근거 부재 |
@@ -198,7 +198,7 @@ FN 내부 주장들의 근거 수준은 크게 차이가 난다:
 - Vitalism·Innate Intelligence와 연결되는 설명
 - 두개골 리듬·내장 기능장애 등 측정 불가 개념
 - 측정 방법이 재현 불가능하거나 주관적인 평가 도구
-- Applied Kinesiology의 근력검사 기반 진단 (🔴 근거 부족; 본 강의에서는 AK는 Chapter 12에서 별도로 비판적으로 다룸)
+- Applied Kinesiology의 근력검사 기반 진단 (🔴 근거 부족; 본 강의에서는 <abbr class="med-abbr" title="Applied Kinesiology · 응용 운동학 (George Goodheart, 1964)">AK</abbr>는 Chapter 12에서 별도로 비판적으로 다룸)
 
 이 입장은 **학생·임상 동료·환자에게 설명할 때도 일관**되어야 한다. 과장이 필요하지 않다. 검증된 부분만으로도 FN은 임상에 **확실히 유용**하다.
 
@@ -206,7 +206,7 @@ FN 내부 주장들의 근거 수준은 크게 차이가 난다:
 
 # Part II. 신경계 기초 — 임상 응용을 위한 재정리
 
-## 2.1 중추신경계(CNS)와 말초신경계(PNS)의 기능 단위
+## 2.1 중추신경계(<abbr class="med-abbr" title="Central Nervous System · 중추신경계 (뇌 + 척수)">CNS</abbr>)와 말초신경계(<abbr class="med-abbr" title="Peripheral Nervous System · 말초신경계 (뇌·척수 외 모든 신경)">PNS</abbr>)의 기능 단위
 
 ### 해부학적 구분
 
@@ -276,7 +276,7 @@ FN 일부 학파는 "반구 불균형(hemisphericity)" 개념을 내세워 치�
 | 중뇌(Midbrain) | 동공 반사·상구·하구 | Light reflex, saccades |
 | 뇌교(Pons) | 수면·호흡·안면신경 | 안면 대칭, 저작, VOR 일부 |
 | 연수(Medulla) | 호흡·혈압·연하·구토 | 연하·blood pressure orthostatic |
-| 망상체(RAS) | 각성 조절 | 의식 수준·주의력 |
+| 망상체(<abbr class="med-abbr" title="Reticular Activating System · 망상활성계">RAS</abbr>) | 각성 조절 | 의식 수준·주의력 |
 
 **RAS(Reticular Activating System)의 FN 의의**: 척추 수기나 신경 자극이 RAS를 통해 전반적 각성·자율 기능을 잠시 조절한다는 가설. Pickar(2002) 등 기초 근거는 있으나, 임상적 의미는 과장되지 않도록 주의.
 
@@ -324,7 +324,7 @@ FN 일부 학파는 "반구 불균형(hemisphericity)" 개념을 내세워 치�
 ### 구조
 
 - **교감신경(Sympathetic)**: T1-L2 측각 기원, 전반적 각성·fight-or-flight
-- **부교감신경(Parasympathetic)**: 뇌간(CN III, VII, IX, X) + 천수(S2-S4), 휴식·소화
+- **부교감신경(Parasympathetic)**: 뇌간(<abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr>, VII, IX, X) + 천수(S2-S4), 휴식·소화
 
 ### FN 관점
 
@@ -406,7 +406,7 @@ FN 재활 프로토콜(안구 운동 훈련·전정 habituation·고유수용 �
 | III | Golgi 인대 | 인대 | 고역치 | 관절 끝범위·인대 장력 |
 | IV | 자유신경종말 | 전조직 분포 | 다양 | 통각·염증 감지 |
 
-**임상 해석**: 관절에 **HVLA 추력(thrust)**이 가해지면 주로 Type I·II·III가 활성화되며, 이 입력이 척수·소뇌·피질로 전달되어 근긴장·통증·자세 조절을 즉시 변화시킬 수 있다.
+**임상 해석**: 관절에 **<abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 추력(thrust)**이 가해지면 주로 Type I·II·III가 활성화되며, 이 입력이 척수·소뇌·피질로 전달되어 근긴장·통증·자세 조절을 즉시 변화시킬 수 있다.
 
 > **Wyke BD.** Articular neurology — a review. *Physiotherapy* 1972;58(3):94-99.
 
@@ -518,7 +518,7 @@ Deafferentation이 지속되면:
 
 ### 3.4.3 중추 하행 조절 (Descending Modulation)
 
-뇌간의 **중뇌 수도주위 회백질(PAG)**, **청반(Locus Coeruleus)**, **Rostral Ventromedial Medulla(RVM)**에서 척수 후각으로 내려가는 **하행 통증 조절 경로**는 내인성 opioid·serotonin·noradrenaline을 통해 통증을 억제한다.
+뇌간의 **중뇌 수도주위 회백질(<abbr class="med-abbr" title="Periaqueductal Gray · 수도주위회백질 (내인성 통증 조절)">PAG</abbr>)**, **청반(Locus Coeruleus)**, **Rostral Ventromedial Medulla(<abbr class="med-abbr" title="Rostral Ventromedial Medulla · 입쪽 배내측 연수 (하행 통증 억제)">RVM</abbr>)**에서 척수 후각으로 내려가는 **하행 통증 조절 경로**는 내인성 opioid·serotonin·noradrenaline을 통해 통증을 억제한다.
 
 이 경로가 FN 개입(운동·자세 훈련·자극)에 의해 활성화될 수 있다는 증거가 일부 축적되고 있다.
 
@@ -602,7 +602,7 @@ Deafferentation이 지속되면:
 | **Provocation / Palliation** | 무엇이 악화/완화? |
 | **Quality** | 통증·어지럼의 성격 (둔한·예리한·회전성·부유성) |
 | **Radiation** | 방사 유무·경로 |
-| **Severity** | VAS 0-10, NPRS |
+| **Severity** | <abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도">VAS</abbr> 0-10, <abbr class="med-abbr" title="Numeric Pain Rating Scale · 숫자통증등급 (0-10)">NPRS</abbr> |
 | **Timing** | 빈도·주기·지속시간 |
 
 ### FN 특화 문진 — 반드시 추가
@@ -678,7 +678,7 @@ Deafferentation이 지속되면:
 
 🔴 병적 반사 양성 = **신경과 응급 의뢰 대상** (수기 전 반드시 확인)
 
-### 4.5.3 근력(MMT) · 감각 · 협응
+### 4.5.3 근력(<abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr>) · 감각 · 협응
 
 - **MMT 0-5** (Medical Research Council scale)
 - **감각**: 경증 촉각·바늘·진동·위치감각 분절별
@@ -702,12 +702,12 @@ Deafferentation이 지속되면:
 
 | 검사 | 목적 | 양성 소견 |
 |------|------|----------|
-| **Dix-Hallpike** | 후반고리관 BPPV | 회전성 어지럼·안진 |
+| **Dix-Hallpike** | 후반고리관 <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 (이석 이탈)">BPPV</abbr> | 회전성 어지럼·안진 |
 | **Supine Roll Test** | 수평반고리관 BPPV | |
-| **Head Impulse Test (HIT)** | 전정-안구반사 이상 | 짧은 catch-up saccade |
+| **Head Impulse Test (<abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 (Halmagyi)">HIT</abbr>)** | 전정-안구반사 이상 | 짧은 catch-up saccade |
 | **Head Shake Test** | 전정 비대칭 | 안진 유발 |
 | **Fukuda Stepping Test** | 전정척수 기능 | 45° 이상 회전 |
-| **Dynamic Visual Acuity (DVA)** | VOR 기능 | 머리 움직임 시 시력 저하 > 3 라인 |
+| **Dynamic Visual Acuity (<abbr class="med-abbr" title="Dynamic Visual Acuity · 동적시력 (VOR 기능 정량)">DVA</abbr>)** | VOR 기능 | 머리 움직임 시 시력 저하 > 3 라인 |
 
 > **Kim HJ, Lee JO.** Approach to vestibular disease: rethinking of history, examination, and bedside test. *Res Vestib Sci* 2020;19:4-10.
 
@@ -855,8 +855,8 @@ Assessment에서 **저하된 입력·중추 처리 결함**을 확인했다면, 
 - **VAS/NPRS** (통증)
 - **Oswestry Disability Index** (요통)
 - **Neck Disability Index** (경추)
-- **DHI (Dizziness Handicap Inventory)**
-- **PCSS (Post-Concussion Symptom Scale)**
+- **<abbr class="med-abbr" title="Dizziness Handicap Inventory · 어지럼장애지수 (0-100, ≥18 변화 = MCID)">DHI</abbr> (Dizziness Handicap Inventory)**
+- **<abbr class="med-abbr" title="Post-Concussion Symptom Scale · 뇌진탕 후 증상 척도">PCSS</abbr> (Post-Concussion Symptom Scale)**
 - **SF-36 / EQ-5D** (삶의 질)
 
 ## 6.3 치료 반응의 해석
@@ -880,7 +880,7 @@ Assessment에서 **저하된 입력·중추 처리 결함**을 확인했다면, 
 ## 7.1 뇌진탕·외상성 뇌손상 후유증 (Post-Concussion Syndrome)
 
 - VOR·saccade·smooth pursuit 평가
-- VOMS (Vestibular/Ocular Motor Screening) 활용
+- <abbr class="med-abbr" title="Vestibular/Ocular Motor Screening · 전정-안구운동 선별검사 (Mucha 2014)">VOMS</abbr> (Vestibular/Ocular Motor Screening) 활용
 - Vestibular/oculomotor rehabilitation
 - 🟡 Moderate evidence
 
@@ -915,10 +915,10 @@ Assessment에서 **저하된 입력·중추 처리 결함**을 확인했다면, 
 
 | 적응증 | 근거 수준 | 대표 인용 |
 |--------|----------|----------|
-| BPPV canalith repositioning | 🟢 Strong | Bhattacharyya 2017 CPG |
+| BPPV canalith repositioning | 🟢 Strong | Bhattacharyya 2017 <abbr class="med-abbr" title="Clinical Practice Guideline · 임상진료지침">CPG</abbr> |
 | Vestibular rehab (unilateral periph) | 🟢 Strong | Hillier Cochrane 2015 |
 | Concussion vestib/ocular rehab | 🟡 Moderate | Schneider 2014 RCT |
-| Cervicogenic headache SMT | 🟡 Moderate | Bryans JMPT 2011 |
+| Cervicogenic headache <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr> | 🟡 Moderate | Bryans JMPT 2011 |
 | 중추 감작 통증 교육+운동 | 🟡 Moderate | Moseley 2015 |
 | 만성 요통 SMT | 🟡 Moderate | Rubinstein Cochrane 2013 |
 | "뇌 자극으로 자폐 호전" | 🔴 No evidence | — |
@@ -945,7 +945,7 @@ CFN의 많은 임상 주장은 **기초 신경생리학적 가능성**은 있으
 
 | 과장 주장 (🔴) | 근거 있는 주장 (🟢·🟡) |
 |---------------|---------------------|
-| 단일 교정으로 전신 질환 치료 | 관절 수기가 국소 통증·ROM 단기 개선 |
+| 단일 교정으로 전신 질환 치료 | 관절 수기가 국소 통증·<abbr class="med-abbr" title="Range of Motion · 관절가동범위">ROM</abbr> 단기 개선 |
 | 뇌 자극으로 자폐·ADHD 치료 | 전정 재활이 특정 어지럼증 개선 |
 | 눈 운동 훈련으로 모든 학습장애 해결 | 뇌진탕 후 VOR 훈련이 일부 증상 개선 |
 | 반구 불균형이 대부분 질환의 원인 | 소뇌·전정 기능 저하가 일부 증상에 기여 |
@@ -1029,7 +1029,7 @@ CFN의 많은 임상 주장은 **기초 신경생리학적 가능성**은 있으
 2. Bhattacharyya N, Gubbels SP, Schwartz SR, et al. Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update). *Otolaryngol Head Neck Surg* 2017;156(3_suppl):S1-S47.
 3. Schmahmann JD. The cerebellar cognitive affective syndrome. *Brain* 1998;121:561-579.
 4. Leigh RJ, Zee DS. **The Neurology of Eye Movements.** 5th ed. Oxford University Press, 2015.
-5. Herdman SJ, Clendaniel RA. **Vestibular Rehabilitation.** 4th ed. FA Davis, 2014.
+5. Herdman SJ, Clendaniel <abbr class="med-abbr" title="Rheumatoid Arthritis · 류마티스 관절염">RA</abbr>. **Vestibular Rehabilitation.** 4th ed. FA Davis, 2014.
 
 ## 10.8 자율신경과 수기 치료
 

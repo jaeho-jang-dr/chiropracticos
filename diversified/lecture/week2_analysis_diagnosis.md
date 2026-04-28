@@ -7,10 +7,10 @@
 
 ## 🎯 이 주차의 학습 목표
 
-- **1.** Diversified HVLA 적용 전 반드시 수행하는 **4단계 평가 플로우**를 설명할 수 있다
+- **1.** Diversified <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 적용 전 반드시 수행하는 **4단계 평가 플로우**를 설명할 수 있다
 - **2.** Red Flag 11가지를 구분하고 **응급 의뢰 의사결정**을 내릴 수 있다
 - **3.** Motion Palpation의 **재현성 한계**를 알고 다른 검사와 조합 해석할 수 있다
-- **4.** VBI(Vertebrobasilar Artery Insufficiency) 스크리닝을 **병력+검사+영상 조합**으로 수행할 수 있다
+- **4.** <abbr class="med-abbr" title="Vertebrobasilar Insufficiency · 척추기저동맥부전">VBI</abbr>(Vertebrobasilar Artery Insufficiency) 스크리닝을 **병력+검사+영상 조합**으로 수행할 수 있다
 - **5.** ACR Appropriateness Criteria에 따른 **X-ray 적응증**을 구분할 수 있다
 
 ---
@@ -68,14 +68,14 @@
 | **P** | Provoking / Palliating | 악화·완화 요인 | 자세 의존 → 기계적 |
 | **Q** | Quality | 통증 성질 | Deep dull ache vs sharp shooting |
 | **R** | Radiation | 방사 여부 | Dermatome 일치 여부 |
-| **S** | Severity | 강도 (VAS/NPRS 0-10) | 초·후 재측정 기준선 |
+| **S** | Severity | 강도 (<abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도">VAS</abbr>/<abbr class="med-abbr" title="Numeric Pain Rating Scale · 숫자통증등급 (0-10)">NPRS</abbr> 0-10) | 초·후 재측정 기준선 |
 | **T** | Timing | 24시간 양상·주기 | 야간통·기상 강직 → red flag 고려 |
 
 ### 2.2 Diversified 특이 문진 추가 항목
 
 - **과거 척추 시술력** — 디스크 수술·척추 고정술·경추 융합술
 - **Anticoagulant 복용** — Warfarin·DOAC (추력 후 출혈 위험↑)
-- **Bone health** — 골다공증 진단·DEXA·장기 스테로이드 사용
+- **Bone health** — 골다공증 진단·<abbr class="med-abbr" title="Dual-Energy X-ray Absorptiometry · 이중에너지 X선 흡수계측 (골밀도)">DEXA</abbr>·장기 스테로이드 사용
 - **VBI 증상 이력** — 5 Ds + 3 Ns (아래 VBI 섹션)
 - **최근 외상** — 자동차 사고·낙상·스포츠 부상
 
@@ -84,7 +84,7 @@
 | # | Red Flag | 시사 병변 | 권장 조치 |
 |:-:|----------|-----------|----------|
 | 1 | 생애 첫 **가장 심한 두통** (thunderclap) | SAH · VAD | 즉시 ER → CT |
-| 2 | **진행성 신경학적 결손** (근력 5→3 등) | Myelopathy · 종양 | 신경과 · MRI |
+| 2 | **진행성 신경학적 결손** (근력 5→3 등) | Myelopathy · 종양 | 신경과 · <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr> |
 | 3 | **안장 마취**(saddle anesthesia) + 배변·배뇨 장애 | Cauda equina | 응급 MRI |
 | 4 | **설명 안 되는 체중 감소** ≥ 5kg / 6개월 | Neoplasm | 영상 + 종양표지자 |
 | 5 | **야간 통증 > 기상 통증** | 종양 · 감염 | MRI |
@@ -165,7 +165,7 @@ Standing Posture
 |------|---------------|
 | 경추 | Mastoid · C1 TP · C2 spinous · C7 spinous (가장 돌출) |
 | 흉추 | T3 (scapular spine 연결) · T7 (inferior scapular angle) · T12 (12번 늑골) |
-| 요추 | L4 (iliac crest 연결) · L5 (PSIS 상방) · Mamillary processes |
+| 요추 | L4 (iliac crest 연결) · L5 (<abbr class="med-abbr" title="Posterior Superior Iliac Spine · 후상장골극">PSIS</abbr> 상방) · Mamillary processes |
 | 천장 | PSIS · Sacral base · Sacral apex · Ischial tuberosity |
 
 ### 4.4 좌우 대칭 비교 — 핵심 원칙
@@ -217,7 +217,7 @@ Standing Posture
 
 #### 골반 MP
 1. **Gillet test** — 한 다리 들어올릴 때 PSIS 움직임
-2. **ASIS 움직임** (supine, 다리 굴곡)
+2. **<abbr class="med-abbr" title="Anterior Superior Iliac Spine · 전상장골극">ASIS</abbr> 움직임** (supine, 다리 굴곡)
 3. **Sacral respiratory motion** — 호흡 중 sacrum base 움직임
 
 ### 5.3 End-Feel 분류
@@ -293,7 +293,7 @@ Scoliosis 판정:
 | 평가 항목 | 방법 | 분절 대표 |
 |-----------|------|-----------|
 | **감각** (light touch, pin prick) | 각 dermatome | C5: 삼각근 · C6: 엄지 · C7: 중지 · C8: 소지 · T1: 전완 내측 |
-| **근력 (MMT 0-5)** | 저항 검사 | C5: 삼각근 · C6: 이두 · C7: 삼두 · C8: 수지 flexor |
+| **근력 (<abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr> 0-5)** | 저항 검사 | C5: 삼각근 · C6: 이두 · C7: 삼두 · C8: 수지 flexor |
 | **심부건반사 (0-4+)** | 망치 | C5-6: biceps · C6: brachioradialis · C7: triceps |
 | **병적 반사** | 당김 | Hoffmann (upper motor neuron) |
 
@@ -342,7 +342,7 @@ Scoliosis 판정:
   4. 이마에 **서서히 posterior 압력** 가하며 환자 C1-C2 사이 슬라이딩 느낌
 - **양성 소견**: Head가 posterior로 "slide" 되는 느낌 · 증상(어지럼·오심) 감소
 - **임상적 의의**: Transverse ligament 이완·파열 → **C1-C2 instability** → 경추 HVLA **절대 금기**
-- **민감도/특이도**: 민감도 88% · 특이도 96% (Uitvlugt 1988, RA 환자 연구)
+- **민감도/특이도**: 민감도 88% · 특이도 96% (Uitvlugt 1988, <abbr class="med-abbr" title="Rheumatoid Arthritis · 류마티스 관절염">RA</abbr> 환자 연구)
 - **위양성 / 주의사항**
   - 검사자 숙련도 높게 요구
   - 급성 외상 직후 시행 금지 — dens fracture 배제 먼저
@@ -375,10 +375,10 @@ Scoliosis 판정:
 - **임상적 의의**: Vertebral artery 혈류 저하 의심 → 경추 HVLA 주의
 - **민감도/특이도**: **민감도 매우 낮음 (&lt; 10%)** · 특이도 ~90% (Haynes 2002)
 - **위양성 / 주의사항**
-  - 위양성 많음: 내이성 어지럼·BPPV도 자세로 유발
+  - 위양성 많음: 내이성 어지럼·<abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 (이석 이탈)">BPPV</abbr>도 자세로 유발
   - 위음성도 많음 — 음성이어도 VAD 배제 불가
   - **단독 의존 금지** — 병력 + CTA/MRA 조합 필수
-  - 현대 EBM에서는 이 검사의 routine 사용을 **권장하지 않음** (Kerry 2008)
+  - 현대 <abbr class="med-abbr" title="Evidence-Based Medicine · 근거 기반 의학">EBM</abbr>에서는 이 검사의 routine 사용을 **권장하지 않음** (Kerry 2008)
 
 #### 🔵 Barré-Liéou Test (Cervicogenic Dizziness)
 
@@ -414,7 +414,7 @@ Scoliosis 판정:
 - **민감도/특이도**: 민감도 72-79% · 특이도 31-60% (다양한 meta-analysis)
 - **위양성 / 주의사항**
   - **특이도 낮음** → 오진 흔함 (단독으로 확진 불가)
-  - Rotator cuff tear, AC joint OA, 점액낭염도 양성 가능
+  - Rotator cuff tear, AC joint <abbr class="med-abbr" title="Osteoarthritis · 골관절염">OA</abbr>, 점액낭염도 양성 가능
   - 영상 (MRI · ultrasound)로 감별 필요
 
 #### 🔵 Hawkins-Kennedy Test
@@ -598,7 +598,7 @@ Scoliosis 판정:
 - **위양성 / 주의사항**
   - 숙련도·유지 시간에 따라 결과 차이
   - 경추 C6 신경근 증상과 감별 어려움
-  - **EMG/NCS** 로 확진
+  - **<abbr class="med-abbr" title="Electromyography · 근전도 검사">EMG</abbr>/NCS** 로 확진
 
 #### 🔵 Tinel's Sign (at Wrist)
 
@@ -736,7 +736,7 @@ Diversified 시술 **2주 이상** 간격이 있었으면 반드시 **Red Flag �
 
 ### 10.1 VBI의 임상적 중요성
 
-Cervical manipulation 후 **vertebral artery dissection(VAD)** 위험이 과거 우려되었으나, 최신 연구(Cassidy 2008 등)는 SMT와 VAD의 **인과 관계보다 우연성**이 높다고 결론. 그럼에도 **스크리닝 필수**.
+Cervical manipulation 후 **vertebral artery dissection(VAD)** 위험이 과거 우려되었으나, 최신 연구(Cassidy 2008 등)는 <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr>와 VAD의 **인과 관계보다 우연성**이 높다고 결론. 그럼에도 **스크리닝 필수**.
 
 ### 10.2 5 Ds + 3 Ns (VBI 증상)
 

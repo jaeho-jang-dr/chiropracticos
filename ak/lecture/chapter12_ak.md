@@ -1,6 +1,6 @@
-# Chapter 12. Applied Kinesiology (AK)
+# Chapter 12. Applied Kinesiology (<abbr class="med-abbr" title="Applied Kinesiology · 응용 운동학 (George Goodheart, 1964)">AK</abbr>)
 
-> **George Goodheart 1964 · MMT · 🔴 근력검사로 알레르기·영양·장기 진단은 근거 없음 · 🟡 MMT 자체의 근력 측정만 유용**
+> **George Goodheart 1964 · <abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr> · 🔴 근력검사로 알레르기·영양·장기 진단은 근거 없음 · 🟡 MMT 자체의 근력 측정만 유용**
 >
 > **⚠️ 한국 임상에서 인지도 높지만 진단 확장 주장은 비판적 수용 필수**
 
@@ -41,7 +41,7 @@
 
 ## 역사 — George Goodheart와 AK의 탄생 {#역사}
 
-### George Goodheart, Jr., DC (1918-2008)
+### George Goodheart, Jr., <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr> (1918-2008)
 
 - Detroit 개원 DC
 - 1964 "근력 검사로 서브럭세이션 식별" 관찰 보고
@@ -128,7 +128,7 @@ AK는 Intervertebral Foramen (IVF) 주변의 **5가지 요소**가 기능장애�
 
 1. **해부학·생리학 근거 부재** — 개별 근육과 장기 기능의 이런 직접적 연결은 표준 의학에서 인정되지 않음
 2. **Ideomotor effect** — AK "testing" 중 술자의 무의식적 힘 조절이 결과를 결정 (Hyman 2003·Schwartz 2014)
-3. **Double-blind RCT 부정적**:
+3. **Double-blind <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 부정적**:
    - Kenney JJ et al. 1988 — AK allergy detection 효과 없음
    - Staehle HJ et al. 2005 — 치과 재료 과민성 AK로 검출 불가
 4. **PMC scoping review** (Haas 2007 재검토): 이론적 근거 약함
@@ -178,7 +178,7 @@ AK로 알레르기·영양 결핍·장기 질환을 진단하지 말 것. 신뢰
 
 ### 긍정적 연구
 
-- 일부 sub-clinical musculoskeletal 연관 연구에서 AK MMT가 SMT 효과 평가에 유용할 수 있다는 증례 존재 (🟠 Limited)
+- 일부 sub-clinical musculoskeletal 연관 연구에서 AK MMT가 <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr> 효과 평가에 유용할 수 있다는 증례 존재 (🟠 Limited)
 - 그러나 알레르기·영양·장기 진단에 대해서는 없음
 
 ---
@@ -193,7 +193,7 @@ AK로 알레르기·영양 결핍·장기 질환을 진단하지 말 것. 신뢰
 
 ### AK 치료 요소
 
-- 척추 교정 (HVLA 유사)
+- 척추 교정 (<abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 유사)
 - Chapman reflex point 자극 (🟠 효과 불명확)
 - 영양 처방 (AK 진단 기반 시 🔴 부적절)
 - 스트레스 관리·감정 해소 주장 (🔴 No evidence for 신체 치료 효과)
@@ -211,7 +211,7 @@ AK로 알레르기·영양 결핍·장기 질환을 진단하지 말 것. 신뢰
 
 - 알레르기·영양 AK 진단의 무분별 수용 사례
 - 환자 의료 혼선 (표준 진단 검사 지연)
-- 근거 기반 의학(EBM) 원칙과 충돌
+- 근거 기반 의학(<abbr class="med-abbr" title="Evidence-Based Medicine · 근거 기반 의학">EBM</abbr>) 원칙과 충돌
 
 ### 본 강의 권고
 

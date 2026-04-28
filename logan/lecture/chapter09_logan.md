@@ -38,7 +38,7 @@
 
 ### 철학적 배경
 
-Logan은 수기 HVLA 대신 **"신체가 스스로 재조정하도록 돕는 부드러운 자극"** 접근. 이 철학은 일부 vitalism 요소를 포함하지만, **기법 자체는 기계적·재현 가능** · 과학적 평가 가능.
+Logan은 수기 <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 대신 **"신체가 스스로 재조정하도록 돕는 부드러운 자극"** 접근. 이 철학은 일부 vitalism 요소를 포함하지만, **기법 자체는 기계적·재현 가능** · 과학적 평가 가능.
 
 ### 본 강의 입장
 
@@ -96,7 +96,7 @@ Logan은 수기 HVLA 대신 **"신체가 스스로 재조정하도록 돕는 부
 
 Logan은 **HVLA 대비 1/500 수준** 압력. "감은 눈꺼풀을 누르는 정도"로 비유됨.
 
-### 근거 — Surface EMG 연구
+### 근거 — Surface <abbr class="med-abbr" title="Electromyography · 근전도 검사">EMG</abbr> 연구
 
 - **NCT00728572** (ClinicalTrials.gov) Logan Basic technique surface EMG 평가 연구
 - 천골 apex 접촉 전·후 paraspinal 근긴장 EMG 감소 관찰
@@ -163,7 +163,7 @@ Logan은 **"구조 이동보다 신경학적 reset"**에 초점. HVLA가 기계�
 |--------|------|
 | 임산부 요통·SI | 🟠-🟡 Limited-Moderate (안전 근거 확실, 효과는 증례) |
 | 영유아 colic | 🟠 Limited (플라시보 효과 의심) |
-| 만성 요통 | 🟠 Limited (SMT 범주) |
+| 만성 요통 | 🟠 Limited (<abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr> 범주) |
 | 월경곤란 (dysmenorrhea) | 🟠 Limited (증례 보고) |
 | 척추측만증 (경증) | 🟠 Very Limited |
 | 🔴 자폐·ADHD·전신 질환 | No evidence |
@@ -189,7 +189,7 @@ Logan은 **"구조 이동보다 신경학적 reset"**에 초점. HVLA가 기계�
 - 🟡 생체역학적 기초는 있음 (골반이 척추 기초)
 - 🔴 "천골 하나로 전신 질환 치료" 확장은 근거 없음
 
-### 3. RCT 부족
+### 3. <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 부족
 
 - 방법의 저강도·지속적 특성이 **sham 대조 설계 어려움**
 - 대부분 증례·관찰 연구

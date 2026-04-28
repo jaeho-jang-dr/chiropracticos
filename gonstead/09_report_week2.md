@@ -62,7 +62,7 @@
 | 용어 | 정의 및 설명 |
 | :--- | :--- |
 | **변위 (Subluxation)** | 척추뼈가 정상 정렬에서 벗어나 신경 기능을 방해하고 생체역학적 문제를 일으키는 상태. |
-| **리스팅 (Listing)** | 척추나 골반의 변위 방향, 접촉점, 교정 방향(Line of drive)을 나타내는 코드 (예: PRS, ASIN). |
+| **리스팅 (Listing)** | 척추나 골반의 변위 방향, 접촉점, 교정 방향(Line of drive)을 나타내는 코드 (예: <abbr class="med-abbr" title="Posterior-Right-Superior · Gonstead listing 후-우-상">PRS</abbr>, ASIN). |
 | **수핵 (Nucleus Pulposus)** | 추간판의 중심부에 위치한 젤 형태의 핵으로, 이동 시 지렛대 역할을 수행함. |
 | **섬유륜 (Annulus Fibrosis)** | 수핵을 둘러싸고 있는 섬유 연골 층으로, 나무 나이테와 유사한 구조를 가짐. |
 | **너보스코프 (Nervoscope)** | 피부 온도를 감지하여 신경 압박으로 인한 염증 부위를 찾아내는 이중 감지 기구. |

@@ -1,7 +1,7 @@
 # Week 3 — 교정 실무 (Adjustment Practice)
 
 > 분석을 **손기술**로 전환 — 분절별 · 관절별 핵심 기법
-> Week 2의 평가 결과를 Diversified HVLA의 실제 **추력(thrust)**으로 연결
+> Week 2의 평가 결과를 Diversified <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr>의 실제 **추력(thrust)**으로 연결
 
 ---
 
@@ -41,7 +41,7 @@
 |-----------|--------|-----------|
 | **Thumb** | 작음 · 고정밀 | 경추 transverse process · mamillary |
 | **Index MCP** | 중간 | C1 TP · 중·하부 경추 |
-| **Pisiform** | 중간 · 안정 | 흉추 TP · 요추 mamillary · 골반 PSIS |
+| **Pisiform** | 중간 · 안정 | 흉추 TP · 요추 mamillary · 골반 <abbr class="med-abbr" title="Posterior Superior Iliac Spine · 후상장골극">PSIS</abbr> |
 | **Hypothenar** | 넓음 · 파워 | 흉추 양측 TP · sacrum |
 | **Web (엄지-검지 사이)** | 넓음 | Cervical (아래쪽) |
 
@@ -111,7 +111,7 @@ Active range    Passive range    Paraphysiological space
 
 > **📖 출처 안내.** 본 경추 섹션의 시연 사진과 영문 원문은 **States Manual of Spinal, Pelvic and Extravertebral Technics** (2nd Ed, Kirk · Lawrence · Valvo eds., National College of Chiropractic, 1985) Part One: Spinal Technics 경추 섹션(pp. 37–54)에서 발췌했습니다. 교육 목적의 발췌 인용이며, 외부 재배포·상업적 사용은 금지됩니다. 표기법 — **L**: Listing · **PP**: Patient Position · **DP**: Doctor Position · **CH**: Contact Hand · **IH**: Indifferent Hand · **T**: Thrust (Line of Drive).
 
-> **⚠ 근거 수준 & 안전.** States Manual 기술들은 **임상 합의 기반**의 술식 기술이며, 각 술식의 효과·우월성은 개별 RCT로 증명된 것은 아닙니다. VBA(Vertebral artery) 위험, 금기증(급성 whiplash 등), 그리고 환자 반응 모니터링은 Week 4 안전 장에서 별도 다룹니다.
+> **⚠ 근거 수준 & 안전.** States Manual 기술들은 **임상 합의 기반**의 술식 기술이며, 각 술식의 효과·우월성은 개별 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr>로 증명된 것은 아닙니다. VBA(Vertebral artery) 위험, 금기증(급성 whiplash 등), 그리고 환자 반응 모니터링은 Week 4 안전 장에서 별도 다룹니다.
 
 ---
 
@@ -676,7 +676,7 @@ T:   Remove slack; apply gentle traction by pulling in a cephalic
 - 급성 whiplash injury (hyperflexion/extension 모두)
 - 90° 경추 회전 불가 환자 (어느 방향이든)
 - 경추 심한 골관절염, 경추 osteoporosis
-- 경동맥 잡음·어지럼·5Ds 소견 (VBI 의심)
+- 경동맥 잡음·어지럼·5Ds 소견 (<abbr class="med-abbr" title="Vertebrobasilar Insufficiency · 척추기저동맥부전">VBI</abbr> 의심)
 - 경성 콘택트렌즈 착용자 (Bilateral Thenar 등 안구 인접 접촉 기법 한정)
 
 #### ✅ 선택 가이드라인 (States Manual의 관행 정리)
@@ -694,7 +694,7 @@ T:   Remove slack; apply gentle traction by pulling in a cephalic
 #### ⚠ 한국 임상 추가 고려
 - **VBI 사전 스크리닝** (Week 2 Part 8 VBI cluster 참조)
 - 초진 환자 1회 차는 **Rotary 회전 각도 최소**화 + IH dominance
-- Adjustment 후 **즉시 재평가** (Week 2 Part VI: VOMS, Romberg) — 어지럼·두통 시 중단
+- Adjustment 후 **즉시 재평가** (Week 2 Part VI: <abbr class="med-abbr" title="Vestibular/Ocular Motor Screening · 전정-안구운동 선별검사 (Mucha 2014)">VOMS</abbr>, Romberg) — 어지럼·두통 시 중단
 
 ---
 
@@ -750,7 +750,7 @@ T:   Remove slack; apply gentle traction by pulling in a cephalic
 
 ### 5.1 Lumbar Roll (측와위 — Gonstead-style)
 
-**적응증**: L1-L5 분절 PL/PR/PLI/PRS 등
+**적응증**: L1-L5 분절 PL/PR/<abbr class="med-abbr" title="Posterior-Left-Inferior · Gonstead listing 후-좌-하">PLI</abbr>/<abbr class="med-abbr" title="Posterior-Right-Superior · Gonstead listing 후-우-상">PRS</abbr> 등
 **환자 자세**:
 - Side posture, 환측 위
 - 아래 다리 신전

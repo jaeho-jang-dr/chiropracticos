@@ -18,7 +18,7 @@
 
 | 카테고리 | 주요 내용 및 강좌 예시 | 주요 후원 기관 |
 | :--- | :--- | :--- |
-| **영상의학 및 진단** | MRI, X-ray, CT 판독, 척추 생체역학 공학, 골다공증 진단 | Cleveland University-Kansas City, ChiroCredit |
+| **영상의학 및 진단** | <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr>, X-ray, CT 판독, 척추 생체역학 공학, 골다공증 진단 | Cleveland University-Kansas City, ChiroCredit |
 | **윤리 및 법규** | 척추교정 윤리, 네바다주 법규(Jurisprudence), HIPAA 준수, 보험 코딩 | A Better Chiro/Life West, Tong & Associates |
 | **임상 전문 기술** | 상부 경추 기법, 소아 및 임산부 케어(Webster 인증), 드라이 니들링, 레이저 치료 | ICPA, Palmer College, Active Release Technique |
 | **환자 관리 및 안전** | 감염 관리, 정신 건강 지원, 노인 척추 관리, 뇌진탕(Concussion) 관리 | Life University, Parker University |

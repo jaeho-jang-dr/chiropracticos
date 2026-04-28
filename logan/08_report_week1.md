@@ -49,11 +49,11 @@ LBT는 그 부드러움 덕분에 다음과 같은 특수 인구 집단에 널�
 > **맥락:** LBT가 전통적인 카이로프랙틱의 강한 충격 방식과 차별화되며, 민감한 환자들에게 적합한 이유를 설명합니다.
 
 > **"척추가 천골 위에 놓여 있으므로, 천골이 수평을 이루지 못하거나 아탈구되면 척추 아탈구의 안정을 방해할 수 있다."**  
-> *(출처: Claudia Anrig, DC, "Treating the Pediatric Patient")*  
+> *(출처: Claudia Anrig, <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>, "Treating the Pediatric Patient")*  
 > **맥락:** LBT의 핵심적인 생체 역학적 전제를 나타내며, 왜 천골 교정이 척추 전체 건강의 기초(Basic)가 되는지를 강조합니다.
 
 > **"문헌 검토 결과, 로건 베이직 테크닉에 대한 고품질의 동료 검토 논문이 발견되지 않았다."**  
-> *(출처: American Specialty Health, CPG 91 Revision 20)*  
+> *(출처: American Specialty Health, <abbr class="med-abbr" title="Clinical Practice Guideline · 임상진료지침">CPG</abbr> 91 Revision 20)*  
 > **맥락:** LBT의 임상적 인지도에도 불구하고, 주류 의료 가이드라인에서 이를 의학적 필요성이 부족하다고 판단하는 근거를 제시합니다.
 
 ---
@@ -69,5 +69,5 @@ LBT는 그 부드러움 덕분에 다음과 같은 특수 인구 집단에 널�
 *   **응급 상황 판단:** 환자의 증상이 검사 중이나 치료 과정에서 응급 상황(예: 심각한 신경학적 결손)을 시사하는 경우, 즉시 911에 연락하거나 일차 진료 의사에게 협진을 의뢰해야 합니다.
 
 ### 4.3 근거 기반 관행의 강화
-*   **데이터 수집의 필요성:** LBT의 효능을 입증하기 위해 표면 근전도(EMG)나 체중 분포 분석기(Midot Postural Analyzer) 등을 활용한 객관적 데이터 수집이 권장됩니다.
+*   **데이터 수집의 필요성:** LBT의 효능을 입증하기 위해 표면 근전도(<abbr class="med-abbr" title="Electromyography · 근전도 검사">EMG</abbr>)나 체중 분포 분석기(Midot Postural Analyzer) 등을 활용한 객관적 데이터 수집이 권장됩니다.
 *   **지속적 관리:** 사례 보고에 따르면 치료 중단 시 증상이 재발하는 경향이 있으므로, 만성 질환 환자의 경우 일관된 케어 플랜의 수립이 중요합니다.

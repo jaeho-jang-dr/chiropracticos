@@ -12,8 +12,8 @@ Diversified는 특정 브랜드나 폐쇄적인 시스템에 고착되지 않고
 
 ### 학습 목표
 *   Diversified 테크닉의 역사적 기원(Magnetic Healing)과 현대적 정립 과정을 이해한다.
-*   HVLA(High-Velocity, Low-Amplitude) 조절의 생체역학적 원리와 안전 기전을 습득한다.
-*   관절 가동 범위(ROM) 모델 내 **Paraphysiological Space**의 임상적 의의를 파악한다.
+*   <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr>(High-Velocity, Low-Amplitude) 조절의 생체역학적 원리와 안전 기전을 습득한다.
+*   관절 가동 범위(<abbr class="med-abbr" title="Range of Motion · 관절가동범위">ROM</abbr>) 모델 내 **Paraphysiological Space**의 임상적 의의를 파악한다.
 *   타 카이로프랙틱 테크닉과의 구조적 차이점을 비교 분석하여 임상 적응증을 선별하는 능력을 배양한다.
 
 **[사전 지식 확인]** 척추 해부학(Spinal Anatomy)의 관절면(Facet) 방향과 분절 운동학(Segmental Kinematics)의 Instantaneous Axis of Rotation(IAR) 개념을 반드시 복습하십시오.
@@ -38,7 +38,7 @@ Diversified는 특정 브랜드나 폐쇄적인 시스템에 고착되지 않고
 
 Diversified 테크닉은 상부 경추에만 집중하던 폐쇄적 접근법에서 탈피하여 전 척추를 아우르는 현대적 학문으로 진화했습니다.
 
-*   **B.J. Palmer와의 대립:** 아들 B.J. Palmer가 HIO(Hole-In-One, 상부 경추 집중)만을 강조하며 보수화될 때, 이에 반대하여 척추 전체의 역학적 통합을 중시하는 흐름이 형성되었습니다.
+*   **B.J. Palmer와의 대립:** 아들 B.J. Palmer가 <abbr class="med-abbr" title="Hole-In-One · B.J. Palmer 상부경추 단일 교정 이론 (Toggle Recoil)">HIO</abbr>(Hole-In-One, 상부 경추 집중)만을 강조하며 보수화될 때, 이에 반대하여 척추 전체의 역학적 통합을 중시하는 흐름이 형성되었습니다.
 *   **Otto Reinert의 절충적 접근(Eclectic Approach):** 그는 다양한 테크닉적 요소를 흡수하여 Diversified가 특정 이론에 함몰되지 않고 임상적 실용성을 갖추도록 기여했습니다.
 *   **Joe Janse의 체계화:** 1947년 **'Chiropractic Principles and Technic'**의 출간은 현대 Diversified의 결정적 분기점입니다. National College의 총장이었던 그는 이 저서를 통해 카이로프랙틱을 해부학적, 기계론적 근거 위에 바로 세웠습니다.
 *   **Palmer College의 수용:** 1960~70년대에 이르러 Palmer College 역시 Diversified를 정규 과목으로 채택하며, 오늘날의 Palmer Package가 완성되었습니다.
@@ -88,7 +88,7 @@ Diversified는 전 세계 카이로프랙터들의 **'표준 기술'**입니다.
 
 ## 7. 제6부: 타 테크닉과의 비교 분석 (Comparative Analysis)
 
-| 비교 항목 | Diversified | Gonstead | Activator | Thompson | SOT/Cox |
+| 비교 항목 | Diversified | Gonstead | Activator | Thompson | <abbr class="med-abbr" title="Sacro-Occipital Technique · 천골-후두 기법 (DeJarnette)">SOT</abbr>/Cox |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **주요 방식** | 수기 HVLA 추력 | 수기, 특정 벡터 강조 | 스프링 장치 사용 | 드롭 테이블 활용 | 저강도 가동/견인 |
 | **특징적 요소** | 전 척추 범용성 | 회전 벡터 지양 | 기계적 정밀성 | 분할 추력(Drop) | **Flexion-Distraction** |

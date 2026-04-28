@@ -1,4 +1,4 @@
-# Chiropractic BioPhysics® (CBP®) 기술 학습 가이드
+# Chiropractic BioPhysics® (<abbr class="med-abbr" title="Chiropractic BioPhysics · 카이로프랙틱 바이오피직스 (자세·구조 교정)">CBP</abbr>®) 기술 학습 가이드
 
 이 학습 가이드는 척추 변형을 감소시키고 자세를 교정하기 위한 전척추 재활 접근법인 **Chiropractic BioPhysics® (CBP®)** 기술의 핵심 원리, 진단 방법, 치료 프로토콜 및 과학적 근거를 포괄적으로 다룹니다.
 
@@ -82,14 +82,14 @@ CBP 치료는 통증 완화를 넘어 구조적 복원을 목표로 '케어 블�
 ## 5. 심화 학습을 위한 에세이 주제
 
 1.  **척추의 시상면 곡선(Sagittal Curves)과 생체역학적 부하의 상관관계:** 해리슨 정상 모델에서 벗어난 정렬(예: 경추 후만)이 척추 구조물에 가하는 스트레스와 Wolff의 법칙에 따른 골극 형성에 대해 논하시오.
-2.  **CBP의 근거 기반 접근법(Evidence-Based Approach):** CBP 기술이 단순한 임상 경험을 넘어 무작위 대조 시험(RCT)과 바이오메카닉 모델링을 통해 어떻게 그 유효성을 입증하고 있는지 비판적으로 분석하시오.
+2.  **CBP의 근거 기반 접근법(Evidence-Based Approach):** CBP 기술이 단순한 임상 경험을 넘어 무작위 대조 시험(<abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr>)과 바이오메카닉 모델링을 통해 어떻게 그 유효성을 입증하고 있는지 비판적으로 분석하시오.
 3.  **장기적 통증 완화와 구조적 복원의 관계:** 연구 데이터에 따르면 자세 교정 없이 진행된 일반 물리치료가 치료 중단 후 증상 재발율이 높은 이유를 CBP의 관점에서 설명하시오.
 
 ---
 
 ## 6. 주요 용어 사전 (Glossary)
 
-*   **AHT (Anterior Head Translation):** 전방 머리 이동. 머리가 가슴보다 앞으로 나온 자세.
+*   **<abbr class="med-abbr" title="Anterior Head Translation · 전방 두부 변위">AHT</abbr> (Anterior Head Translation):** 전방 머리 이동. 머리가 가슴보다 앞으로 나온 자세.
 *   **ARA (Absolute Rotation Angle):** 절대 회전 각도. 특정 척추 부위(예: C2-C7)의 전체적인 곡선 각도.
 *   **Denneroll (데너롤):** 척추 전만 복원을 돕기 위해 설계된 CBP 전용 경추/흉추/요추 오소틱 장치.
 *   **Kyphosis (후만):** 척추 곡선의 정점이 뒤쪽을 향하는 정렬 (예: 정상 흉추 곡선).

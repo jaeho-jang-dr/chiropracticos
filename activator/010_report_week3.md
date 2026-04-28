@@ -2,9 +2,9 @@
 
 ## 1. 개요 (Executive Summary)
 
-본 보고서는 **액티베이터 메서드 인터내셔널(Activator Methods International, Ltd.)**이 개발한 세계적인 척추 교정 기구 및 기술인 '액티베이터 메서드(Activator Methods Chiropractic Technique, AMCT)'에 대한 종합적인 분석을 담고 있습니다. 
+본 보고서는 **액티베이터 메서드 인터내셔널(Activator Methods International, Ltd.)**이 개발한 세계적인 척추 교정 기구 및 기술인 '액티베이터 메서드(Activator Methods Chiropractic Technique, <abbr class="med-abbr" title="Activator Methods Chiropractic Technique · 액티베이터 카이로프랙틱 기법">AMCT</abbr>)'에 대한 종합적인 분석을 담고 있습니다. 
 
-1960년대 Arlan W. Fuhr 박사와 Warren C. Lee 박사에 의해 창안된 이 기술은 수동 교정의 대안으로 설계되었으며, 특수 제작된 **액티베이터 조정 기구(Activator Adjusting Instrument, AAI)**를 사용해 고속 저진폭(HVLA) 추력을 전달합니다. 이 방식은 근육의 저항을 최소화하고 정밀한 교정을 가능하게 하여 소아부터 고령자까지 전 연령대 환자에게 안전하게 적용될 수 있습니다. 100편 이상의 관련 연구와 다수의 임상 시험을 통해 그 효능과 안전성이 입증된 액티베이터 메서드는 현재 전 세계에서 가장 널리 연구되고 사용되는 기구 교정 기술로 자리 잡고 있습니다.
+1960년대 Arlan W. Fuhr 박사와 Warren C. Lee 박사에 의해 창안된 이 기술은 수동 교정의 대안으로 설계되었으며, 특수 제작된 **액티베이터 조정 기구(Activator Adjusting Instrument, AAI)**를 사용해 고속 저진폭(<abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr>) 추력을 전달합니다. 이 방식은 근육의 저항을 최소화하고 정밀한 교정을 가능하게 하여 소아부터 고령자까지 전 연령대 환자에게 안전하게 적용될 수 있습니다. 100편 이상의 관련 연구와 다수의 임상 시험을 통해 그 효능과 안전성이 입증된 액티베이터 메서드는 현재 전 세계에서 가장 널리 연구되고 사용되는 기구 교정 기술로 자리 잡고 있습니다.
 
 ## 2. 주요 테마 및 기술적 분석
 

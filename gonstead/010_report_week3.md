@@ -35,8 +35,8 @@
 곤스테드 시스템은 척추의 오정렬 방향을 정밀하게 표기하는 '리스팅' 시스템을 사용합니다. 이는 교정 시 접촉 지점과 압력의 방향(Line of Drive)을 결정하는 지도가 됩니다.
 
 *   **주요 리스팅 예시:**
-    *   **PRS/PLS:** 후방(P), 우측 또는 좌측(R/L), 상방 기울기(S).
-    *   **PRI/PLI:** 후방(P), 우측 또는 좌측(R/L), 하방 기울기(I). 하방 기울기의 경우 교정 시 접촉 지점이 달라집니다(경추는 추궁판, 흉추는 횡돌기, 요추는 유두돌기).
+    *   **<abbr class="med-abbr" title="Posterior-Right-Superior · Gonstead listing 후-우-상">PRS</abbr>/<abbr class="med-abbr" title="Posterior-Left-Superior · Gonstead listing 후-좌-상">PLS</abbr>:** 후방(P), 우측 또는 좌측(R/L), 상방 기울기(S).
+    *   **<abbr class="med-abbr" title="Posterior-Right-Inferior · Gonstead listing 후-우-하">PRI</abbr>/<abbr class="med-abbr" title="Posterior-Left-Inferior · Gonstead listing 후-좌-하">PLI</abbr>:** 후방(P), 우측 또는 좌측(R/L), 하방 기울기(I). 하방 기울기의 경우 교정 시 접촉 지점이 달라집니다(경추는 추궁판, 흉추는 횡돌기, 요추는 유두돌기).
     *   **골반 리스팅:** PI(후하방), AS(전상방), IN(내방 회전), EX(외방 회전) 등의 조합으로 표기(예: PIEX, ASIN).
 
 *   **특수 교정 장비:**

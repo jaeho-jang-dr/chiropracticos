@@ -1,4 +1,4 @@
-# [v2 증거기반] Diversified HVLA 실무 가이드: 분절별 교정술 및 임상 적용
+# [v2 증거기반] Diversified <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 실무 가이드: 분절별 교정술 및 임상 적용
 
 본 가이드는 전통적인 카이로프랙틱의 생기론(Vitalism)과 신비주의적 해석을 완전히 배제하고, 해부학적 구조와 생체역학적(Biomechanical) 기전을 바탕으로 기술되었습니다. WHO(세계보건기구)가 정의한 '기능적 개체(Functional Entity)'로서의 서블락세이션(Subluxation) 개념을 수용하며, 정적 엑스레이(Static X-ray) 상의 구조적 변위가 아닌, 동적 가동성 분석을 통한 교정술의 임상적 적용법을 상세히 다룹니다.
 
@@ -50,7 +50,7 @@ HVLA 기술의 정수는 '장벽(Barrier)'을 느끼는 손끝의 감각에 있�
 
 ### 4.1. 위험 관리 및 안전 절차
 - **VBAI(척추기저동맥부전) 스크리닝**: 시술 전 환자의 병력 청취 및 신경학적 검사를 수행합니다. 척추동맥 박리(VAD) 가능성을 고지하고 반드시 동의 절차를 거쳐야 합니다.
-- **금기증**: 상부 경추의 불안정성(RA, Down Syndrome 등), 심한 골다공증, 신경근병증 급성기.
+- **금기증**: 상부 경추의 불안정성(<abbr class="med-abbr" title="Rheumatoid Arthritis · 류마티스 관절염">RA</abbr>, Down Syndrome 등), 심한 골다공증, 신경근병증 급성기.
 
 ### 4.2. 주요 기법 및 기계적 원리
 - **상부 경추 (C0-C2)**:

@@ -25,12 +25,12 @@ Diversified 테크닉의 임상적 성패는 '어디를 교정할 것인가'를 
 2.  **관찰 (Inspection):** 정적 자세 평가 및 보행, 외형적 변형 확인.
 3.  **촉진 (Palpation):** 정적(Static) 및 동적(Motion) 촉진을 통한 기능 부전 부위 특정.
 4.  **검사 (Special Tests):** 신경학적·정형학적 검사를 통한 임상적 가설 검증.
-5.  **영상 (Imaging):** 필요 시 X-ray, MRI 등 영상 의학적 진단 의뢰.
+5.  **영상 (Imaging):** 필요 시 X-ray, <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr> 등 영상 의학적 진단 의뢰.
 
 ### SOAP 노트 구성 요소
 | 항목 | 필수 기입 사항 | 기록 예시 |
 | :--- | :--- | :--- |
-| **S (Subjective)** | 환자의 주관적 진술, OPQRST, VAS 점수 | "3일 전 무거운 물건을 든 후 요통 발생" |
+| **S (Subjective)** | 환자의 주관적 진술, OPQRST, <abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도">VAS</abbr> 점수 | "3일 전 무거운 물건을 든 후 요통 발생" |
 | **O (Objective)** | 이학적 검사 결과, 촉진된 SSS, 신경학적 등급, 자세 분석 | "L3-L4 SSS 확인, SLR (+) at 30도" |
 | **A (Assessment)** | 임상적 판단, 진단명, 리스팅(Listings), 예후 판단 | "L4-L5 Disc Herniation suspected" |
 | **P (Plan)** | 교정 분절 및 기법, 치료 빈도, 환자 교육, 전원 여부 | "Diversified Side posture, 3 visits/week" |
@@ -103,7 +103,7 @@ Diversified 테크닉의 임상적 성패는 '어디를 교정할 것인가'를 
 
 관절 교정 전, 신경계의 손상 여부와 연부조직의 상태를 반드시 확인해야 합니다.
 
-### 신경학적 등급 체계 (Reflex & MMT)
+### 신경학적 등급 체계 (Reflex & <abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr>)
 | 등급 | 심부건 반사 (Reflex) | 근력 검사 (MMT) |
 | :--- | :--- | :--- |
 | **0** | 무반사 (Absent) | 수축 없음 (No contraction) |

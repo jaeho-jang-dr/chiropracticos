@@ -18,7 +18,7 @@ Galaxy 900HS는 환자의 다양한 신체 조건과 치료 목적에 맞출 수
 *   **헤드 쿠션(Head Cushion) 시스템:** 표준 Deluxe Headpiece와 옵션인 Total Dimension Flexion™ Headpiece로 구성됩니다. 가스 쇼크(Gas Shock) 보조를 통해 높낮이를 조절하며, 8단계 위치 조절이 가능한 안면 개구부(Face Opening)를 갖추고 있습니다.
 *   **드롭(Drop) 메커니즘:** 수동 및 자동 드롭 기능을 지원합니다.
     *   **수동 드롭:** 코킹 핸들(Cocking Handle)을 사용하여 활성화하며, 텐션 조절 노브를 통해 환자의 체중에 맞게 압력을 미세 조정합니다.
-    *   **자동 드롭(Auto Cocking):** 선택 노브를 통해 Cervical(C), Dorsal(D), Lumbar(L), Pelvic(P) 또는 이들의 조합(예: DC, LD, PL, CP)을 선택한 후 풋 페달을 밟아 활성화합니다.
+    *   **자동 드롭(Auto Cocking):** 선택 노브를 통해 Cervical(C), Dorsal(D), Lumbar(L), Pelvic(P) 또는 이들의 조합(예: <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>, LD, PL, CP)을 선택한 후 풋 페달을 밟아 활성화합니다.
 *   **흉부 쿠션(Chest Cushion):** 복부가 큰 환자나 작은 환자 모두를 수용할 수 있도록 설계되었으며, 정지형 또는 플로팅(Floating) 방식인 'Spring Breakaway' 기능을 통해 압력에 따라 부드럽게 내려갔다 복원되는 효과를 제공합니다.
 *   **높이 조절 및 틸트(Tilt) 시스템:** 19인치에서 36인치까지 2인치 간격으로 9단계 사전 설정이 가능한 높이 선택 패널을 갖추고 있습니다.
 

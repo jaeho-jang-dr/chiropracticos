@@ -1,4 +1,4 @@
-# Chapter 5. Toggle Recoil (HIO) — 상부경추 특이 교정
+# Chapter 5. Toggle Recoil (<abbr class="med-abbr" title="Hole-In-One · B.J. Palmer 상부경추 단일 교정 이론 (Toggle Recoil)">HIO</abbr>) — 상부경추 특이 교정
 
 > **B.J. Palmer의 HIO(Hole-In-One) 전통 · NUCCA·Atlas Orthogonal·Grostic 파생술의 원형**
 > ⚠️ 역사적으로 중요하지만 **과장된 HIO 가설**은 현대 의학 수용 안 됨
@@ -54,12 +54,12 @@ B.J. Palmer (1930s HIO)
 - **과학적 근거 없음**: 단일 분절 교정이 전신 질환(고혈압·천식·자가면역·암 등)을 치료한다는 주장은 peer-reviewed 연구에서 지지 안 됨
 - **Cassidy 2008 Spine**: 카이로프랙틱 방문과 Vertebrobasilar Artery stroke 관련성 — 인구집단 연구에서 자연 발생과 유의한 초과 위험 구별 어려움
 - **Church 2016 체계적 검토** (Penn State): 카이로프랙틱과 cervical artery dissection 간 **causation evidence 없음**
-- **Meyer et al. 2017** FN scoping review 맥락에서 관련 확장 주장 비판
+- **Meyer et al. 2017** <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> scoping review 맥락에서 관련 확장 주장 비판
 
 ### 🟡 부분적으로 인정되는 범위
 
 - 상부경추 기능장애가 **경인성 두통·어지럼증** 일부에 기여 (🟡 Moderate evidence for CGH — Bryans 2011)
-- **Bakris 2007 (U Chicago 소규모 RCT)**: NUCCA 상부경추 교정 후 혈압 일시 감소 — 후속 재현 제한적, 🟠 Limited
+- **Bakris 2007 (U Chicago 소규모 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr>)**: NUCCA 상부경추 교정 후 혈압 일시 감소 — 후속 재현 제한적, 🟠 Limited
 
 ### 본 강의 입장
 
@@ -85,7 +85,7 @@ Toggle Recoil의 **기계적 교정 기법 자체**는 학습 가치 있음 (특
 
 ### 추력
 
-1. **Toggle**: 술자 손목 snap (약 50-100 N, HVLA 중에서도 가장 저강도)
+1. **Toggle**: 술자 손목 snap (약 50-100 N, <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 중에서도 가장 저강도)
 2. Drop headpiece가 머리를 순간 하강시키며 교정 효과 증폭
 3. **Recoil**: 추력 후 즉시 손 withdrawal (환자 목 보호)
 
@@ -102,7 +102,7 @@ Toggle Recoil의 **기계적 교정 기법 자체**는 학습 가치 있음 (특
 
 | 구조 | 임상 의의 |
 |------|----------|
-| **C1 (Atlas)** | 환추 — 후두골과 관절 (OA joint) · 회전 대부분 |
+| **C1 (Atlas)** | 환추 — 후두골과 관절 (<abbr class="med-abbr" title="Osteoarthritis · 골관절염">OA</abbr> joint) · 회전 대부분 |
 | **C2 (Axis)** | 축추 — 치상돌기(dens)로 C1 중앙 관절 (AA joint) · 회전 중심 |
 | **Dens (치상돌기)** | Transverse ligament로 고정 · 손상 시 척수 압박 위험 |
 | **척추동맥 (VA)** | C1-C6 횡돌기공 통과 · C1에서 급격 외회전 → 대공 진입 |
@@ -119,8 +119,8 @@ Toggle Recoil의 **기계적 교정 기법 자체**는 학습 가치 있음 (특
 ### VAD 관련 최신 근거
 
 - Cassidy JD et al. *Spine* 2008 — Ontario Medicare 인구연구: 카이로프랙틱 방문 4주 전후 VBA stroke 발생률이 GP 방문 대조군과 유사
-- Church EW et al. 2016 (Penn State) 체계적 검토: cervical SMT와 CAD 간 causation 증거 없음
-- **해석**: 기존 통증·어지럼으로 DC 방문한 사람이 이미 박리 중이었을 가능성 (역상관)
+- Church EW et al. 2016 (Penn State) 체계적 검토: cervical <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr>와 CAD 간 causation 증거 없음
+- **해석**: 기존 통증·어지럼으로 <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr> 방문한 사람이 이미 박리 중이었을 가능성 (역상관)
 - **실무**: 경부 교정 전 VBAI 스크리닝 (5Ds/3Ns) 필수 · 의심 시 교정 금지·영상 의뢰
 
 ---
@@ -183,7 +183,7 @@ Toggle Recoil의 **기계적 교정 기법 자체**는 학습 가치 있음 (특
 - 3-view X-ray 측정의 intra/inter-reliability 제한적 (Piva 2006)
 - "1도 차이가 결과를 바꾼다"는 주장의 생체역학적 증거 부족
 
-### 3. DACNB · UCD (Upper Cervical Diplomate) 자격
+### 3. <abbr class="med-abbr" title="Diplomate of American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 전문의">DACNB</abbr> · UCD (Upper Cervical Diplomate) 자격
 
 - 미국 사설 인증 · 한국 면허 효력 없음
 - 고가의 교육 과정

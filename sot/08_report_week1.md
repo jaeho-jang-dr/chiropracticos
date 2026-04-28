@@ -1,4 +1,4 @@
-# 천골 후두골 기법(SOT) 및 채프먼 반사점(Chapman Reflex Points) 분석 브리핑 보고서
+# 천골 후두골 기법(<abbr class="med-abbr" title="Sacro-Occipital Technique · 천골-후두 기법 (DeJarnette)">SOT</abbr>) 및 채프먼 반사점(Chapman Reflex Points) 분석 브리핑 보고서
 
 본 보고서는 천골 후두골 기법(Sacro Occipital Technique, 이하 SOT)과 채프먼 반사점(Chapman Reflex Points)의 이론적 배경, 진단 체계 및 임상적 적용 방법을 종합적으로 분석한 문서이다.
 
@@ -21,7 +21,7 @@ SOT는 환자의 상태를 구조적, 기능적 안정성에 따라 세 가지 �
 ### 범주 1 (Category 1): 자율신경계 및 뇌척수액 순환
 * **핵심 초점:** 자율신경계와 중추신경계의 균형, 뇌척수액(CSF)의 흐름.
 * **특징:** 천골과 후두골 사이의 펌프 기전(PCSRM)이 저해될 때 발생한다.
-* **주요 치료:** 내장기 조절 기법인 CMRT(Chiropractic Manual Reflex Technique)와 두개골 교정(Cranial Adjusting)을 포함한다.
+* **주요 치료:** 내장기 조절 기법인 <abbr class="med-abbr" title="Chiropractic Manipulative Reflex Technique · 카이로프랙틱 수기 반사 기법">CMRT</abbr>(Chiropractic Manual Reflex Technique)와 두개골 교정(Cranial Adjusting)을 포함한다.
 
 ### 범주 2 (Category 2): 구조적 안정성 및 체중 부하 시스템
 * **핵심 초점:** 천장관절(SI Joint)의 인대성 체중 부하 기능.
@@ -57,7 +57,7 @@ SOT는 환자의 상태를 구조적, 기능적 안정성에 따라 세 가지 �
 
 ### 3.3. 골반 블록 배치 (Pelvic Blocking)
 * **목적:** 골반 비틀림(Pelvic Torsion)을 감소시켜 디스크와 좌골 신경의 스트레스를 완화한다.
-* **방법:** 짧은 다리 쪽과 긴 다리 쪽의 해부학적 지점(ASIS, 비구 등) 아래에 블록을 45도 각도로 배치한다.
+* **방법:** 짧은 다리 쪽과 긴 다리 쪽의 해부학적 지점(<abbr class="med-abbr" title="Anterior Superior Iliac Spine · 전상장골극">ASIS</abbr>, 비구 등) 아래에 블록을 45도 각도로 배치한다.
 * **조정:** 1~2분 내에 통증이 완화되지 않으면 환자의 반응에 따라 블록 위치를 10도씩 수정한다.
 
 ---

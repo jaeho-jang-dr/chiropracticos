@@ -21,9 +21,9 @@
 
 ## 서론 — Activator Methods의 위상 {#서론}
 
-**Activator Methods® Chiropractic Technique (AMCT)**는 카이로프랙틱 최초의 **기구 교정(instrument-assisted adjustment)** 체계적 기법. 1967년 Arlan Fuhr가 공동 개발.
+**Activator Methods® Chiropractic Technique (<abbr class="med-abbr" title="Activator Methods Chiropractic Technique · 액티베이터 카이로프랙틱 기법">AMCT</abbr>)**는 카이로프랙틱 최초의 **기구 교정(instrument-assisted adjustment)** 체계적 기법. 1967년 Arlan Fuhr가 공동 개발.
 
-- 미국 DC의 **62.8%** 사용 (ACA, Diversified 다음 2위)
+- 미국 <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>의 **62.8%** 사용 (ACA, Diversified 다음 2위)
 - **1985년 NIH grant** 수혜 — 카이로프랙틱 기법 중 최초·유일
 - **150+ peer-reviewed** 논문 · 30+ clinical trials
 
@@ -51,7 +51,7 @@
 
 **1985 NIH Grant**
 - 카이로프랙틱 기법 중 첫 연방 연구비 수혜
-- 이후 수십 년 간 체계적 RCT 축적
+- 이후 수십 년 간 체계적 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 축적
 
 ---
 
@@ -75,7 +75,7 @@
 | Displacement (분절) | 0.3-1.6 mm |
 | Preload | 10-30 N |
 
-**수기 HVLA 대비**
+**수기 <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 대비**
 - 수기: 400-1000 N · 100-150 ms · 1-3 mm
 - **Activator: 힘은 1/3-1/5, 속도는 30배 빠름, 이동 거리는 유사**
 - 결과적으로 **impulse (force × time)**는 더 작지만 **rate of loading**이 크다 → 기계수용기 자극 효과는 비슷
@@ -142,7 +142,7 @@ Thompson의 Derifield와 유사하지만 Activator에서 고유 체계화:
 - 장기 스테로이드 복용
 - 항응고제 치료 중
 
-### 🔴 금기 (일반 SMT와 공통)
+### 🔴 금기 (일반 <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr>와 공통)
 
 - 마미증후군
 - 척수 압박
@@ -233,7 +233,7 @@ Thompson의 Derifield와 유사하지만 Activator에서 고유 체계화:
 4. Wood TG et al. A randomized clinical trial of chiropractic adjustments using an Activator mechanical-assisted device for neck pain. *Spine* 2005.
 5. Gemmell H, Miller P. Comparative effectiveness of manipulation and mobilization for chronic neck pain. *Man Ther* 2006.
 6. Osterbauer PJ et al. SI joint dysfunction treatment using Activator. *JMPT* 2000.
-7. Roy RA, Boucher JP, Comtois AS. Dosage effects of spinal manipulative therapy—Activator. *JMPT* 2009.
+7. Roy <abbr class="med-abbr" title="Rheumatoid Arthritis · 류마티스 관절염">RA</abbr>, Boucher JP, Comtois AS. Dosage effects of spinal manipulative therapy—Activator. *JMPT* 2009.
 
 ### 원천
 

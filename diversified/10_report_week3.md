@@ -35,7 +35,7 @@ Bergmann & Peterson의 원칙에 따른 교정의 핵심 요소입니다.
 
 교정의 성공은 추력(Thrust)의 강도가 아니라 **준비 장력(Pre-load)**의 정밀함에서 옵니다.
 
-### 3.1 뉴턴의 제2법칙과 HVLA ($F = ma$)
+### 3.1 뉴턴의 제2법칙과 <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> ($F = ma$)
 우리는 **고속-저진폭(HVLA)** 기법을 사용합니다. 뉴턴의 제2법칙인 $F = ma$에 따르면, 동일한 힘($F$)을 전달할 때 가속도($a$)를 극대화하면 질량(술자의 유효 체중, $m$)을 줄일 수 있습니다. 즉, **속도가 빠를수록 환자에게 가해지는 물리적 충격(Mass/Force)은 줄이면서도 관절을 효과적으로 가동시킬 수 있습니다.** 이것이 환자의 트라우마를 최소화하는 숙련된 술자의 비결입니다.
 
 ### 3.2 탄성 장벽(Elastic Barrier)의 감각
@@ -84,7 +84,7 @@ Pre-load는 단순히 누르는 것이 아닙니다. 관절 가동 범위의 끝
     1. **자세:** 환자를 옆으로 눕히고 하부 다리는 펴고 상부 다리는 굴곡시켜 골반 레버리지를 만듭니다.
     2. **접촉:** 술자는 **유두돌기(Mamillary process)**에 두상골이나 어제부(Thenar)를 밀착시킵니다.
     3. **추력:** 술자의 골반을 환자의 골반에 밀착시키는 'Pelvic bench'를 형성한 후, 팔의 힘이 아닌 술자의 하체와 체중이 함께 떨어지는 **Body drop/Kick**을 동기화하여 P-A 및 L-M 방향으로 추력을 가합니다.
-*   **천장관절(SI Joint):** 장골(Ilium) 리스팅에 따라 접촉점이 달라집니다. **PI(Postero-Inferior)** 변위 시에는 PSIS를 접촉하여 S-I 방향으로, **AS(Antero-Superior)** 변위 시에는 좌골 결절을 접촉하여 I-S 방향으로 추력을 가합니다.
+*   **천장관절(SI Joint):** 장골(Ilium) 리스팅에 따라 접촉점이 달라집니다. **PI(Postero-Inferior)** 변위 시에는 <abbr class="med-abbr" title="Posterior Superior Iliac Spine · 후상장골극">PSIS</abbr>를 접촉하여 S-I 방향으로, **AS(Antero-Superior)** 변위 시에는 좌골 결절을 접촉하여 I-S 방향으로 추력을 가합니다.
 
 ---
 
@@ -121,8 +121,8 @@ Pre-load는 단순히 누르는 것이 아닙니다. 관절 가동 범위의 끝
 - [ ] 추력 시 자신의 척추 중립 자세를 유지했는가?
 
 ### [시뮬레이션 케이스]
-1.  **Case 1:** 경추 C4 PRS 리스팅 → 앙와위 Index contact, 관절돌기 접촉, P-A/I-S/L-M 벡터.
-2.  **Case 2:** 흉추 T6 PLS 리스팅 → 복와위 TVP 접촉, 양손 교차법, P-A/S-I 벡터.
+1.  **Case 1:** 경추 C4 <abbr class="med-abbr" title="Posterior-Right-Superior · Gonstead listing 후-우-상">PRS</abbr> 리스팅 → 앙와위 Index contact, 관절돌기 접촉, P-A/I-S/L-M 벡터.
+2.  **Case 2:** 흉추 T6 <abbr class="med-abbr" title="Posterior-Left-Superior · Gonstead listing 후-좌-상">PLS</abbr> 리스팅 → 복와위 TVP 접촉, 양손 교차법, P-A/S-I 벡터.
 3.  **Case 3:** 요추 L4 PRS 리스팅 → 측와위 Lumbar Roll, 유두돌기 접촉, Body drop 추력.
 4.  **Case 4:** 장골 PI(Postero-Inferior) 변위 → 측와위 PSIS 접촉, P-A/S-I 벡터.
 5.  **Case 5:** 거골(Talus) 전방 변위 → 배와위 견인 및 P-A 추력 가동화.
