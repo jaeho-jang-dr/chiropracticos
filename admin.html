@@ -159,7 +159,7 @@
       <table>
         <thead><tr>
           <th style="width:36px"><input type="checkbox" id="acc-check-all" /></th>
-          <th>이메일</th><th>이름</th><th>직군</th><th>소속</th><th>면허</th><th>상태</th><th>가입</th><th>작업</th>
+          <th>이메일</th><th>이름·나이</th><th>직군</th><th>연락처</th><th>소속·면허</th><th>상태</th><th>가입</th><th>작업</th>
         </tr></thead>
         <tbody id="accounts-tbody"><tr><td colspan="9" class="empty">로딩 중...</td></tr></tbody>
       </table>
@@ -381,7 +381,7 @@
       const tbody = document.getElementById("accounts-tbody");
       const s = accSearch.toLowerCase();
       const filtered = s
-        ? accCache.filter(u => [u.email, u.full_name, u.affiliation, u.profession, u.license_number].some(x => (x || "").toLowerCase().includes(s)))
+        ? accCache.filter(u => [u.email, u.full_name, u.affiliation, u.profession, u.license_number, u.phone, u.address].some(x => (x || "").toLowerCase().includes(s)))
         : accCache;
       if (!filtered.length) { tbody.innerHTML = `<tr><td colspan=9 class=empty>해당 사용자 없음</td></tr>`; updateBulkBar(); return; }
       tbody.innerHTML = filtered.map(u => {
@@ -391,20 +391,38 @@
           : `<span class="badge ${u.access_level}">${u.access_level === 'pending_approval' ? '대기' : u.access_level === 'approved' ? '승인' : 'free'}</span>`;
         const created = new Date(u.created_at).toLocaleDateString('ko-KR');
         const acts = u.blocked_at
-          ? `<button class="unblock" data-act="unblock" data-id="${u.id}">해제</button>`
+          ? `<button class="unblock" data-act="unblock" data-id="${u.id}">해제</button>
+             <button data-act="detail" data-id="${u.id}">👁</button>`
           : (u.access_level === 'approved'
-              ? `<button class="block" data-act="block" data-id="${u.id}">차단</button>`
-              : `<button class="approve" data-act="approve" data-id="${u.id}">승인</button>
-                 <button class="block" data-act="block" data-id="${u.id}">차단</button>`);
+              ? `<button class="block" data-act="block" data-id="${u.id}">차단</button>
+                 <button data-act="detail" data-id="${u.id}">👁</button>`
+              : `<button class="approve" data-act="approve" data-id="${u.id}">✅ 승인</button>
+                 <button class="block" data-act="block" data-id="${u.id}">차단</button>
+                 <button data-act="detail" data-id="${u.id}">👁</button>`);
         const checked = selected.has(u.id) ? "checked" : "";
+        const nameAge = `${esc(u.full_name || '-')}${u.age ? ' · ' + u.age + '세' : ''}`;
+        const contact = `${esc(u.phone || '-')}<br><span class="meta">${esc(u.address || '')}</span>`;
+        const affLic  = `${esc(u.affiliation || '-')}${u.license_number ? '<br><span class="meta">면허: ' + esc(u.license_number) + '</span>' : ''}`;
         return `<tr>
           <td><input type="checkbox" class="acc-check" data-id="${u.id}" ${checked}></td>
-          <td>${esc(u.email)}</td><td>${esc(u.full_name)}</td><td>${esc(u.profession)}</td>
-          <td>${esc(u.affiliation)}</td><td>${esc(u.license_number)}</td>
-          <td>${status}</td><td class="meta">${created}</td><td class="actions">${acts}</td>
+          <td>${esc(u.email)}</td>
+          <td>${nameAge}</td>
+          <td>${esc(u.profession || '-')}</td>
+          <td style="font-size:.78em">${contact}</td>
+          <td style="font-size:.85em">${affLic}</td>
+          <td>${status}</td>
+          <td class="meta">${created}</td>
+          <td class="actions">${acts}</td>
         </tr>`;
       }).join('');
-      tbody.querySelectorAll("button[data-act]").forEach(b => b.onclick = () => actAccount(b.dataset.act, b.dataset.id));
+      tbody.querySelectorAll("button[data-act]").forEach(b => {
+        b.onclick = async () => {
+          if (b.dataset.act === "detail") return showUserDetail(b.dataset.id);
+          // 단일 액션 후 자동 reload — UI 즉시 반영
+          const ok = await actAccount(b.dataset.act, b.dataset.id);
+          if (ok) { await loadAccounts(); loadStats(); }
+        };
+      });
       tbody.querySelectorAll(".acc-check").forEach(cb => cb.onchange = (e) => {
         if (e.target.checked) selected.add(e.target.dataset.id);
         else selected.delete(e.target.dataset.id);
@@ -412,6 +430,51 @@
       });
       updateBulkBar();
     }
+
+    function showUserDetail(userId) {
+      const u = accCache.find(x => x.id === userId);
+      if (!u) return;
+      const profMap = { MD: '의사 (MD)', PT: '물리치료사 (PT)', DC: '카이로프랙터 (DC)', student: '학생', other: '기타' };
+      const html = `
+        <div style="position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;z-index:9999;padding:1rem" id="user-detail-modal">
+          <div style="background:#fff;border-radius:14px;padding:1.6rem;max-width:560px;width:100%;max-height:85vh;overflow-y:auto">
+            <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:1rem">
+              <div>
+                <h3 style="margin:0">${esc(u.full_name || u.email)}</h3>
+                <div class="meta">${esc(u.email)}</div>
+              </div>
+              <button class="small-btn" onclick="document.getElementById('user-detail-modal').remove()">✕</button>
+            </div>
+            <table style="margin:0;border:none;box-shadow:none">
+              <tbody style="font-size:.9em">
+                <tr><td><strong>나이</strong></td><td>${u.age ? u.age + '세' : '-'}</td></tr>
+                <tr><td><strong>전문직</strong></td><td>${esc(profMap[u.profession] || u.profession || '-')}</td></tr>
+                <tr><td><strong>소속</strong></td><td>${esc(u.affiliation || '-')}</td></tr>
+                <tr><td><strong>면허번호</strong></td><td>${esc(u.license_number || '-')}</td></tr>
+                <tr><td><strong>전화</strong></td><td>${esc(u.phone || '-')}</td></tr>
+                <tr><td><strong>주소</strong></td><td>${esc(u.address || '-')}</td></tr>
+                <tr><td><strong>가입일</strong></td><td>${new Date(u.created_at).toLocaleString('ko-KR')}</td></tr>
+                <tr><td><strong>승인일</strong></td><td>${u.approved_at ? new Date(u.approved_at).toLocaleString('ko-KR') : '대기 중'}</td></tr>
+                <tr><td><strong>로그인 방식</strong></td><td>${esc(u.provider || 'email')}</td></tr>
+                <tr><td><strong>현재 상태</strong></td><td>${u.blocked_at ? `차단됨 (${esc(u.blocked_reason || '')})` : (u.access_level === 'approved' ? '승인됨' : '승인 대기')}</td></tr>
+              </tbody>
+            </table>
+            <div style="display:flex;gap:.5rem;margin-top:1.2rem;flex-wrap:wrap">
+              ${u.access_level !== 'approved' && !u.blocked_at ? `<button class="big-btn" style="background:#34c759;flex:1;min-width:140px" onclick="window.__detailAct('approve','${u.id}')">✅ 즉시 승인</button>` : ''}
+              ${!u.blocked_at && u.access_level === 'approved' ? `<button class="big-btn" style="background:#ff3b30;flex:1;min-width:140px" onclick="window.__detailAct('block','${u.id}')">🚫 차단</button>` : ''}
+              ${u.blocked_at ? `<button class="big-btn" style="background:#0a84ff;flex:1;min-width:140px" onclick="window.__detailAct('unblock','${u.id}')">↩ 차단 해제</button>` : ''}
+            </div>
+          </div>
+        </div>`;
+      const tmp = document.createElement('div');
+      tmp.innerHTML = html;
+      document.body.appendChild(tmp.firstElementChild);
+    }
+    window.__detailAct = async (action, id) => {
+      const ok = await actAccount(action, id);
+      document.getElementById('user-detail-modal')?.remove();
+      if (ok) { await loadAccounts(); loadStats(); }
+    };
 
     function updateBulkBar() {
       const bar = document.getElementById("bulk-bar");
@@ -490,7 +553,7 @@
     };
 
     document.getElementById("acc-csv").onclick = () => {
-      const cols = ["email","full_name","profession","affiliation","license_number","role","access_level","blocked_at","blocked_reason","created_at","approved_at"];
+      const cols = ["email","full_name","age","phone","address","profession","affiliation","license_number","role","access_level","blocked_at","blocked_reason","created_at","approved_at"];
       downloadCsv(`accounts-${dateStamp()}.csv`, cols, accCache);
     };
 

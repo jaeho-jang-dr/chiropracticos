@@ -50,6 +50,9 @@ create table if not exists public.users (
   profession      varchar(20),                               -- MD | PT | DC | student | other
   affiliation     varchar(120),
   license_number  varchar(40),
+  age             smallint,
+  phone           varchar(20),
+  address         varchar(200),
   role            varchar(10)  not null default 'user',      -- user | admin
   access_level    varchar(20)  not null default 'pending_approval',
   blocked_at      timestamptz,
@@ -145,7 +148,9 @@ security definer set search_path = public
 as $$
 begin
   insert into public.users (
-    id, email, provider, full_name, profession, affiliation, license_number, role, access_level, approved_at
+    id, email, provider, full_name, profession, affiliation, license_number,
+    age, phone, address,
+    role, access_level, approved_at
   ) values (
     new.id,
     new.email,
@@ -154,6 +159,9 @@ begin
     new.raw_user_meta_data->>'profession',
     new.raw_user_meta_data->>'affiliation',
     new.raw_user_meta_data->>'license_number',
+    nullif(new.raw_user_meta_data->>'age', '')::smallint,
+    new.raw_user_meta_data->>'phone',
+    new.raw_user_meta_data->>'address',
     case when new.email in ('drjang00@gmail.com','drjang000@gmail.com') then 'admin' else 'user' end,
     case when new.email in ('drjang00@gmail.com','drjang000@gmail.com') then 'approved' else 'pending_approval' end,
     case when new.email in ('drjang00@gmail.com','drjang000@gmail.com') then now() else null end

@@ -35,40 +35,55 @@
   </div></nav>
 
   <div class="auth-card" id="card">
-    <h1>가입</h1>
-    <p class="lead">의료인(MD/PT) 대상 비영리 교육자료. 가입 후 관리자 승인을 받으셔야 챕터 2-12에 접근하실 수 있습니다 (보통 1-2일).</p>
+    <h1>가입 신청</h1>
+    <p class="lead">의료인(MD/PT) 대상 비영리 교육자료. 가입 신청 후 관리자가 자격을 확인해 직접 승인합니다 (보통 1–2일). 승인 전엔 챕터 2~12 접근이 제한됩니다.</p>
 
-    <div class="notice"><strong>자격 확인용 정보</strong>를 함께 입력해주세요. 거짓 정보로 인한 접근은 차단됩니다.</div>
+    <div class="notice"><strong>자격 확인용 정보</strong>를 정확히 입력해주세요. 거짓 정보 시 접근이 차단됩니다.</div>
 
     <button id="google-btn" class="btn-google">
       <svg width="18" height="18" viewBox="0 0 18 18"><path fill="#4285F4" d="M17.6 9.2c0-.6-.1-1.1-.2-1.7H9v3.2h4.8c-.2 1.2-.8 2.2-1.8 2.8v2.3h2.9c1.7-1.6 2.7-3.9 2.7-6.6z"/><path fill="#34A853" d="M9 18c2.4 0 4.5-.8 6-2.2l-2.9-2.3c-.8.5-1.8.9-3.1.9-2.4 0-4.4-1.6-5.1-3.8H.9v2.4C2.4 15.9 5.5 18 9 18z"/><path fill="#FBBC04" d="M3.9 10.7c-.2-.5-.3-1.1-.3-1.7s.1-1.2.3-1.7V4.9H.9C.3 6.1 0 7.5 0 9s.3 2.9.9 4.1l3-2.4z"/><path fill="#EA4335" d="M9 3.6c1.3 0 2.5.5 3.5 1.4l2.6-2.6C13.5.9 11.4 0 9 0 5.5 0 2.4 2.1.9 4.9l3 2.4C4.6 5.1 6.6 3.6 9 3.6z"/></svg>
-      Google로 가입
+      Google로 가입 신청
     </button>
 
     <div class="divider">또는 이메일로</div>
 
     <form id="email-form">
-      <label>이메일</label>
+      <label>이름 *</label>
+      <input type="text" name="full_name" required autocomplete="name" />
+
+      <label>나이 *</label>
+      <input type="number" name="age" min="18" max="120" required inputmode="numeric" />
+
+      <label>이메일 *</label>
       <input type="email" name="email" required autocomplete="email" />
-      <label>비밀번호 (6자 이상)</label>
+
+      <label>비밀번호 * <span style="font-weight:400;color:#888">(6자 이상)</span></label>
       <input type="password" name="password" required minlength="6" autocomplete="new-password" />
-      <label>이름</label>
-      <input type="text" name="full_name" required />
-      <label>직군</label>
+
+      <label>전화번호 *</label>
+      <input type="tel" name="phone" required autocomplete="tel" placeholder="010-1234-5678" />
+
+      <label>주소 *</label>
+      <input type="text" name="address" required autocomplete="street-address" placeholder="시·도 시·군·구 동·읍·면 (상세주소까지)" />
+
+      <label>전문직 *</label>
       <select name="profession" required>
         <option value="">선택</option>
         <option value="MD">의사 (MD)</option>
         <option value="PT">물리치료사 (PT)</option>
         <option value="DC">카이로프랙터 (DC)</option>
-        <option value="student">학생</option>
-        <option value="other">기타</option>
+        <option value="student">학생 (의대·물리치료학과)</option>
+        <option value="other">기타 의료인</option>
       </select>
-      <label>소속</label>
-      <input type="text" name="affiliation" required />
+
+      <label>소속 *</label>
+      <input type="text" name="affiliation" required placeholder="병원·의원·학교명" />
+
       <label>면허번호 또는 학번 <span style="font-weight:400;color:#888">(승인 검토용)</span></label>
-      <input type="text" name="license_number" />
+      <input type="text" name="license_number" placeholder="자격 확인용" />
+
       <div class="err" id="err"></div>
-      <button type="submit">가입하기</button>
+      <button type="submit">📨 가입 신청 제출</button>
     </form>
 
     <div class="alt">이미 계정이 있으신가요? <a href="./login.html">로그인</a></div>
@@ -106,6 +121,9 @@
         options: {
           data: {
             full_name: fd.get("full_name"),
+            age: fd.get("age"),
+            phone: fd.get("phone"),
+            address: fd.get("address"),
             profession: fd.get("profession"),
             affiliation: fd.get("affiliation"),
             license_number: fd.get("license_number"),
