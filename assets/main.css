@@ -207,6 +207,8 @@ h1, h2, h3, h4, h5 {
   background: rgba(0,113,227,.08);
   color: var(--c-accent);
 }
+/* mobile-only mirror of nav-actions injected by ui.js — hidden on desktop */
+.nav-links .mobile-actions-wrap { display: none; }
 
 /* ========== HAMBURGER (mobile) ========== */
 .nav-toggle {
@@ -1148,6 +1150,7 @@ footer {
   }
   .nav-links a::after { display: none; }
   .nav-links a:hover { transform: none; background: rgba(0,113,227,.08); }
+  .nav-links .mobile-actions-wrap { display: block; }
   .nav-links .mobile-actions {
     display: flex;
     gap: .5rem;
