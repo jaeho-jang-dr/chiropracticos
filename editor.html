@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>편집자 약력 | Chiropractic</title>
+  <meta name="description" content="편집자 Jae-Ho Jang, M.D., BAppSc(Chiro)., D.C., PhD 약력 및 카이로프랙틱 자격증 갤러리." />
+  <link rel="stylesheet" href="./assets/main.css?v=20260428x" />
+  <script defer src="./assets/ui.js?v=20260428x"></script>
+  <script defer src="./assets/download-guard.js?v=20260428x"></script>
+  <script defer src="./assets/hide-guard.js?v=20260428x"></script>
+  <script defer src="./assets/pdf-viewer.js?v=20260428x"></script>
+  <script src="./assets/config.js?v=20260428x"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260428x"></script>
+  <style>
+    .editor-shell { max-width: 1180px; margin: 32px auto 96px; padding: 0 24px; }
+    .editor-hero {
+      background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+      border-radius: 18px; padding: 48px 40px; margin-bottom: 40px;
+      border: 1px solid rgba(0,0,0,.06);
+    }
+    .editor-hero h1 { margin: 0 0 8px; font-size: 2.2em; letter-spacing: -.02em; }
+    .editor-hero .subtitle { margin: 0 0 14px; color: #424245; font-size: 1.05em; font-weight: 500; }
+    .editor-hero .credentials {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px;
+    }
+    .editor-hero .cred-pill {
+      background: #fff; border: 1px solid rgba(0,0,0,.08);
+      padding: 5px 12px; border-radius: 999px;
+      font-size: .82em; color: #1d1d1f; font-weight: 500;
+    }
+
+    .editor-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 36px;
+      align-items: start;
+    }
+    @media (max-width: 880px) {
+      .editor-grid { grid-template-columns: 1fr; gap: 28px; }
+    }
+
+    /* Bio column */
+    .bio-section h2 {
+      font-size: 1.5em; margin: 0 0 18px; padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0,0,0,.08);
+    }
+    .bio-block {
+      background: #fff; border: 1px solid rgba(0,0,0,.08); border-radius: 14px;
+      padding: 22px 24px; margin-bottom: 16px;
+    }
+    .bio-block h3 {
+      margin: 0 0 12px; font-size: 1.05em; font-weight: 600;
+      color: #1d1d1f;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .bio-block h3 .ic { font-size: 1.1em; }
+    .bio-list {
+      list-style: none; padding: 0; margin: 0;
+    }
+    .bio-list li {
+      display: grid; grid-template-columns: 90px 1fr; gap: 14px;
+      padding: 8px 0; border-top: 1px dashed rgba(0,0,0,.06);
+      font-size: .92em; line-height: 1.55;
+    }
+    .bio-list li:first-child { border-top: 0; }
+    .bio-list .yr {
+      color: #6e6e73; font-variant-numeric: tabular-nums;
+      font-weight: 600; font-size: .85em;
+    }
+    .bio-list .desc { color: #1d1d1f; }
+    .bio-list .desc strong { color: #1d1d1f; font-weight: 600; }
+    .bio-list .desc em { color: #424245; font-style: normal; font-size: .88em; display: block; margin-top: 2px; }
+
+    /* Gallery column */
+    .cred-gallery h2 {
+      font-size: 1.5em; margin: 0 0 18px; padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0,0,0,.08);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .cred-gallery h2 .count {
+      font-size: .6em; color: #86868b; font-weight: 500;
+    }
+    .cred-card {
+      display: block; text-decoration: none; color: inherit;
+      background: #fff; border: 1px solid rgba(0,0,0,.08);
+      border-radius: 14px; overflow: hidden;
+      margin-bottom: 16px;
+      transition: all .18s ease;
+    }
+    .cred-card:hover {
+      border-color: rgba(0,113,227,.3);
+      box-shadow: 0 6px 22px rgba(0,0,0,.08);
+      transform: translateY(-2px);
+      text-decoration: none; color: inherit;
+    }
+    .cred-card .thumb {
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ec 100%);
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .cred-card .thumb .icon-wrap {
+      width: 88px; height: 88px; border-radius: 50%;
+      background: #fff; box-shadow: 0 4px 14px rgba(0,0,0,.08);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.6em;
+    }
+    .cred-card .thumb .pdf-tag {
+      position: absolute; top: 12px; right: 12px;
+      background: rgba(255,59,48,.92); color: #fff;
+      padding: 3px 10px; border-radius: 6px;
+      font-size: .72em; font-weight: 600; letter-spacing: .04em;
+    }
+    .cred-card .body { padding: 16px 18px 18px; }
+    .cred-card .title {
+      font-size: 1em; font-weight: 600; color: #1d1d1f;
+      margin: 0 0 4px; line-height: 1.4;
+    }
+    .cred-card .org {
+      font-size: .85em; color: #424245; margin: 0 0 8px;
+    }
+    .cred-card .meta {
+      font-size: .78em; color: #86868b;
+      display: flex; gap: 10px; align-items: center;
+    }
+    .cred-card .meta .dot { color: #d2d2d7; }
+    .cred-card .open-hint {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: .8em; color: #0071e3; font-weight: 500;
+      margin-top: 10px;
+    }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: #424245; text-decoration: none;
+      font-size: .9em; margin-bottom: 18px;
+      padding: 6px 12px; border-radius: 8px;
+      transition: background .15s ease;
+    }
+    .back-link:hover { background: rgba(0,0,0,.04); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- ========== GLASSMORPHIC NAV ========== -->
+  <nav class="site-nav" aria-label="주 메뉴">
+    <div class="nav-inner">
+      <a class="nav-brand" href="./index.html">
+        <span class="mark"></span>
+        <span>Chiropractic</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html#core">철학</a></li>
+        <li><a href="./index.html#history">역사</a></li>
+        <li><a href="./index.html#dashboard">📊 현황</a></li>
+        <li><a href="./index.html#curriculum">커리큘럼</a></li>
+        <li><a href="./index.html#format">학습 포맷</a></li>
+        <li><a href="./index.html#principle">원칙</a></li>
+        <li><a href="./editor.html" class="active">👤 편집자</a></li>
+        <li><a href="./archive.html">📂 아카이브</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-ghost btn-sm" href="./login.html" aria-label="로그인">로그인</a>
+        <a class="btn btn-primary btn-sm" href="./index.html#curriculum">시작하기</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="editor-shell">
+
+    <a href="./index.html#principle" class="back-link">← 편집 원칙으로 돌아가기</a>
+
+    <!-- ========== HERO ========== -->
+    <section class="editor-hero">
+      <h1>편집자 약력</h1>
+      <p class="subtitle">Jae-Ho Jang, M.D., BAppSc(Chiro)., D.C., PhD</p>
+      <p style="margin:0;color:#424245;font-size:.95em;line-height:1.65">
+        본 강의 시스템은 정형외과 전문의이자 카이로프랙틱(Chiropractic) 학사를
+        보유한 의사가 직접 편집·검수합니다. 양쪽 학문의 임상 경험을 바탕으로
+        근거 기반(EBM) 의학 기준에 맞는 내용만 선별하여 구성하였습니다.
+      </p>
+      <div class="credentials">
+        <span class="cred-pill">정형외과 전문의 (M.D.)</span>
+        <span class="cred-pill">BAppSc (Chiropractic) · RMIT</span>
+        <span class="cred-pill">D.C. (Doctor of Chiropractic)</span>
+        <span class="cred-pill">PhD</span>
+        <span class="cred-pill">Member · Korean Spine Society</span>
+        <span class="cred-pill">ACA Member</span>
+      </div>
+    </section>
+
+    <!-- ========== TWO-COLUMN: BIO + GALLERY ========== -->
+    <div class="editor-grid">
+
+      <!-- ========== BIO ========== -->
+      <section class="bio-section">
+        <h2>약력</h2>
+
+        <div class="bio-block">
+          <h3><span class="ic">🎓</span> 학력 (Education)</h3>
+          <ul class="bio-list">
+            <li>
+              <span class="yr">PhD</span>
+              <span class="desc">
+                <strong>의학 박사 (Doctor of Philosophy)</strong>
+                <em>척추 질환 임상 연구</em>
+              </span>
+            </li>
+            <li>
+              <span class="yr">D.C.</span>
+              <span class="desc">
+                <strong>Doctor of Chiropractic</strong>
+                <em>미국 카이로프랙틱 의사 자격</em>
+              </span>
+            </li>
+            <li>
+              <span class="yr">BAppSc</span>
+              <span class="desc">
+                <strong>Bachelor of Applied Science (Chiropractic)</strong>
+                <em>RMIT University, Melbourne · 카이로프랙틱 학사</em>
+              </span>
+            </li>
+            <li>
+              <span class="yr">M.D.</span>
+              <span class="desc">
+                <strong>의학사 (Doctor of Medicine)</strong>
+                <em>의과대학 졸업</em>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bio-block">
+          <h3><span class="ic">🏥</span> 자격 (Board Certification)</h3>
+          <ul class="bio-list">
+            <li>
+              <span class="yr">전문의</span>
+              <span class="desc">
+                <strong>정형외과 전문의 (Board Certified Orthopedic Surgeon)</strong>
+                <em>대한정형외과학회 인증</em>
+              </span>
+            </li>
+            <li>
+              <span class="yr">정회원</span>
+              <span class="desc">
+                <strong>대한척추학회 정회원 (Korean Spine Society)</strong>
+                <em>척추 외과·중재 시술 분야</em>
+              </span>
+            </li>
+            <li>
+              <span class="yr">DC</span>
+              <span class="desc">
+                <strong>미국 카이로프랙틱 의사 (Doctor of Chiropractic)</strong>
+                <em>American Chiropractic Association (ACA) Member</em>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bio-block">
+          <h3><span class="ic">🔬</span> 임상·교육 (Clinical & Teaching)</h3>
+          <ul class="bio-list">
+            <li>
+              <span class="yr">현재</span>
+              <span class="desc">
+                <strong>척추 질환 임상 진료</strong>
+                <em>정형외과 + 카이로프랙틱 통합 접근 · 도수치료 협진 시스템 운영</em>
+              </span>
+            </li>
+            <li>
+              <span class="yr">교육</span>
+              <span class="desc">
+                <strong>한국 의료진 대상 카이로프랙틱 교육</strong>
+                <em>정형외과·재활의학과 의사 및 도수치료 물리치료사 대상 통합 강의</em>
+              </span>
+            </li>
+            <li>
+              <span class="yr">2015</span>
+              <span class="desc">
+                <strong>대한정형통증학회 (KOA) 발표</strong>
+                <em>카이로프랙틱 기법 시연 · 신경학적 검사 시연 (아카이브 영상 참조)</em>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bio-block">
+          <h3><span class="ic">📝</span> 본 강의의 편집 방향</h3>
+          <p style="margin:0;font-size:.92em;line-height:1.7;color:#1d1d1f">
+            정형외과 외과의(M.D.)와 카이로프랙틱 의사(D.C.) 양쪽 자격을 보유한
+            드문 임상 경험을 바탕으로,
+            전통 카이로프랙틱의 <strong>Vitalism·Innate Intelligence</strong>
+            등 비과학적 요소는 배제하고,
+            <strong>생체역학·신경생리학 기반 근거</strong>가 확립된 부분만
+            선별하여 한국 의료 환경에 맞게 재구성하였습니다.
+          </p>
+          <p style="margin:10px 0 0;font-size:.88em;line-height:1.6;color:#424245">
+            상세한 편집 원칙은
+            <a href="./index.html#principle" style="color:#0071e3">편집 원칙 페이지</a>를 참조하십시오.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== CREDENTIAL GALLERY ========== -->
+      <aside class="cred-gallery">
+        <h2>자격증 갤러리 <span class="count">(2)</span></h2>
+
+        <a class="cred-card" href="./archive/credentials/RMIT Certification.pdf"
+           data-pdf="./archive/credentials/RMIT Certification.pdf"
+           data-pdf-title="RMIT Chiropractic Certification">
+          <div class="thumb">
+            <span class="pdf-tag">PDF</span>
+            <div class="icon-wrap">🎓</div>
+          </div>
+          <div class="body">
+            <p class="title">RMIT Chiropractic Certification</p>
+            <p class="org">Royal Melbourne Institute of Technology (RMIT University)</p>
+            <p class="meta">
+              <span>Bachelor of Applied Science</span>
+              <span class="dot">·</span>
+              <span>Chiropractic</span>
+            </p>
+            <span class="open-hint">📄 미리보기 →</span>
+          </div>
+        </a>
+
+        <a class="cred-card" href="./archive/credentials/ACA membership.pdf"
+           data-pdf="./archive/credentials/ACA membership.pdf"
+           data-pdf-title="ACA Membership">
+          <div class="thumb">
+            <span class="pdf-tag">PDF</span>
+            <div class="icon-wrap">🏛️</div>
+          </div>
+          <div class="body">
+            <p class="title">ACA Membership</p>
+            <p class="org">American Chiropractic Association</p>
+            <p class="meta">
+              <span>Doctor of Chiropractic</span>
+              <span class="dot">·</span>
+              <span>Active Member</span>
+            </p>
+            <span class="open-hint">📄 미리보기 →</span>
+          </div>
+        </a>
+
+        <div class="callout callout-info" style="margin-top:18px">
+          <p style="margin:0;font-size:.85em;line-height:1.55">
+            🔒 자격증 PDF는 미리보기 전용으로, 다운로드가 제한됩니다.
+            추가 자료는 추후 업로드될 예정입니다.
+          </p>
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5>Chiropractic</h5>
+          <ul>
+            <li><a href="./index.html#core">핵심 철학</a></li>
+            <li><a href="./index.html#history">역사와 창시자</a></li>
+            <li><a href="./index.html#curriculum">전체 커리큘럼</a></li>
+            <li><a href="./index.html#principle">편집 원칙</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>학습</h5>
+          <ul>
+            <li><a href="./chapter01_introduction.html">1. 서설</a></li>
+            <li><a href="./chapter02_functional_neurology.html">2. Functional Neurology ⭐</a></li>
+            <li><a href="./chapter03_diversified.html">3. Diversified</a></li>
+            <li><a href="./index.html#format">학습 포맷</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>자료</h5>
+          <ul>
+            <li><a href="./archive.html">📂 레거시 아카이브</a></li>
+            <li><a href="./editor.html">👤 편집자 약력</a></li>
+            <li><a href="#">참고문헌</a></li>
+            <li><a href="#">연구 소스</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>계정</h5>
+          <ul>
+            <li><a href="./login.html">로그인</a></li>
+            <li><a href="./signup.html">가입</a></li>
+            <li><a href="./admin.html">관리자</a></li>
+            <li><a href="mailto:drjang00@gmail.com">문의</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-credit">
+        Edited by <strong>Jae-Ho Jang, M.D., BAppSc(Chiro)., D.C., PhD</strong>
+        <span class="credit-creds">Board Certified Orthopedic Surgeon · Member of Korean Spine Society · 정형외과전문의 · 척추학회정회원</span>
+      </div>
+      <div class="footer-bottom">
+        <span>교육 목적 자료 · 임상 판단은 담당 의료진의 책임</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

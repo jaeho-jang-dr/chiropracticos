@@ -1103,6 +1103,41 @@ footer {
 .dashboard-grid.is-list .dash-card .dash-chips { flex-shrink: 0; }
 .dashboard-grid.is-list .dash-card:hover { transform: none; }
 
+/* ========== EDITORIAL PRINCIPLE HEADER ========== */
+.principle-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+.principle-header-text { flex: 1; min-width: 240px; }
+.principle-header-text h2 { margin: 0 0 .35rem; }
+.principle-header-text .section-lead { margin: 0; }
+.editor-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .65rem 1.15rem;
+  font-size: .92rem;
+  font-weight: 600;
+  border-radius: var(--r-pill);
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: .35rem;
+}
+.editor-btn .ic { font-size: 1.05em; line-height: 1; }
+.editor-btn .arr {
+  font-size: .9em;
+  transition: transform .2s var(--ease);
+}
+.editor-btn:hover .arr { transform: translateX(3px); }
+@media (max-width: 640px) {
+  .principle-header { flex-direction: column; gap: .9rem; }
+  .editor-btn { align-self: flex-start; }
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 900px) {
   /* hide desktop nav links, show hamburger */
