@@ -89,14 +89,18 @@
     document.body.style.overflow = '';
   }
 
+  function isAdmin() {
+    return !!(document.body && document.body.classList.contains('is-admin')) || window.__isAdmin === true;
+  }
+
   // PDF 링크 클릭 가로채기 (전역 위임)
   document.addEventListener('click', function (e) {
+    if (isAdmin()) return;  // 관리자는 그대로 새 탭/다운로드
     const a = e.target && e.target.closest && e.target.closest('a[href]');
     if (!a) return;
     const href = a.getAttribute('href') || '';
     // .pdf 확장자(쿼리/프래그먼트 허용)만
     if (!/\.pdf(?:[?#]|$)/i.test(href)) return;
-    // .allow-download 클래스가 있으면 그대로 (현재 정책상 PDF는 항상 차단이지만 확장 대비)
     if (a.classList.contains('allow-download')) return;
     e.preventDefault();
     e.stopPropagation();
@@ -109,8 +113,9 @@
     open(href, title);
   }, true);
 
-  // DOCX 링크는 미리보기 미지원 안내
+  // DOCX 링크는 미리보기 미지원 안내 (관리자는 그대로 다운로드)
   document.addEventListener('click', function (e) {
+    if (isAdmin()) return;
     const a = e.target && e.target.closest && e.target.closest('a[href]');
     if (!a) return;
     const href = a.getAttribute('href') || '';

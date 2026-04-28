@@ -80,6 +80,12 @@ function updateNavWidget(row) {
   const unicorn = document.getElementById("hero-unicorn");
   if (row?.role === "admin" && unicorn) unicorn.style.display = "block";
 
+  // download-guard.js / pdf-viewer.js 가 차단 우회를 결정하는 신호
+  if (row?.role === "admin") {
+    document.body.classList.add("is-admin");
+    window.__isAdmin = true;
+  }
+
   const navAction = document.querySelector(".nav-actions");
   if (!navAction || !row) return;
 
