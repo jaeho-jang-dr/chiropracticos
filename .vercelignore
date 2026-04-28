@@ -1,0 +1,8 @@
+# Vercel Functions (api/) + package.json은 임시 제외
+# — 토큰(R2/GitHub PAT) 발급 후 npm install로 lock 생성 + 재포함 예정
+# — 그 전엔 Functions가 작동도 못 하므로 정적 사이트로 빌드만 통과시키는 게 목적
+
+api/
+package.json
+package-lock.json
+node_modules/
