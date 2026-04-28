@@ -941,7 +941,8 @@ footer {
   padding-top: 1.5rem;
   border-top: 1px solid var(--c-border-light);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
   gap: .5rem;
   color: var(--c-text-tertiary);
