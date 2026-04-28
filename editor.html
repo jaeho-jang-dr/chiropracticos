@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>편집자 약력 | Chiropractic</title>
   <meta name="description" content="편집자 Jae-Ho Jang, M.D., BAppSc(Chiro)., D.C., PhD 약력 및 카이로프랙틱 자격증 갤러리." />
-  <link rel="stylesheet" href="./assets/main.css?v=20260428y" />
-  <script defer src="./assets/ui.js?v=20260428y"></script>
-  <script defer src="./assets/download-guard.js?v=20260428y"></script>
-  <script defer src="./assets/hide-guard.js?v=20260428y"></script>
-  <script defer src="./assets/pdf-viewer.js?v=20260428y"></script>
-  <script src="./assets/config.js?v=20260428y"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260428y"></script>
+  <link rel="stylesheet" href="./assets/main.css?v=20260428z" />
+  <script defer src="./assets/ui.js?v=20260428z"></script>
+  <script defer src="./assets/download-guard.js?v=20260428z"></script>
+  <script defer src="./assets/hide-guard.js?v=20260428z"></script>
+  <script defer src="./assets/pdf-viewer.js?v=20260428z"></script>
+  <script defer src="./assets/image-lightbox.js?v=20260428z"></script>
+  <script defer src="./assets/screenshot-guard.js?v=20260428z"></script>
+  <script src="./assets/config.js?v=20260428z"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260428z"></script>
   <style>
     .editor-shell { max-width: 1180px; margin: 32px auto 96px; padding: 0 24px; }
     .editor-hero {
@@ -87,6 +89,10 @@
       border-radius: 14px; overflow: hidden;
       margin-bottom: 16px;
       transition: all .18s ease;
+      /* button reset */
+      width: 100%; padding: 0; text-align: left;
+      font: inherit; cursor: zoom-in;
+      appearance: none; -webkit-appearance: none;
     }
     .cred-card:hover {
       border-color: rgba(0,113,227,.3);
@@ -94,6 +100,12 @@
       transform: translateY(-2px);
       text-decoration: none; color: inherit;
     }
+    .cred-card:focus-visible {
+      outline: 3px solid rgba(0,113,227,.45);
+      outline-offset: 2px;
+    }
+    .cred-card .body, .cred-card .thumb { display: block; }
+    .cred-card .meta { display: flex; }
     .cred-card .thumb {
       aspect-ratio: 3/4;
       background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ec 100%);
@@ -181,7 +193,7 @@
     </div>
   </nav>
 
-  <main class="editor-shell">
+  <main class="editor-shell" data-no-screenshot>
 
     <a href="./index.html#principle" class="back-link">← 편집 원칙으로 돌아가기</a>
 
@@ -320,54 +332,59 @@
       <aside class="cred-gallery">
         <h2>자격증 갤러리 <span class="count">(2)</span></h2>
 
-        <a class="cred-card" href="./archive/credentials/RMIT Certification.pdf"
-           data-pdf="./archive/credentials/RMIT Certification.pdf"
-           data-pdf-title="RMIT Chiropractic Certification">
-          <div class="thumb">
-            <span class="pdf-tag">PDF</span>
-            <img src="./images/credentials/rmit_certification.jpg?v=20260428y"
+        <button type="button" class="cred-card"
+                data-img-zoom="./images/credentials/rmit_certification.jpg?v=20260428z"
+                data-img-alt="RMIT University · Bachelor of Applied Science (Chiropractic) Certificate"
+                data-img-title="RMIT Chiropractic Certification"
+                aria-label="RMIT 자격증 확대 보기">
+          <span class="thumb">
+            <span class="pdf-tag">CERT</span>
+            <img src="./images/credentials/rmit_certification.jpg?v=20260428z"
                  alt="RMIT University · Bachelor of Applied Science (Chiropractic) Certificate"
                  loading="lazy" />
-            <span class="preview-hint">📄 클릭하여 원본 PDF 보기</span>
-          </div>
-          <div class="body">
-            <p class="title">RMIT Chiropractic Certification</p>
-            <p class="org">Royal Melbourne Institute of Technology (RMIT University)</p>
-            <p class="meta">
+            <span class="preview-hint">🔍 클릭하여 확대</span>
+          </span>
+          <span class="body">
+            <span class="title">RMIT Chiropractic Certification</span>
+            <span class="org">Royal Melbourne Institute of Technology (RMIT University)</span>
+            <span class="meta">
               <span>Bachelor of Applied Science</span>
               <span class="dot">·</span>
               <span>Chiropractic</span>
-            </p>
-            <span class="open-hint">📄 미리보기 →</span>
-          </div>
-        </a>
+            </span>
+            <span class="open-hint">🔍 확대 보기</span>
+          </span>
+        </button>
 
-        <a class="cred-card" href="./archive/credentials/ACA membership.pdf"
-           data-pdf="./archive/credentials/ACA membership.pdf"
-           data-pdf-title="ACA Membership">
-          <div class="thumb">
-            <span class="pdf-tag">PDF</span>
-            <img src="./images/credentials/aca_membership.jpg?v=20260428y"
+        <button type="button" class="cred-card"
+                data-img-zoom="./images/credentials/aca_membership.jpg?v=20260428z"
+                data-img-alt="American Chiropractic Association (ACA) Membership Certificate"
+                data-img-title="ACA Membership"
+                aria-label="ACA Membership 자격증 확대 보기">
+          <span class="thumb">
+            <span class="pdf-tag">CERT</span>
+            <img src="./images/credentials/aca_membership.jpg?v=20260428z"
                  alt="American Chiropractic Association (ACA) Membership Certificate"
                  loading="lazy" />
-            <span class="preview-hint">📄 클릭하여 원본 PDF 보기</span>
-          </div>
-          <div class="body">
-            <p class="title">ACA Membership</p>
-            <p class="org">American Chiropractic Association</p>
-            <p class="meta">
+            <span class="preview-hint">🔍 클릭하여 확대</span>
+          </span>
+          <span class="body">
+            <span class="title">ACA Membership</span>
+            <span class="org">American Chiropractic Association</span>
+            <span class="meta">
               <span>Doctor of Chiropractic</span>
               <span class="dot">·</span>
               <span>Active Member</span>
-            </p>
-            <span class="open-hint">📄 미리보기 →</span>
-          </div>
-        </a>
+            </span>
+            <span class="open-hint">🔍 확대 보기</span>
+          </span>
+        </button>
 
         <div class="callout callout-info" style="margin-top:18px">
           <p style="margin:0;font-size:.85em;line-height:1.55">
-            🔒 자격증 PDF는 미리보기 전용으로, 다운로드가 제한됩니다.
-            추가 자료는 추후 업로드될 예정입니다.
+            🔒 자격증은 <strong>미리보기 전용</strong>입니다. 클릭 시 이미지로만 확대되며,
+            원본 PDF 다운로드·우클릭 저장·인쇄·텍스트 복사가 차단됩니다.
+            화면을 떠나거나 캡처 단축키 사용 시 자동으로 가려집니다.
           </p>
         </div>
       </aside>
