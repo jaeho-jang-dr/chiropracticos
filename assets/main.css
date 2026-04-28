@@ -1302,26 +1302,26 @@ footer {
 .chip.partial { background: #fff7e0; color: #8a5a00; }
 .chip.empty   { background: #f8f8f9; color: #a8a8ad; }
 
-/* Footer credit — 편집자 정보 */
+/* Footer credit — 편집자 정보 (라이트 테마) */
 .footer-credit {
   text-align: center;
   padding: 18px 16px 14px;
   margin-top: 8px;
-  border-top: 1px solid rgba(255,255,255,.08);
-  color: #d1d1d6;
+  border-top: 1px solid var(--c-border-light);
+  color: #424245;
   font-size: .82rem;
   line-height: 1.7;
   letter-spacing: .01em;
 }
 .footer-credit strong {
-  color: #fff;
+  color: #1d1d1f;
   font-weight: 600;
   letter-spacing: .02em;
 }
 .footer-credit .credit-creds {
   display: block;
   margin-top: 4px;
-  color: #a1a1a6;
+  color: #6e6e73;
   font-size: .92em;
 }
 
