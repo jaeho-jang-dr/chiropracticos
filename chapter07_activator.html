@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Activator Methods | Chiropractic</title>
-  <meta name="description" content="Chapter 7. Activator Methods — Arlan Fuhr · 기구 교정 140N · NIH grant 수혜 · 저강도 안전. 근거 기반, 비판적 시각 포함." />
+  <meta name="description" content="Chapter 7. Activator Methods — Arlan Fuhr · 기구 공학 140N·3ms·0.3-1.6mm · Basic Scan Protocol(LLR) · 부위별 LOD 교정 절차. 근거 기반·비판적 시각 포함." />
   <link rel="stylesheet" href="./assets/main.css?v=20260428z2" />
 
 <script defer src="./assets/ui.js?v=20260428z2"></script>
@@ -68,10 +68,12 @@
       <ul class="nav-links" style="justify-content: center;">
         <li><a href="#diagrams">📊 다이어그램</a></li>
         <li><a href="#overview">개요</a></li>
-        <li><a href="#theory">이론·기전</a></li>
-        <li><a href="#clinical">임상 적용</a></li>
-        <li><a href="#evidence">근거 수준</a></li>
-        <li><a href="#critical">🔴 비판적 시각</a></li>
+        <li><a href="#theory">공학·기전</a></li>
+        <li><a href="#scan-protocol">Basic Scan</a></li>
+        <li><a href="#clinical">교정 절차</a></li>
+        <li><a href="#evidence">근거</a></li>
+        <li><a href="#critical">🔴 비판</a></li>
+        <li><a href="#tips">📌 팁</a></li>
         <li><a href="#resources">자료</a></li>
       </ul>
     </div>
@@ -114,15 +116,187 @@
       <div class="callout callout-tip"><h4>근거</h4><p>🟡 Moderate — 수기 <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr>와 동등 효과 (Huggins 2012 JMPT SR)</p></div>
     </section>
 
-    <section id="theory">
-      <h2>이론·기전</h2>
-      <p class="section-lead">모든 카이로프랙틱 기법은 <strong>Afferentation → 중추 처리 → Efferentation</strong> 프레임(Chapter 2 참조)에서 해석합니다. 이 기법이 어떤 구심성 입력을 만들고 어떤 원심 출력을 조절하는지.</p>
-      <div class="placeholder"><strong>[상세 이론 본문 자리]</strong> 창시자·역사·생체역학·신경생리 — 추후 확장 예정. Chapter 2 Functional Neurology의 Aff/Def/Eff 프레임으로 이 기법을 재해석.</div>
+    <section id="theory" style="scroll-margin-top: 120px;">
+      <h2>이론·기전 — 기구 공학과 신경 자극</h2>
+      <p class="section-lead">모든 카이로프랙틱 기법은 <strong>Afferentation → 중추 처리 → Efferentation</strong> 프레임(Chapter 2 참조)에서 해석합니다. Activator는 정밀 기구로 짧고 빠른 기계 자극(impulse)을 만들어 관절 낭의 mechanoreceptor를 선택적으로 활성화하는 것이 핵심.</p>
+
+      <h3>1. 기구 개발 배경 — 수기 한계의 공학적 해결</h3>
+      <div class="principle-card">
+        <p><abbr class="med-abbr" title="Activator Adjusting Instrument · 액티베이터 조정 기구">AAI</abbr>는 수기 교정(<abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 추력">HVLA</abbr>)의 두 한계 — <strong>술자 간 재현성 부족</strong>과 <strong>환자의 방어적 근수축</strong> — 을 공학적으로 해결하기 위해 1967년 Arlan Fuhr와 W.C. Lee가 치과용 임팩터(impactor) 원리를 척추 교정에 도입해 개발. 최소한의 힘으로 최대한의 신경학적 반응을 유도하는 모델.</p>
+      </div>
+
+      <h3>2. 충격량의 물리 — Force vs. Impulse vs. Loading rate</h3>
+      <p>교정 효과는 단순 '힘'이 아니라 <strong>충격량(Impulse)</strong>과 <strong>부하 속도(Rate of loading)</strong>에 의해 결정됩니다.</p>
+      <table class="data-table">
+        <thead><tr><th>파라미터</th><th>값</th><th>임상적 의의</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>추력 지속 시간 (Thrust duration)</td>
+            <td>3 ~ 5 ms</td>
+            <td>골격근 방어 반사(54~70 ms)보다 10~20× 빠름 — 환자가 긴장하기 전 에너지 전달 완료</td>
+          </tr>
+          <tr>
+            <td>최대 힘 (Peak force)</td>
+            <td>100 ~ 140 N (max &lt; 200 N)</td>
+            <td>수기 HVLA(400~1,000 N)보다 현저히 낮으나, 가속도가 매우 높아 (<em>F = ma</em>) 에너지 전달 효율은 동등 이상</td>
+          </tr>
+          <tr>
+            <td>분절 변위 (Segmental displacement)</td>
+            <td>0.3 ~ 1.6 mm</td>
+            <td>관절 낭 내 기계수용기 — 특히 Pacinian corpuscle — 선택적 자극 → 중추 Afferent 입력 극대화</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3. 세대별 기구 (Generations)</h3>
+      <div class="principle-card">
+        <ul style="margin: 0;">
+          <li><strong>Activator I & II</strong> — 수동 스프링, 기본 임펄스 제공</li>
+          <li><strong>Activator IV</strong> — 4단계 힘 조절 시스템 도입</li>
+          <li><strong>Activator V (Electronic)</strong> — 디지털 제어 + 'Wave of Pressure' 기술. 조직 저항 감지 → 일정 깊이 자동 전달. 무선 충전·인체공학 그립</li>
+        </ul>
+      </div>
+
+      <h4 style="margin-top: 1.5rem;">Activator IV 설정(Setting) 가이드</h4>
+      <table class="data-table">
+        <thead><tr><th>Setting</th><th>적용 부위</th><th>비고</th></tr></thead>
+        <tbody>
+          <tr><td>1 (최저)</td><td>경추 상부, <abbr class="med-abbr" title="Temporomandibular Joint · 턱관절">TMJ</abbr>, 영유아</td><td>가장 약한 강도</td></tr>
+          <tr><td>2</td><td>경추 하부, 흉추 상부, 사지 관절</td><td></td></tr>
+          <tr><td>3</td><td>흉추 하부, 요추</td><td></td></tr>
+          <tr><td>4 (최고)</td><td>골반·천장관절·대근육군</td><td>가장 강한 강도</td></tr>
+        </tbody>
+      </table>
     </section>
 
-    <section id="clinical">
-      <h2>임상 적용</h2>
-      <div class="placeholder"><strong>[임상 프로토콜 본문 자리]</strong> 적응증·환자 자세·접촉점·추력 벡터·주의점·안전. 다학제 협진 맥락에서의 위치.</div>
+    <section id="scan-protocol" style="scroll-margin-top: 120px;">
+      <h2>Basic Scan Protocol — Leg Length Reactivity (<abbr class="med-abbr" title="Leg Length Reactivity · 다리 길이 반응성">LLR</abbr>)</h2>
+      <p class="section-lead">진단의 핵심. 단순 다리 길이 측정이 아닌, 부하(provocation)에 대한 신경-근 반응 평가 과정.</p>
+
+      <h3>1. 다리 길이 분석(<abbr class="med-abbr" title="Leg Length Analysis · 다리 길이 분석">LLA</abbr>)의 이론</h3>
+      <div class="callout callout-info">
+        <h4>신경학적 가설 (🟡 contested — 비판적 시각 섹션 참조)</h4>
+        <p>척추 분절의 기능 이상(subluxation)이 뇌간 망상체(reticular formation)에 영향을 미쳐 하지 근긴장(tone) 변화를 유발 → 실제 골 길이 차이가 아닌 <strong>기능적 짧은 다리(functional short leg)</strong>로 나타난다는 가설.</p>
+        <p style="margin-top: 0.5rem;"><strong>주의:</strong> 이 가설의 기계적 인과 모델은 직접 영상·전기생리 검증이 부족합니다. 임상에서는 진단 보조 수단으로만 활용하고, 영상·신경학적 검사로 보완해야 합니다.</p>
+      </div>
+
+      <h3>2. 환자 자세 (Patient Positioning)</h3>
+      <ul>
+        <li>복와위(prone), 안면 구멍(face piece)에 얼굴 정확히 위치</li>
+        <li>표준화된 신발(현저한 마모 없음) 착용 상태로 측정</li>
+        <li>술자는 환자 발 끝에 서서 양측 발뒤꿈치(heel) 정렬을 비교</li>
+      </ul>
+
+      <h3>3. Knee Flexion Test — Position 1 / Position 2</h3>
+      <div class="principle-card">
+        <p><strong>Position 1 (다리 신전):</strong> 다리를 편 상태에서 길이 비교. 짧은 쪽 = <abbr class="med-abbr" title="Pelvic Deficient · 골반 결핍 다리(짧은 쪽)">PD</abbr> Leg.</p>
+        <p><strong>Position 2 (무릎 90° 굴곡):</strong> 다리 길이 변화 관찰.</p>
+        <p style="margin-top: 0.5rem;"><strong>패턴 해석</strong></p>
+        <ul style="margin: 0.25rem 0 0 0;">
+          <li>Pos 2에서 PD leg가 길어짐 → 무릎·발 기원 가능성</li>
+          <li>Pos 2에서도 PD leg가 짧음 → 골반(<abbr class="med-abbr" title="Sacroiliac Joint · 천장관절">SI</abbr> joint) 기원</li>
+        </ul>
+      </div>
+
+      <h3>4. Isolation Tests — 부위별 유발 검사</h3>
+
+      <h4>4.1. 골반 · 요추 (Pelvis & Lumbar)</h4>
+      <table class="data-table">
+        <thead><tr><th>분절</th><th>환자 동작 (Provocation)</th><th>관찰</th></tr></thead>
+        <tbody>
+          <tr><td>L5</td><td>PD 쪽 손을 요추(LS junction) 위에 올림</td><td>LLR 변화</td></tr>
+          <tr><td>L4</td><td>Non-PD 쪽 손을 요추 위에 올림</td><td>LLR 변화</td></tr>
+          <tr><td>L2</td><td>양손 모두 요추 위에 올림</td><td>LLR 변화</td></tr>
+        </tbody>
+      </table>
+
+      <h4>4.2. 흉추 (Thoracic)</h4>
+      <ul>
+        <li><strong>T8 ~ T12:</strong> 팔을 머리 위 또는 등 뒤로 순차적으로 동작 → 하부·중부 흉추 분절 고립</li>
+        <li><strong>T1 (상부 흉추):</strong> 양 어깨 으쓱(shoulder shrug)</li>
+      </ul>
+
+      <h4>4.3. 경추 (Cervical)</h4>
+      <table class="data-table">
+        <thead><tr><th>분절</th><th>환자 동작</th></tr></thead>
+        <tbody>
+          <tr><td>C7</td><td>양쪽 어깨 후방 후퇴(retraction)</td></tr>
+          <tr><td>C2</td><td>고개를 PD 쪽으로 회전</td></tr>
+          <tr><td>C1 (Atlas)</td><td>고개를 Non-PD 쪽으로 회전</td></tr>
+          <tr><td>Occiput</td><td>턱을 가슴으로 당김(chin tuck)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="clinical" style="scroll-margin-top: 120px;">
+      <h2>임상 적용 — Adjustment Procedures</h2>
+      <p class="section-lead">진단된 분절에 가장 효율적으로 에너지를 전달하기 위한 술자 자세와 기구 적용법.</p>
+
+      <h3>1. 교정의 3대 원칙</h3>
+      <ol>
+        <li><strong>Contact Point (접촉점):</strong> 정확한 해부학적 지점(SP·TP·lamina 등)에 기구 팁(stylus) 배치</li>
+        <li><strong>Line of Drive (<abbr class="med-abbr" title="Line of Drive · 추력 방향선">LOD</abbr>):</strong> 관절 면(facet orientation) 방향에 일치시켜 추력 벡터 설정</li>
+        <li><strong>Pre-stress (압박):</strong> 추력 전 피부 슬랙(skin slack) 제거 + 관절면 밀착 → 반동(rebound) 최소화</li>
+      </ol>
+
+      <h3>2. 부위별 교정 상세</h3>
+
+      <h4>2.1. 골반 (Pelvis · 천장관절)</h4>
+      <table class="data-table">
+        <thead><tr><th>병변 패턴</th><th>Contact Point</th><th>LOD (추력 방향)</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><abbr class="med-abbr" title="Posterior-Inferior Ilium · 후하방 장골 변위">PI</abbr> Ilium</td>
+            <td><abbr class="med-abbr" title="Posterior Superior Iliac Spine · 후상장골극">PSIS</abbr>의 상내측면</td>
+            <td>전방 + 상방 (Anterior &amp; Superior)</td>
+          </tr>
+          <tr>
+            <td><abbr class="med-abbr" title="Anterior-Superior Ilium · 전상방 장골 변위">AS</abbr> Ilium</td>
+            <td>좌골 결절 (Ischial tuberosity)</td>
+            <td>전방 + 하방 (Anterior &amp; Inferior)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>2.2. 요추 (Lumbar Spine)</h4>
+      <ul>
+        <li><strong>Contact:</strong> 해당 분절의 <abbr class="med-abbr" title="Mammillary Process · 유두돌기 (요추 상관절돌기 후방 융기)">Mammillary process</abbr> (병변 측)</li>
+        <li><strong>LOD:</strong> 전방 + 약간 상방, 후관절면(facet) 각도에 수직</li>
+      </ul>
+
+      <h4>2.3. 흉추 (Thoracic Spine)</h4>
+      <ul>
+        <li><strong>Contact:</strong> 해당 분절의 <abbr class="med-abbr" title="Transverse Process · 횡돌기">TP</abbr></li>
+        <li><strong>LOD:</strong> 전방 + 하방 + 약간 내측. 늑골과의 관계 고려해 신중히 컨택</li>
+      </ul>
+
+      <h4>2.4. 경추 (Cervical Spine)</h4>
+      <table class="data-table">
+        <thead><tr><th>분절</th><th>Contact</th><th>LOD</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>C2 ~ C7</td>
+            <td>해당 분절 lamina 또는 articular pillar</td>
+            <td>전방 + 상방, 환자 반대측 눈을 향함</td>
+          </tr>
+          <tr>
+            <td>C1 (Atlas)</td>
+            <td>하악각(angle of mandible) 뒤쪽 Atlas TP</td>
+            <td>외측 → 내측 (directly medial)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3. 교정 후 재평가 (Post-check)</h3>
+      <div class="callout callout-info">
+        <p>교정 직후 동일한 유발 검사를 재수행해 LLR 불균형 해소를 확인. 미해소 시 다음을 단계적으로 점검:</p>
+        <ul style="margin: 0.5rem 0 0 0;">
+          <li>컨택 지점 재검토 (TP·lamina 정확도)</li>
+          <li>LOD 각도 재조정</li>
+          <li>Setting 강도 재설정</li>
+          <li>분절 진단 자체 재검토 (다른 레벨일 가능성)</li>
+        </ul>
+      </div>
     </section>
 
     <section id="evidence">
@@ -143,6 +317,26 @@
         <p><abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr>·LLR이 기능적 병변을 정확히 반영하는지는 논쟁적. 🟠 LLR 신뢰도는 훈련 술자에서 moderate. 단, 기구 자체의 기계적 효과는 🟡 Moderate evidence. 고령·소아·임산부 안전성은 🟢.</p>
       </div>
       <p>상세 비판 문헌 리뷰와 과장 vs 근거 비교표는 강의록 MD 확장판에서 다룹니다.</p>
+    </section>
+
+    <section id="tips" style="scroll-margin-top: 120px;">
+      <h2>📌 임상 팁 · 환자 교육</h2>
+      <div class="callout callout-tip">
+        <h4>1. 속도가 생명</h4>
+        <p>기구가 흔들리지 않는 안정적 파지법 필수. 추력 순간 손목·팔의 미세 움직임이 임펄스 효율을 떨어뜨립니다.</p>
+      </div>
+      <div class="callout callout-tip">
+        <h4>2. Pre-load 압력의 일정성</h4>
+        <p>매번 동일한 약 10~20 N의 pre-load를 가해야 LLR 변화 비교(진단)의 객관성이 확보됩니다. 슬랙 제거 + 관절면 밀착이 핵심.</p>
+      </div>
+      <div class="callout callout-tip">
+        <h4>3. 환자 교육 — "딱" 소리에 대한 안내</h4>
+        <p>"딱" 소리는 뼈가 부딪히는 소리가 아니라 <strong>기구 내부의 스프링 작동음</strong>임을 사전에 설명하면 환자의 불안과 방어적 근수축이 감소합니다.</p>
+      </div>
+      <div class="callout callout-warning">
+        <h4>⚠️ 안전 주의 (Safety)</h4>
+        <p>저강도이므로 고령·소아·임산부에서도 비교적 안전(🟢)하나, 진행성 골다공증·척추 종양·감염·미진단 외상 등은 일반적 척추 도수의 금기와 동일하게 적용. 영상 검사로 적응증·금기 우선 판별이 필수입니다.</p>
+      </div>
     </section>
 
     <section id="resources">
