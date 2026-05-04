@@ -5,12 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chiropractic Functional Neurology | Chiropractic</title>
   <meta name="description" content="Chapter 2. Chiropractic Functional Neurology — 진단·치료·평가의 근간. Assessment 중심의 Afferentation/Deafferentation/Efferentation 프레임워크. 근거 기반, 비판적 시각 포함." />
-  <link rel="stylesheet" href="./assets/main.css?v=20260428z2" />
+  <link rel="stylesheet" href="./assets/main.css" />
 
-<script defer src="./assets/ui.js?v=20260428z2"></script>
-<script defer src="./assets/download-guard.js?v=20260428z2"></script>
-<script defer src="./assets/hide-guard.js?v=20260428z2"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260428z2"></script>
 <style id="fn-test-cards">
 /* Structured clinical test cards */
 .test-card {
@@ -111,8 +107,25 @@
 .archive-inline .video-card .title { font-weight: 600; font-size: .92em; }
 .archive-inline .video-card .meta { font-size: .78em; color: #86868b; }
 </style>
-  <script src="./assets/config.js?v=20260428z2"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260428z2"></script>
+<style id="med-abbr-css">
+/* 의학 약어 학습 보조 — hover 시 풀네임 툴팁 표시 */
+abbr.med-abbr {
+  text-decoration: none;
+  border-bottom: 1.5px dotted #0071e3;
+  cursor: help;
+  font-weight: 600;
+  color: #0050a0;
+  padding-bottom: 1px;
+  white-space: nowrap;
+}
+abbr.med-abbr:hover {
+  background: #eff6ff;
+  border-bottom-color: #0050a0;
+  border-bottom-style: solid;
+}
+/* strong 안에서도 약어 표시 유지 */
+strong abbr.med-abbr { color: inherit; }
+</style>
 </head>
 <body>
 
@@ -225,9 +238,9 @@
 
       <h3>1.2 역사 요약</h3>
       <ul>
-        <li><strong>1970s 후반</strong> — Frederick R. Carrick, <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>, PhD의 임상 신경학 기반 교육 시작</li>
+        <li><strong>1970s 후반</strong> — Frederick R. Carrick, DC, PhD의 임상 신경학 기반 교육 시작</li>
         <li><strong>1979</strong> — Carrick Institute 설립 (Cape Canaveral, Florida)</li>
-        <li><strong>1980s</strong> — <abbr class="med-abbr" title="American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 위원회">ACNB</abbr> (American Chiropractic Neurology Board) 설립, <strong><abbr class="med-abbr" title="Diplomate of American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 전문의">DACNB</abbr></strong> 자격 인증</li>
+        <li><strong>1980s</strong> — <abbr class="med-abbr" title="American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 위원회">ACNB</abbr> (American Chiropractic Neurology Board) 설립, <strong><abbr class="med-abbr" title="Diplomate of American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 위원회 전문의">DACNB</abbr></strong> 자격 인증</li>
         <li><strong>2000s</strong> — 뇌진탕·전정 재활 프로토콜 확장, NFL·NHL 협업</li>
         <li><strong>2010s</strong> — Heidi Haavik 등 PMC 다수 논문으로 기초 과학 근거 축적</li>
         <li><strong>2017</strong> — Meyer et al. <em>Unravelling Functional Neurology</em> — FN에 대한 <strong>체계적 비판 리뷰</strong> 발표</li>
@@ -242,7 +255,7 @@
           <tr><td>기계수용기·근방추 신경생리</td><td><span class="evidence ev-strong">🟢 Strong</span></td><td>Sherrington 이래 확립된 기초</td></tr>
           <tr><td>척추 수기의 신경생리 효과</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Pickar·Haavik 다수 연구</td></tr>
           <tr><td>전정 재활 (말초 전정 기능장애)</td><td><span class="evidence ev-strong">🟢 Strong</span></td><td>Cochrane SR</td></tr>
-          <tr><td>뇌진탕 vestib/ocular 재활</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Schneider 2014 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr></td></tr>
+          <tr><td>뇌진탕 vestib/ocular 재활</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Schneider 2014 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험 — 근거 피라미드 상위">RCT</abbr></td></tr>
           <tr><td>소뇌 자극으로 전신 기능 개선 (광의)</td><td><span class="evidence ev-limited">🟠 Limited</span></td><td>증례 중심, 일반화 어려움</td></tr>
           <tr style="background:#fff3f3;"><td><strong>단일 교정으로 뇌 기능 재조정</strong></td><td><span class="evidence ev-none">🔴 No evidence</span></td><td>과장 주장</td></tr>
           <tr style="background:#fff3f3;"><td><strong>자극으로 자폐·ADHD·학습장애 치료</strong></td><td><span class="evidence ev-none">🔴 No evidence</span></td><td>근거 부재</td></tr>
@@ -312,155 +325,11 @@
       <div class="callout callout-info">
         <h4>🔵 임상 해석</h4>
         <p>
-          <abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 추력은 주로 Type I·II·III를 활성화시키며, 이 입력이 척수·소뇌·피질로 전달되어
+          HVLA 추력은 주로 Type I·II·III를 활성화시키며, 이 입력이 척수·소뇌·피질로 전달되어
           근긴장·통증·자세 조절을 즉시 변화시킵니다.
           <em>Wyke BD. Articular neurology — a review. Physiotherapy 1972;58:94-99.</em>
         </p>
       </div>
-
-      <h4>근방추 (Muscle Spindle) — 가장 핵심적인 동적 수용기</h4>
-      <p>관절 mechanoreceptor와 별개로, 근육 내부의 <strong>방추</strong>는 길이·속도 변화를 감지하는 가장 강력한 동적 수용기입니다. 이 수용기의 점화 패턴이 빠른 스트레칭과 느린 스트레칭의 임상 효과 차이를 결정합니다.</p>
-      <table class="data-table">
-        <thead>
-          <tr><th>섬유</th><th>수용기</th><th>적응</th><th>주요 신호</th></tr>
-        </thead>
-        <tbody>
-          <tr><td><strong>Ia</strong> (primary)</td><td>annulospiral</td><td>dynamic + static</td><td>길이 <strong>변화 속도</strong>에 강하게 점화 — DTR(심부건반사)의 주체</td></tr>
-          <tr><td><strong>II</strong> (secondary)</td><td>flower-spray</td><td>static 우세</td><td>유지된 길이 — 자세 유지·고유수용</td></tr>
-          <tr><td><strong>Ib</strong> (GTO)</td><td>건 내부</td><td>장력</td><td>autogenic inhibition — homonymous α MN <strong>억제</strong></td></tr>
-        </tbody>
-      </table>
-
-      <!-- ============================================================== -->
-      <!-- ⚡ 빠른 vs 느린 스트레칭 — 임상 사례 + 치료 적용 (Part III 핵심) -->
-      <!-- ============================================================== -->
-      <section class="principle-card" id="fast-vs-slow-stretch"
-        style="border-left:5px solid #ff6b35;background:linear-gradient(180deg,#fff8f3 0%,#fff 100%);margin:2rem 0;padding:1.6rem 1.75rem;scroll-margin-top:120px">
-        <h3 style="color:#c1410c;margin-top:0">⚡ 임상 사례 — 빠른 vs 느린 스트레칭 (좌측 상지 굴근)</h3>
-        <p class="section-lead" style="margin-bottom:1.2rem">
-          왼쪽 이두근(C5–C6), 상완근(C5–C6), 또는 전완 굴근(C6–T1)에 <strong>빠르게</strong> 또는 <strong>천천히</strong>
-          스트레칭을 적용하면, 활성화되는 수용기·척수 회로·상행 경로·뇌 부위가 <em>근본적으로 다릅니다</em>.
-          이 차이가 카이로프랙틱 HVLA·신경학적 stretch reflex·정적 스트레칭(PIR/PNF)의 임상적 분기점입니다.
-        </p>
-
-        <!-- 빠른 -->
-        <h4 style="color:#c1410c">🔥 빠른 스트레칭 (high-velocity / phasic)</h4>
-        <ul>
-          <li><strong>주 수용기 — Ia (primary, dynamic)</strong>: 길이 <em>변화 속도</em>에 강하게 점화. annulospiral.</li>
-          <li><strong>척수 즉각 반응</strong>: Ia → 같은 분절 α-운동뉴런 <strong>단연접 시냅스</strong> → homonymous 굴근 즉각 수축 (= DTR). 동시에 Ia 측지 → Ia inhibitory interneuron → antagonist (extensor) α MN 억제 (<em>reciprocal inhibition</em>).</li>
-          <li><strong>척수 진입 부위</strong>: 좌측 C5–T1 dorsal root → 좌측 척수 회색질 IX층 motor pool 자극.</li>
-          <li><strong>상행 — 의식적 자기수용감각 (DCML)</strong>: 좌 fasciculus cuneatus → 좌 <strong>nucleus cuneatus</strong> (medulla) → 정중 교차(internal arcuate) → 우 medial lemniscus → 우 VPL of thalamus → <strong>우측 postcentral gyrus S1</strong>.</li>
-          <li><strong>상행 — 무의식적 자기수용감각 (소뇌 입력)</strong>: 좌 <strong>accessory cuneate nucleus</strong> → cuneocerebellar tract → 좌 inferior cerebellar peduncle → <strong>좌측 spinocerebellum</strong> (vermis + paravermis, anterior lobe 상지표상) → 좌 interposed nuclei → 정중 교차 → 우 red nucleus·VL → <strong>우측 motor cortex M1</strong>.</li>
-          <li><strong>점화 패턴</strong>: 짧고 강한 phasic burst → mossy fiber 시스템 강화 → cerebellar excitatory + cortical activation.</li>
-        </ul>
-
-        <!-- 느린 -->
-        <h4 style="color:#0a7ab8">🌊 느린 스트레칭 (low-velocity / sustained)</h4>
-        <ul>
-          <li><strong>주 수용기 — II secondary + Ib (GTO)</strong>: Ia dynamic은 약하게만 점화, 시간 경과 시 Ib(건 장력) 점진적 활성화.</li>
-          <li><strong>척수 즉각 반응</strong>: <strong>GTO Ib → autogenic inhibition</strong> — Ib inhibitory interneuron 거쳐 homonymous α MN <em>억제</em>. 즉, 늘어난 굴근 자체가 이완. 단연접 stretch reflex는 거의 점화되지 않음.</li>
-          <li><strong>γ static motor neuron 적응</strong>: 유지 시 spindle sensitivity 감소 → 추가 reflex 점화 둔화.</li>
-          <li><strong>조직 수준</strong>: viscoelastic creep + plastic deformation (장시간 hold ≥ 30–90 초).</li>
-          <li><strong>상행 경로</strong>: 동일하게 nucleus cuneatus·spinocerebellum을 거치지만 <em>tonic low-frequency input</em>이라 cortical phasic burst가 없음. 부교감 우세로 이행.</li>
-          <li><strong>점화 패턴</strong>: 약한 tonic input → cortical activation 낮음, 자율신경 reset (HRV 증가).</li>
-        </ul>
-
-        <!-- 비교 표 -->
-        <h4 style="color:#444">📊 비교 정리</h4>
-        <table class="data-table">
-          <thead>
-            <tr><th>축</th><th>🔥 빠른 (high-velocity)</th><th>🌊 느린 (sustained)</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>주 수용기</td><td>Ia primary (dynamic)</td><td>II secondary + Ib (GTO)</td></tr>
-            <tr><td>척수 효과</td><td>단연접 reflex 수축 + reciprocal inhibition</td><td>autogenic <strong>inhibition</strong> (GTO 매개) — 자기 이완</td></tr>
-            <tr><td>α-MN 결과</td><td>homonymous 흥분 → 수축</td><td>homonymous 억제 → 이완</td></tr>
-            <tr><td>시간 척도</td><td>밀리초 ~ 초</td><td>30–90 초 이상 hold</td></tr>
-            <tr><td>cortical 효과</td><td>강한 phasic burst → S1·M1 활성</td><td>약한 tonic → 활성도 낮음</td></tr>
-            <tr><td>자율신경</td><td>교감 잠시 우세 (arousal)</td><td>부교감 우세 (HRV ↑)</td></tr>
-            <tr><td>주요 임상 효과</td><td><strong>신경계 자극 · 흥분 ·  cortical priming</strong></td><td><strong>근긴장 이완 · <abbr class="med-abbr" title="Range of Motion · 관절가동범위">ROM</abbr> 증진 · 통증 down-regulation</strong></td></tr>
-          </tbody>
-        </table>
-
-        <!-- 임상 적용 -->
-        <h4 style="color:#1f7a3f">🩺 임상 적용 — 치료에 어떻게 쓰는가</h4>
-
-        <div class="callout callout-tip" style="margin:1rem 0">
-          <h4>🔥 빠른 스트레칭 — <strong>자극용</strong></h4>
-          <ul style="margin:0">
-            <li><strong>심부건반사(DTR) 평가</strong> — 이두근(C5–C6), 상완근(C5–C6), 회내근(C6) 등 분절 평가의 표준.</li>
-            <li><strong>Carrick FN 표적 활성화</strong>:
-              좌측 굴근 빠른 stretch = <strong>좌측 spinocerebellum + 우측 hemisphere(S1·M1)</strong> 활성화.
-              ⇒ 좌측 cerebellar dysmetria / 우측 hemispheric hypofunction(좌측 hemispatial neglect, 좌측 attention 결손) 환자의 표적 자극.</li>
-            <li><strong>운동 학습 priming</strong>: motor task 직전 fast stretch로 cortical excitability ↑ → 학습 효율 ↑ (Carrick·Beck 보고).</li>
-            <li><strong>HVLA 추력의 일부</strong>: 짧고 빠른 추력은 관절 mechanoreceptor + 근방추 Ia 동시 점화. 보조 도수치료에서 phasic input 활용.</li>
-            <li><strong>Spasticity 평가</strong>: clasp-knife phenomenon · clonus 유무.</li>
-            <li><strong>Tendon tap reflex priming</strong>: 시술 직전 빠른 tap으로 spindle excitability 끌어올리기.</li>
-          </ul>
-        </div>
-
-        <div class="callout callout-info" style="margin:1rem 0">
-          <h4>🌊 느린 스트레칭 — <strong>이완용 · 통증 감소용</strong></h4>
-          <ul style="margin:0">
-            <li><strong>PIR (Post-Isometric Relaxation, Lewit)</strong>: 5–10 초 등척성 수축 → 호흡 내쉬며 GTO inhibition 시기에 sustained stretch. 만성 myofascial trigger point 주력 기법.</li>
-            <li><strong>PNF Contract-Relax / Hold-Relax</strong>: agonist 수축 후 이완·반대측 수축으로 reciprocal inhibition 활용한 sustained stretch. 좌측 굴근의 만성 hypertonia에 적용.</li>
-            <li><strong>Static stretching (≥ 30 초)</strong>: 유연성·ROM 증진. spasticity 감소 (좌측 spastic hemiparesis 굴근 패턴에 적용).</li>
-            <li><strong>Myofascial release</strong>: 장시간 sustained pressure로 connective tissue 점탄성 변형.</li>
-            <li><strong>중추 통증 감작 down-regulation</strong>: 부교감 활성화 → GABA-ergic interneuron 활동 ↑ → 만성 통증 환자의 central sensitization 완화.</li>
-            <li><strong>자율신경 reset</strong>: HRV 증가로 stress 반응 안정화. PTSD·만성 통증·불안 동반 환자 보조.</li>
-          </ul>
-        </div>
-
-        <!-- 사례 시나리오 -->
-        <h4 style="color:#444">💡 좌측 상지 굴근 — 실제 임상 시나리오</h4>
-        <table class="data-table">
-          <thead>
-            <tr><th>사례</th><th>병태</th><th>선택할 기법</th><th>예상 효과</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>A</td>
-              <td><strong>좌측 cerebellar dysmetria</strong> (좌측 finger-to-nose 부정확, 좌측 dysdiadochokinesia)</td>
-              <td>좌측 이두근·전완 굴근 <strong>빠른 stretch + DTR tap</strong> 반복</td>
-              <td>좌측 spinocerebellum mossy fiber 입력 ↑ → 동측 운동 정밀도 향상</td>
-            </tr>
-            <tr>
-              <td>B</td>
-              <td><strong>우측 hemisphere stroke 후 좌측 hemispatial neglect</strong></td>
-              <td>좌측 상지 빠른 stretch (1–2 Hz, 30 초간)</td>
-              <td>우측 S1·후두정엽 활성화 보조 → 좌측 attention/awareness 회복 priming</td>
-            </tr>
-            <tr>
-              <td>C</td>
-              <td><strong>좌측 spastic hemiparesis (굴근 우세)</strong> — 좌 이두근 hypertonia, 팔꿈치 굴곡 contracture</td>
-              <td>좌측 이두근 <strong>느린 sustained stretch</strong> 60–90 초 + PIR 3 cycle</td>
-              <td>GTO 매개 자기 이완 → 굴근 tone ↓, 팔꿈치 신전 ROM ↑</td>
-            </tr>
-            <tr>
-              <td>D</td>
-              <td><strong>만성 좌측 medial epicondylalgia</strong> (golfer's elbow)</td>
-              <td>전완 굴근 느린 stretch + myofascial release + 부교감 활성</td>
-              <td>국소 통각 down-regulation + central sensitization 완화</td>
-            </tr>
-            <tr>
-              <td>E</td>
-              <td>건강한 환자 — <strong>운동 학습 priming</strong></td>
-              <td>좌측 상지 빠른 stretch 30 초 → 좌측 손 motor task</td>
-              <td>우측 M1 cortical excitability 일시 ↑ → 학습 곡선 가속</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="callout callout-danger" style="margin:1.25rem 0 0">
-          <h4>⚠ 주의 — 빠른/느린 선택 시 안전</h4>
-          <ul style="margin:0">
-            <li>급성 염증·근육 파열·hypermobility 관절: 빠른 stretch <strong>금기</strong> (조직 손상 위험).</li>
-            <li>Spasticity가 심한 환자: 빠른 stretch는 clonus·spasm 유발 가능 → <strong>느린 stretch 우선</strong>.</li>
-            <li>경추 vertebral artery 문제 의심자: 상지 stretch 자체엔 직접 영향 없으나, 동반 경추 manipulation 시 사전 screening 필수.</li>
-            <li>모든 자극은 <strong>Re-Assessment</strong>로 효과 확인 — Part VI 참조.</li>
-          </ul>
-        </div>
-      </section>
 
       <h3>3.2 Deafferentation (구심성 입력 감소)</h3>
       <p>구심성 입력이 감소·결손된 상태. 해부학적 단절부터 기능적 감소(관절 hypomobility로 mechanoreceptor 입력 저하)까지 스펙트럼.</p>
@@ -486,7 +355,7 @@
         <li><strong>γ-운동뉴런</strong>: intrafusal (근방추 감도) 조절 → <strong>근긴장의 중추 조절 메커니즘</strong></li>
         <li><strong>Renshaw cell</strong>: α-운동뉴런 귀환 억제</li>
         <li><strong>자율신경</strong>: 교감·부교감 균형 (HRV로 대리 평가)</li>
-        <li><strong>중추 하행 조절</strong>: <abbr class="med-abbr" title="Periaqueductal Gray · 수도주위회백질 (내인성 통증 조절)">PAG</abbr>·청반·<abbr class="med-abbr" title="Rostral Ventromedial Medulla · 입쪽 배내측 연수 (하행 통증 억제)">RVM</abbr> → 척수 후각 → 내인성 통증 억제</li>
+        <li><strong>중추 하행 조절</strong>: <abbr class="med-abbr" title="Periaqueductal Gray · 수도주위회백질 — 중뇌의 내인성 통증 조절 중추">PAG</abbr>·청반·<abbr class="med-abbr" title="Rostral Ventromedial Medulla · 입쪽 배내측 연수 — 하행 통증 억제계 핵심">RVM</abbr> → 척수 후각 → 내인성 통증 억제</li>
       </ul>
 
       <h3>3.4 임상 사이클</h3>
@@ -540,7 +409,7 @@
       <ul>
         <li>뇌신경 I-XII (냄새·시력·안구운동·안면·청력·연하·혀)</li>
         <li>DTR 0-4+ · 병적 반사(Hoffman·Babinski·Clonus)</li>
-        <li><abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr> 0-5 · 감각(촉각·진동·위치감각) · 협응</li>
+        <li>MMT 0-5 · 감각(촉각·진동·위치감각) · 협응</li>
       </ul>
 
       <div class="callout callout-success">
@@ -566,13 +435,13 @@
       <h4 id="oculo-cn">4.4.0 안구 운동 뇌신경 해부 — <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> · IV · VI 병변 국소화</h4>
       <p>6개의 외안근(extraocular muscles)은 <strong>3개의 뇌신경</strong>이 지배합니다. 어느 눈·어느 방향을 볼 때 움직이지 못하는가를 관찰하면 <strong>어느 쪽 · 몇 번 뇌신경</strong>이 고장났는지 정확히 국소화할 수 있습니다.</p>
 
-      <h5>안근 6개의 지배 뇌신경 — 기억법 "LR6 SO4 나머지 3"</h5>
+      <h5>안근 6개의 지배 뇌신경 — 기억법 "<abbr class="med-abbr" title="Lateral Rectus · 외직근 — 외전신경(6번 뇌신경) 지배">LR</abbr>6 <abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr>4 나머지 3"</h5>
       <table class="data-table">
         <thead><tr><th>근육</th><th>약어</th><th>뇌신경</th><th>주 작용</th><th>보조 작용</th></tr></thead>
         <tbody>
           <tr><td>Lateral rectus (외직근)</td><td>LR</td><td><strong><abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr></strong> (Abducens, 외전신경)</td><td><strong>외전</strong>(abduction) — 귀 쪽으로</td><td>없음 (단일 작용)</td></tr>
           <tr><td>Superior oblique (상사근)</td><td>SO</td><td><strong><abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr></strong> (Trochlear, 활차신경)</td><td><strong>내하방 시선 depression</strong> — 눈을 안쪽으로 모은 상태에서 아래로</td><td>내회전(intorsion), 외전</td></tr>
-          <tr><td>Medial rectus (내직근)</td><td>MR</td><td>CN III (Oculomotor)</td><td><strong>내전</strong>(adduction) — 코 쪽</td><td>없음</td></tr>
+          <tr><td>Medial rectus (내직근)</td><td><abbr class="med-abbr" title="Medial Rectus · 내직근 — 동안신경(3번 뇌신경) 지배">MR</abbr></td><td>CN III (Oculomotor)</td><td><strong>내전</strong>(adduction) — 코 쪽</td><td>없음</td></tr>
           <tr><td>Superior rectus (상직근)</td><td>SR</td><td>CN III (Oculomotor)</td><td>거상 (elevation) — 외전된 상태에서 위</td><td>내전, 내회전</td></tr>
           <tr><td>Inferior rectus (하직근)</td><td>IR</td><td>CN III (Oculomotor)</td><td>하강 (depression) — 외전된 상태에서 아래</td><td>내전, 외회전</td></tr>
           <tr><td>Inferior oblique (하사근)</td><td>IO</td><td>CN III (Oculomotor)</td><td>거상 (elevation) — 내전된 상태에서 위</td><td>외회전, 외전</td></tr>
@@ -620,7 +489,7 @@
           <strong>해부·기능 요약</strong>
           <ul>
             <li>핵: <strong>중뇌 superior colliculus 높이</strong> · 적핵 내측</li>
-            <li>지배: MR · SR · IR · IO + LPS(눈꺼풀) + Edinger-Westphal(동공·조절)</li>
+            <li>지배: MR · <abbr class="med-abbr" title="Superior Rectus · 상직근">SR</abbr> · <abbr class="med-abbr" title="Inferior Rectus · 하직근">IR</abbr> · <abbr class="med-abbr" title="Inferior Oblique · 하사근">IO</abbr> + LPS(눈꺼풀) + Edinger-Westphal(동공·조절)</li>
             <li>주행: 중뇌 발(interpeduncular fossa) → 해면정맥동(cavernous sinus) → superior orbital fissure → 안와</li>
             <li><strong>부교감 섬유가 외곽</strong>에 위치 — 압박성 병변(동맥류 등)에 먼저 손상되고, 허혈성(당뇨 vasa nervorum) 병변에서는 <strong>동공이 보존</strong>됨</li>
           </ul>
@@ -705,7 +574,7 @@
           <ul>
             <li>핵: <strong>뇌교(pons) 바닥 · 제4 뇌실 저면</strong></li>
             <li>지배: <strong>Lateral rectus 단 하나</strong></li>
-            <li>핵 근처에 <strong><abbr class="med-abbr" title="Paramedian Pontine Reticular Formation · 곁정중교뇌그물체 (수평 응시 중추)">PPRF</abbr> (paramedian pontine reticular formation)</strong> · 수평 주시 중심 공존</li>
+            <li>핵 근처에 <strong><abbr class="med-abbr" title="Paramedian Pontine Reticular Formation · 곁정중교뇌그물체 — 수평 응시 중추">PPRF</abbr> (paramedian pontine reticular formation)</strong> · 수평 주시 중심 공존</li>
             <li>두개강 주행이 길어(Dorello canal 통과) <strong>뇌압 상승 시 "false localizing sign"</strong>으로 일측·양측 마비 발생</li>
           </ul>
         </div>
@@ -746,7 +615,7 @@
           <thead><tr><th>환자에게 지시한 방향</th><th>움직이지 않는 눈</th><th>→ 병변</th></tr></thead>
           <tbody>
             <tr><td>우측 주시</td><td>우안 (외전 불가)</td><td><strong>우측 CN VI 마비</strong></td></tr>
-            <tr><td>우측 주시</td><td>좌안 (내전 불가)</td><td><strong>좌측 CN III 마비 (MR)</strong> 또는 <strong>좌측 <abbr class="med-abbr" title="Medial Longitudinal Fasciculus · 내측세로다발 — 동안신경·외전신경 핵을 잇는 백질">MLF</abbr> lesion (<abbr class="med-abbr" title="Internuclear Ophthalmoplegia · 핵간안근마비 (MLF 병변)">INO</abbr>)</strong></td></tr>
+            <tr><td>우측 주시</td><td>좌안 (내전 불가)</td><td><strong>좌측 CN III 마비 (MR)</strong> 또는 <strong>좌측 <abbr class="med-abbr" title="Medial Longitudinal Fasciculus · 내측세로다발 — 동안신경·외전신경 핵을 잇는 백질로, 손상 시 핵간안근마비">MLF</abbr> lesion (<abbr class="med-abbr" title="Internuclear Ophthalmoplegia · 핵간안근마비 — MLF 병변, 내전 장애 + 반대쪽 해리성 안진">INO</abbr>)</strong></td></tr>
             <tr><td>좌하방 주시 (독서 자세)</td><td>우안 (하강 불가)</td><td><strong>우측 CN IV 마비</strong> (내전된 눈의 하강)</td></tr>
             <tr><td>우하방 주시</td><td>좌안 (하강 불가)</td><td><strong>좌측 CN IV 마비</strong></td></tr>
             <tr><td>상방 주시</td><td>일측 하방 고정 + ptosis + blown pupil</td><td><strong>동측 CN III 완전 마비 (동공 침범)</strong> → 🚨 동맥류</td></tr>
@@ -884,7 +753,7 @@
             <span class="box-title">📍 병변 부위</span>
             ① 기저핵 (basal ganglia), superior colliculus<br/>
             ② <strong>소뇌 반구 (dorsal vermis, fastigial nucleus)</strong><br/>
-            ③ Frontal eye field (<abbr class="med-abbr" title="Frontal Eye Field · 전두안구야 (수의적 안구운동 중추)">FEF</abbr>), dorsolateral prefrontal<br/>
+            ③ Frontal eye field (<abbr class="med-abbr" title="Frontal Eye Field · 전두안구야 — 수의적 안구운동(saccade) 피질 중추">FEF</abbr>), dorsolateral prefrontal<br/>
             ④ <strong>Medial longitudinal fasciculus (MLF)</strong> — 다발성경화증·뇌간경색 의심
           </div>
         </div>
@@ -1169,7 +1038,7 @@
           <div class="finding-box lesion">
             <span class="box-title">📍 병변 부위</span>
             <strong>소뇌 vermis (특히 anterior lobe)</strong><br/>
-            전정척수로 (<abbr class="med-abbr" title="Vestibulospinal Reflex · 전정척수반사 — 자세·균형 유지">VSR</abbr>), reticulospinal system
+            전정척수로 (<abbr class="med-abbr" title="Vestibulospinal Reflex · 전정척수반사 — 자세·균형 유지 출력">VSR</abbr>), reticulospinal system
           </div>
         </div>
         <div class="test-video youtube">
@@ -1235,7 +1104,7 @@
       <!-- 4.6 Vestibular Examination      -->
       <!-- =============================== -->
       <h3>4.6 전정기관 검사 (Vestibular Assessment)</h3>
-      <p class="section-lead">전정계는 <strong>3 semicircular canal</strong>(수평·전·후)과 <strong>2 otolith organ</strong>(utricle·saccule)으로 구성되며, VOR(안구)·VSR(척수·자세)·<abbr class="med-abbr" title="Vestibulocollic Reflex · 전정경부반사 — 머리 안정화">VCR</abbr>(경부)에 출력합니다. 외래에서는 <strong>말초 vs 중추 감별</strong>이 가장 중요합니다 — <abbr class="med-abbr" title="Head Impulse · Nystagmus · Test of Skew — 급성현훈 3종 검사 (말초 vs 중추 감별)">HINTS</abbr> 프로토콜이 기준.</p>
+      <p class="section-lead">전정계는 <strong>3 semicircular canal</strong>(수평·전·후)과 <strong>2 otolith organ</strong>(utricle·saccule)으로 구성되며, VOR(안구)·VSR(척수·자세)·<abbr class="med-abbr" title="Vestibulocollic Reflex · 전정경부반사 — 머리 안정화 출력">VCR</abbr>(경부)에 출력합니다. 외래에서는 <strong>말초 vs 중추 감별</strong>이 가장 중요합니다 — <abbr class="med-abbr" title="Head Impulse · Nystagmus · Test of Skew — 급성현훈 3종 검사 (말초 vs 중추 감별)">HINTS</abbr> 프로토콜이 기준.</p>
 
       <div class="principle-card">
         <h3>공통 준비물 · 환자 자세</h3>
@@ -1248,7 +1117,7 @@
 
       <!-- 4.6.1 HIT -->
       <div class="test-card vest">
-        <h4>4.6.1 Head Impulse Test (<abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 (Halmagyi)">HIT</abbr> · Halmagyi) — VOR 스크리닝</h4>
+        <h4>4.6.1 Head Impulse Test (<abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 (Halmagyi 검사) — VOR 평가">HIT</abbr> · Halmagyi) — VOR 스크리닝</h4>
         <div class="test-proc">
           <strong>검사 방법</strong>
           <ol>
@@ -1283,7 +1152,7 @@
 
       <!-- 4.6.2 Dix-Hallpike -->
       <div class="test-card vest">
-        <h4>4.6.2 Dix-Hallpike Maneuver — 후반고리관 <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 (이석 이탈)">BPPV</abbr> 진단</h4>
+        <h4>4.6.2 Dix-Hallpike Maneuver — 후반고리관 <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr> 진단</h4>
         <div class="test-proc">
           <strong>검사 방법</strong>
           <ol>
@@ -1302,7 +1171,7 @@
           </div>
           <div class="finding-box meaning">
             <span class="box-title">🧠 임상적 의미</span>
-            <strong>검사한 쪽 후반고리관 (posterior <abbr class="med-abbr" title="Semicircular Canal · 반고리관">SCC</abbr>) BPPV</strong> — 가장 흔한 형태 (80%)<br/>
+            <strong>검사한 쪽 후반고리관 (posterior <abbr class="med-abbr" title="Semicircular Canal · 반고리관 — 내이의 회전 감지기">SCC</abbr>) BPPV</strong> — 가장 흔한 형태 (80%)<br/>
             오탈석(otoconia)이 이석기관에서 떨어져 cupula 아래 쌓임 (canalolithiasis)<br/>
             → 바로 <strong>Epley maneuver</strong>로 치료 가능
           </div>
@@ -1426,7 +1295,7 @@
 
       <!-- 4.6.6 DVA -->
       <div class="test-card vest">
-        <h4>4.6.6 Dynamic Visual Acuity (<abbr class="med-abbr" title="Dynamic Visual Acuity · 동적시력 (VOR 기능 정량)">DVA</abbr>) — VOR 기능 정량</h4>
+        <h4>4.6.6 Dynamic Visual Acuity (DVA) — VOR 기능 정량</h4>
         <div class="test-proc">
           <strong>검사 방법</strong>
           <ol>
@@ -1537,6 +1406,71 @@
           <strong>Haavik H et al.</strong> Effects of 12 Weeks of Chiropractic Care on Central Integration of Dual Somatosensory Input. <em>JMPT</em> 2017.
         </p>
       </div>
+
+      <div style="margin-top:3rem;">
+        <h3 style="color:#0071e3; border-bottom:2px solid #0071e3; display:inline-block; margin-bottom:1rem; padding-bottom:4px;">⭐ 수용기 기반 치료 (Receptor-based Therapy) 프로토콜</h3>
+        <p class="section-lead">숙련된 임상가로서 '교정'이라는 하드웨어적 수정을 완료한 후, 이를 뇌의 신경 회로에 저장(Upload)하는 통합 프로토콜입니다. 교정 직후의 짧은 시간은 뇌의 <strong>신경 가소성(Neuroplasticity)</strong>이 극대화되는 <strong>'기회의 창(Window of Opportunity)'</strong>입니다.</p>
+
+        <div class="principle-card">
+          <h4>1. 기본 원리: 통합적 신경 입력 (Neurological Stacking)</h4>
+          <p>교정(Afferent Input) + 안구 운동(Cortical Activation) + 전정 자극(Cerebellar Integration)을 동시에 혹은 순차적으로 쌓아 올려, 교정으로 발생한 고유수용기(Proprioceptor)의 신호를 대뇌 피질과 소뇌에 더 강력하게 통합합니다.</p>
+        </div>
+
+        <h4 style="margin-top:2rem;">2. 구체적인 실행 방법 (Step-by-Step)</h4>
+        
+        <div class="test-card">
+          <h4>Step 1: 교정 후 즉각적인 지표 재확인 (Re-check)</h4>
+          <p>교정 침대에서 일어나기 전, 짧아졌던 다리 길이나 약했던 지표 근육(Indicator Muscle)이 정상화되었는지 확인합니다. 이 변화가 확인된 <strong>그 상태 그대로</strong> 다음 단계를 진행합니다.</p>
+        </div>
+
+        <div class="test-card oculo">
+          <h4>Step 2: 안구 운동 치료 (Oculomotor Therapy)</h4>
+          <p style="margin-bottom: 0.75rem;">환자의 병변 측과 뇌의 불균형 상태(Hemisphericity)에 따라 방향을 결정합니다.</p>
+          <ul>
+            <li><strong>Saccade (급속 안구 운동) — 뇌간(Pons, Midbrain)과 전두엽 활성화:</strong>
+              <ul>
+                <li><strong>방법:</strong> 술자의 양 검지 손가락을 환자의 눈앞 30cm 거리에 좌우(또는 상하)로 둡니다. 환자에게 "머리는 고정하고 눈만 빠르게 제 손가락을 번갈아 보세요"라고 지시합니다.</li>
+                <li><strong>횟수:</strong> 10~15회 빠르게 반복.</li>
+                <li><strong>효과:</strong> 교정된 척추 분절의 위치 정보를 대뇌 피질의 감각 지도(Homunculus)에 빠르게 업데이트합니다.</li>
+              </ul>
+            </li>
+            <li style="margin-top:10px;"><strong>Smooth Pursuit (추적 안구 운동) — 소뇌와 두정엽 활성화:</strong>
+              <ul>
+                <li><strong>방법:</strong> 손가락을 8자 모양(Infinity loop)이나 원형으로 천천히 움직이며 환자가 시선으로 쫓게 합니다.</li>
+                <li><strong>효과:</strong> 관절의 움직임과 시각적 정렬을 통합하여 안정성을 높입니다.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="test-card vest">
+          <h4>Step 3: 전정 기관 자극 (Vestibular Stimulation)</h4>
+          <p style="margin-bottom: 0.75rem;">교정의 효과를 중력 환경(Gravity environment)에서 유지하기 위한 핵심 단계입니다.</p>
+          <ul>
+            <li><strong>Canal 자극 (Passive Head Rotation):</strong> 환자가 앉은 상태에서 술자가 환자의 머리를 잡고, 교정이 필요했던 분절의 반대 방향 혹은 기능이 저하된 전정기관 쪽으로 머리를 빠르고 짧게 회복시킵니다. (Head Impulse와 유사한 속도이나 부드럽게)</li>
+            <li style="margin-top:10px;"><strong>Tilt & Sway (고유수용기 통합):</strong> 환자를 기립시킨 후, 눈을 감게 하고 몸을 미세하게 전후좌우로 흔들게(Sway) 합니다. 이때 술자는 환자의 골반이나 어깨를 가볍게 터치하며 중심을 잡도록 유도합니다. 척추의 새로운 정렬 상태를 '수직 중력선'에 맞추어 뇌가 재학습하게 합니다.</li>
+          </ul>
+        </div>
+
+        <div class="test-card cereb">
+          <h4>Step 4: 복합 자극 (Complex Task)</h4>
+          <p style="margin-bottom: 0.75rem;">가장 강력한 각인 방법으로, 안구 운동과 말초 자극을 결합합니다.</p>
+          <ul>
+            <li><strong>방법:</strong> 환자에게 약했던 쪽 팔을 들게 하거나 특정 동작을 유지하게 한 상태에서, 시선을 기능이 떨어진 방향(예: 상외측)으로 고정시키고 10초간 심호흡을 하게 합니다.</li>
+            <li><strong>Rationale:</strong> "함께 활성화되는 뉴런은 함께 연결된다(Neurons that fire together, wire together)"는 헵의 법칙(Hebb's Law)을 이용하는 것입니다.</li>
+          </ul>
+        </div>
+
+        <div class="callout callout-warn" style="margin-top:2rem;">
+          <h4>3. 임상 적용 시 주의사항 (Quick Tips)</h4>
+          <ol style="margin-top: 0.5rem; padding-left: 1.5rem;">
+            <li><strong>방향성(Laterality):</strong> 일반적으로 우측 소뇌 기능 저하가 의심된다면, 우측으로의 Pursuit나 좌측 방향의 Saccade가 효과적일 수 있습니다. (환자의 신경학적 패턴에 따라 반대로 적용될 수 있으므로 정밀한 진단이 우선입니다.)</li>
+            <li><strong>피로도 관찰:</strong> 환자가 안구 운동 중 어지러움을 느끼거나 눈을 깜빡이는 횟수가 급격히 늘어난다면 신경적 과부하(Neurological Fatigue) 상태입니다. 즉시 중단해야 합니다.</li>
+            <li><strong>홈 케어(Home Exercise):</strong> 가장 효과가 좋았던 안구 운동 하나를 선정하여 "하루 3번, 1분씩" 집에서 하게 하면 교정의 유지 기간이 획기적으로 길어집니다.</li>
+          </ol>
+          <p style="margin-top:10px; font-weight:600; color:#1d1d1f;">이 프로토콜은 단순히 뼈를 맞추는 것을 넘어, "환자의 뇌를 재프로그래밍"하는 과정입니다. 임상에서 이를 적용하시면 차별화된 치료 속도와 유지력을 경험하실 수 있을 것입니다.</p>
+        </div>
+      </div>
     </section>
 
     <!-- ========== PART VI. 재평가 ========== -->
@@ -1549,7 +1483,7 @@
         <ul>
           <li><strong>동일 조건·동일 검사자·동일 프로토콜</strong>로 재검사 (검사자 bias 최소화)</li>
           <li><strong>pre-test 양성이었던 검사를 우선 재검사</strong> — 가장 민감한 변화 지표</li>
-          <li>증상(subjective) + 검사 소견(objective) + 기능 점수(VOMS·<abbr class="med-abbr" title="Dizziness Handicap Inventory · 어지럼장애지수 (0-100, ≥18 변화 = MCID)">DHI</abbr> 등) <strong>세 축 동시</strong> 추적</li>
+          <li>증상(subjective) + 검사 소견(objective) + 기능 점수(VOMS·<abbr class="med-abbr" title="Dizziness Handicap Inventory · 어지럼장애지수 (0-100, ≥18점 변화가 임상적으로 의미)">DHI</abbr> 등) <strong>세 축 동시</strong> 추적</li>
         </ul>
       </div>
 
@@ -1574,7 +1508,7 @@
             <td><strong>중·장기 (2-4주, 3개월)</strong></td>
             <td>Neuroplastic 재조직 · LTP/LTD 정착</td>
             <td>완전한 FN battery 재시행 + 기능 점수 + 환자 보고 결과</td>
-            <td><abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이">MCID</abbr> 이상의 임상적 의미 변화 · 기능 회복</td>
+            <td><abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> 이상의 임상적 의미 변화 · 기능 회복</td>
           </tr>
         </tbody>
       </table>
@@ -1721,13 +1655,13 @@
             <td>뇌진탕 회복 추적</td>
           </tr>
           <tr>
-            <td><strong><abbr class="med-abbr" title="Rivermead Post-Concussion Symptoms Questionnaire">RPQ</abbr></strong> (Rivermead Post-Concussion)</td>
+            <td><strong><abbr class="med-abbr" title="Rivermead Post-Concussion Symptoms Questionnaire · 뇌진탕 후 증상 설문지">RPQ</abbr></strong> (Rivermead Post-Concussion)</td>
             <td>뇌진탕 3/13 증상</td>
             <td>RPQ-3 MCID 2점 · RPQ-13 MCID 8점</td>
             <td>민감도 좋은 뇌진탕 도구</td>
           </tr>
           <tr>
-            <td><strong><abbr class="med-abbr" title="Balance Error Scoring System · 균형 오류 채점 시스템">BESS</abbr></strong> (Balance Error Scoring System)</td>
+            <td><strong><abbr class="med-abbr" title="Balance Error Scoring System · 균형 오류 채점 시스템 (3자세 × 2면)">BESS</abbr></strong> (Balance Error Scoring System)</td>
             <td>균형·자세 조절</td>
             <td>3자세 × 2면 총 오류 수 · MCID 9.4 오류 감소</td>
             <td>sideline·외래 둘 다 가능</td>
@@ -1745,13 +1679,13 @@
             <td>뇌진탕 회복 빠른 지표</td>
           </tr>
           <tr>
-            <td><strong><abbr class="med-abbr" title="Numeric Pain Rating Scale · 숫자통증등급 (0-10)">NPRS</abbr> / <abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도">VAS</abbr></strong></td>
+            <td><strong><abbr class="med-abbr" title="Numeric Pain Rating Scale · 숫자통증등급 (0-10)">NPRS</abbr> / <abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도 (통증 등 주관적 강도)">VAS</abbr></strong></td>
             <td>통증·어지럼</td>
             <td>0-10 · MCID <strong>2점 이상 감소</strong></td>
             <td>주관적 증상</td>
           </tr>
           <tr>
-            <td><strong><abbr class="med-abbr" title="Neck Disability Index · 경부장애지수 (0-50)">NDI</abbr> / <abbr class="med-abbr" title="Oswestry Disability Index · Oswestry 요통 장애지수 (0-100)">ODI</abbr></strong></td>
+            <td><strong>NDI / ODI</strong></td>
             <td>경추·요추 기능장애</td>
             <td>0-50 · MCID 7-10점</td>
             <td>경부성 어지럼 동반 시</td>
@@ -1838,7 +1772,7 @@
           <tr><td>BPPV canalith repositioning</td><td><span class="evidence ev-strong">🟢 Strong</span></td><td>Bhattacharyya 2017 CPG</td></tr>
           <tr><td>Vestibular rehab (unilateral periph)</td><td><span class="evidence ev-strong">🟢 Strong</span></td><td>Hillier Cochrane 2015</td></tr>
           <tr><td>Concussion vestib/ocular rehab</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Schneider 2014 RCT</td></tr>
-          <tr><td>Cervicogenic headache <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr></td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Bryans JMPT 2011</td></tr>
+          <tr><td>Cervicogenic headache SMT</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Bryans JMPT 2011</td></tr>
           <tr><td>중추 감작 통증 교육+운동</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Moseley 2015</td></tr>
           <tr><td>만성 요통 SMT</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Rubinstein Cochrane 2013</td></tr>
           <tr style="background:#fff3f3;"><td>"뇌 자극으로 자폐 호전"</td><td><span class="evidence ev-none">🔴 No evidence</span></td><td>—</td></tr>
@@ -1917,19 +1851,19 @@
       </div>
       <h3>🎧 팟캐스트</h3>
       <div class="resource-row">
-        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/functional_neurology/v2/01_podcast.m4a"><span class="icon">🎧</span><span><strong>Deep Dive 2인 대화 60분+</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>evidence-based · 비판적 시각</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/01_podcast.m4a"><span class="icon">🎧</span><span><strong>Deep Dive 2인 대화 60분+</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>evidence-based · 비판적 시각</small></span></a>
       </div>
       <h3>🎥 AI 동영상</h3>
       <div class="resource-row">
-        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/functional_neurology/v2/02_video_part1_theory.mp4"><span class="icon">🎥</span><span><strong>Part 1 (이론)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
-        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/functional_neurology/v2/03_video_part2_clinical.mp4"><span class="icon">🎥</span><span><strong>Part 2 (임상·비판)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/02_video_part1_theory.mp4"><span class="icon">🎥</span><span><strong>Part 1 (이론)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/03_video_part2_clinical.mp4"><span class="icon">🎥</span><span><strong>Part 2 (임상·비판)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
       </div>
       <h3>🎴 PPTX 슬라이드 (4개 × 15장)</h3>
       <div class="resource-row">
-        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/functional_neurology/v2/04_slides_part1_basics.pdf"><span class="icon">🎴</span><span><strong>Part 1 · 기초</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
-        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/functional_neurology/v2/05_slides_part2_aff_def_eff.pdf"><span class="icon">🎴</span><span><strong>Part 2 · Aff/Def/Eff</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
-        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/functional_neurology/v2/06_slides_part3_assessment.pdf"><span class="icon">🎴</span><span><strong>Part 3 · Assessment</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
-        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/functional_neurology/v2/07_slides_part4_clinical.pdf"><span class="icon">🎴</span><span><strong>Part 4 · 임상·비판</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/04_slides_part1_basics.pdf"><span class="icon">🎴</span><span><strong>Part 1 · 기초</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/05_slides_part2_aff_def_eff.pdf"><span class="icon">🎴</span><span><strong>Part 2 · Aff/Def/Eff</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/06_slides_part3_assessment.pdf"><span class="icon">🎴</span><span><strong>Part 3 · Assessment</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/07_slides_part4_clinical.pdf"><span class="icon">🎴</span><span><strong>Part 4 · 임상·비판</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
       </div>
       <h3>📄 Report Markdown</h3>
       <div class="resource-row">
@@ -1945,7 +1879,7 @@
       <h2>🎬 레거시 시연 영상 (사용자 직접 시연)</h2>
       <p class="section-lead">2015년 KOA 학회 및 임상 시연 당시 사용자가 촬영한 원본 영상입니다. 참고용 · 직접 시연 중심이므로 이론 설명은 챕터 본문을 참고하세요.</p>
       <div class="video-thumb-grid">
-        <div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/neurologic_exam/01 Sensory Pain.MP4" controls preload="metadata"></video><div class="info"><div class="title">01. Sensory Pain</div><div class="meta">감각 통증 검사</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/neurologic_exam/02 Weber vibration.MP4" controls preload="metadata"></video><div class="info"><div class="title">02. Weber Vibration</div><div class="meta">진동 감각</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/neurologic_exam/03 Motor.MP4" controls preload="metadata"></video><div class="info"><div class="title">03. Motor</div><div class="meta">운동 신경</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/neurologic_exam/04 Reflexes.MP4" controls preload="metadata"></video><div class="info"><div class="title">04. Reflexes</div><div class="meta">심부건 반사</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/neurologic_exam/05 CNF test (1).mp4" controls preload="metadata"></video><div class="info"><div class="title">05. CNF Test — Part 1</div><div class="meta">Chiropractic Neurological Function</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/neurologic_exam/05 CNF test (2).mp4" controls preload="metadata"></video><div class="info"><div class="title">05. CNF Test — Part 2</div><div class="meta">Chiropractic Neurological Function</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/neurologic_exam/06 LOC.MP4" controls preload="metadata"></video><div class="info"><div class="title">06. LOC</div><div class="meta">Level of Consciousness</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/neurologic_exam/07 posturegait.MP4" controls preload="metadata"></video><div class="info"><div class="title">07. Posture & Gait</div><div class="meta">자세·보행</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/neurologic_exam/08 Supine exam.MP4" controls preload="metadata"></video><div class="info"><div class="title">08. Supine Exam</div><div class="meta">누운 자세 검사</div></div></div>
+        <div class="video-card"><video src="./archive/videos/neurologic_exam/01 Sensory Pain.MP4" controls preload="metadata"></video><div class="info"><div class="title">01. Sensory Pain</div><div class="meta">감각 통증 검사</div></div></div><div class="video-card"><video src="./archive/videos/neurologic_exam/02 Weber vibration.MP4" controls preload="metadata"></video><div class="info"><div class="title">02. Weber Vibration</div><div class="meta">진동 감각</div></div></div><div class="video-card"><video src="./archive/videos/neurologic_exam/03 Motor.MP4" controls preload="metadata"></video><div class="info"><div class="title">03. Motor</div><div class="meta">운동 신경</div></div></div><div class="video-card"><video src="./archive/videos/neurologic_exam/04 Reflexes.MP4" controls preload="metadata"></video><div class="info"><div class="title">04. Reflexes</div><div class="meta">심부건 반사</div></div></div><div class="video-card"><video src="./archive/videos/neurologic_exam/05 CNF test (1).mp4" controls preload="metadata"></video><div class="info"><div class="title">05. CNF Test — Part 1</div><div class="meta">Chiropractic Neurological Function</div></div></div><div class="video-card"><video src="./archive/videos/neurologic_exam/05 CNF test (2).mp4" controls preload="metadata"></video><div class="info"><div class="title">05. CNF Test — Part 2</div><div class="meta">Chiropractic Neurological Function</div></div></div><div class="video-card"><video src="./archive/videos/neurologic_exam/06 LOC.MP4" controls preload="metadata"></video><div class="info"><div class="title">06. LOC</div><div class="meta">Level of Consciousness</div></div></div><div class="video-card"><video src="./archive/videos/neurologic_exam/07 posturegait.MP4" controls preload="metadata"></video><div class="info"><div class="title">07. Posture & Gait</div><div class="meta">자세·보행</div></div></div><div class="video-card"><video src="./archive/videos/neurologic_exam/08 Supine exam.MP4" controls preload="metadata"></video><div class="info"><div class="title">08. Supine Exam</div><div class="meta">누운 자세 검사</div></div></div>
       </div>
     </section>
     
@@ -1992,11 +1926,8 @@
           </ul>
         </div>
       </div>
-      <div class="footer-credit">
-        Edited by <strong>Jae-Ho Jang, M.D., BAppSc(Chiro)., D.C., PhD</strong>
-        <span class="credit-creds">Board Certified Orthopedic Surgeon · Member of Korean Spine Society · 정형외과전문의 · 척추학회정회원</span>
-      </div>
       <div class="footer-bottom">
+        <span>© 2026 Dr. Jang · Chapter 2. Chiropractic Functional Neurology</span>
         <span>교육 목적 · 임상 판단은 담당 의료진의 책임</span>
       </div>
     </div>
