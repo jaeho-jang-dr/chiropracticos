@@ -16,12 +16,16 @@
 4. [5 Components 분석 시스템](#5-components-분석-시스템)
 5. [Listing 부호 체계 — 변위 특이 기록](#listing-부호-체계--변위-특이-기록)
 6. [교정 기법 — Hi-Lo Table · Cervical Chair · Side Posture](#교정-기법--hi-lo-table--cervical-chair--side-posture)
-7. [Afferentation / Deafferentation / Efferentation 해석](#afferentation--deafferentation--efferentation-해석)
-8. [임상 적용 — 디스크 탈출·신경근증·요통·경추통](#임상-적용--디스크-탈출신경근증요통경추통)
-9. [근거 수준 — Cochrane 및 PMC 문헌 검토](#근거-수준--cochrane-및-pmc-문헌-검토)
-10. [🔴 비판적 시각 — Nervoscope·X-ray 의존·확장 주장](#-비판적-시각--nervoscopex-ray-의존확장-주장)
-11. [한국 임상 적용](#한국-임상-적용)
-12. [참고 문헌](#참고-문헌)
+7. [부위별 Gonstead 교정 — 흉추](#부위별-gonstead-교정--흉추-thoracic)
+8. [부위별 Gonstead 교정 — 요추](#부위별-gonstead-교정--요추-lumbar)
+9. [부위별 Gonstead 교정 — 골반·천장관절](#부위별-gonstead-교정--골반천장관절-pelvis--si-joint)
+10. [부위별 Gonstead 교정 — 사지(Extremity)](#부위별-gonstead-교정--사지extremity)
+11. [Afferentation / Deafferentation / Efferentation 해석](#afferentation--deafferentation--efferentation-해석)
+12. [임상 적용 — 디스크 탈출·신경근증·요통·경추통](#임상-적용--디스크-탈출신경근증요통경추통)
+13. [근거 수준 — Cochrane 및 PMC 문헌 검토](#근거-수준--cochrane-및-pmc-문헌-검토)
+14. [🔴 비판적 시각 — Nervoscope·X-ray 의존·확장 주장](#-비판적-시각--nervoscopex-ray-의존확장-주장)
+15. [한국 임상 적용](#한국-임상-적용)
+16. [참고 문헌](#참고-문헌)
 
 ---
 
@@ -214,6 +218,400 @@ Gonstead 전용 테이블. 수직(standing) 위치에서 수평(prone)으로 빠
 - 환자 측와위 · 아래 다리 신전 · 위 다리 굴곡
 - 접촉점: mamillary process (요추) 또는 <abbr class="med-abbr" title="Posterior Superior Iliac Spine · 후상장골극">PSIS</abbr> (천장관절)
 - 추력 벡터: listing에 따라 결정
+
+---
+
+## 부위별 Gonstead 교정 — 흉추 (Thoracic)
+
+> Gonstead 흉추 교정은 **knee-chest table** + **Hi-Lo prone**의 두 자세가 양대 표준. 분절별 수직 압축력과 회전 벡터의 정밀 적용이 핵심.
+
+### 흉추 Listing 부호
+
+| 부호 | 의미 | 예시 임상 양상 |
+|------|------|----------------|
+| **PR / PL** | Body posterior + 우/좌 회전 | 흉추 단순 회전 변위 |
+| **PRS / PRI** | Body posterior + 우 회전 + 위/아래 wedge | 가장 흔한 흉추 변위 (비대칭 추간판 압력) |
+| **PLS / PLI** | Body posterior + 좌 회전 + 위/아래 wedge | 좌측 우세 환자 |
+| **PR-T / PL-T** | Transverse process posterior — rib 변위 동반 | rib subluxation + 흉추 회전 |
+
+### Upper Thoracic (T1-T4) — Knee-Chest Table
+
+#### 환자 자세
+- Knee-chest table에 무릎+가슴 위치
+- 머리는 head piece에 회전 없이 놓음 (chin tuck)
+- 양 팔은 옆으로 자연 위치
+
+#### 술자 자세
+- 환자 머리 쪽 standing
+- Stance: 양 발 어깨 너비, 다리 fencer-style (앞뒤 split)
+
+#### 접촉점·벡터
+
+**예: T2 PRS (T2 body posterior + right rotation + superior wedge)**
+- 접촉: T2 좌측 transverse process (반대편 TP)
+- Pisiform contact — 보조 손은 contact 손 위에 super-imposed
+- 추력: **Posterior → Anterior + Inferior + Slight medial-to-lateral right**
+  - 이유: PRS의 R rotation 풀기 위함
+- Force: 250-400 N
+- Drop piece: T2-T4용 segment-specific drop 사용 시 추가 진동 input
+
+#### 흔한 오류
+- 머리·목 회전 → 환자 안전 위협 (저항 ↑)
+- Pisiform이 SP에 직접 접촉 → 통증 + 비효율
+- Thrust direction이 너무 medial → rib 통증 유발
+
+### Mid-Lower Thoracic (T5-T12) — Hi-Lo Prone
+
+#### 환자 자세
+- Hi-Lo table prone position
+- Pelvic piece + thoracic piece 분리 → wedge 적용 가능
+- 머리 turn: 통증 호소 부위 반대측 30° 회전
+
+#### Bilateral TP Contact (양측 횡돌기 접촉) — T6-T10에서 가장 흔함
+
+**예: T8 PRS-T (T8 transverse process posterior on right, superior tilt)**
+- 접촉: T8 우측 TP — 술자 우측 thenar eminence
+- Counterforce: 좌측 thumb으로 T8 좌측 SP 안정화
+- 추력: P → A 직진 + slight S → I (superior tilt 풀기)
+- Force: 400-600 N
+- 환자 호흡: 심호흡 후 thrust at end-exhalation
+
+#### Spinous Process Contact (단측 SP)
+
+**예: T6 PR (단순 우측 회전)**
+- 접촉: T6 SP 우측면 — pisiform contact
+- 추력: P→A + 좌측으로 회전(de-rotation) 벡터
+- Force: 300-500 N
+
+### T9-T12 Lower Thoracic (요추 이행부)
+
+- **Junction zone**: thoracic kyphosis → lumbar lordosis 전환부
+- 흔한 wedging: T11-T12 lateral wedge (척추측만증 일부)
+- 교정 자세: Hi-Lo prone + thoracic piece 약간 elevation
+- 접촉: 단측 또는 bilateral TP, listing에 따라 결정
+
+### Rib 교정 (Costo-Vertebral · Costo-Transverse)
+
+#### Rib subluxation — 임상 양상
+- 단측 흉통, 호흡 시 악화
+- 흉부 위주 압통 (anterior vs posterior)
+- 종종 stress·자세 누적성
+
+#### Posterior Rib (rib head 후방 이동)
+- 환자: prone, 술자 standing on contralateral side
+- 접촉: rib angle 부위 (TP에서 약 5-7cm 외측) — pisiform
+- 추력: P→A + slight S→I + medial-to-lateral
+- Force: 200-400 N
+- 환자 호흡: end-exhalation 시점
+
+#### Anterior Rib (sternal 부착부 변위)
+- 환자: supine, 술자 환자 측면
+- 접촉: rib costochondral junction 부근
+- 추력: A→P + lateral
+- Force: 100-200 N (저force)
+
+### 흉추 Gonstead 안전 고려
+
+- 🔴 **금기**: 흉추 압박골절 의심·종양 전이·심한 osteoporosis
+- 🟡 **주의**: 골다공증 borderline·고령·항응고제 복용 → low-force + drop piece
+- ⚠️ **rib fracture risk**: prone position에서 표준 force 사용 시 rare. 골다공증 환자에서 발생 가능 → screening 필수
+
+---
+
+## 부위별 Gonstead 교정 — 요추 (Lumbar)
+
+> Gonstead 요추는 **Side Posture (측와위)**가 절대적 표준. Hi-Lo table을 이용한 환자 위치 안정과 listing-specific 회전 벡터가 핵심.
+
+### 요추 Listing 부호 (Gonstead 표기)
+
+#### 단순 listing
+- **PR / PL** — Body posterior + R/L 회전
+- **PRI / PLI** — + Inferior wedge (디스크 닫힘)
+- **PRS / PLS** — + Superior wedge (디스크 열림)
+- **PRI-T / PLI-T** — + 동측 transverse subluxation
+
+#### 흔한 임상 listing 패턴
+- **L5 PRI**: L5 body 후방 + 우측 회전 + 우측 disc closing → 흔한 좌측 sciatica
+- **L4 PLS**: L4 body 후방 + 좌측 회전 + 좌측 disc opening → 우측 lumbosacral pain
+- **L3 PR**: 단순 회전 — 후관절 자극 신호
+
+### Side Posture 표준 셋업
+
+#### 환자 자세
+1. 환자를 painful side **위로** 측와위 유도
+2. **Bottom leg**: 직각 대퇴 + 직각 슬와로 신전
+3. **Top leg**: 굴곡 → 발이 bottom knee popliteal에 위치 (Mason fold)
+4. 환자 양 팔 가슴 앞 교차 또는 자연 위치
+5. Pelvis vertical (지면과 수직) — 회전 없음
+
+#### 술자 자세 (Square Stance)
+- 환자 정면 standing
+- 양 발 환자 침대 가장자리에 평행 — square
+- 무릎 약간 굴곡, 둔근 활성화
+- Pelvis가 환자 분절 vector와 정렬
+
+### Listing별 교정 — L5
+
+#### L5 PRI (가장 흔한 디스크 탈출 listing)
+- **목적**: L5 body anterior 회복 + L 회전 회복 + R disc opening
+- **접촉**: L5 우측 mamillary process — pisiform
+- **Pre-tension**: 환자 top leg 굴곡 + slight body rotation away (좌측으로)
+- **추력 벡터**: 
+  - **P→A**: posterior body 회복
+  - **S→I**: superior to inferior (table edge 방향)
+  - **R→L 회전**: counter-rotation
+- **Force**: 400-700 N
+- **환자 호흡**: 심호흡 후 end-exhalation thrust
+
+#### L5 PLI (좌측 우세)
+- 환자 right side up (반대측)
+- 접촉: L5 좌측 mamillary
+- 벡터: P→A + S→I + L→R 회전
+- 나머지 원칙 동일
+
+### Listing별 교정 — L4 / L3 / L2 / L1
+
+기본 원칙은 L5와 동일하되:
+- **L4-L1**: top leg 굴곡 각도 약간 증가 (분절 신연 효과)
+- **L1-L2**: thoracic-lumbar 이행부 — 환자 상체 회전 더 크게
+- 분절별 mamillary 접촉 위치 정확히 식별 (촉진 + X-ray 참조)
+
+### L5-S1 특이 기법 (Gonstead 핵심 강점)
+
+L5 disc lesion · S1 신경근증 환자에서 Gonstead가 가장 권장되는 이유:
+- 측와위에서 L5-S1 disc decompression이 자연스럽게 발생
+- top leg 굴곡 → SI joint nutation → L5-S1 distraction 추가
+- Specific listing-targeted thrust → 비특이 mobilization보다 선택적
+
+#### L5-S1 Disc Protocol (Peterson 2013 *J Manipulative Physiol Ther* 인용)
+- 첫 1주: 격일 3-4회
+- 첫 4주 후 60% 통증 감소 목표
+- SLR 등 신경학적 평가 매주
+- 호전 없음 시 MRI + 외과 의뢰 (6주 cutoff)
+
+### 요추 Gonstead 안전 고려
+
+- 🔴 **금기**: cauda equina · 심한 spinal stenosis · 추체 골절 · 마미증후군
+- 🟡 **주의**: 다중 분절 instability · 임신 후기 (force 50%) · 노인 osteoporosis
+- ⚠️ Diversified Lumbar Roll보다 Gonstead가 **listing-specific**으로 더 정밀하지만, X-ray 의존도 높음
+
+---
+
+## 부위별 Gonstead 교정 — 골반·천장관절 (Pelvis · SI Joint)
+
+> Gonstead 골반은 chapter의 핵심 — "Pelvic Foundation 이론" 으로 전체 척추 평가의 출발점. AS/PI/IN/EX 4-listing은 Gonstead 시스템 특이적 진단·치료 단위.
+
+### Innominate (Ilium) Listing 부호
+
+#### 4-Listing 기본
+- **AS** (Anterior-Superior): ilium 전상방 회전
+- **PI** (Posterior-Inferior): ilium 후하방 회전
+- **IN** (Internal): ilium 내측 회전 (innominate가 SI 닫힘)
+- **EX** (External): ilium 외측 회전 (innominate가 SI 열림)
+
+#### 조합 listing
+- **AS-IN**: AS rotation + Internal flare (가장 흔한 조합)
+- **PI-EX**: PI rotation + External flare
+- **AS-EX**: AS + External (드묾, 외상성)
+- **PI-IN**: PI + Internal (드묾)
+
+### X-ray Listing 판독 (Pelvic AP)
+
+#### AS/PI 판정 (femoral head 기준)
+- Femoral head 높이 비교
+- AS 측: 같은 측 femoral head **상승**처럼 보임 (실제 ilium이 상승)
+- PI 측: 같은 측 femoral head **하강**처럼 보임
+
+#### IN/EX 판정 (iliac width 기준)
+- Innominate line (ilium AP edge) 측정
+- IN 측: iliac width **좁음** (medial로 회전)
+- EX 측: iliac width **넓음** (lateral로 회전)
+
+> ⚠️ S2 vertical reference line · femoral head level line · iliac width line — 3 reference에 정확히 정렬 필요. Patient positioning 표준화 (PA·AP·tube distance) 필수.
+
+### AS Ilium 교정 (Side Posture)
+
+#### 환자 자세 (Right AS Ilium 예)
+- 환자 left side down (R side up)
+- Bottom leg 신전, top leg 굴곡 (standard Mason fold)
+- Pelvis vertical
+
+#### 접촉·벡터
+- **접촉**: Right PSIS — pisiform 또는 ulnar styloid
+- **목적**: AS rotation 풀기 (anterior-superior → posterior-inferior 방향)
+- **Pre-tension**: top leg 굴곡 → SI joint 약간 distraction
+- **추력 벡터**:
+  - **P→A**: PSIS를 anterior로
+  - **S→I**: 동시에 inferior로
+  - **No rotation**: 측방 회전 최소
+- **Force**: 500-800 N
+- 환자 심호흡 → end-exhalation thrust
+
+### PI Ilium 교정
+
+#### 환자 자세 (Right PI Ilium 예)
+- 환자 right side down (반대로!) — PI 측을 **아래로**
+- Bottom leg 신전, top leg 굴곡
+
+#### 접촉·벡터
+- **접촉**: Right ASIS region (anterior approach via thigh leverage)
+- 또는 **Posterior**: ischial tuberosity 부위
+- **목적**: PI rotation 풀기 (posterior-inferior → anterior-superior)
+- **추력 벡터**: A→P + I→S + counter-rotation
+- **Force**: 500-700 N
+
+### IN/EX Innominate 보정 (보조 교정)
+
+IN/EX는 보통 AS/PI와 함께 listing되며, 별도 단독 교정보다는 **결합 thrust vector**로 동시 보정:
+- AS-IN: P→A + S→I + slight medial-to-lateral (EX 방향)
+- PI-EX: A→P + I→S + slight lateral-to-medial (IN 방향)
+
+> 💡 단독 IN/EX 교정은 거의 사용 안 됨 — AS/PI thrust 시 적절한 vector adjustment로 동시 처리.
+
+### Sacral Listing — Sacrum Apex 변위
+
+#### 천골 listing
+- **PL / PR**: Sacrum apex 좌/우 변위
+- **L / R**: SI joint 단측 잠김
+- **P-Sacrum**: 천골 base posterior 변위 (드묾)
+
+#### Sacrum Apex 교정 (Side Posture)
+- 환자 측와위, lesion 측 위로
+- 접촉: 천골 apex 또는 sacrotuberous ligament 부근
+- 추력: P→A + 회전 보정
+- Force: 300-500 N
+
+### 골반 Gonstead 안전 고려
+
+- 🔴 **금기**: 임신 (특히 후기), 골반 fracture, 종양
+- 🟡 **주의**: SI joint hypermobility · postpartum (relaxin 잔존)
+- ⚠️ "Long leg" / "short leg" 분석은 신뢰도 한계 — X-ray와 motion palpation 종합 판단
+
+### 임상 적응증 (Gonstead 골반 strong)
+
+- **SI joint dysfunction** with mechanical pain
+- **L5-S1 referred pain** with pelvic listing
+- **Non-radicular leg pain** of pelvic origin
+- **Postural pelvic obliquity** (true vs functional 감별 후)
+
+---
+
+## 부위별 Gonstead 교정 — 사지(Extremity)
+
+> Gonstead 사지는 척추 교정과 별개로 발전 — Extremity Adjusting Council (FCER 산하)이 정립. Gonstead-style listing notation을 사지에 확장 적용.
+
+### Extremity Listing 원칙
+
+각 관절 변위를 3D 표기:
+- **방향 부호**: Sup/Inf · Med/Lat · Ant/Post · Med/Lat rotation
+- **예**: Lateral Anterior Glenohumeral (어깨 외측·전방 변위)
+- 다른 카이로프랙틱 기법보다 specific listing 강조
+
+### 어깨 (Glenohumeral)
+
+#### 흔한 listing
+- **Anterior-Inferior Glenohumeral**: GH joint 전하방 변위 (impingement 환자 흔함)
+- **Posterior Glenohumeral**: 후방 변위 (반복 어깨 사용)
+
+#### Anterior-Inferior GH 교정
+- 환자 supine
+- 술자 환자 머리 측 standing
+- 접촉: humeral head anterior-inferior aspect
+- 추력: P→A 반대 (즉 A→P) + S 방향
+- Force: 200-400 N
+
+#### Acromioclavicular (AC) Joint
+- AC joint compression (외상 후 흔함)
+- 접촉: clavicle distal end, pisiform
+- 추력: superior thrust (소량)
+- Force: 100-200 N
+
+### 팔꿈치 (Elbow)
+
+#### Radial Head Listings
+- **Anterior Radial Head**: 가장 흔한 변위 (tennis elbow 환자)
+- **Posterior Radial Head**: 드묾, 외상 후
+
+#### Anterior Radial Head 교정
+- 환자 supine, 팔꿈치 90° 굴곡
+- 접촉: radial head 전방
+- 추력: A→P direction
+- Force: 100-200 N
+
+### 손목 (Wrist) · Carpal Bones
+
+#### Lunate Listings
+- **Anterior Lunate** (가장 흔함): 손목 신전 시 통증
+- 접촉: lunate 전방 (palmar surface)
+- 추력: A→P specific thrust
+- Force: 50-150 N
+
+#### Other Carpals
+- **Scaphoid Anterior**: scaphoid 압통·넘어짐 후
+- **Trapezium Anterior**: thumb basilar joint dysfunction
+
+### 무릎 (Knee)
+
+#### Patellar Listings
+- **Lateral Patella**: 가장 흔함 (patellofemoral pain)
+- 접촉: patella 외측 edge
+- 추력: lateral → medial gentle thrust
+- Force: 100-200 N
+
+#### Tibiofemoral Listings
+- **Anterior Tibia**: 무릎 굴곡 제한
+- 접촉: tibial tuberosity 부근
+- 추력: A→P direction
+- Force: 200-400 N
+
+### 발목 (Ankle) · 족부
+
+#### Talocrural
+- **Anterior Talus**: ankle dorsiflexion 제한 (가장 흔함)
+- 접촉: talus dome anterior
+- 추력: A→P with traction
+- Force: 200-300 N
+
+#### Subtalar
+- **Calcaneus Inversion/Eversion**: 만성 ankle instability
+- 접촉: calcaneus
+- 추력: 방향 반대 회전
+
+#### Cuboid · Navicular
+- **Cuboid Plantar**: midfoot pain · plantar fasciitis 동반
+- 접촉: cuboid plantar surface
+- 추력: dorsal direction (whip-style)
+- Force: 100-200 N
+
+### TMJ (Temporomandibular Joint)
+
+#### TMJ Listings
+- **Posterior Mandible**: TMJ posterior glide loss
+- **Lateral Deviation**: 외측 deviation
+
+#### TMJ 교정
+- 환자 supine, 입 약간 벌림 (relaxed)
+- 접촉: 술자 손가락 환자 입 안 (gloved) 또는 외부
+- 추력: 미세하고 정확한 방향 (specific listing)
+- Force: 30-80 N (매우 저force)
+
+### 사지 Gonstead vs 일반 mobilization 차이
+
+| 항목 | Gonstead Extremity | 일반 PT mobilization |
+|------|--------------------|---------------------|
+| Listing 표기 | 정밀 3D 부호 | 일반적 description |
+| Thrust velocity | HVLA | low-velocity 우세 |
+| 환자 자세 | 표준화된 specific position | 다양한 자세 |
+| 학습 곡선 | 높음 | 낮음 |
+| Evidence | 🟠 Limited (case reports) | 🟡 Moderate (RCT 다수) |
+
+> ⚠️ 사지 Gonstead의 RCT 근거는 척추 대비 약함. 단일 케이스에서 효과적이지만 generalize하기 어려움. PT mobilization과 결합 또는 대체 가능.
+
+### 사지 Gonstead 안전 고려
+
+- 🔴 **금기**: 급성 골절 · 인대 파열 (Grade III) · 종양 · 감염성 관절염
+- 🟡 **주의**: 류마티스 관절염 활동기 · 인공관절 (수술 부위 회피) · 노인 골다공증
+- ⚠️ 외상 후 평가: Ottawa Knee/Ankle Rule 적용 (Week 2 참조)
 
 ---
 
