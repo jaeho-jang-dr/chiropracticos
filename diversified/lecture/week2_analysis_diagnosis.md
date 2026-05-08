@@ -822,6 +822,60 @@ Cervical manipulation 후 **vertebral artery dissection(VAD)** 위험이 과거 
 - **Lateral Lumbar** — disc height · wedging · spondylolisthesis
 - **A-P Pelvis** — femoral head 대칭 · SI joint 간극 · ilium 높이
 
+### 11.6 NEXUS Criteria (NEXUS Low-Risk Criteria)
+
+Canadian C-Spine Rule의 대안 — 외상성 경추 손상 영상 결정에 사용 (Hoffman et al. NEJM 2000).
+
+**모두 음성**이면 영상 생략 가능 (NPV 99.8%):
+1. 후경추 정중부 압통 없음
+2. 의식 변화 없음 (alert)
+3. 국소 신경학적 결손 없음
+4. 중독 상태 아님 (sober)
+5. 다른 부위 통증으로 주의분산되지 않음 (no distracting injury)
+
+**민감도** 99.6%, **특이도** 12.9% — 외상 환자에서 **rule-out**에 적합.
+
+> 💡 NEXUS는 sensitivity 우선(놓치지 않는 것), Canadian C-Spine은 specificity 우선(불필요한 영상 줄이기). 임상 맥락에 따라 선택.
+
+### 11.7 Ottawa Rules — 발목·무릎 외상
+
+#### Ottawa Ankle Rules
+**다음 중 하나라도 해당 → X-ray 권장**:
+- 외측·내측 malleolus tip 또는 distal 6cm 압통
+- Navicular 또는 5번째 metatarsal base 압통
+- 부상 직후 + 4보 보행 불가능
+
+→ Sensitivity 99% — 골절 거의 놓치지 않음
+
+#### Ottawa Knee Rules
+**다음 중 하나라도 해당 → X-ray 권장**:
+- 55세 이상
+- 슬개골 압통 (단독)
+- Fibula head 압통
+- 90° 무릎 굴곡 불가
+- 즉시 + 응급실에서 4보 보행 불가
+
+→ Sensitivity 98%
+
+> 💡 Ottawa Rules는 응급실 외상 평가의 표준 — 의뢰 시 결과 첨부.
+
+### 11.8 주요 특수검사 진단 정확도
+
+만성 통증 환자에서 흔히 사용되는 검사의 sensitivity/specificity:
+
+| 검사 | 표적 | Sensitivity | Specificity | 비고 |
+|------|------|------------|-------------|------|
+| **SLR** | L4-S1 디스크 신경근 자극 | 91% | 26% | High Sn → rule out, Low Sp → 양성도 추가검사 |
+| **Crossed SLR** | 디스크 큰 압박 | 29% | 88% | 양성이면 큰 디스크 시사 (수술 대상) |
+| **Slump test** | 신경근 자극 | 84% | 83% | SLR보다 균형 잡힌 검사 |
+| **Spurling** | 경추 신경근 압박 | 30-60% | 90-95% | 양성이면 신경근 가능성 높음 |
+| **Neck Distraction** | 경추 신경근 자극 | 44% | 90% | 양성이면 distraction이 호전 시켜야 신뢰 |
+| **Hoffmann** | 상위 운동신경원 (UMN) | 58% | 78% | 단독 양성은 진단 어려움, 다른 UMN sign 동반 |
+| **FABER (Patrick)** | SI joint · 고관절 | 57-70% | 71-100% | SI vs hip 통증 감별 |
+| **Slump + SLR together** | 디스크 신경근 | 83% | 87% | 둘 모두 양성 시 신뢰도 ↑ |
+
+> 💡 단일 검사로 진단 결정 금지 — **2-3개 검사 cluster** 사용 + clinical context 종합.
+
 ---
 
 ## 📝 시뮬레이션 케이스 5개 {#cases}

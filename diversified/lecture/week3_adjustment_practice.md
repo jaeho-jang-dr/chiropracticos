@@ -920,6 +920,71 @@ T:   Remove slack; apply gentle traction by pulling in a cephalic
 
 ---
 
+## 제9부. Force·Velocity 종합 참조표 {#part9}
+
+부위별 Diversified HVLA의 표준 생체역학 파라미터 (peer-reviewed 측정값 기준):
+
+### 9.1 Peak Force 부위별
+
+| 부위 | Peak Force | Thrust 시간 | 변위 | 출처 |
+|------|----------|-------------|------|------|
+| **Cervical (C0-C7)** | 100-300 N | 80-120 ms | 1-2 mm | Triano 2002 · Herzog 2010 |
+| **Upper Thoracic (T1-T4)** | 300-500 N | 100-150 ms | 1-3 mm | Kirstukas 2003 |
+| **Mid Thoracic (T5-T8)** | 400-600 N | 100-150 ms | 2-3 mm | Triano 2003 |
+| **Lower Thoracic (T9-T12)** | 400-700 N | 100-150 ms | 2-3 mm | — |
+| **Lumbar (L1-L5)** | 500-1000 N | 100-200 ms | 2-4 mm | Herzog 1993 · Triano 2003 |
+| **Sacroiliac** | 500-800 N | 150-250 ms | 1-3 mm | — |
+| **Peripheral (대형 관절)** | 200-400 N | 80-150 ms | 1-3 mm | — |
+| **Peripheral (소형 관절)** | 50-150 N | 50-100 ms | 0.5-1.5 mm | — |
+
+### 9.2 Loading Rate (force/시간 — 핵심 파라미터)
+
+- **Loading rate = Peak Force / Thrust time**
+- **HVLA 표준**: 4-8 kN/s (kiloNewtons per second)
+- **너무 낮음(<3 kN/s)**: mobilization과 구분 안 됨 — cavitation 부재
+- **너무 높음(>10 kN/s)**: 조직 손상 위험 ↑
+
+### 9.3 Velocity (kinematic)
+
+- **HVLA**: ≥ 100 mm/s (분절 변위 속도)
+- **Mobilization**: < 50 mm/s
+
+### 9.4 Pre-load Tension (set-up force)
+
+| 단계 | Force 비율 |
+|------|----------|
+| Initial contact | Peak의 5-10% |
+| Skin slack 제거 | Peak의 10-20% |
+| Tissue tension | Peak의 20-40% |
+| Elastic barrier 도달 | Peak의 50-70% |
+| **Thrust 시작점** | Peak의 70% (여기서 가속) |
+| Peak | 100% (cavitation 발생) |
+
+### 9.5 안전 force 조절 가이드
+
+| 상황 | Force 조절 |
+|------|----------|
+| 표준 성인 (40-65세) | 표준 force |
+| 65-75세 | 표준의 70-80% |
+| 75세+ 또는 저체중 | 표준의 50-60% |
+| 임산부 | 표준의 60% + side posture |
+| Osteopenia (T -1 to -2.5) | 70% |
+| Osteoporosis (T -2.5 to -3.5) | 50% + Activator/Drop 우선 |
+| Severe osteoporosis (T < -3.5) | **HVLA 금지** |
+| 골격 미성숙 (소아·청소년) | 50% + 부모 동의 |
+
+### 9.6 Cavitation 발생 조건
+
+Cavitation(audible "pop")이 발생하려면:
+1. **Joint distraction** — gapping이 일정 임계 (~3-5mm) 도달
+2. **Pre-load tension** 확보 — elastic barrier 도달
+3. **HVLA velocity** — 충분히 빠른 thrust
+4. **Synovial fluid 상태** — 최근 cavitation 후 ~20분간 refractory
+
+> 💡 Cavitation의 임상 효과 상관성은 **약함** — pop 없이도 효과적인 교정이 가능 (Reggars 1996, Kawchuk 2015). Cavitation 자체가 목표가 아닌 **kinematic·neurophysiologic 효과**가 진짜 목표.
+
+---
+
 ## 📋 Week 3 실습 체크리스트
 
 ### 경추 (Level 1 — Student)
