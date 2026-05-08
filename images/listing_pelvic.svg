@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arrow-thin" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+  </defs>
+
+  <style>
+    .title { font-size: 22px; font-weight: 700; fill: #111; text-anchor: middle; }
+    .subtitle { font-size: 14px; font-weight: 500; fill: #444; text-anchor: middle; }
+    .label { font-size: 13px; fill: #1a1a1a; }
+    .label-mid { font-size: 13px; fill: #1a1a1a; text-anchor: middle; }
+    .label-r { font-size: 13px; fill: #1a1a1a; text-anchor: end; }
+    .small { font-size: 11px; fill: #555; }
+    .small-mid { font-size: 11px; fill: #555; text-anchor: middle; }
+    .listing { font-size: 12px; font-weight: 600; fill: #c00; }
+    .listing-blue { font-size: 12px; font-weight: 600; fill: #06c; }
+    .ref { font-size: 11px; fill: #888; font-style: italic; }
+    .bone { fill: #f7f4ee; stroke: #1a1a1a; stroke-width: 1.5; }
+    .ref-line { stroke: #06c; stroke-width: 1; stroke-dasharray: 4 3; fill: none; }
+    .marker-line { stroke: #c00; stroke-width: 1.2; fill: none; }
+    .meas-line { stroke: #444; stroke-width: 1; fill: none; }
+    .vertebra { fill: #f7f4ee; stroke: #1a1a1a; stroke-width: 1.2; }
+    .pedicle-dot { fill: #c00; stroke: none; }
+    .center-dot { fill: #06c; stroke: none; }
+    .compass { font-size: 12px; font-weight: 600; fill: #1a1a1a; text-anchor: middle; }
+  </style>
+
+  <!-- Title -->
+  <text class="title" x="360" y="32">Gonstead L3–L5 &amp; Pelvic AP Schemagram</text>
+  <text class="subtitle" x="360" y="54">횡단·골반 분석 (Transverse &amp; Pelvic Analysis)</text>
+
+  <!-- Spine column: T12, L1, L2, L3, L4, L5 -->
+  <!-- T12 (small, context) -->
+  <rect class="vertebra" x="320" y="100" width="80" height="34" rx="3"/>
+  <text class="label-mid" x="360" y="121">T12</text>
+
+  <!-- L1 -->
+  <rect class="vertebra" x="316" y="142" width="88" height="40" rx="3"/>
+  <text class="label-mid" x="360" y="167">L1</text>
+
+  <!-- L2 -->
+  <rect class="vertebra" x="313" y="190" width="94" height="44" rx="3"/>
+  <text class="label-mid" x="360" y="217">L2</text>
+
+  <!-- L3 with full markings -->
+  <rect class="vertebra" x="308" y="244" width="104" height="50" rx="3"/>
+  <line class="marker-line" x1="308" y1="248" x2="412" y2="248"/>
+  <line class="marker-line" x1="308" y1="290" x2="412" y2="290"/>
+  <circle class="pedicle-dot" cx="332" cy="269" r="3"/>
+  <circle class="pedicle-dot" cx="388" cy="269" r="3"/>
+  <circle class="center-dot" cx="360" cy="269" r="2.5"/>
+  <text class="label-mid" x="360" y="287" font-size="11">L3</text>
+
+  <!-- L4 with full markings -->
+  <rect class="vertebra" x="304" y="304" width="112" height="54" rx="3"/>
+  <line class="marker-line" x1="304" y1="308" x2="416" y2="308"/>
+  <line class="marker-line" x1="304" y1="354" x2="416" y2="354"/>
+  <circle class="pedicle-dot" cx="328" cy="331" r="3"/>
+  <circle class="pedicle-dot" cx="392" cy="331" r="3"/>
+  <circle class="center-dot" cx="360" cy="331" r="2.5"/>
+  <text class="label-mid" x="360" y="349" font-size="11">L4</text>
+
+  <!-- L5 with full markings -->
+  <rect class="vertebra" x="298" y="368" width="124" height="58" rx="3"/>
+  <line class="marker-line" x1="298" y1="372" x2="422" y2="372"/>
+  <line class="marker-line" x1="298" y1="422" x2="422" y2="422"/>
+  <circle class="pedicle-dot" cx="324" cy="397" r="3"/>
+  <circle class="pedicle-dot" cx="396" cy="397" r="3"/>
+  <circle class="center-dot" cx="360" cy="397" r="2.5"/>
+  <text class="label-mid" x="360" y="416" font-size="11">L5</text>
+
+  <!-- SP deviation arrows (rotation) -->
+  <line class="meas-line" x1="360" y1="270" x2="280" y2="270" marker-end="url(#arrow-thin)"/>
+  <text class="listing" x="200" y="263">SP Deviation L</text>
+  <text class="listing" x="200" y="278">→ PRS / PRI</text>
+  <line class="meas-line" x1="360" y1="332" x2="440" y2="332" marker-end="url(#arrow-thin)"/>
+  <text class="listing" x="450" y="325">SP Deviation R</text>
+  <text class="listing" x="450" y="340">→ PLS / PLI</text>
+
+  <!-- Sacrum (triangle-ish) -->
+  <path class="bone" d="M 295 430 L 425 430 L 405 540 L 315 540 Z"/>
+  <text class="label-mid" x="360" y="490" font-size="14" font-weight="600">SACRUM</text>
+  <!-- S2 reference line (vertical dashed) -->
+  <line class="ref-line" x1="360" y1="430" x2="360" y2="640"/>
+  <text class="ref" x="368" y="510">S2 Vertical</text>
+  <text class="ref" x="368" y="524">Reference Line</text>
+
+  <!-- Iliac wings (left = patient's right, viewer's left) -->
+  <!-- Left ilium -->
+  <path class="bone" d="M 295 430 Q 200 450 130 510 Q 100 570 130 620 Q 180 660 270 640 L 305 540 Z"/>
+  <!-- Right ilium -->
+  <path class="bone" d="M 425 430 Q 520 450 590 510 Q 620 570 590 620 Q 540 660 450 640 L 415 540 Z"/>
+
+  <!-- Iliac crest top markers (innominate width) -->
+  <line class="meas-line" x1="130" y1="510" x2="130" y2="490"/>
+  <line class="meas-line" x1="295" y1="430" x2="295" y2="410"/>
+  <line class="meas-line" x1="130" y1="500" x2="295" y2="420" stroke-dasharray="3 3"/>
+  <text class="label-mid" x="212" y="395" font-size="12">Iliac Width (Innominate)</text>
+  <text class="label-mid" x="212" y="408" font-size="11">L: IN (좁음) / EX (넓음)</text>
+
+  <line class="meas-line" x1="590" y1="510" x2="590" y2="490"/>
+  <line class="meas-line" x1="425" y1="430" x2="425" y2="410"/>
+  <line class="meas-line" x1="590" y1="500" x2="425" y2="420" stroke-dasharray="3 3"/>
+  <text class="label-mid" x="508" y="395" font-size="12">Iliac Width (Innominate)</text>
+  <text class="label-mid" x="508" y="408" font-size="11">R: IN (좁음) / EX (넓음)</text>
+
+  <!-- AS/PI listings on ilium body -->
+  <text class="listing" x="190" y="555">AS/PI</text>
+  <text class="listing" x="500" y="555">AS/PI</text>
+
+  <!-- IN/EX on iliac edges -->
+  <text class="listing-blue" x="105" y="585">EX</text>
+  <text class="listing-blue" x="600" y="585">EX</text>
+  <text class="listing-blue" x="245" y="595">IN</text>
+  <text class="listing-blue" x="475" y="595">IN</text>
+
+  <!-- Femoral head level line -->
+  <ellipse cx="195" cy="700" rx="38" ry="34" class="bone"/>
+  <ellipse cx="525" cy="700" rx="38" ry="34" class="bone"/>
+  <line class="ref-line" x1="100" y1="700" x2="620" y2="700"/>
+  <text class="ref" x="630" y="704">Femoral Head</text>
+  <text class="ref" x="630" y="717">Level Line</text>
+  <text class="label-mid" x="195" y="705" font-size="11">Femur L</text>
+  <text class="label-mid" x="525" y="705" font-size="11">Femur R</text>
+
+  <!-- Marking Protocol box (top-right) -->
+  <rect x="490" y="100" width="220" height="120" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+  <text class="label" x="500" y="120" font-weight="700">Marking Protocol</text>
+  <text class="small" x="500" y="138">• End-plate lines (L3·L4·L5)</text>
+  <text class="small" x="500" y="152">• Pedicle marks (red dots)</text>
+  <text class="small" x="500" y="166">• Central body dot (blue)</text>
+  <text class="small" x="500" y="180">• Spinous center dot</text>
+  <text class="small" x="500" y="198">• Sacrum &amp; pelvic grid</text>
+  <text class="small" x="500" y="212">• Femoral head level line</text>
+
+  <!-- Listing Examples box (top-left) -->
+  <rect x="10" y="100" width="220" height="120" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+  <text class="label" x="20" y="120" font-weight="700">Listing 표기 예시</text>
+  <text class="small" x="20" y="140" font-weight="600">분절 회전 (L3·L4):</text>
+  <text class="small" x="20" y="154">• L4 PRS = SP Right + Body Sup.</text>
+  <text class="small" x="20" y="168">• L4 PLI = SP Left + Body Inf.</text>
+  <text class="small" x="20" y="186" font-weight="600">골반 (Ilium):</text>
+  <text class="small" x="20" y="200">• AS/PI · IN/EX 4-listing</text>
+  <text class="small" x="20" y="214">• 예: "Right AS-IN ilium"</text>
+
+  <!-- Compass (bottom-left) -->
+  <g transform="translate(80,820)">
+    <circle cx="0" cy="0" r="32" fill="#fff" stroke="#1a1a1a"/>
+    <text class="compass" x="0" y="-18">A</text>
+    <text class="compass" x="0" y="26">P</text>
+    <text class="compass" x="-22" y="4">R</text>
+    <text class="compass" x="22" y="4">L</text>
+    <text class="compass" x="0" y="6" font-size="10" fill="#666">S↑/I↓</text>
+  </g>
+
+  <!-- L/R legend (bottom-right) -->
+  <g transform="translate(640,820)">
+    <circle cx="-26" cy="0" r="14" fill="#fff" stroke="#1a1a1a"/>
+    <text class="compass" x="-26" y="4">L</text>
+    <circle cx="14" cy="0" r="14" fill="#fff" stroke="#1a1a1a"/>
+    <text class="compass" x="14" y="4">R</text>
+    <text class="small" x="-6" y="34" text-anchor="middle">환자 기준</text>
+  </g>
+
+  <!-- Bottom title -->
+  <text class="subtitle" x="360" y="780">Complete Pelvic Grid Markings</text>
+  <text class="small-mid" x="360" y="800">Iliac Width (innominate lines) · IN=좁음, EX=넓음 · S2 vertical · Femoral head level · Pelvic listings (AS/PI, IN/EX)</text>
+</svg>
