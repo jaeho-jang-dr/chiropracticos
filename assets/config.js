@@ -14,7 +14,6 @@ window.PUBLIC_PAGES = new Set([
   "/login", "/login.html",
   "/signup", "/signup.html",
   "/auth-callback", "/auth-callback.html",
-  "/archive", "/archive.html",
   "/chapter01_introduction", "/chapter01_introduction.html",
   "/debug", "/debug.html",
   "/guide", "/guide.html",
