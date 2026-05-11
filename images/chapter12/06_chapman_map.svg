@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+      .body  { fill:#fff; stroke:#1d1d1f; stroke-width:1.5; }
+      .pt    { fill:#ff6b35; stroke:#b71c1c; stroke-width:1; }
+    </style>
+  </defs>
+  <rect width="960" height="600" fill="#fbfbfd"/>
+
+  <text x="480" y="42" class="label title" text-anchor="middle" font-size="26">Neurolymphatic Reflex (Chapman) 점 — 대표 분포도</text>
+  <text x="480" y="68" class="label sub" text-anchor="middle" font-size="13">Frank Chapman DO (1930s) · 본 강의는 해부학적 림프 배출 경로로만 해석. AK의 장기 매핑·MMT 회복 주장은 🟠 근거 부족</text>
+
+  <!-- ANTERIOR (front) -->
+  <text x="240" y="106" class="label title" text-anchor="middle" font-size="15">전면 (Anterior)</text>
+  <!-- Body outline -->
+  <path d="M 240 130
+           C 220 130 210 145 215 165
+           C 218 180 232 185 232 195
+           L 232 210
+           C 200 215 170 230 165 260
+           L 165 320
+           C 165 340 170 350 175 360
+           L 180 410
+           C 178 440 178 470 185 500
+           L 200 540
+           L 230 545
+           L 235 500
+           L 240 480
+           L 245 500
+           L 250 545
+           L 280 540
+           L 295 500
+           C 302 470 302 440 300 410
+           L 305 360
+           C 310 350 315 340 315 320
+           L 315 260
+           C 310 230 280 215 248 210
+           L 248 195
+           C 248 185 262 180 265 165
+           C 270 145 260 130 240 130 Z" class="body"/>
+
+  <!-- Chapman points (anterior) - representative -->
+  <!-- Sinus, ear -->
+  <circle cx="232" cy="172" r="4" class="pt"/>
+  <circle cx="248" cy="172" r="4" class="pt"/>
+  <!-- Bronchi - 2-3rd intercostal -->
+  <circle cx="218" cy="232" r="4" class="pt"/>
+  <circle cx="262" cy="232" r="4" class="pt"/>
+  <!-- Heart - 2nd ICS -->
+  <circle cx="225" cy="248" r="4" class="pt"/>
+  <!-- Stomach - 5-6th ICS -->
+  <circle cx="222" cy="278" r="4" class="pt"/>
+  <circle cx="258" cy="278" r="4" class="pt"/>
+  <!-- Liver/gallbladder - right 6-7th ICS -->
+  <circle cx="260" cy="296" r="4" class="pt"/>
+  <!-- Small intestine - umbilicus area -->
+  <circle cx="232" cy="340" r="4" class="pt"/>
+  <circle cx="248" cy="340" r="4" class="pt"/>
+  <!-- Large intestine - lateral thigh upper -->
+  <circle cx="210" cy="385" r="4" class="pt"/>
+  <circle cx="270" cy="385" r="4" class="pt"/>
+  <!-- Kidney - lateral umbilicus -->
+  <circle cx="200" cy="345" r="4" class="pt"/>
+  <circle cx="280" cy="345" r="4" class="pt"/>
+  <!-- Bladder - periumbilical -->
+  <circle cx="240" cy="360" r="4" class="pt"/>
+
+  <!-- Labels for anterior -->
+  <line x1="240" y1="172" x2="120" y2="172" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="115" y="176" class="label" text-anchor="end" font-size="10.5">부비동·이</text>
+  <line x1="218" y1="232" x2="120" y2="232" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="115" y="236" class="label" text-anchor="end" font-size="10.5">기관지 (2-3 ICS)</text>
+  <line x1="225" y1="248" x2="120" y2="252" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="115" y="256" class="label" text-anchor="end" font-size="10.5">심장 (2 ICS L)</text>
+  <line x1="222" y1="278" x2="120" y2="280" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="115" y="284" class="label" text-anchor="end" font-size="10.5">위 (5-6 ICS)</text>
+  <line x1="200" y1="345" x2="120" y2="328" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="115" y="332" class="label" text-anchor="end" font-size="10.5">신장 (T12-L1 lat.)</text>
+  <line x1="232" y1="340" x2="335" y2="335" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="340" y="339" class="label" font-size="10.5">소장 (8-11 ICS)</text>
+  <line x1="270" y1="385" x2="335" y2="385" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="340" y="389" class="label" font-size="10.5">대장 (대퇴외측 상부)</text>
+  <line x1="260" y1="296" x2="335" y2="300" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="340" y="304" class="label" font-size="10.5">간·담낭 (우 6-7 ICS)</text>
+
+  <!-- POSTERIOR (back) -->
+  <text x="700" y="106" class="label title" text-anchor="middle" font-size="15">후면 (Posterior)</text>
+  <path d="M 700 130
+           C 680 130 670 145 675 165
+           C 678 180 692 185 692 195
+           L 692 210
+           C 660 215 630 230 625 260
+           L 625 320
+           C 625 340 630 350 635 360
+           L 640 410
+           C 638 440 638 470 645 500
+           L 660 540
+           L 690 545
+           L 695 500
+           L 700 480
+           L 705 500
+           L 710 545
+           L 740 540
+           L 755 500
+           C 762 470 762 440 760 410
+           L 765 360
+           C 770 350 775 340 775 320
+           L 775 260
+           C 770 230 740 215 708 210
+           L 708 195
+           C 708 185 722 180 725 165
+           C 730 145 720 130 700 130 Z" class="body"/>
+  <!-- spine line -->
+  <line x1="700" y1="215" x2="700" y2="480" stroke="#d2d2d7" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Posterior Chapman points - between TPs -->
+  <!-- T1-2 (sinus) -->
+  <circle cx="685" cy="232" r="3.5" class="pt"/>
+  <circle cx="715" cy="232" r="3.5" class="pt"/>
+  <!-- T3-4 (bronchi) -->
+  <circle cx="685" cy="252" r="3.5" class="pt"/>
+  <circle cx="715" cy="252" r="3.5" class="pt"/>
+  <!-- T5-6 (stomach/liver) -->
+  <circle cx="685" cy="275" r="3.5" class="pt"/>
+  <circle cx="715" cy="275" r="3.5" class="pt"/>
+  <!-- T7-8 (pancreas/spleen) -->
+  <circle cx="685" cy="298" r="3.5" class="pt"/>
+  <circle cx="715" cy="298" r="3.5" class="pt"/>
+  <!-- T9-10 (small intestine) -->
+  <circle cx="685" cy="318" r="3.5" class="pt"/>
+  <circle cx="715" cy="318" r="3.5" class="pt"/>
+  <!-- T11-12 (kidneys) -->
+  <circle cx="685" cy="340" r="3.5" class="pt"/>
+  <circle cx="715" cy="340" r="3.5" class="pt"/>
+  <!-- L1-2 (adrenals/ureter) -->
+  <circle cx="685" cy="365" r="3.5" class="pt"/>
+  <circle cx="715" cy="365" r="3.5" class="pt"/>
+  <!-- L3-4 (large intestine/uterus) -->
+  <circle cx="685" cy="388" r="3.5" class="pt"/>
+  <circle cx="715" cy="388" r="3.5" class="pt"/>
+
+  <!-- Labels posterior -->
+  <line x1="685" y1="232" x2="580" y2="232" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="575" y="236" class="label" text-anchor="end" font-size="10.5">T1-2 (부비동)</text>
+  <line x1="685" y1="252" x2="580" y2="252" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="575" y="256" class="label" text-anchor="end" font-size="10.5">T3-4 (기관지)</text>
+  <line x1="685" y1="275" x2="580" y2="275" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="575" y="279" class="label" text-anchor="end" font-size="10.5">T5-6 (위·간)</text>
+  <line x1="685" y1="298" x2="580" y2="298" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="575" y="302" class="label" text-anchor="end" font-size="10.5">T7-8 (췌장·비장)</text>
+  <line x1="715" y1="318" x2="820" y2="318" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="825" y="322" class="label" font-size="10.5">T9-10 (소장)</text>
+  <line x1="715" y1="340" x2="820" y2="340" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="825" y="344" class="label" font-size="10.5">T11-12 (신장)</text>
+  <line x1="715" y1="365" x2="820" y2="365" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="825" y="369" class="label" font-size="10.5">L1-2 (부신·요관)</text>
+  <line x1="715" y1="388" x2="820" y2="388" stroke="#6e6e73" stroke-width="0.7"/>
+  <text x="825" y="392" class="label" font-size="10.5">L3-4 (대장·자궁)</text>
+
+  <!-- Evidence note -->
+  <rect x="40" y="510" width="880" height="78" rx="10" fill="#fff7e0" stroke="#d4a017"/>
+  <text x="60" y="535" class="label title" font-size="14" fill="#8a5a00">⚠ 본 강의 해석</text>
+  <text x="60" y="556" class="label" font-size="11.5">• 표시된 점은 해부학적으로 <tspan font-weight="700">림프 배출 경로·자율신경 분절(viscerosomatic)</tspan>과 부분적으로 일치한다. 매뉴얼 압박은 근막·근방추 자극으로 일시 효과 가능.</text>
+  <text x="60" y="572" class="label" font-size="11.5">• AK 주장(특정 장기 진단 → 점 자극으로 MMT 회복)은 1980-90s 임상 연구에서 부정. 림프 흐름 측정 변화도 입증 안 됨.</text>
+  <text x="60" y="583" class="label sub" font-size="10.5" font-style="italic">Owens C. An Endocrine Interpretation of Chapman's Reflexes. 1937. / Modern review: J Bodyw Mov Ther. 2014;18(3):417-422.</text>
+</svg>

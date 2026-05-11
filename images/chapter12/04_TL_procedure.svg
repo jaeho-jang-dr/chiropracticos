@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+      .step  { font-weight:700; fill:#0a84ff; }
+      .strong{ fill:#1b5e20; }
+      .weak  { fill:#b71c1c; }
+    </style>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1d1d1f"/>
+    </marker>
+  </defs>
+  <rect width="960" height="600" fill="#fbfbfd"/>
+
+  <text x="480" y="42" class="label title" text-anchor="middle" font-size="26">Therapy Localization (TL) — 3단계 절차</text>
+  <text x="480" y="68" class="label sub" text-anchor="middle" font-size="13">환자가 의심 부위에 손을 대면 indicator muscle이 약해진다는 AK 핵심 가설 · 근거 수준 🟠 Limited</text>
+
+  <!-- STEP 1 -->
+  <rect x="40" y="110" width="280" height="220" rx="14" fill="#fff" stroke="#0a84ff" stroke-width="2"/>
+  <text x="180" y="142" class="label step" text-anchor="middle" font-size="14">STEP 1</text>
+  <text x="180" y="166" class="label title" text-anchor="middle" font-size="16">Baseline 확인</text>
+  <text x="180" y="192" class="label sub" text-anchor="middle" font-size="12">indicator muscle 선정</text>
+  <!-- icon: arm raised -->
+  <g transform="translate(120,210)">
+    <circle cx="30" cy="20" r="14" fill="none" stroke="#1d1d1f" stroke-width="2"/>
+    <line x1="30" y1="34" x2="30" y2="80" stroke="#1d1d1f" stroke-width="2"/>
+    <line x1="30" y1="48" x2="65" y2="32" stroke="#1d1d1f" stroke-width="2"/>
+    <line x1="30" y1="48" x2="0"  y2="50" stroke="#1d1d1f" stroke-width="2"/>
+    <line x1="65" y1="32" x2="80" y2="14" stroke="#0a84ff" stroke-width="3"/>
+    <text x="76" y="10" class="label" font-size="11" fill="#0a84ff">↓ 저항</text>
+  </g>
+  <text x="180" y="310" class="label" text-anchor="middle" font-size="12" font-weight="700">결과: strong (5/5)</text>
+  <text x="180" y="324" class="label strong" text-anchor="middle" font-size="12">✓ indicator로 사용 가능</text>
+
+  <!-- arrow 1 -->
+  <line x1="328" y1="220" x2="350" y2="220" stroke="#1d1d1f" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- STEP 2 -->
+  <rect x="360" y="110" width="280" height="220" rx="14" fill="#fff" stroke="#0a84ff" stroke-width="2"/>
+  <text x="500" y="142" class="label step" text-anchor="middle" font-size="14">STEP 2</text>
+  <text x="500" y="166" class="label title" text-anchor="middle" font-size="16">환자가 직접 TL</text>
+  <text x="500" y="192" class="label sub" text-anchor="middle" font-size="12">의심 부위에 손가락 끝 접촉</text>
+  <!-- icon: hand touching spine -->
+  <g transform="translate(420,200)">
+    <rect x="20" y="0" width="60" height="90" rx="6" fill="#fff" stroke="#1d1d1f" stroke-width="2"/>
+    <line x1="50" y1="8" x2="50" y2="82" stroke="#d2d2d7" stroke-width="1" stroke-dasharray="3 3"/>
+    <circle cx="62" cy="40" r="6" fill="#ff3b30"/>
+    <text x="78" y="44" class="label" font-size="11" fill="#ff3b30">의심 부위</text>
+    <path d="M100,40 Q90,55 76,46" stroke="#1d1d1f" stroke-width="2" fill="none"/>
+    <circle cx="106" cy="38" r="4" fill="#1d1d1f"/>
+  </g>
+  <text x="500" y="310" class="label" text-anchor="middle" font-size="12" font-weight="700">즉시 indicator 재검</text>
+  <text x="500" y="324" class="label sub" text-anchor="middle" font-size="11.5">동일한 저항·자세 유지</text>
+
+  <!-- arrow 2 -->
+  <line x1="648" y1="220" x2="670" y2="220" stroke="#1d1d1f" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- STEP 3 -->
+  <rect x="680" y="110" width="240" height="220" rx="14" fill="#fff" stroke="#0a84ff" stroke-width="2"/>
+  <text x="800" y="142" class="label step" text-anchor="middle" font-size="14">STEP 3</text>
+  <text x="800" y="166" class="label title" text-anchor="middle" font-size="16">해석</text>
+  <!-- Branch -->
+  <line x1="800" y1="180" x2="800" y2="200" stroke="#1d1d1f" stroke-width="1.5"/>
+  <line x1="730" y1="200" x2="870" y2="200" stroke="#1d1d1f" stroke-width="1.5"/>
+  <line x1="730" y1="200" x2="730" y2="220" stroke="#1d1d1f" stroke-width="1.5"/>
+  <line x1="870" y1="200" x2="870" y2="220" stroke="#1d1d1f" stroke-width="1.5"/>
+  <rect x="690" y="222" width="80" height="50" rx="6" fill="#e8f5e9" stroke="#1b5e20"/>
+  <text x="730" y="244" class="label strong" text-anchor="middle" font-size="13" font-weight="700">유지</text>
+  <text x="730" y="262" class="label sub" text-anchor="middle" font-size="10">TL −</text>
+  <rect x="830" y="222" width="80" height="50" rx="6" fill="#ffebee" stroke="#b71c1c"/>
+  <text x="870" y="244" class="label weak" text-anchor="middle" font-size="13" font-weight="700">약화</text>
+  <text x="870" y="262" class="label sub" text-anchor="middle" font-size="10">TL +</text>
+  <text x="800" y="298" class="label" text-anchor="middle" font-size="11">TL+ → 해당 부위가 자율</text>
+  <text x="800" y="314" class="label" text-anchor="middle" font-size="11">신경학적 stress source 가설</text>
+
+  <!-- Caveats panel -->
+  <rect x="40" y="360" width="880" height="200" rx="12" fill="#fff7e0" stroke="#d4a017"/>
+  <text x="60" y="388" class="label title" font-size="15" fill="#8a5a00">⚠ TL의 한계와 본 강의 권고</text>
+  <text x="60" y="418" class="label" font-size="12.5">• <tspan font-weight="700">신뢰도</tspan>: Cuthbert &amp; Goodheart(2007) SR — TL inter-rater κ 0.41–0.64 (moderate). 검사자 간 차이 크다.</text>
+  <text x="60" y="438" class="label" font-size="12.5">• <tspan font-weight="700">메커니즘</tspan>: AK는 "neural feedback loop" 주장. fMRI/EMG 직접 증명 없음. 근방추·골지건 일시적 변화 가능성 한도.</text>
+  <text x="60" y="458" class="label" font-size="12.5">• <tspan font-weight="700">위양성</tspan>: 환자 호흡·각성 수준·검사자 시선 만으로 결과 흔들림. 단독 진단 도구로 부적합.</text>
+  <text x="60" y="478" class="label" font-size="12.5">• <tspan font-weight="700">본 강의 권고</tspan>: 정형·신경학적 검사(motion palpation, ROM, neuro)와 <tspan font-weight="700">반드시 병행</tspan>. TL+ 단독으로 치료 결정 ×.</text>
+  <text x="60" y="498" class="label" font-size="12.5">• <tspan font-weight="700">금기</tspan>: 식품/영양 challenge로 TL → 알레르기·결핍 진단 주장은 🔴 근거 없음. 표준 SPT·sIgE·oral challenge 사용.</text>
+  <text x="60" y="528" class="label sub" font-size="11.5" font-style="italic">Cuthbert SC, Goodheart GJ. On the reliability and validity of MMT: a literature review. Chiropr Osteopat. 2007;15:4.</text>
+  <text x="60" y="546" class="label sub" font-size="11.5" font-style="italic">Hall S et al. The validity of MMT testing in nutritional assessment. J Altern Complement Med. 2008;14(3):299-305.</text>
+</svg>

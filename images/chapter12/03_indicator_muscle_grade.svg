@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+      .grade { font-weight:700; }
+      .cell  { fill:#fff; stroke:#d2d2d7; stroke-width:1; }
+      .hdr   { fill:#1d1d1f; }
+    </style>
+  </defs>
+  <rect width="960" height="560" fill="#fbfbfd"/>
+
+  <text x="480" y="42" class="label title" text-anchor="middle" font-size="26">Indicator Muscle Test — MMT 0–5 등급</text>
+  <text x="480" y="68" class="label sub" text-anchor="middle" font-size="13">MRC 표준 (Medical Research Council) · AK는 주로 4/5 등급에서 "facilitated vs inhibited" 이분법으로 단순화</text>
+
+  <!-- Header bar -->
+  <rect x="60" y="100" width="840" height="40" fill="#1d1d1f"/>
+  <text x="100"  y="126" class="label" font-size="14" fill="#fff" font-weight="700">등급</text>
+  <text x="180"  y="126" class="label" font-size="14" fill="#fff" font-weight="700">근수축</text>
+  <text x="330"  y="126" class="label" font-size="14" fill="#fff" font-weight="700">관절 운동</text>
+  <text x="500"  y="126" class="label" font-size="14" fill="#fff" font-weight="700">중력 / 저항</text>
+  <text x="710"  y="126" class="label" font-size="14" fill="#fff" font-weight="700">AK 해석</text>
+
+  <!-- Row 5 -->
+  <rect x="60"  y="140" width="840" height="56" class="cell" fill="#e8f5e9"/>
+  <text x="100" y="172" class="label grade" font-size="20" fill="#1b5e20">5</text>
+  <text x="180" y="172" class="label" font-size="13">정상</text>
+  <text x="330" y="172" class="label" font-size="13">전 ROM</text>
+  <text x="500" y="172" class="label" font-size="13">최대 저항에 유지</text>
+  <text x="710" y="166" class="label" font-size="12" fill="#1b5e20" font-weight="600">facilitated (정상)</text>
+  <text x="710" y="184" class="label sub" font-size="11">indicator로 사용 가능</text>
+
+  <!-- Row 4 -->
+  <rect x="60"  y="196" width="840" height="56" class="cell" fill="#e8f5e9"/>
+  <text x="100" y="228" class="label grade" font-size="20" fill="#1b5e20">4</text>
+  <text x="180" y="228" class="label" font-size="13">강한 수축</text>
+  <text x="330" y="228" class="label" font-size="13">전 ROM</text>
+  <text x="500" y="228" class="label" font-size="13">중간~강한 저항</text>
+  <text x="710" y="222" class="label" font-size="12" fill="#1b5e20" font-weight="600">facilitated</text>
+  <text x="710" y="240" class="label sub" font-size="11">미세한 weakness 식별이 AK 핵심</text>
+
+  <!-- Row 3 -->
+  <rect x="60"  y="252" width="840" height="56" class="cell" fill="#fffde7"/>
+  <text x="100" y="284" class="label grade" font-size="20" fill="#827717">3</text>
+  <text x="180" y="284" class="label" font-size="13">중력만 이김</text>
+  <text x="330" y="284" class="label" font-size="13">전 ROM</text>
+  <text x="500" y="284" class="label" font-size="13">중력 저항 가능, 외부 저항 ×</text>
+  <text x="710" y="284" class="label" font-size="12" fill="#827717" font-weight="600">indicator 부적합</text>
+
+  <!-- Row 2 -->
+  <rect x="60"  y="308" width="840" height="56" class="cell" fill="#fff3e0"/>
+  <text x="100" y="340" class="label grade" font-size="20" fill="#bf360c">2</text>
+  <text x="180" y="340" class="label" font-size="13">약한 수축</text>
+  <text x="330" y="340" class="label" font-size="13">중력 제거 시 ROM</text>
+  <text x="500" y="340" class="label" font-size="13">중력에도 저항 ×</text>
+  <text x="710" y="340" class="label" font-size="12" fill="#bf360c" font-weight="600">병적 약화 — 신경학적 평가 필요</text>
+
+  <!-- Row 1 -->
+  <rect x="60"  y="364" width="840" height="56" class="cell" fill="#ffebee"/>
+  <text x="100" y="396" class="label grade" font-size="20" fill="#b71c1c">1</text>
+  <text x="180" y="396" class="label" font-size="13">촉진 수축만</text>
+  <text x="330" y="396" class="label" font-size="13">없음</text>
+  <text x="500" y="396" class="label" font-size="13">—</text>
+  <text x="710" y="396" class="label" font-size="12" fill="#b71c1c" font-weight="600">신경 손상 (LMN) 의심</text>
+
+  <!-- Row 0 -->
+  <rect x="60"  y="420" width="840" height="56" class="cell" fill="#ffebee"/>
+  <text x="100" y="452" class="label grade" font-size="20" fill="#b71c1c">0</text>
+  <text x="180" y="452" class="label" font-size="13">없음</text>
+  <text x="330" y="452" class="label" font-size="13">없음</text>
+  <text x="500" y="452" class="label" font-size="13">—</text>
+  <text x="710" y="452" class="label" font-size="12" fill="#b71c1c" font-weight="600">완전 마비</text>
+
+  <!-- Footnote -->
+  <text x="60" y="510" class="label" font-size="12" font-weight="700" fill="#1d1d1f">⚠ 주의</text>
+  <text x="60" y="528" class="label sub" font-size="11.5">AK는 4↔5 사이의 미세한 차이("facilitated vs inhibited")를 진단 신호로 삼는다. 그러나 이 미세 변화의 검사자 간 신뢰도(inter-rater reliability)는</text>
+  <text x="60" y="544" class="label sub" font-size="11.5">Schmitt-Yanick(2005) Cuthbert-Goodheart(2007)에서 κ 0.4–0.6 (moderate). 1차 약화 식별(0–3등급)은 PT 표준이며 근거 강함.</text>
+</svg>

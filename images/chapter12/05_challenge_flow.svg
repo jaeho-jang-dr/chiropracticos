@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" width="960" height="580">
+  <defs>
+    <style>
+      .label { font-family: "Pretendard","Apple SD Gothic Neo",sans-serif; fill:#1d1d1f; }
+      .title { font-weight:700; letter-spacing:-0.02em; }
+      .sub   { font-weight:400; fill:#6e6e73; }
+      .ok    { fill:#1b5e20; }
+      .bad   { fill:#b71c1c; }
+    </style>
+    <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1d1d1f"/>
+    </marker>
+  </defs>
+  <rect width="960" height="580" fill="#fbfbfd"/>
+
+  <text x="480" y="42" class="label title" text-anchor="middle" font-size="26">Challenge Testing — 자극 유형별 분류</text>
+  <text x="480" y="68" class="label sub" text-anchor="middle" font-size="13">AK 두 번째 진단 도구 · 자극을 가한 직후 indicator muscle 변화로 "원인" 추정</text>
+
+  <!-- Two columns -->
+  <!-- LEFT: Mechanical (acceptable) -->
+  <rect x="40" y="100" width="430" height="430" rx="14" fill="#f0faff" stroke="#3182ce" stroke-width="2"/>
+  <text x="255" y="132" class="label title" text-anchor="middle" font-size="18" fill="#0a4f8c">🟡 Mechanical Challenge</text>
+  <text x="255" y="156" class="label sub" text-anchor="middle" font-size="12">자세·움직임·관절 압력 자극 · 부분적 근거</text>
+
+  <text x="60" y="190" class="label" font-size="13" font-weight="700">절차</text>
+  <text x="80" y="212" class="label" font-size="12.5">1. Indicator muscle baseline (strong)</text>
+  <text x="80" y="232" class="label" font-size="12.5">2. 의사가 척추를 특정 방향으로 부드럽게 밀기</text>
+  <text x="80" y="252" class="label" font-size="12.5">     (예: T6 SP를 좌측으로 1초 압)</text>
+  <text x="80" y="272" class="label" font-size="12.5">3. 즉시 indicator muscle 재검</text>
+
+  <text x="60" y="306" class="label" font-size="13" font-weight="700">해석</text>
+  <text x="80" y="328" class="label" font-size="12.5">• <tspan class="ok" font-weight="700">약화</tspan> = 그 방향이 dysfunctional segment</text>
+  <text x="80" y="348" class="label" font-size="12.5">• <tspan class="ok" font-weight="700">유지</tspan> = 그 방향은 정상</text>
+
+  <text x="60" y="382" class="label" font-size="13" font-weight="700">근거 수준</text>
+  <text x="80" y="404" class="label" font-size="12">• Motion palpation과 유사한 정보 제공</text>
+  <text x="80" y="422" class="label" font-size="12">• Mechanical challenge inter-rater κ ≈ 0.4–0.7</text>
+  <text x="80" y="440" class="label" font-size="12">  (Pollard 2005, Triano 2002 — 부위·검사자별 편차 큼)</text>
+
+  <text x="60" y="474" class="label" font-size="13" font-weight="700">본 강의 권고</text>
+  <text x="80" y="496" class="label" font-size="12.5">정형·신경검사 + motion palpation과 병행 시</text>
+  <text x="80" y="514" class="label" font-size="12.5">보조 도구로 사용 가능. 단독 결정 ×.</text>
+
+  <!-- RIGHT: Chemical (rejected) -->
+  <rect x="490" y="100" width="430" height="430" rx="14" fill="#ffebee" stroke="#b71c1c" stroke-width="2"/>
+  <text x="705" y="132" class="label title" text-anchor="middle" font-size="18" fill="#b71c1c">🔴 Chemical / Nutritional Challenge</text>
+  <text x="705" y="156" class="label sub" text-anchor="middle" font-size="12">식품·영양제·오일을 입/손에 두고 MMT — 근거 없음</text>
+
+  <text x="510" y="190" class="label" font-size="13" font-weight="700">절차 (AK 주장)</text>
+  <text x="530" y="212" class="label" font-size="12.5">1. Indicator muscle baseline (strong)</text>
+  <text x="530" y="232" class="label" font-size="12.5">2. 식품/영양제를 환자 혀 위·손 위·복부에 두기</text>
+  <text x="530" y="252" class="label" font-size="12.5">3. 즉시 indicator muscle 재검</text>
+  <text x="530" y="272" class="label" font-size="12.5">4. 약화 = "그 식품 알레르기/결핍" 주장</text>
+
+  <text x="510" y="306" class="label" font-size="13" font-weight="700">검증된 부정 결과</text>
+  <text x="530" y="328" class="label" font-size="11.5">• Garrow 1988 (BMJ): 이중맹검 RCT — 무차별</text>
+  <text x="530" y="346" class="label" font-size="11.5">• Kenney 1988 (J Am Diet Assoc): false positive 80%</text>
+  <text x="530" y="364" class="label" font-size="11.5">• Pothmann 2001 (Forsch Komplementmed): 위약과 동등</text>
+  <text x="530" y="382" class="label" font-size="11.5">• Lüdtke 2001: sensitivity 14% / specificity 65%</text>
+  <text x="530" y="400" class="label" font-size="11.5">• Staehle 2005 (J Manip Physiol Ther): 부정</text>
+
+  <text x="510" y="432" class="label" font-size="13" font-weight="700" fill="#b71c1c">위험</text>
+  <text x="530" y="454" class="label" font-size="12">• 실제 알레르기 missed → anaphylaxis 위험</text>
+  <text x="530" y="472" class="label" font-size="12">• 무근거 식이 제한 → 영양 결핍·섭식장애</text>
+  <text x="530" y="490" class="label" font-size="12">• 본 강의: <tspan font-weight="700">절대 사용 금지</tspan></text>
+
+  <text x="530" y="514" class="label sub" font-size="11.5" font-style="italic">표준: SPT(피부단자) · sIgE · oral food challenge</text>
+
+  <!-- bottom note -->
+  <text x="480" y="558" class="label sub" text-anchor="middle" font-size="11.5" font-style="italic">FoodAllergy.org / AAAAI / AAFP 공식 입장: AK muscle testing은 식품 알레르기·민감성 진단에 사용해서는 안 된다.</text>
+</svg>
