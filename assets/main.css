@@ -1378,3 +1378,9 @@ abbr.med-abbr:hover {
 }
 strong abbr.med-abbr { color: inherit; }
 .markdown-body abbr.med-abbr { color: #0050a0; }
+
+/* ---------- Auth gating ---------- */
+/* auth-guard.js 가 비로그인 사용자에게 body.is-anonymous 를 부착한다.
+   .auth-only 가 붙은 요소는 비로그인 상태에서 화면에서 사라진다.
+   (HTML 응답에는 여전히 포함 — 클라이언트사이드 UI 게이팅) */
+body.is-anonymous .auth-only { display: none !important; }

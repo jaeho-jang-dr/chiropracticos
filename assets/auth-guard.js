@@ -18,8 +18,12 @@ import { supabase, sessionReady, getCurrentUserWithRow, signOut } from "./supaba
   const session = await sessionReady;
 
   if (isPublic && !isAdmin) {
-    // 공개 페이지: 로그인 상태면 nav 위젯만 갱신
-    if (session) updateNavWidget((await getCurrentUserWithRow()).row);
+    // 공개 페이지: 로그인 상태면 nav 위젯만 갱신, 비로그인이면 .auth-only 게이팅
+    if (session) {
+      updateNavWidget((await getCurrentUserWithRow()).row);
+    } else {
+      document.body.classList.add("is-anonymous");
+    }
     return;
   }
 

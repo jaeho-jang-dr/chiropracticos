@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chiropractic | 카이로프랙틱</title>
   <meta name="description" content="관절, 근육, 신경자극을 통한 근거기반 도수치료의 실제와 통합강의 시스템. 한국 정형외과·재활의학과 의사·도수치료 물리치료사 대상." />
-  <link rel="stylesheet" href="./assets/main.css?v=20260511g" />
-<script defer src="./assets/ui.js?v=20260511g"></script>
-<script defer src="./assets/download-guard.js?v=20260511g"></script>
-<script defer src="./assets/hide-guard.js?v=20260511g"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260511g"></script>
-  <script src="./assets/config.js?v=20260511g"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260511g"></script>
+  <link rel="stylesheet" href="./assets/main.css?v=20260511i" />
+<script defer src="./assets/ui.js?v=20260511i"></script>
+<script defer src="./assets/download-guard.js?v=20260511i"></script>
+<script defer src="./assets/hide-guard.js?v=20260511i"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260511i"></script>
+  <script src="./assets/config.js?v=20260511i"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260511i"></script>
 </head>
 <body>
 
@@ -26,10 +26,10 @@
         <li><a href="#core">철학</a></li>
         <li><a href="#history">역사</a></li>
         <li><a href="#dashboard">📊 현황</a></li>
-        <li><a href="#curriculum">커리큘럼</a></li>
-        <li><a href="#format">학습 포맷</a></li>
+        <li class="auth-only"><a href="#curriculum">커리큘럼</a></li>
+        <li class="auth-only"><a href="#format">학습 포맷</a></li>
         <li><a href="#principle">원칙</a></li>
-        <li><a href="./archive.html">📂 아카이브</a></li>
+        <li class="auth-only"><a href="./archive.html">📂 아카이브</a></li>
       </ul>
       <div class="nav-actions">
         <a class="btn btn-ghost btn-sm" href="./login.html" aria-label="로그인">로그인</a>
@@ -48,7 +48,7 @@
       통합강의 시스템.
     </p>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="#curriculum">커리큘럼 보기</a>
+      <a class="btn btn-primary auth-only" href="#curriculum">커리큘럼 보기</a>
       <a class="btn btn-ghost" href="#core">핵심 철학 →</a>
     </div>
 
@@ -328,7 +328,7 @@
     </section>
 
     <!-- ========== CURRICULUM ========== -->
-    <section id="curriculum">
+    <section id="curriculum" class="auth-only">
       <h2>전체 커리큘럼</h2>
       <p class="section-lead">각 챕터는 강의록(HTML·MD) · PPTX · 동영상 · 팟캐스트로 구성되며, 온라인·오프라인 모두 활용 가능합니다.</p>
 
@@ -426,7 +426,7 @@
     </section>
 
     <!-- ========== LEARNING FORMAT ========== -->
-    <section id="format">
+    <section id="format" class="auth-only">
       <h2>학습 포맷</h2>
       <p class="section-lead">각 챕터는 4가지 상호보완 자료로 구성됩니다. 온라인 학습자는 HTML·영상·팟캐스트 중심, 오프라인 강의자는 PPTX·HTML 인쇄 중심.</p>
 
@@ -457,7 +457,7 @@
           <h2>편집 원칙</h2>
           <p class="section-lead">근거 기반 의학(EBM) 기준으로 엄격히 선별된 내용만 포함합니다.</p>
         </div>
-        <a class="btn btn-primary editor-btn" href="./editor.html" aria-label="편집자 약력 페이지 열기">
+        <a class="btn btn-primary editor-btn auth-only" href="./editor.html" aria-label="편집자 약력 페이지 열기">
           <span class="ic">👤</span>
           <span>편집자</span>
           <span class="arr">→</span>
@@ -519,8 +519,8 @@
         <div class="footer-col">
           <h5>자료</h5>
           <ul>
-            <li><a href="./editor.html">👤 편집자 약력</a></li>
-            <li><a href="./archive.html">📂 레거시 아카이브</a></li>
+            <li class="auth-only"><a href="./editor.html">👤 편집자 약력</a></li>
+            <li class="auth-only"><a href="./archive.html">📂 레거시 아카이브</a></li>
             <li><a href="./viewer.html?src=diversified/lecture/00_master_index.md">Diversified 상세 MD</a></li>
             <li><a href="#">참고문헌</a></li>
           </ul>
