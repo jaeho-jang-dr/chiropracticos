@@ -30,3 +30,4 @@ node_modules/
 # **/*.docx
 
 .vercel
+tmp_fn_podcasts/
