@@ -14,8 +14,8 @@
 4. **[진단 도구 11종 상세](#diagnostics)** 🆕
 5. **[진단 가설 비교 매트릭스](#matrix)** 🆕
 6. [5 Factors of IVF — AK 고유 이론](#5-factors)
-7. [🔴 Diagnostic Extension 주장과 비판](#diag-ext)
-8. [🔴 Food Allergy·영양 진단 주장](#allergy)
+7. [⚠️ Diagnostic Extension 주장과 비판적 검토](#diag-ext)
+8. [⚠️ Food Allergy·영양 진단 주장 검토](#allergy)
 9. **[현대 응용 — NKT·PRI·SFMA·FRC](#modern)** 🆕
 10. **[5분 진료 프로토콜 (한국 외래용)](#protocol)** 🆕
 11. [PMC·RCT 비판 리뷰](#rct)
@@ -35,7 +35,7 @@
 본 강의는 AK를 **뚜렷이 두 부분**으로 나눠 다룸:
 
 - 🟡 **채택**: MMT 자체의 근력 측정 기능 (재활의학의 표준 MMT와 동일)
-- 🔴 **제외·비판**: "근력 변화로 알레르기·영양 결핍·장기 기능·감정 상태 진단" 주장
+- ⚠️ **현재 권장하지 않음**: "근력 변화로 알레르기·영양 결핍·장기 기능·감정 상태 진단" 주장 — 향후 연구로 평가가 달라질 가능성은 열어둡니다.
 
 ### FoodAllergy.org 공식 입장
 
@@ -61,7 +61,7 @@
 | 1980s | 영양 결핍·식품 감수성 진단 |
 | 1990s+ | 감정·심리 상태·에너지 진단 확장 |
 
-확장할수록 과학적 근거는 🔴 없음에 가까워짐.
+확장된 적용 영역으로 갈수록 현재까지 축적된 과학적 근거는 줄어드는 경향이 있습니다 (특히 1990s+ 감정·심리 영역).
 
 ### 파생·관련 기법
 
@@ -113,7 +113,7 @@ AK 임상가는 11개 진단 도구를 조합해 사용한다고 주장한다. �
 
 **근거 수준 🟡**: 1차 약화 식별(0-3 등급)은 PT 표준이며 근거 강함. AK 핵심인 4↔5 사이 미세 변화 식별은 검사자 간 신뢰도 κ 0.4-0.6.
 
-**본 강의 권장**: 표준 14 근육 baseline은 routine으로 사용 가능. 단, "weak = 알레르기/장기 문제" 해석은 절대 금지.
+**본 강의 권장**: 표준 14 근육 baseline은 routine으로 사용 가능. 단, "weak = 알레르기·장기 문제" 해석은 현재 근거가 부족하여 임상 적용을 권장하기 어렵습니다.
 
 ![Indicator Muscle Grade](./../../images/chapter12/03_indicator_muscle_grade.svg)
 
@@ -146,7 +146,7 @@ AK 임상가는 11개 진단 도구를 조합해 사용한다고 주장한다. �
 - 약화 = 그 방향이 listing 방향 (Gonstead·Diversified의 motion palpation과 유사한 정보).
 - κ 0.4-0.7 (Pollard 2005, Triano 2002).
 
-**Chemical / Nutritional / Oral Challenge 🔴 절대 금지**
+**Chemical / Nutritional / Oral Challenge ⚠️ 현재 임상 적용을 권장하기 어려움**
 
 - 식품·영양제를 입·혀·손에 두고 indicator muscle 재검.
 - 부정 RCT: Garrow 1988 (BMJ), Kenney 1988 (J Am Diet Assoc, false positive 80%), Pothmann 2001, Lüdtke 2001 (sensitivity 14%/specificity 65%), Staehle 2005.
@@ -174,7 +174,7 @@ AK 임상가는 11개 진단 도구를 조합해 사용한다고 주장한다. �
 
 (아래 [5 Factors 섹션](#5-factors) 참조 — AK 고유 5요소 모델)
 
-**근거 수준 🔴**: 5요소 중 4요소(neurolymphatic · neurovascular · CSF/cranial · nutrition)는 부분 근거 또는 무근거. 본 강의는 한의학 항목(meridian)을 **명시 제외**한다.
+**근거 수준 🟠**: 5요소 중 4요소(neurolymphatic · neurovascular · CSF/cranial · nutrition)는 부분 근거 또는 근거가 매우 제한적인 상태입니다. 본 강의는 한의학 항목(meridian)을 다루지 않습니다.
 
 ---
 
@@ -214,9 +214,9 @@ AK 임상가는 11개 진단 도구를 조합해 사용한다고 주장한다. �
 
 **가설**: 자율신경계를 통한 장기 혈류 조절.
 
-**근거 수준 🟠 Limited**: 직접 검증 연구가 매우 적고, 있더라도 두피 동맥 박동 변화의 임상 의미는 입증되지 않음 — peer-reviewed 1차 근거는 사실상 부재하나 "효과 없음"을 입증한 부정 연구도 존재.
+**근거 수준 🟠 Limited**: 직접 검증 연구가 매우 적고, 있더라도 두피 동맥 박동 변화의 임상 의미가 충분히 입증되지 않은 상태입니다 — peer-reviewed 1차 근거는 사실상 부족하나 부정적 결과를 보고한 연구도 존재합니다.
 
-**본 강의 권장**: 사용하지 않음.
+**본 강의 권장**: 현재로서는 권장하지 않습니다.
 
 ---
 
@@ -228,11 +228,11 @@ AK 임상가는 11개 진단 도구를 조합해 사용한다고 주장한다. �
 - 척추 listing은 X-ray + motion palpation이 표준 (Gonstead 챕터 4 참조).
 - Cranial bone motion은 SOT-cranial과 동일한 비판이 적용 (Chapter 10 참조). 성인 두개골 봉합은 미세 movable하지만, 임상가가 그 movement를 손으로 진단할 수 있다는 inter-rater κ < 0.2 — 즉 부정적 1차 데이터는 있어 No evidence가 아닌 Limited 등급.
 
-**본 강의 권장**: 척추 listing은 표준 motion palpation·X-ray로. Cranial 진단은 사용 ×.
+**본 강의 권장**: 척추 listing은 표준 motion palpation·X-ray로 평가합니다. Cranial 진단은 현재 근거가 제한적이어서 권장하지 않습니다.
 
 ---
 
-### 10. 🔴 Nutritional / Oral Provocation Testing
+### 10. ⚠️ Nutritional / Oral Provocation Testing
 
 **AK 주장**: 식품·영양제·환경 화학물을 환자 혀·입·손·복부에 두고 indicator muscle test → 약화되면 "그 물질이 환자 시스템에 stress" → 알레르기·결핍·민감성 진단.
 
@@ -243,21 +243,21 @@ AK 임상가는 11개 진단 도구를 조합해 사용한다고 주장한다. �
 - Lüdtke 2001: sensitivity 14% / specificity 65% (chance below)
 - Staehle 2005 J Manip Physiol Ther 28(2):e7
 
-**위험**: 실제 알레르기 missed → anaphylaxis. 무근거 식이 제한 → 영양 결핍·섭식장애.
+**유의점**: 실제 알레르기를 놓칠 경우 anaphylaxis 위험이 있고, 근거가 부족한 식이 제한은 영양 결핍·섭식장애로 이어질 수 있습니다.
 
-**본 강의 권장**: **절대 사용 금지**. 식품 알레르기는 SPT · sIgE · oral food challenge.
+**본 강의 권장**: 현재 임상 적용을 권장하지 않습니다. 식품 알레르기는 SPT · sIgE · oral food challenge 같은 표준 검사로 평가합니다.
 
 ---
 
-### 11. 🔴 Body Language / Switching / Cross-crawl
+### 11. ⚠️ Body Language / Switching / Cross-crawl
 
 **Switching 가설**: 환자의 "polarity가 뒤집힌" 상태 → AK 검사가 모두 invalid → 환자 손바닥 비비기·복식 호흡으로 "리셋".
 
 **Cross-crawl**: 좌우 교대 동작(좌팔+우다리)으로 hemispheric 통합 회복 주장.
 
-**근거 수준 🔴 No evidence (AK 11종 중 유일)**: peer-reviewed 1차 연구 자체가 부재. 메커니즘 입증 없음. "polarity" 개념은 측정 불가. Cross-crawl 운동 자체는 coordination 훈련으로 의미 있을 수 있으나 AK가 주장하는 효과(언어·학습장애 개선 등)는 무근거. 본 챕터에서 유일하게 🔴 No evidence 등급으로 분류한 도구.
+**근거 수준 🔴 No evidence (AK 11종 중 유일)**: peer-reviewed 1차 연구가 매우 부족하고, 메커니즘이 아직 충분히 설명되지 않은 상태입니다. "polarity" 개념은 현재 측정이 어렵습니다. Cross-crawl 운동 자체는 coordination 훈련으로 의미를 가질 수 있으나, AK가 주장하는 효과(언어·학습장애 개선 등)는 현재 근거가 매우 제한적입니다. 본 챕터에서 유일하게 🔴 No evidence 등급으로 분류한 도구이며, 향후 연구에 따라 평가가 달라질 가능성은 열어둡니다.
 
-**본 강의 권장**: 사용하지 않음.
+**본 강의 권장**: 현재로서는 권장하지 않습니다.
 
 ---
 
@@ -268,15 +268,15 @@ AK 임상가는 11개 진단 도구를 조합해 사용한다고 주장한다. �
 | 1 | **MMT (indicator)** | weak muscle = 시스템 stress 반영 | 표준 자세 + 4초 저항 | 🟡 1차 약화 식별 OK, 미세 변화 κ 0.4-0.6 | 표준 14근육 routine 가능 |
 | 2 | **Therapy Localization** | 환자가 만지면 indicator 변화 | 환자 손가락 접촉 → 재검 | 🟠 Limited, κ 0.41-0.64 | 표준 검사 병행 시 보조 |
 | 3a | **Mechanical Challenge** | 자극 방향이 listing 방향 | 척추 밀고 즉시 재검 | 🟡 κ 0.4-0.7 | motion palp과 병용 |
-| 3b | **Chemical Challenge** | 식품/영양제로 약화 = 그 물질 문제 | 입/손에 두고 재검 | 🟠 다수 RCT 부정 (Limited) | **절대 금지** |
+| 3b | **Chemical Challenge** | 식품/영양제로 약화 = 그 물질 문제 | 입/손에 두고 재검 | 🟠 다수 RCT 부정적 (Limited) | 현재 임상 적용을 권장하기 어려움 |
 | 4 | **Triad of Health** | 구조·화학·정신 균형 | 영역별 자극 시 회복 측정 | 🟡 개념 OK, 진단 ×| 면담 frame으로만 |
 | 5 | **5 Factors of IVF** | IVF 주변 5요인 분류 | 5요인 각각 검사 | 🟠 대부분 부정/제한적 | meridian 명시 제외 |
 | 6 | **Origin/Insertion** | 근방추·GTO reset | 부착부 deep pressure | 🟡 myofascial과 유사 | 보조 도구 가능 |
 | 7 | **Neurolymphatic (Chapman)** | 림프 흐름 회복 | 점 deep rub 20-30s | 🟠 림프 측정 변화 ×; 근막 자극 효과 ○ | 해부학적 압박 효과만 인정 |
-| 8 | **Neurovascular (Bennett)** | 두피점 → 자율신경 → 장기 혈류 | 두피 점 가벼운 압 30s-5m | 🟠 임상 의미 미입증 (Limited) | 사용 ×|
+| 8 | **Neurovascular (Bennett)** | 두피점 → 자율신경 → 장기 혈류 | 두피 점 가벼운 압 30s-5m | 🟠 임상 의미 미입증 (Limited) | 현재 권장하지 않음 |
 | 9 | **Spinal/Cranial Listing** | MMT로 listing 진단 | MMT + 자세 변경 | 🟠 cranial κ 부정; 척추는 표준 도구 | 표준 motion palp·X-ray |
-| 10 | **Nutrition/Oral** | 식품·영양제 알레르기·결핍 진단 | 입에 두고 MMT | 🟠 다수 RCT 부정 (Garrow, Kenney, Pothmann, Lüdtke) | **절대 금지** |
-| 11 | **Switching/Cross-crawl** | polarity reset · hemisphere 통합 | 호흡·교대 운동 | 🔴 No evidence — peer-reviewed 1차 연구 자체 부재 | 사용 ×|
+| 10 | **Nutrition/Oral** | 식품·영양제 알레르기·결핍 진단 | 입에 두고 MMT | 🟠 다수 RCT 부정적 (Garrow, Kenney, Pothmann, Lüdtke) | 현재 임상 적용을 권장하기 어려움 |
+| 11 | **Switching/Cross-crawl** | polarity reset · hemisphere 통합 | 호흡·교대 운동 | 🔴 No evidence — peer-reviewed 1차 연구가 매우 부족 | 현재 권장하지 않음 |
 
 **색 범례**: 🟢 Strong · 🟡 Moderate · 🟠 Limited · 🔴 No / Negative evidence
 
@@ -306,7 +306,7 @@ AK는 Intervertebral Foramen (IVF) 주변의 **5가지 요소**가 기능장애�
 
 ---
 
-## 🔴 Diagnostic Extension 주장과 비판 {#diag-ext}
+## ⚠️ Diagnostic Extension 주장과 비판적 검토 {#diag-ext}
 
 ### AK 확장 진단 주장
 
@@ -319,13 +319,13 @@ AK는 Intervertebral Foramen (IVF) 주변의 **5가지 요소**가 기능장애�
 1. **해부학·생리학 근거 부재** — 개별 근육과 장기 기능의 이런 직접적 연결은 표준 의학에서 인정되지 않음
 2. **Ideomotor effect** — AK "testing" 중 술자의 무의식적 힘 조절이 결과를 결정 (Hyman 2003·Schwartz 2014)
 3. **Double-blind <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 부정적**:
-   - Kenney JJ et al. 1988 — AK allergy detection 효과 없음
+   - Kenney JJ et al. 1988 — AK allergy detection 효과 입증 부족
    - Staehle HJ et al. 2005 — 치과 재료 과민성 AK로 검출 불가
 4. **PMC scoping review** (Haas 2007 재검토): 이론적 근거 약함
 
 ---
 
-## 🔴 Food Allergy·영양 진단 주장 {#allergy}
+## ⚠️ Food Allergy·영양 진단 주장 검토 {#allergy}
 
 ### 주장
 
@@ -525,7 +525,7 @@ AK 단독보다 위 4종을 환자 호소에 따라 조합하는 것이 evidence
 
 - 척추 교정 (<abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 유사)
 - Chapman reflex point 자극 (🟠 효과 불명확)
-- 영양 처방 (AK 진단 기반 시 🔴 부적절)
+- 영양 처방 (AK 진단 기반 시 ⚠️ 현재 권장하기 어려움)
 - 스트레스 관리·감정 해소 주장 (🟠 Limited — relaxation 일반 효과는 알려져 있으나 AK 특이 효과 미증명)
 
 ---
@@ -559,14 +559,16 @@ AK 단독보다 위 4종을 환자 호소에 따라 조합하는 것이 evidence
 - **재활의학 표준 MMT** — 근력 평가
 - 근육-척추 분절 연관에 대한 **해부학적 학습** (Wyke 4 유형과 연결)
 
-### 🔴 본 강의가 권장하지 않는 AK 주장
+### ⚠️ 본 강의가 현재로서는 권장하지 않는 AK 주장
+
+(향후 추가 연구로 평가가 달라질 가능성은 열어두며, 지금 시점의 근거 수준에 따른 권고)
 
 - 근력검사로 알레르기 진단
 - 근력검사로 영양 결핍·장기 기능 진단
 - 근력검사로 감정·정신 문제 진단
 - 음식·약·영양제를 몸에 대고 근력 변화로 "안전·유해" 판단
 - Chapman reflex·Bennett neurovascular·CSF 관련 확장 주장
-- AK 진단을 표준 의학 검사 대체
+- AK 진단으로 표준 의학 검사를 대체하는 사용
 
 ### 🟢 안전한 통합
 
