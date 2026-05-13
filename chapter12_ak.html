@@ -5,12 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Applied Kinesiology (<abbr class="med-abbr" title="Applied Kinesiology · 응용 운동학 (George Goodheart, 1964)">AK</abbr>) | Chiropractic</title>
   <meta name="description" content="Chapter 12. Applied Kinesiology (AK) — George Goodheart 1964 · MMT · 🟠 알레르기·영양 진단 주장은 제한적 근거 (RCT 부정). 🔴 Switching/Cross-crawl은 근거 부재. 근거 기반·비판적 시각." />
-  <link rel="stylesheet" href="./assets/main.css?v=20260512g" />
+  <link rel="stylesheet" href="./assets/main.css?v=20260513a" />
 
-<script defer src="./assets/ui.js?v=20260512g"></script>
-<script defer src="./assets/download-guard.js?v=20260512g"></script>
-<script defer src="./assets/hide-guard.js?v=20260512g"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260512g"></script>
+<script defer src="./assets/ui.js?v=20260513a"></script>
+<script defer src="./assets/download-guard.js?v=20260513a"></script>
+<script defer src="./assets/hide-guard.js?v=20260513a"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260513a"></script>
+<style id="treatment-cards">
+/* Treatment technique cards — Ch 12 AK */
+.tx-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-left: 4px solid #10b981;
+  border-radius: 12px;
+  padding: 22px 26px;
+  margin: 1.5rem 0;
+}
+.tx-card.warn { border-left-color: #f59e0b; }
+.tx-card.danger { border-left-color: #ef4444; background: #fff8f8; }
+.tx-card.spinal { border-left-color: #0071e3; }
+.tx-card.reflex { border-left-color: #8b5cf6; }
+.tx-card.nkt { border-left-color: #06b6d4; }
+.tx-card.pri { border-left-color: #ec4899; }
+.tx-card h4 {
+  margin: 0 0 .75rem;
+  font-size: 1.15em;
+  color: #1d1d1f;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tx-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 1rem 0;
+}
+.tx-box {
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 0.92em;
+  line-height: 1.55;
+  background: #f5f5f7;
+}
+.tx-box .box-title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 0.82em;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  color: #6e6e73;
+}
+.tx-box.pos { background: #ecfdf5; }
+.tx-box.contact { background: #eff6ff; }
+.tx-box.force { background: #fef3c7; }
+.tx-box.retest { background: #f3e8ff; }
+.tx-video {
+  margin: 1rem 0 0.5rem;
+  background: #f5f5f7;
+  border-radius: 10px;
+  padding: 10px;
+}
+.tx-video iframe {
+  width: 100%;
+  height: 360px;
+  border-radius: 8px;
+  background: #000;
+  border: 0;
+  display: block;
+}
+.tx-video.youtube {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+}
+.tx-video .video-caption {
+  font-size: .78em;
+  color: #6e6e73;
+  margin-top: 6px;
+  text-align: center;
+}
+.case-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  padding: 22px 26px;
+  margin: 1.5rem 0;
+  border-top: 4px solid #0071e3;
+}
+.case-card h4 { margin: 0 0 .75rem; font-size: 1.15em; }
+.case-timeline { display: grid; gap: 10px; margin-top: 1rem; }
+.case-step {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 14px;
+  padding: 10px 12px;
+  border-left: 3px solid #0071e3;
+  background: #f5f9ff;
+  border-radius: 0 8px 8px 0;
+}
+.case-step .step-time { font-weight: 700; color: #0a4f8c; font-size: 0.92em; }
+.case-step .step-body { line-height: 1.55; font-size: 0.94em; }
+.case-step .step-body ul { margin: 0.3rem 0 0 1rem; padding-left: 0.2rem; }
+.tx-toc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  margin: 1rem 0 1.5rem;
+}
+.tx-toc a {
+  display: block;
+  padding: 12px 14px;
+  background: #f5f5f7;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1d1d1f;
+  font-size: 0.94em;
+  border-left: 3px solid transparent;
+  transition: all 0.15s ease;
+}
+.tx-toc a:hover { background: #ecfdf5; border-left-color: #10b981; transform: translateX(2px); }
+.tx-toc a strong { display: block; color: #0a4f8c; margin-bottom: 2px; }
+</style>
 <style id="legacy-archive-css">
 .archive-inline { margin: 3rem 0; }
 .archive-inline .video-thumb-grid {
@@ -29,8 +145,8 @@
 .archive-inline .video-card .title { font-weight: 600; font-size: .92em; }
 .archive-inline .video-card .meta { font-size: .78em; color: #86868b; }
 </style>
-  <script src="./assets/config.js?v=20260512g"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260512g"></script>
+  <script src="./assets/config.js?v=20260513a"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260513a"></script>
 </head>
 <body>
 
@@ -70,8 +186,10 @@
         <li><a href="#overview">개요</a></li>
         <li><a href="#theory">이론·기전</a></li>
         <li><a href="#diagnostics">📋 진단 11종</a></li>
+        <li><a href="#treatment">🔧 치료</a></li>
         <li><a href="#modern">🆕 현대 응용</a></li>
         <li><a href="#protocol">⏱ 5분 프로토콜</a></li>
+        <li><a href="#cases">📝 임상 5 case</a></li>
         <li><a href="#clinical">임상 적용</a></li>
         <li><a href="#evidence">근거 수준</a></li>
         <li><a href="#critical">🔴 비판적 시각</a></li>
@@ -263,6 +381,311 @@
       </div>
     </section>
 
+    <!-- ========== 🆕 PART III — 치료 ========== -->
+    <section id="treatment" style="scroll-margin-top: 120px;">
+      <h2>🔧 치료 — Part III</h2>
+      <p class="section-lead"><strong>진단 → 처치 → 즉시 재검</strong>이 핵심 사이클. 본 강의는 AK 처치 도구를 <strong>근거 수준별로 분리</strong>해, 🟡 myofascial / motor learning에 부합하는 것은 채택, 🟠 근거 부족한 것은 보조로만, ⚠️ 다수 RCT 부정적인 것은 권장하지 않음으로 정리합니다.</p>
+
+      <div class="tx-toc">
+        <a href="#tx-tree"><strong>치료 의사결정 트리</strong>무엇부터 손대는가</a>
+        <a href="#tx-muscle"><strong>A. 근육 활성화</strong>O/I · Spindle · GTO 🟡</a>
+        <a href="#tx-reflex"><strong>B. 반사점 자극</strong>Chapman 🟡 / Bennett 🟠</a>
+        <a href="#tx-nkt"><strong>C. NKT pin-and-move</strong>compensator release 🟡</a>
+        <a href="#tx-spinal"><strong>D. AK-style 척추 교정</strong>challenge-driven vector 🟡</a>
+        <a href="#tx-pri"><strong>E. PRI re-positioning</strong>호흡·자세 sequence 🟡</a>
+        <a href="#tx-cranial"><strong>F. Cranial / TMJ AK</strong>현재 적용 한계 🟠</a>
+        <a href="#tx-5factors"><strong>G. 5 Factors → 처치</strong>매핑 매트릭스</a>
+        <a href="#tx-recipes"><strong>H. 근육별 처치 레시피</strong>5권역 · 14근육</a>
+        <a href="#tx-not-recommended"><strong>⚠️ 권장 어려운 치료</strong>영양·cranial·Switching</a>
+      </div>
+
+      <!-- ========== 치료 의사결정 트리 ========== -->
+      <h3 id="tx-tree" style="scroll-margin-top:120px; margin-top:2.5rem;">치료 의사결정 트리</h3>
+      <div class="callout callout-info">
+        <h4>핵심 sequence — Diagnosis · Treatment · Re-test</h4>
+        <ol style="margin:0.5rem 0 0 1.2rem; line-height:1.85;">
+          <li><strong>진단</strong> — MMT baseline + Postural screen + TL → Red Flag 확인 시 즉시 표준 검사 의뢰</li>
+          <li><strong>분류</strong> — 척추 분절 dysfunction? · 근육 자체 약화? · compensator 패턴? · 호흡·비대칭?</li>
+          <li><strong>처치 선택</strong> — D(척추 교정) · A(O/I·Spindle·GTO) · C(NKT) · E(PRI) 중 1-2개</li>
+          <li><strong>즉시 재검</strong> — 동일 근육 MMT → 1 grade 이상 회복 확인</li>
+          <li><strong>Home exercise</strong> — motor pattern 재학습을 위한 1-2개 운동 처방 (필수)</li>
+        </ol>
+        <p style="margin-top:0.8rem; font-size:0.92em; color:var(--c-text-muted);">TL+ 단독으로 치료 결정 ×. motion palp · neuro exam · 영상 우선. 처치 후 효과 없으면 다음 도구로.</p>
+      </div>
+
+      <!-- ========== A. 근육 활성화 ========== -->
+      <h3 id="tx-muscle" style="scroll-margin-top:120px; margin-top:2.5rem;">A. 근육 활성화 기법 — O/I · Spindle · GTO <span class="evidence ev-mod">🟡 Moderate</span></h3>
+      <p class="section-lead">근방추(spindle)는 근육 <strong>길이</strong>를, 골지건 기관(GTO)은 <strong>장력</strong>을 CNS로 보냅니다. 두 receptor의 신경생리를 활용해 weak/over-active 근육을 normalize.</p>
+
+      <div class="tx-card">
+        <h4>A-1. Origin/Insertion Technique (O/I)</h4>
+        <div class="tx-grid">
+          <div class="tx-box pos"><span class="box-title">환자 자세</span>표적 근육 이완 자세 (예: pec major → 견갑 외전 30°)</div>
+          <div class="tx-box contact"><span class="box-title">접촉점</span>Origin·Insertion 양 부착부 (예: pec major = 쇄골 medial 1/3 + humerus bicipital groove)</div>
+          <div class="tx-box force"><span class="box-title">압력·시간</span>bone-ward deep digital pressure · 통증 7→5/10 · <strong>30-90초</strong> (만성 trigger point 1-3분)</div>
+          <div class="tx-box retest"><span class="box-title">재검 기대</span>즉시 MMT → 4/5 → 4+/5 또는 5/5 회복 · 부착부 tender 감소</div>
+        </div>
+        <p style="margin:0.8rem 0 0; font-size:0.9em;"><strong>근거 🟡</strong> Hains 2002 · Cagnie 2013 (trigger point release 단기 통증 감소·ROM 증가 RCT). myofascial release / ischemic compression과 메커니즘 부분 일치.</p>
+        <p style="margin:0.4rem 0 0; font-size:0.88em; color:var(--c-text-muted);"><strong>주의</strong>: 골다공증·암 의심·급성 부착부 손상 시 압박 강도 감량.</p>
+
+        <div class="tx-video youtube">
+          <iframe src="https://www.youtube.com/embed/IlQL7s_zxWc" title="Massage Techniques for Tensor Fascia Lata Release — sustained pressure / GTO 이완 시연" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="video-caption">🎥 TFL release with sustained pressure — O/I 압박 시연 (lateral hip pain)</p>
+        </div>
+      </div>
+
+      <div class="tx-card">
+        <h4>A-2. Spindle Pinch — 근방추 자극</h4>
+        <p>근방추는 belly에 분포 · 근육 <strong>길이 신호</strong>를 보냅니다. 압축 = "이미 짧다" 신호 → afferent ↓ → 약화 / 신장 = "길어졌다" → afferent ↑ → facilitation.</p>
+        <div class="tx-grid">
+          <div class="tx-box pos"><span class="box-title">Activation (약화 근육)</span>belly를 양 끝 방향으로 <strong>pull apart</strong> · 1-7 kg · 10-30초 · 2-3회</div>
+          <div class="tx-box pos"><span class="box-title">Inhibition (과활성)</span>belly를 가운데로 <strong>pinch together</strong> · 30-60초</div>
+          <div class="tx-box contact"><span class="box-title">접촉점</span>근육 belly 가장 두꺼운 motor point 근처</div>
+          <div class="tx-box retest"><span class="box-title">재검 기대</span>즉시 MMT 재검 → 1-2 grade 변화</div>
+        </div>
+        <p style="margin:0.8rem 0 0; font-size:0.9em;"><strong>근거 🟡</strong> 근방추 신경생리 기전(Sherrington 1906) plausible. 임상 효과는 단기·국소.</p>
+      </div>
+
+      <div class="tx-card">
+        <h4>A-3. GTO Release — Golgi 건 기관</h4>
+        <p>GTO는 muscle-tendon junction에 분포 · <strong>장력 신호</strong> · 강한 신장 신호 → autogenic inhibition (Ib reflex).</p>
+        <div class="tx-grid">
+          <div class="tx-box pos"><span class="box-title">Activation (약화)</span>두 tendon을 belly 방향으로 <strong>compress</strong> · 10-15초 · 3-5회</div>
+          <div class="tx-box pos"><span class="box-title">Inhibition (과긴장)</span>두 tendon을 bone 방향으로 <strong>stretch</strong> · 10-15초 · 3-5회</div>
+        </div>
+        <p style="margin:0.8rem 0 0; font-size:0.9em;"><strong>근거 🟡</strong> Ib reflex 기전 plausible. Sherrington 원전 신경생리.</p>
+
+        <table class="data-table" style="margin-top:1rem; font-size:0.9em;">
+          <thead><tr><th>상황</th><th>1차 선택</th></tr></thead>
+          <tbody>
+            <tr><td>부착부 tender + ROM 제한</td><td><strong>A-1 O/I 압박</strong></td></tr>
+            <tr><td>부착부 OK · 근육 약화</td><td><strong>A-2 Spindle pull-apart</strong> (activation)</td></tr>
+            <tr><td>근육 과긴장 · 통증</td><td><strong>A-3 GTO bone-ward stretch</strong> (inhibition)</td></tr>
+          </tbody>
+        </table>
+
+        <div class="tx-video youtube">
+          <iframe src="https://www.youtube.com/embed/oBt2qYcBozY" title="Applied Kinesiology — Manual Muscle Testing · Every Muscle Review" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="video-caption">🎥 AK Every Muscle MMT 종합 시연 — 표준 자세·저항 방향·grading 검토 (전신)</p>
+        </div>
+        <div class="tx-video youtube">
+          <iframe src="https://www.youtube.com/embed/Sk82jYSp0LU" title="Introduction to Manual Muscle Testing (MMT) — 표준 grading 0-5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="video-caption">🎥 표준 MMT 0-5 grading — 재활의학 기초 (AK MMT와 비교 학습용)</p>
+        </div>
+      </div>
+
+      <!-- ========== B. 반사점 자극 ========== -->
+      <h3 id="tx-reflex" style="scroll-margin-top:120px; margin-top:2.5rem;">B. 반사점 자극 — Chapman (NL) · Bennett (NV)</h3>
+
+      <div class="tx-card reflex">
+        <h4>B-1. Chapman Neurolymphatic Reflex (NL) <span class="evidence ev-limited">🟠 림프 ×, 압박 효과 🟡</span></h4>
+        <div class="tx-grid">
+          <div class="tx-box contact"><span class="box-title">위치</span>전면 = 늑간 사이 (예: 4th ICS 흉골 lateral 2 cm = stomach) · 후면 = 척추 횡돌기 사이 1-2 cm lateral</div>
+          <div class="tx-box force"><span class="box-title">자극</span><strong>Deep rotary rub</strong> (시계 방향 1-2 mm 원형) · 6-8/10 통증 · <strong>20-60초</strong> (severe 2-10분)</div>
+          <div class="tx-box retest"><span class="box-title">재검 기대</span>즉시 MMT → 1 grade 회복 또는 baseline</div>
+          <div class="tx-box pos"><span class="box-title">본 강의 적용</span>O/I (A-1) · NKT (C) 효과 부족 시 보조 자극으로만</div>
+        </div>
+        <figure style="margin:1rem 0;">
+          <img src="./images/chapter12/06_chapman_map.svg" alt="Chapman 반사점 분포도" loading="lazy" style="width:100%; max-width:760px; border-radius:8px;" />
+        </figure>
+        <p style="margin:0.8rem 0 0; font-size:0.9em;"><strong>근거 🟠</strong> 1980-90 연구에서 림프 흐름·장기 기능 변화 입증 ×. 점 위치는 viscerosomatic·myofascial trigger point와 부분 일치. <strong>"장기 진단" 주장 ×</strong>, 압박 자극의 myofascial 효과만 보조 도구로 인정.</p>
+
+        <div class="tx-video youtube">
+          <iframe src="https://www.youtube.com/embed/GbpdnJrzGjs" title="Chapman Reflex Point — 의료 전문가용 진단·치료 시연" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="video-caption">🎥 Chapman 신경림프 반사점 rotary rub 시연 — 본 강의는 "장기 진단"이 아닌 압박 자극 효과로만 활용 권장</p>
+        </div>
+      </div>
+
+      <div class="tx-card warn">
+        <h4>B-2. Bennett Neurovascular Reflex (NV) <span class="evidence ev-limited">🟠 권장하지 않음</span></h4>
+        <div class="tx-grid">
+          <div class="tx-box contact"><span class="box-title">위치 (AK 주장)</span>두피 — frontal eminence · temporal · parietal</div>
+          <div class="tx-box force"><span class="box-title">자극 (AK 주장)</span>극히 가벼운 5-10 g 접촉 · 20-30초 hold · 두피 동맥 박동 변화 감지 주장</div>
+        </div>
+        <p style="margin:0.8rem 0 0; font-size:0.9em;"><strong>문제점</strong>: 두피 동맥 박동 변화의 임상 의미 미입증 · inter-rater reliability 미평가 · peer-reviewed 1차 근거 사실상 부족. 본 강의는 현재 권장하지 않습니다 (가벼운 접촉의 일반 relaxation effect는 별개 평가).</p>
+      </div>
+
+      <!-- ========== C. NKT ========== -->
+      <h3 id="tx-nkt" style="scroll-margin-top:120px; margin-top:2.5rem;">C. NKT — Pin-and-Move Release Sequence <span class="evidence ev-mod">🟡 motor learning</span></h3>
+      <div class="tx-card nkt">
+        <h4>NeuroKinetic Therapy (David Weinstock, 2007) — compensation 패턴 해소</h4>
+        <p>만성 통증의 흔한 원인은 <strong>compensator muscle이 잘못 facilitated</strong>되어 prime mover가 inhibited 상태로 굳어진 패턴. AK MMT 직계 발전형으로 motor learning theory에 부합.</p>
+
+        <div class="case-timeline" style="margin-top:1rem;">
+          <div class="case-step"><div class="step-time">Step 1</div><div class="step-body"><strong>MMT prime mover</strong> → 약화 확인 (예: 우 glut med 3/5)</div></div>
+          <div class="case-step"><div class="step-time">Step 2</div><div class="step-body"><strong>Antagonist·synergist 차례 검사</strong> → 잘못 강한 근육 식별 (예: 우 QL 5/5 + tender)</div></div>
+          <div class="case-step"><div class="step-time">Step 3</div><div class="step-body"><strong>Therapy Localization</strong> — 환자가 compensator tender spot에 손가락 → prime mover 재검 → 강해지면 confirmation</div></div>
+          <div class="case-step"><div class="step-time">Step 4</div><div class="step-body"><strong>Pin (의사) + Move (환자 능동)</strong> · 6-7/10 압력 · 30-60초 · 5-10회</div></div>
+          <div class="case-step"><div class="step-time">Step 5</div><div class="step-body"><strong>Retest prime mover</strong> — 강해지면 NKT cycle 성공</div></div>
+          <div class="case-step"><div class="step-time">Step 6</div><div class="step-body"><strong>Challenge</strong> — compensator isometric 수축 중에도 prime mover 강도 유지 확인 (motor pattern 재학습 시작)</div></div>
+          <div class="case-step"><div class="step-time">Step 7</div><div class="step-body"><strong>Home exercise</strong> — prime mover activation drill (clamshell · side-lying hip abduction 등)</div></div>
+        </div>
+
+        <p style="margin:1rem 0 0; font-size:0.9em;"><strong>근거 🟡</strong> Sherrington reciprocal inhibition + cortical motor patterning에 plausible. 대조 RCT 부족 — 사례 보고와 임상가 경험이 주. AK MMT보다 학술 base 강함.</p>
+        <p style="margin:0.4rem 0 0; font-size:0.9em;"><strong>본 강의 권장</strong>: 만성 motor pattern 문제(요통 chronic · scapular dyskinesis · recurrent ankle sprain)에서 1차 도구.</p>
+
+        <p style="margin:1rem 0 0.4rem; font-size:0.9em;">🎥 NKT 공식 교육 자료: <a href="https://learn.neurokinetictherapy.com/collections" target="_blank" rel="noopener">NeuroKinetic Therapy Courses ↗</a> (David Weinstock 공식 채널)</p>
+      </div>
+
+      <!-- ========== D. AK-style 척추 교정 ========== -->
+      <h3 id="tx-spinal" style="scroll-margin-top:120px; margin-top:2.5rem;">D. AK-style 척추 교정 — Challenge-driven Vector <span class="evidence ev-mod">🟡 보조</span></h3>
+      <div class="tx-card spinal">
+        <h4>표준 척추 교정에 AK가 더하는 요소 — Mechanical Challenge</h4>
+        <p>표준 chiropractic은 listing을 motion palpation + X-ray + static palpation으로 결정. AK는 여기에 <strong>6 방향 Challenge → MMT 변화</strong>라는 추가 정보 제공.</p>
+
+        <div class="case-timeline">
+          <div class="case-step"><div class="step-time">1</div><div class="step-body">Postural + Motion palpation으로 의심 분절 식별 (예: L5)</div></div>
+          <div class="case-step"><div class="step-time">2</div><div class="step-body">Mechanical Challenge — 6 방향(P-A·A-P·lateral L/R·rotation L/R) 중 하나씩 1초 push</div></div>
+          <div class="case-step"><div class="step-time">3</div><div class="step-body">직후 indicator muscle MMT</div></div>
+          <div class="case-step"><div class="step-time">4</div><div class="step-body">약화시키는 방향 = misalignment 방향 → 교정 vector는 그 <strong>반대 방향</strong></div></div>
+          <div class="case-step"><div class="step-time">5</div><div class="step-body">표준 기법으로 교정 — <strong>Diversified HVLA</strong> (Ch 3) · <strong>Thompson drop</strong> (Ch 6) · <strong>Activator</strong> (Ch 7)</div></div>
+          <div class="case-step"><div class="step-time">6</div><div class="step-body">즉시 motion palp + MMT 재검 → 회복 확인</div></div>
+        </div>
+
+        <p style="margin:1rem 0 0; font-size:0.9em;"><strong>근거 🟠</strong> Mechanical Challenge κ 0.4-0.7 (Pollard 2005, Triano 2002) moderate. 표준 motion palp 대비 추가 진단 가치는 미입증. 교정 효과 자체는 표준 chiropractic 근거에 의존.</p>
+        <p style="margin:0.4rem 0 0; font-size:0.9em;"><strong>본 강의 권장</strong>: AK Challenge는 motion palp의 보조로만. Listing 결정은 X-ray + motion palp 우선.</p>
+      </div>
+
+      <!-- ========== E. PRI ========== -->
+      <h3 id="tx-pri" style="scroll-margin-top:120px; margin-top:2.5rem;">E. PRI — 호흡·자세 재조정 <span class="evidence ev-mod">🟡 lumbopelvic 일부 RCT 양성</span></h3>
+      <div class="tx-card pri">
+        <h4>Postural Restoration (Ron Hruska, 1989) — 좌측 AIC 패턴 교정</h4>
+        <p>인간 신체의 좌우 비대칭(간 우·심장 좌·횡격막 좌·우 dome 다름)이 좌측 AIC 패턴을 유발 → 만성 lumbopelvic 통증·호흡 부전.</p>
+
+        <h5 style="margin-top:1rem;">대표 평가</h5>
+        <ul style="line-height:1.7;">
+          <li><strong>Adduction Drop Test</strong> — supine, hip 90° flex·90° abduct → adduct ROM. 좌우 차이 >5° = AIC pattern.</li>
+          <li><strong>Hruska Abduction Lift Test</strong> — 측와위 abduct lift hold · 좌우 비교</li>
+          <li><strong>ZOA</strong> (Zone of Apposition) 호흡 평가 — 늑골 하부·횡격막 vertical alignment</li>
+        </ul>
+
+        <h5 style="margin-top:1rem;">90-90 Hip Lift 처치 sequence</h5>
+        <div class="case-timeline">
+          <div class="case-step"><div class="step-time">자세</div><div class="step-body">앙와위 · hips 90° flex · knees 90° flex · feet on wall</div></div>
+          <div class="case-step"><div class="step-time">Inhale 4s</div><div class="step-body">코 호흡 → ribs lateral expansion (lateral chest wall)</div></div>
+          <div class="case-step"><div class="step-time">Exhale 8s</div><div class="step-body">tongue against palate · pelvis posterior tilt · ribs internal rotation</div></div>
+          <div class="case-step"><div class="step-time">End-exhale</div><div class="step-body">3-5초 hold + 좌측 ham/glut contract → posterior shift</div></div>
+          <div class="case-step"><div class="step-time">반복</div><div class="step-body">5-10 cycle · 마지막에 Adduction Drop 재검 → 좌우 ROM 균형 확인</div></div>
+        </div>
+
+        <p style="margin:1rem 0 0; font-size:0.9em;"><strong>근거 🟡</strong> Boyle 2010 · Skoglund 2011 — lumbopelvic 통증·만성 호흡 부전 일부 RCT 양성. PT 교육 표준 일부 통합.</p>
+      </div>
+
+      <!-- ========== F. Cranial / TMJ ========== -->
+      <h3 id="tx-cranial" style="scroll-margin-top:120px; margin-top:2.5rem;">F. Cranial / TMJ AK — 현재 적용 한계 <span class="evidence ev-limited">🟠 한정</span></h3>
+      <div class="tx-card warn">
+        <h4>Cranial AK 주장과 본 강의 평가</h4>
+        <ul style="line-height:1.7; margin:0.5rem 0 0 1.2rem;">
+          <li><strong>AK 주장</strong>: 가벼운 압력(2-3 g)으로 두개골 봉합 motion 교정</li>
+          <li><strong>본 강의 평가 🟠 권장하지 않음</strong>: 두개골 motion은 미세 가능하나 임상가가 손으로 진단할 수 있다는 inter-rater κ < 0.2 (SOT Ch 10 참조). 교정 효과 RCT 거의 없음.</li>
+        </ul>
+        <h4 style="margin-top:1rem;">TMJ AK — Set Point Technique</h4>
+        <ul style="line-height:1.7; margin:0.5rem 0 0 1.2rem;">
+          <li>외측 익돌근 rub + acupoint(ST-1, LI-20) tap 30-45초 → jaw ROM 재검</li>
+          <li><strong>본 강의 평가</strong>: 외측 익돌근 myofascial release는 🟡 plausible. Acupoint tap 추가 효과는 미입증. <strong>Dental occlusal evaluation · splint therapy 우선</strong>.</li>
+        </ul>
+      </div>
+
+      <!-- ========== G. 5 Factors → 처치 매트릭스 ========== -->
+      <h3 id="tx-5factors" style="scroll-margin-top:120px; margin-top:2.5rem;">G. 5 Factors → 처치 매핑 매트릭스</h3>
+      <div class="data-table" style="overflow-x:auto;">
+      <table class="data-table" style="width:100%; font-size:0.92em;">
+        <thead>
+          <tr>
+            <th style="width:14%;">5 Factor</th>
+            <th>AK 진단 신호</th>
+            <th>AK 처치 주장</th>
+            <th style="width:24%;">본 강의 권장</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Nerve</strong></td><td>분절 dysfunction MMT change</td><td>HVLA · Activator</td><td><span class="evidence ev-strong">🟢 표준 교정</span> (Ch 3·6·7)</td></tr>
+          <tr><td><strong>Neurolymphatic</strong></td><td>Chapman 점 tender</td><td>rotary rub 20-60s</td><td><span class="evidence ev-mod">🟡 압박 자극만</span></td></tr>
+          <tr style="background:#fff8e6;"><td><strong>Neurovascular</strong></td><td>두피 Bennett 점</td><td>가벼운 hold 20-30s</td><td><span class="evidence ev-limited">🟠 권장하지 않음</span></td></tr>
+          <tr style="background:#fff8e6;"><td><strong>CSF / Cranial</strong></td><td>cranial fault MMT</td><td>gentle correction</td><td><span class="evidence ev-limited">🟠 권장하지 않음</span></td></tr>
+          <tr style="background:#fff8e6;"><td><strong>Nutrition</strong></td><td>oral challenge weak</td><td>영양제 처방</td><td><span class="evidence ev-limited">⚠️ AK 진단 기반 영양 처방 권장 ×</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <!-- ========== H. 근육별 처치 레시피 ========== -->
+      <h3 id="tx-recipes" style="scroll-margin-top:120px; margin-top:2.5rem;">H. 근육별 처치 레시피 — 5권역 · 14근육</h3>
+      <p class="section-lead">각 근육마다 <strong>(1) O/I → (2) Spindle/GTO → (3) NKT compensator → (4) Chapman 보조 → (5) Home exercise</strong> 순서. 상세 시술 절차는 <a href="./viewer.html?src=ak/lecture/chapter12_ak.md#tx-muscle-recipes">📖 강의록 Part III §H</a> 참조.</p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1rem; margin-top:1rem;">
+
+        <div class="principle-card">
+          <h3 style="color:#0a4f8c;">권역 1. 요통 / 골반</h3>
+          <ul style="margin:0.5rem 0 0 1.2rem; line-height:1.8; font-size:0.95em;">
+            <li><strong>Gluteus medius</strong> — O/I (iliac crest + greater troch) 60s · clamshell 2×15</li>
+            <li><strong>Psoas major</strong> — vertebral body 측 deep pressure 90s · dead bug 2×10</li>
+            <li><strong>QL</strong> — GTO bone-ward (iliac crest+12th rib) 15s×3 · bird dog 2×10</li>
+            <li><strong>Iliopsoas</strong> — ASIS 내측 deep 60s</li>
+            <li><strong>Hamstrings</strong> — ischial tuberosity 60s · Nordic curl 2×6</li>
+          </ul>
+        </div>
+
+        <div class="principle-card">
+          <h3 style="color:#0a4f8c;">권역 2. 경추 / 두통</h3>
+          <ul style="margin:0.5rem 0 0 1.2rem; line-height:1.8; font-size:0.95em;">
+            <li><strong>DNF</strong> — SCM/scalene release 우선 · chin tuck 10s×10</li>
+            <li><strong>Upper trap</strong> — occiput origin 30-60s · spindle inhibit</li>
+            <li><strong>Levator scap</strong> — superior medial angle 60s</li>
+            <li><strong>SCM</strong> — spindle pinch inhibit 30s · GTO bone-ward 15s</li>
+            <li><strong>Rhomboids</strong> — medial border 60s · prone Y/T/W 2×10</li>
+          </ul>
+        </div>
+
+        <div class="principle-card">
+          <h3 style="color:#0a4f8c;">권역 3. 견갑 / 상지</h3>
+          <ul style="margin:0.5rem 0 0 1.2rem; line-height:1.8; font-size:0.95em;">
+            <li><strong>Supraspinatus</strong> — greater tuberosity 60s · scapular plane abd 2×10</li>
+            <li><strong>Lower trap</strong> — scapular spine 60s + upper trap release 우선</li>
+            <li><strong>Serratus ant</strong> — rib 1-9 외측 deep · wall push-up plus 2×15</li>
+            <li><strong>Infraspinatus</strong> — teres major release 우선</li>
+            <li><strong>Subscapularis</strong> — axilla deep 60s</li>
+          </ul>
+        </div>
+
+        <div class="principle-card">
+          <h3 style="color:#0a4f8c;">권역 4. TMJ</h3>
+          <ul style="margin:0.5rem 0 0 1.2rem; line-height:1.8; font-size:0.95em;">
+            <li><strong>External pterygoid</strong> — intraoral 또는 zygomatic 하부 60s (환자 동의)</li>
+            <li><strong>Masseter / Temporalis</strong> — 표준 myofascial</li>
+            <li><strong>Set Point (보조)</strong> — ST-1·LI-20 tap 30-45s · 효과 검증 ×</li>
+            <li>⚠️ <strong>치과 occlusal evaluation 우선</strong> · splint 필요시 협진</li>
+          </ul>
+        </div>
+
+        <div class="principle-card">
+          <h3 style="color:#0a4f8c;">권역 5. 무릎</h3>
+          <ul style="margin:0.5rem 0 0 1.2rem; line-height:1.8; font-size:0.95em;">
+            <li><strong>Popliteus</strong> — GTO belly 방향 push 15s×3</li>
+            <li><strong>Gastrocnemius</strong> — spindle inhibit (과활성 시) 30s</li>
+            <li><strong>Quadriceps (VMO)</strong> — belly pull-apart 30s · TKE 2×15</li>
+            <li><strong>Hamstrings</strong> — 권역 1 참조</li>
+            <li>NKT: TFL·IT band over-active → glut med 활성화</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- ========== ⚠️ 권장하기 어려운 치료 ========== -->
+      <h3 id="tx-not-recommended" style="scroll-margin-top:120px; margin-top:2.5rem;">⚠️ 현재 권장하기 어려운 치료</h3>
+      <div class="tx-card danger">
+        <h4>⚠️ 본 강의가 권장하지 않는 AK 처치 (근거 부족·잠재 위험)</h4>
+        <ul style="margin:0.5rem 0 0 1.2rem; line-height:1.85;">
+          <li><strong>AK 진단 기반 영양 처방</strong> — Oral challenge → 영양제 처방. <em>대체</em>: 혈청 영양소 농도 · 식이 영양사 평가.</li>
+          <li><strong>AK 알레르기 회피 식이</strong> — Oral challenge weak → 회피. <em>위험</em>: 실제 IgE 알레르기 놓침(anaphylaxis) · 영양 결핍. <em>대체</em>: SPT · sIgE · oral food challenge.</li>
+          <li><strong>Cranial bone "교정"</strong> — inter-rater κ < 0.2 · RCT ×. <em>대체</em>: 두통은 cervical · 자세 · 정형 평가 우선.</li>
+          <li><strong>Switching / Cross-crawl polarity reset</strong> — peer-reviewed 1차 연구 부재 (🔴). Cross-crawl 운동 자체는 coordination 훈련으로는 의미 있으나 AK 주장(언어·학습장애 개선)은 별개.</li>
+          <li><strong>AK 감정·심리 진단·치료</strong> — ideomotor effect로 설명 가능. <em>대체</em>: psychotherapy · CBT · 정신건강의학과 의뢰.</li>
+        </ul>
+        <p style="margin-top:0.8rem; font-size:0.9em; color:var(--c-text-muted);">위 항목은 현재 근거 수준에 따른 권고이며, 향후 새로운 연구로 평가가 달라질 가능성은 열어둡니다.</p>
+      </div>
+
+    </section>
+
     <!-- ========== 현대 응용 ========== -->
     <section id="modern" style="scroll-margin-top: 120px;">
       <h2>현대 응용 — NKT · PRI · SFMA · FRC</h2>
@@ -426,27 +849,108 @@
         <p style="margin-top:0.8rem;">본 프로토콜은 정형·신경학적 표준 검사를 <strong>대체하지 않는다</strong>.</p>
       </div>
 
-      <h3 style="margin-top:2rem;">임상 case</h3>
+      <p style="margin-top:1.5rem; font-size:0.94em;">⬇️ 호소 부위별 <strong>5개 상세 임상 case</strong>는 다음 섹션에서 step-by-step 처치 sequence와 함께 정리. → <a href="#cases">📝 임상 case 5건 보기</a></p>
+    </section>
 
-      <div class="callout callout-tip">
-        <h4>Case 1 — 30세 여성, 만성 우측 요통 (3개월)</h4>
-        <ul style="margin:0.5rem 0 0 1.2rem; line-height:1.7;">
-          <li><strong>0-1분</strong>: 우측 골반 거상 / 좌측 어깨 하강 / 우측 stance phase 짧음</li>
-          <li><strong>1-3분</strong>: Deltoid baseline 5/5. 우측 SI joint TL → 약화 (TL+)</li>
-          <li><strong>3-4:30분</strong>: 우측 Glut med 3/5 / Psoas 우 4/5 / 좌 Quad lumb 4/5</li>
-          <li><strong>4:30-5분</strong>: 우측 SI Diversified adjust → Glut med retest 4+/5 → home exercise (clamshell 좌우 2×15)</li>
-        </ul>
+    <!-- ========== 📝 임상 case 5건 ========== -->
+    <section id="cases" style="scroll-margin-top: 120px;">
+      <h2>📝 임상 case 5건 — step-by-step</h2>
+      <p class="section-lead">각 case는 <strong>5분 프로토콜</strong> 시간표(0-1 postural · 1-3 indicator/TL · 3-4:30 처치 · 4:30-5 retest)에 맞춰 Part III 치료 도구를 명시하며 진행. 모든 case는 가상 patient profile로 교육 목적의 step-by-step 예시입니다.</p>
+
+      <div class="case-card">
+        <h4>Case 1 · 30세 여성, 만성 우측 요통 (3개월)</h4>
+        <div class="case-timeline">
+          <div class="case-step"><div class="step-time">0-1분<br/>Postural</div><div class="step-body">우측 골반 거상 / 좌측 어깨 하강 · 보행 시 우측 stance phase 짧음 · 호흡: 흉식 dominant · 좌측 ribs lateral expansion 감소 (<strong>Left AIC pattern</strong> 의심)</div></div>
+          <div class="case-step"><div class="step-time">1-3분<br/>Indicator + TL</div><div class="step-body">Deltoid baseline 양측 5/5 · 우측 SI joint TL → 약화 · 우 PSIS Mechanical Challenge A-P 약화 (= anterior rotation 방향 dysfunction)</div></div>
+          <div class="case-step"><div class="step-time">3-4:30분<br/>처치</div><div class="step-body">
+            <strong>MMT 세부</strong>: 우 Glut med 3/5 · 우 Psoas 4/5 · <strong>좌 QL 4/5 (compensator 의심)</strong><br/>
+            <strong>처치 sequence</strong>:
+            <ul>
+              <li>① <strong>NKT (§C)</strong> — 좌 QL tender pin + 환자 lateral flexion 30s</li>
+              <li>② Retest glut med → 3/5 → 4/5 회복</li>
+              <li>③ <strong>AK-style 교정 (§D)</strong> — 우 SI Diversified · vector = P-A</li>
+              <li>④ <strong>O/I (§A-1)</strong> — 우 glut med 부착부 60s</li>
+              <li>⑤ <strong>PRI (§E)</strong> — 90-90 hip lift 5 cycle</li>
+            </ul>
+          </div></div>
+          <div class="case-step"><div class="step-time">4:30-5분<br/>Retest + Home</div><div class="step-body">Glut med 4+/5 · Home: clamshell 좌우 2×15 · 90-90 hip lift 1일 5회</div></div>
+        </div>
       </div>
 
-      <div class="callout callout-tip">
-        <h4>Case 2 — 40세 남성, 좌측 어깨 통증 (운동 후 3주)</h4>
-        <ul style="margin:0.5rem 0 0 1.2rem; line-height:1.7;">
-          <li><strong>0-1분</strong>: 좌측 견갑 anterior tilt / scapular dyskinesis</li>
-          <li><strong>1-3분</strong>: Deltoid baseline 우 5/5 / 좌 4/5. 좌측 supraspinatus TL → 즉시 약화</li>
-          <li><strong>3-4:30분</strong>: 좌 supraspinatus 4-/5 · lower trapezius 3+/5 · serratus anterior 4-/5</li>
-          <li><strong>4:30-5분</strong>: T3-T5 Thompson + lower trap 활성화 (prone Y) 2×10 → retest serratus 4+/5</li>
-        </ul>
+      <div class="case-card">
+        <h4>Case 2 · 45세 여성, 만성 cervicogenic 두통 + 우측 경부통 (6개월)</h4>
+        <div class="case-timeline">
+          <div class="case-step"><div class="step-time">0-1분<br/>Postural</div><div class="step-body">Forward head 3 cm · 우측 견갑 elevation · C2-C3 motion palp restricted</div></div>
+          <div class="case-step"><div class="step-time">1-3분<br/>Indicator + TL</div><div class="step-body">Deltoid baseline R 4+/5 · L 5/5 · DNF capacity: chin tuck supine 5초만 hold (정상 20초+) · 우측 SCM·scalene·suboccipital triad 모두 tender</div></div>
+          <div class="case-step"><div class="step-time">3-4:30분<br/>처치</div><div class="step-body">
+            <ul>
+              <li>① <strong>NKT (§C)</strong> — 우 SCM over-active → spindle pinch inhibit 30s + 환자 능동 chin tuck</li>
+              <li>② <strong>O/I (§A-1)</strong> — 우 suboccipital 부착부 deep pressure 60s</li>
+              <li>③ <strong>AK-style 교정 (§D)</strong> — C2 Diversified 또는 Activator instrument-assisted</li>
+              <li>④ <strong>DNF activation</strong> — supine chin tuck 5s × 10</li>
+            </ul>
+          </div></div>
+          <div class="case-step"><div class="step-time">4:30-5분<br/>Retest + Home</div><div class="step-body">우 경부 회전 60° → 75° · DNF chin tuck 15s hold · Home: chin tuck 10s × 10 1일 3회 · 흉추 self-mob</div></div>
+        </div>
+        <p style="margin-top:0.8rem; font-size:0.88em; color:var(--c-text-muted);"><strong>평가</strong>: AK "emotional NV reflex"(pec major clavicular)는 본 case에 적용 ×. 표준 myofascial · spinal manip만으로 호전 확인 — 본 강의 권장 범위 내.</p>
       </div>
+
+      <div class="case-card">
+        <h4>Case 3 · 40세 남성, 좌측 견갑 통증 (운동 후 3주)</h4>
+        <div class="case-timeline">
+          <div class="case-step"><div class="step-time">0-1분<br/>Postural</div><div class="step-body">좌측 견갑 anterior tilt · scapular dyskinesis (push-up 시 winging) · 호흡 시 좌측 lower trap activation 부재</div></div>
+          <div class="case-step"><div class="step-time">1-3분<br/>Indicator + TL</div><div class="step-body">Deltoid baseline 우 5/5 · 좌 4/5 · 좌 supraspinatus TL → 즉시 약화</div></div>
+          <div class="case-step"><div class="step-time">3-4:30분<br/>처치</div><div class="step-body">
+            <strong>MMT 세부</strong>: 좌 supraspinatus 4-/5 · lower trap 3+/5 · serratus ant 4-/5 · <strong>upper trap 5+ (over-active)</strong><br/>
+            <ul>
+              <li>① <strong>NKT (§C)</strong> — upper trap → lower trap compensator. upper trap pin (occipital-clavicular) + 환자 shoulder roll back 30s</li>
+              <li>② Retest lower trap → 3+/5 → 4/5</li>
+              <li>③ <strong>AK-style 교정 (§D)</strong> — T3-T5 Thompson drop (mechanical challenge로 anterior rotation 확인)</li>
+              <li>④ <strong>O/I (§A-1)</strong> — lower trap scapular spine 부착부 60s</li>
+            </ul>
+          </div></div>
+          <div class="case-step"><div class="step-time">4:30-5분<br/>Retest + Home</div><div class="step-body">Serratus ant 4+/5 · Push-up plus 시 winging 감소 · Home: prone Y 2×10 · wall slide 2×10 · 1일 3회</div></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <h4>Case 4 · 35세 여성, 우측 TMJ 통증 + 개구 시 deviation (4개월)</h4>
+        <div class="case-timeline">
+          <div class="case-step"><div class="step-time">0-1분<br/>Postural/개구</div><div class="step-body">Forward head + 우측 head tilt · 개구 시 우측 lateral deviation 4 mm · 우 외측 익돌근 palpation 8/10 통증</div></div>
+          <div class="case-step"><div class="step-time">1-3분<br/>Indicator + TL</div><div class="step-body">Deltoid baseline 양측 5/5 · 우 TMJ TL → 약화 · 우 외측 익돌근 tender (intraoral palpation 추가 확인)</div></div>
+          <div class="case-step"><div class="step-time">3-4:30분<br/>처치</div><div class="step-body">
+            <ul>
+              <li>① <strong>O/I (§A-1)</strong> — 우 외측 익돌근 intraoral 또는 zygomatic 하부 deep 60s (환자 동의)</li>
+              <li>② <strong>Masseter spindle inhibit</strong> — belly pinch together 30s (보조)</li>
+              <li>③ <strong>AK Set Point (§F, 보조)</strong> — ST-1·LI-20 tap 30s (효과 검증 ×)</li>
+              <li>④ <strong>DNF activation</strong> — chin tuck (forward head 보정)</li>
+              <li>⑤ <strong>치과 협진 의뢰</strong> — occlusal evaluation · splint 평가</li>
+            </ul>
+          </div></div>
+          <div class="case-step"><div class="step-time">4:30-5분<br/>Retest + Home</div><div class="step-body">개구 ROM 35 mm → 42 mm · Deviation 4 mm → 2 mm · Home: TheraBite jaw stretch · 우 외측 익돌근 self-massage</div></div>
+        </div>
+        <p style="margin-top:0.8rem; font-size:0.88em; color:var(--c-text-muted);"><strong>평가</strong>: TMJ는 dental occlusion이 1차 원인일 수 있어 표준 치과 협진 우선. AK Set Point의 추가 효과는 입증되지 않았으나 myofascial 효과는 expected.</p>
+      </div>
+
+      <div class="case-card">
+        <h4>Case 5 · 28세 남성, 우측 무릎 만성 통증 (러닝 후 6개월) + 슬개부 mal-tracking</h4>
+        <div class="case-timeline">
+          <div class="case-step"><div class="step-time">0-1분<br/>Postural/Gait</div><div class="step-body">우측 hip drop (Trendelenburg+) · knee valgus during squat · foot pronation 우측 dominant</div></div>
+          <div class="case-step"><div class="step-time">1-3분<br/>Indicator + TL</div><div class="step-body">Glut med 우 3/5 (Case 1 패턴과 동일) · VMO 우 4-/5 · Popliteus 우 4/5</div></div>
+          <div class="case-step"><div class="step-time">3-4:30분<br/>처치</div><div class="step-body">
+            <ul>
+              <li>① <strong>NKT (§C)</strong> — 우 TFL · IT band over-active → glut med inhibition compensator. TFL pin + glut med activation</li>
+              <li>② <strong>Spindle pull-apart (§A-2)</strong> — VMO belly pull apart 30s</li>
+              <li>③ <strong>GTO release (§A-3)</strong> — popliteus 양 부착부 belly 방향 push 15s × 3</li>
+              <li>④ <strong>AK-style 교정 (§D)</strong> — 우 SI Diversified (Glut med 약화 기반 패턴)</li>
+            </ul>
+          </div></div>
+          <div class="case-step"><div class="step-time">4:30-5분<br/>Retest + Home</div><div class="step-body">Glut med 4/5 · VMO 4+/5 · Single-leg squat 시 knee valgus 감소 · Home: TKE 2×15 · clamshell 2×15 · single-leg balance 30s × 3 · 6주 재진 권장</div></div>
+        </div>
+        <p style="margin-top:0.8rem; font-size:0.88em; color:var(--c-text-muted);"><strong>평가</strong>: AK 진단 도구 11종 중 indicator MMT · TL · mechanical challenge만 사용. NKT가 핵심 처치 → 단순 AK 원형보다 motor pattern 재학습 효과 큼.</p>
+      </div>
+
+      <p style="margin-top:1rem; font-size:0.94em;">📖 더 자세한 처치 절차·근거는 <a href="./viewer.html?src=ak/lecture/chapter12_ak.md#cases">강의록 Part IV §임상 case 5건</a> 참조.</p>
     </section>
 
     <section id="clinical">
@@ -503,15 +1007,25 @@
 
     <section id="resources">
       <h2>강의 자료</h2>
-      <p class="section-lead"><strong>11/11</strong> 자료 준비 완료.</p>
+      <p class="section-lead"><strong>v2.0 자료</strong> (2026-05-13) · Part III 치료 + 임상 case 5건 + v3 팟캐스트 4부작 추가 · MMT/Chapman/GTO 시연 영상 4종.</p>
       <h3>📖 강의록</h3>
       <div class="resource-row">
         <a class="resource-link" href="./viewer.html?src=ak/lecture/chapter12_ak.md"><span class="icon">📖</span><span><strong>상세 강의록 MD</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>근거 기반 · 참고문헌</small></span></a>
       </div>
-      <h3>🎧 팟캐스트</h3>
+      <h3>🎧 팟캐스트 (v3 — 부드러운 전문가 톤 4부작 · 인식론적 겸손 + EBM)</h3>
+      <p class="section-lead" style="margin:0 0 0.8rem;">두 전문가(정형외과의·도수치료 PT)의 부드러운 학술 라디오 대화. 각 약 15분 · 한국어. "단정은 피하되, 방법은 과학적으로." Part I 역사 · Part II 진단 · Part III 치료 · Part IV 비판적 검토의 canonical 구조.</p>
       <div class="resource-row">
-        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/ak/01_podcast.m4a?v=20260508a"><span class="icon">🎧</span><span><strong>Deep Dive 2인 대화 60분+</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>evidence-based · 비판적 시각</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/ak/podcasts_v3/01_episode1_history.m4a?v=20260513a"><span class="icon">🎧</span><span><strong>Ep 1 · George Goodheart의 1964 — AK는 어떻게 태어났는가</strong> <span class="status-badge" style="background:#fef3c7; color:#92400e;">🎙 생성 중</span><br/><small>Detroit · ICAK 1973 · Triad of Health · 1980s 확장의 분기점</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/ak/podcasts_v3/02_episode2_diagnosis.m4a?v=20260513a"><span class="icon">🎧</span><span><strong>Ep 2 · 진단 11종 — MMT부터 Switching까지 근거의 스펙트럼</strong> <span class="status-badge" style="background:#fef3c7; color:#92400e;">🎙 생성 중</span><br/><small>표준 MMT vs AK 변형 · TL κ 0.41-0.64 · Chemical Challenge RCT 부정</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/ak/podcasts_v3/03_episode3_treatment.m4a?v=20260513a"><span class="icon">🎧</span><span><strong>Ep 3 · 진단에서 처치까지 — O/I·Spindle·GTO·NKT·PRI</strong> <span class="status-badge" style="background:#fef3c7; color:#92400e;">🎙 생성 중</span><br/><small>근방추·GTO 신경생리 · NKT pin-and-move · PRI 호흡 sequence · 5권역 처치 레시피</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/ak/podcasts_v3/04_episode4_critical.m4a?v=20260513a"><span class="icon">🎧</span><span><strong>Ep 4 · 근거의 경계선 — 무엇이 살아남고 무엇이 빠지는가</strong> <span class="status-badge" style="background:#fef3c7; color:#92400e;">🎙 생성 중</span><br/><small>Garrow·Kenney·Lüdtke·Staehle RCT · FoodAllergy.org · Switching 🔴 · 한국 임상 권고</small></span></a>
       </div>
+      <details style="margin-top:0.8rem;">
+        <summary style="cursor:pointer; color:var(--c-text-muted); font-size:0.9em;">📚 이전 버전 팟캐스트 (Reference)</summary>
+        <div class="resource-row" style="margin-top:0.5rem;">
+          <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/ak/01_podcast.m4a?v=20260508a"><span class="icon">📚</span><span><strong>Deep Dive 2인 대화 60분+ (구버전)</strong> <span class="status-badge" style="background:#e5e5ea;color:#666;">Reference</span><br/><small>톤 정리 이전 1편 단일 episode</small></span></a>
+        </div>
+      </details>
       <h3>🎥 AI 동영상</h3>
       <div class="resource-row">
         <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/ak/02_video_part1.mp4"><span class="icon">🎥</span><span><strong>Part 1 (이론)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
@@ -551,9 +1065,10 @@
         <div class="footer-col">
           <h5>이 챕터 자료</h5>
           <ul>
-            <li><em>강의록 MD (작성 예정)</em></li>
-            <li><em>팟캐스트 · 영상 (Google 생성 중)</em></li>
-            <li><em>PPTX (추후 제출)</em></li>
+            <li><a href="./viewer.html?src=ak/lecture/chapter12_ak.md">강의록 MD (v2.0)</a></li>
+            <li><a href="#treatment">🔧 치료 Part III</a></li>
+            <li><a href="#cases">📝 임상 case 5건</a></li>
+            <li><a href="#resources">팟캐스트 v3 4부작 (생성 중)</a></li>
           </ul>
         </div>
         <div class="footer-col">
