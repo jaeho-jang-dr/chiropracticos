@@ -13,8 +13,14 @@
   const NLM_RE = /\/(0[123]_(podcast|video_part[12]))[^\/]*\.(mp4|m4a)(?:[?#]|$)/i;
   const MEDIA_RE = /\.(mp4|m4a|pdf|docx?)(?:[?#]|$)/i;
 
+  function isAnonymous() {
+    return !!(document.body && document.body.classList.contains('is-anonymous'));
+  }
+
   function isAllowedAsset(url) {
     if (!url) return false;
+    // 익명(비로그인) 사용자는 NLM 화이트리스트도 다운로드 차단.
+    if (isAnonymous()) return false;
     return NLM_RE.test(url);
   }
 
@@ -111,14 +117,26 @@
     applyAll();
   }
 
-  // 동적 노드 처리 + admin 클래스 변화 감지
+  // 익명자 전환 시: 초기 normalizeAnchors가 부여한 NLM 화이트리스트 효과 제거.
+  function lockNlmForAnonymous() {
+    document.querySelectorAll('a.allow-download, a[download]').forEach(function (a) {
+      a.removeAttribute('download');
+      a.classList.remove('allow-download');
+    });
+  }
+
+  // 동적 노드 처리 + body class 변화 감지 (admin / anonymous)
   let adminFlipped = false;
+  let anonymousFlipped = false;
   const mo = new MutationObserver(function (mutations) {
-    // body class 변화로 admin 모드 진입 감지
     if (!adminFlipped && isAdmin()) {
       adminFlipped = true;
       unlockAllForAdmin();
       return;
+    }
+    if (!anonymousFlipped && isAnonymous()) {
+      anonymousFlipped = true;
+      lockNlmForAnonymous();
     }
     if (isAdmin()) return;  // admin이면 새 노드도 그대로
     mutations.forEach(function (m) {
@@ -138,6 +156,10 @@
       if (!adminFlipped && isAdmin()) {
         adminFlipped = true;
         unlockAllForAdmin();
+      }
+      if (!anonymousFlipped && isAnonymous()) {
+        anonymousFlipped = true;
+        lockNlmForAnonymous();
       }
     }).observe(document.body, { attributes: true, attributeFilter: ['class'] });
   }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>로그인 처리</title>
-  <script src="./assets/config.js?v=20260520c"></script>
+  <script src="./assets/config.js?v=20260523a"></script>
   <style>body{font-family:system-ui;text-align:center;padding:6rem 2rem;color:#555;background:#fafafc}
     .card{max-width:420px;margin:0 auto;padding:2.5rem;background:#fff;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.04);border:1px solid #e8e8eb}
     .spinner{width:32px;height:32px;border:3px solid #e8e8eb;border-top-color:#0a84ff;border-radius:50%;margin:0 auto 1.25rem;animation:spin .8s linear infinite}
@@ -19,7 +19,7 @@
   </div>
   <script type="module">
     // 이 페이지는 옛 redirectTo와의 호환성용 — 새 코드는 직접 redirect 사용.
-    import { sessionReady } from "./assets/supabase-client.js?v=20260520c";
+    import { sessionReady } from "./assets/supabase-client.js?v=20260523a";
     const params = new URLSearchParams(location.search);
     const next = params.get("next") || "/";
     const session = await sessionReady;

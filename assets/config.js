@@ -15,9 +15,17 @@ window.PUBLIC_PAGES = new Set([
   "/signup", "/signup.html",
   "/auth-callback", "/auth-callback.html",
   "/chapter01_introduction", "/chapter01_introduction.html",
+  "/chapter02_functional_neurology", "/chapter02_functional_neurology.html",
+  "/viewer", "/viewer.html",
   "/debug", "/debug.html",
   "/guide", "/guide.html",
 ]);
+
+// 익명자에게 viewer.html이 열어주는 MD src 접두어 화이트리스트.
+// (로그인 사용자는 모든 src 접근, 익명자는 이 목록에 매칭되는 것만)
+window.PUBLIC_VIEWER_PREFIXES = [
+  "functional_neurology/",
+];
 
 // admin 전용 페이지
 window.ADMIN_PAGES = new Set([
