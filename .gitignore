@@ -21,13 +21,17 @@ node_modules/
 ~$*
 *.tmp
 
-# 미디어 (R2/Drive에서 별도 호스팅 — Phase 2)
-# Phase 1 배포에서 미디어를 GitHub에 안 올릴 거면 아래 주석 해제:
-# **/*.mp4
-# **/*.m4a
-# **/*.pdf
-# **/*.pptx
-# **/*.docx
+# 미디어 — R2에서 호스팅, GitHub에는 트래킹 안 함
+**/*.mp4
+**/*.m4a
+**/*.mp3
+**/*.wav
+**/*.pdf
+**/*.pptx
+**/*.docx
+**/*.zip
+# 예외: credentials/ 의 자격증 PDF는 작은 파일이며 의도적 트래킹
+!archive/credentials/*.pdf
 
 .vercel
 tmp_fn_podcasts/

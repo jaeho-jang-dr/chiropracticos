@@ -141,6 +141,8 @@ export async function signInWithGoogle(nextPath) {
   let next = nextPath || (location.pathname.startsWith("/login") ? "/" : location.pathname);
   next = next.replace(/\.html(\?|$)/, "$1");
   if (!next || next === "") next = "/";
+  // open redirect 방어 — protocol-relative('//evil.com')·외부 URL 차단
+  if (!next.startsWith("/") || next.startsWith("//")) next = "/";
   // 청소: 옛 세션 토큰 + 메모리 + 서버 sign-out
   clearStaleAuth();
   try { await supabase.auth.signOut(); } catch {}

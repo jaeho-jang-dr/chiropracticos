@@ -15,6 +15,42 @@ const REPO = process.env.GITHUB_REPO || 'jaeho-jang-dr/chiropracticos';
 const BRANCH = process.env.GITHUB_BRANCH || 'main';
 const PAT = process.env.GITHUB_CONTENT_PAT;
 
+// PUT 경로 화이트리스트 — PAT 탈취 시에도 .github/, .env, api/, vercel.json,
+// package.json, deploy.sh, supabase/migrations/ 등 인프라 파일 변조 차단.
+// 콘텐츠/자산 경로만 허용. GET은 화이트리스트 무관(읽기 전용).
+const ALLOWED_CONTENT_DIRS = new Set([
+  'thompson', 'ak', 'gonstead', 'diversified', 'cox', 'logan', 'sot',
+  'cbp', 'activator', 'toggle_recoil', 'functional_neurology',
+  'intro', 'lectures', 'archive', 'images',
+]);
+
+function isWritePathAllowed(path) {
+  if (!path || typeof path !== 'string') return false;
+  if (path.length > 500) return false;
+  if (/^[/\\]/.test(path)) return false;        // 절대경로 차단
+  if (path.includes('\\')) return false;         // 백슬래시 차단
+  const parts = path.split('/');
+  if (parts.some(p => !p || p === '.' || p === '..')) return false;
+
+  // 루트 파일: 사전 정의된 HTML만
+  if (parts.length === 1) {
+    return /^(index|archive|guide|login|signup|admin|debug|editor|viewer|auth-callback|chapter\d{2}_[a-z_]+)\.html$/i.test(parts[0]);
+  }
+
+  // assets/*.{js,css,json}
+  if (parts[0] === 'assets' && parts.length === 2) {
+    return /^[a-zA-Z0-9_\-]+\.(js|css|json)$/.test(parts[1]);
+  }
+
+  // 기법/콘텐츠 디렉터리 하위
+  if (ALLOWED_CONTENT_DIRS.has(parts[0])) {
+    const last = parts[parts.length - 1];
+    return /\.(html|md|json|png|jpe?g|webp|gif|svg|txt|vtt)$/i.test(last);
+  }
+
+  return false;
+}
+
 async function verifyAdmin(req) {
   const auth = req.headers.authorization || '';
   const token = auth.replace(/^Bearer\s+/i, '').trim();
@@ -94,6 +130,10 @@ export default async function handler(req, res) {
       const body = await readJsonBody(req);
       const { path, content, sha, message } = body;
       if (!path || typeof content !== 'string') return res.status(400).json({ error: 'path and content required' });
+      if (!isWritePathAllowed(path)) {
+        console.warn('[api/content] PUT blocked by whitelist', { path, admin: auth.user.email });
+        return res.status(403).json({ error: 'path not allowed for write', path });
+      }
       const commitMsg = (message && message.trim()) || `admin edit: ${path}`;
       const author = {
         name: auth.user.email?.split('@')[0] || 'admin',

@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /$
+Allow: /index.html
+Allow: /login.html
+Allow: /signup.html
+Allow: /guide.html
+Allow: /assets/
+Disallow: /chapter
+Disallow: /admin
+Disallow: /debug
+Disallow: /editor
+Disallow: /viewer
+Disallow: /auth-callback
+Disallow: /api/
+Disallow: /archive
+
+Sitemap: https://chiropractic-kr.vercel.app/sitemap.xml

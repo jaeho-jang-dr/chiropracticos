@@ -1442,3 +1442,73 @@ body.is-anonymous .dash-card:not([href*="chapter01"]):not([href*="chapter02"])::
 body.is-anonymous .dash-card:not([href*="chapter01"]):not([href*="chapter02"]):hover {
   opacity: 1;
 }
+
+/* ============================================================
+   ACCESSIBILITY & MOBILE UX (2팀 P0 — 2026-05-23)
+   ============================================================ */
+
+/* 키보드 focus 시각 단서 — 모든 인터랙티브 요소 */
+:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+button:focus-visible,
+.btn:focus-visible,
+.nav-links a:focus-visible,
+.nav-brand:focus-visible {
+  box-shadow: 0 0 0 3px rgba(10, 132, 255, .25);
+}
+
+/* skip-link — 스크린 리더·키보드 사용자 본문 바로가기 */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--c-accent);
+  color: #fff;
+  padding: .6rem 1rem;
+  border-radius: 8px;
+  z-index: 999;
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* 한글 본문 줄바꿈 — 단어 중간 끊김 방지 */
+body {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* 모바일 표 가로 스크롤 — .data-table을 div로 감싸지 않아도 동작 */
+@media (max-width: 640px) {
+  .data-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: normal;
+  }
+  .data-table thead, .data-table tbody, .data-table tr { width: max-content; min-width: 100%; }
+}
+
+/* 전정 장애·어지럼 환자(FN 챕터 타겟군) 보호 — 모션 감소 모드 */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+  html { scroll-behavior: auto; }
+  .site-nav::before,
+  .nav-brand.cta-blink,
+  .dash-card--featured.pulse {
+    animation: none !important;
+  }
+}
+
