@@ -1385,17 +1385,17 @@ strong abbr.med-abbr { color: inherit; }
    (HTML 응답에는 여전히 포함 — 클라이언트사이드 UI 게이팅) */
 body.is-anonymous .auth-only { display: none !important; }
 
-/* ---------- Curriculum: Ch 2 featured + ch3-12 locked for anonymous ---------- */
-.curriculum-card--featured {
+/* ---------- Curriculum (dash-card): Ch 2 featured + ch3-12 locked for anonymous ---------- */
+.dash-card--featured {
   position: relative;
   border-color: var(--c-accent) !important;
   box-shadow: 0 0 0 1px var(--c-accent), 0 6px 18px rgba(10, 132, 255, .12);
 }
-.curriculum-card--featured .num {
+.dash-card--featured .dash-num {
   background: var(--c-accent) !important;
   color: #fff !important;
 }
-.curriculum-card--featured::before {
+.dash-card--featured::before {
   content: '추천';
   position: absolute;
   top: -10px; right: 14px;
@@ -1407,10 +1407,11 @@ body.is-anonymous .auth-only { display: none !important; }
   padding: 3px 10px;
   border-radius: var(--r-pill);
   box-shadow: 0 2px 6px rgba(10, 132, 255, .25);
+  z-index: 2;
 }
-/* :target 이동 시 펄스 강조 한 번 */
-.curriculum-card--featured:target,
-.curriculum-card--featured.pulse {
+/* :target 또는 .pulse 일 때 한 번 펄스 강조 */
+.dash-card--featured:target,
+.dash-card--featured.pulse {
   animation: ch2Pulse 1.6s ease-out 1;
 }
 @keyframes ch2Pulse {
@@ -1420,11 +1421,12 @@ body.is-anonymous .auth-only { display: none !important; }
 }
 
 /* 익명자: ch1·ch2 외 카드는 잠금 표시. 클릭은 가능 — auth-guard 가 /login 으로 보냄 */
-body.is-anonymous .curriculum-card:not([href*="chapter01"]):not([href*="chapter02"]) {
+body.is-anonymous .dash-card:not([href*="chapter01"]):not([href*="chapter02"]) {
   position: relative;
   opacity: .68;
+  transition: opacity .15s var(--ease);
 }
-body.is-anonymous .curriculum-card:not([href*="chapter01"]):not([href*="chapter02"])::after {
+body.is-anonymous .dash-card:not([href*="chapter01"]):not([href*="chapter02"])::after {
   content: '🔒 로그인 필요';
   position: absolute;
   top: 10px; right: 10px;
@@ -1435,7 +1437,8 @@ body.is-anonymous .curriculum-card:not([href*="chapter01"]):not([href*="chapter0
   padding: 3px 8px;
   border-radius: var(--r-pill);
   letter-spacing: .02em;
+  z-index: 2;
 }
-body.is-anonymous .curriculum-card:not([href*="chapter01"]):not([href*="chapter02"]):hover {
+body.is-anonymous .dash-card:not([href*="chapter01"]):not([href*="chapter02"]):hover {
   opacity: 1;
 }

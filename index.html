@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chiropractic | 카이로프랙틱</title>
   <meta name="description" content="관절, 근육, 신경자극을 통한 근거기반 도수치료의 실제와 통합강의 시스템. 한국 정형외과·재활의학과 의사·도수치료 물리치료사 대상." />
-  <link rel="stylesheet" href="./assets/main.css?v=20260523c" />
-<script defer src="./assets/ui.js?v=20260523c"></script>
-<script defer src="./assets/download-guard.js?v=20260523c"></script>
-<script defer src="./assets/hide-guard.js?v=20260523c"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260523c"></script>
-  <script src="./assets/config.js?v=20260523c"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260523c"></script>
+  <link rel="stylesheet" href="./assets/main.css?v=20260523e" />
+<script defer src="./assets/ui.js?v=20260523e"></script>
+<script defer src="./assets/download-guard.js?v=20260523e"></script>
+<script defer src="./assets/hide-guard.js?v=20260523e"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260523e"></script>
+  <script src="./assets/config.js?v=20260523e"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260523e"></script>
 </head>
 <body>
 
@@ -25,8 +25,7 @@
       <ul class="nav-links">
         <li><a href="#core">철학</a></li>
         <li><a href="#history">역사</a></li>
-        <li><a href="#dashboard">📊 현황</a></li>
-        <li><a href="#curriculum">커리큘럼</a></li>
+        <li><a href="#curriculum">📚 커리큘럼</a></li>
         <li class="auth-only"><a href="#format">학습 포맷</a></li>
         <li><a href="#principle">원칙</a></li>
         <li class="auth-only"><a href="./archive.html">📂 아카이브</a></li>
@@ -213,9 +212,9 @@
     </section>
 
                                 <!-- ========== DASHBOARD (Asset Status) ========== -->
-    <section id="dashboard">
-      <h2>📊 자산 준비 현황</h2>
-      <p class="section-lead">각 챕터의 강의록·팟캐스트·영상·슬라이드·리포트 준비 상태. ✅ 준비 완료 · ⏳ 생성 예정.</p>
+    <section id="curriculum">
+      <h2>📚 전체 커리큘럼 — 자료 준비 상태</h2>
+      <p class="section-lead">12개 챕터 · 각 챕터는 강의록(HTML·MD) · 팟캐스트 · 동영상 · 슬라이드로 구성. ✅ 준비 완료 · ⏳ 생성 예정.</p>
 
       <div class="callout callout-info">
         <h4>현재 상태</h4>
@@ -233,13 +232,13 @@
       <div class="dash-bar"><div class="dash-fill" style="width: 0%"></div></div>
       <div class="dash-chips"><span class="chip empty">📖</span><span class="chip">HTML</span></div>
     </a>
-    <a class="dash-card" href="./chapter02_functional_neurology.html">
+    <a id="card-ch2" class="dash-card dash-card--featured" href="./chapter02_functional_neurology.html">
       <div class="dash-head">
         <span class="dash-num">Ch 2</span>
         <span class="dash-ready">11/11</span>
       </div>
-      <h4>Functional Neurology</h4>
-      <p class="dash-sub">⭐ 진단·치료·평가의 근간</p>
+      <h4>⭐ Functional Neurology</h4>
+      <p class="dash-sub">진단·치료·평가의 근간 · 비로그인 공개</p>
       <div class="dash-bar"><div class="dash-fill" style="width: 100%"></div></div>
       <div class="dash-chips"><span class="chip ready">📖</span><span class="chip ready">🎧</span><span class="chip ready">🎥×2</span><span class="chip ready">🎴4/4</span><span class="chip ready">📄4/4</span></div>
     </a>
@@ -343,88 +342,6 @@
       <div class="dash-bar"><div class="dash-fill" style="width: 100%"></div></div>
       <div class="dash-chips"><span class="chip ready">📖</span><span class="chip ready">🎧</span><span class="chip ready">🎥×2</span><span class="chip ready">🎴4/4</span><span class="chip ready">📄4/4</span></div>
     </a>
-      </div>
-    </section>
-
-    <!-- ========== CURRICULUM ========== -->
-    <section id="curriculum">
-      <h2>전체 커리큘럼</h2>
-      <p class="section-lead">각 챕터는 강의록(HTML·MD) · PPTX · 동영상 · 팟캐스트로 구성되며, 온라인·오프라인 모두 활용 가능합니다.</p>
-
-      <div class="curriculum-grid">
-
-        <a class="curriculum-card" href="./chapter01_introduction.html">
-          <span class="num">1</span>
-          <h4>서설 — 역사·철학·개관</h4>
-          <p>카이로프랙틱이란 무엇인가 · 편집 원칙 · 학습 로드맵</p>
-        </a>
-
-        <a id="card-ch2" class="curriculum-card curriculum-card--featured" href="./chapter02_functional_neurology.html">
-          <span class="num">2</span>
-          <h4>⭐ Chiropractic Functional Neurology</h4>
-          <p><strong>진단·치료·평가의 근간</strong> · Assessment · Afferentation / Deafferentation / Efferentation</p>
-        </a>
-
-        <a class="curriculum-card" href="./chapter03_diversified.html">
-          <span class="num">3</span>
-          <h4>Diversified HVLA</h4>
-          <p>미국 DC 95.9% 사용 · 기본 HVLA 수기</p>
-        </a>
-
-        <a class="curriculum-card" href="./chapter04_gonstead.html">
-          <span class="num">4</span>
-          <h4>Gonstead Technique</h4>
-          <p>5요소 분석 · X-ray listing</p>
-        </a>
-
-        <a class="curriculum-card" href="./chapter05_toggle_recoil.html">
-          <span class="num">5</span>
-          <h4>Toggle Recoil (HIO)</h4>
-          <p>상부경추 특이 · 비판적 재평가</p>
-        </a>
-
-        <a class="curriculum-card" href="./chapter06_thompson.html">
-          <span class="num">6</span>
-          <h4>Thompson</h4>
-          <p>드롭 테이블 · Derifield leg check</p>
-        </a>
-
-        <a class="curriculum-card" href="./chapter07_activator.html">
-          <span class="num">7</span>
-          <h4>Activator Methods</h4>
-          <p>기구 · 저강도 · NIH grant 수혜 기법</p>
-        </a>
-
-        <a class="curriculum-card" href="./chapter08_cox.html">
-          <span class="num">8</span>
-          <h4>Cox Flexion-Distraction</h4>
-          <p>척추 감압 · 디스크·신경근증</p>
-        </a>
-
-        <a class="curriculum-card" href="./chapter09_logan.html">
-          <span class="num">9</span>
-          <h4>Logan Basic</h4>
-          <p>천골 저강도 · 임산부·소아</p>
-        </a>
-
-        <a class="curriculum-card" href="./chapter10_sot.html">
-          <span class="num">10</span>
-          <h4>SOT (Sacro-Occipital)</h4>
-          <p>카테고리 I/II/III · 골반 블록</p>
-        </a>
-
-        <a class="curriculum-card" href="./chapter11_cbp.html">
-          <span class="num">11</span>
-          <h4>Harrison CBP</h4>
-          <p>수학적 척추 모델 · 자세 재활</p>
-        </a>
-
-        <a class="curriculum-card" href="./chapter12_ak.html">
-          <span class="num">12</span>
-          <h4>Applied Kinesiology (AK)</h4>
-          <p>MMT · 근거 비판적 검토 · 한국 임상</p>
-        </a>
-
       </div>
 
       <div class="callout callout-info">
