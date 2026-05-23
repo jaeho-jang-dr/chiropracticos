@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chiropractic | 카이로프랙틱</title>
   <meta name="description" content="관절, 근육, 신경자극을 통한 근거기반 도수치료의 실제와 통합강의 시스템. 한국 정형외과·재활의학과 의사·도수치료 물리치료사 대상." />
-  <link rel="stylesheet" href="./assets/main.css?v=20260523a" />
-<script defer src="./assets/ui.js?v=20260523a"></script>
-<script defer src="./assets/download-guard.js?v=20260523a"></script>
-<script defer src="./assets/hide-guard.js?v=20260523a"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260523a"></script>
-  <script src="./assets/config.js?v=20260523a"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260523a"></script>
+  <link rel="stylesheet" href="./assets/main.css?v=20260523c" />
+<script defer src="./assets/ui.js?v=20260523c"></script>
+<script defer src="./assets/download-guard.js?v=20260523c"></script>
+<script defer src="./assets/hide-guard.js?v=20260523c"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260523c"></script>
+  <script src="./assets/config.js?v=20260523c"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260523c"></script>
 </head>
 <body>
 
@@ -26,7 +26,7 @@
         <li><a href="#core">철학</a></li>
         <li><a href="#history">역사</a></li>
         <li><a href="#dashboard">📊 현황</a></li>
-        <li class="auth-only"><a href="#curriculum">커리큘럼</a></li>
+        <li><a href="#curriculum">커리큘럼</a></li>
         <li class="auth-only"><a href="#format">학습 포맷</a></li>
         <li><a href="#principle">원칙</a></li>
         <li class="auth-only"><a href="./archive.html">📂 아카이브</a></li>
@@ -48,7 +48,7 @@
       통합강의 시스템.
     </p>
     <div class="hero-cta">
-      <a class="btn btn-primary auth-only" href="#curriculum">커리큘럼 보기</a>
+      <a class="btn btn-primary" href="#curriculum">커리큘럼 보기</a>
       <a class="btn btn-ghost" href="#core">핵심 철학 →</a>
     </div>
 
@@ -347,7 +347,7 @@
     </section>
 
     <!-- ========== CURRICULUM ========== -->
-    <section id="curriculum" class="auth-only">
+    <section id="curriculum">
       <h2>전체 커리큘럼</h2>
       <p class="section-lead">각 챕터는 강의록(HTML·MD) · PPTX · 동영상 · 팟캐스트로 구성되며, 온라인·오프라인 모두 활용 가능합니다.</p>
 
@@ -359,8 +359,8 @@
           <p>카이로프랙틱이란 무엇인가 · 편집 원칙 · 학습 로드맵</p>
         </a>
 
-        <a class="curriculum-card" href="./chapter02_functional_neurology.html" style="border-color: var(--c-accent); box-shadow: 0 0 0 1px var(--c-accent);">
-          <span class="num" style="background: var(--c-accent); color: white;">2</span>
+        <a id="card-ch2" class="curriculum-card curriculum-card--featured" href="./chapter02_functional_neurology.html">
+          <span class="num">2</span>
           <h4>⭐ Chiropractic Functional Neurology</h4>
           <p><strong>진단·치료·평가의 근간</strong> · Assessment · Afferentation / Deafferentation / Efferentation</p>
         </a>
@@ -564,5 +564,24 @@
     </div>
   </footer>
 
+  <script>
+    // 커리큘럼 anchor 진입 시 Ch 2 카드 한 번 펄스 강조
+    (function () {
+      function pulseCh2() {
+        var card = document.getElementById('card-ch2');
+        if (!card) return;
+        card.classList.remove('pulse');
+        void card.offsetWidth;  // restart CSS animation
+        card.classList.add('pulse');
+      }
+      function shouldPulse() {
+        return location.hash === '#curriculum' || location.hash === '#card-ch2';
+      }
+      window.addEventListener('hashchange', function () { if (shouldPulse()) pulseCh2(); });
+      if (shouldPulse()) {
+        window.addEventListener('load', function () { setTimeout(pulseCh2, 400); });
+      }
+    })();
+  </script>
 </body>
 </html>

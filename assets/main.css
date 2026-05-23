@@ -1384,3 +1384,58 @@ strong abbr.med-abbr { color: inherit; }
    .auth-only 가 붙은 요소는 비로그인 상태에서 화면에서 사라진다.
    (HTML 응답에는 여전히 포함 — 클라이언트사이드 UI 게이팅) */
 body.is-anonymous .auth-only { display: none !important; }
+
+/* ---------- Curriculum: Ch 2 featured + ch3-12 locked for anonymous ---------- */
+.curriculum-card--featured {
+  position: relative;
+  border-color: var(--c-accent) !important;
+  box-shadow: 0 0 0 1px var(--c-accent), 0 6px 18px rgba(10, 132, 255, .12);
+}
+.curriculum-card--featured .num {
+  background: var(--c-accent) !important;
+  color: #fff !important;
+}
+.curriculum-card--featured::before {
+  content: '추천';
+  position: absolute;
+  top: -10px; right: 14px;
+  background: var(--c-accent);
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  padding: 3px 10px;
+  border-radius: var(--r-pill);
+  box-shadow: 0 2px 6px rgba(10, 132, 255, .25);
+}
+/* :target 이동 시 펄스 강조 한 번 */
+.curriculum-card--featured:target,
+.curriculum-card--featured.pulse {
+  animation: ch2Pulse 1.6s ease-out 1;
+}
+@keyframes ch2Pulse {
+  0%   { box-shadow: 0 0 0 1px var(--c-accent), 0 0 0 0 rgba(10, 132, 255, .55); }
+  60%  { box-shadow: 0 0 0 1px var(--c-accent), 0 0 0 14px rgba(10, 132, 255, 0); }
+  100% { box-shadow: 0 0 0 1px var(--c-accent), 0 6px 18px rgba(10, 132, 255, .12); }
+}
+
+/* 익명자: ch1·ch2 외 카드는 잠금 표시. 클릭은 가능 — auth-guard 가 /login 으로 보냄 */
+body.is-anonymous .curriculum-card:not([href*="chapter01"]):not([href*="chapter02"]) {
+  position: relative;
+  opacity: .68;
+}
+body.is-anonymous .curriculum-card:not([href*="chapter01"]):not([href*="chapter02"])::after {
+  content: '🔒 로그인 필요';
+  position: absolute;
+  top: 10px; right: 10px;
+  background: rgba(0, 0, 0, .55);
+  color: #fff;
+  font-size: .68rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: var(--r-pill);
+  letter-spacing: .02em;
+}
+body.is-anonymous .curriculum-card:not([href*="chapter01"]):not([href*="chapter02"]):hover {
+  opacity: 1;
+}
