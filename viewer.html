@@ -4,11 +4,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>강의록 뷰어 · 카이로프랙틱정형외과</title>
-<link rel="stylesheet" href="./assets/main.css?v=20260523e" />
-<script defer src="./assets/ui.js?v=20260523e"></script>
-<script defer src="./assets/download-guard.js?v=20260523e"></script>
-<script defer src="./assets/hide-guard.js?v=20260523e"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260523e"></script>
+<link rel="stylesheet" href="./assets/main.css?v=20260523g" />
+<script defer src="./assets/ui.js?v=20260523g"></script>
+<script defer src="./assets/download-guard.js?v=20260523g"></script>
+<script defer src="./assets/hide-guard.js?v=20260523g"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260523g"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.5.1/github-markdown-light.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
@@ -61,8 +61,8 @@
     .markdown-body { padding: 24px 20px; }
   }
 </style>
-  <script src="./assets/config.js?v=20260523e"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260523e"></script>
+  <script src="./assets/config.js?v=20260523g"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260523g"></script>
 </head>
 <body>
 
@@ -126,13 +126,36 @@ import { sessionReady } from './assets/supabase-client.js';
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const text = await res.text();
 
-    // Configure marked: GFM, breaks on, smart lists
-    marked.setOptions({ gfm: true, breaks: false, headerIds: true, mangle: false });
+    // Configure marked: GFM, breaks on. (headerIds / mangle 옵션은 marked v9+ 에서 제거됨 — 아래 후처리로 ID 부여)
+    marked.setOptions({ gfm: true, breaks: false });
 
     // Render Mermaid blocks specially — marked turns ```mermaid into <pre><code class="language-mermaid">
     const rendered = marked.parse(text);
     const safe = DOMPurify.sanitize(rendered, { ADD_TAGS: ['iframe'], ADD_ATTR: ['frameborder', 'allowfullscreen'] });
     target.innerHTML = safe;
+
+    // GitHub 호환 heading slug — TOC anchor (#11-정의와-패러다임 등) 매칭용
+    function githubSlug(s) {
+      return s.toLowerCase().trim()
+        .replace(/[^\p{L}\p{N}\s-]/gu, '')  // 알파벳·숫자·한글·공백·하이픈만 남김 (period·괄호·em dash·· 등 제거)
+        .replace(/\s+/g, '-');
+    }
+    const usedIds = new Set();
+    target.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(h => {
+      if (h.id) { usedIds.add(h.id); return; }
+      const base = githubSlug(h.textContent || '');
+      if (!base) return;
+      let id = base, n = 1;
+      while (usedIds.has(id)) { id = base + '-' + (n++); }
+      usedIds.add(id);
+      h.id = id;
+    });
+
+    // 페이지 로드 시 hash 가 있으면 (브라우저는 ID 부여 전 시점이라 못 찾았음) 수동 스크롤
+    if (location.hash && location.hash.length > 1) {
+      const tgt = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (tgt) tgt.scrollIntoView({ behavior: 'instant', block: 'start' });
+    }
 
     // Replace ```mermaid code blocks with Mermaid-rendered SVGs
     target.querySelectorAll('code.language-mermaid').forEach((el, idx) => {
