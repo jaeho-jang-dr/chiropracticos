@@ -19,14 +19,14 @@
       ]
     },
     {
-      "source": "/chapter(.*)\\.html",
+      "source": "/chapter:rest((?:_|[a-zA-Z0-9-]).*?)(\\.html)?",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
         { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
       ]
     },
     {
-      "source": "/(admin|debug|editor|viewer|auth-callback)\\.html",
+      "source": "/:p(admin|debug|editor|viewer|auth-callback)(\\.html)?",
       "headers": [
         { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
       ]

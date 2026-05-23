@@ -42,8 +42,28 @@ TODAY=$(date +%Y%m%d)
 CURRENT_V=$(grep -ohE 'assets/[^"]+\?v=[0-9a-z]+' index.html 2>/dev/null | head -1 | sed 's/.*v=//' || echo "")
 if [[ "$CURRENT_V" =~ ^${TODAY}([a-z])$ ]]; then
   LAST_LETTER="${BASH_REMATCH[1]}"
-  NEXT_LETTER=$(echo "$LAST_LETTER" | tr '0-9a-y' '1-9b-z')
-  NEW_V="${TODAY}${NEXT_LETTER}"
+  if [[ "$LAST_LETTER" == "z" ]]; then
+    # 27번째 same-day deploy: 2자리로 확장 (aa, ab, ...)
+    NEW_V="${TODAY}aa"
+  else
+    NEXT_LETTER=$(echo "$LAST_LETTER" | tr 'a-y' 'b-z')
+    NEW_V="${TODAY}${NEXT_LETTER}"
+  fi
+elif [[ "$CURRENT_V" =~ ^${TODAY}([a-z])([a-z])$ ]]; then
+  # 2자리 rollover: aa→ab→...→az→ba→...
+  L1="${BASH_REMATCH[1]}"
+  L2="${BASH_REMATCH[2]}"
+  if [[ "$L2" == "z" ]]; then
+    if [[ "$L1" == "z" ]]; then
+      NEW_V="${TODAY}aaa"  # 너무 많이 했음 — 3자리로
+    else
+      L1_NEXT=$(echo "$L1" | tr 'a-y' 'b-z')
+      NEW_V="${TODAY}${L1_NEXT}a"
+    fi
+  else
+    L2_NEXT=$(echo "$L2" | tr 'a-y' 'b-z')
+    NEW_V="${TODAY}${L1}${L2_NEXT}"
+  fi
 else
   NEW_V="${TODAY}a"
 fi

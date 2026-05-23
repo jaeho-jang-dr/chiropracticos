@@ -1497,6 +1497,27 @@ body {
   .data-table thead, .data-table tbody, .data-table tr { width: max-content; min-width: 100%; }
 }
 
+/* 챕터 in-page nav — 모바일에서 unsticky + 가로 스크롤로 본문 영역 회복 */
+@media (max-width: 768px) {
+  nav.site-nav[aria-label="챕터 섹션"] {
+    position: static !important;
+    top: auto !important;
+  }
+  nav.site-nav[aria-label="챕터 섹션"] .nav-inner {
+    justify-content: flex-start !important;
+  }
+  nav.site-nav[aria-label="챕터 섹션"] .nav-links {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap !important;
+    white-space: nowrap;
+    justify-content: flex-start !important;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+  }
+  nav.site-nav[aria-label="챕터 섹션"] .nav-links li { flex: 0 0 auto; }
+}
+
 /* 전정 장애·어지럼 환자(FN 챕터 타겟군) 보호 — 모션 감소 모드 */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

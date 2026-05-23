@@ -33,5 +33,8 @@ node_modules/
 # 예외: credentials/ 의 자격증 PDF는 작은 파일이며 의도적 트래킹
 !archive/credentials/*.pdf
 
+# 미사용 참고도서 표지 이미지 — HTML 참조 0, 39MB. 통합 시 untrack 해제 또는 R2 이전
+images/chapter1/references/
+
 .vercel
 tmp_fn_podcasts/

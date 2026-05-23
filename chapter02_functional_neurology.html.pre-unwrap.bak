@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chiropractic Functional Neurology | Chiropractic</title>
   <meta name="description" content="Chapter 2. Chiropractic Functional Neurology — 진단·치료·평가의 근간. Assessment 중심의 Afferentation/Deafferentation/Efferentation 프레임워크. 근거 기반, 비판적 시각 포함." />
-  <link rel="stylesheet" href="./assets/main.css?v=20260523t" />
+  <link rel="stylesheet" href="./assets/main.css?v=20260523s" />
 
-<script defer src="./assets/ui.js?v=20260523t"></script>
-<script defer src="./assets/download-guard.js?v=20260523t"></script>
-<script defer src="./assets/hide-guard.js?v=20260523t"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260523t"></script>
+<script defer src="./assets/ui.js?v=20260523s"></script>
+<script defer src="./assets/download-guard.js?v=20260523s"></script>
+<script defer src="./assets/hide-guard.js?v=20260523s"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260523s"></script>
 <style id="fn-test-cards">
 /* Structured clinical test cards */
 .test-card {
@@ -131,11 +131,10 @@ abbr.med-abbr:hover {
 /* strong 안에서도 약어 표시 유지 */
 strong abbr.med-abbr { color: inherit; }
 </style>
-  <script src="./assets/config.js?v=20260523t"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260523t"></script>
+  <script src="./assets/config.js?v=20260523s"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260523s"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">본문 바로가기</a>
 
   <!-- ========== GLASSMORPHIC NAV ========== -->
   <!-- archive link injected -->
@@ -192,7 +191,7 @@ strong abbr.med-abbr { color: inherit; }
     </div>
   </nav>
 
-  <main id="main" tabindex="-1">
+  <main>
 
     <!-- ========== 0. 편집 원칙 ========== -->
     <section id="editorial">
@@ -202,7 +201,7 @@ strong abbr.med-abbr { color: inherit; }
           Chapter 2는 카이로프랙틱 Functional Neurology(<abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr>)의 이론을 <strong>근거 기반 의학(<abbr class="med-abbr" title="Evidence-Based Medicine · 근거 기반 의학">EBM</abbr>)</strong> 관점에서 정리합니다.
           신경생리학적으로 확립된 내용은 🟢 포함하고, 과학적 합의를 벗어난 주장은 🔴 비판적으로 명시합니다.
           Vitalism · "Innate Intelligence" · 측정 불가한 추상 개념은 제외합니다.
-          Carrick FN 커뮤니티의 일부 과장 주장은 <strong>Part VIII. 비판적 시각</strong>에서 상세히 다룹니다.
+          Carrick <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> 커뮤니티의 일부 과장 주장은 <strong>Part VIII. 비판적 시각</strong>에서 상세히 다룹니다.
         </p>
       </div>
     </section>
@@ -232,7 +231,7 @@ strong abbr.med-abbr { color: inherit; }
           <tr>
             <th>항목</th>
             <th>임상 신경학 (Mainstream)</th>
-            <th>기능 신경학 (FN)</th>
+            <th>기능 신경학 (<abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr>)</th>
           </tr>
         </thead>
         <tbody>
@@ -240,7 +239,7 @@ strong abbr.med-abbr { color: inherit; }
           <tr><td>도구</td><td><abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr> · CT · <abbr class="med-abbr" title="Electromyography · 근전도 검사">EMG</abbr> · 검사실</td><td>자세·안구·소뇌·전정 기능 검사</td></tr>
           <tr><td>치료</td><td>약물·수술·재활 의뢰</td><td>수기·운동·감각 자극·재활</td></tr>
           <tr><td>근거 수준</td><td><span class="evidence ev-strong">🟢 Strong</span> (주요 영역)</td><td><span class="evidence ev-mod">🟡 중간</span>~<span class="evidence ev-limited">🟠 제한</span> (중재별 편차)</td></tr>
-          <tr><td>위상</td><td colspan="2"><strong>상호 배타 아님 — FN은 임상 신경학의 보완</strong></td></tr>
+          <tr><td>위상</td><td colspan="2"><strong>상호 배타 아님 — <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr>은 임상 신경학의 보완</strong></td></tr>
         </tbody>
       </table>
 
@@ -251,7 +250,7 @@ strong abbr.med-abbr { color: inherit; }
         <li><strong>1980s</strong> — <abbr class="med-abbr" title="American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 위원회">ACNB</abbr> (American Chiropractic Neurology Board) 설립, <strong><abbr class="med-abbr" title="Diplomate of American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 위원회 전문의">DACNB</abbr></strong> 자격 인증</li>
         <li><strong>2000s</strong> — 뇌진탕·전정 재활 프로토콜 확장, NFL·NHL 협업</li>
         <li><strong>2010s</strong> — Heidi Haavik 등 PMC 다수 논문으로 기초 과학 근거 축적</li>
-        <li><strong>2017</strong> — Meyer et al. <em>Unravelling Functional Neurology</em> — FN에 대한 <strong>체계적 비판 리뷰</strong> 발표</li>
+        <li><strong>2017</strong> — Meyer et al. <em>Unravelling Functional Neurology</em> — <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr>에 대한 <strong>체계적 비판 리뷰</strong> 발표</li>
       </ul>
 
       <h3>1.3 근거 수준의 솔직한 평가</h3>
@@ -281,9 +280,9 @@ strong abbr.med-abbr { color: inherit; }
       </figure>
 
       <h3>2.1 <abbr class="med-abbr" title="Central Nervous System · 중추신경계 (뇌 + 척수)">CNS</abbr>/<abbr class="med-abbr" title="Peripheral Nervous System · 말초신경계 (뇌·척수 외 모든 신경)">PNS</abbr>와 기능적 임상 분류</h3>
-      <p>FN은 신경계를 <strong>Input(입력) → Process(처리) → Output(출력)</strong>의 3단으로 해석합니다. 각 단계가 Assessment와 Treatment의 타겟입니다.</p>
+      <p><abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr>은 신경계를 <strong>Input(입력) → Process(처리) → Output(출력)</strong>의 3단으로 해석합니다. 각 단계가 Assessment와 Treatment의 타겟입니다.</p>
 
-      <h3>2.2 소뇌 — FN의 핵심 기관</h3>
+      <h3>2.2 소뇌 — <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr>의 핵심 기관</h3>
       <ul>
         <li>운동 협응·평형·근긴장 조절의 중심</li>
         <li>전정·시각·고유수용 입력을 통합</li>
@@ -311,7 +310,7 @@ strong abbr.med-abbr { color: inherit; }
       </figure>
 
       <h3>3.1 Afferentation (구심성 입력)</h3>
-      <p>말초 감각 수용기에서 CNS로 전달되는 신경 신호의 흐름. <strong>Sherrington(1906)</strong> 이래 확립된 개념.</p>
+      <p>말초 감각 수용기에서 <abbr class="med-abbr" title="Central Nervous System · 중추신경계 (뇌 + 척수)">CNS</abbr>로 전달되는 신경 신호의 흐름. <strong>Sherrington(1906)</strong> 이래 확립된 개념.</p>
 
       <h4>말초 기계수용기 4유형 (Freeman & Wyke, 1967)</h4>
       <figure style="margin:1.5rem 0;">
@@ -369,7 +368,7 @@ strong abbr.med-abbr { color: inherit; }
       <h3>3.4 임상 사이클</h3>
       <figure style="margin:1.5rem 0;">
         <img src="./images/chapter2/05_clinical_cycle.svg" alt="Assessment 중심 임상 사이클 루프" style="width:100%; max-width:780px; border:1px solid var(--c-border-light); border-radius:var(--r-md);" />
-        <figcaption style="margin-top:.5rem; font-size:.85rem; color:var(--c-text-muted); text-align:center;">그림 2-4. 5단계 루프 — Re-Assessment 없는 치료는 FN이 아니다.</figcaption>
+        <figcaption style="margin-top:.5rem; font-size:.85rem; color:var(--c-text-muted); text-align:center;">그림 2-4. 5단계 루프 — Re-Assessment 없는 치료는 <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr>이 아니다.</figcaption>
       </figure>
     </section>
 
@@ -392,13 +391,13 @@ strong abbr.med-abbr { color: inherit; }
       <h3>4.1 평가의 5단계 계층 모델</h3>
       <figure style="margin:1.5rem 0;">
         <img src="./images/chapter2/04_assessment_hierarchy.svg" alt="Assessment 5단계 계층 모델" style="width:100%; max-width:900px; border:1px solid var(--c-border-light); border-radius:var(--r-md);" />
-        <figcaption style="margin-top:.5rem; font-size:.85rem; color:var(--c-text-muted); text-align:center;">그림 2-5. 평가의 5단계 — History → Observation → 기본 신경학 → FN 특화 → 영상·의뢰.</figcaption>
+        <figcaption style="margin-top:.5rem; font-size:.85rem; color:var(--c-text-muted); text-align:center;">그림 2-5. 평가의 5단계 — History → Observation → 기본 신경학 → <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> 특화 → 영상·의뢰.</figcaption>
       </figure>
 
-      <h3>4.2 병력 청취 — OPQRST + FN 추가</h3>
+      <h3>4.2 병력 청취 — OPQRST + <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> 추가</h3>
       <ul>
         <li><strong>기본</strong>: Onset · Provocation/Palliation · Quality · Radiation · Severity · Timing</li>
-        <li><strong>FN 추가</strong>: 두부 외상력 · 어지럼·평형 · 시각·청각 · 인지·수면 · 자율 증상</li>
+        <li><strong><abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> 추가</strong>: 두부 외상력 · 어지럼·평형 · 시각·청각 · 인지·수면 · 자율 증상</li>
       </ul>
 
       <div class="callout callout-danger">
@@ -474,7 +473,7 @@ strong abbr.med-abbr { color: inherit; }
           <tr>
             <td><strong>IV</strong></td>
             <td>Trochlear (활차신경)</td>
-            <td>GSE</td>
+            <td><abbr class="med-abbr" title="General Somatic Efferent · 일반 체감 원심성 — 안근·혀근·SCM">GSE</abbr></td>
             <td>안구 운동(<abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr>) — 내하방 시선</td>
             <td><strong>내전 상태에서 아래로 내리기</strong> · 머리 기울임(head tilt) 보상 관찰</td>
             <td>수직 복시·계단 내려갈 때 어지럼 · 머리 외상 후 흔함(가장 가는 뇌신경)</td>
@@ -485,12 +484,12 @@ strong abbr.med-abbr { color: inherit; }
             <td><abbr class="med-abbr" title="General Somatic Afferent · 일반 체감 구심성 — 안면·인두 감각">GSA</abbr> + <abbr class="med-abbr" title="Special Visceral Efferent · 특수 내장 원심성 — 인두궁 유래근(저작·표정·인두·SCM)">SVE</abbr></td>
             <td>안면 감각(V1·V2·V3) + 저작근 운동</td>
             <td>이마·뺨·턱 <strong>3 분지별 촉각·통각</strong> · <strong>각막반사</strong>(V1+VII) · <strong>저작근(masseter·temporalis) 촉진</strong> · 턱 개구 시 편위</td>
-            <td>Trigeminal neuralgia · 각막반사 소실 → CN V/VII 또는 뇌교 병변 · 턱 편위 = 동측 익돌근 약화</td>
+            <td>Trigeminal neuralgia · 각막반사 소실 → <abbr class="med-abbr" title="Cranial Nerve V · 5번 뇌신경 — Trigeminal (삼차신경)">CN V</abbr>/VII 또는 뇌교 병변 · 턱 편위 = 동측 익돌근 약화</td>
           </tr>
           <tr>
             <td><strong>VI</strong></td>
             <td>Abducens (외전신경)</td>
-            <td>GSE</td>
+            <td><abbr class="med-abbr" title="General Somatic Efferent · 일반 체감 원심성 — 안근·혀근·SCM">GSE</abbr></td>
             <td>안구 운동(<abbr class="med-abbr" title="Lateral Rectus · 외직근 — 외전신경(6번 뇌신경) 지배">LR</abbr>) — 외전</td>
             <td><strong>좌·우로 끝까지 보기</strong> 시 외전 제한 관찰</td>
             <td>수평 복시 · <strong>양측 <abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr> 마비 → 두개내압 상승 의심</strong>(가장 긴 주행 → 압력에 취약)</td>
@@ -498,7 +497,7 @@ strong abbr.med-abbr { color: inherit; }
           <tr>
             <td><strong>VII</strong></td>
             <td>Facial (안면신경)</td>
-            <td>SVE + GVE + SVA</td>
+            <td><abbr class="med-abbr" title="Special Visceral Efferent · 특수 내장 원심성 — 인두궁 유래근(저작·표정·인두·SCM)">SVE</abbr> + <abbr class="med-abbr" title="General Visceral Efferent · 일반 내장 원심성 — 부교감(III·VII·IX·X)">GVE</abbr> + <abbr class="med-abbr" title="Special Visceral Afferent · 특수 내장 구심성 — 후각·미각">SVA</abbr></td>
             <td>안면근(표정) + 누선·타액 + 혀 앞 2/3 미각</td>
             <td><strong>이마 주름</strong>·꽉 감기·미소·뺨 부풀리기 · 혀 앞 2/3 단·짠 맛 · 각막반사 efferent</td>
             <td><strong>이마 보존 = 중추성</strong>(뇌졸중·UMN), <strong>이마 침범 = 말초성 Bell's palsy/LMN</strong></td>
@@ -506,15 +505,15 @@ strong abbr.med-abbr { color: inherit; }
           <tr>
             <td><strong>VIII</strong></td>
             <td>Vestibulocochlear (전정와우신경)</td>
-            <td>SSA</td>
+            <td><abbr class="med-abbr" title="Special Somatic Afferent · 특수 체감 구심성 — 시각·청각·평형">SSA</abbr></td>
             <td>청각 + 평형(<abbr class="med-abbr" title="Semicircular Canal · 반고리관 — 내이의 회전 감지기">SCC</abbr>·otolith)</td>
             <td><strong>손가락 비빔</strong>(finger rub) · <strong>Weber/Rinne</strong>(음차 512Hz) · <strong><abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr></strong> · <strong>Dix-Hallpike</strong>·<abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr></td>
-            <td>편측 청력 저하·이명 · 어지럼·<abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr>·전정신경염·청신경초종(CN V·VII 동반 시)</td>
+            <td>편측 청력 저하·이명 · 어지럼·<abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr>·전정신경염·청신경초종(<abbr class="med-abbr" title="Cranial Nerve V · 5번 뇌신경 — Trigeminal (삼차신경)">CN V</abbr>·VII 동반 시)</td>
           </tr>
           <tr>
             <td><strong>IX</strong></td>
             <td>Glossopharyngeal (설인신경)</td>
-            <td><abbr class="med-abbr" title="General Visceral Afferent · 일반 내장 구심성 — 인두·내장">GVA</abbr> + SVA + SVE</td>
+            <td><abbr class="med-abbr" title="General Visceral Afferent · 일반 내장 구심성 — 인두·내장">GVA</abbr> + <abbr class="med-abbr" title="Special Visceral Afferent · 특수 내장 구심성 — 후각·미각">SVA</abbr> + <abbr class="med-abbr" title="Special Visceral Efferent · 특수 내장 원심성 — 인두궁 유래근(저작·표정·인두·SCM)">SVE</abbr></td>
             <td>인두 감각·혀 뒤 1/3 미각·이하선 + stylopharyngeus</td>
             <td><strong>구개반사</strong>(gag reflex, afferent) · 혀 뒤 1/3 쓴맛 · 인두 감각</td>
             <td>구개반사 afferent 소실(편측) → 동측 IX 또는 연수 병변</td>
@@ -522,7 +521,7 @@ strong abbr.med-abbr { color: inherit; }
           <tr>
             <td><strong>X</strong></td>
             <td>Vagus (미주신경)</td>
-            <td>GVE + GVA + SVE + GSA</td>
+            <td><abbr class="med-abbr" title="General Visceral Efferent · 일반 내장 원심성 — 부교감(III·VII·IX·X)">GVE</abbr> + <abbr class="med-abbr" title="General Visceral Afferent · 일반 내장 구심성 — 인두·내장">GVA</abbr> + <abbr class="med-abbr" title="Special Visceral Efferent · 특수 내장 원심성 — 인두궁 유래근(저작·표정·인두·SCM)">SVE</abbr> + <abbr class="med-abbr" title="General Somatic Afferent · 일반 체감 구심성 — 안면·인두 감각">GSA</abbr></td>
             <td>인두·후두 운동 · 부교감(심·폐·소화기) · 혀 뒤 1/3 일부 미각</td>
             <td><strong>"아" 발성 시 연구개 거상</strong> 좌우 대칭 · <strong>구개반사 efferent</strong> · 쉰 목소리·연하 평가</td>
             <td>연구개가 <strong>건측으로 편위</strong> = 환측 CN X 마비 · 후두마비(쉰 목소리·흡인) → 갑상선·종격동 종양</td>
@@ -530,15 +529,15 @@ strong abbr.med-abbr { color: inherit; }
           <tr>
             <td><strong>XI</strong></td>
             <td>Accessory (부신경)</td>
-            <td>SVE</td>
+            <td><abbr class="med-abbr" title="Special Visceral Efferent · 특수 내장 원심성 — 인두궁 유래근(저작·표정·인두·SCM)">SVE</abbr></td>
             <td><abbr class="med-abbr" title="Sternocleidomastoid · 흉쇄유돌근">SCM</abbr> + 승모근(상부)</td>
-            <td><strong>어깨 들기(shrug)</strong> 저항 · <strong>고개 돌리기</strong>(SCM, 반대측 회전 저항)</td>
+            <td><strong>어깨 들기(shrug)</strong> 저항 · <strong>고개 돌리기</strong>(<abbr class="med-abbr" title="Sternocleidomastoid · 흉쇄유돌근">SCM</abbr>, 반대측 회전 저항)</td>
             <td>편측 어깨 처짐·승모근 위축 · 경부 림프절 수술 합병증</td>
           </tr>
           <tr>
             <td><strong>XII</strong></td>
             <td>Hypoglossal (설하신경)</td>
-            <td>GSE</td>
+            <td><abbr class="med-abbr" title="General Somatic Efferent · 일반 체감 원심성 — 안근·혀근·SCM">GSE</abbr></td>
             <td><strong>혀 운동</strong> (intrinsic + extrinsic 혀 근육)</td>
             <td><strong>혀 내밀기</strong> — 편위 방향 관찰 · 혀 측방운동 저항 · 혀 위축·섬유속연축(fasciculation)</td>
             <td>혀가 <strong>환측으로 편위</strong>(동측 LMN 약화) · 위축+섬유속연축 → ALS 의심 · 양측 위축 → 연수 병변</td>
@@ -546,17 +545,17 @@ strong abbr.med-abbr { color: inherit; }
         </tbody>
       </table>
       <p style="margin-top:.5rem;font-size:.88em;color:#64748b">
-        <strong>기능 분류 약어</strong>: SVA · SSA · GSA · GVA · GSE · GVE · SVE.
+        <strong>기능 분류 약어</strong>: <abbr class="med-abbr" title="Special Visceral Afferent · 특수 내장 구심성 — 후각·미각">SVA</abbr> · <abbr class="med-abbr" title="Special Somatic Afferent · 특수 체감 구심성 — 시각·청각·평형">SSA</abbr> · <abbr class="med-abbr" title="General Somatic Afferent · 일반 체감 구심성 — 안면·인두 감각">GSA</abbr> · <abbr class="med-abbr" title="General Visceral Afferent · 일반 내장 구심성 — 인두·내장">GVA</abbr> · <abbr class="med-abbr" title="General Somatic Efferent · 일반 체감 원심성 — 안근·혀근·SCM">GSE</abbr> · <abbr class="med-abbr" title="General Visceral Efferent · 일반 내장 원심성 — 부교감(III·VII·IX·X)">GVE</abbr> · <abbr class="med-abbr" title="Special Visceral Efferent · 특수 내장 원심성 — 인두궁 유래근(저작·표정·인두·SCM)">SVE</abbr>.
         <br/>※ <strong>다발성 뇌신경 동시 마비</strong>는 단일 신경 손상보다 <strong>뇌간 병변(뇌경색·다발경화증·종양)</strong> 또는 <strong>해부학적 인접부(cavernous sinus, jugular foramen)</strong> 압박을 우선 의심.
       </p>
 
       <div class="callout callout-success">
-        <h4>⭐ 임상에서 즉시 적용 가능한 FN 3대 Assessment</h4>
+        <h4>⭐ 임상에서 즉시 적용 가능한 <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> 3대 Assessment</h4>
         <p>기능신경학 검사는 수십 가지가 있지만, <strong>외래 진료실에서 특수 장비 없이 5-10분 내에 신뢰성 있게 수행</strong>할 수 있는 세 가지가 가장 실용적입니다:</p>
         <ol>
           <li><strong>4.4 안구 운동 평가</strong> — 뇌간·대뇌피질·전정핵 통합 기능</li>
           <li><strong>4.5 소뇌 기능 검사</strong> — 측부·반구 소뇌 및 proprioceptive cerebellar loop</li>
-          <li><strong>4.6 전정기관 검사</strong> — Semicircular canal·otolith·VOR 통합</li>
+          <li><strong>4.6 전정기관 검사</strong> — Semicircular canal·otolith·<abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> 통합</li>
         </ol>
         <p>세 검사 모두 <strong>펜라이트·메트로놈 앱·평평한 바닥</strong>만 있으면 가능하며, 재현성이 좋아 <strong>치료 전·후 비교</strong>의 기준선으로 활용됩니다.</p>
       </div>
@@ -573,18 +572,18 @@ strong abbr.med-abbr { color: inherit; }
       <h4 id="oculo-cn">4.4.0 안구 운동 뇌신경 해부 — <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> · IV · VI 병변 국소화</h4>
       <p>6개의 외안근(extraocular muscles)은 <strong>3개의 뇌신경</strong>이 지배합니다. 어느 눈·어느 방향을 볼 때 움직이지 못하는가를 관찰하면 <strong>어느 쪽 · 몇 번 뇌신경</strong>이 고장났는지 정확히 국소화할 수 있습니다.</p>
 
-      <h5>안근 6개의 지배 뇌신경 — 기억법 "LR6 SO4 나머지 3"</h5>
+      <h5>안근 6개의 지배 뇌신경 — 기억법 "<abbr class="med-abbr" title="Lateral Rectus · 외직근 — 외전신경(6번 뇌신경) 지배">LR</abbr>6 <abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr>4 나머지 3"</h5>
       <table class="data-table">
         <thead><tr><th>근육</th><th>약어</th><th>뇌신경</th><th>주 작용</th><th>보조 작용</th></tr></thead>
         <tbody>
-          <tr><td>Lateral rectus (외직근)</td><td>LR</td><td><strong>CN VI</strong> (Abducens, 외전신경)</td><td><strong>외전</strong>(abduction) — 귀 쪽으로</td><td>없음 (단일 작용)</td></tr>
-          <tr><td>Superior oblique (상사근)</td><td>SO</td><td><strong><abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr></strong> (Trochlear, 활차신경)</td><td><strong>내하방 시선 depression</strong> — 눈을 안쪽으로 모은 상태에서 아래로</td><td>내회전(intorsion), 외전</td></tr>
-          <tr><td>Medial rectus (내직근)</td><td>MR</td><td>CN III (Oculomotor)</td><td><strong>내전</strong>(adduction) — 코 쪽</td><td>없음</td></tr>
-          <tr><td>Superior rectus (상직근)</td><td>SR</td><td>CN III (Oculomotor)</td><td>거상 (elevation) — 외전된 상태에서 위</td><td>내전, 내회전</td></tr>
-          <tr><td>Inferior rectus (하직근)</td><td>IR</td><td>CN III (Oculomotor)</td><td>하강 (depression) — 외전된 상태에서 아래</td><td>내전, 외회전</td></tr>
-          <tr><td>Inferior oblique (하사근)</td><td>IO</td><td>CN III (Oculomotor)</td><td>거상 (elevation) — 내전된 상태에서 위</td><td>외회전, 외전</td></tr>
-          <tr><td>Levator palpebrae sup. (상안검거근)</td><td>LPS</td><td>CN III</td><td>눈꺼풀 올림</td><td>—</td></tr>
-          <tr><td>Pupillary sphincter · Ciliary</td><td>—</td><td>CN III (parasympathetic, Edinger-Westphal)</td><td>동공 수축(miosis), 조절(accommodation)</td><td>—</td></tr>
+          <tr><td>Lateral rectus (외직근)</td><td><abbr class="med-abbr" title="Lateral Rectus · 외직근 — 외전신경(6번 뇌신경) 지배">LR</abbr></td><td><strong><abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr></strong> (Abducens, 외전신경)</td><td><strong>외전</strong>(abduction) — 귀 쪽으로</td><td>없음 (단일 작용)</td></tr>
+          <tr><td>Superior oblique (상사근)</td><td><abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr></td><td><strong><abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr></strong> (Trochlear, 활차신경)</td><td><strong>내하방 시선 depression</strong> — 눈을 안쪽으로 모은 상태에서 아래로</td><td>내회전(intorsion), 외전</td></tr>
+          <tr><td>Medial rectus (내직근)</td><td><abbr class="med-abbr" title="Medial Rectus · 내직근 — 동안신경(3번 뇌신경) 지배">MR</abbr></td><td><abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> (Oculomotor)</td><td><strong>내전</strong>(adduction) — 코 쪽</td><td>없음</td></tr>
+          <tr><td>Superior rectus (상직근)</td><td><abbr class="med-abbr" title="Superior Rectus · 상직근">SR</abbr></td><td><abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> (Oculomotor)</td><td>거상 (elevation) — 외전된 상태에서 위</td><td>내전, 내회전</td></tr>
+          <tr><td>Inferior rectus (하직근)</td><td><abbr class="med-abbr" title="Inferior Rectus · 하직근">IR</abbr></td><td><abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> (Oculomotor)</td><td>하강 (depression) — 외전된 상태에서 아래</td><td>내전, 외회전</td></tr>
+          <tr><td>Inferior oblique (하사근)</td><td><abbr class="med-abbr" title="Inferior Oblique · 하사근">IO</abbr></td><td><abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> (Oculomotor)</td><td>거상 (elevation) — 내전된 상태에서 위</td><td>외회전, 외전</td></tr>
+          <tr><td>Levator palpebrae sup. (상안검거근)</td><td>LPS</td><td><abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></td><td>눈꺼풀 올림</td><td>—</td></tr>
+          <tr><td>Pupillary sphincter · Ciliary</td><td>—</td><td><abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> (parasympathetic, Edinger-Westphal)</td><td>동공 수축(miosis), 조절(accommodation)</td><td>—</td></tr>
         </tbody>
       </table>
 
@@ -594,8 +593,8 @@ strong abbr.med-abbr { color: inherit; }
         <pre style="background:#f5f5f7; padding:16px; border-radius:10px; font-family:ui-monospace,Menlo,monospace; line-height:1.6; font-size:.88em; overflow-x:auto;">
             ↖   ↑   ↗              우측 주시                 좌측 주시
            UL   U  UR            (환자의 오른쪽)          (환자의 왼쪽)
-            ←       →          우안 LR  좌안 MR          우안 MR  좌안 LR
-           L    C   R          (CN VI)  (CN III)         (CN III) (CN VI)
+            ←       →          우안 <abbr class="med-abbr" title="Lateral Rectus · 외직근 — 외전신경(6번 뇌신경) 지배">LR</abbr>  좌안 <abbr class="med-abbr" title="Medial Rectus · 내직근 — 동안신경(3번 뇌신경) 지배">MR</abbr>          우안 <abbr class="med-abbr" title="Medial Rectus · 내직근 — 동안신경(3번 뇌신경) 지배">MR</abbr>  좌안 <abbr class="med-abbr" title="Lateral Rectus · 외직근 — 외전신경(6번 뇌신경) 지배">LR</abbr>
+           L    C   R          (<abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr>)  (<abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr>)         (<abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr>) (<abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr>)
             ↙   ↓   ↘
            DL   D  DR
         </pre>
@@ -603,31 +602,31 @@ strong abbr.med-abbr { color: inherit; }
         <table class="data-table" style="margin-top:.5rem">
           <thead><tr><th>방향</th><th>우안 근육 · CN</th><th>좌안 근육 · CN</th></tr></thead>
           <tbody>
-            <tr><td><strong>↑ 상방</strong> (Up)</td><td>SR / IO · CN III</td><td>SR / IO · CN III</td></tr>
-            <tr><td><strong>↓ 하방</strong> (Down)</td><td>IR · CN III</td><td>IR · CN III</td></tr>
-            <tr><td><strong>→ 우측</strong> (Right)</td><td><strong>LR · CN VI</strong></td><td>MR · CN III</td></tr>
-            <tr><td><strong>← 좌측</strong> (Left)</td><td>MR · CN III</td><td><strong>LR · CN VI</strong></td></tr>
-            <tr><td><strong>↗ 우상</strong></td><td><strong>SR · CN III</strong></td><td>IO · CN III</td></tr>
-            <tr><td><strong>↘ 우하</strong></td><td><strong>IR · CN III</strong></td><td><strong>SO · CN IV</strong></td></tr>
-            <tr><td><strong>↖ 좌상</strong></td><td>IO · CN III</td><td><strong>SR · CN III</strong></td></tr>
-            <tr><td><strong>↙ 좌하</strong></td><td><strong>SO · CN IV</strong></td><td><strong>IR · CN III</strong></td></tr>
+            <tr><td><strong>↑ 상방</strong> (Up)</td><td><abbr class="med-abbr" title="Superior Rectus · 상직근">SR</abbr> / <abbr class="med-abbr" title="Inferior Oblique · 하사근">IO</abbr> · <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></td><td><abbr class="med-abbr" title="Superior Rectus · 상직근">SR</abbr> / <abbr class="med-abbr" title="Inferior Oblique · 하사근">IO</abbr> · <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></td></tr>
+            <tr><td><strong>↓ 하방</strong> (Down)</td><td><abbr class="med-abbr" title="Inferior Rectus · 하직근">IR</abbr> · <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></td><td><abbr class="med-abbr" title="Inferior Rectus · 하직근">IR</abbr> · <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></td></tr>
+            <tr><td><strong>→ 우측</strong> (Right)</td><td><strong><abbr class="med-abbr" title="Lateral Rectus · 외직근 — 외전신경(6번 뇌신경) 지배">LR</abbr> · <abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr></strong></td><td><abbr class="med-abbr" title="Medial Rectus · 내직근 — 동안신경(3번 뇌신경) 지배">MR</abbr> · <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></td></tr>
+            <tr><td><strong>← 좌측</strong> (Left)</td><td><abbr class="med-abbr" title="Medial Rectus · 내직근 — 동안신경(3번 뇌신경) 지배">MR</abbr> · <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></td><td><strong><abbr class="med-abbr" title="Lateral Rectus · 외직근 — 외전신경(6번 뇌신경) 지배">LR</abbr> · <abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr></strong></td></tr>
+            <tr><td><strong>↗ 우상</strong></td><td><strong><abbr class="med-abbr" title="Superior Rectus · 상직근">SR</abbr> · <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></strong></td><td><abbr class="med-abbr" title="Inferior Oblique · 하사근">IO</abbr> · <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></td></tr>
+            <tr><td><strong>↘ 우하</strong></td><td><strong><abbr class="med-abbr" title="Inferior Rectus · 하직근">IR</abbr> · <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></strong></td><td><strong><abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr> · <abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr></strong></td></tr>
+            <tr><td><strong>↖ 좌상</strong></td><td><abbr class="med-abbr" title="Inferior Oblique · 하사근">IO</abbr> · <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></td><td><strong><abbr class="med-abbr" title="Superior Rectus · 상직근">SR</abbr> · <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></strong></td></tr>
+            <tr><td><strong>↙ 좌하</strong></td><td><strong><abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr> · <abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr></strong></td><td><strong><abbr class="med-abbr" title="Inferior Rectus · 하직근">IR</abbr> · <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr></strong></td></tr>
           </tbody>
         </table>
         <p style="margin-top:.75rem"><strong>핵심 원리</strong>:
-          <br/>• 수평 운동은 <strong>CN VI(외전) + 반대쪽 CN III(내전)</strong>의 짝으로 이뤄짐
-          <br/>• 수직 운동은 외전 상태에선 SR/IR(CN III), 내전 상태에선 SO(CN IV)/IO(CN III)가 주도
-          <br/>• 따라서 <strong>"내전된 눈이 아래로 안 내려간다" = CN IV 마비</strong>, <strong>"눈이 외전 안 된다" = CN VI 마비</strong>, <strong>"그 외 거의 다 안 된다" = CN III 마비</strong>
+          <br/>• 수평 운동은 <strong><abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr>(외전) + 반대쪽 <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr>(내전)</strong>의 짝으로 이뤄짐
+          <br/>• 수직 운동은 외전 상태에선 <abbr class="med-abbr" title="Superior Rectus · 상직근">SR</abbr>/<abbr class="med-abbr" title="Inferior Rectus · 하직근">IR</abbr>(<abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr>), 내전 상태에선 <abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr>(<abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr>)/<abbr class="med-abbr" title="Inferior Oblique · 하사근">IO</abbr>(<abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr>)가 주도
+          <br/>• 따라서 <strong>"내전된 눈이 아래로 안 내려간다" = <abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr> 마비</strong>, <strong>"눈이 외전 안 된다" = <abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr> 마비</strong>, <strong>"그 외 거의 다 안 된다" = <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> 마비</strong>
         </p>
       </div>
 
       <!-- CN III palsy card -->
       <div class="test-card oculo">
-        <h4>🔴 CN III (Oculomotor, 동안신경) 마비 — "Down &amp; Out"</h4>
+        <h4>🔴 <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> (Oculomotor, 동안신경) 마비 — "Down &amp; Out"</h4>
         <div class="test-proc">
           <strong>해부·기능 요약</strong>
           <ul>
             <li>핵: <strong>중뇌 superior colliculus 높이</strong> · 적핵 내측</li>
-            <li>지배: MR · SR · IR · IO + LPS(눈꺼풀) + Edinger-Westphal(동공·조절)</li>
+            <li>지배: <abbr class="med-abbr" title="Medial Rectus · 내직근 — 동안신경(3번 뇌신경) 지배">MR</abbr> · <abbr class="med-abbr" title="Superior Rectus · 상직근">SR</abbr> · <abbr class="med-abbr" title="Inferior Rectus · 하직근">IR</abbr> · <abbr class="med-abbr" title="Inferior Oblique · 하사근">IO</abbr> + LPS(눈꺼풀) + Edinger-Westphal(동공·조절)</li>
             <li>주행: 중뇌 발(interpeduncular fossa) → 해면정맥동(cavernous sinus) → superior orbital fissure → 안와</li>
             <li><strong>부교감 섬유가 외곽</strong>에 위치 — 압박성 병변(동맥류 등)에 먼저 손상되고, 허혈성(당뇨 vasa nervorum) 병변에서는 <strong>동공이 보존</strong>됨</li>
           </ul>
@@ -635,7 +634,7 @@ strong abbr.med-abbr { color: inherit; }
         <div class="test-findings">
           <div class="finding-box positive">
             <span class="box-title">🔴 + Finding (완전 마비)</span>
-            ① 눈이 안와 내에서 <strong>"Down &amp; Out"</strong> 위치 (외측·하방으로 고정, LR+SO 단독 작용)<br/>
+            ① 눈이 안와 내에서 <strong>"Down &amp; Out"</strong> 위치 (외측·하방으로 고정, <abbr class="med-abbr" title="Lateral Rectus · 외직근 — 외전신경(6번 뇌신경) 지배">LR</abbr>+<abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr> 단독 작용)<br/>
             ② <strong>Ptosis</strong> (완전 눈꺼풀 처짐, LPS 마비)<br/>
             ③ <strong>산동(mydriasis) + 동공 반사 소실</strong> (complete 병변 시)<br/>
             ④ <strong>조절(accommodation) 상실</strong> — 근거리 독서 불가<br/>
@@ -651,7 +650,7 @@ strong abbr.med-abbr { color: inherit; }
             <span class="box-title">📍 병변 부위 (동측)</span>
             ① Midbrain 핵 자체 (drug, <abbr class="med-abbr" title="Multiple Sclerosis · 다발성경화증">MS</abbr>, 뇌경색 — <strong>Weber · Benedikt · Claude</strong> 증후군)<br/>
             ② Interpeduncular fossa — 동맥류·종양·외상<br/>
-            ③ Cavernous sinus — 종양·감염 (이 경우 CN IV, VI, V1, V2 동반)<br/>
+            ③ Cavernous sinus — 종양·감염 (이 경우 <abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr>, VI, V1, V2 동반)<br/>
             ④ Superior orbital fissure · 안와첨 — 외상·종양
           </div>
         </div>
@@ -663,13 +662,13 @@ strong abbr.med-abbr { color: inherit; }
 
       <!-- CN IV palsy card -->
       <div class="test-card oculo">
-        <h4>🔴 CN IV (Trochlear, 활차신경) 마비 — "수직 복시, 머리 기울임"</h4>
+        <h4>🔴 <abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr> (Trochlear, 활차신경) 마비 — "수직 복시, 머리 기울임"</h4>
         <div class="test-proc">
           <strong>해부·특성</strong>
           <ul>
             <li>핵: <strong>중뇌 inferior colliculus 높이</strong></li>
-            <li>지배: <strong>Superior oblique (SO) 단 하나</strong></li>
-            <li><strong>유일하게 배측(dorsal)에서 뇌간을 탈출</strong>하는 뇌신경이며, <strong>유일하게 교차(decussation)</strong>한다 → <strong>좌측 CN IV 핵이 우측 SO를 지배</strong></li>
+            <li>지배: <strong>Superior oblique (<abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr>) 단 하나</strong></li>
+            <li><strong>유일하게 배측(dorsal)에서 뇌간을 탈출</strong>하는 뇌신경이며, <strong>유일하게 교차(decussation)</strong>한다 → <strong>좌측 <abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr> 핵이 우측 <abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr>를 지배</strong></li>
             <li>두개강 내 주행이 가장 길어 <strong>경미한 두부 외상에도 손상</strong>되기 쉬움 (가장 흔한 단독 외상성 안구운동 마비)</li>
           </ul>
         </div>
@@ -678,8 +677,8 @@ strong abbr.med-abbr { color: inherit; }
             <span class="box-title">🔴 + Finding</span>
             ① <strong>수직 복시</strong> — 계단 내려갈 때·책 읽을 때 심함<br/>
             ② 환측 눈이 상대적으로 <strong>위에 있음</strong> (hypertropia)<br/>
-            ③ 환측 눈을 <strong>내전시키면 아래로 못 내려감</strong> (SO 약화 노출)<br/>
-            ④ 환측 눈이 <strong>정지 상태에서 extorsion</strong> (SO의 내회전 작용 상실)<br/>
+            ③ 환측 눈을 <strong>내전시키면 아래로 못 내려감</strong> (<abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr> 약화 노출)<br/>
+            ④ 환측 눈이 <strong>정지 상태에서 extorsion</strong> (<abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr>의 내회전 작용 상실)<br/>
             ⑤ 보상적 <strong>반대 방향으로 머리 기울임</strong> (head tilt away from affected side)
           </div>
           <div class="finding-box meaning">
@@ -693,9 +692,9 @@ strong abbr.med-abbr { color: inherit; }
             <span class="box-title">📍 병변 부위</span>
             ① <strong>외상</strong>(특히 빈도 1위) — 중뇌 후방 충격<br/>
             ② 미세혈관성 (당뇨·고혈압)<br/>
-            ③ 선천성 (Congenital SO palsy — 환아가 머리 기울이고 촬영된 사진 증거)<br/>
-            ④ 중뇌 병변 — 뇌경색·MS — 단독 CN IV 드묾<br/>
-            <em>※ 교차 때문에 병변 측 ≠ 증상 측 — 좌측 핵 병변 → 우측 SO 약화</em>
+            ③ 선천성 (Congenital <abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr> palsy — 환아가 머리 기울이고 촬영된 사진 증거)<br/>
+            ④ 중뇌 병변 — 뇌경색·<abbr class="med-abbr" title="Multiple Sclerosis · 다발성경화증">MS</abbr> — 단독 <abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr> 드묾<br/>
+            <em>※ 교차 때문에 병변 측 ≠ 증상 측 — 좌측 핵 병변 → 우측 <abbr class="med-abbr" title="Superior Oblique · 상사근 — 활차신경(4번 뇌신경) 지배">SO</abbr> 약화</em>
           </div>
         </div>
         <div class="test-video youtube">
@@ -706,7 +705,7 @@ strong abbr.med-abbr { color: inherit; }
 
       <!-- CN VI palsy card -->
       <div class="test-card oculo">
-        <h4>🔴 CN VI (Abducens, 외전신경) 마비 — "외전 제한, 수평 복시"</h4>
+        <h4>🔴 <abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr> (Abducens, 외전신경) 마비 — "외전 제한, 수평 복시"</h4>
         <div class="test-proc">
           <strong>해부·특성</strong>
           <ul>
@@ -720,24 +719,24 @@ strong abbr.med-abbr { color: inherit; }
           <div class="finding-box positive">
             <span class="box-title">🔴 + Finding</span>
             ① 환측 눈이 <strong>바깥으로(외전) 끝까지 안 돌아감</strong> (정중선 넘지 못함)<br/>
-            ② 정지 위치에서 <strong>내사시 (esotropia)</strong> — MR의 작용 비대칭<br/>
+            ② 정지 위치에서 <strong>내사시 (esotropia)</strong> — <abbr class="med-abbr" title="Medial Rectus · 내직근 — 동안신경(3번 뇌신경) 지배">MR</abbr>의 작용 비대칭<br/>
             ③ <strong>수평 복시</strong> — 환측을 바라볼 때 악화, 반대쪽 볼 때 호전<br/>
             ④ 환자가 <strong>환측 방향으로 얼굴 돌림</strong> (face turn) — 복시 회피
           </div>
           <div class="finding-box meaning">
             <span class="box-title">🧠 임상적 의미</span>
             ① <strong>가장 흔한 안구운동 마비 중 하나</strong> — 미세혈관성(당뇨) 자주<br/>
-            ② <strong>양측 CN VI 마비 = 뇌압 상승 의심</strong> (가성종양·뇌수종) → 즉시 영상검사<br/>
-            ③ <strong>CN VI + 같은 쪽 안면마비(<abbr class="med-abbr" title="Cranial Nerve VII · 7번 뇌신경 — Facial (안면신경)">CN VII</abbr>)</strong> = Foville/Millard-Gubler 증후군 → 뇌교 하부 병변 (뇌경색·종양)<br/>
-            ④ 소아 CN VI 마비 → pontine glioma 배제 필수
+            ② <strong>양측 <abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr> 마비 = 뇌압 상승 의심</strong> (가성종양·뇌수종) → 즉시 영상검사<br/>
+            ③ <strong><abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr> + 같은 쪽 안면마비(<abbr class="med-abbr" title="Cranial Nerve VII · 7번 뇌신경 — Facial (안면신경)">CN VII</abbr>)</strong> = Foville/Millard-Gubler 증후군 → 뇌교 하부 병변 (뇌경색·종양)<br/>
+            ④ 소아 <abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr> 마비 → pontine glioma 배제 필수
           </div>
           <div class="finding-box lesion">
             <span class="box-title">📍 병변 부위 (동측)</span>
-            ① <strong>뇌교 핵</strong> — 뇌경색·MS·종양 (동측 안면마비 동반 시 Millard-Gubler)<br/>
+            ① <strong>뇌교 핵</strong> — 뇌경색·<abbr class="med-abbr" title="Multiple Sclerosis · 다발성경화증">MS</abbr>·종양 (동측 안면마비 동반 시 Millard-Gubler)<br/>
             ② Dorello canal — 뇌압 상승·전이성 종양·감염<br/>
-            ③ <strong>Cavernous sinus</strong> — CN III·IV·V1·V2와 동반 마비<br/>
+            ③ <strong>Cavernous sinus</strong> — <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr>·IV·V1·V2와 동반 마비<br/>
             ④ Superior orbital fissure · 안와 — 외상·종양<br/>
-            <em>※ 핵 자체 병변은 수평 응시 마비(PPRF 동반)로 <strong>양측 눈 동시</strong>에 그쪽을 못 보게 됨</em>
+            <em>※ 핵 자체 병변은 수평 응시 마비(<abbr class="med-abbr" title="Paramedian Pontine Reticular Formation · 곁정중교뇌그물체 — 수평 응시 중추">PPRF</abbr> 동반)로 <strong>양측 눈 동시</strong>에 그쪽을 못 보게 됨</em>
           </div>
         </div>
         <div class="test-video youtube">
@@ -752,14 +751,14 @@ strong abbr.med-abbr { color: inherit; }
         <table class="data-table" style="margin-top:.5rem">
           <thead><tr><th>환자에게 지시한 방향</th><th>움직이지 않는 눈</th><th>→ 병변</th></tr></thead>
           <tbody>
-            <tr><td>우측 주시</td><td>우안 (외전 불가)</td><td><strong>우측 CN VI 마비</strong></td></tr>
-            <tr><td>우측 주시</td><td>좌안 (내전 불가)</td><td><strong>좌측 CN III 마비 (MR)</strong> 또는 <strong>좌측 <abbr class="med-abbr" title="Medial Longitudinal Fasciculus · 내측세로다발 — 동안신경·외전신경 핵을 잇는 백질로, 손상 시 핵간안근마비">MLF</abbr> lesion (<abbr class="med-abbr" title="Internuclear Ophthalmoplegia · 핵간안근마비 — MLF 병변, 내전 장애 + 반대쪽 해리성 안진">INO</abbr>)</strong></td></tr>
-            <tr><td>좌하방 주시 (독서 자세)</td><td>우안 (하강 불가)</td><td><strong>우측 CN IV 마비</strong> (내전된 눈의 하강)</td></tr>
-            <tr><td>우하방 주시</td><td>좌안 (하강 불가)</td><td><strong>좌측 CN IV 마비</strong></td></tr>
-            <tr><td>상방 주시</td><td>일측 하방 고정 + ptosis + blown pupil</td><td><strong>동측 CN III 완전 마비 (동공 침범)</strong> → 🚨 동맥류</td></tr>
-            <tr><td>상방 주시</td><td>일측 하방 + ptosis, <em>동공 정상</em></td><td><strong>동측 CN III 마비 (pupil-sparing)</strong> → 허혈성(당뇨)</td></tr>
-            <tr><td>수평 어느 방향</td><td>양측 눈 모두 그 쪽 못 봄</td><td><strong>뇌간 수평 응시 중추(PPRF) 마비</strong> · 양측 CN VI 마비 (뇌압↑)</td></tr>
-            <tr><td>수평 주시</td><td>내전 eye + 외전 eye 안진</td><td><strong>MLF lesion (INO)</strong> — MS/뇌간경색</td></tr>
+            <tr><td>우측 주시</td><td>우안 (외전 불가)</td><td><strong>우측 <abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr> 마비</strong></td></tr>
+            <tr><td>우측 주시</td><td>좌안 (내전 불가)</td><td><strong>좌측 <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> 마비 (<abbr class="med-abbr" title="Medial Rectus · 내직근 — 동안신경(3번 뇌신경) 지배">MR</abbr>)</strong> 또는 <strong>좌측 <abbr class="med-abbr" title="Medial Longitudinal Fasciculus · 내측세로다발 — 동안신경·외전신경 핵을 잇는 백질로, 손상 시 핵간안근마비">MLF</abbr> lesion (<abbr class="med-abbr" title="Internuclear Ophthalmoplegia · 핵간안근마비 — MLF 병변, 내전 장애 + 반대쪽 해리성 안진">INO</abbr>)</strong></td></tr>
+            <tr><td>좌하방 주시 (독서 자세)</td><td>우안 (하강 불가)</td><td><strong>우측 <abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr> 마비</strong> (내전된 눈의 하강)</td></tr>
+            <tr><td>우하방 주시</td><td>좌안 (하강 불가)</td><td><strong>좌측 <abbr class="med-abbr" title="Cranial Nerve IV · 4번 뇌신경 — Trochlear (활차신경)">CN IV</abbr> 마비</strong></td></tr>
+            <tr><td>상방 주시</td><td>일측 하방 고정 + ptosis + blown pupil</td><td><strong>동측 <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> 완전 마비 (동공 침범)</strong> → 🚨 동맥류</td></tr>
+            <tr><td>상방 주시</td><td>일측 하방 + ptosis, <em>동공 정상</em></td><td><strong>동측 <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> 마비 (pupil-sparing)</strong> → 허혈성(당뇨)</td></tr>
+            <tr><td>수평 어느 방향</td><td>양측 눈 모두 그 쪽 못 봄</td><td><strong>뇌간 수평 응시 중추(<abbr class="med-abbr" title="Paramedian Pontine Reticular Formation · 곁정중교뇌그물체 — 수평 응시 중추">PPRF</abbr>) 마비</strong> · 양측 <abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr> 마비 (뇌압↑)</td></tr>
+            <tr><td>수평 주시</td><td>내전 eye + 외전 eye 안진</td><td><strong><abbr class="med-abbr" title="Medial Longitudinal Fasciculus · 내측세로다발 — 동안신경·외전신경 핵을 잇는 백질로, 손상 시 핵간안근마비">MLF</abbr> lesion (<abbr class="med-abbr" title="Internuclear Ophthalmoplegia · 핵간안근마비 — MLF 병변, 내전 장애 + 반대쪽 해리성 안진">INO</abbr>)</strong> — <abbr class="med-abbr" title="Multiple Sclerosis · 다발성경화증">MS</abbr>/뇌간경색</td></tr>
           </tbody>
         </table>
       </div>
@@ -768,10 +767,10 @@ strong abbr.med-abbr { color: inherit; }
       <div class="callout callout-warn">
         <h4>🧩 동시 마비가 의미하는 병변 위치 (Cavernous Sinus vs Orbital Apex)</h4>
         <ul>
-          <li><strong>CN III + IV + VI</strong> 동시 마비 → <strong>Cavernous sinus syndrome</strong> (+ V1·V2 감각 이상)</li>
+          <li><strong><abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> + IV + VI</strong> 동시 마비 → <strong>Cavernous sinus syndrome</strong> (+ V1·V2 감각 이상)</li>
           <li><strong>CN II 동반</strong> (시력 저하) 시 → <strong>Orbital apex syndrome</strong> (시신경+안구운동 복합)</li>
-          <li><strong>CN III + VII</strong> 한쪽 동반 → 중뇌 복측 병변 (Weber 증후군 · 반대측 편마비 동반)</li>
-          <li><strong>CN VI + 반대측 편마비</strong> → 뇌교 경색 (Millard-Gubler · Foville)</li>
+          <li><strong><abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> + VII</strong> 한쪽 동반 → 중뇌 복측 병변 (Weber 증후군 · 반대측 편마비 동반)</li>
+          <li><strong><abbr class="med-abbr" title="Cranial Nerve VI · 6번 뇌신경 — Abducens (외전신경)">CN VI</abbr> + 반대측 편마비</strong> → 뇌교 경색 (Millard-Gubler · Foville)</li>
         </ul>
       </div>
 
@@ -878,7 +877,7 @@ strong abbr.med-abbr { color: inherit; }
             ① <strong>Hypometric</strong> — 눈이 표적에 못 미치고 보정 saccade 필요<br/>
             ② <strong>Hypermetric</strong> — 눈이 표적을 지나쳐 되돌아옴<br/>
             ③ <strong>Latency 지연</strong> (&gt;200ms) · slow velocity<br/>
-            ④ Internuclear ophthalmoplegia (INO) — 내전 장애 + 반대쪽 해리성 안진
+            ④ Internuclear ophthalmoplegia (<abbr class="med-abbr" title="Internuclear Ophthalmoplegia · 핵간안근마비 — MLF 병변, 내전 장애 + 반대쪽 해리성 안진">INO</abbr>) — 내전 장애 + 반대쪽 해리성 안진
           </div>
           <div class="finding-box meaning">
             <span class="box-title">🧠 임상적 의미</span>
@@ -892,7 +891,7 @@ strong abbr.med-abbr { color: inherit; }
             ① 기저핵 (basal ganglia), superior colliculus<br/>
             ② <strong>소뇌 반구 (dorsal vermis, fastigial nucleus)</strong><br/>
             ③ Frontal eye field (<abbr class="med-abbr" title="Frontal Eye Field · 전두안구야 — 수의적 안구운동(saccade) 피질 중추">FEF</abbr>), dorsolateral prefrontal<br/>
-            ④ <strong>Medial longitudinal fasciculus (MLF)</strong> — 다발성경화증·뇌간경색 의심
+            ④ <strong>Medial longitudinal fasciculus (<abbr class="med-abbr" title="Medial Longitudinal Fasciculus · 내측세로다발 — 동안신경·외전신경 핵을 잇는 백질로, 손상 시 핵간안근마비">MLF</abbr>)</strong> — 다발성경화증·뇌간경색 의심
           </div>
         </div>
         <div class="test-video youtube">
@@ -928,7 +927,7 @@ strong abbr.med-abbr { color: inherit; }
           <div class="finding-box lesion">
             <span class="box-title">📍 병변 부위</span>
             <strong>중뇌 배측 (dorsal midbrain)</strong>의 supraoculomotor area · Edinger-Westphal 부근<br/>
-            CN III 내직근 (medial rectus) supranuclear 조절
+            <abbr class="med-abbr" title="Cranial Nerve III · 3번 뇌신경 — Oculomotor (동안신경)">CN III</abbr> 내직근 (medial rectus) supranuclear 조절
           </div>
         </div>
         <div class="test-video youtube">
@@ -939,7 +938,7 @@ strong abbr.med-abbr { color: inherit; }
 
       <!-- 4.4.5 -->
       <div class="test-card oculo">
-        <h4>4.4.5 VOR Cancellation &amp; Gaze Stability</h4>
+        <h4>4.4.5 <abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> Cancellation &amp; Gaze Stability</h4>
         <div class="test-proc">
           <strong>검사 방법</strong>
           <ol>
@@ -955,17 +954,17 @@ strong abbr.med-abbr { color: inherit; }
           </div>
           <div class="finding-box meaning">
             <span class="box-title">🧠 임상적 의미</span>
-            VOR을 억제(cancel)하지 못함 → 일상에서 머리를 돌리면서 표적을 보기 어려움
+            <abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr>을 억제(cancel)하지 못함 → 일상에서 머리를 돌리면서 표적을 보기 어려움
           </div>
           <div class="finding-box lesion">
             <span class="box-title">📍 병변 부위</span>
-            <strong>소뇌 flocculus / paraflocculus</strong> — VOR 이득 조절 중추<br/>
+            <strong>소뇌 flocculus / paraflocculus</strong> — <abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> 이득 조절 중추<br/>
             Smooth pursuit 경로 (서로 공유됨)
           </div>
         </div>
         <div class="test-video youtube">
           <iframe loading="lazy" src="https://www.youtube.com/embed/ExOs7HSHv-c" title="VOR Cancellation Test" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="video-caption">🎬 VOR Cancellation Test — 기법 시연 (YouTube)</div>
+          <div class="video-caption">🎬 <abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> Cancellation Test — 기법 시연 (YouTube)</div>
         </div>
       </div>
 
@@ -976,9 +975,9 @@ strong abbr.med-abbr { color: inherit; }
           <tbody>
             <tr><td>Primary gaze</td><td>안진 없음</td><td>N / + (방향·vertical 여부)</td></tr>
             <tr><td>Smooth pursuit</td><td>부드러움 · 양측 대칭</td><td>N / saccadic L/R</td></tr>
-            <tr><td>Saccade</td><td>정확 착지 · latency &lt; 200ms</td><td>N / hypo·hyper · INO</td></tr>
+            <tr><td>Saccade</td><td>정확 착지 · latency &lt; 200ms</td><td>N / hypo·hyper · <abbr class="med-abbr" title="Internuclear Ophthalmoplegia · 핵간안근마비 — MLF 병변, 내전 장애 + 반대쪽 해리성 안진">INO</abbr></td></tr>
             <tr><td>NPC</td><td>&lt; 6 cm</td><td>___ cm (3회 평균)</td></tr>
-            <tr><td>VOR cancellation</td><td>표적 고정</td><td>N / 이상</td></tr>
+            <tr><td><abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> cancellation</td><td>표적 고정</td><td>N / 이상</td></tr>
           </tbody>
         </table>
       </div>
@@ -1206,7 +1205,7 @@ strong abbr.med-abbr { color: inherit; }
           </div>
           <div class="finding-box meaning">
             <span class="box-title">🧠 임상적 의미</span>
-            ① → 소뇌 구음 장애 · 뇌졸중·MS 조기 소견<br/>
+            ① → 소뇌 구음 장애 · 뇌졸중·<abbr class="med-abbr" title="Multiple Sclerosis · 다발성경화증">MS</abbr> 조기 소견<br/>
             ② → 축성 소뇌 기능 실조<br/>
             ③④ → Hypotonia — 근방추 gain 조절 실패
           </div>
@@ -1242,7 +1241,7 @@ strong abbr.med-abbr { color: inherit; }
       <!-- 4.6 Vestibular Examination      -->
       <!-- =============================== -->
       <h3>4.6 전정기관 검사 (Vestibular Assessment)</h3>
-      <p class="section-lead">전정계는 <strong>3 semicircular canal</strong>(수평·전·후)과 <strong>2 otolith organ</strong>(utricle·saccule)으로 구성되며, VOR(안구)·VSR(척수·자세)·<abbr class="med-abbr" title="Vestibulocollic Reflex · 전정경부반사 — 머리 안정화 출력">VCR</abbr>(경부)에 출력합니다. 외래에서는 <strong>말초 vs 중추 감별</strong>이 가장 중요합니다 — <abbr class="med-abbr" title="Head Impulse · Nystagmus · Test of Skew — 급성현훈 3종 검사 (말초 vs 중추 감별)">HINTS</abbr> 프로토콜이 기준.</p>
+      <p class="section-lead">전정계는 <strong>3 semicircular canal</strong>(수평·전·후)과 <strong>2 otolith organ</strong>(utricle·saccule)으로 구성되며, <abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr>(안구)·<abbr class="med-abbr" title="Vestibulospinal Reflex · 전정척수반사 — 자세·균형 유지 출력">VSR</abbr>(척수·자세)·<abbr class="med-abbr" title="Vestibulocollic Reflex · 전정경부반사 — 머리 안정화 출력">VCR</abbr>(경부)에 출력합니다. 외래에서는 <strong>말초 vs 중추 감별</strong>이 가장 중요합니다 — <abbr class="med-abbr" title="Head Impulse · Nystagmus · Test of Skew — 급성현훈 3종 검사 (말초 vs 중추 감별)">HINTS</abbr> 프로토콜이 기준.</p>
 
       <div class="principle-card">
         <h3>공통 준비물 · 환자 자세</h3>
@@ -1255,7 +1254,7 @@ strong abbr.med-abbr { color: inherit; }
 
       <!-- 4.6.1 HIT -->
       <div class="test-card vest">
-        <h4>4.6.1 Head Impulse Test (HIT · Halmagyi) — VOR 스크리닝</h4>
+        <h4>4.6.1 Head Impulse Test (<abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 (Halmagyi 검사) — VOR 평가">HIT</abbr> · Halmagyi) — <abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> 스크리닝</h4>
         <div class="test-proc">
           <strong>검사 방법</strong>
           <ol>
@@ -1273,13 +1272,13 @@ strong abbr.med-abbr { color: inherit; }
           </div>
           <div class="finding-box meaning">
             <span class="box-title">🧠 임상적 의미</span>
-            <strong>회전한 쪽 전정 입력의 VOR gain이 감소</strong> — 말초성 전정 손실의 가장 확실한 bedside 지표<br/>
-            <abbr class="med-abbr" title="Acute Vestibular Syndrome · 급성전정증후군">AVS</abbr>에서 HIT+/direction-fixed nystagmus/no skew = <strong>말초</strong>, HIT−는 <strong>중추</strong> (뇌졸중 가능)
+            <strong>회전한 쪽 전정 입력의 <abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> gain이 감소</strong> — 말초성 전정 손실의 가장 확실한 bedside 지표<br/>
+            <abbr class="med-abbr" title="Acute Vestibular Syndrome · 급성전정증후군">AVS</abbr>에서 <abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr>+/direction-fixed nystagmus/no skew = <strong>말초</strong>, <abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr>−는 <strong>중추</strong> (뇌졸중 가능)
           </div>
           <div class="finding-box lesion">
             <span class="box-title">📍 병변 부위</span>
             <strong>회전한 쪽 전정신경 또는 미로</strong> — 전정신경염, 미로염, Ménière's<br/>
-            (HIT 음성이면 전정핵·소뇌 flocculus 등 <strong>중추</strong>로 전환)
+            (<abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr> 음성이면 전정핵·소뇌 flocculus 등 <strong>중추</strong>로 전환)
           </div>
         </div>
         <div class="test-video youtube">
@@ -1290,7 +1289,7 @@ strong abbr.med-abbr { color: inherit; }
 
       <!-- 4.6.2 Dix-Hallpike -->
       <div class="test-card vest">
-        <h4>4.6.2 Dix-Hallpike Maneuver — 후반고리관 BPPV 진단</h4>
+        <h4>4.6.2 Dix-Hallpike Maneuver — 후반고리관 <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr> 진단</h4>
         <div class="test-proc">
           <strong>검사 방법</strong>
           <ol>
@@ -1309,7 +1308,7 @@ strong abbr.med-abbr { color: inherit; }
           </div>
           <div class="finding-box meaning">
             <span class="box-title">🧠 임상적 의미</span>
-            <strong>검사한 쪽 후반고리관 (posterior SCC) BPPV</strong> — 가장 흔한 형태 (80%)<br/>
+            <strong>검사한 쪽 후반고리관 (posterior <abbr class="med-abbr" title="Semicircular Canal · 반고리관 — 내이의 회전 감지기">SCC</abbr>) <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr></strong> — 가장 흔한 형태 (80%)<br/>
             오탈석(otoconia)이 이석기관에서 떨어져 cupula 아래 쌓임 (canalolithiasis)<br/>
             → 바로 <strong>Epley maneuver</strong>로 치료 가능
           </div>
@@ -1321,13 +1320,13 @@ strong abbr.med-abbr { color: inherit; }
         </div>
         <div class="test-video youtube">
           <iframe loading="lazy" src="https://www.youtube.com/embed/kEM9p4EX1jk" title="The Dix Hallpike test for BPPV" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="video-caption">🎬 The Dix-Hallpike Test for BPPV — 임상 시연 (YouTube)</div>
+          <div class="video-caption">🎬 The Dix-Hallpike Test for <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr> — 임상 시연 (YouTube)</div>
         </div>
       </div>
 
       <!-- 4.6.3 Supine Roll -->
       <div class="test-card vest">
-        <h4>4.6.3 Supine Roll Test (Pagnini-McClure) — 수평반고리관 BPPV</h4>
+        <h4>4.6.3 Supine Roll Test (Pagnini-McClure) — 수평반고리관 <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr></h4>
         <div class="test-proc">
           <strong>검사 방법</strong>
           <ol>
@@ -1352,12 +1351,12 @@ strong abbr.med-abbr { color: inherit; }
           <div class="finding-box lesion">
             <span class="box-title">📍 병변 부위</span>
             <strong>Horizontal (lateral) semicircular canal — 병변 측</strong><br/>
-            후반고리관 다음으로 흔한 BPPV 형태 (~10-15%)
+            후반고리관 다음으로 흔한 <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr> 형태 (~10-15%)
           </div>
         </div>
         <div class="test-video youtube">
           <iframe loading="lazy" src="https://www.youtube.com/embed/89njEZWgHZE" title="Supine Head Roll Test for Horizontal Canal BPPV" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="video-caption">🎬 Supine Head Roll Test — 수평반고리관 BPPV 시연 (YouTube)</div>
+          <div class="video-caption">🎬 Supine Head Roll Test — 수평반고리관 <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr> 시연 (YouTube)</div>
         </div>
       </div>
 
@@ -1415,14 +1414,14 @@ strong abbr.med-abbr { color: inherit; }
           </div>
           <div class="finding-box meaning">
             <span class="box-title">🧠 임상적 의미</span>
-            전정척수 (VSR) 비대칭 — 병변 측으로 자동 편향<br/>
-            재현성이 중간 수준이므로 <strong>HIT·Head Shake와 조합</strong>해 해석<br/>
+            전정척수 (<abbr class="med-abbr" title="Vestibulospinal Reflex · 전정척수반사 — 자세·균형 유지 출력">VSR</abbr>) 비대칭 — 병변 측으로 자동 편향<br/>
+            재현성이 중간 수준이므로 <strong><abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr>·Head Shake와 조합</strong>해 해석<br/>
             뇌졸중·약물·말초 전정 모두 양성 가능 (비특이적)
           </div>
           <div class="finding-box lesion">
             <span class="box-title">📍 병변 부위</span>
             <strong>회전한 쪽 전정계 (말초 또는 중추)</strong><br/>
-            Lateral vestibulospinal tract · Descending MLF · 소뇌 vermis
+            Lateral vestibulospinal tract · Descending <abbr class="med-abbr" title="Medial Longitudinal Fasciculus · 내측세로다발 — 동안신경·외전신경 핵을 잇는 백질로, 손상 시 핵간안근마비">MLF</abbr> · 소뇌 vermis
           </div>
         </div>
         <div class="test-video youtube">
@@ -1433,7 +1432,7 @@ strong abbr.med-abbr { color: inherit; }
 
       <!-- 4.6.6 DVA -->
       <div class="test-card vest">
-        <h4>4.6.6 Dynamic Visual Acuity (DVA) — VOR 기능 정량</h4>
+        <h4>4.6.6 Dynamic Visual Acuity (DVA) — <abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> 기능 정량</h4>
         <div class="test-proc">
           <strong>검사 방법</strong>
           <ol>
@@ -1449,7 +1448,7 @@ strong abbr.med-abbr { color: inherit; }
           </div>
           <div class="finding-box meaning">
             <span class="box-title">🧠 임상적 의미</span>
-            VOR 이득 저하 → 머리 움직임 중 망막상 안정화 실패<br/>
+            <abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> 이득 저하 → 머리 움직임 중 망막상 안정화 실패<br/>
             양측성 전정 기능 저하에 민감도 ~85%<br/>
             환자 주관 증상: "걸으면서 간판 글씨가 흔들려요" (oscillopsia)
           </div>
@@ -1466,8 +1465,8 @@ strong abbr.med-abbr { color: inherit; }
       </div>
 
       <div class="callout callout-danger">
-        <h4>🔴 HINTS 프로토콜 — 급성 어지럼 응급 평가 (말초 vs 중추)</h4>
-        <p>급성 어지럼+안진 환자에서 <strong>말초성 vs 중추성(뇌졸중) 감별</strong>의 골드 스탠다드 — <strong>초기 MRI보다 민감</strong>합니다.</p>
+        <h4>🔴 <abbr class="med-abbr" title="Head Impulse · Nystagmus · Test of Skew — 급성현훈 3종 검사 (말초 vs 중추 감별)">HINTS</abbr> 프로토콜 — 급성 어지럼 응급 평가 (말초 vs 중추)</h4>
+        <p>급성 어지럼+안진 환자에서 <strong>말초성 vs 중추성(뇌졸중) 감별</strong>의 골드 스탠다드 — <strong>초기 <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr>보다 민감</strong>합니다.</p>
         <table class="data-table" style="margin-top:.5rem">
           <thead><tr><th>항목</th><th>말초 (안심)</th><th>중추 (즉시 응급실)</th></tr></thead>
           <tbody>
@@ -1477,7 +1476,7 @@ strong abbr.med-abbr { color: inherit; }
           </tbody>
         </table>
         <p style="margin-top:.5rem"><strong>세 중 하나라도 "중추" 양성 → 즉시 응급실 / 뇌졸중 프로토콜</strong></p>
-        <p><strong>Kattah JC et al.</strong> HINTS to Diagnose Stroke in AVS. <em>Stroke</em> 2009.</p>
+        <p><strong>Kattah JC et al.</strong> <abbr class="med-abbr" title="Head Impulse · Nystagmus · Test of Skew — 급성현훈 3종 검사 (말초 vs 중추 감별)">HINTS</abbr> to Diagnose Stroke in <abbr class="med-abbr" title="Acute Vestibular Syndrome · 급성전정증후군">AVS</abbr>. <em>Stroke</em> 2009.</p>
       </div>
 
       <div class="callout callout-warn">
@@ -1485,9 +1484,9 @@ strong abbr.med-abbr { color: inherit; }
         <table class="data-table" style="margin-top:.5rem">
           <thead><tr><th>검사</th><th>정상</th><th>+ Finding / 기록</th></tr></thead>
           <tbody>
-            <tr><td>HIT (우/좌)</td><td>눈 고정 유지</td><td>Catch-up saccade → 회전한 쪽 전정 결손</td></tr>
-            <tr><td>Dix-Hallpike (우/좌)</td><td>안진 없음</td><td>Torsional up-beat, latency __s → 해당 쪽 후반고리관 BPPV</td></tr>
-            <tr><td>Supine Roll (우/좌)</td><td>안진 없음</td><td>Geo/Apogeo → 강한 쪽 수평반고리관 BPPV</td></tr>
+            <tr><td><abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr> (우/좌)</td><td>눈 고정 유지</td><td>Catch-up saccade → 회전한 쪽 전정 결손</td></tr>
+            <tr><td>Dix-Hallpike (우/좌)</td><td>안진 없음</td><td>Torsional up-beat, latency __s → 해당 쪽 후반고리관 <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr></td></tr>
+            <tr><td>Supine Roll (우/좌)</td><td>안진 없음</td><td>Geo/Apogeo → 강한 쪽 수평반고리관 <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr></td></tr>
             <tr><td>Head Shake</td><td>&lt;3 beats</td><td>Fast phase → 건측, 느린 상 → 병변</td></tr>
             <tr><td>Fukuda 50 steps</td><td>&lt; 30° 회전</td><td>__° (&gt; 45° → 병변 측)</td></tr>
             <tr><td>DVA 차이</td><td>0-2 line</td><td>__ line (≥3 → 양측 전정병증)</td></tr>
@@ -1499,10 +1498,10 @@ strong abbr.med-abbr { color: inherit; }
         <h4>🔵 핵심 근거 문헌</h4>
         <ul>
           <li><strong>Master CL et al.</strong> Vision Diagnoses Are Common After Concussion in Adolescents. <em>Clin Pediatr</em> 2016.</li>
-          <li><strong>Mucha A et al.</strong> A brief vestibular/ocular motor screening (VOMS) assessment. <em>Am J Sports Med</em> 2014;42(10):2479.</li>
-          <li><strong>Kattah JC et al.</strong> HINTS to diagnose stroke in the acute vestibular syndrome. <em>Stroke</em> 2009;40(11):3504.</li>
+          <li><strong>Mucha A et al.</strong> A brief vestibular/ocular motor screening (<abbr class="med-abbr" title="Vestibular/Ocular Motor Screening · 전정-안구운동 선별검사 (Mucha 2014)">VOMS</abbr>) assessment. <em>Am J Sports Med</em> 2014;42(10):2479.</li>
+          <li><strong>Kattah JC et al.</strong> <abbr class="med-abbr" title="Head Impulse · Nystagmus · Test of Skew — 급성현훈 3종 검사 (말초 vs 중추 감별)">HINTS</abbr> to diagnose stroke in the acute vestibular syndrome. <em>Stroke</em> 2009;40(11):3504.</li>
           <li><strong>Halmagyi GM et al.</strong> The Video Head Impulse Test. <em>Front Neurol</em> 2017;8:258.</li>
-          <li><strong>Bhattacharyya N et al.</strong> Clinical Practice Guideline: BPPV (Update). <em>Otolaryngol HNS</em> 2017;156(3 Suppl).</li>
+          <li><strong>Bhattacharyya N et al.</strong> Clinical Practice Guideline: <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr> (Update). <em>Otolaryngol HNS</em> 2017;156(3 Suppl).</li>
           <li><strong>Strupp M, Brandt T.</strong> Peripheral vestibular disorders. <em>Curr Opin Neurol</em> 2013.</li>
         </ul>
       </div>
@@ -1515,7 +1514,7 @@ strong abbr.med-abbr { color: inherit; }
       </ul>
 
       <h3>4.8 재현성과 신뢰도</h3>
-      <p>대부분의 FN 검사는 <strong>중간 정도의 inter/intra-examiner reliability</strong>를 보이며, 훈련·표준화된 프로토콜이 필수입니다. (Hickey et al. <em>Chiropr Man Therap</em> 2021)</p>
+      <p>대부분의 <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> 검사는 <strong>중간 정도의 inter/intra-examiner reliability</strong>를 보이며, 훈련·표준화된 프로토콜이 필수입니다. (Hickey et al. <em>Chiropr Man Therap</em> 2021)</p>
     </section>
 
     <!-- ========== PART V. 치료 ========== -->
@@ -1530,7 +1529,7 @@ strong abbr.med-abbr { color: inherit; }
 
       <ul>
         <li>관절 hypomobility → HVLA / MOB / MET</li>
-        <li>VOR 저하 → Gaze stabilization · VOR x1 x2</li>
+        <li><abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> 저하 → Gaze stabilization · <abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> x1 x2</li>
         <li>Saccade·Pursuit 이상 → 시운동 재훈련</li>
         <li>Romberg 이상 → 고유수용 재훈련 (BAPS · Foam)</li>
         <li>자율 불균형 → 횡격막 호흡 · slow-paced breathing (6/min)</li>
@@ -1616,12 +1615,12 @@ strong abbr.med-abbr { color: inherit; }
       <h2>⭐ Part VI. 치료 후 재평가 — Post-Treatment Reassessment</h2>
 
       <div class="callout callout-success">
-        <h4>🔑 FN 임상의 핵심 원칙 "Test → Treat → Re-test"</h4>
+        <h4>🔑 <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> 임상의 핵심 원칙 "Test → Treat → Re-test"</h4>
         <p>기능신경학 임상은 <strong>진단–치료–재검사 3단 cycle</strong>이 필수입니다. 치료가 적절했는지 확인하는 것은 <strong>증상 호전</strong>이 아니라 <strong>치료 전 양성이었던 검사 소견의 객관적 변화</strong>입니다.</p>
         <ul>
           <li><strong>동일 조건·동일 검사자·동일 프로토콜</strong>로 재검사 (검사자 bias 최소화)</li>
           <li><strong>pre-test 양성이었던 검사를 우선 재검사</strong> — 가장 민감한 변화 지표</li>
-          <li>증상(subjective) + 검사 소견(objective) + 기능 점수(VOMS·<abbr class="med-abbr" title="Dizziness Handicap Inventory · 어지럼장애지수 (0-100, ≥18점 변화가 임상적으로 의미)">DHI</abbr> 등) <strong>세 축 동시</strong> 추적</li>
+          <li>증상(subjective) + 검사 소견(objective) + 기능 점수(<abbr class="med-abbr" title="Vestibular/Ocular Motor Screening · 전정-안구운동 선별검사 (Mucha 2014)">VOMS</abbr>·<abbr class="med-abbr" title="Dizziness Handicap Inventory · 어지럼장애지수 (0-100, ≥18점 변화가 임상적으로 의미)">DHI</abbr> 등) <strong>세 축 동시</strong> 추적</li>
         </ul>
       </div>
 
@@ -1634,18 +1633,18 @@ strong abbr.med-abbr { color: inherit; }
             <td><strong>즉각 (0-5분 post)</strong></td>
             <td>신경학적 reset · 기계수용기 input 변화 · spinal/supraspinal reflex modulation</td>
             <td>Oculomotor·Cerebellar·Vestibular 중 사전에 양성이었던 주요 검사 3-5개</td>
-            <td>검사 수행 질 즉시 향상 (saccadic → smooth, dysmetria 감소, HIT catch-up saccade 소실 등)</td>
+            <td>검사 수행 질 즉시 향상 (saccadic → smooth, dysmetria 감소, <abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr> catch-up saccade 소실 등)</td>
           </tr>
           <tr>
             <td><strong>단기 (24시간-1주)</strong></td>
             <td>Consolidation · synaptic plasticity · adaptation</td>
-            <td>Objective tests + VOMS score + 증상 scale</td>
+            <td>Objective tests + <abbr class="med-abbr" title="Vestibular/Ocular Motor Screening · 전정-안구운동 선별검사 (Mucha 2014)">VOMS</abbr> score + 증상 scale</td>
             <td>지속 효과 여부 · 재발 여부</td>
           </tr>
           <tr>
             <td><strong>중·장기 (2-4주, 3개월)</strong></td>
             <td>Neuroplastic 재조직 · LTP/LTD 정착</td>
-            <td>완전한 FN battery 재시행 + 기능 점수 + 환자 보고 결과</td>
+            <td>완전한 <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> battery 재시행 + 기능 점수 + 환자 보고 결과</td>
             <td><abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> 이상의 임상적 의미 변화 · 기능 회복</td>
           </tr>
         </tbody>
@@ -1739,7 +1738,7 @@ strong abbr.med-abbr { color: inherit; }
         <h4>🟠 전정 기능 재평가 — Vestibular Re-test</h4>
         <p><strong>우선순위 검사</strong>:</p>
         <ul>
-          <li><strong>HIT</strong> — Catch-up saccade 소실 여부 (VOR gain 회복)</li>
+          <li><strong><abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr></strong> — Catch-up saccade 소실 여부 (<abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> gain 회복)</li>
           <li><strong>Dix-Hallpike</strong> — Epley 후 <strong>반드시 재시행</strong> (안진·어지럼 소실 확인)</li>
           <li><strong>Fukuda</strong> — 회전 각도 감소 (pre 45° → post 20°)</li>
           <li><strong>Head Shake</strong> — beats 횟수 감소</li>
@@ -1748,84 +1747,84 @@ strong abbr.med-abbr { color: inherit; }
         <div class="test-findings">
           <div class="finding-box meaning">
             <span class="box-title">🟢 적절한 치료 반응</span>
-            ① BPPV: Dix-Hallpike <strong>재시행 시 안진 소실</strong> (Epley 성공의 직접 지표)<br/>
-            ② HIT catch-up saccade 진폭 감소 또는 소실<br/>
+            ① <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr>: Dix-Hallpike <strong>재시행 시 안진 소실</strong> (Epley 성공의 직접 지표)<br/>
+            ② <abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr> catch-up saccade 진폭 감소 또는 소실<br/>
             ③ Fukuda 회전 &lt; 30°<br/>
-            ④ DHI 점수 18점 이상 감소 (MCID)
+            ④ <abbr class="med-abbr" title="Dizziness Handicap Inventory · 어지럼장애지수 (0-100, ≥18점 변화가 임상적으로 의미)">DHI</abbr> 점수 18점 이상 감소 (<abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr>)
           </div>
           <div class="finding-box positive">
             <span class="box-title">🟡 불충분한 반응</span>
-            ① BPPV 부분 호전 — Epley 재반복 또는 다른 canal 평가<br/>
-            ② HIT 변화 없음 — 중추성 재검토<br/>
+            ① <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr> 부분 호전 — Epley 재반복 또는 다른 canal 평가<br/>
+            ② <abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr> 변화 없음 — 중추성 재검토<br/>
             ③ 어지럼 변화 &lt; 1점 (0-10 스케일)
           </div>
           <div class="finding-box lesion">
             <span class="box-title">🔴 악화 · 즉시 중단</span>
             ① Dix-Hallpike에서 새로운 <strong>수직·방향 바뀜 안진</strong> 출현<br/>
-            ② HIT 음성화 + 심한 어지럼 → <strong>후순환 뇌경색 의심</strong><br/>
+            ② <abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr> 음성화 + 심한 어지럼 → <strong>후순환 뇌경색 의심</strong><br/>
             ③ 기립 시 새로운 이신경 결손<br/>
-            → <strong>즉시 응급실 · HINTS + 뇌 MRI</strong>
+            → <strong>즉시 응급실 · <abbr class="med-abbr" title="Head Impulse · Nystagmus · Test of Skew — 급성현훈 3종 검사 (말초 vs 중추 감별)">HINTS</abbr> + 뇌 <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr></strong>
           </div>
         </div>
       </div>
 
-      <h3>6.3 Validated 도구와 MCID (최소 임상적 의미 차이)</h3>
+      <h3>6.3 Validated 도구와 <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> (최소 임상적 의미 차이)</h3>
       <p>재평가 결과를 정량적으로 판정하기 위한 검증된 도구와 임상적으로 의미 있는 변화의 기준점입니다.</p>
       <table class="data-table">
-        <thead><tr><th>도구</th><th>영역</th><th>범위 / MCID</th><th>해석</th></tr></thead>
+        <thead><tr><th>도구</th><th>영역</th><th>범위 / <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr></th><th>해석</th></tr></thead>
         <tbody>
           <tr>
-            <td><strong>VOMS 증상 점수</strong></td>
+            <td><strong><abbr class="med-abbr" title="Vestibular/Ocular Motor Screening · 전정-안구운동 선별검사 (Mucha 2014)">VOMS</abbr> 증상 점수</strong></td>
             <td>안구·전정 통합</td>
             <td>각 항목 0-10 · <strong>≥ 2점 변화</strong> = 임상적 의미</td>
             <td>5개 subtest 중 1개라도 ≥ 2점 증가 시 양성. 치료 후 각 항목 점수 감소 추적</td>
           </tr>
           <tr>
-            <td><strong>DHI</strong> (Dizziness Handicap Inventory)</td>
+            <td><strong><abbr class="med-abbr" title="Dizziness Handicap Inventory · 어지럼장애지수 (0-100, ≥18점 변화가 임상적으로 의미)">DHI</abbr></strong> (Dizziness Handicap Inventory)</td>
             <td>어지럼 기능 영향</td>
-            <td>0-100 · <strong>MCID 18점 감소</strong></td>
+            <td>0-100 · <strong><abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> 18점 감소</strong></td>
             <td>전정 재활 주 outcome measure</td>
           </tr>
           <tr>
             <td><strong><abbr class="med-abbr" title="Post-Concussion Symptom Scale · 뇌진탕 후 증상 척도">PCSS</abbr></strong> (Post-Concussion Symptom Scale)</td>
             <td>뇌진탕 증상 종합</td>
-            <td>0-132 · <strong>MCID 26.5점 감소</strong> · 증상 수 ≥ 5.5개 감소</td>
+            <td>0-132 · <strong><abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> 26.5점 감소</strong> · 증상 수 ≥ 5.5개 감소</td>
             <td>뇌진탕 회복 추적</td>
           </tr>
           <tr>
             <td><strong><abbr class="med-abbr" title="Rivermead Post-Concussion Symptoms Questionnaire · 뇌진탕 후 증상 설문지">RPQ</abbr></strong> (Rivermead Post-Concussion)</td>
             <td>뇌진탕 3/13 증상</td>
-            <td>RPQ-3 MCID 2점 · RPQ-13 MCID 8점</td>
+            <td><abbr class="med-abbr" title="Rivermead Post-Concussion Symptoms Questionnaire · 뇌진탕 후 증상 설문지">RPQ</abbr>-3 <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> 2점 · <abbr class="med-abbr" title="Rivermead Post-Concussion Symptoms Questionnaire · 뇌진탕 후 증상 설문지">RPQ</abbr>-13 <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> 8점</td>
             <td>민감도 좋은 뇌진탕 도구</td>
           </tr>
           <tr>
             <td><strong><abbr class="med-abbr" title="Balance Error Scoring System · 균형 오류 채점 시스템 (3자세 × 2면)">BESS</abbr></strong> (Balance Error Scoring System)</td>
             <td>균형·자세 조절</td>
-            <td>3자세 × 2면 총 오류 수 · MCID 9.4 오류 감소</td>
+            <td>3자세 × 2면 총 오류 수 · <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> 9.4 오류 감소</td>
             <td>sideline·외래 둘 다 가능</td>
           </tr>
           <tr>
             <td><strong>FGA</strong> (Functional Gait Assessment)</td>
             <td>기능적 보행</td>
-            <td>0-30 · MCID 6점 · &lt;23 낙상 위험</td>
+            <td>0-30 · <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> 6점 · &lt;23 낙상 위험</td>
             <td>어지럼 환자 낙상 예측</td>
           </tr>
           <tr>
             <td><strong>NPC 거리</strong></td>
             <td>수렴</td>
-            <td>cm 측정 · MCID <strong>2 cm</strong> 감소</td>
+            <td>cm 측정 · <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> <strong>2 cm</strong> 감소</td>
             <td>뇌진탕 회복 빠른 지표</td>
           </tr>
           <tr>
             <td><strong><abbr class="med-abbr" title="Numeric Pain Rating Scale · 숫자통증등급 (0-10)">NPRS</abbr> / <abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도 (통증 등 주관적 강도)">VAS</abbr></strong></td>
             <td>통증·어지럼</td>
-            <td>0-10 · MCID <strong>2점 이상 감소</strong></td>
+            <td>0-10 · <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> <strong>2점 이상 감소</strong></td>
             <td>주관적 증상</td>
           </tr>
           <tr>
             <td><strong>NDI / ODI</strong></td>
             <td>경추·요추 기능장애</td>
-            <td>0-50 · MCID 7-10점</td>
+            <td>0-50 · <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> 7-10점</td>
             <td>경부성 어지럼 동반 시</td>
           </tr>
         </tbody>
@@ -1859,7 +1858,7 @@ strong abbr.med-abbr { color: inherit; }
               <td>🔴 <strong>Adverse</strong></td>
               <td>새로운 양성 소견 · 기존 악화</td>
               <td>≥ 2점 악화</td>
-              <td><strong>즉시 중단</strong> · 영상 · 응급 의뢰 (특히 central nystagmus, HIT 음성화)</td>
+              <td><strong>즉시 중단</strong> · 영상 · 응급 의뢰 (특히 central nystagmus, <abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr> 음성화)</td>
             </tr>
           </tbody>
         </table>
@@ -1873,14 +1872,14 @@ strong abbr.med-abbr { color: inherit; }
           <tbody>
             <tr><td>Smooth Pursuit 양측</td><td>R saccadic</td><td>R smooth</td><td>정상화</td><td>🟢</td></tr>
             <tr><td>NPC (cm)</td><td>___</td><td>___</td><td>__ cm 감소</td><td>🟢/🟡/🟠</td></tr>
-            <tr><td>HIT R / L</td><td>R +</td><td>R −</td><td>catch-up 소실</td><td>🟢</td></tr>
+            <tr><td><abbr class="med-abbr" title="Head Impulse Test · 두부충동검사 — 전정-안반사 평가">HIT</abbr> R / L</td><td>R +</td><td>R −</td><td>catch-up 소실</td><td>🟢</td></tr>
             <tr><td>Dix-Hallpike R / L</td><td>R +</td><td>R −</td><td>안진 소실 (Epley 후)</td><td>🟢</td></tr>
             <tr><td>Fukuda 회전 각도</td><td>__°</td><td>__°</td><td>__° 감소</td><td>🟢/🟡</td></tr>
             <tr><td>RAM R / L (10초)</td><td>R__ L__</td><td>R__ L__</td><td>차이 __%</td><td>🟢/🟡</td></tr>
             <tr><td>Tandem 10걸음 실패</td><td>__회</td><td>__회</td><td>__회 감소</td><td>🟢/🟡</td></tr>
-            <tr><td>VOMS 증상 (0-10)</td><td>__</td><td>__</td><td>__ 변화</td><td>≥2 = 의미</td></tr>
-            <tr><td>DHI (0-100)</td><td>__</td><td>__</td><td>__ 감소</td><td>≥18 = MCID</td></tr>
-            <tr><td>NPRS (0-10)</td><td>__</td><td>__</td><td>__ 감소</td><td>≥2 = MCID</td></tr>
+            <tr><td><abbr class="med-abbr" title="Vestibular/Ocular Motor Screening · 전정-안구운동 선별검사 (Mucha 2014)">VOMS</abbr> 증상 (0-10)</td><td>__</td><td>__</td><td>__ 변화</td><td>≥2 = 의미</td></tr>
+            <tr><td><abbr class="med-abbr" title="Dizziness Handicap Inventory · 어지럼장애지수 (0-100, ≥18점 변화가 임상적으로 의미)">DHI</abbr> (0-100)</td><td>__</td><td>__</td><td>__ 감소</td><td>≥18 = <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr></td></tr>
+            <tr><td><abbr class="med-abbr" title="Numeric Pain Rating Scale · 숫자통증등급 (0-10)">NPRS</abbr> (0-10)</td><td>__</td><td>__</td><td>__ 감소</td><td>≥2 = <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr></td></tr>
           </tbody>
         </table>
       </div>
@@ -1888,14 +1887,14 @@ strong abbr.med-abbr { color: inherit; }
       <h3>6.6 근거 문헌</h3>
       <div class="callout callout-info">
         <ul>
-          <li><strong>Mucha A et al.</strong> A brief VOMS assessment to evaluate concussions: Preliminary findings. <em>Am J Sports Med</em> 2014;42(10):2479-86. (VOMS 원전)</li>
-          <li><strong>Elbin RJ, Schatz P, Covassin T.</strong> VOMS change scores and concussion recovery. King-Devick 2018.</li>
+          <li><strong>Mucha A et al.</strong> A brief <abbr class="med-abbr" title="Vestibular/Ocular Motor Screening · 전정-안구운동 선별검사 (Mucha 2014)">VOMS</abbr> assessment to evaluate concussions: Preliminary findings. <em>Am J Sports Med</em> 2014;42(10):2479-86. (<abbr class="med-abbr" title="Vestibular/Ocular Motor Screening · 전정-안구운동 선별검사 (Mucha 2014)">VOMS</abbr> 원전)</li>
+          <li><strong>Elbin RJ, Schatz P, Covassin T.</strong> <abbr class="med-abbr" title="Vestibular/Ocular Motor Screening · 전정-안구운동 선별검사 (Mucha 2014)">VOMS</abbr> change scores and concussion recovery. King-Devick 2018.</li>
           <li><strong>Quatman-Yates CC et al.</strong> Physical Therapy Evaluation and Treatment After Concussion/Mild <abbr class="med-abbr" title="Traumatic Brain Injury · 외상성 뇌손상">TBI</abbr>: <abbr class="med-abbr" title="Clinical Practice Guideline · 임상진료지침">CPG</abbr>. <em>J Orthop Sports Phys Ther</em> 2020;50(4):CPG1.</li>
-          <li><strong>Whitney SL et al.</strong> Dizziness Handicap Inventory: MCID 및 reliability. 전정 재활 표준</li>
-          <li><strong>Iverson GL et al.</strong> PCSS MCID and responsiveness. <em>Brain Inj</em> 2017.</li>
-          <li><strong>Holt KR et al.</strong> Effect of Chiropractic on Oculomotor Outcomes in <abbr class="med-abbr" title="mild Traumatic Brain Injury · 경도 외상성 뇌손상 (뇌진탕)">mTBI</abbr>: RCT. <em>J Manipulative Physiol Ther</em> 2024.</li>
-          <li><strong>Hickey M et al.</strong> Inter-rater reliability of FN tests in chiropractic. <em>Chiropr Man Therap</em> 2021.</li>
-          <li><strong>Kattah JC et al.</strong> HINTS to distinguish peripheral from central AVS. <em>Stroke</em> 2009.</li>
+          <li><strong>Whitney SL et al.</strong> Dizziness Handicap Inventory: <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> 및 reliability. 전정 재활 표준</li>
+          <li><strong>Iverson GL et al.</strong> <abbr class="med-abbr" title="Post-Concussion Symptom Scale · 뇌진탕 후 증상 척도">PCSS</abbr> <abbr class="med-abbr" title="Minimal Clinically Important Difference · 최소 임상적 의미 차이 — 환자가 의미 있다고 느끼는 변화의 최소 단위">MCID</abbr> and responsiveness. <em>Brain Inj</em> 2017.</li>
+          <li><strong>Holt KR et al.</strong> Effect of Chiropractic on Oculomotor Outcomes in <abbr class="med-abbr" title="mild Traumatic Brain Injury · 경도 외상성 뇌손상 (뇌진탕)">mTBI</abbr>: <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험 — 근거 피라미드 상위">RCT</abbr>. <em>J Manipulative Physiol Ther</em> 2024.</li>
+          <li><strong>Hickey M et al.</strong> Inter-rater reliability of <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr> tests in chiropractic. <em>Chiropr Man Therap</em> 2021.</li>
+          <li><strong>Kattah JC et al.</strong> <abbr class="med-abbr" title="Head Impulse · Nystagmus · Test of Skew — 급성현훈 3종 검사 (말초 vs 중추 감별)">HINTS</abbr> to distinguish peripheral from central <abbr class="med-abbr" title="Acute Vestibular Syndrome · 급성전정증후군">AVS</abbr>. <em>Stroke</em> 2009.</li>
         </ul>
       </div>
     </section>
@@ -1907,9 +1906,9 @@ strong abbr.med-abbr { color: inherit; }
       <table class="data-table">
         <thead><tr><th>적응증</th><th>근거 수준</th><th>대표 인용</th></tr></thead>
         <tbody>
-          <tr><td>BPPV canalith repositioning</td><td><span class="evidence ev-strong">🟢 Strong</span></td><td>Bhattacharyya 2017 CPG</td></tr>
+          <tr><td><abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 — 이석 이탈에 의한 가장 흔한 어지럼">BPPV</abbr> canalith repositioning</td><td><span class="evidence ev-strong">🟢 Strong</span></td><td>Bhattacharyya 2017 <abbr class="med-abbr" title="Clinical Practice Guideline · 임상진료지침">CPG</abbr></td></tr>
           <tr><td>Vestibular rehab (unilateral periph)</td><td><span class="evidence ev-strong">🟢 Strong</span></td><td>Hillier Cochrane 2015</td></tr>
-          <tr><td>Concussion vestib/ocular rehab</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Schneider 2014 RCT</td></tr>
+          <tr><td>Concussion vestib/ocular rehab</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Schneider 2014 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험 — 근거 피라미드 상위">RCT</abbr></td></tr>
           <tr><td>Cervicogenic headache SMT</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Bryans JMPT 2011</td></tr>
           <tr><td>중추 감작 통증 교육+운동</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Moseley 2015</td></tr>
           <tr><td>만성 요통 SMT</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Rubinstein Cochrane 2013</td></tr>
@@ -1922,7 +1921,7 @@ strong abbr.med-abbr { color: inherit; }
     <!-- ========== PART VIII. 비판적 시각 (강조 섹션) ========== -->
     <section id="critical" style="scroll-margin-top: 120px;">
       <h2>🔴 Part VIII. 비판적 시각 — 논쟁과 한계</h2>
-      <p class="section-lead"><strong>환자·학생·동료에게 솔직하게 알려야 할 FN의 한계와 논쟁 지점</strong>입니다. 근거 있는 부분과 그렇지 않은 부분을 명확히 구분하지 않으면 의학적 신뢰를 잃습니다.</p>
+      <p class="section-lead"><strong>환자·학생·동료에게 솔직하게 알려야 할 <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr>의 한계와 논쟁 지점</strong>입니다. 근거 있는 부분과 그렇지 않은 부분을 명확히 구분하지 않으면 의학적 신뢰를 잃습니다.</p>
 
       <div class="callout callout-danger">
         <h4>🔴 Carrick Functional Neurology의 주요 비판 (Meyer et al. 2017, 2021)</h4>
@@ -1931,7 +1930,7 @@ strong abbr.med-abbr { color: inherit; }
           <li>진단 도구의 재현성·신뢰도가 peer-review에서 충분히 확립되지 않음</li>
           <li>"Hemisphericity" 개념의 단순화가 현대 신경과학과 거리</li>
           <li>고가의 사설 교육·인증 시스템</li>
-          <li>임상 효과의 <strong>RCT 증명 부족</strong> — 개별 증례·공개 세션에서만 보고된 경우 다수</li>
+          <li>임상 효과의 <strong><abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험 — 근거 피라미드 상위">RCT</abbr> 증명 부족</strong> — 개별 증례·공개 세션에서만 보고된 경우 다수</li>
         </ul>
         <p><strong>인용</strong>: Meyer AL, Meyer A, Etherington S, Leboeuf-Yde C. Unravelling functional neurology: a scoping review of theories and clinical applications. <em>Chiropr Man Therap</em> 2017;25:19.</p>
       </div>
@@ -1950,7 +1949,7 @@ strong abbr.med-abbr { color: inherit; }
           </tr>
           <tr>
             <td>눈 운동으로 모든 학습장애 해결</td>
-            <td>뇌진탕 후 VOR 훈련이 일부 증상 개선</td>
+            <td>뇌진탕 후 <abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr> 훈련이 일부 증상 개선</td>
           </tr>
           <tr>
             <td>반구 불균형이 대부분 질환의 원인</td>
@@ -1963,17 +1962,17 @@ strong abbr.med-abbr { color: inherit; }
         </tbody>
       </table>
 
-      <h3>DACNB 자격의 현실</h3>
+      <h3><abbr class="med-abbr" title="Diplomate of American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 위원회 전문의">DACNB</abbr> 자격의 현실</h3>
       <ul>
-        <li>DACNB는 <strong>미국 내 사설 인증</strong>이며, 연방 의료 면허가 아님</li>
+        <li><abbr class="med-abbr" title="Diplomate of American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 위원회 전문의">DACNB</abbr>는 <strong>미국 내 사설 인증</strong>이며, 연방 의료 면허가 아님</li>
         <li>한국에서는 <strong>별도 면허 효력 없음</strong></li>
         <li>그럼에도 교육 내용 중 <strong>기초 신경학·재활 원리</strong>는 실무에 유용</li>
       </ul>
 
       <div class="callout callout-tip">
-        <h4>🟢 결론 — 과장 없이도 FN은 임상에 충분히 유용</h4>
+        <h4>🟢 결론 — 과장 없이도 <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr>은 임상에 충분히 유용</h4>
         <p>
-          검증된 부분(전정 재활·VOR·소뇌 평가·관절 수기 신경생리)만으로도 FN은 도수치료·재활·정형 임상에 <strong>실질적 가치</strong>를 더합니다.
+          검증된 부분(전정 재활·<abbr class="med-abbr" title="Vestibulo-Ocular Reflex · 전정안반사 — 머리 회전 시 망막상 안정화 반사">VOR</abbr>·소뇌 평가·관절 수기 신경생리)만으로도 <abbr class="med-abbr" title="Functional Neurology · 기능 신경학">FN</abbr>은 도수치료·재활·정형 임상에 <strong>실질적 가치</strong>를 더합니다.
           과장 주장을 솔직하게 빼도 본 강의가 다루는 범위는 임상에 직접 적용 가능한 근거 기반 도구의 집합입니다.
         </p>
       </div>
@@ -1998,7 +1997,7 @@ strong abbr.med-abbr { color: inherit; }
       <details style="margin-top:0.8rem;">
         <summary style="cursor:pointer; color:var(--c-text-muted); font-size:0.9em;">📚 이전 버전 팟캐스트 (Reference · 톤 정리 전)</summary>
         <div class="resource-row" style="margin-top:0.5rem;">
-          <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/functional_neurology/01_podcast.m4a?v=20260508a"><span class="icon">📚</span><span><strong>Ep 1 (구버전) · MRI에 안 보이는 뇌 소프트웨어 오류</strong> <span class="status-badge" style="background:#e5e5ea;color:#666;">Reference</span><br/><small>60분+ 심층 · 톤 정리 이전 버전</small></span></a>
+          <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/functional_neurology/01_podcast.m4a?v=20260508a"><span class="icon">📚</span><span><strong>Ep 1 (구버전) · <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr>에 안 보이는 뇌 소프트웨어 오류</strong> <span class="status-badge" style="background:#e5e5ea;color:#666;">Reference</span><br/><small>60분+ 심층 · 톤 정리 이전 버전</small></span></a>
           <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/functional_neurology/02_podcast.m4a?v=20260508a"><span class="icon">📚</span><span><strong>Ep 2 (구버전) · 간호사 비율과 뇌 회로가 생사를 가른다</strong> <span class="status-badge" style="background:#e5e5ea;color:#666;">Reference</span><br/><small>임상 사례 · 톤 정리 이전 버전</small></span></a>
         </div>
       </details>
