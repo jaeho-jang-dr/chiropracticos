@@ -3,7 +3,8 @@
   "trailingSlash": false,
   "functions": {
     "api/r2.js": { "maxDuration": 30, "memory": 512 },
-    "api/content.js": { "maxDuration": 15, "memory": 256 }
+    "api/content.js": { "maxDuration": 15, "memory": 256 },
+    "api/csp-report.js": { "maxDuration": 5, "memory": 128 }
   },
   "headers": [
     {
@@ -44,7 +45,8 @@
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
         { "key": "X-Frame-Options", "value": "DENY" },
         { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()" }
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()" },
+        { "key": "Content-Security-Policy-Report-Only", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://esm.sh https://www.youtube.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' data: https://cdn.jsdelivr.net; img-src 'self' data: blob: https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev https://i.ytimg.com https://*.ytimg.com https://*.googleusercontent.com; media-src 'self' https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev blob:; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://accounts.google.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://accounts.google.com; object-src 'none'; report-uri /api/csp-report" }
       ]
     }
   ]
