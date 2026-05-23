@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>로그인 | Chiropractic</title>
-  <link rel="stylesheet" href="./assets/main.css?v=20260523k" />
-<script defer src="./assets/ui.js?v=20260523k"></script>
-<script defer src="./assets/download-guard.js?v=20260523k"></script>
-<script defer src="./assets/hide-guard.js?v=20260523k"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260523k"></script>
-  <script src="./assets/config.js?v=20260523k"></script>
+  <link rel="stylesheet" href="./assets/main.css?v=20260523m" />
+<script defer src="./assets/ui.js?v=20260523m"></script>
+<script defer src="./assets/download-guard.js?v=20260523m"></script>
+<script defer src="./assets/hide-guard.js?v=20260523m"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260523m"></script>
+  <script src="./assets/config.js?v=20260523m"></script>
   <style>
     .auth-card{max-width:420px;margin:5rem auto;padding:2.5rem;background:#fff;border:1px solid #e0e0e3;border-radius:18px;box-shadow:0 8px 32px rgba(0,0,0,.04)}
     .auth-card h1{margin:0 0 .5rem;font-size:1.7rem}
@@ -28,6 +28,24 @@
     .err{color:#c62828;font-size:.88em;margin-top:.5rem;min-height:1em;line-height:1.4;background:#fdecea;padding:.5rem .75rem;border-radius:6px;display:none}
     .err.show{display:block}
     .info{font-size:.8em;color:#888;text-align:center;margin-top:1rem}
+
+    /* 잠긴 챕터에서 튕겨 들어온 경우(?next=...) 좌측 상단 brand를 깜빡여 "홈으로 돌아가기" 동선을 시각적으로 유도 */
+    @keyframes navBrandPulse {
+      0%, 100% { box-shadow: 0 0 0 2px transparent, 0 0 0 0 rgba(10,132,255,0); }
+      50%      { box-shadow: 0 0 0 2px rgba(10,132,255,.65), 0 0 14px rgba(10,132,255,.35); }
+    }
+    .nav-brand.cta-blink {
+      border-radius: 12px;
+      padding: 4px 12px;
+      animation: navBrandPulse 1.4s ease-in-out infinite;
+    }
+    .nav-brand.cta-blink::after {
+      content: '← 홈으로';
+      margin-left: 8px;
+      font-size: .72em;
+      color: #0a84ff;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
@@ -61,11 +79,18 @@
   </div>
 
   <script type="module">
-    import { supabase, sessionReady, signInWithGoogle, signInWithEmail, clearStaleAuth } from "./assets/supabase-client.js?v=20260523k";
+    import { supabase, sessionReady, signInWithGoogle, signInWithEmail, clearStaleAuth } from "./assets/supabase-client.js?v=20260523m";
 
     const params = new URLSearchParams(location.search);
     let next = params.get("next") || "/";
     if (next.startsWith("/login")) next = "/";
+
+    // 잠긴 챕터 등에서 튕겨 들어온 경우(?next=/chapter...) 좌측 상단 brand에 깜빡임 효과로
+    // "홈으로 돌아가기" 동선을 시각적으로 유도. 직접 /login 진입 시(next 없음)에는 비활성.
+    const rawNext = params.get("next");
+    if (rawNext && rawNext !== "/" && !rawNext.startsWith("/login")) {
+      document.querySelector(".nav-brand")?.classList.add("cta-blink");
+    }
     // ?fresh=1 또는 ?force=1 → 기존 세션 무시, 강제 신선 재로그인
     const isFresh = params.has("fresh") || params.has("force");
     const errBox = document.getElementById("err");
