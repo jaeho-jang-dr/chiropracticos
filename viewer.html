@@ -4,11 +4,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>강의록 뷰어 · 카이로프랙틱정형외과</title>
-<link rel="stylesheet" href="./assets/main.css?v=20260523i" />
-<script defer src="./assets/ui.js?v=20260523i"></script>
-<script defer src="./assets/download-guard.js?v=20260523i"></script>
-<script defer src="./assets/hide-guard.js?v=20260523i"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260523i"></script>
+<link rel="stylesheet" href="./assets/main.css?v=20260523k" />
+<script defer src="./assets/ui.js?v=20260523k"></script>
+<script defer src="./assets/download-guard.js?v=20260523k"></script>
+<script defer src="./assets/hide-guard.js?v=20260523k"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260523k"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.5.1/github-markdown-light.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
@@ -40,7 +40,9 @@
   .markdown-body h1, .markdown-body h2, .markdown-body h3,
   .markdown-body h4, .markdown-body h5, .markdown-body h6 {
     border-bottom: none; margin-top: 1.6em;
+    scroll-margin-top: 80px;  /* glass-nav 가림 방지: TOC 점프 시 헤딩이 nav 아래로 가지 않도록 */
   }
+  html { scroll-behavior: smooth; }
   .markdown-body h1 { font-size: 2em; }
   .markdown-body h2 { font-size: 1.55em; }
   .markdown-body pre {
@@ -61,8 +63,8 @@
     .markdown-body { padding: 24px 20px; }
   }
 </style>
-  <script src="./assets/config.js?v=20260523i"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260523i"></script>
+  <script src="./assets/config.js?v=20260523k"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260523k"></script>
 </head>
 <body>
 
@@ -154,10 +156,27 @@ import { sessionReady } from './assets/supabase-client.js';
     });
 
     // 페이지 로드 시 hash 가 있으면 (브라우저는 ID 부여 전 시점이라 못 찾았음) 수동 스크롤
-    if (location.hash && location.hash.length > 1) {
-      const tgt = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-      if (tgt) tgt.scrollIntoView({ behavior: 'instant', block: 'start' });
+    function scrollToHash(behavior) {
+      if (!location.hash || location.hash.length < 2) return;
+      const id = decodeURIComponent(location.hash.slice(1));
+      const tgt = document.getElementById(id);
+      if (tgt) tgt.scrollIntoView({ behavior: behavior || 'smooth', block: 'start' });
     }
+    scrollToHash('instant');
+    // 같은 페이지 내 TOC 클릭 시에도 안정적으로 스크롤 (브라우저 기본 동작이 막힌 경우 대비)
+    window.addEventListener('hashchange', () => scrollToHash('smooth'));
+    // 같은 hash 재클릭(브라우저는 hashchange 미발생)도 대응
+    target.addEventListener('click', (e) => {
+      const a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+      const href = a.getAttribute('href');
+      if (!href || href.length < 2) return;
+      // 같은 hash이면 hashchange 없으니 직접 scroll
+      if (decodeURIComponent(href) === decodeURIComponent(location.hash)) {
+        e.preventDefault();
+        scrollToHash('smooth');
+      }
+    });
 
     // Replace ```mermaid code blocks with Mermaid-rendered SVGs
     target.querySelectorAll('code.language-mermaid').forEach((el, idx) => {
