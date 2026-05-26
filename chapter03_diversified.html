@@ -5,12 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diversified HVLA | Chiropractic</title>
   <meta name="description" content="Diversified High-Velocity Low-Amplitude 카이로프랙틱 HVLA 수기 — 4주 근거 기반 커리큘럼. 강의록·PPTX·동영상·팟캐스트 통합 자료." />
-  <link rel="stylesheet" href="./assets/main.css?v=20260526b" />
+  <link rel="stylesheet" href="./assets/main.css?v=20260526c" />
 
-<script defer src="./assets/ui.js?v=20260526b"></script>
-<script defer src="./assets/download-guard.js?v=20260526b"></script>
-<script defer src="./assets/hide-guard.js?v=20260526b"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260526b"></script>
+<script defer src="./assets/ui.js?v=20260526c"></script>
+<script defer src="./assets/download-guard.js?v=20260526c"></script>
+<script defer src="./assets/hide-guard.js?v=20260526c"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260526c"></script>
+<style id="technique-grid-css">
+/* 부위별 기술 라이브러리 그리드 */
+.technique-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1.25rem;margin:1.25rem 0 2rem}
+.technique-card{display:flex;flex-direction:column;background:#fff;border:1px solid #ebebed;border-radius:14px;overflow:hidden;transition:transform .15s,box-shadow .15s}
+.technique-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.06)}
+.technique-card .tc-header{padding:1rem 1.2rem 0.7rem;border-bottom:1px solid #f5f5f7}
+.technique-card .tc-region{display:inline-block;font-size:0.72em;font-weight:700;letter-spacing:.06em;color:#0a84ff;text-transform:uppercase;background:#f0f7ff;padding:0.15rem 0.55rem;border-radius:999px;margin-bottom:0.4rem}
+.technique-card h4{margin:0 0 0.3rem;font-size:1.05em;font-weight:600;color:#1d1d1f}
+.technique-card .tc-meta{margin:0;font-size:0.85em;color:#666}
+.technique-card .tc-table{width:100%;border-collapse:collapse;margin:0;font-size:0.85em;background:transparent;border-radius:0;box-shadow:none}
+.technique-card .tc-table td{padding:0.5rem 1.2rem;border-bottom:1px solid #f5f5f7;vertical-align:top}
+.technique-card .tc-table tr:last-child td{border-bottom:none}
+.technique-card .tc-table td:first-child{width:48px;font-weight:600;color:#0a84ff;font-size:0.82em;text-transform:uppercase;letter-spacing:.04em}
+.technique-card .tc-video{position:relative;width:100%;padding-top:56.25%;background:#000;margin:0.5rem 0 0}
+.technique-card .tc-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.technique-card .tc-note{margin:0.8rem 1.2rem 1.1rem;font-size:0.83em;color:#444;line-height:1.55;padding:0.6rem 0.8rem;background:#fafafc;border-left:3px solid #ffcc02;border-radius:6px}
+@media (max-width:640px){
+  .technique-grid{grid-template-columns:1fr;gap:1rem}
+  .technique-card .tc-header{padding:0.85rem 0.95rem 0.6rem}
+  .technique-card .tc-table td{padding:0.45rem 0.95rem}
+  .technique-card .tc-note{margin:0.7rem 0.95rem 0.95rem;font-size:0.8em}
+}
+</style>
 <style id="concept-block-css">
 /* 본문 보강 — 핵심 개념 details/summary 블록 */
 .concept-block{margin:0.9rem 0;background:#fff;border:1px solid #ebebed;border-radius:12px;overflow:hidden}
@@ -55,8 +78,8 @@
 .archive-inline .video-card .title { font-weight: 600; font-size: .92em; }
 .archive-inline .video-card .meta { font-size: .78em; color: #86868b; }
 </style>
-  <script src="./assets/config.js?v=20260526b"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260526b"></script>
+  <script src="./assets/config.js?v=20260526c"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260526c"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">본문 바로가기</a>
@@ -107,6 +130,7 @@
         <li><a href="#week1">Week 1</a></li>
         <li><a href="#week2">Week 2</a></li>
         <li><a href="#week3">Week 3</a></li>
+        <li><a href="#technique-library">기술 라이브러리</a></li>
         <li><a href="#week4">Week 4</a></li>
         <li><a href="#resources">다운로드</a></li>
         <li><a href="#videos">동영상</a></li>
@@ -603,6 +627,451 @@
           <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/03_video_part2_week34.mp4">🎥 Video Part 2</a>
           <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">🎧 Podcast</a>
         </div>
+      </div>
+    </section>
+
+    <!-- ========== 부위별 기술 라이브러리 ========== -->
+    <section id="technique-library">
+      <h2>🛠 부위별 기술 라이브러리 — Listing · SCP/CP/LOD · 시연 동영상</h2>
+      <p class="section-lead">
+        Diversified의 본질은 <strong>"어디를 listing하고, 어디를 접촉해, 어느 방향으로 thrust하느냐"</strong>입니다.
+        본 라이브러리는 부위별 대표 기법을 <strong>Listing · SCP(Segmental Contact Point) · CP(Contact — 손) · LOD(Line of Drive)</strong>로 분해하고,
+        검증된 시연 동영상을 함께 제시합니다. <strong>골관절(Bone Joint) · 사지 골관절(Extremity) · 연부조직(Soft Tissue)</strong> 3 카테고리로 정리했습니다.
+      </p>
+
+      <p class="callout callout-warn">
+        <strong>약어.</strong>
+        <abbr class="med-abbr" title="Segmental Contact Point · 분절 접촉점 (환자측)">SCP</abbr> = 환자측 해부학적 접촉점 ·
+        <abbr class="med-abbr" title="Contact Point · 술자측 손 접촉부">CP</abbr> = 술자측 손 접촉부 ·
+        <abbr class="med-abbr" title="Line of Drive · 추력 방향">LOD</abbr> = 추력 방향 ·
+        <abbr class="med-abbr" title="Patient Position · 환자 자세">PP</abbr> = 환자 자세 ·
+        <abbr class="med-abbr" title="Doctor Position · 술자 자세">DP</abbr> = 술자 자세 ·
+        <abbr class="med-abbr" title="Indifferent Hand · 비추력 손 (지지·견인)">IH</abbr> = 비추력 손
+      </p>
+
+      <h3 id="bone-joints">🦴 척추 골관절 (Bone Joint Adjustments)</h3>
+
+      <div class="technique-grid">
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">C0 후두골</span>
+            <h4>Superior Condyle</h4>
+            <p class="tc-meta">대표 listing: <strong>RLS / LLS occiput</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Supine · headpiece neutral · 머리 중립</td></tr>
+              <tr><td>SCP</td><td>mastoid process 외측면</td></tr>
+              <tr><td>CP</td><td>caudad hand · index 접촉, wrist ulnar deviation</td></tr>
+              <tr><td>IH</td><td>cephalad hand · 턱 cradle, 측면 견인</td></tr>
+              <tr><td>LOD</td><td><strong>mastoid → mastoid 수평</strong> (중시상면 직각)</td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/RKoNKcG9Z7I" title="C0-C1 Chin Hold Rotational HVLAT" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">⚠ TMJ 접촉 절대 금지. 신전 회피 — vertebral artery torsion 위험.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">C1 환추</span>
+            <h4>Lateral Atlas Pisiform</h4>
+            <p class="tc-meta">대표 listing: <strong>RI / LI atlas</strong> (중·대체형 성인)</p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Supine · headpiece lowered · 머리 90° 반대측 회전</td></tr>
+              <tr><td>SCP</td><td>Atlas TP apex</td></tr>
+              <tr><td>CP</td><td>caudad hand · <strong>pisiform</strong>, 새끼손가락이 하악 아래로 회전</td></tr>
+              <tr><td>IH</td><td>cephalad hand · #1 contact (귀 cup), occiput 견인</td></tr>
+              <tr><td>LOD</td><td>IH cephalad 견인 → CH 수직 하방 thrust</td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/tuueBSwTrmo" title="HVLA Upper Cervical C1-C2 Cradle Hold" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">⚠ 금기: 경추 arthritis, 골다공증, 90° 회전 불가. 소아·소체형은 Lateral Atlas Index 권장.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">C2 축추</span>
+            <h4>C2 Spinous Thumb Push (Bergmann)</h4>
+            <p class="tc-meta">대표 listing: <strong>C2 PR / PL spinous</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Supine · 머리 약간 굴곡</td></tr>
+              <tr><td>SCP</td><td>C2 spinous process 외측 (listing 반대측)</td></tr>
+              <tr><td>CP</td><td>thumb pad — broad contact</td></tr>
+              <tr><td>IH</td><td>contralateral hand · cradle occiput</td></tr>
+              <tr><td>LOD</td><td><strong>listing 반대 방향 (PR → A+L) · rotary break 변형</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/G93ifpp4Q8k" title="C2 cervical supine Chiropractic Adjustment" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">⚠ States Manual에는 C2 단독 술식이 없어 Bergmann 3rd Ed Ch 5 기반. dens fracture 배제 후에만.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">C3–C7 중하부 경추</span>
+            <h4>Rotary Cervical (Index Pillar)</h4>
+            <p class="tc-meta">대표 listing: <strong>RP / LP, C2–C7</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Supine · headpiece neutral · 머리 listing 측 회전</td></tr>
+              <tr><td>SCP</td><td>articular pillar (AP) 후면</td></tr>
+              <tr><td>CP</td><td>caudad hand · index 2nd/3rd digit pad, wrist ulnar deviation</td></tr>
+              <tr><td>IH</td><td>cephalad hand · 귀 cup + occipital base</td></tr>
+              <tr><td>LOD</td><td><strong>facet 각도 따라 45° 사선 cephalad rotation</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/o_FpuybUxSE" title="Palmer Master Cervical Rotary Break" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">⚠ 신전 절대 금지. 초진 환자는 회전 각도 최소화 + IH dominance. VBI cluster 스크리닝 선행.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-region-card-rib">
+            <span class="tc-region">상부 흉추</span>
+            <h4>Anterior Thoracic (Supine AP)</h4>
+            <p class="tc-meta">대표 listing: <strong>T1–T4 PR/PL · 굴곡 제한</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Supine · 양손 가슴 위 cross</td></tr>
+              <tr><td>SCP</td><td>병변 분절 spinous process / TP</td></tr>
+              <tr><td>CP</td><td>thenar/hypothenar — 환자 등 아래</td></tr>
+              <tr><td>IH</td><td>환자 가슴·팔 컨트롤, body drop으로 thrust 전달</td></tr>
+              <tr><td>LOD</td><td><strong>P–A (환자 가슴을 통한 후방 thrust) + slight cephalad</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/n0USssTFxZY" title="HVLA Upper Thoracic T1-T4 Supine AP" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">💡 가장 안전 마진이 크고 환자 부담 적음 — 통합 도수치료에서 빈번 사용. 골다공증은 force 70%로.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">중하부 흉추</span>
+            <h4>Prone Pisiform Thoracic</h4>
+            <p class="tc-meta">대표 listing: <strong>T5–T12 단측 PR/PL</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Prone · drop piece 동반</td></tr>
+              <tr><td>SCP</td><td>병변 분절 한쪽 TP (listing 측)</td></tr>
+              <tr><td>CP</td><td>pisiform contact</td></tr>
+              <tr><td>IH</td><td>반대측 TP 안정화</td></tr>
+              <tr><td>LOD</td><td><strong>P–A + listing 따른 slight cephalad/caudad 각도</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/NB7xvoNpyR4" title="Prone Upper Thoracic Spine Adjustment" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">⚠ T12–L1 흉요추 이행부는 회전 방향 이동 — set-up 별도 점검.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">늑골 (Rib)</span>
+            <h4>Rib Head / Costovertebral</h4>
+            <p class="tc-meta">대표 listing: <strong>Rib 2–10 posterior, 호흡 제한</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Supine (anterior rib) 또는 Prone (posterior rib)</td></tr>
+              <tr><td>SCP</td><td>rib angle 또는 costotransverse joint</td></tr>
+              <tr><td>CP</td><td>hypothenar / pisiform — 좁은 접촉</td></tr>
+              <tr><td>IH</td><td>환자 호흡 컨트롤, 날숨 끝에 thrust 신호</td></tr>
+              <tr><td>LOD</td><td><strong>호흡 날숨 끝에 lateral + anterior thrust</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/vVcvx_KLh5A" title="HVLA Rib Costovertebral T4-9 Supine AP" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">⚠ 골다공증·고령 환자 늑골 골절 위험 — force 50–60%로 신중하게.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">요추</span>
+            <h4>Lumbar Roll (Side Posture)</h4>
+            <p class="tc-meta">대표 listing: <strong>L1–L5 PL/PR · PLI · PRS</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Side posture · 환측 위 · 아래 다리 신전 · 위 다리 굴곡</td></tr>
+              <tr><td>SCP</td><td>mamillary process (환측)</td></tr>
+              <tr><td>CP</td><td>pisiform 또는 hypothenar</td></tr>
+              <tr><td>IH</td><td>contralateral 팔뚝 · 환자 위 어깨 지지</td></tr>
+              <tr><td>LOD</td><td><strong>P–A + slight rotation (listing 반대 방향)</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/byEY-V-zc84" title="HVLA L5-S1 Mamillary Side-lying Technique" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">💡 "Million dollar roll" — 가장 빈번한 요추 기법. Disc herniation + 방사통 시 즉시 중단, Cox flexion-distraction 대안.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">L5–S1 특이</span>
+            <h4>L5–S1 Side Posture Push</h4>
+            <p class="tc-meta">대표 listing: <strong>L5 PI / Acute LBP</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Side posture · 환측 위 · 골반 회전 강조</td></tr>
+              <tr><td>SCP</td><td>L5 mamillary 또는 ischial tuberosity 측</td></tr>
+              <tr><td>CP</td><td>pisiform / hypothenar</td></tr>
+              <tr><td>IH</td><td>환자 상체 stabilize, 회전 lock</td></tr>
+              <tr><td>LOD</td><td><strong>Anterior + Superior (PI listing → A+S)</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/iRfD9IeLV3A" title="Specific Chiropractic Adjustment of L5-S1 and Sacrum (Walter Salubro)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">⚠ Straight Leg Raise 양성 + 신경학적 결손은 first-line이 아닙니다. 6주 호전 없음 → MRI 의뢰.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">골반 / 천장관절</span>
+            <h4>Pelvic Diversified — AS / PI Ilium</h4>
+            <p class="tc-meta">대표 listing: <strong>R AS · L PI · EX · IN ilium (18 listings)</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Side posture · 환측 위 (AS는 좌측 lie, PI는 우측 lie 변동)</td></tr>
+              <tr><td>SCP</td><td><strong>AS</strong>: PSIS · <strong>PI</strong>: ischial tuberosity · <strong>EX/IN</strong>: PSIS lateral</td></tr>
+              <tr><td>CP</td><td>pisiform · hypothenar</td></tr>
+              <tr><td>IH</td><td>상체 cross-support, 회전 lock</td></tr>
+              <tr><td>LOD</td><td><strong>AS → P+I · PI → A+S · EX → L→M · IN → M→L</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/EgVDJYIglGU" title="Sacroiliac Joint Chiropractic Adjustments (Walter Salubro)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">💡 18 listing 전부 외울 필요 X — 빈번한 5–7 패턴(AS·PI·EX·IN·sacral base)에 익숙해진 후 나머지는 reference.</p>
+        </article>
+
+      </div>
+
+      <h3 id="extremity-joints">🦵 사지 골관절 (Extremity Joint Adjustments)</h3>
+
+      <div class="technique-grid">
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">어깨 — GH joint</span>
+            <h4>Glenohumeral Joint Mobilization + HVLA</h4>
+            <p class="tc-meta">대표 적응: <strong>전방 캡슐 제한 · adhesive capsulitis 초기</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Supine · 어깨 외전 90° · 팔꿈치 굴곡</td></tr>
+              <tr><td>SCP</td><td>humeral head</td></tr>
+              <tr><td>CP</td><td>thumb web — humeral head anterior</td></tr>
+              <tr><td>IH</td><td>elbow 컨트롤, 견인 + 외회전</td></tr>
+              <tr><td>LOD</td><td><strong>Anterior–Posterior glide + long-axis distraction</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/l8_LG3KYP0Q" title="Glenohumeral Joint Adjustment Shoulder Flexed (Ozello)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">⚠ 회전근개 손상·SLAP lesion 의심 시 MRI 우선. HVLA보다 mobilization이 주로 안전.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">어깨 — AC joint</span>
+            <h4>Acromioclavicular Joint Adjustment</h4>
+            <p class="tc-meta">대표 적응: <strong>AC 분리 grade I, 견봉쇄골 통증</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Supine 또는 seated</td></tr>
+              <tr><td>SCP</td><td>distal clavicle (AC 관절면 직상부)</td></tr>
+              <tr><td>CP</td><td>thumb / index — 좁은 접촉</td></tr>
+              <tr><td>IH</td><td>견봉 stabilize</td></tr>
+              <tr><td>LOD</td><td><strong>P–A short thrust · 또는 S–I 압박 해제</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/MZIGE0-CZcc" title="Chiropractic Extremity Adjustment Acromioclavicular Joint (Ozello)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">⚠ AC 분리 grade II–III는 HVLA 금기 — 보존적 관리 + 외과 협진.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">손목</span>
+            <h4>Carpal — Scaphoid / Lunate</h4>
+            <p class="tc-meta">대표 적응: <strong>손목 limited extension · CTS 보조</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Seated · 환자 손 검사자 손에 거치</td></tr>
+              <tr><td>SCP</td><td>Scaphoid 또는 Lunate (proximal carpal row)</td></tr>
+              <tr><td>CP</td><td>thumb pad · distal traction</td></tr>
+              <tr><td>IH</td><td>전완 stabilize, proximal counter-force</td></tr>
+              <tr><td>LOD</td><td><strong>distal traction + "scissoring" 회전 (lunate)</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/EN2RBAw63ak" title="Chiropractic Wrist Adjustment (Carpal Bones)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">💡 CTS는 1차 보존(splint + 운동) 권장 — 카이로프랙틱 단독 효과는 limited evidence.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">무릎</span>
+            <h4>Knee Long-axis Distraction + Patella Glide</h4>
+            <p class="tc-meta">대표 적응: <strong>Patellofemoral syndrome · IT band</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Supine · 다리 완전 신전 또는 약간 굴곡</td></tr>
+              <tr><td>SCP</td><td>patella (medial/lateral border) · proximal tibia</td></tr>
+              <tr><td>CP</td><td>thumb-thumb on patella · 또는 양손 distal tibia grip</td></tr>
+              <tr><td>IH</td><td>대퇴부 stabilize</td></tr>
+              <tr><td>LOD</td><td><strong>medial/lateral patella glide · long-axis distraction thrust</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/WtGT2Mt9gW4" title="Knee HVLA Traction Thrust Technique" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">⚠ Meniscus tear · ACL 손상 의심 시 MRI 우선. HVLA보다 운동재활 + IT band release.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">발목</span>
+            <h4>Talocrural + Subtalar</h4>
+            <p class="tc-meta">대표 적응: <strong>족관절 염좌 후 mortise 제한</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Supine 또는 prone · 발 검사자 손에 거치</td></tr>
+              <tr><td>SCP</td><td>talus 또는 calcaneus</td></tr>
+              <tr><td>CP</td><td>양손 grip (forefoot + heel)</td></tr>
+              <tr><td>IH</td><td>경골 stabilize</td></tr>
+              <tr><td>LOD</td><td><strong>Long-axis distraction + A–P glide (talocrural) / eversion-inversion thrust (subtalar)</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/dJ9X-_7sfkg" title="Chiropractic Extremity Adjustment Talocrural Ankle (Ozello)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">💡 Long-axis distraction이 모든 발/발목 manipulation의 기본 — 발가락 관절에도 동일 원칙.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">악관절 (TMJ)</span>
+            <h4>TMJ — Extra/Intraoral Mobilization</h4>
+            <p class="tc-meta">대표 적응: <strong>개구 제한 · TMD (협진 영역)</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>PP</td><td>Supine · 환자 입 살짝 벌림</td></tr>
+              <tr><td>SCP</td><td>mandibular condyle (extraoral) · 또는 어금니 후방 (intraoral)</td></tr>
+              <tr><td>CP</td><td>thumb pad (장갑 필수 — intraoral)</td></tr>
+              <tr><td>IH</td><td>두부 stabilize</td></tr>
+              <tr><td>LOD</td><td><strong>Caudal distraction + lateral glide (편위 반대 방향)</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/VUgYWwgoaPM" title="Chiropractic TMJ Adjustment Jaw Manipulation" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">⚠ <strong>치과·구강외과 영역과 중첩</strong> — 협진 원칙. Disc displacement 의심 시 MRI + 치과 의뢰.</p>
+        </article>
+
+      </div>
+
+      <h3 id="soft-tissue">💪 연부조직 (Soft Tissue Techniques)</h3>
+
+      <p class="callout callout-info">
+        연부조직 기법은 HVLA의 <strong>전·후 보조 도구</strong>로 사용됩니다. 근긴장 완화 → set-up 용이 → 추력 효과 증대. 또는 추력 후 잔류 trigger point 관리.
+        <strong>Diversified의 본 영역은 아니지만</strong>, 한국 도수치료 현장에서 빈번히 통합 사용되므로 표준 기법을 정리합니다.
+      </p>
+
+      <div class="technique-grid">
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">근막 이완</span>
+            <h4>Myofascial Release (MFR)</h4>
+            <p class="tc-meta">대표 적응: <strong>척추기립근·승모근 chronic tension</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>접근</td><td>피부 sustained pressure (90–120초) · barrier release</td></tr>
+              <tr><td>CP</td><td>thumb · finger pads · forearm · elbow</td></tr>
+              <tr><td>강도</td><td>환자 통증 4–6/10 NPRS 범위 (참을 만한 정도)</td></tr>
+              <tr><td>용도</td><td>HVLA 전 set-up 용이화 · 또는 post-adjustment 잔류 tension</td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/mIxEKtkccNQ" title="Myofascial Release (Graston IASTM ART MFR Visceral)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">💡 근거 수준 🟠 Limited — 단독 효과보다 HVLA·운동치료와 병행 시 시너지.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">기구 보조 (IASTM)</span>
+            <h4>Graston / IASTM</h4>
+            <p class="tc-meta">대표 적응: <strong>scar tissue · tendinopathy · myofascial adhesion</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>접근</td><td>스테인리스 도구로 피부 표면 cross-friction strokes</td></tr>
+              <tr><td>도구</td><td>Graston · HawkGrips · ASTYM tools (인증 과정 필요)</td></tr>
+              <tr><td>강도</td><td>피하 출혈점(petechiae) 발생 직전까지 — 너무 강하면 손상</td></tr>
+              <tr><td>적용</td><td>주 1–2회 × 4–6주 권장</td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/GQuAeLVCcYQ" title="Graston Technique for Scar Tissue" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">⚠ 항응고제 복용·골다공증·피부 감염은 금기. 인증 과정(Graston M1/M2) 권장.</p>
+        </article>
+
+        <article class="technique-card">
+          <header class="tc-header">
+            <span class="tc-region">Active Release</span>
+            <h4>ART (Active Release Technique)</h4>
+            <p class="tc-meta">대표 적응: <strong>nerve entrapment (CTS · piriformis syndrome)</strong></p>
+          </header>
+          <table class="tc-table">
+            <tbody>
+              <tr><td>접근</td><td>술자 tension on 병변 부위 · 환자 능동 운동</td></tr>
+              <tr><td>CP</td><td>thumb / finger broad contact</td></tr>
+              <tr><td>핵심</td><td>tissue lengthening through full ROM · 3–5회 반복</td></tr>
+              <tr><td>적용</td><td>nerve glide와 조합 시 효과 증대</td></tr>
+            </tbody>
+          </table>
+          <div class="tc-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/NbDDJitAdSE" title="IASTM Technique on Calf Muscle" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="tc-note">💡 ART는 상표 등록 기법 — 정식 인증(art-corp.com) 없이도 동일 원리(active stretching with tension) 적용 가능.</p>
+        </article>
+
+      </div>
+
+      <div class="callout callout-info" style="margin-top:1.5rem;">
+        <strong>📚 더 깊은 학습.</strong>
+        부위별 모든 변형 기법(C0 9가지·C1 3가지·C2–C7 6가지·골반 18 listing 등)은
+        <a href="./viewer.html?src=diversified/lecture/week3_adjustment_practice.md">상세 강의록(week3_adjustment_practice.md)</a>에 States Manual 영문 원문 + 한국어 요점으로 정리되어 있습니다.
       </div>
     </section>
 
