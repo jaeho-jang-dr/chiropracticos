@@ -155,74 +155,116 @@ Gonstead 테크닉의 척수 분석 핵심은 전장 척추 X-ray 필름에 특�
 
 상부 경추는 환추후두관절(C0-C1)과 환축관절(C1-C2)의 복잡한 3차원 변위를 판독하기 위해 **AP Open Mouth (APOM)** 뷰와 **Lateral** 뷰를 분석합니다.
 
-<div class="xray-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
-  <!-- Upper Cervical AP (APOM) -->
-  <div class="xray-card" style="background: #0f172a; border-radius: 12px; padding: 15px; border: 1px solid #334155; color: #f8fafc;">
-    <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; text-align: center; color: #38bdf8;">Upper Cervical AP (APOM) Schematic</div>
-    <svg viewBox="0 0 320 240" width="100%" height="auto" style="border-radius: 6px; background: #020617;">
-      <!-- Occiput ( 후두골 하연 ) -->
-      <path d="M 40 40 Q 160 80 280 40" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="2 2" />
-      <path d="M 90 53 Q 110 75 130 60" fill="#cbd5e1" stroke="#64748b" stroke-width="2" /> <!-- Left Condyle -->
-      <path d="M 190 60 Q 210 75 230 53" fill="#cbd5e1" stroke="#64748b" stroke-width="2" /> <!-- Right Condyle -->
-      
-      <!-- Atlas (C1) Lateral Masses -->
-      <path d="M 70 95 L 125 90 L 120 115 L 75 110 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2" /> <!-- Left Lateral Mass -->
-      <path d="M 250 95 L 195 90 L 200 115 L 245 110 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2" /> <!-- Right Lateral Mass -->
-      <path d="M 60 102 L 70 102 M 250 102 L 260 102" stroke="#e2e8f0" stroke-width="3" /> <!-- Transverse Processes -->
-      <path d="M 125 102 L 195 102" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4" /> <!-- Posterior Arch shadow -->
-
-      <!-- Axis (C2) Body & Dens -->
-      <path d="M 130 110 L 130 80 Q 160 70 190 80 L 190 110 L 210 120 L 210 160 L 110 160 L 110 120 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2" /> <!-- C2 Body & Dens -->
-      <circle cx="160" cy="180" r="12" fill="#cbd5e1" stroke="#475569" stroke-width="2" /> <!-- C2 Bifid Spinous Process shadow -->
-      
-      <!-- Lines & Points (Markings) -->
-      <!-- O-C Line (Occipital Condyle Line) -->
-      <line x1="20" y1="62" x2="300" y2="62" stroke="#3b82f6" stroke-width="1.5" />
-      <text x="25" y="55" fill="#3b82f6" font-size="10" font-weight="bold">O-C Line</text>
-      <circle cx="110" cy="62" r="4" fill="#3b82f6" />
-      <circle cx="210" cy="62" r="4" fill="#3b82f6" />
-
-      <!-- APL (Atlas Plane Line) -->
-      <line x1="20" y1="92" x2="300" y2="108" stroke="#ef4444" stroke-width="1.5" />
-      <text x="25" y="123" fill="#ef4444" font-size="10" font-weight="bold">APL (Tilt)</text>
-      <circle cx="72" cy="95" r="4" fill="#ef4444" />
-      <circle cx="248" cy="105" r="4" fill="#ef4444" />
-      
-      <!-- Vertical Reference Line (VRL) -->
-      <line x1="160" y1="60" x2="160" y2="210" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3 3" />
-      <text x="165" y="205" fill="#10b981" font-size="10" font-weight="bold">VRL</text>
-      <circle cx="160" cy="180" r="4" fill="#10b981" />
-    </svg>
-  </div>
-
-  <!-- Upper Cervical Lat -->
-  <div class="xray-card" style="background: #0f172a; border-radius: 12px; padding: 15px; border: 1px solid #334155; color: #f8fafc;">
-    <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; text-align: center; color: #38bdf8;">Upper Cervical Lateral Schematic</div>
-    <svg viewBox="0 0 320 240" width="100%" height="auto" style="border-radius: 6px; background: #020617;">
-      <!-- Occipital Bone outline -->
-      <path d="M 60 30 C 120 20 240 50 250 110 C 220 90 140 100 120 100" fill="none" stroke="#94a3b8" stroke-width="2" />
-      
-      <!-- Atlas (C1) Lateral View -->
-      <circle cx="80" cy="120" r="10" fill="#e2e8f0" stroke="#475569" stroke-width="2" /> <!-- Anterior Tubercle -->
-      <path d="M 90 115 L 210 110 L 215 130 L 90 125 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2" /> <!-- C1 Posterior Arch -->
-      
-      <!-- Axis (C2) Lateral View -->
-      <path d="M 85 140 L 115 140 L 110 110 Q 95 105 80 125 Z" fill="#cbd5e1" stroke="#475569" stroke-width="2" /> <!-- C2 Dens -->
-      <path d="M 85 140 L 140 140 L 140 190 L 85 190 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2" /> <!-- C2 Body -->
-      <path d="M 140 160 L 220 190 L 210 205 L 140 180 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2" /> <!-- C2 Spinous Process -->
-
-      <!-- Lines & Points (Markings) -->
-      <!-- APL Lat Line -->
-      <line x1="50" y1="122" x2="250" y2="112" stroke="#ef4444" stroke-width="1.5" />
-      <text x="180" y="102" fill="#ef4444" font-size="10" font-weight="bold">APL (Lat)</text>
-      <circle cx="80" cy="120" r="4" fill="#ef4444" /> <!-- Ant Tubercle center -->
-      <circle cx="212" cy="120" r="4" fill="#ef4444" stroke="#000" /> <!-- Post Arch center -->
-      
-      <!-- Horizontal Reference Line -->
-      <line x1="50" y1="122" x2="250" y2="122" stroke="#3b82f6" stroke-width="1" stroke-dasharray="3 3" />
-      <text x="210" y="135" fill="#3b82f6" font-size="9">Horizontal Ref</text>
-    </svg>
-  </div>
+<div class="xray-schema-grid">
+<div class="xray-schema">
+<div class="xray-schema-title">Upper Cervical AP (APOM) — Atlas Lateral Tilt + Spinous Rotation</div>
+<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" class="xray-svg" role="img" aria-label="Upper cervical APOM schematic showing occipital condyles, atlas lateral masses, dens, and C2 spinous with measurement lines">
+<defs>
+<marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#ef4444"/></marker>
+</defs>
+<rect width="480" height="400" fill="#0b1220"/>
+<text x="240" y="28" text-anchor="middle" fill="#94a3b8" font-size="13" font-style="italic">Open-mouth (APOM) view · 환자 정면 기준</text>
+<text x="40" y="55" fill="#64748b" font-size="11">L</text><text x="430" y="55" fill="#64748b" font-size="11">R</text>
+<g opacity="0.9">
+<path d="M 60 90 Q 240 50 420 90" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="6 4"/>
+<text x="240" y="78" text-anchor="middle" fill="#94a3b8" font-size="11">Occipital base (후두골 하연)</text>
+<path d="M 140 105 Q 165 130 200 110" fill="#e5e7eb" stroke="#64748b" stroke-width="2"/>
+<path d="M 280 110 Q 315 130 340 105" fill="#e5e7eb" stroke="#64748b" stroke-width="2"/>
+<text x="140" y="125" fill="#94a3b8" font-size="10">L Condyle</text>
+<text x="320" y="125" fill="#94a3b8" font-size="10">R Condyle</text>
+</g>
+<g>
+<path d="M 95 165 L 200 155 L 195 200 L 100 200 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<path d="M 280 155 L 385 165 L 380 200 L 285 200 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<path d="M 70 180 L 95 180 M 385 180 L 410 180" stroke="#e2e8f0" stroke-width="5" stroke-linecap="round"/>
+<text x="60" y="172" fill="#cbd5e1" font-size="11">L TP</text>
+<text x="395" y="172" fill="#cbd5e1" font-size="11">R TP</text>
+<text x="140" y="183" fill="#475569" font-size="11" font-weight="bold">C1 LM (L)</text>
+<text x="305" y="183" fill="#475569" font-size="11" font-weight="bold">C1 LM (R)</text>
+<path d="M 200 178 L 280 178" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 3"/>
+</g>
+<g>
+<path d="M 220 145 L 260 145 L 260 220 L 220 220 Z" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+<text x="240" y="183" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">Dens</text>
+</g>
+<g>
+<path d="M 145 220 L 335 220 L 320 290 L 160 290 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="240" y="260" text-anchor="middle" fill="#475569" font-size="13" font-weight="bold">C2 Body</text>
+<path d="M 215 290 L 240 340 L 265 290 Z" fill="#cbd5e1" stroke="#ef4444" stroke-width="2.5"/>
+<text x="240" y="365" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="bold">C2 Spinous (회전 평가)</text>
+</g>
+<g>
+<line x1="40" y1="118" x2="440" y2="118" stroke="#3b82f6" stroke-width="2"/>
+<circle cx="170" cy="118" r="5" fill="#3b82f6"/>
+<circle cx="310" cy="118" r="5" fill="#3b82f6"/>
+<text x="45" y="112" fill="#3b82f6" font-size="12" font-weight="bold">① O-C Line (수평 기준)</text>
+</g>
+<g>
+<line x1="40" y1="208" x2="440" y2="192" stroke="#ef4444" stroke-width="2.5"/>
+<circle cx="100" cy="206" r="5" fill="#ef4444"/>
+<circle cx="385" cy="194" r="5" fill="#ef4444"/>
+<text x="45" y="225" fill="#ef4444" font-size="12" font-weight="bold">② APL (Atlas Plane Line) — R 측 상승</text>
+<path d="M 380 184 L 395 178" stroke="#ef4444" stroke-width="2" marker-end="url(#arrR)"/>
+</g>
+<g>
+<line x1="240" y1="115" x2="240" y2="380" stroke="#10b981" stroke-width="1.8" stroke-dasharray="5 4"/>
+<text x="250" y="138" fill="#10b981" font-size="12" font-weight="bold">③ VRL</text>
+</g>
+<g transform="translate(0,0)">
+<rect x="320" y="305" width="150" height="80" fill="#0f172a" stroke="#334155" rx="6"/>
+<text x="328" y="322" fill="#94a3b8" font-size="11" font-weight="bold">Listing: ASR</text>
+<text x="328" y="338" fill="#ef4444" font-size="10">A · Atlas</text>
+<text x="328" y="352" fill="#ef4444" font-size="10">S · Superior tilt (R↑)</text>
+<text x="328" y="366" fill="#ef4444" font-size="10">R · Right lateral 편위</text>
+</g>
+</svg>
+</div>
+<div class="xray-schema">
+<div class="xray-schema-title">Upper Cervical Lateral — Atlas Plane + Anterior/Posterior 변위</div>
+<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" class="xray-svg" role="img" aria-label="Upper cervical lateral schematic showing C1 anterior tubercle, posterior arch, C2 body, dens, and spinous with APL lateral line">
+<rect width="480" height="400" fill="#0b1220"/>
+<text x="240" y="28" text-anchor="middle" fill="#94a3b8" font-size="13" font-style="italic">Lateral view · 좌측에서 본 단면</text>
+<text x="40" y="55" fill="#64748b" font-size="11">Anterior</text><text x="400" y="55" fill="#64748b" font-size="11">Posterior</text>
+<g>
+<path d="M 60 95 C 180 70 360 80 410 165 C 380 145 280 150 260 150" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+<text x="200" y="92" fill="#94a3b8" font-size="11">Occipital bone</text>
+</g>
+<g>
+<circle cx="120" cy="175" r="18" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="120" y="180" text-anchor="middle" fill="#475569" font-size="10" font-weight="bold">Ant Tub</text>
+<path d="M 138 168 L 380 158 L 388 195 L 138 188 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="270" y="180" text-anchor="middle" fill="#475569" font-size="12" font-weight="bold">C1 Posterior Arch</text>
+</g>
+<g>
+<path d="M 130 205 L 175 205 L 165 155 Q 145 145 125 175 Z" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+<text x="148" y="190" fill="#475569" font-size="10" font-weight="bold">Dens</text>
+<path d="M 130 205 L 220 205 L 220 295 L 130 295 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="175" y="255" text-anchor="middle" fill="#475569" font-size="13" font-weight="bold">C2 Body</text>
+<path d="M 220 248 L 360 290 L 350 315 L 220 280 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="290" y="285" fill="#475569" font-size="12" font-weight="bold">C2 Spinous</text>
+</g>
+<g>
+<line x1="50" y1="175" x2="430" y2="155" stroke="#ef4444" stroke-width="2.5"/>
+<circle cx="120" cy="175" r="6" fill="#ef4444"/>
+<circle cx="385" cy="156" r="6" fill="#ef4444"/>
+<text x="245" y="138" fill="#ef4444" font-size="12" font-weight="bold">APL (Lat) — Superior tilt 보임</text>
+</g>
+<g>
+<line x1="50" y1="175" x2="430" y2="175" stroke="#3b82f6" stroke-width="1.6" stroke-dasharray="4 4"/>
+<text x="335" y="195" fill="#3b82f6" font-size="11" font-weight="bold">Horizontal ref</text>
+</g>
+<g>
+<path d="M 405 175 Q 410 165 408 156" fill="none" stroke="#10b981" stroke-width="2"/>
+<text x="408" y="148" fill="#10b981" font-size="11" font-weight="bold">θ (tilt °)</text>
+</g>
+<g>
+<rect x="280" y="320" width="180" height="70" fill="#0f172a" stroke="#334155" rx="6"/>
+<text x="290" y="338" fill="#94a3b8" font-size="11" font-weight="bold">Listing 보강 (Lateral 소견)</text>
+<text x="290" y="354" fill="#ef4444" font-size="10">APL anterior end 상승 → S</text>
+<text x="290" y="370" fill="#ef4444" font-size="10">최종: <tspan font-weight="bold">ASR</tspan> 종합 판독</text>
+</g>
+</svg>
+</div>
 </div>
 
 #### 측정 점 (Landmark Points)
@@ -252,59 +294,97 @@ Gonstead 테크닉의 척수 분석 핵심은 전장 척추 X-ray 필름에 특�
 
 경추 하부 분절은 추체의 쐐기 현상(Wedging) 및 후방 변위(Posteriority)를 판독합니다.
 
-<div class="xray-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
-  <!-- Cervical AP -->
-  <div class="xray-card" style="background: #0f172a; border-radius: 12px; padding: 15px; border: 1px solid #334155; color: #f8fafc;">
-    <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; text-align: center; color: #38bdf8;">Cervical AP Schematic</div>
-    <svg viewBox="0 0 320 240" width="100%" height="auto" style="border-radius: 6px; background: #020617;">
-      <!-- C4 Vertebra (PR Listing Example - Spinous rotated to Right) -->
-      <path d="M 90 70 L 230 70 L 225 105 L 95 105 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2" /> <!-- Body -->
-      <path d="M 85 70 Q 90 60 95 70 M 225 70 Q 230 60 235 70" stroke="#475569" stroke-width="2" fill="none" /> <!-- Uncinate Processes -->
-      <ellipse cx="175" cy="88" rx="8" ry="12" fill="#ef4444" stroke="#475569" stroke-width="1.5" /> <!-- Rotated Spinous Process (Shifted Right) -->
-      
-      <!-- C5 Vertebra (Reference) -->
-      <path d="M 90 125 L 230 125 L 225 160 L 95 160 Z" fill="#cbd5e1" stroke="#475569" stroke-width="2" />
-      <path d="M 85 125 Q 90 115 95 125 M 225 125 Q 230 115 235 125" stroke="#475569" stroke-width="2" fill="none" />
-      <ellipse cx="160" cy="143" rx="8" ry="12" fill="#64748b" stroke="#475569" stroke-width="1.5" /> <!-- Normal Spinous Process (Center) -->
-      
-      <!-- Lines & Markings -->
-      <!-- Base Line (Connecting C5 Uncinates) -->
-      <line x1="80" y1="120" x2="240" y2="120" stroke="#3b82f6" stroke-width="1.5" />
-      <text x="245" y="123" fill="#3b82f6" font-size="9">Uncinate Line</text>
-
-      <!-- Center Vertical Line -->
-      <line x1="160" y1="50" x2="160" y2="180" stroke="#10b981" stroke-width="1" stroke-dasharray="3 3" />
-      <text x="165" y="60" fill="#10b981" font-size="8">VRL</text>
-
-      <!-- C4 Rotation indicator -->
-      <line x1="175" y1="88" x2="160" y2="88" stroke="#ef4444" stroke-width="1.5" arrow-start="true" />
-      <circle cx="175" cy="88" r="3" fill="#ef4444" />
-      <text x="185" y="92" fill="#ef4444" font-size="9" font-weight="bold">Rotated R (PR)</text>
-    </svg>
-  </div>
-
-  <!-- Cervical Lat -->
-  <div class="xray-card" style="background: #0f172a; border-radius: 12px; padding: 15px; border: 1px solid #334155; color: #f8fafc;">
-    <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; text-align: center; color: #38bdf8;">Cervical Lateral Schematic</div>
-    <svg viewBox="0 0 320 240" width="100%" height="auto" style="border-radius: 6px; background: #020617;">
-      <!-- C3, C4, C5 lateral blocks showing George's Line break (C4 Posterior displacement) -->
-      <!-- C3 -->
-      <path d="M 80 50 L 130 55 L 125 85 L 75 80 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5" />
-      <!-- C4 (Displaced posterior - Leftward in this drawing) -->
-      <path d="M 65 95 L 115 100 L 110 130 L 60 125 Z" fill="#e2e8f0" stroke="#ef4444" stroke-width="2" />
-      <!-- C5 -->
-      <path d="M 80 140 L 130 145 L 125 175 L 75 170 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5" />
-
-      <!-- George's Line (Posterior margins of vertebral bodies) -->
-      <path d="M 75 80 C 70 100 55 120 75 170" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3 3" />
-      <!-- Actual C4 posterior misalignment path -->
-      <path d="M 75 80 L 60 125 L 75 170" fill="none" stroke="#ef4444" stroke-width="2" />
-      
-      <text x="140" y="80" fill="#3b82f6" font-size="9">George's Line</text>
-      <text x="125" y="125" fill="#ef4444" font-size="10" font-weight="bold">Posterior (P)</text>
-      <circle cx="60" cy="125" r="4" fill="#ef4444" />
-    </svg>
-  </div>
+<div class="xray-schema-grid">
+<div class="xray-schema">
+<div class="xray-schema-title">Cervical AP — C4 PR (Spinous rotated Right)</div>
+<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" class="xray-svg" role="img" aria-label="Cervical AP schematic showing C3 C4 C5 with uncinates and rotated C4 spinous">
+<rect width="480" height="400" fill="#0b1220"/>
+<text x="240" y="28" text-anchor="middle" fill="#94a3b8" font-size="13" font-style="italic">AP view · C3–C5 (3 분절)</text>
+<text x="40" y="55" fill="#64748b" font-size="11">L</text><text x="430" y="55" fill="#64748b" font-size="11">R</text>
+<g>
+<path d="M 130 65 L 350 65 L 345 100 L 135 100 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+<text x="240" y="86" text-anchor="middle" fill="#475569" font-size="13" font-weight="bold">C3</text>
+<path d="M 122 65 Q 130 53 138 65 M 342 65 Q 350 53 358 65" stroke="#64748b" stroke-width="2" fill="none"/>
+<ellipse cx="240" cy="115" rx="9" ry="13" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/>
+</g>
+<g>
+<path d="M 130 145 L 350 145 L 345 195 L 135 195 Z" fill="#e2e8f0" stroke="#ef4444" stroke-width="2.5"/>
+<text x="225" y="180" text-anchor="middle" fill="#1e293b" font-size="14" font-weight="bold">C4 (병변)</text>
+<path d="M 122 145 Q 130 130 138 145 M 342 145 Q 350 130 358 145" stroke="#475569" stroke-width="2" fill="none"/>
+<text x="60" y="148" fill="#94a3b8" font-size="10">L Uncinate</text>
+<text x="375" y="148" fill="#94a3b8" font-size="10">R Uncinate</text>
+<ellipse cx="280" cy="215" rx="10" ry="14" fill="#ef4444" stroke="#7f1d1d" stroke-width="2"/>
+<text x="295" y="230" fill="#ef4444" font-size="12" font-weight="bold">Spinous → R</text>
+<path d="M 240 215 L 268 215" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="3 2"/>
+<circle cx="240" cy="215" r="3" fill="#10b981"/>
+</g>
+<g>
+<path d="M 135 240 L 345 240 L 340 285 L 140 285 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+<text x="240" y="268" text-anchor="middle" fill="#475569" font-size="13" font-weight="bold">C5 (정상 기준)</text>
+<path d="M 127 240 Q 135 226 143 240 M 337 240 Q 345 226 353 240" stroke="#64748b" stroke-width="2" fill="none"/>
+<ellipse cx="240" cy="305" rx="9" ry="13" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/>
+</g>
+<g>
+<line x1="50" y1="240" x2="430" y2="240" stroke="#3b82f6" stroke-width="2"/>
+<circle cx="135" cy="240" r="5" fill="#3b82f6"/>
+<circle cx="345" cy="240" r="5" fill="#3b82f6"/>
+<text x="55" y="232" fill="#3b82f6" font-size="11" font-weight="bold">① Uncinate Line (C5 base)</text>
+</g>
+<g>
+<line x1="240" y1="50" x2="240" y2="345" stroke="#10b981" stroke-width="1.8" stroke-dasharray="5 4"/>
+<text x="248" y="345" fill="#10b981" font-size="11" font-weight="bold">② VRL</text>
+</g>
+<g>
+<rect x="290" y="335" width="180" height="60" fill="#0f172a" stroke="#334155" rx="6"/>
+<text x="300" y="353" fill="#94a3b8" font-size="11" font-weight="bold">Listing: C4 PRS</text>
+<text x="300" y="368" fill="#ef4444" font-size="10">P · Posterior (Lateral 참조)</text>
+<text x="300" y="382" fill="#ef4444" font-size="10">R · Spinous R / S · Wedge open R</text>
+</g>
+</svg>
+</div>
+<div class="xray-schema">
+<div class="xray-schema-title">Cervical Lateral — George's Line · C4 Posterior</div>
+<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" class="xray-svg" role="img" aria-label="Cervical lateral schematic showing C3 C4 C5 with George's line break at C4 posterior">
+<rect width="480" height="400" fill="#0b1220"/>
+<text x="240" y="28" text-anchor="middle" fill="#94a3b8" font-size="13" font-style="italic">Lateral view · George's Line 작도</text>
+<text x="40" y="55" fill="#64748b" font-size="11">Anterior →</text><text x="380" y="55" fill="#64748b" font-size="11">← Posterior</text>
+<g>
+<path d="M 130 80 L 280 88 L 270 140 L 125 130 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+<text x="190" y="115" fill="#475569" font-size="13" font-weight="bold">C3</text>
+<path d="M 270 105 L 350 130 L 340 155 L 270 130 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+</g>
+<g>
+<path d="M 108 165 L 258 168 L 250 220 L 100 215 Z" fill="#e2e8f0" stroke="#ef4444" stroke-width="2.5"/>
+<text x="170" y="200" fill="#1e293b" font-size="13" font-weight="bold">C4 (P 변위)</text>
+<path d="M 250 188 L 330 215 L 320 240 L 250 215 Z" fill="#e2e8f0" stroke="#ef4444" stroke-width="2"/>
+</g>
+<g>
+<path d="M 130 245 L 280 250 L 270 305 L 125 300 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+<text x="190" y="280" fill="#475569" font-size="13" font-weight="bold">C5</text>
+<path d="M 270 270 L 350 295 L 340 320 L 270 295 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+</g>
+<g>
+<path d="M 125 130 C 122 165 105 200 125 300" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="135" y="145" fill="#3b82f6" font-size="12" font-weight="bold">George's Line (정상)</text>
+<circle cx="125" cy="130" r="4" fill="#3b82f6"/>
+<circle cx="125" cy="300" r="4" fill="#3b82f6"/>
+<path d="M 125 130 L 100 215 L 125 300" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+<circle cx="100" cy="215" r="6" fill="#ef4444"/>
+<text x="40" y="218" fill="#ef4444" font-size="12" font-weight="bold">Break (P)</text>
+</g>
+<g>
+<path d="M 280 88 L 380 88 L 380 100 L 280 100 Z" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3 3" transform="rotate(-3 280 94)"/>
+<path d="M 280 230 L 380 230 L 380 220 L 280 220 Z" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3 3" transform="rotate(2 280 225)"/>
+<text x="285" y="80" fill="#10b981" font-size="11" font-weight="bold">Disc Plane Lines (Wedge 측정)</text>
+</g>
+<g>
+<rect x="280" y="320" width="190" height="70" fill="#0f172a" stroke="#334155" rx="6"/>
+<text x="290" y="338" fill="#94a3b8" font-size="11" font-weight="bold">Listing: C4 PRS — Lateral 보강</text>
+<text x="290" y="354" fill="#ef4444" font-size="10">George's Line 후방으로 break → P</text>
+<text x="290" y="370" fill="#ef4444" font-size="10">→ 교정: 우측 AP 접촉 P→A, R→L</text>
+</g>
+</svg>
+</div>
 </div>
 
 #### 측정 점 (Landmark Points)
@@ -332,46 +412,102 @@ Gonstead 테크닉의 척수 분석 핵심은 전장 척추 X-ray 필름에 특�
 
 흉추는 척추경(Pedicle) 음영의 대칭성과 갈비뼈(Rib) 변위를 고려한 입체적 판독이 핵심입니다.
 
-<div class="xray-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
-  <!-- Thoracic AP -->
-  <div class="xray-card" style="background: #0f172a; border-radius: 12px; padding: 15px; border: 1px solid #334155; color: #f8fafc;">
-    <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; text-align: center; color: #38bdf8;">Thoracic AP Schematic (T6 Rotation)</div>
-    <svg viewBox="0 0 320 240" width="100%" height="auto" style="border-radius: 6px; background: #020617;">
-      <!-- T6 Vertebra (PR - Spinous rotated Right, Left Pedicle looks smaller/medial) -->
-      <path d="M 90 70 L 230 70 L 220 115 L 100 115 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2" />
-      <!-- Pedicles -->
-      <ellipse cx="120" cy="85" rx="6" ry="9" fill="#020617" stroke="#3b82f6" stroke-width="2" /> <!-- Left Pedicle (Smaller shadow/medial) -->
-      <ellipse cx="205" cy="85" rx="9" ry="12" fill="#020617" stroke="#ef4444" stroke-width="2" /> <!-- Right Pedicle (Larger/lateral shadow due to rotation) -->
-      <!-- Spinous process (shifted Right) -->
-      <path d="M 160 90 L 180 135 L 190 135 Z" fill="#ef4444" stroke="#475569" stroke-width="1.5" />
-      
-      <!-- Lines & Points -->
-      <line x1="160" y1="40" x2="160" y2="180" stroke="#10b981" stroke-width="1" stroke-dasharray="3 3" /> <!-- VRL -->
-      <circle cx="180" cy="135" r="4" fill="#ef4444" />
-      <text x="190" y="145" fill="#ef4444" font-size="9" font-weight="bold">Spinous Right (PR)</text>
-      <text x="90" y="55" fill="#94a3b8" font-size="9">Rotated Body Left (Pedicle diff)</text>
-    </svg>
-  </div>
-
-  <!-- Thoracic Lat -->
-  <div class="xray-card" style="background: #0f172a; border-radius: 12px; padding: 15px; border: 1px solid #334155; color: #f8fafc;">
-    <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; text-align: center; color: #38bdf8;">Thoracic Lateral Schematic</div>
-    <svg viewBox="0 0 320 240" width="100%" height="auto" style="border-radius: 6px; background: #020617;">
-      <!-- T6, T7 Vertebral body profile with parallel disc analysis -->
-      <!-- T6 -->
-      <path d="M 90 60 L 190 70 L 180 120 L 90 110 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2" />
-      <!-- T7 -->
-      <path d="M 95 140 L 195 145 L 185 195 L 95 185 Z" fill="#cbd5e1" stroke="#475569" stroke-width="2" />
-      
-      <!-- Disc Lines (Anterior vs Posterior height) -->
-      <line x1="60" y1="110" x2="220" y2="125" stroke="#ef4444" stroke-width="1.5" /> <!-- T6 Inferior Plane -->
-      <line x1="60" y1="135" x2="220" y2="140" stroke="#3b82f6" stroke-width="1.5" /> <!-- T7 Superior Plane -->
-      
-      <!-- Wedging indicators -->
-      <text x="215" y="120" fill="#ef4444" font-size="9" font-weight="bold">Open Ant</text>
-      <text x="215" y="145" fill="#3b82f6" font-size="9">Close Post</text>
-    </svg>
-  </div>
+<div class="xray-schema-grid">
+<div class="xray-schema">
+<div class="xray-schema-title">Thoracic AP — T6 PL (Pedicle 비대칭 · Spinous shifted L)</div>
+<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" class="xray-svg" role="img" aria-label="Thoracic AP schematic showing T6 with asymmetric pedicles and leftward spinous">
+<rect width="480" height="400" fill="#0b1220"/>
+<text x="240" y="28" text-anchor="middle" fill="#94a3b8" font-size="13" font-style="italic">AP view · T5–T7 + 늑골 머리</text>
+<text x="40" y="55" fill="#64748b" font-size="11">L</text><text x="430" y="55" fill="#64748b" font-size="11">R</text>
+<g>
+<path d="M 50 145 Q 130 165 200 175" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+<path d="M 280 175 Q 350 165 430 145" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="55" y="135" fill="#94a3b8" font-size="10">L Rib head</text>
+<text x="370" y="135" fill="#94a3b8" font-size="10">R Rib head</text>
+</g>
+<g>
+<path d="M 145 75 L 335 75 L 330 130 L 150 130 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+<text x="240" y="106" text-anchor="middle" fill="#475569" font-size="13" font-weight="bold">T5 (정상)</text>
+<ellipse cx="190" cy="100" rx="10" ry="14" fill="#0b1220" stroke="#3b82f6" stroke-width="1.8"/>
+<ellipse cx="290" cy="100" rx="10" ry="14" fill="#0b1220" stroke="#3b82f6" stroke-width="1.8"/>
+<ellipse cx="240" cy="148" rx="8" ry="11" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/>
+</g>
+<g>
+<path d="M 140 155 L 340 155 L 335 215 L 145 215 Z" fill="#e2e8f0" stroke="#ef4444" stroke-width="2.5"/>
+<text x="220" y="195" fill="#1e293b" font-size="14" font-weight="bold">T6 (병변)</text>
+<ellipse cx="180" cy="185" rx="13" ry="16" fill="#0b1220" stroke="#ef4444" stroke-width="2.5"/>
+<text x="170" y="170" fill="#ef4444" font-size="10" font-weight="bold">L pedicle 크게</text>
+<ellipse cx="300" cy="185" rx="8" ry="11" fill="#0b1220" stroke="#94a3b8" stroke-width="1.8"/>
+<text x="285" y="170" fill="#94a3b8" font-size="10">R 작게/내측</text>
+<ellipse cx="215" cy="240" rx="9" ry="13" fill="#ef4444" stroke="#7f1d1d" stroke-width="2"/>
+<text x="155" y="258" fill="#ef4444" font-size="11" font-weight="bold">Spinous → L</text>
+<path d="M 240 240 L 224 240" stroke="#ef4444" stroke-width="2" stroke-dasharray="3 2"/>
+<circle cx="240" cy="240" r="3" fill="#10b981"/>
+</g>
+<g>
+<path d="M 145 265 L 335 265 L 330 318 L 150 318 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+<text x="240" y="295" text-anchor="middle" fill="#475569" font-size="13" font-weight="bold">T7 (기준)</text>
+<ellipse cx="190" cy="290" rx="10" ry="14" fill="#0b1220" stroke="#3b82f6" stroke-width="1.8"/>
+<ellipse cx="290" cy="290" rx="10" ry="14" fill="#0b1220" stroke="#3b82f6" stroke-width="1.8"/>
+</g>
+<g>
+<line x1="240" y1="50" x2="240" y2="350" stroke="#10b981" stroke-width="1.8" stroke-dasharray="5 4"/>
+<text x="248" y="345" fill="#10b981" font-size="11" font-weight="bold">VRL</text>
+</g>
+<g>
+<rect x="285" y="335" width="190" height="60" fill="#0f172a" stroke="#334155" rx="6"/>
+<text x="295" y="353" fill="#94a3b8" font-size="11" font-weight="bold">Listing: T6 PLS</text>
+<text x="295" y="368" fill="#ef4444" font-size="10">L pedicle 크다 = body L 회전</text>
+<text x="295" y="382" fill="#ef4444" font-size="10">→ Spinous는 반대로 L 편위</text>
+</g>
+</svg>
+</div>
+<div class="xray-schema">
+<div class="xray-schema-title">Thoracic Lateral — Disc Wedging (T6/T7)</div>
+<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" class="xray-svg" role="img" aria-label="Thoracic lateral schematic showing disc wedge between T6 and T7">
+<rect width="480" height="400" fill="#0b1220"/>
+<text x="240" y="28" text-anchor="middle" fill="#94a3b8" font-size="13" font-style="italic">Lateral view · 디스크 쐐기각 측정</text>
+<text x="40" y="55" fill="#64748b" font-size="11">Anterior →</text><text x="380" y="55" fill="#64748b" font-size="11">← Posterior</text>
+<g>
+<path d="M 100 80 L 290 88 L 280 145 L 95 138 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="180" y="118" fill="#475569" font-size="14" font-weight="bold">T6</text>
+<path d="M 280 110 L 380 145 L 370 175 L 280 145 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<text x="305" y="155" fill="#475569" font-size="11">Spinous</text>
+</g>
+<g>
+<path d="M 110 200 L 295 200 L 290 260 L 105 255 Z" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+<text x="190" y="235" fill="#475569" font-size="14" font-weight="bold">T7</text>
+<path d="M 290 225 L 390 260 L 380 290 L 290 260 Z" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+</g>
+<g>
+<line x1="80" y1="138" x2="320" y2="160" stroke="#ef4444" stroke-width="2.5"/>
+<circle cx="100" cy="140" r="5" fill="#ef4444"/>
+<circle cx="290" cy="158" r="5" fill="#ef4444"/>
+<text x="80" y="130" fill="#ef4444" font-size="11" font-weight="bold">T6 Inferior endplate</text>
+<line x1="80" y1="200" x2="320" y2="205" stroke="#3b82f6" stroke-width="2.5"/>
+<circle cx="110" cy="200" r="5" fill="#3b82f6"/>
+<circle cx="295" cy="204" r="5" fill="#3b82f6"/>
+<text x="80" y="222" fill="#3b82f6" font-size="11" font-weight="bold">T7 Superior endplate</text>
+</g>
+<g>
+<path d="M 320 160 L 320 205" stroke="#10b981" stroke-width="2"/>
+<text x="328" y="185" fill="#10b981" font-size="11" font-weight="bold">Disc space</text>
+<path d="M 320 160 L 360 175" fill="none" stroke="#10b981" stroke-width="1.8"/>
+<text x="335" y="170" fill="#10b981" font-size="11" font-weight="bold">θ (wedge °)</text>
+</g>
+<g>
+<text x="80" y="290" fill="#ef4444" font-size="12" font-weight="bold">Open Anterior</text>
+<text x="80" y="308" fill="#3b82f6" font-size="12" font-weight="bold">Closed Posterior</text>
+<text x="80" y="325" fill="#94a3b8" font-size="11">→ Superior wedge (S) — 동측 디스크 개방</text>
+</g>
+<g>
+<rect x="280" y="335" width="195" height="55" fill="#0f172a" stroke="#334155" rx="6"/>
+<text x="290" y="353" fill="#94a3b8" font-size="11" font-weight="bold">최종: T6 PLS</text>
+<text x="290" y="368" fill="#ef4444" font-size="10">→ 교정: T6 L TP 접촉, P→A · L→R</text>
+<text x="290" y="382" fill="#ef4444" font-size="10">  Open wedge 측 복원 (S–I 벡터)</text>
+</g>
+</svg>
+</div>
 </div>
 
 #### 측정 점 (Landmark Points)
@@ -398,54 +534,97 @@ Gonstead 테크닉의 척수 분석 핵심은 전장 척추 X-ray 필름에 특�
 
 요추는 추체가 크고 하중을 많이 받아 디스크 변위(Wedge)가 가장 뚜렷하게 관찰되는 부위입니다.
 
-<div class="xray-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
-  <!-- Lumbar AP -->
-  <div class="xray-card" style="background: #0f172a; border-radius: 12px; padding: 15px; border: 1px solid #334155; color: #f8fafc;">
-    <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; text-align: center; color: #38bdf8;">Lumbar AP Schematic (L4 Wedging)</div>
-    <svg viewBox="0 0 320 240" width="100%" height="auto" style="border-radius: 6px; background: #020617;">
-      <!-- L4 Vertebra (PLS Listing Example - Wedge open on Left, Spinous shifted Left) -->
-      <path d="M 80 60 L 240 70 L 230 115 L 90 115 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2" />
-      <!-- Pedicles -->
-      <ellipse cx="115" cy="85" rx="8" ry="12" fill="#020617" stroke="#475569" stroke-width="1.5" />
-      <ellipse cx="205" cy="88" rx="8" ry="12" fill="#020617" stroke="#475569" stroke-width="1.5" />
-      <!-- Spinous Process -->
-      <ellipse cx="140" cy="85" rx="8" ry="14" fill="#ef4444" stroke="#475569" stroke-width="1.5" />
-      
-      <!-- L5 Vertebra (Reference Base) -->
-      <path d="M 80 135 L 240 135 L 235 185 L 85 185 Z" fill="#cbd5e1" stroke="#475569" stroke-width="2" />
-      <ellipse cx="160" cy="160" rx="8" ry="14" fill="#64748b" stroke="#475569" stroke-width="1.5" />
-
-      <!-- Center line -->
-      <line x1="160" y1="40" x2="160" y2="200" stroke="#10b981" stroke-width="1" stroke-dasharray="3 3" />
-      
-      <!-- Disc open wedge indicator -->
-      <line x1="60" y1="122" x2="260" y2="128" stroke="#ef4444" stroke-width="1.5" /> <!-- L4 bottom edge -->
-      <line x1="60" y1="135" x2="260" y2="135" stroke="#3b82f6" stroke-width="1.5" /> <!-- L5 top edge -->
-      <circle cx="140" cy="85" r="4" fill="#ef4444" />
-      <text x="50" y="115" fill="#ef4444" font-size="9" font-weight="bold">Open Wedge (S)</text>
-    </svg>
-  </div>
-
-  <!-- Lumbar Lat -->
-  <div class="xray-card" style="background: #0f172a; border-radius: 12px; padding: 15px; border: 1px solid #334155; color: #f8fafc;">
-    <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; text-align: center; color: #38bdf8;">Lumbar Lateral Schematic (P Alignment)</div>
-    <svg viewBox="0 0 320 240" width="100%" height="auto" style="border-radius: 6px; background: #020617;">
-      <!-- L4 posterior translation profile -->
-      <!-- L3 -->
-      <path d="M 90 40 L 170 45 L 160 85 L 85 80 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5" />
-      <!-- L4 (Shifted posterior / Left in image) -->
-      <path d="M 70 95 L 150 100 L 140 140 L 65 135 Z" fill="#e2e8f0" stroke="#ef4444" stroke-width="2" />
-      <!-- L5 -->
-      <path d="M 95 150 L 175 155 L 165 195 L 90 190 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5" />
-
-      <!-- George's Line -->
-      <path d="M 85 80 C 80 100 60 120 90 190" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3 3" />
-      <path d="M 85 80 L 65 135 L 90 190" fill="none" stroke="#ef4444" stroke-width="2" />
-      
-      <circle cx="65" cy="135" r="4" fill="#ef4444" />
-      <text x="145" y="125" fill="#ef4444" font-size="10" font-weight="bold">Posterior (P)</text>
-    </svg>
-  </div>
+<div class="xray-schema-grid">
+<div class="xray-schema">
+<div class="xray-schema-title">Lumbar AP — L4 PL (Spinous L · Wedge open L)</div>
+<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" class="xray-svg" role="img" aria-label="Lumbar AP schematic showing L4 with leftward spinous and open wedge on left">
+<rect width="480" height="400" fill="#0b1220"/>
+<text x="240" y="28" text-anchor="middle" fill="#94a3b8" font-size="13" font-style="italic">AP view · L4–L5 + Sacral base</text>
+<text x="40" y="55" fill="#64748b" font-size="11">L</text><text x="430" y="55" fill="#64748b" font-size="11">R</text>
+<g>
+<path d="M 105 80 L 375 80 L 370 165 L 110 165 Z" fill="#e2e8f0" stroke="#ef4444" stroke-width="2.5"/>
+<text x="220" y="138" fill="#1e293b" font-size="16" font-weight="bold">L4 (병변)</text>
+<ellipse cx="155" cy="118" rx="13" ry="20" fill="#0b1220" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="325" cy="118" rx="13" ry="20" fill="#0b1220" stroke="#475569" stroke-width="1.8"/>
+<text x="135" y="100" fill="#94a3b8" font-size="10">L Pedicle</text>
+<text x="310" y="100" fill="#94a3b8" font-size="10">R Pedicle</text>
+<ellipse cx="215" cy="190" rx="10" ry="18" fill="#ef4444" stroke="#7f1d1d" stroke-width="2"/>
+<text x="145" y="218" fill="#ef4444" font-size="12" font-weight="bold">Spinous → L (편위)</text>
+<path d="M 240 190 L 224 190" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="3 2"/>
+<circle cx="240" cy="190" r="3" fill="#10b981"/>
+</g>
+<g>
+<line x1="50" y1="170" x2="430" y2="160" stroke="#ef4444" stroke-width="2.5"/>
+<text x="55" y="160" fill="#ef4444" font-size="12" font-weight="bold">L4 inferior endplate</text>
+<line x1="50" y1="230" x2="430" y2="225" stroke="#3b82f6" stroke-width="2.5"/>
+<text x="55" y="248" fill="#3b82f6" font-size="12" font-weight="bold">L5 superior endplate</text>
+<text x="120" y="200" fill="#ef4444" font-size="12" font-weight="bold">Open Wedge L</text>
+<text x="340" y="200" fill="#3b82f6" font-size="12" font-weight="bold">Closed R</text>
+</g>
+<g>
+<path d="M 110 232 L 370 232 L 365 305 L 115 305 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+<text x="220" y="275" fill="#475569" font-size="16" font-weight="bold">L5 (기준)</text>
+<ellipse cx="155" cy="265" rx="13" ry="20" fill="#0b1220" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="325" cy="265" rx="13" ry="20" fill="#0b1220" stroke="#475569" stroke-width="1.8"/>
+<ellipse cx="240" cy="335" rx="10" ry="18" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/>
+</g>
+<g>
+<line x1="240" y1="50" x2="240" y2="370" stroke="#10b981" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="248" y="380" fill="#10b981" font-size="11" font-weight="bold">VRL</text>
+</g>
+<g>
+<rect x="290" y="335" width="185" height="60" fill="#0f172a" stroke="#334155" rx="6"/>
+<text x="300" y="353" fill="#94a3b8" font-size="11" font-weight="bold">Listing: L4 PLS</text>
+<text x="300" y="368" fill="#ef4444" font-size="10">Spinous L · Wedge open L</text>
+<text x="300" y="382" fill="#ef4444" font-size="10">→ S: 좌측 디스크 개방</text>
+</g>
+</svg>
+</div>
+<div class="xray-schema">
+<div class="xray-schema-title">Lumbar Lateral — George's Line · L4 Posterior</div>
+<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" class="xray-svg" role="img" aria-label="Lumbar lateral schematic with L3 L4 L5 sacrum and George's line break at L4">
+<rect width="480" height="400" fill="#0b1220"/>
+<text x="240" y="28" text-anchor="middle" fill="#94a3b8" font-size="13" font-style="italic">Lateral view · George's Line + Sacral Base</text>
+<text x="40" y="55" fill="#64748b" font-size="11">Anterior →</text><text x="380" y="55" fill="#64748b" font-size="11">← Posterior</text>
+<g>
+<path d="M 145 75 L 320 80 L 305 145 L 140 138 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+<text x="220" y="115" fill="#475569" font-size="14" font-weight="bold">L3</text>
+<path d="M 305 110 L 405 145 L 395 170 L 305 140 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+</g>
+<g>
+<path d="M 120 165 L 295 168 L 285 235 L 115 230 Z" fill="#e2e8f0" stroke="#ef4444" stroke-width="2.5"/>
+<text x="200" y="208" fill="#1e293b" font-size="14" font-weight="bold">L4 (P 변위)</text>
+<path d="M 285 195 L 390 235 L 380 260 L 285 230 Z" fill="#e2e8f0" stroke="#ef4444" stroke-width="2"/>
+</g>
+<g>
+<path d="M 150 258 L 325 260 L 315 325 L 145 322 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+<text x="220" y="298" fill="#475569" font-size="14" font-weight="bold">L5</text>
+<path d="M 315 290 L 415 325 L 405 350 L 315 320 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+</g>
+<g>
+<path d="M 175 340 L 280 355 L 250 385 L 175 365 Z" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>
+<text x="195" y="370" fill="#1e293b" font-size="12" font-weight="bold">Sacrum</text>
+</g>
+<g>
+<path d="M 140 138 C 135 175 110 210 145 322" fill="none" stroke="#3b82f6" stroke-width="2.2" stroke-dasharray="5 4"/>
+<text x="155" y="155" fill="#3b82f6" font-size="12" font-weight="bold">George's Line (정상)</text>
+<circle cx="140" cy="138" r="5" fill="#3b82f6"/>
+<circle cx="145" cy="322" r="5" fill="#3b82f6"/>
+<path d="M 140 138 L 115 230 L 145 322" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+<circle cx="115" cy="230" r="7" fill="#ef4444"/>
+<text x="40" y="234" fill="#ef4444" font-size="13" font-weight="bold">Break (P)</text>
+</g>
+<g>
+<line x1="155" y1="345" x2="320" y2="362" stroke="#10b981" stroke-width="2"/>
+<text x="160" y="338" fill="#10b981" font-size="11" font-weight="bold">Sacral Base Line</text>
+</g>
+<g>
+<rect x="280" y="350" width="195" height="45" fill="#0f172a" stroke="#334155" rx="6"/>
+<text x="290" y="368" fill="#94a3b8" font-size="11" font-weight="bold">Listing 최종: L4 PLS</text>
+<text x="290" y="384" fill="#ef4444" font-size="10">→ Side posture: L 극돌기 P→A, L→R</text>
+</g>
+</svg>
+</div>
 </div>
 
 #### 측정 점 (Landmark Points)
@@ -473,58 +652,99 @@ Gonstead 테크닉의 척수 분석 핵심은 전장 척추 X-ray 필름에 특�
 
 골반은 척추 전체의 주춧돌(Pelvic Foundation)로, 장골(Ilium)과 천골(Sacrum)의 비틀림(Torsion)을 계측합니다.
 
-<div class="xray-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
-  <!-- Pelvis AP -->
-  <div class="xray-card" style="background: #0f172a; border-radius: 12px; padding: 15px; border: 1px solid #334155; color: #f8fafc;">
-    <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; text-align: center; color: #38bdf8;">Pelvis AP Schematic (PI-EX on Right)</div>
-    <svg viewBox="0 0 320 240" width="100%" height="auto" style="border-radius: 6px; background: #020617;">
-      <!-- Pelvic Wing / Innominate Outlines (Asymmetry) -->
-      <!-- Left Ilium (Normal/Slightly AS) -->
-      <path d="M 160 120 C 140 100 80 80 60 110 C 40 140 50 190 90 200 C 120 200 140 170 160 120" fill="none" stroke="#64748b" stroke-width="2" />
-      <!-- Right Ilium (PI-EX: Shorter height, wider width) -->
-      <path d="M 160 120 C 180 105 250 95 270 125 C 285 150 270 195 230 200 C 200 200 180 170 160 120" fill="none" stroke="#ef4444" stroke-width="2" />
-      
-      <!-- Sacrum (Triangle in middle) -->
-      <path d="M 120 110 Q 160 100 200 110 L 180 180 L 140 180 Z" fill="#e2e8f0" stroke="#475569" stroke-width="1.5" />
-      
-      <!-- Femur Heads -->
-      <circle cx="70" cy="185" r="14" fill="#cbd5e1" stroke="#475569" stroke-width="1.5" /> <!-- Left Femur Head -->
-      <circle cx="250" cy="195" r="14" fill="#ef4444" stroke="#ef4444" stroke-width="1.5" /> <!-- Right Femur Head (PI - Depressed) -->
-
-      <!-- Lines & Points -->
-      <!-- Ischial line (Base line) -->
-      <line x1="30" y1="200" x2="290" y2="200" stroke="#3b82f6" stroke-width="1.5" />
-      <text x="35" y="193" fill="#3b82f6" font-size="9">Ischial Base Line</text>
-      
-      <!-- Femoral Head Line -->
-      <line x1="30" y1="185" x2="290" y2="195" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3 3" />
-      <text x="35" y="175" fill="#10b981" font-size="9">Femur Head Line (Tilt)</text>
-      
-      <circle cx="250" cy="195" r="3" fill="#ef4444" />
-      <text x="240" y="215" fill="#ef4444" font-size="9" font-weight="bold">R-PI (Depressed)</text>
-    </svg>
-  </div>
-
-  <!-- Pelvis Lat -->
-  <div class="xray-card" style="background: #0f172a; border-radius: 12px; padding: 15px; border: 1px solid #334155; color: #f8fafc;">
-    <div style="font-weight: 600; margin-bottom: 8px; font-size: 14px; text-align: center; color: #38bdf8;">Pelvis Lateral (Sacral Tilt Angle)</div>
-    <svg viewBox="0 0 320 240" width="100%" height="auto" style="border-radius: 6px; background: #020617;">
-      <!-- Lateral view of Sacrum and Ilium shadow -->
-      <!-- Sacrum silhouette -->
-      <path d="M 120 50 C 150 50 180 80 170 170 L 150 200 L 130 150 Z" fill="#cbd5e1" stroke="#475569" stroke-width="2" />
-      
-      <!-- Sacral Base Line -->
-      <line x1="80" y1="50" x2="200" y2="50" stroke="#ef4444" stroke-width="1.5" />
-      <text x="140" y="42" fill="#ef4444" font-size="9" font-weight="bold">Sacral Base Plane</text>
-      
-      <!-- Horizontal Reference Line -->
-      <line x1="80" y1="80" x2="200" y2="80" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3 3" />
-      
-      <!-- Sacral Angle indicator -->
-      <path d="M 150 80 A 30 30 0 0 0 150 50" fill="none" stroke="#10b981" stroke-width="1.5" />
-      <text x="160" y="70" fill="#10b981" font-size="9" font-weight="bold">Base Angle (avg 40°)</text>
-    </svg>
-  </div>
+<div class="xray-schema-grid">
+<div class="xray-schema">
+<div class="xray-schema-title">Pelvis AP — Right PI-EX (Ilium 비대칭 · Femur head 하강)</div>
+<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" class="xray-svg" role="img" aria-label="Pelvis AP schematic showing innominate asymmetry, sacrum, femur heads with PI-EX listing on right">
+<rect width="480" height="400" fill="#0b1220"/>
+<text x="240" y="28" text-anchor="middle" fill="#94a3b8" font-size="13" font-style="italic">AP view · Pelvic foundation 분석</text>
+<text x="40" y="55" fill="#64748b" font-size="11">L (정상)</text><text x="395" y="55" fill="#64748b" font-size="11">R (PI-EX)</text>
+<g>
+<path d="M 240 130 C 210 95 105 75 70 115 C 38 155 50 270 110 290 C 165 295 200 240 240 140 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+<text x="115" y="170" fill="#475569" font-size="13" font-weight="bold">L Ilium</text>
+<text x="115" y="188" fill="#475569" font-size="11">(정상 높이)</text>
+<circle cx="80" cy="125" r="4" fill="#3b82f6"/><text x="40" y="120" fill="#3b82f6" font-size="10">L PSIS</text>
+</g>
+<g>
+<path d="M 240 130 C 270 100 380 88 415 130 C 445 175 425 270 360 290 C 305 290 270 235 240 140 Z" fill="#fecaca" stroke="#ef4444" stroke-width="2.5"/>
+<text x="320" y="160" fill="#7f1d1d" font-size="13" font-weight="bold">R Ilium (병변)</text>
+<text x="320" y="178" fill="#7f1d1d" font-size="11">짧고 EX 확장</text>
+<circle cx="408" cy="138" r="4" fill="#ef4444"/><text x="418" y="135" fill="#ef4444" font-size="10">R PSIS (낮음)</text>
+</g>
+<g>
+<path d="M 195 135 Q 240 122 285 135 L 270 250 L 210 250 Z" fill="#e5e7eb" stroke="#475569" stroke-width="2"/>
+<text x="240" y="195" text-anchor="middle" fill="#475569" font-size="14" font-weight="bold">Sacrum</text>
+<circle cx="240" cy="218" r="4" fill="#10b981"/><text x="248" y="222" fill="#10b981" font-size="10">S2 tubercle</text>
+</g>
+<g>
+<circle cx="105" cy="285" r="22" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
+<text x="105" y="290" text-anchor="middle" fill="#475569" font-size="11" font-weight="bold">L FH</text>
+<circle cx="375" cy="300" r="22" fill="#fecaca" stroke="#ef4444" stroke-width="2.5"/>
+<text x="375" y="305" text-anchor="middle" fill="#7f1d1d" font-size="11" font-weight="bold">R FH</text>
+<text x="345" y="335" fill="#ef4444" font-size="11" font-weight="bold">↓ Depressed</text>
+</g>
+<g>
+<line x1="40" y1="307" x2="440" y2="320" stroke="#3b82f6" stroke-width="2"/>
+<text x="50" y="298" fill="#3b82f6" font-size="11" font-weight="bold">① Ischial Base Line</text>
+<line x1="40" y1="285" x2="440" y2="300" stroke="#10b981" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="50" y="278" fill="#10b981" font-size="11" font-weight="bold">② Femur Head Line (Tilt R↓)</text>
+<path d="M 380 295 L 388 305" stroke="#10b981" stroke-width="2"/>
+</g>
+<g>
+<line x1="80" y1="125" x2="408" y2="138" stroke="#ef4444" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="200" y="115" fill="#ef4444" font-size="11" font-weight="bold">③ PSIS Line (R 하강)</text>
+</g>
+<g>
+<rect x="290" y="335" width="185" height="60" fill="#0f172a" stroke="#334155" rx="6"/>
+<text x="300" y="353" fill="#94a3b8" font-size="11" font-weight="bold">Listing: Right PI-EX</text>
+<text x="300" y="368" fill="#ef4444" font-size="10">PI: R Ilium ↓ + R Femur head ↓</text>
+<text x="300" y="382" fill="#ef4444" font-size="10">EX: R Ilium 외측 flare</text>
+</g>
+</svg>
+</div>
+<div class="xray-schema">
+<div class="xray-schema-title">Pelvis Lateral — Sacral Base Angle (Ferguson)</div>
+<svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" class="xray-svg" role="img" aria-label="Pelvis lateral schematic showing sacrum and sacral base angle Ferguson method">
+<rect width="480" height="400" fill="#0b1220"/>
+<text x="240" y="28" text-anchor="middle" fill="#94a3b8" font-size="13" font-style="italic">Lateral view · Sacral base angle 측정</text>
+<text x="40" y="55" fill="#64748b" font-size="11">Anterior →</text><text x="380" y="55" fill="#64748b" font-size="11">← Posterior</text>
+<g>
+<path d="M 130 95 L 320 100 L 305 165 L 125 158 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+<text x="210" y="135" fill="#475569" font-size="14" font-weight="bold">L5</text>
+<path d="M 305 130 L 400 165 L 390 195 L 305 160 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/>
+</g>
+<g>
+<path d="M 155 180 C 175 200 280 205 305 175 L 360 270 L 270 360 L 190 290 Z" fill="#e5e7eb" stroke="#475569" stroke-width="2"/>
+<text x="240" y="270" text-anchor="middle" fill="#475569" font-size="16" font-weight="bold">Sacrum</text>
+</g>
+<g>
+<line x1="155" y1="180" x2="305" y2="195" stroke="#ef4444" stroke-width="2.8"/>
+<circle cx="155" cy="180" r="5" fill="#ef4444"/>
+<circle cx="305" cy="195" r="5" fill="#ef4444"/>
+<text x="160" y="172" fill="#ef4444" font-size="12" font-weight="bold">Sacral Base Plane</text>
+</g>
+<g>
+<line x1="155" y1="180" x2="305" y2="180" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="180" y="172" fill="#3b82f6" font-size="11" font-weight="bold">Horizontal ref</text>
+</g>
+<g>
+<path d="M 245 180 A 35 35 0 0 0 248 195" fill="none" stroke="#10b981" stroke-width="2.5"/>
+<text x="260" y="200" fill="#10b981" font-size="14" font-weight="bold">θ ≈ 40°</text>
+<text x="260" y="218" fill="#10b981" font-size="11">(정상 36°–42°)</text>
+</g>
+<g>
+<text x="50" y="320" fill="#94a3b8" font-size="11">• 증가(&gt; 50°) → 과전만 · 요통 위험</text>
+<text x="50" y="338" fill="#94a3b8" font-size="11">• 감소(&lt; 30°) → 평탄 요추 · 디스크 부하</text>
+<text x="50" y="356" fill="#94a3b8" font-size="11">• Pelvic tilt + leg length 통합 판독</text>
+</g>
+<g>
+<rect x="280" y="340" width="195" height="55" fill="#0f172a" stroke="#334155" rx="6"/>
+<text x="290" y="358" fill="#94a3b8" font-size="11" font-weight="bold">Ferguson Method</text>
+<text x="290" y="374" fill="#10b981" font-size="10">L5 endplate ↔ Sacral base 각도</text>
+<text x="290" y="388" fill="#10b981" font-size="10">→ Lumbosacral angle (LSA)</text>
+</g>
+</svg>
+</div>
 </div>
 
 #### 측정 점 (Landmark Points)
