@@ -15,26 +15,57 @@ const REPO = process.env.GITHUB_REPO || 'jaeho-jang-dr/chiropracticos';
 const BRANCH = process.env.GITHUB_BRANCH || 'main';
 const PAT = process.env.GITHUB_CONTENT_PAT;
 
-// PUT 경로 화이트리스트 — PAT 탈취 시에도 .github/, .env, api/, vercel.json,
-// package.json, deploy.sh, supabase/migrations/ 등 인프라 파일 변조 차단.
-// 콘텐츠/자산 경로만 허용. GET은 화이트리스트 무관(읽기 전용).
+// 경로 화이트리스트 — PAT 탈취 시에도 .github/, .env, api/, vercel.json,
+// package.json, deploy.sh, supabase/migrations/ 등 인프라 파일 read/write 차단.
+// GET·PUT 모두 동일 화이트리스트 적용 (admin이라도 인프라 파일은 GitHub 직접 접근).
 const ALLOWED_CONTENT_DIRS = new Set([
   'thompson', 'ak', 'gonstead', 'diversified', 'cox', 'logan', 'sot',
   'cbp', 'activator', 'toggle_recoil', 'functional_neurology',
   'intro', 'lectures', 'archive', 'images',
 ]);
 
-function isWritePathAllowed(path) {
+// 루트에 허용된 챕터 HTML — 명시 목록 (chapter99_xxx.html 같은 임의 챕터 차단)
+const ALLOWED_CHAPTERS = new Set([
+  'chapter01_introduction',
+  'chapter02_functional_neurology',
+  'chapter03_diversified',
+  'chapter04_gonstead',
+  'chapter05_toggle_recoil',
+  'chapter06_thompson',
+  'chapter07_activator',
+  'chapter08_cox',
+  'chapter09_logan',
+  'chapter10_sot',
+  'chapter11_cbp',
+  'chapter12_ak',
+]);
+const ALLOWED_ROOT_HTML = new Set([
+  'index', 'archive', 'guide', 'login', 'signup',
+  'admin', 'debug', 'editor', 'viewer', 'auth-callback',
+]);
+
+function isPathAllowed(path) {
   if (!path || typeof path !== 'string') return false;
   if (path.length > 500) return false;
-  if (/^[/\\]/.test(path)) return false;        // 절대경로 차단
-  if (path.includes('\\')) return false;         // 백슬래시 차단
+  if (path.includes('\0')) return false;          // null-byte 차단
+  if (/^[/\\]/.test(path)) return false;          // 절대경로 차단
+  if (path.includes('\\')) return false;          // 백슬래시 차단
+  // URL-encoded traversal 우회 차단 (% → decode 후 재검증)
+  let decoded;
+  try { decoded = decodeURIComponent(path); } catch { return false; }
+  if (decoded !== path) {
+    if (decoded.includes('..') || /^[/\\]/.test(decoded) || decoded.includes('\\') || decoded.includes('\0')) return false;
+  }
   const parts = path.split('/');
   if (parts.some(p => !p || p === '.' || p === '..')) return false;
 
-  // 루트 파일: 사전 정의된 HTML만
+  // 루트 단일 세그먼트
   if (parts.length === 1) {
-    return /^(index|archive|guide|login|signup|admin|debug|editor|viewer|auth-callback|chapter\d{2}_[a-z_]+)\.html$/i.test(parts[0]);
+    // 컨텐츠 디렉터리 이름(디렉터리 GET용 — handler가 array면 400 반환)
+    if (ALLOWED_CONTENT_DIRS.has(parts[0])) return true;
+    const m = parts[0].match(/^([a-zA-Z0-9_-]+)\.html$/);
+    if (!m) return false;
+    return ALLOWED_ROOT_HTML.has(m[1]) || ALLOWED_CHAPTERS.has(m[1]);
   }
 
   // assets/*.{js,css,json}
@@ -50,6 +81,9 @@ function isWritePathAllowed(path) {
 
   return false;
 }
+
+// 하위 호환 별칭 (기존 PUT 코드가 부르던 이름)
+const isWritePathAllowed = isPathAllowed;
 
 async function verifyAdmin(req) {
   const auth = req.headers.authorization || '';
@@ -108,6 +142,10 @@ export default async function handler(req, res) {
     if (req.method === 'GET') {
       const path = (req.query.path || '').toString();
       if (!path) return res.status(400).json({ error: 'path required' });
+      if (!isPathAllowed(path)) {
+        console.warn('[api/content] GET blocked by whitelist', { path, admin: auth.user.email });
+        return res.status(403).json({ error: 'path not allowed for read', path });
+      }
       const r = await fetch(`${GH(path)}?ref=${BRANCH}`, { headers: GH_HEADERS });
       if (!r.ok) {
         const t = await r.text();

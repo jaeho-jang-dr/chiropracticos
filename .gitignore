@@ -38,3 +38,14 @@ images/chapter1/references/
 
 .vercel
 tmp_fn_podcasts/
+
+# 임시 자동화 스크립트 (G 마스터에 보존, repo에는 트래킹 안 함)
+tmp_*.py
+
+# 테스트 실행 로그 (transient)
+test_*.log
+test_baseline.log
+test_after_*.log
+test_round*.log
+test_final.log
+

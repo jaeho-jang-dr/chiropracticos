@@ -102,7 +102,29 @@
     return ov;
   }
 
+  // src 화이트리스트: https://, http://, blob:, data:image/, 그리고 path-relative
+  // (/path, ./path, ../path, foo/bar). javascript:, file:, vbscript: 등은 거절.
+  function isSafeSrc(src) {
+    if (typeof src !== 'string' || !src) return false;
+    var s = src.trim();
+    if (!s) return false;
+    if (/^https?:\/\//i.test(s)) return true;
+    if (/^blob:/i.test(s)) return true;
+    if (/^data:image\//i.test(s)) return true;
+    // scheme-less / path-relative — `:` 가 첫 `/` 보다 앞에 있으면 scheme로 간주하고 거절
+    var colon = s.indexOf(':');
+    var slash = s.indexOf('/');
+    if (colon === -1) return true;        // 콜론 없음 → relative path
+    if (slash !== -1 && slash < colon) return true; // /a:b → path
+    return false;
+  }
+
   function open(src, alt, title) {
+    if (!isSafeSrc(src)) {
+      // 안전하지 않은 URL은 무시 (overlay 열지 않음)
+      console.warn('[imgZoom] blocked unsafe src', src);
+      return;
+    }
     ensureStyles();
     var ov = buildOverlay();
     var img = ov.querySelector('.imgz-img');

@@ -61,6 +61,11 @@ async function verifyAdmin(req) {
 
 async function readJsonBody(req) {
   if (req.body && typeof req.body === 'object') return req.body;
+  if (typeof req.body === 'string') {
+    try { return JSON.parse(req.body); } catch { return {}; }
+  }
+  // 일부 테스트 mock / 단순 객체는 async-iterable이 아닐 수 있음 → 방어
+  if (!req || typeof req[Symbol.asyncIterator] !== 'function') return {};
   let raw = '';
   for await (const chunk of req) raw += chunk;
   if (!raw) return {};
@@ -69,6 +74,51 @@ async function readJsonBody(req) {
 
 function publicUrl(key) {
   return PUB_BASE ? `${PUB_BASE}/${key}` : null;
+}
+
+// R2 키 검증 — 모든 op에 동일 적용 (presign-upload, presign-get, delete, copy)
+// 차단: 빈 문자열, 비문자열, ../traversal, 절대경로, 백슬래시, null-byte,
+//        제어문자, URL-encoded traversal(%2e%2e, %2f), 과도하게 긴 키.
+const MAX_KEY_LEN = 1024;
+function validateKey(k) {
+  if (k === undefined || k === null) return { ok: false, error: 'key required' };
+  if (typeof k !== 'string') return { ok: false, error: 'key must be string' };
+  const key = k.trim();
+  if (!key) return { ok: false, error: 'key required' };
+  if (key.length > MAX_KEY_LEN) return { ok: false, error: 'key too long' };
+  if (key.startsWith('/') || key.startsWith('\\')) return { ok: false, error: 'invalid key: absolute path' };
+  if (key.includes('\\')) return { ok: false, error: 'invalid key: backslash' };
+  if (key.includes('\0')) return { ok: false, error: 'invalid key: null byte' };
+  if (/[\x00-\x1f\x7f]/.test(key)) return { ok: false, error: 'invalid key: control char' };
+  // raw traversal — 세그먼트 단위 체크
+  const parts = key.split('/');
+  if (parts.some((p) => p === '..' || p === '.')) return { ok: false, error: 'invalid key: traversal' };
+  // URL-encoded traversal/슬래시 우회
+  let decoded;
+  try { decoded = decodeURIComponent(key); } catch { return { ok: false, error: 'invalid key: bad encoding' }; }
+  if (decoded !== key) {
+    if (decoded.includes('..') || decoded.startsWith('/') || decoded.includes('\\') || decoded.includes('\0')) {
+      return { ok: false, error: 'invalid key: encoded traversal' };
+    }
+    const dparts = decoded.split('/');
+    if (dparts.some((p) => p === '..' || p === '.')) return { ok: false, error: 'invalid key: encoded traversal' };
+  }
+  return { ok: true, key };
+}
+
+// 여러 키를 한 번에 검증 (DELETE batch 등)
+const MAX_BATCH_KEYS = 1000; // S3 한도
+function validateKeys(keys) {
+  if (!Array.isArray(keys)) return { ok: false, error: 'keys must be array' };
+  if (keys.length === 0) return { ok: false, error: 'no keys provided' };
+  if (keys.length > MAX_BATCH_KEYS) return { ok: false, error: `too many keys (max ${MAX_BATCH_KEYS})` };
+  const out = [];
+  for (let i = 0; i < keys.length; i++) {
+    const v = validateKey(keys[i]);
+    if (!v.ok) return { ok: false, error: `keys[${i}]: ${v.error}` };
+    out.push(v.key);
+  }
+  return { ok: true, keys: out };
 }
 
 export default async function handler(req, res) {
@@ -110,8 +160,13 @@ export default async function handler(req, res) {
     // ---------- DELETE (single via ?key= or batch via body.keys) ----------
     if (op === 'delete' || req.method === 'DELETE') {
       const body = await readJsonBody(req);
-      const keys = body.keys && Array.isArray(body.keys) ? body.keys : (req.query.key ? [req.query.key.toString()] : []);
-      if (!keys.length) return res.status(400).json({ error: 'no keys provided' });
+      const rawKeys = body.keys && Array.isArray(body.keys)
+        ? body.keys
+        : (req.query.key ? [req.query.key.toString()] : []);
+      if (!rawKeys.length) return res.status(400).json({ error: 'no keys provided' });
+      const v = validateKeys(rawKeys);
+      if (!v.ok) return res.status(400).json({ error: v.error });
+      const keys = v.keys;
       if (keys.length === 1) {
         await s3.send(new DeleteObjectCommand({ Bucket: BUCKET, Key: keys[0] }));
         return res.status(200).json({ ok: true, deleted: keys });
@@ -126,11 +181,10 @@ export default async function handler(req, res) {
     // ---------- PRESIGN UPLOAD (browser PUT directly to R2) ----------
     if (op === 'presign-upload') {
       const body = await readJsonBody(req);
-      const key = (body.key || '').toString().trim();
+      const v = validateKey(body.key);
+      if (!v.ok) return res.status(400).json({ error: v.error });
+      const key = v.key;
       const contentType = (body.contentType || 'application/octet-stream').toString();
-      if (!key) return res.status(400).json({ error: 'key required' });
-      // soft-block path traversal
-      if (key.includes('..') || key.startsWith('/')) return res.status(400).json({ error: 'invalid key' });
       const url = await getSignedUrl(
         s3,
         new PutObjectCommand({ Bucket: BUCKET, Key: key, ContentType: contentType }),
@@ -140,10 +194,12 @@ export default async function handler(req, res) {
     }
 
     // ---------- PRESIGN GET (admin private read) ----------
+    // body 전용 — 쿼리스트링 key 허용 시 leaked URL 재생 공격 surface
     if (op === 'presign-get') {
       const body = await readJsonBody(req);
-      const key = (body.key || req.query.key || '').toString();
-      if (!key) return res.status(400).json({ error: 'key required' });
+      const v = validateKey(body.key);
+      if (!v.ok) return res.status(400).json({ error: v.error });
+      const key = v.key;
       const url = await getSignedUrl(
         s3,
         new GetObjectCommand({ Bucket: BUCKET, Key: key }),
@@ -155,9 +211,12 @@ export default async function handler(req, res) {
     // ---------- COPY / RENAME ----------
     if (op === 'copy' || op === 'rename') {
       const body = await readJsonBody(req);
-      const from = (body.from || '').toString();
-      const to = (body.to || '').toString();
-      if (!from || !to) return res.status(400).json({ error: 'from/to required' });
+      const vf = validateKey(body.from);
+      if (!vf.ok) return res.status(400).json({ error: `from: ${vf.error}` });
+      const vt = validateKey(body.to);
+      if (!vt.ok) return res.status(400).json({ error: `to: ${vt.error}` });
+      const from = vf.key;
+      const to = vt.key;
       await s3.send(new CopyObjectCommand({
         Bucket: BUCKET,
         CopySource: `/${BUCKET}/${encodeURIComponent(from)}`,
@@ -171,7 +230,8 @@ export default async function handler(req, res) {
 
     return res.status(400).json({ error: 'unknown op', op });
   } catch (e) {
+    // 내부 상세는 로그에만, 클라이언트에는 generic 메시지
     console.error('[api/r2]', op, e);
-    return res.status(500).json({ error: e.message || 'r2 op failed', code: e.Code || e.name });
+    return res.status(500).json({ error: 'r2 op failed' });
   }
 }

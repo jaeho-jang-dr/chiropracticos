@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>관리자 | Chiropractic</title>
-  <link rel="stylesheet" href="./assets/main.css?v=20260523u" />
-<script defer src="./assets/ui.js?v=20260523u"></script>
-<script defer src="./assets/download-guard.js?v=20260523u"></script>
-<script defer src="./assets/hide-guard.js?v=20260523u"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260523u"></script>
-  <script src="./assets/config.js?v=20260523u"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260523u"></script>
+  <link rel="stylesheet" href="./assets/main.css?v=20260526a" />
+<script defer src="./assets/ui.js?v=20260526a"></script>
+<script defer src="./assets/download-guard.js?v=20260526a"></script>
+<script defer src="./assets/hide-guard.js?v=20260526a"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260526a"></script>
+  <script src="./assets/config.js?v=20260526a"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260526a"></script>
   <style>
     .admin-wrap{max-width:1180px;margin:5rem auto 4rem;padding:0 1.5rem}
     .admin-wrap h1{margin:0 0 .25rem}
@@ -187,7 +187,7 @@
       <div class="hide-section" id="hide-section">
         <h3>🙈 자산 즉시 감추기</h3>
         <p class="meta" style="margin:0">잘못 올라간 자산의 URL을 입력하면 즉시 모든 페이지에서 가립니다. <strong>다음 페이지 로드부터</strong> 반영됩니다. 파일 자체는 그대로 — 영구 삭제는 아래 R2 매니저로.</p>
-        <form class="hide-form" id="hide-form" onsubmit="return false">
+        <form class="hide-form" id="hide-form">
           <input type="text" id="hide-url" placeholder="자산 URL 또는 경로 (예: https://pub-e44b…r2.dev/diversified/04_slides_week1.pdf)" required autocomplete="off" />
           <input type="text" id="hide-reason" placeholder="사유 (선택)" autocomplete="off" />
           <button type="submit" class="big-btn" id="hide-submit">🙈 즉시 감추기</button>
@@ -295,7 +295,7 @@
   </div>
 
   <script type="module">
-    import { supabase, getCurrentUser, signOut } from "./assets/supabase-client.js?v=20260523u";
+    import { supabase, getCurrentUser, signOut } from "./assets/supabase-client.js?v=20260526a";
 
     // ============ Tab switching ============
     document.querySelectorAll(".tab").forEach(t => {
@@ -443,7 +443,7 @@
                 <h3 style="margin:0">${esc(u.full_name || u.email)}</h3>
                 <div class="meta">${esc(u.email)}</div>
               </div>
-              <button class="small-btn" onclick="document.getElementById('user-detail-modal').remove()">✕</button>
+              <button class="small-btn" data-modal-close>✕</button>
             </div>
             <table style="margin:0;border:none;box-shadow:none">
               <tbody style="font-size:.9em">
@@ -460,21 +460,32 @@
               </tbody>
             </table>
             <div style="display:flex;gap:.5rem;margin-top:1.2rem;flex-wrap:wrap">
-              ${u.access_level !== 'approved' && !u.blocked_at ? `<button class="big-btn" style="background:#34c759;flex:1;min-width:140px" onclick="window.__detailAct('approve','${u.id}')">✅ 즉시 승인</button>` : ''}
-              ${!u.blocked_at && u.access_level === 'approved' ? `<button class="big-btn" style="background:#ff3b30;flex:1;min-width:140px" onclick="window.__detailAct('block','${u.id}')">🚫 차단</button>` : ''}
-              ${u.blocked_at ? `<button class="big-btn" style="background:#0a84ff;flex:1;min-width:140px" onclick="window.__detailAct('unblock','${u.id}')">↩ 차단 해제</button>` : ''}
+              ${u.access_level !== 'approved' && !u.blocked_at ? `<button class="big-btn" style="background:#34c759;flex:1;min-width:140px" data-act="approve" data-uid="${esc(u.id)}">✅ 즉시 승인</button>` : ''}
+              ${!u.blocked_at && u.access_level === 'approved' ? `<button class="big-btn" style="background:#ff3b30;flex:1;min-width:140px" data-act="block" data-uid="${esc(u.id)}">🚫 차단</button>` : ''}
+              ${u.blocked_at ? `<button class="big-btn" style="background:#0a84ff;flex:1;min-width:140px" data-act="unblock" data-uid="${esc(u.id)}">↩ 차단 해제</button>` : ''}
             </div>
           </div>
         </div>`;
       const tmp = document.createElement('div');
       tmp.innerHTML = html;
-      document.body.appendChild(tmp.firstElementChild);
+      const modal = tmp.firstElementChild;
+      // CSP-safe: delegated listeners instead of inline onclick handlers
+      modal.addEventListener('click', async (e) => {
+        const btn = e.target.closest('[data-act], [data-modal-close]');
+        if (!btn) return;
+        if (btn.hasAttribute('data-modal-close')) {
+          modal.remove();
+          return;
+        }
+        const action = btn.getAttribute('data-act');
+        const id = btn.getAttribute('data-uid');
+        if (!action || !id) return;
+        const ok = await actAccount(action, id);
+        modal.remove();
+        if (ok) { await loadAccounts(); await loadStats(); }
+      });
+      document.body.appendChild(modal);
     }
-    window.__detailAct = async (action, id) => {
-      const ok = await actAccount(action, id);
-      document.getElementById('user-detail-modal')?.remove();
-      if (ok) { await loadAccounts(); loadStats(); }
-    };
 
     function updateBulkBar() {
       const bar = document.getElementById("bulk-bar");

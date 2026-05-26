@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Auth Debug</title>
-  <script src="./assets/config.js?v=20260523u"></script>
+  <script src="./assets/config.js?v=20260526a"></script>
   <style>
     body{font-family:ui-monospace,monospace;padding:2rem;max-width:900px;margin:0 auto;background:#fafafc;color:#222}
     h1{font-family:system-ui}
@@ -18,9 +18,9 @@
   <p>이 페이지는 로그인 흐름을 진단합니다. URL에 <code>#debug=1</code>가 있으면 console에도 로그 출력.</p>
 
   <div class="row">
-    <button onclick="localStorage.setItem('auth_debug','1');location.reload()">디버그 로그 켜기</button>
-    <button onclick="localStorage.removeItem('auth_debug');location.reload()">끄기</button>
-    <button onclick="localStorage.clear();location.reload()" style="color:#c62828">전체 localStorage 비우기 (강제 로그아웃)</button>
+    <button id="btn-debug-on">디버그 로그 켜기</button>
+    <button id="btn-debug-off">끄기</button>
+    <button id="btn-ls-clear" style="color:#c62828">전체 localStorage 비우기 (강제 로그아웃)</button>
     <a href="/login"><button>로그인 페이지로</button></a>
     <a href="/"><button>메인으로</button></a>
   </div>
@@ -61,7 +61,20 @@
   </div>
 
   <script type="module">
-    import { supabase, sessionReady, getCurrentUserWithRow } from "./assets/supabase-client.js?v=20260523u";
+    import { supabase, sessionReady, getCurrentUserWithRow } from "./assets/supabase-client.js?v=20260526a";
+
+    document.getElementById('btn-debug-on').addEventListener('click', () => {
+      localStorage.setItem('auth_debug', '1');
+      location.reload();
+    });
+    document.getElementById('btn-debug-off').addEventListener('click', () => {
+      localStorage.removeItem('auth_debug');
+      location.reload();
+    });
+    document.getElementById('btn-ls-clear').addEventListener('click', () => {
+      localStorage.clear();
+      location.reload();
+    });
 
     const j = (x) => JSON.stringify(x, null, 2);
 

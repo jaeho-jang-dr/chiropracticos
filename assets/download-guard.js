@@ -44,26 +44,43 @@
     });
   }
 
+  // root 자신이 매치되면 포함, 그 안의 descendants도 포함 (MutationObserver의
+  // 새 노드 처리용 — querySelectorAll은 root 자신을 포함하지 않음)
+  function collect(root, selector) {
+    const r = root || document;
+    const out = [];
+    if (r.nodeType === 1 && r.matches && r.matches(selector)) out.push(r);
+    if (r.querySelectorAll) {
+      r.querySelectorAll(selector).forEach(function (el) { out.push(el); });
+    }
+    return out;
+  }
+
+  function lockVideoEl(v) {
+    const src = v.currentSrc || v.src ||
+      (v.querySelector && v.querySelector('source') && v.querySelector('source').src) || '';
+    if (isAllowedAsset(src)) return;
+    v.setAttribute('controlsList', 'nodownload noremoteplayback');
+    v.setAttribute('disablePictureInPicture', '');
+    // CSP enforced 호환 — 인라인 attribute 대신 실제 리스너 부착
+    v.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+  }
+
   // ---- 2) <video> controlsList=nodownload (개인 mp4 한정) ----
   function lockVideos(root) {
     if (isAdmin()) return;
-    (root || document).querySelectorAll('video').forEach(function (v) {
-      const src = v.currentSrc || v.src ||
-        (v.querySelector('source') && v.querySelector('source').src) || '';
-      if (isAllowedAsset(src)) return;
-      v.setAttribute('controlsList', 'nodownload noremoteplayback');
-      v.setAttribute('disablePictureInPicture', '');
-      v.setAttribute('oncontextmenu', 'return false');
-    });
+    collect(root, 'video').forEach(lockVideoEl);
+  }
+
+  function lockImgEl(img) {
+    img.setAttribute('draggable', 'false');
+    img.addEventListener('dragstart', function (e) { e.preventDefault(); });
   }
 
   // ---- 3) <img> drag/contextmenu 차단 ----
   function lockImages(root) {
     if (isAdmin()) return;
-    (root || document).querySelectorAll('img').forEach(function (img) {
-      img.setAttribute('draggable', 'false');
-      img.addEventListener('dragstart', function (e) { e.preventDefault(); });
-    });
+    collect(root, 'img').forEach(lockImgEl);
   }
 
   // ---- 4) 전역 우클릭 차단 (화이트리스트·관리자 예외) ----
@@ -80,8 +97,8 @@
 
   // ---- 5) Admin 모드 전환 시 차단 되돌리기 ----
   function unlockAllForAdmin() {
-    // <video> 잠금 해제
-    document.querySelectorAll('video[controlsList], video[disablepictureinpicture]').forEach(function (v) {
+    // <video> 잠금 해제 (legacy: 과거에 inline oncontextmenu를 썼을 수 있어 함께 제거)
+    document.querySelectorAll('video[controlsList], video[disablepictureinpicture], video[oncontextmenu]').forEach(function (v) {
       v.removeAttribute('controlsList');
       v.removeAttribute('disablePictureInPicture');
       v.removeAttribute('oncontextmenu');

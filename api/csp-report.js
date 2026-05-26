@@ -5,40 +5,120 @@
 // Vercel function logs(vercel logs --follow)에서 위반 흐름 확인.
 // 추후 enforced CSP로 promote할 때 baseline 좁히는 근거.
 // =============================================================================
+// 방어: 16KB payload 상한 · Content-Type 화이트리스트 · per-IP rate limit ·
+//        log injection 차단 (control char strip + 필드별 길이 캡)
+// =============================================================================
 
-async function readJsonBody(req) {
-  if (req.body && typeof req.body === 'object') return req.body;
+const MAX_BODY_BYTES = 16 * 1024;       // 16 KB
+const MAX_FIELD_LEN = 500;              // 필드별 로그 길이 캡
+const RATE_LIMIT_WINDOW_MS = 60 * 1000; // 1분
+const RATE_LIMIT_MAX = 10;              // IP당 분당 10건
+
+// in-memory rate limit map (Vercel function instance 단위 — instance가 살아있는 동안 유효)
+const rateMap = new Map();
+
+function rateLimitHit(ip) {
+  if (!ip) return false;
+  const now = Date.now();
+  const cutoff = now - RATE_LIMIT_WINDOW_MS;
+  const arr = rateMap.get(ip) || [];
+  const recent = arr.filter((t) => t > cutoff);
+  recent.push(now);
+  rateMap.set(ip, recent);
+  // 메모리 누수 방지 — 1000 IP 넘으면 오래된 것 정리
+  if (rateMap.size > 1000) {
+    for (const [k, v] of rateMap) {
+      if (v.length === 0 || v[v.length - 1] < cutoff) rateMap.delete(k);
+    }
+  }
+  return recent.length > RATE_LIMIT_MAX;
+}
+
+function clientIp(req) {
+  const xff = (req.headers['x-forwarded-for'] || '').toString();
+  if (xff) return xff.split(',')[0].trim();
+  return (req.headers['x-real-ip'] || req.socket?.remoteAddress || '').toString();
+}
+
+const ALLOWED_CT = [
+  'application/csp-report',
+  'application/reports+json',
+  'application/json',
+];
+function contentTypeAllowed(ct) {
+  if (!ct) return false;
+  const lc = ct.toString().toLowerCase().split(';')[0].trim();
+  return ALLOWED_CT.includes(lc);
+}
+
+// log injection 차단 — 첫 제어문자(LF/CR/ANSI ESC/NUL 등) 위치에서 잘라냄.
+// "directive\nFAKE-LOG-LINE" 같은 시도는 prefix만 남고 뒤쪽 위조 라인은 통째로 소실.
+function sanitizeField(v) {
+  if (v === undefined || v === null) return v;
+  let s = typeof v === 'string' ? v : String(v);
+  const m = s.match(/[\x00-\x1f\x7f]/);
+  if (m) s = s.slice(0, m.index);
+  if (s.length > MAX_FIELD_LEN) s = s.slice(0, MAX_FIELD_LEN) + '…[truncated]';
+  return s;
+}
+
+async function readJsonBodyWithCap(req) {
+  if (req.body && typeof req.body === 'object') return { ok: true, body: req.body };
+  if (typeof req.body === 'string') {
+    if (Buffer.byteLength(req.body, 'utf8') > MAX_BODY_BYTES) return { ok: false, code: 413 };
+    try { return { ok: true, body: JSON.parse(req.body) }; }
+    catch { return { ok: true, body: { raw: req.body.slice(0, 500) } }; }
+  }
+  if (!req || typeof req[Symbol.asyncIterator] !== 'function') return { ok: true, body: {} };
+  let total = 0;
   let raw = '';
-  for await (const chunk of req) raw += chunk;
-  if (!raw) return {};
-  try { return JSON.parse(raw); } catch { return { raw: raw.slice(0, 500) }; }
+  for await (const chunk of req) {
+    const part = typeof chunk === 'string' ? chunk : chunk.toString('utf8');
+    total += Buffer.byteLength(part, 'utf8');
+    if (total > MAX_BODY_BYTES) return { ok: false, code: 413 };
+    raw += part;
+  }
+  if (!raw) return { ok: true, body: {} };
+  try { return { ok: true, body: JSON.parse(raw) }; }
+  catch { return { ok: true, body: { raw: raw.slice(0, 500) } }; }
 }
 
 export default async function handler(req, res) {
-  // 브라우저 CSP 보고는 항상 POST (application/csp-report 또는 application/reports+json)
   if (req.method !== 'POST') return res.status(405).end();
 
-  try {
-    const body = await readJsonBody(req);
+  // Content-Type 화이트리스트
+  if (!contentTypeAllowed(req.headers['content-type'])) {
+    return res.status(415).end();
+  }
 
-    // 두 형식 모두 처리: CSP Level 2 (`csp-report` 키) + CSP Level 3 Reporting API (배열)
+  // per-IP rate limit
+  const ip = clientIp(req);
+  if (rateLimitHit(ip)) {
+    return res.status(429).end();
+  }
+
+  // payload 16KB 상한
+  const bodyResult = await readJsonBodyWithCap(req);
+  if (!bodyResult.ok) return res.status(bodyResult.code).end();
+
+  try {
+    const body = bodyResult.body;
+    // CSP Level 2 (`csp-report` 키) + CSP Level 3 Reporting API (배열/단일)
     const reports = Array.isArray(body) ? body : [body];
     for (const r of reports) {
-      const v = r['csp-report'] || r.body || r;
+      const v = (r && (r['csp-report'] || r.body || r)) || {};
       const summary = {
-        directive: v['violated-directive'] || v.effectiveDirective,
-        blocked: v['blocked-uri'] || v.blockedURL,
-        source: v['source-file'] || v.sourceFile,
+        directive: sanitizeField(v['violated-directive'] || v.effectiveDirective),
+        blocked: sanitizeField(v['blocked-uri'] || v.blockedURL),
+        source: sanitizeField(v['source-file'] || v.sourceFile),
         line: v['line-number'] || v.lineNumber,
-        document: v['document-uri'] || v.documentURL,
+        document: sanitizeField(v['document-uri'] || v.documentURL),
       };
-      // 길게 안 찍음 — function log 비용·노이즈 통제
       console.log('[csp]', JSON.stringify(summary));
     }
   } catch (e) {
-    console.error('[csp] parse error', e?.message);
+    console.error('[csp] parse error', sanitizeField(e?.message));
   }
 
-  // 브라우저는 응답 본문 무시 — 204 빠르게.
   res.status(204).end();
 }

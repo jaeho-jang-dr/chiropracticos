@@ -73,9 +73,19 @@
     const frame = ov.querySelector('#pdfv-frame');
     const titleEl = ov.querySelector('#pdfv-title');
     titleEl.textContent = title || 'PDF 미리보기';
-    // #toolbar=0&navpanes=0&scrollbar=1 → Chromium PDF 뷰어 툴바·사이드패널 숨김
-    const fragment = '#toolbar=0&navpanes=0&statusbar=0&messages=0&scrollbar=1&view=FitH';
-    frame.src = url + (url.indexOf('#') >= 0 ? '' : fragment);
+    // Chromium PDF 뷰어 fragment — 툴바/다운로드 버튼 숨김
+    const params = 'toolbar=0&navpanes=0&statusbar=0&messages=0&scrollbar=1&view=FitH';
+    // 기존 fragment가 있어도 우리 보안 파라미터를 항상 부착 (merge — `&`로 이어붙임)
+    const hashIdx = url.indexOf('#');
+    let merged;
+    if (hashIdx === -1) {
+      merged = url + '#' + params;
+    } else {
+      const base = url.slice(0, hashIdx);
+      const existing = url.slice(hashIdx + 1);
+      merged = base + '#' + (existing ? existing + '&' + params : params);
+    }
+    frame.src = merged;
     ov.classList.add('is-open');
     document.body.style.overflow = 'hidden';
   }

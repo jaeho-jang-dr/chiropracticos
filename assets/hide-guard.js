@@ -24,6 +24,24 @@
   let prefixes = [];           // /로 끝나는 prefix
   let loaded = false;
 
+  // FOUC 방어 — 직전 세션에서 캐시한 hide 목록을 동기로 시드.
+  // 첫 페인트 이전에 알려진 hidden URL을 숨김. fetch 결과 도착 후 갱신.
+  const CACHE_KEY = '__hide_guard_cache_v1';
+  try {
+    const raw = window.localStorage && window.localStorage.getItem(CACHE_KEY);
+    if (raw) {
+      const cached = JSON.parse(raw);
+      if (cached && Array.isArray(cached.exact) && Array.isArray(cached.prefixes)) {
+        // 캐시는 24h 유효
+        if (cached.ts && Date.now() - cached.ts < 24 * 3600 * 1000) {
+          cached.exact.forEach(function (u) { exactSet.add(u); });
+          prefixes = cached.prefixes.slice();
+          loaded = true;
+        }
+      }
+    }
+  } catch (_) { /* localStorage 차단·파싱 실패는 무시 */ }
+
   function pagePathMatches(pp) {
     if (!pp) return true;  // null이면 전 페이지에서 hide
     const cur = location.pathname.replace(/\/+$/, '') || '/';
@@ -91,6 +109,16 @@
         });
         loaded = true;
         applyHide();
+        // 다음 페이지 로드의 FOUC 방어용으로 캐시
+        try {
+          if (window.localStorage) {
+            window.localStorage.setItem(CACHE_KEY, JSON.stringify({
+              ts: Date.now(),
+              exact: Array.from(exactSet),
+              prefixes: prefixes,
+            }));
+          }
+        } catch (_) { /* quota·차단은 무시 */ }
       })
       .catch(function (e) {
         console.warn('[hide-guard] load failed', e);
@@ -108,8 +136,14 @@
     });
   });
 
+  // 캐시 시드된 상태라면 즉시 동기 hide — FOUC 방어
+  if (loaded) {
+    try { applyHide(); } catch (_) {}
+  }
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
+      if (loaded) try { applyHide(); } catch (_) {}  // DOM ready 시 캐시 hide 재적용
       reload();
       mo.observe(document.documentElement, { childList: true, subtree: true });
     });
