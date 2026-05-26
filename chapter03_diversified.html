@@ -5,12 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diversified HVLA | Chiropractic</title>
   <meta name="description" content="Diversified High-Velocity Low-Amplitude 카이로프랙틱 HVLA 수기 — 4주 근거 기반 커리큘럼. 강의록·PPTX·동영상·팟캐스트 통합 자료." />
-  <link rel="stylesheet" href="./assets/main.css?v=20260526a" />
+  <link rel="stylesheet" href="./assets/main.css?v=20260526b" />
 
-<script defer src="./assets/ui.js?v=20260526a"></script>
-<script defer src="./assets/download-guard.js?v=20260526a"></script>
-<script defer src="./assets/hide-guard.js?v=20260526a"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260526a"></script>
+<script defer src="./assets/ui.js?v=20260526b"></script>
+<script defer src="./assets/download-guard.js?v=20260526b"></script>
+<script defer src="./assets/hide-guard.js?v=20260526b"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260526b"></script>
+<style id="concept-block-css">
+/* 본문 보강 — 핵심 개념 details/summary 블록 */
+.concept-block{margin:0.9rem 0;background:#fff;border:1px solid #ebebed;border-radius:12px;overflow:hidden}
+.concept-block summary{padding:0.95rem 1.2rem;cursor:pointer;list-style:none;font-size:1em;background:#fafafc;border-bottom:1px solid transparent;transition:background .15s}
+.concept-block summary::-webkit-details-marker{display:none}
+.concept-block summary::before{content:"▸";display:inline-block;margin-right:0.6rem;color:#0a84ff;transition:transform .2s ease}
+.concept-block[open] summary::before{transform:rotate(90deg)}
+.concept-block[open] summary{background:#f0f7ff;border-bottom-color:#ebebed}
+.concept-block summary:hover{background:#f5f5f7}
+.concept-block[open] summary:hover{background:#e6f1ff}
+.concept-block > *:not(summary){padding:0 1.2rem}
+.concept-block > *:not(summary):first-of-type{padding-top:1rem}
+.concept-block > *:not(summary):last-child{padding-bottom:1.2rem}
+.concept-block table.data-table{margin:0.7rem 0}
+.concept-block h5{margin:1.2rem 0 0.4rem;font-size:0.95em;color:#0a84ff}
+.concept-block .callout{margin:0.9rem 0;padding:0.8rem 1rem;border-radius:10px;font-size:0.92em}
+.concept-block .callout-info{background:#f0f7ff;border-left:3px solid #0a84ff}
+.concept-block .callout-warn{background:#fff8e7;border-left:3px solid #ff9500}
+.concept-block .ref-cite{margin:0.7rem 0 0;font-size:0.82em;color:#666}
+.concept-block ol,.concept-block ul{margin:0.5rem 0;padding-left:1.4rem}
+.concept-block li{margin:0.3rem 0;line-height:1.55}
+@media (max-width:640px){
+  .concept-block summary{padding:0.85rem 0.95rem;font-size:0.95em}
+  .concept-block > *:not(summary){padding:0 0.95rem}
+}
+</style>
 <style id="legacy-archive-css">
 .archive-inline { margin: 3rem 0; }
 .archive-inline .video-thumb-grid {
@@ -29,8 +55,8 @@
 .archive-inline .video-card .title { font-weight: 600; font-size: .92em; }
 .archive-inline .video-card .meta { font-size: .78em; color: #86868b; }
 </style>
-  <script src="./assets/config.js?v=20260526a"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260526a"></script>
+  <script src="./assets/config.js?v=20260526b"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260526b"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">본문 바로가기</a>
@@ -109,9 +135,36 @@
       </div>
 
       <h3>4주 학습 로드맵</h3>
-      <div class="placeholder">
-        <strong>[ROADMAP DIAGRAM 자리]</strong> Week 1 (정의·생체역학·근거) → Week 2 (평가·진단) → Week 3 (분절별 기법) → Week 4 (임상·안전·통합)
+      <div class="roadmap-grid">
+        <a class="roadmap-step" href="#week1">
+          <span class="roadmap-num">Week 1</span>
+          <span class="roadmap-title">정의 · 생체역학 · 근거</span>
+          <small>HVLA 정의 · CPT/ICD-10 · 힘-시간 프로파일 · ROM 4구역 · Cavitation · Joint Dysfunction</small>
+        </a>
+        <a class="roadmap-step" href="#week2">
+          <span class="roadmap-num">Week 2</span>
+          <span class="roadmap-title">환자 평가 · 진단</span>
+          <small>4단계 플로우 · OPQRST · Red Flag 11 · Motion Palpation · 신경/정형 검사 · VBI · ACR Imaging</small>
+        </a>
+        <a class="roadmap-step" href="#week3">
+          <span class="roadmap-num">Week 3</span>
+          <span class="roadmap-title">분절별 교정 실무</span>
+          <small>3대 요소 · Pre-load → Elastic Barrier → Thrust · 경추·흉추·요추·골반·사지 · States Manual 표기법</small>
+        </a>
+        <a class="roadmap-step" href="#week4">
+          <span class="roadmap-num">Week 4</span>
+          <span class="roadmap-title">근거 · 안전 · 통합</span>
+          <small>GRADE · Cochrane SR · 요통/경추통/두통 프로토콜 · VAD 안전 · 금기 체크리스트 · 협진</small>
+        </a>
       </div>
+      <style>
+        .roadmap-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:1.25rem 0 2rem}
+        .roadmap-step{display:flex;flex-direction:column;gap:.35rem;padding:1.1rem 1.2rem;background:#fff;border:1px solid #ebebed;border-radius:14px;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s,border-color .15s}
+        .roadmap-step:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(10,132,255,.08);border-color:#0a84ff}
+        .roadmap-step .roadmap-num{font-size:.75em;font-weight:700;letter-spacing:.06em;color:#0a84ff;text-transform:uppercase}
+        .roadmap-step .roadmap-title{font-size:1.05em;font-weight:600;color:#1d1d1f}
+        .roadmap-step small{font-size:.82em;color:#666;line-height:1.45}
+      </style>
 
       <h3>근거 수준 미리보기</h3>
       <table class="data-table">
@@ -167,7 +220,109 @@
           <li>전통 Subluxation vs 현대 Joint Dysfunction 모델 차이를 논한다</li>
         </ul>
         <h4>🔑 핵심 개념</h4>
-        <div class="placeholder"><strong>[WEEK 1 상세 내용 자리]</strong> 의학적 정의 · CPT/ICD-10 코드 · Reinert·Janse 세속화 역사 · 힘-시간 프로파일 · Cavitation <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr> 근거</div>
+
+        <details class="concept-block" open>
+          <summary><strong>1. 의학적 정의와 표준 코드</strong></summary>
+          <p>Diversified High-Velocity, Low-Amplitude(HVLA) spinal manipulation은 다음 조건을 갖는 도수 의료 행위입니다.</p>
+          <ul>
+            <li>특정 척추 분절(segment) 또는 말초 관절에 가하는 수기</li>
+            <li>탄성 저항을 넘어서는 빠르고(&lt; 100 ms) 짧은(1–3 mm) 추력</li>
+            <li>관절이 생리적 운동범위 내에서 탄성장벽(elastic barrier)을 일시 초과하도록 유도</li>
+            <li>목표: 관절 저운동성(hypomobility) 해소 및 분절 기능 회복</li>
+          </ul>
+          <table class="data-table">
+            <thead><tr><th>코딩 체계</th><th>코드</th><th>설명</th></tr></thead>
+            <tbody>
+              <tr><td rowspan="4"><strong>CPT (미국)</strong></td><td>98940</td><td>Chiropractic manipulative treatment (CMT), 1–2 spinal regions</td></tr>
+              <tr><td>98941</td><td>CMT, 3–4 spinal regions</td></tr>
+              <tr><td>98942</td><td>CMT, 5 spinal regions</td></tr>
+              <tr><td>98943</td><td>CMT, extraspinal (1+ regions)</td></tr>
+              <tr><td rowspan="2"><strong>ICD-10-CM</strong></td><td>M99.0x</td><td>Segmental and somatic dysfunction</td></tr>
+              <tr><td>M99.1x</td><td>Subluxation complex (vertebral)</td></tr>
+            </tbody>
+          </table>
+          <p class="callout callout-warn"><strong>용어 주의.</strong> ICD-10-CM의 "Subluxation complex"는 카이로프랙틱 고유 개념으로, 정형외과의 <em>불완전 탈구(관절면 부분 이탈)</em>와 다릅니다. 학술 글에서는 혼동 방지를 위해 <strong>Segmental dysfunction</strong> 또는 <strong>Joint restriction</strong>이라는 용어가 권장됩니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>2. 유사 수기치료 Modality와의 구분</strong></summary>
+          <table class="data-table">
+            <thead><tr><th>Modality</th><th>주체</th><th>힘·속도 특성</th><th>핵심 차이</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Diversified HVLA</strong></td><td>DC</td><td>고속 · 저진폭 추력</td><td>분절 특이적 진단(Motion Palpation) + 추력</td></tr>
+              <tr><td>Osteopathic HVLA (OMT)</td><td>DO</td><td>고속 · 저진폭 추력</td><td>5 Osteopathic models — Biomechanical · Respiratory 등 통합</td></tr>
+              <tr><td>Joint Mobilization (MOB)</td><td>PT</td><td>저속 · 반복 (Maitland I–IV)</td><td>Thrust 없음 — 진동성 oscillation 중심</td></tr>
+              <tr><td>Muscle Energy Technique (MET)</td><td>DO/PT</td><td>환자 등척성 수축 활용</td><td>수동 교정 + 환자 자발 근 활성</td></tr>
+              <tr><td>Manipulation under anesthesia (MUA)</td><td>MD/DO</td><td>마취하 HVLA/stretch</td><td>유착 · 극심한 근강직 시</td></tr>
+            </tbody>
+          </table>
+          <p class="callout callout-info"><strong>핵심.</strong> Diversified HVLA는 고유한 "에너지 치료"가 아닙니다. 기법의 핵심은 분절 특이적 Motion Palpation 기반 진단과 탄성장벽 직전의 고속 저진폭 추력이라는 <strong>재현 가능한 의료 행위</strong>입니다. OMT 및 의사가 시행하는 도수치료의 일부와 기술적으로 중첩하며, 상호 참조 가능합니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>3. 역사적 맥락 — Reinert · Janse의 "세속화"</strong></summary>
+          <p>Diversified의 창시자 D.D. Palmer의 초기 철학(1895–1910s)은 vitalism과 "신경 간섭 → 전신 질환" 가설에 기반했습니다. 현대 의학 기준으로는 검증되지 않은 가설로 분류됩니다. 그러나 <strong>현대 Diversified</strong>는 Otto Reinert(1950s–60s)와 Joseph Janse(1945–83, National College 학장)에 의해 생체역학·신경해부학 기반으로 재구성된 기법입니다.</p>
+          <ul>
+            <li>Palmer 전통의 Innate 언어를 제거하고 <strong>Joint dysfunction 용어</strong> 도입</li>
+            <li>Motion Palpation을 1차 진단 도구로 정립 (재현 가능 · 측정 가능)</li>
+            <li>척추 부위별(Cervical · Thoracic · Lumbopelvic · Extremity) 모듈형 교육과정 구축</li>
+            <li>National University of Health Sciences 현재 커리큘럼은 생체역학·근거 중심 표준</li>
+          </ul>
+          <p class="callout callout-info"><strong>현대 Diversified의 정체성.</strong> 오늘날 미국 DC 95.9%가 사용하는 Diversified는 Palmer의 형이상학적 카이로프랙틱이 아닌, <strong>Reinert·Janse 계열의 생체역학적 수기치료</strong>에 가깝습니다. 의학 전문가 대상 강의에서는 이 계보를 명시적으로 구분하는 편이 정직한 접근입니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>4. HVLA 힘-시간 프로파일 — 측정 가능한 파라미터</strong></summary>
+          <table class="data-table">
+            <thead><tr><th>파라미터</th><th>측정값 (평균)</th><th>범위</th><th>임상 의의</th></tr></thead>
+            <tbody>
+              <tr><td>Preload force</td><td>40–100 N</td><td>부위별</td><td>조직 장력 구축, 탄성장벽 감지</td></tr>
+              <tr><td><strong>Peak force</strong></td><td><strong>400–1,000 N</strong></td><td>흉추 &gt; 요추 &gt; 경추</td><td>관절 가동 범위 돌파</td></tr>
+              <tr><td><strong>Thrust duration</strong></td><td><strong>100–150 ms</strong></td><td>80–250</td><td>근 방어 반사(~70 ms)보다 빠름</td></tr>
+              <tr><td>Loading rate</td><td>4,000–8,000 N/s</td><td>높을수록 효과적</td><td>분절 가속의 핵심</td></tr>
+              <tr><td><strong>Displacement</strong></td><td><strong>1–3 mm</strong></td><td>0.5–5</td><td>Paraphysiological space 진입</td></tr>
+            </tbody>
+          </table>
+          <p class="ref-cite">📖 Gudavalli MR et al. <em>Effects of thrust amplitude and duration of high-velocity low-amplitude spinal manipulations</em>. JMPT 2013.</p>
+          <p>관절 운동범위 4구역: <strong>Active ROM → Passive ROM → Elastic Barrier → Paraphysiological Space → Anatomical Limit</strong>. HVLA는 Passive ROM 말단의 Elastic Barrier 직전에서 Paraphysiological Space로 분절을 짧게 이동시키며, Anatomical Limit는 절대 초과하지 않습니다. 그 너머는 인대·관절낭 손상 위험이 발생합니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>5. Cavitation — Kawchuk 2015 PLOS ONE MRI 연구</strong></summary>
+          <p><strong>Kawchuk GN et al. Real-Time Visualization of Joint Cavitation. PLOS ONE 2015;10(4):e0119470.</strong> 이 연구는 "pop 소리의 정체"를 실시간 MRI로 처음 규명했습니다.</p>
+          <ol>
+            <li>관절낭 내압 감소 (관절 분리 시)</li>
+            <li>용해 가스가 기포(cavity)를 형성 — <strong>Tribonucleation</strong></li>
+            <li><strong>기포 형성 순간이 "pop" 소리와 일치</strong> — 기포가 터지는 것이 아니라 <em>생성되는</em> 것이 소리의 원인</li>
+          </ol>
+          <p class="callout callout-warn"><strong>임상적 주의.</strong> Cavitation 유무는 임상 결과(통증·ROM·장애 지표)에 유의미하게 영향을 주지 않는 것으로 보고됩니다(Flynn 2003 <em>Arch Phys Med Rehabil</em>). 환자가 "소리가 안 나면 치료가 안 된 건가요?"라고 묻는다면, "관절의 정상 움직임이 회복되는 것이 더 중요합니다. 소리 없이도 동일한 효과를 얻는 환자가 많습니다"라고 답하는 편이 정확합니다. 술자도 무리하게 cavitation을 유도하려 하지 않는 것이 안전합니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>6. "Subluxation" → "Joint Dysfunction" — 용어 권장사항</strong></summary>
+          <table class="data-table">
+            <thead><tr><th>항목</th><th>전통 모델 (Classical)</th><th>현대 모델 (Joint Dysfunction)</th></tr></thead>
+            <tbody>
+              <tr><td>병태생리</td><td>뼈 변위 → 신경 압박 → 원거리 장기 기능장애</td><td>관절 저·과운동성 → 기계수용기 입력 변화 → 국소 통증·근긴장</td></tr>
+              <tr><td>진단</td><td>X-ray listing, 극돌기 위치</td><td>Motion Palpation, 기능 평가, 통증 provocation</td></tr>
+              <tr><td>적응증 범위</td><td>전신 질환까지 주장</td><td>🟢 기계적 근골격 통증에 국한</td></tr>
+              <tr><td>과학적 근거</td><td>🔴 대부분 근거 없음</td><td>🟡 중간 수준 근거 (요통·경추통)</td></tr>
+            </tbody>
+          </table>
+          <p><strong>학술·임상 글쓰기 권장 용어</strong>: Subluxation → <em>Segmental dysfunction / Joint restriction / Hypomobility</em>. Adjustment → <em>HVLA Manipulation / Spinal manipulative therapy (SMT)</em>. "Innate Intelligence" 및 "Misalignment causing organ disease"는 현대 의학 글쓰기에서는 사용하지 않습니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>7. 근거 수준 미리보기 (Week 4 상세)</strong></summary>
+          <ul>
+            <li>🟢 <strong>Strong</strong>: 급성 기계적 요통 (Paige 2017 JAMA · Cochrane 2012)</li>
+            <li>🟡 <strong>Moderate</strong>: 만성 LBP, 기계적 경추통, cervicogenic headache (Rubinstein 2019 BMJ · Gross 2015 Cochrane · Chaibi 2019)</li>
+            <li>🟠 <strong>Limited</strong>: tension-type headache, peripheral mobilization</li>
+            <li>🔴 <strong>No evidence</strong>: 고혈압, 천식, 월경통, 아동 발달, 면역 강화 — Cochrane systematic reviews에서 부정적 결론. 본 강의에서는 이런 적응증으로 권장되지 않습니다.</li>
+          </ul>
+          <p class="ref-cite">📖 Pickar JG. <em>Neurophysiological effects of spinal manipulation</em>. Spine J 2002;2(5):357–371.</p>
+        </details>
+
         <div class="week-resources">
           <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week1_history_foundations.md">📖 상세 강의록</a>
           <a class="resource-pill" href="./viewer.html?src=diversified/08_report_week1.md">📄 Report</a>
@@ -194,7 +349,125 @@
           <li>ACR 영상 적응증 기준으로 X-ray·MRI·CT 의뢰 결정</li>
         </ul>
         <h4>🔑 핵심 개념</h4>
-        <div class="placeholder"><strong>[WEEK 2 상세 내용 자리]</strong> 평가 플로우 · OPQRST · Red Flag · Motion Palpation · 신경·정형 검사 · VBAI · ACR Imaging</div>
+
+        <details class="concept-block" open>
+          <summary><strong>1. 환자 평가 4단계 플로우</strong></summary>
+          <p>모든 Diversified 적용 전 다음 의사결정 알고리즘을 거칩니다.</p>
+          <ol>
+            <li><strong>Screening</strong> — Red Flag 유무 확인. 양성 → 즉시 영상·전문의 의뢰, 교정 보류</li>
+            <li><strong>Diagnosis</strong> — 문진(OPQRST) + 관찰 + 촉진 + 정형·신경 검사. 기계적 문제인가?</li>
+            <li><strong>Analysis</strong> — 어느 분절·어느 방향 기능장애인가? Motion + Static Palpation 일치 확인</li>
+            <li><strong>Planning</strong> — 환자 자세·접촉점·추력 벡터 결정. 치료 전 동의·금기 최종 확인</li>
+          </ol>
+          <table class="data-table">
+            <thead><tr><th>단계</th><th>초진</th><th>재진</th></tr></thead>
+            <tbody>
+              <tr><td>Screening</td><td>2–3분</td><td>30초</td></tr>
+              <tr><td>Diagnosis</td><td>15–20분</td><td>3–5분</td></tr>
+              <tr><td>Analysis</td><td>5–10분</td><td>2–3분</td></tr>
+              <tr><td>Planning + 교정</td><td>3–5분</td><td>2–3분</td></tr>
+              <tr><td><strong>합계</strong></td><td><strong>25–40분</strong></td><td><strong>8–12분</strong></td></tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>2. OPQRST 문진 + Red Flag 11가지</strong></summary>
+          <p><strong>OPQRST</strong>: Onset · Provoking/Palliating · Quality · Radiation · Severity(VAS/NPRS 0–10) · Timing. Diversified 특이 추가: 과거 척추 시술력, anticoagulant 복용, 골다공증/DEXA, VBI 증상 이력, 최근 외상.</p>
+          <table class="data-table">
+            <thead><tr><th>#</th><th>Red Flag</th><th>시사 병변</th><th>권장 조치</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>생애 첫 가장 심한 두통 (thunderclap)</td><td>SAH · VAD</td><td>즉시 ER → CT</td></tr>
+              <tr><td>2</td><td>진행성 신경학적 결손</td><td>Myelopathy · 종양</td><td>신경과 · MRI</td></tr>
+              <tr><td>3</td><td>안장 마취 + 배변·배뇨 장애</td><td>Cauda equina</td><td>응급 MRI</td></tr>
+              <tr><td>4</td><td>설명 안 되는 체중 감소 ≥ 5kg/6개월</td><td>Neoplasm</td><td>영상 + 종양표지자</td></tr>
+              <tr><td>5</td><td>야간 통증 &gt; 기상 통증</td><td>종양 · 감염</td><td>MRI</td></tr>
+              <tr><td>6</td><td>발열 + 척추 통증</td><td>감염 (discitis, osteomyelitis)</td><td>CRP · MRI with Gd</td></tr>
+              <tr><td>7</td><td>외상 후 심한 경부통 + VBI 증상</td><td>Vertebral artery dissection</td><td>CT angio · 즉시</td></tr>
+              <tr><td>8</td><td>50세 이상 초발 등통증 + 위험인자</td><td>압박 골절 · 전이</td><td>X-ray · MRI</td></tr>
+              <tr><td>9</td><td>스테로이드 장기 사용 + 척추통</td><td>병적 골절</td><td>X-ray · DEXA</td></tr>
+              <tr><td>10</td><td>면역억제 + 척추통</td><td>감염</td><td>CRP · MRI</td></tr>
+              <tr><td>11</td><td>자가면역 병력 (AS 등)</td><td>강직척추염</td><td>HLA-B27 · 영상</td></tr>
+            </tbody>
+          </table>
+          <p class="callout callout-warn"><strong>교정 전 마지막 확인.</strong> "지난 2주 내 새로운 증상 생겼나요?" Red Flag 발견 시 교정 금지, 환자에게 이유 설명, 의뢰 문서 작성합니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>3. Motion Palpation — 진단 핵심과 신뢰도 한계</strong></summary>
+          <p><strong>Motion Palpation (MP)</strong>: 분절별 수동적 운동 범위와 끝느낌(end-feel)을 평가하여 기능장애 분절을 찾는 기법. Diversified 진단의 가장 특징적 절차입니다.</p>
+          <table class="data-table">
+            <thead><tr><th>End-feel</th><th>설명</th><th>시사점</th></tr></thead>
+            <tbody>
+              <tr><td>Soft / Firm (정상)</td><td>부드러운 elastic 저항</td><td>정상 분절 또는 경도 제한</td></tr>
+              <tr><td><strong>Hard</strong> (이상)</td><td>갑작스런 저항</td><td>Joint fixation · 관절염</td></tr>
+              <tr><td><strong>Empty</strong> (이상)</td><td>환자가 통증으로 중단</td><td>염증 · 급성 병변</td></tr>
+              <tr><td>Boggy (이상)</td><td>물렁함 · 점성</td><td>부종 · 염증</td></tr>
+            </tbody>
+          </table>
+          <p class="callout callout-warn"><strong>재현성 한계.</strong> Inter-rater reliability ICC 0.2–0.5 (Seffinger 2004 systematic review). 표준화 부족 — 검사자마다 지표가 다릅니다. <strong>MP 단독 진단은 근거가 충분하지 않으므로</strong> 반드시 Static Palpation · 정형 검사 · 영상과 조합 해석해야 합니다.</p>
+          <p class="ref-cite">📖 Seffinger MA et al. <em>Reliability of spinal palpation for diagnosis of back and neck pain</em>. Spine 2004.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>4. 신경학 검사 — 경추·요추 방사통</strong></summary>
+          <h5>경추 방사통 — 상지 신경학</h5>
+          <table class="data-table">
+            <thead><tr><th>평가</th><th>방법</th><th>분절 대표</th></tr></thead>
+            <tbody>
+              <tr><td>감각</td><td>각 dermatome</td><td>C5: 삼각근 · C6: 엄지 · C7: 중지 · C8: 소지 · T1: 전완 내측</td></tr>
+              <tr><td>근력 (MMT 0–5)</td><td>저항 검사</td><td>C5: 삼각근 · C6: 이두 · C7: 삼두 · C8: 수지 flexor</td></tr>
+              <tr><td>심부건반사</td><td>망치</td><td>C5–6: biceps · C6: brachioradialis · C7: triceps</td></tr>
+              <tr><td>병적 반사</td><td>Hoffmann</td><td>Upper motor neuron 손상 시사</td></tr>
+            </tbody>
+          </table>
+          <h5>요추 방사통 — 하지 신경학</h5>
+          <table class="data-table">
+            <thead><tr><th>평가</th><th>방법</th><th>분절</th></tr></thead>
+            <tbody>
+              <tr><td>감각</td><td>Dermatome</td><td>L3: 전대퇴 · L4: 내측 · L5: 외측·엄지 · S1: 외측·새끼</td></tr>
+              <tr><td>근력</td><td>MMT</td><td>L4: 족배굴 · L5: 엄지 신전 (EHL) · S1: 족저굴</td></tr>
+              <tr><td>반사</td><td>망치</td><td>L4: patellar · S1: Achilles</td></tr>
+              <tr><td>병적 반사</td><td>Babinski</td><td>Upper motor neuron 손상</td></tr>
+            </tbody>
+          </table>
+          <h5>특수 검사</h5>
+          <ul>
+            <li><strong>Spurling test</strong> — 동측 회전 + 측굴 + axial compression → 방사통 재현 = 신경근 자극. Sens 30–50%, Spec 92–100%</li>
+            <li><strong>Straight Leg Raise (SLR)</strong> — 30–70° 사이 방사통 = L5/S1 신경근 자극. Sens 91%, Spec 26%</li>
+            <li><strong>Crossed SLR</strong> — 반대측 거상시 환측 통증 = 큰 디스크 병변. Sens 29%, Spec 88%</li>
+            <li><strong>Slump test</strong> — 신경 긴장 검사. Sens 84%, Spec 83%</li>
+          </ul>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>5. VBI 스크리닝 — 5Ds/3Ns와 Sharp-Purser Test</strong></summary>
+          <p><strong>VBI (Vertebrobasilar Insufficiency)</strong>는 경추 HVLA 시행 전 반드시 평가합니다. 증상 5Ds + 3Ns:</p>
+          <ul>
+            <li><strong>5 Ds</strong>: Dizziness · Diplopia (복시) · Drop attacks · Dysarthria (구음장애) · Dysphagia (삼킴곤란)</li>
+            <li><strong>3 Ns</strong>: Nausea · Numbness (안면 또는 사지) · Nystagmus</li>
+          </ul>
+          <p><strong>Sharp-Purser Test</strong> — Transverse ligament (C1–C2) 안정성 평가. 환자 좌위 약간 경추 굴곡(30°), 검사자 한 손 이마, 다른 손 C2 극돌기 안정. 이마에 서서히 posterior 압력 → Head가 posterior로 slide 되는 느낌·증상 감소 시 양성 → <strong>C1–C2 instability → 경추 HVLA 절대 금기</strong>. 민감도 88%, 특이도 96% (Uitvlugt 1988).</p>
+          <p class="callout callout-warn"><strong>De Kleyn test의 한계.</strong> 전통적인 De Kleyn(경추 신전·회전 후 어지럼 유발) 검사는 sens/spec 모두 낮고, 위양성·위음성이 빈번해 단독 사용은 권장되지 않습니다. <strong>병력 + 검사 + 영상</strong> 3중 조합으로만 의사결정합니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>6. ACR Appropriateness Criteria — 영상 의뢰 결정</strong></summary>
+          <p>ACR(American College of Radiology) 가이드라인 기반 영상 의뢰 의사결정:</p>
+          <table class="data-table">
+            <thead><tr><th>임상 상황</th><th>1차 영상</th><th>비고</th></tr></thead>
+            <tbody>
+              <tr><td>비특이성 급성 LBP (Red Flag 없음, &lt; 6주)</td><td>영상 불필요</td><td>NICE/ACP 가이드라인 일치</td></tr>
+              <tr><td>외상 + 골절 의심</td><td>X-ray (AP/lateral)</td><td>Canadian C-spine rule 적용</td></tr>
+              <tr><td>신경학적 결손 (진행성)</td><td>MRI</td><td>응급 — 마미증후군 배제</td></tr>
+              <tr><td>감염 의심 (발열 + 척추통)</td><td>MRI with Gd</td><td>CRP·ESR 병행</td></tr>
+              <tr><td>종양 의심 (체중감소, 야간통)</td><td>MRI</td><td>tumor marker 병행</td></tr>
+              <tr><td>VBI 의심</td><td>CT angiography</td><td>응급</td></tr>
+              <tr><td>OPLL · 척추관 협착</td><td>MRI</td><td>경추 신전 회피</td></tr>
+            </tbody>
+          </table>
+        </details>
+
         <div class="week-resources">
           <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week2_analysis_diagnosis.md">📖 상세 강의록</a>
           <a class="resource-pill" href="./viewer.html?src=diversified/09_report_week2.md">📄 Report</a>
@@ -223,7 +496,106 @@
           <li>술자 자세 공학 · 반복 손상 예방</li>
         </ul>
         <h4>🔑 핵심 개념</h4>
-        <div class="placeholder"><strong>[WEEK 3 상세 내용 자리]</strong> 경추 Rotary Break · 흉추 AP thrust · 요추 Lumbar Roll · 골반 listing · 사지 적응 · 술자 자기관리</div>
+
+        <details class="concept-block" open>
+          <summary><strong>1. 교정 3대 요소 — Position · Contact · Vector</strong></summary>
+          <p>모든 Diversified HVLA는 세 요소의 조합입니다.</p>
+          <ol>
+            <li><strong>환자 자세 (Position)</strong> — 병변 분절을 접근 가능한 상태로. Supine · Prone · Side Posture · Seated · Standing. 중력·체중 활용 + 분절 pre-tension 만들기 용이한 자세 선택</li>
+            <li><strong>접촉점 (Contact Point)</strong> — 정확한 해부학적 지점에 표면적 최소</li>
+            <li><strong>추력 벡터 (Line of Drive, LOD)</strong> — 방향 · 각도 · 속도(100–150 ms) · 깊이(1–3 mm)</li>
+          </ol>
+          <table class="data-table">
+            <thead><tr><th>접촉 도구</th><th>표면적</th><th>사용 분절</th></tr></thead>
+            <tbody>
+              <tr><td>Thumb</td><td>작음 · 고정밀</td><td>경추 transverse process · mamillary</td></tr>
+              <tr><td>Index MCP</td><td>중간</td><td>C1 TP · 중·하부 경추</td></tr>
+              <tr><td>Pisiform</td><td>중간 · 안정</td><td>흉추 TP · 요추 mamillary · 골반 PSIS</td></tr>
+              <tr><td>Hypothenar</td><td>넓음 · 파워</td><td>흉추 양측 TP · sacrum</td></tr>
+              <tr><td>Web (엄지-검지)</td><td>넓음</td><td>Cervical (아래쪽)</td></tr>
+            </tbody>
+          </table>
+          <p class="callout callout-info"><strong>Set-up의 중요성.</strong> 경험상 교정 결과의 70%는 set-up(자세·접촉·pre-tension)에 달려 있고, 30%가 thrust 자체입니다. 초보자는 thrust에 집중하지만, 숙련자는 set-up에 시간을 투자합니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>2. Pre-load Tension → Elastic Barrier → Thrust 표준 9단계</strong></summary>
+          <ol>
+            <li>환자 자세 완성 (전신 긴장 제거 확인)</li>
+            <li>접촉점 정확 위치 — 환자 호흡 (들숨 or 날숨 끝)</li>
+            <li><strong>Slack 제거</strong> — 관절이 passive range 끝에 도달할 때까지 부드럽게</li>
+            <li><strong>Pre-load tension</strong> 형성 — "tension on tissue"</li>
+            <li><strong>Elastic barrier 감각</strong> — 검사자가 느끼는 "부드러운 저항 벽"</li>
+            <li><strong>Thrust</strong> — HVLA thrust (100–150 ms, 1–3 mm)</li>
+            <li>Cavitation 소리 (audible release, 약 80% 성공 시 — 필수 아님)</li>
+            <li><strong>Release</strong> — 검사자 압력 즉시 해제</li>
+            <li>Re-assessment — Motion palpation 재확인</li>
+          </ol>
+          <p class="callout callout-info"><strong>학습자 훈련 팁.</strong> Slack 제거가 가장 어려운 단계입니다. 처음 3개월은 정확한 elastic barrier 감각 찾기에만 집중하고, "딱" 소리에 연연하지 않습니다. 매일 10분 셀프 palpation 훈련을 권장합니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>3. 경추 교정 — C0 후두골부터 C7까지</strong></summary>
+          <p>경추는 가장 정밀한 set-up과 가장 신중한 환자 선별이 필요한 영역입니다. 본문은 핵심 4기법만 소개하며, States Manual 18개 listing 상세는 상세 강의록을 참조합니다.</p>
+          <ul>
+            <li><strong>Superior Condyle (C0–C1)</strong> — Supine, headpiece neutral. CH(caudad hand) index가 mastoid process 외측 접촉, IH(cephalad hand) 턱에 fingers 접촉. Thrust: mastoid에서 mastoid 방향, 정중선 직각</li>
+            <li><strong>Atlas Rotary Break (C1)</strong> — Supine, 환자 머리를 병변 반대측으로 35–45° 회전. CH index pillar contact on C1 TP. Thrust: 짧고 빠른 회전 성분 — 가장 익숙해지기 어려운 기법이며 dens fracture 배제 후에만 시행</li>
+            <li><strong>Cervical Index Pillar Push (C2–C7)</strong> — Supine, 환자 머리를 약 30° 회전. CH index가 articular pillar 후측 접촉. Thrust: anterior–superior 방향, 짧고 정확</li>
+            <li><strong>Cervical Chair Technique</strong> — Seated 환자. 회전·측굴 set-up. 일부 환자에게 supine 보다 편안 — 다만 환자 head support 안정성이 핵심</li>
+          </ul>
+          <p class="callout callout-warn"><strong>경추 HVLA 경고.</strong> RA · Down syndrome · 강직척추염 환자는 환축관절 불안정성으로 경추 HVLA 절대 금기. 외상 직후·VBI 증상·dens fracture 의심 시도 금기입니다. 의심스러우면 Mobilization으로 대체합니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>4. 흉추 교정 — AP thrust · Pisiform · Rib head</strong></summary>
+          <ul>
+            <li><strong>Anterior Thoracic (AP thrust)</strong> — 환자 supine, 가슴 위 양손 cross. 검사자가 환자 뒤에서 thenar/hypothenar로 척추 후방 지지, 환자 가슴을 통해 thrust. 가장 흔히 쓰이는 흉추 기법</li>
+            <li><strong>Prone Pisiform Thoracic</strong> — Prone, drop piece 동반. Pisiform contact on TP. Thrust: PA + slight cephalad 또는 caudad — listing에 따름</li>
+            <li><strong>Seated Thoracic</strong> — 환자 좌위, 양손 깍지 후두 뒤. 검사자가 뒤에서 knee로 환자 등 지지하면서 양 elbow를 통해 stretch + thrust</li>
+            <li><strong>Rib Head Adjustment</strong> — Prone, hypothenar contact on rib angle. Thrust: AP + slight lateral. 호흡과 동기화 — 날숨 끝에 thrust</li>
+          </ul>
+          <p class="callout callout-info"><strong>흉추의 장점.</strong> 흉추는 경추 대비 안전 마진이 크고 환자 부담이 적어, 통합 도수치료에서 가장 빈번히 사용됩니다. 늑골과의 결합으로 호흡·자세에 광범위한 영향을 줍니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>5. 요추 교정 — Lumbar Roll (Side Posture) · Prone</strong></summary>
+          <ul>
+            <li><strong>Lumbar Roll (Side Posture)</strong> — 가장 대표적인 요추 기법. 환자 측와위, 위쪽 다리 굴곡 + 아래 다리 신전. 검사자 한 손 환자 어깨 안정, 다른 손 mamillary process contact. Set-up: 환자 회전 + 측굴로 분절 lock. Thrust: pisiform/hypothenar로 PA + slight rotation. L4–5, L5–S1에서 가장 흔함</li>
+            <li><strong>Prone Lumbar</strong> — Prone, drop piece 동반. 양 pisiform이 양측 mamillary process contact. Thrust: PA</li>
+            <li><strong>L5–S1 Side Posture (Push/Pull)</strong> — Standard Lumbar Roll의 변형. Disc herniation 환자는 신중 — 방사통 악화 시 즉시 중단</li>
+          </ul>
+          <p class="callout callout-warn"><strong>방사통 환자 주의.</strong> Straight Leg Raise 양성 + 신경학적 결손 환자는 Diversified HVLA보다 <strong>Flexion-distraction (Cox 기법)</strong>이 더 안전한 first-line입니다. HVLA 후 방사통 악화 시 즉시 중단하고 6주 호전 없으면 MRI를 의뢰합니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>6. 골반·천장관절 — 18 Listings 핵심</strong></summary>
+          <p>골반·천장관절(SI joint) listing은 ASIS/PSIS 위치로 분류됩니다. 핵심 패턴 5개:</p>
+          <table class="data-table">
+            <thead><tr><th>Listing</th><th>의미</th><th>교정 방향</th></tr></thead>
+            <tbody>
+              <tr><td><strong>AS</strong> Ilium</td><td>Anterior Superior — 장골 전상방 회전</td><td>PSIS push, PI 방향</td></tr>
+              <tr><td><strong>PI</strong> Ilium</td><td>Posterior Inferior — 장골 후하방 회전</td><td>ASIS 또는 ischial tuberosity push, AS 방향</td></tr>
+              <tr><td><strong>EX</strong> Ilium</td><td>External — 장골 외측 flare</td><td>PSIS lateral-to-medial</td></tr>
+              <tr><td><strong>IN</strong> Ilium</td><td>Internal — 장골 내측 회전</td><td>ASIS medial-to-lateral</td></tr>
+              <tr><td><strong>P-L</strong> Sacrum</td><td>Posterior-Left/Right Sacral Base</td><td>sacral base PA thrust</td></tr>
+            </tbody>
+          </table>
+          <p class="callout callout-info"><strong>임상 단순화.</strong> 18 listing 전부 외울 필요는 없습니다. 실제로 가장 빈번한 5–7개 패턴에 익숙해지고, 나머지는 reference로 두는 편이 효율적입니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>7. 사지 관절 + 술자 자기관리</strong></summary>
+          <p><strong>말초 관절 적응증</strong>: TMJ · 어깨 (GH/AC) · 팔꿈치 (요두) · 손목 (carpal) · 무릎 (PF · TF) · 발목 (talocrural · subtalar). 추력 양상은 척추보다 작고, 환자 통증 반응에 더 민감합니다.</p>
+          <p><strong>술자 자기관리 (Self-care)</strong>:</p>
+          <ul>
+            <li><strong>Toggle stance</strong> — 발을 어깨 너비보다 넓게, 무릎 살짝 굽혀 체중 활용. 등·허리 부상 예방의 핵심</li>
+            <li><strong>손목 중립 자세</strong> — 과신전/과굴곡 회피. 손목 stress fracture·tendinopathy 예방</li>
+            <li><strong>매일 thumb/wrist stretching</strong> — DC 직업병 1위인 first CMC OA 예방</li>
+            <li><strong>드롭피스 활용</strong> — 술자 force 의존도 감소, 환자도 편안</li>
+          </ul>
+          <p class="ref-cite">📖 출처 안내: 본 경추·흉추·요추 섹션의 술식 표기는 <strong>States Manual of Spinal, Pelvic and Extravertebral Technics</strong> (2nd Ed, Kirk·Lawrence·Valvo eds., National College of Chiropractic, 1985)을 따릅니다. 교육 목적의 발췌 인용입니다.</p>
+        </details>
+
         <div class="week-resources">
           <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week3_adjustment_practice.md">📖 상세 강의록</a>
           <a class="resource-pill" href="./viewer.html?src=diversified/10_report_week3.md">📄 Report</a>
@@ -252,7 +624,123 @@
           <li>근거 없는 주장(고혈압·천식·월경통 치료 등) 비판적 구분</li>
         </ul>
         <h4>🔑 핵심 개념</h4>
-        <div class="placeholder"><strong>[WEEK 4 상세 내용 자리]</strong> Cochrane · 통증별 프로토콜 · VAD 안전 통계 · 금기 체크리스트 · 다학제 협진 · 한국 급여</div>
+
+        <details class="concept-block" open>
+          <summary><strong>1. 근거 피라미드 + GRADE 시스템</strong></summary>
+          <p>근거 위계: Systematic Review → RCT → Cohort/Case-control → Case series/Expert opinion. SMT/Diversified RCT는 <strong>blinding 불가</strong>(환자도 술자도 SMT 받음을 알 수 있음) 때문에 GRADE 시작점이 한 등급 낮춰집니다. 이는 본질적 한계로 Cochrane 리뷰들도 인정합니다.</p>
+          <table class="data-table">
+            <thead><tr><th>Quality</th><th>의미</th><th>추가 연구의 영향</th></tr></thead>
+            <tbody>
+              <tr><td>🟢 High</td><td>효과 추정에 매우 확신</td><td>추가 RCT가 추정을 바꿀 가능성 매우 낮음</td></tr>
+              <tr><td>🟡 Moderate</td><td>효과 추정에 적당히 확신</td><td>추가 연구가 추정을 변경할 가능성 있음</td></tr>
+              <tr><td>🟠 Low</td><td>효과 추정에 제한적 확신</td><td>추가 연구가 추정을 변경할 가능성 큼</td></tr>
+              <tr><td>🔴 Very Low</td><td>효과 추정에 매우 제한적 확신</td><td>어떤 효과 추정도 매우 불확실</td></tr>
+            </tbody>
+          </table>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>2. Cochrane Systematic Reviews — Diversified/SMT 핵심 4편</strong></summary>
+          <ul>
+            <li><strong>🟡 Rubinstein 2012/2019 — 만성 요통 SMT (Cochrane)</strong>: 47 RCT, 9,211명. SMT는 다른 권장 치료(운동·CBT)와 유사한 단·중기 효과 (NPRS 평균 -1점, MCID 보다 작음). <em>"SMT는 다른 권장 치료의 대안 중 하나"</em></li>
+            <li><strong>🟢 Paige 2017 — 급성 요통 SMT (JAMA)</strong>: 26 RCT, 1,711명. SMT 받은 군이 NPRS 1주차 -1.0점, 통증 개선 25–30% 우월. 부작용 50–67% transient muscle soreness, 심각 부작용 없음. <em>"SMT는 modest benefit"</em></li>
+            <li><strong>🟡 Gross 2015 — 경추통 SMT (Cochrane)</strong>: 51 RCT. SMT는 단기적으로 mobilization과 동등 효과. <em>"SMT의 추가 가치는 mobilization 대비 명확하지 않음"</em> — 환자 선호·술자 숙련도에 따라 선택</li>
+            <li><strong>🟡 Chaibi 2019 — 만성 두통 (Cochrane)</strong>: 8 RCT. Cervicogenic headache에서 attack frequency 감소 (low-quality evidence). <em>"결정적 권장 어려움. 적은 부작용·환자 선호 고려해 선택적 사용 가능"</em></li>
+          </ul>
+          <p class="callout callout-info"><strong>최신 흐름 (2020–2025).</strong> Foster N et al. Lancet 2021은 stratified care + 비약물 우선 패러다임에서 SMT 통합을 권장. Coulter ID et al. Spine 2023은 chiropractic 케어가 양방 일반진료 대비 cost-effective. Bialosky JE 2025는 neurophysiologic + biomechanical 통합 작용 기전 모델을 제시했습니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>3. 임상 프로토콜 — 요통 · 경추통 · 두통</strong></summary>
+          <h5>급성 요통 (&lt; 6주)</h5>
+          <ul>
+            <li>1주차: Diversified × 2–3회 (격일). Side posture 대부분. L4–5 또는 L5–S1 mobilization. Low force 시작 → 환자 반응 확인</li>
+            <li>2주차: Diversified × 1–2회 + 운동 (McKenzie · core stabilization)</li>
+            <li>4–6주 내 <strong>50% 통증 감소</strong>가 목표. 호전 없음 → MRI · 전문의 의뢰</li>
+          </ul>
+          <h5>만성 요통 (&gt; 12주)</h5>
+          <ul>
+            <li>Diversified 단독 효과 제한적 → <strong>병행 필수</strong></li>
+            <li>Diversified × 1/주 × 4–6주 + Core stability + Education + CBT 고려</li>
+            <li><strong>STarT Back Tool</strong>로 만성화 위험 분류 — High risk (psychosocial 2점 이상)는 CBT 우선, Diversified는 부수적</li>
+          </ul>
+          <h5>경추통 + Cervicogenic headache</h5>
+          <ul>
+            <li>주 2–3회 × 2주 → 주 1–2회 × 4주 → 재평가</li>
+            <li>Mobilization과 효과 동등 — 환자 선호 따라 선택</li>
+            <li>Tension-type headache는 Limited evidence — 개별화 시도</li>
+          </ul>
+          <p class="callout callout-warn"><strong>MCID 기준 재평가.</strong> NPRS 2점 감소, ODI 10점 감소, NDI 7점 감소를 목표로 매 4주마다 재평가. 도달 못 하면 치료 전략 재고합니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>4. VAD 안전 — Cassidy 2008 · Church 2016</strong></summary>
+          <p><strong>VAD (Vertebral Artery Dissection)</strong>는 카이로프랙틱과 관련해 가장 우려되는 합병증입니다. 핵심 근거:</p>
+          <ul>
+            <li><strong>Cassidy JD et al. 2008 Spine</strong> (case-crossover, 818건) — 카이로프랙틱 케어와 일반의 진료 모두 VBA stroke 위험과 <strong>비슷한 수준의 연관성</strong>을 보임. 인과관계가 아닌 prodromal symptom (목 통증·두통) 단계에서 양쪽 진료를 모두 찾는 패턴으로 해석</li>
+            <li><strong>Church EW et al. 2016 systematic review</strong> — 절대 위험 추정: <strong>1:5.85 million</strong> 경추 SMT 시술당 1건. 인과관계는 입증되지 않았고 정성적 권고: prodrome 평가 + 외상 후 신중</li>
+            <li>Kosloff TM 2015 Mil Med — Medicare 데이터 분석: SMT 후 VAD 발생률 음성 대조군과 유의차 없음</li>
+          </ul>
+          <p class="callout callout-info"><strong>임상 의사결정.</strong> 절대 위험은 매우 낮지만, prodrome 평가(외상력·thunderclap headache·5Ds/3Ns)는 항상 시행합니다. 의심스러우면 경추 HVLA 대신 mobilization 또는 의뢰를 선택합니다. 환자 동의 시에도 위험·이익을 명시적으로 설명합니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>5. 절대 금기 · 상대 금기 체크리스트</strong></summary>
+          <h5>🔴 절대 금기 (Absolute)</h5>
+          <ul>
+            <li><strong>마미증후군</strong> (Cauda equina syndrome) — 응급 수술</li>
+            <li><strong>척수 압박 증상</strong> (진행성 근력 약화, 병적 반사)</li>
+            <li><strong>척추 감염 · 종양 · 급성 골절</strong></li>
+            <li><strong>혈관 박리 의심</strong> (최근 외상 후 경추 증상, 어지럼)</li>
+            <li><strong>RA · Down syndrome · 강직척추염</strong> — 환축관절 불안정성 (경추)</li>
+            <li>환자 동의 없음</li>
+          </ul>
+          <h5>🟡 상대 금기 (Relative)</h5>
+          <ul>
+            <li>중증 골다공증 (T-score &lt; -2.5)</li>
+            <li>장기 스테로이드 복용</li>
+            <li>항응고제 치료 중 (Warfarin · DOAC)</li>
+            <li>척추관 협착증 — 경한 경우 가능, 중증은 회피</li>
+            <li>척수 증상 없는 디스크 탈출 — Cox flexion-distraction 선호</li>
+            <li>고령 (&gt; 75세) — 개별 평가, low-force 변형</li>
+            <li>임신 — side posture + 골반 쿠션 가능, 복부 압박 회피</li>
+          </ul>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>6. Post-adjustment Soreness — 환자 설명</strong></summary>
+          <p><strong>빈도</strong>: 30–50% 환자가 시술 후 24–48시간 내 transient muscle soreness 경험 (Paige 2017 JAMA). 대부분 24시간 내 해소, 72시간 초과 지속은 드뭅니다.</p>
+          <p><strong>사전 설명 권장 문구</strong>: <em>"시술 후 1–2일간 가벼운 근육통이나 뻐근함이 있을 수 있습니다. 운동 후 근육통과 비슷한 양상이며, 보통 24–48시간 내 해소됩니다. 그 이상 지속되거나 새로운 신경학 증상(저림·근력 약화)이 생기면 즉시 알려 주세요."</em></p>
+          <p>심각 부작용(VAD·골절·신경 손상)은 매우 드물지만, 절대 위험 0은 아닙니다. <strong>shared decision making</strong>의 핵심은 환자가 위험·이익을 이해한 상태에서 선택하는 것입니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>7. 다학제 협진 · 한국 급여 맥락</strong></summary>
+          <p><strong>한국 외래 워크플로</strong> (정형외과·재활의학과 기준):</p>
+          <ul>
+            <li>1차: 진단(MD) — 영상·신경 검사 · Red Flag 배제</li>
+            <li>2차: 도수치료(MD 직접 또는 훈련된 PT) — 본 챕터 Diversified</li>
+            <li>3차: 운동재활(PT) — McKenzie · core stabilization 병행</li>
+            <li>4차: 약물·주사·수술 — 보존 치료 실패 시</li>
+          </ul>
+          <p><strong>한국 도수치료 수가 (2026 기준)</strong>: 의원급·병원급 비급여. 회당 5–15만 원 범위. 환자 부담을 고려해 6–8회 코스로 패키지 운영이 일반적입니다. 실손보험 가입자는 통원의료비 약관 확인이 필요합니다.</p>
+          <p class="callout callout-info"><strong>면허·기법보다 근거·안전.</strong> 한국 의료 현실에서는 한 명의 의사(특히 정형외과·재활의학과)가 진단 + HVLA + 운동처방을 통합 수행하거나, 도수치료 훈련된 PT가 기계적 통증을 관리하는 경우가 많습니다. 중요한 것은 근거와 안전이지 면허 유형 자체가 아닙니다.</p>
+        </details>
+
+        <details class="concept-block">
+          <summary><strong>8. 근거 없는 주장 — 환자·동료 교육</strong></summary>
+          <p>다음 주장은 systematic review 결과 근거가 없거나 부정적 결론이 나와 있어, 본 챕터에서는 권장되지 않습니다.</p>
+          <ul>
+            <li>"카이로프랙틱 교정이 고혈압을 치료한다" (Cochrane 2013 — no reliable evidence)</li>
+            <li>"교정이 소아 천식을 개선한다" (Cochrane 2005 — no evidence)</li>
+            <li>"교정이 월경통·소화불량·야뇨증을 치료한다" (근거 부재)</li>
+            <li>"교정이 면역계를 강화한다" (근거 부재)</li>
+            <li>"한 번의 상부경추 교정이 전신 신경계를 재조정한다" (B.J. Palmer HIO 가설 — 의학적 근거 없음)</li>
+            <li>"교정이 ADHD·자폐·학습장애를 개선한다" (근거 부재)</li>
+          </ul>
+          <p class="callout callout-warn"><strong>환자 교육 톤.</strong> 근거가 없다고 단정하기보다, <em>"현재까지의 systematic review에서는 이 적응증에 대한 근거가 충분치 않습니다. 본 시술은 기계적 근골격 통증에 가장 잘 맞는 도구입니다"</em> 라고 설명하는 편이 환자 신뢰를 잃지 않으면서도 정확합니다.</p>
+        </details>
+
         <div class="week-resources">
           <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week4_clinical_safety.md">📖 상세 강의록</a>
           <a class="resource-pill" href="./viewer.html?src=diversified/11_report_week4.md">📄 Report</a>

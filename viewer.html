@@ -4,11 +4,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>강의록 뷰어 · 카이로프랙틱정형외과</title>
-<link rel="stylesheet" href="./assets/main.css?v=20260526a" />
-<script defer src="./assets/ui.js?v=20260526a"></script>
-<script defer src="./assets/download-guard.js?v=20260526a"></script>
-<script defer src="./assets/hide-guard.js?v=20260526a"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260526a"></script>
+<link rel="stylesheet" href="./assets/main.css?v=20260526b" />
+<script defer src="./assets/ui.js?v=20260526b"></script>
+<script defer src="./assets/download-guard.js?v=20260526b"></script>
+<script defer src="./assets/hide-guard.js?v=20260526b"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260526b"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.5.1/github-markdown-light.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
@@ -54,6 +54,45 @@
   .markdown-body table {
     display: table; width: 100%;
   }
+  /* Mermaid 다이어그램 — 기본 SVG가 너무 작아 안 보이는 문제 해결 */
+  .markdown-body .mermaid {
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    background: #fafafc;
+    border: 1px solid #ebebed;
+    border-radius: 12px;
+    overflow-x: auto;
+    text-align: center;
+  }
+  .markdown-body .mermaid svg {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+  /* flowchart node 글자 가독성 — Mermaid 기본 11px 너무 작음 */
+  .markdown-body .mermaid .node text,
+  .markdown-body .mermaid .nodeLabel,
+  .markdown-body .mermaid .edgeLabel {
+    font-size: 15px !important;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif !important;
+  }
+  .markdown-body .mermaid .node rect,
+  .markdown-body .mermaid .node polygon,
+  .markdown-body .mermaid .node circle {
+    stroke-width: 1.5px;
+  }
+  @media (max-width: 640px) {
+    .markdown-body .mermaid { padding: 0.5rem; }
+    .markdown-body .mermaid svg { min-height: 160px; }
+    .markdown-body .mermaid .node text,
+    .markdown-body .mermaid .nodeLabel,
+    .markdown-body .mermaid .edgeLabel {
+      font-size: 13px !important;
+    }
+  }
   .error-box {
     background: #fff2f0; border: 1px solid #ffccc7;
     color: #a8071a; padding: 20px; border-radius: 12px;
@@ -63,8 +102,8 @@
     .markdown-body { padding: 24px 20px; }
   }
 </style>
-  <script src="./assets/config.js?v=20260526a"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260526a"></script>
+  <script src="./assets/config.js?v=20260526b"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260526b"></script>
 </head>
 <body>
 
@@ -188,8 +227,27 @@ import { sessionReady } from './assets/supabase-client.js';
       pre.replaceWith(div);
     });
     if (window.mermaid) {
-      mermaid.initialize({ startOnLoad: false, theme: 'default' });
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: 'default',
+        // 다이어그램 크기 — 작게 렌더되던 문제 해결
+        flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'basis' },
+        sequence:  { useMaxWidth: false },
+        gantt:     { useMaxWidth: false },
+        themeVariables: {
+          fontSize: '16px',
+          fontFamily: '"Pretendard Variable", Pretendard, -apple-system, sans-serif',
+        },
+      });
       await mermaid.run({ querySelector: '.mermaid' });
+      // 렌더 직후 SVG에 인라인 width 강제 — Mermaid가 600px 같은 고정폭으로 출력하는 경우 차단
+      target.querySelectorAll('.mermaid svg').forEach((svg) => {
+        svg.removeAttribute('width');
+        svg.removeAttribute('height');
+        svg.style.width = '100%';
+        svg.style.maxWidth = '100%';
+        svg.style.height = 'auto';
+      });
     }
 
     // Adjust relative links inside rendered content so they still resolve from the MD's folder
