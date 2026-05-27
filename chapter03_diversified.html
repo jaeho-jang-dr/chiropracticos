@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diversified HVLA | Chiropractic</title>
   <meta name="description" content="Diversified High-Velocity Low-Amplitude 카이로프랙틱 HVLA 수기 — 4주 근거 기반 커리큘럼. 강의록·PPTX·동영상·팟캐스트 통합 자료." />
-  <link rel="stylesheet" href="./assets/main.css?v=20260527b" />
+  <link rel="stylesheet" href="./assets/main.css?v=20260527c" />
 
-<script defer src="./assets/ui.js?v=20260527b"></script>
-<script defer src="./assets/download-guard.js?v=20260527b"></script>
-<script defer src="./assets/hide-guard.js?v=20260527b"></script>
-<script defer src="./assets/pdf-viewer.js?v=20260527b"></script>
+<script defer src="./assets/ui.js?v=20260527c"></script>
+<script defer src="./assets/download-guard.js?v=20260527c"></script>
+<script defer src="./assets/hide-guard.js?v=20260527c"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260527c"></script>
+<script defer src="./assets/soft-tissue-modal.js?v=20260527c"></script>
 <style id="technique-grid-css">
 /* 부위별 기술 라이브러리 그리드 */
 .technique-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1.25rem;margin:1.25rem 0 2rem}
@@ -78,8 +79,8 @@
 .archive-inline .video-card .title { font-weight: 600; font-size: .92em; }
 .archive-inline .video-card .meta { font-size: .78em; color: #86868b; }
 </style>
-  <script src="./assets/config.js?v=20260527b"></script>
-  <script type="module" src="./assets/auth-guard.js?v=20260527b"></script>
+  <script src="./assets/config.js?v=20260527c"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260527c"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">본문 바로가기</a>
@@ -570,67 +571,67 @@
             <thead><tr><th>기법</th><th>원리 · 실기 요점</th><th>주 적응증</th><th>근거</th></tr></thead>
             <tbody>
               <tr>
-                <td><strong>① ART</strong><br>(Active Release Technique)</td>
+                <td><strong data-stt="art" title="클릭 → 자세히 보기">① ART</strong><br>(Active Release Technique)</td>
                 <td>시술자의 정확한 접촉 + 환자 능동 신장 운동 결합. 단축 자세에서 접촉 → 능동 신장 → 5-7초 longitudinal tension × 3회</td>
                 <td>장요근 단축, 회전근개 충돌, 외측상과염, 손목터널증후군</td>
                 <td>Case series · Low–Moderate</td>
               </tr>
               <tr>
-                <td><strong>② Graston / IASTM</strong><br>(Instrument-Assisted Soft Tissue Mobilization)</td>
+                <td><strong data-stt="iastm" title="클릭 → 자세히 보기">② Graston / IASTM</strong><br>(Instrument-Assisted Soft Tissue Mobilization)</td>
                 <td>6개 스테인리스 기구로 fibrotic adhesion 촉진·기계적 마이크로트라우마 → 콜라겐 재합성. Sweeping·Fanning·Strumming stroke · 5-15분/부위</td>
                 <td>아킬레스건염, 족저근막염, 외측상과염, 흉터조직, 만성 스포츠 손상</td>
                 <td>Cheatham 2016 SR — short-term ROM·통증 효과</td>
               </tr>
               <tr>
-                <td><strong>③ Nimmo Receptor-Tonus</strong></td>
+                <td><strong data-stt="nimmo" title="클릭 → 자세히 보기">③ Nimmo Receptor-Tonus</strong></td>
                 <td>통증유발점에 엄지·너클로 허혈성 압박 5-7초 → 점진적 감소 → 2-3 cycle. 안정 시 근육 길이(resting length) 회복</td>
                 <td>만성 LBP, 근막통증증후군, 관절 기능장애 동반 근육 과활성</td>
                 <td>Koo 2012 JMPT RCT — 즉시 효과 검증</td>
               </tr>
               <tr>
-                <td><strong>④ Trigger Point Therapy</strong></td>
+                <td><strong data-stt="tpt" title="클릭 → 자세히 보기">④ Trigger Point Therapy</strong></td>
                 <td>Active/Latent TrP 진단 (taut band + tender spot + 연관통 + jump sign + LTR). 치료: ischemic compression · spray &amp; stretch · PIR · cross-friction</td>
                 <td>긴장성 두통(상부 승모근→측두), 좌골신경통 양상(이상근), 안와부 통증(SCM)</td>
                 <td>Vernon-Schneider 2009 SR — Moderately strong</td>
               </tr>
               <tr>
-                <td><strong>⑤ Cyriax Cross-Friction</strong></td>
+                <td><strong data-stt="cyriax" title="클릭 → 자세히 보기">⑤ Cyriax Cross-Friction</strong></td>
                 <td>병변 섬유에 90° 깊은 마찰 10-15분 → cross-link 분리 + traumatic hyperemia. 마찰 직후 active stretching/eccentric loading 필수</td>
                 <td>외측상과염, 슬개건염, 아킬레스건염, 회전근개 건염</td>
                 <td>Brosseau 2002 Cochrane — eccentric exercise 병행 시 이득 명확</td>
               </tr>
               <tr>
-                <td><strong>⑥ Myofascial Release</strong><br>(Direct / Indirect)</td>
+                <td><strong data-stt="mfr" title="클릭 → 자세히 보기">⑥ Myofascial Release</strong><br>(Direct / Indirect)</td>
                 <td>근막 제한 방향(Direct) 또는 최소 저항 방향(Indirect)으로 5g-5kg 압력 90-120초 sustained pressure → myofibroblast 이완 + GAG hydration</td>
                 <td>만성 LBP, 만성 경추통, 섬유근통, 수술 후 흉터</td>
                 <td>Ajimsha 2015 SR — Low–Moderate · AHRQ/NICE 권장</td>
               </tr>
               <tr>
-                <td><strong>⑦ PNF Stretching</strong><br>(CR · HR · SRHR)</td>
+                <td><strong data-stt="pnf" title="클릭 → 자세히 보기">⑦ PNF Stretching</strong><br>(CR · HR · SRHR)</td>
                 <td>Autogenic (Ib·GTO) + Reciprocal inhibition 활용. Contract-Relax: 신장 → 6초 등장성 수축 → 이완 → 깊은 신장. D1·D2 패턴 운동</td>
                 <td>관절 가동 회복(특히 SI dysfunction), 스포츠 재활, 신경 가동성</td>
                 <td>정적 스트레칭 대비 +5-10° ROM 입증</td>
               </tr>
               <tr>
-                <td><strong>⑧ MET</strong><br>(Muscle Energy Technique)</td>
+                <td><strong data-stt="met" title="클릭 → 자세히 보기">⑧ MET</strong><br>(Muscle Energy Technique)</td>
                 <td>20-25% MVC 부드러운 등척성 수축 5-7초 → 이완 2-3초 → 새 barrier → 3-5 cycle. PNF보다 더 부드러움</td>
                 <td>비특이성 LBP, sacroiliac dysfunction, 경추 후관절 제한</td>
                 <td>Franke 2015 SR — 단기 효과 (LBP)</td>
               </tr>
               <tr>
-                <td><strong>⑨ Origin-Insertion</strong></td>
+                <td><strong data-stt="oi" title="클릭 → 자세히 보기">⑨ Origin-Insertion</strong></td>
                 <td>근육 기시-정지 전 영역 longitudinal stripping 1cm/sec. 발견 nodule에서 정지·압박</td>
                 <td>근복 전체 hypertonicity, fibrotic 변화</td>
                 <td>Kaleida Health 임상지침 표준 5개 포함</td>
               </tr>
               <tr>
-                <td><strong>⑩ Dry Needling</strong></td>
+                <td><strong data-stt="dn" title="클릭 → 자세히 보기">⑩ Dry Needling</strong></td>
                 <td>통증유발점에 가는 침 자입 → LTR 유도 → 근육 이완. <span style="color:#888">※ 한국에서는 카이로 면허 범위 외</span></td>
                 <td>만성 근골격 통증, 통증유발점 활성화</td>
                 <td>Gattie 2017 SR — Low–Moderate</td>
               </tr>
               <tr>
-                <td><strong>⑪ Cupping (Myofascial Decompression)</strong></td>
+                <td><strong data-stt="cup" title="클릭 → 자세히 보기">⑪ Cupping (Myofascial Decompression)</strong></td>
                 <td>Static/Dynamic cupping으로 음압 적용 → 근막 hydration + 미세순환 증가 + 통증 게이트 변화</td>
                 <td>만성 경추통, 만성 LBP, 스포츠 회복</td>
                 <td>Short-term · Moderate (Cao 2012 SR)</td>
