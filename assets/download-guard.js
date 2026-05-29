@@ -9,18 +9,28 @@
 (function () {
   'use strict';
 
-  // NotebookLM 산출물 패턴: 파일명이 01_podcast*, 02_video_part*, 03_video_part* 로 시작
-  const NLM_RE = /\/(0[123]_(podcast|video_part[12]))[^\/]*\.(mp4|m4a)(?:[?#]|$)/i;
+  // NotebookLM 산출물 패턴:
+  //   ① 1세대: 01_podcast*, 02_video_part1*, 03_video_part2*
+  //   ② v3 4부작: podcasts_v3/01_episode1_*.m4a ~ 04_episode4_*.m4a
+  const NLM_RE = /\/(0[123]_(podcast|video_part[12])[^\/]*|podcasts_v3\/0[1-4]_episode[1-4]_[^\/]+)\.(mp4|m4a)(?:[?#]|$)/i;
   const MEDIA_RE = /\.(mp4|m4a|pdf|docx?)(?:[?#]|$)/i;
+
+  // 비로그인 공개 챕터(추가 시 여기 갱신) — 이 페이지에서는 익명자도 NLM 산출물 재생/다운로드 허용
+  const PUBLIC_CHAPTER_RE = /\/chapter(01_introduction|02_functional_neurology|13_soft_tissue)(?:\.html)?(?:[?#]|$)/i;
 
   function isAnonymous() {
     return !!(document.body && document.body.classList.contains('is-anonymous'));
   }
 
+  function isPublicChapter() {
+    return PUBLIC_CHAPTER_RE.test(location.pathname || '');
+  }
+
   function isAllowedAsset(url) {
     if (!url) return false;
-    // 익명(비로그인) 사용자는 NLM 화이트리스트도 다운로드 차단.
-    if (isAnonymous()) return false;
+    // 익명(비로그인) 사용자는 기본적으로 NLM 화이트리스트도 다운로드 차단.
+    // 예외: 비로그인 공개 챕터(Ch 1·2·13)는 NLM 산출물(m4a·mp4)을 익명자에게도 허용.
+    if (isAnonymous() && !isPublicChapter()) return false;
     return NLM_RE.test(url);
   }
 
@@ -135,7 +145,9 @@
   }
 
   // 익명자 전환 시: 초기 normalizeAnchors가 부여한 NLM 화이트리스트 효과 제거.
+  // 단, 비로그인 공개 챕터(Ch 1·2·13)는 익명자도 NLM 산출물 허용이라 되돌리지 않음.
   function lockNlmForAnonymous() {
+    if (isPublicChapter()) return;
     document.querySelectorAll('a.allow-download, a[download]').forEach(function (a) {
       a.removeAttribute('download');
       a.classList.remove('allow-download');
