@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soft Tissue Technique | Chiropractic</title>
+  <meta name="description" content="Chapter 13. 연부조직 술기 (Soft Tissue Technique) — 11 기법(ART·IASTM·Nimmo·TPT·Cyriax·MFR·MET·PNF·O-I·DN·Cupping)의 해부·생리·평가·치료·근거. 근거 기반·비판적 시각 포함." />
+  <link rel="stylesheet" href="./assets/main.css?v=20260529b" />
+
+<script defer src="./assets/ui.js?v=20260529b"></script>
+<script defer src="./assets/download-guard.js?v=20260529b"></script>
+<script defer src="./assets/hide-guard.js?v=20260529b"></script>
+<script defer src="./assets/pdf-viewer.js?v=20260529b"></script>
+<script defer src="./assets/soft-tissue-modal.js?v=20260529b"></script>
+<style id="st-tech-cards">
+/* Soft Tissue Technique cards — Ch 13 전용 */
+.tech-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-left: 4px solid #0071e3;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 1.5rem 0;
+}
+.tech-card.cyriax { border-left-color: #2563eb; }
+.tech-card.art    { border-left-color: #c0392b; }
+.tech-card.iastm  { border-left-color: #6b7280; }
+.tech-card.mfr    { border-left-color: #14b8a6; }
+.tech-card.tpt    { border-left-color: #ef4444; }
+.tech-card.nimmo  { border-left-color: #f59e0b; }
+.tech-card.met    { border-left-color: #8b5cf6; }
+.tech-card.pnf    { border-left-color: #10b981; }
+.tech-card.oi     { border-left-color: #84cc16; }
+.tech-card.dn     { border-left-color: #db2777; }
+.tech-card.cup    { border-left-color: #7c3aed; }
+.tech-card h3 {
+  margin: 0 0 .25rem;
+  font-size: 1.18em;
+  color: #1d1d1f;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tech-card .tech-num {
+  display: inline-flex;
+  width: 30px; height: 30px;
+  align-items: center; justify-content: center;
+  background: #f5f5f7;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.92em;
+  color: #1d1d1f;
+}
+.tech-card .tech-creator {
+  font-size: 0.78em;
+  color: #6e6e73;
+  font-weight: 500;
+}
+.tech-card .tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 1rem 0;
+}
+.tech-card .tech-box {
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 0.92em;
+  line-height: 1.55;
+  background: #f5f5f7;
+  border: 1px solid rgba(0,0,0,.06);
+}
+.tech-card .tech-box .box-title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 0.84em;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  color: #6e6e73;
+}
+.tech-card .tech-box.theory  { background: #eff6ff; border-color: #bfdbfe; }
+.tech-card .tech-box.dose    { background: #f0fdf4; border-color: #bbf7d0; }
+.tech-card .tech-box.danger  { background: #fef2f2; border-color: #fecaca; }
+.tech-card .tech-box.evidence { background: #fffbeb; border-color: #fcd34d; }
+.tech-card .tech-detail-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: .5rem;
+  padding: 8px 14px;
+  border: 1px solid #0071e3;
+  background: #fff;
+  color: #0071e3;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.88em;
+  cursor: pointer;
+  transition: all .15s;
+}
+.tech-card .tech-detail-btn:hover {
+  background: #0071e3;
+  color: #fff;
+}
+/* Region matrix table */
+.region-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.92em;
+}
+.region-matrix th, .region-matrix td {
+  border: 1px solid rgba(0,0,0,.08);
+  padding: 8px 10px;
+  text-align: center;
+}
+.region-matrix th {
+  background: #f5f5f7;
+  font-weight: 700;
+}
+.region-matrix td.region {
+  background: #eff6ff;
+  font-weight: 600;
+  text-align: left;
+}
+.region-matrix .yes { color: #0c8a4a; font-weight: 700; }
+.region-matrix .maybe { color: #b07300; }
+.region-matrix .no { color: #b91c1c; opacity: 0.6; }
+/* Layer palpation visual */
+.layer-block {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 12px;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fafbfc;
+  border: 1px solid rgba(0,0,0,.06);
+}
+.layer-block .layer-depth {
+  font-weight: 700;
+  text-align: center;
+  font-size: 0.84em;
+  color: #6e6e73;
+}
+.layer-block .layer-info { line-height: 1.5; }
+.layer-block.skin    { border-left: 4px solid #f59e0b; }
+.layer-block.fascia  { border-left: 4px solid #14b8a6; }
+.layer-block.muscle  { border-left: 4px solid #c0392b; }
+.layer-block.bone    { border-left: 4px solid #6b7280; }
+</style>
+<style id="med-abbr-css">
+abbr.med-abbr {
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1.2px;
+  text-decoration-color: #86868b;
+  cursor: help;
+  text-underline-offset: 3px;
+}
+strong abbr.med-abbr { color: inherit; }
+</style>
+  <script src="./assets/config.js?v=20260529b"></script>
+  <script type="module" src="./assets/auth-guard.js?v=20260529b"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <!-- ========== GLASSMORPHIC NAV ========== -->
+  <nav class="site-nav" aria-label="주 메뉴">
+    <div class="nav-inner">
+      <a class="nav-brand" href="./index.html">
+        <span class="mark"></span>
+        <span>Chiropractic</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html#core">철학</a></li>
+        <li><a href="./index.html#history">역사</a></li>
+        <li><a href="./index.html#curriculum">커리큘럼</a></li>
+        <li><a href="./index.html#format">학습 포맷</a></li>
+        <li><a href="./index.html#principle">원칙</a></li>
+        <li><a href="./archive.html">📂 아카이브</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-ghost btn-sm" href="./login.html">로그인</a>
+        <a class="btn btn-primary btn-sm" href="./index.html#curriculum">커리큘럼</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero-chapter">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="./index.html">Chiropractic</a>
+        &nbsp;/&nbsp;
+        <a href="./index.html#curriculum">커리큘럼</a>
+        &nbsp;/&nbsp;
+        Chapter 13 🆕
+      </div>
+      <h1>Soft Tissue Technique</h1>
+      <h2>연부조직 술기 — 평가의 4 층위와 11 기법의 신경생리·임상 통합</h2>
+    </div>
+  </header>
+
+  <!-- ========== IN-PAGE NAV ========== -->
+  <nav class="site-nav" aria-label="챕터 섹션" style="top: var(--nav-h); background: var(--glass-bg-strong);">
+    <div class="nav-inner" style="justify-content: center;">
+      <ul class="nav-links" style="justify-content: center;">
+        <li><a href="#intro">서론</a></li>
+        <li><a href="#anatomy">해부·생리</a></li>
+        <li><a href="#aff-def-eff">Aff/Def/Eff</a></li>
+        <li><a href="#assessment">⭐ Assessment</a></li>
+        <li><a href="#treatment">⭐ 11 기법</a></li>
+        <li><a href="#outcome">재평가</a></li>
+        <li><a href="#clinical">임상 적용</a></li>
+        <li><a href="#critical">🔴 비판적 시각</a></li>
+        <li><a href="#resources">자료</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ========== 0. 편집 원칙 ========== -->
+    <section id="editorial">
+      <div class="callout callout-info">
+        <h4>📘 본 강의록의 편집 원칙</h4>
+        <p>
+          Chapter 13은 카이로프랙틱·도수치료에서 사용되는 <strong>연부조직 술기(<abbr class="med-abbr" title="Soft Tissue Technique · 연부조직 술기 — 근육·근막·인대·건·관절낭 등 비골 조직 직접 처치">STT</abbr>)</strong>를 <strong>근거 기반 의학(<abbr class="med-abbr" title="Evidence-Based Medicine · 근거 기반 의학">EBM</abbr>)</strong> 관점으로 정리합니다.
+          신경생리학적으로 확립된 기전(GTO 반사·Gate control·viscoelastic creep)은 🟢 명시하고,
+          기전이 모호하거나 RCT 근거가 약한 주장(MFR fascia 슬라이딩·Cupping 색반점)은 🟠~🔴로 명시합니다.
+          한의학·추나는 본 강의 범위 밖이며, dry needling은 서구 의학 paradigm으로만 다룹니다.
+          비판 섹션(Part VIII)에서 Trigger Point 존재 논쟁·MFR 해부 한계·Cupping placebo 등 주요 쟁점을 정리합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== PART I. 서론 ========== -->
+    <section id="intro">
+      <h2>Part I. 서론 — 연부조직 술기란 무엇인가</h2>
+
+      <div class="principle-card">
+        <h3>본 강의의 조작적 정의</h3>
+        <p>
+          <strong>Soft Tissue Technique (STT)</strong>은
+          근육·근막·인대·건·관절낭·신경 외막·피하조직 등 <strong>비골(non-osseous) 조직</strong>을 직접 대상으로 하는
+          모든 손·기구 기반 처치를 가리킵니다.
+          카이로프랙틱의 척추 교정(<abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 추력 — Diversified·Gonstead 등 척추 교정의 핵심 동작">HVLA</abbr>)이 관절(joint)을 표적으로 한다면,
+          STT는 그 주변의 <strong>근막·근육·결합조직</strong>을 표적으로 하여
+          교정 전후의 통증·가동성·신경 입력을 보완·증폭합니다.
+        </p>
+        <p>
+          본 강의는 11가지 핵심 기법을 다룹니다:
+          <strong>Cyriax DTFM · ART · IASTM(Graston) · MFR · TPT · Nimmo · MET · PNF · O-I · Dry Needling · Cupping</strong>.
+          각각의 신경생리 기전·접촉 자세·dose·금기·근거 수준을 <strong>Aff/Def/Eff 프레임워크</strong>로 해석합니다.
+        </p>
+      </div>
+
+      <h3>1.1 카이로프랙틱 안에서의 STT 위치</h3>
+      <p>
+        20세기 초 카이로프랙틱은 척추 교정(adjustment) 중심으로 출발했지만, 1950s 이후 점차 연부조직 처치를 통합해 왔습니다.
+        Bergmann <em>Chiropractic Technique</em>(2010, Ch.4)은 "Adjustive procedures가 chiropractic의 정체성이지만,
+        연부조직 처치는 그 효과를 보완·증폭하는 필수 보조"라고 명시합니다.
+        오늘날 미국·유럽 카이로프랙틱 교육과정 90% 이상이 최소 1개 STT 인증을 의무화하고 있습니다 (ACA 2019 survey).
+      </p>
+
+      <h3>1.2 역사 요약</h3>
+      <ul>
+        <li><strong>1940s</strong> — James Cyriax (영국 정형외과의) — <em>Deep Transverse Friction Massage</em> 체계화, <em>Textbook of Orthopaedic Medicine</em> 출간</li>
+        <li><strong>1942</strong> — Janet Travell, MD — <em>Myofascial trigger point</em> 개념 발표. 후일 케네디 대통령 주치의로 만성 요통 관리</li>
+        <li><strong>1950s</strong> — Raymond Nimmo, DC — <em>Receptor-Tonus Technique</em>. 카이로프랙틱 안의 STT 표준화 시도</li>
+        <li><strong>1950s</strong> — Ida Rolf, PhD — <em>Structural Integration</em>(Rolfing). 근막 중심 manual therapy의 시초</li>
+        <li><strong>1970s</strong> — Vladimir Janda (체코) — 상부·하부 교차 증후군. 근육 불균형 모델</li>
+        <li><strong>1980s</strong> — Travell & Simons <em>Myofascial Pain and Dysfunction: The Trigger Point Manual</em> 출간 (1983)</li>
+        <li><strong>1980s-90s</strong> — Fred Mitchell·Philip Greenman — <em>Muscle Energy Technique</em>(MET) 정착 (Osteopathic 전통)</li>
+        <li><strong>1990s</strong> — Michael Leahy, DC — <em>Active Release Technique</em>(ART) 상표화·인증제 도입</li>
+        <li><strong>1990s</strong> — David Graston (재활공학자) — <em>Graston Technique</em> 상표화, <abbr class="med-abbr" title="Instrument-Assisted Soft Tissue Mobilization · 기구 보조 연부조직 가동술">IASTM</abbr> 산업 시작</li>
+        <li><strong>1990s</strong> — John Barnes·Robert Ward — <em>Myofascial Release</em>(MFR) 보급</li>
+        <li><strong>1990s-2000s</strong> — Karel Lewit·Jan Dommerholt·Jay Shah — <em>Dry Needling</em>의 서구화. 침술과의 paradigm 분리</li>
+        <li><strong>2000s 이후</strong> — Stecco 가족(이탈리아) 등에 의한 근막 해부 재해석 (<em>Fascia Research Congress</em> 2007 출범)</li>
+      </ul>
+
+      <h3>1.3 근거 수준의 솔직한 평가</h3>
+      <table class="data-table">
+        <thead>
+          <tr><th>중재·기전</th><th>근거 수준</th><th>대표 SR/Cochrane</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>마사지 일반 — 단기 통증 감소 (LBP)</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Furlan 2015 Cochrane</td></tr>
+          <tr><td>Cyriax DTFM — eccentric exercise 병행 시 외측상과염</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Brosseau 2002 Cochrane</td></tr>
+          <tr><td>Trigger Point therapy — 단기 통증·ROM</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Vernon-Schneider 2009 (chiropractic 임상)</td></tr>
+          <tr><td>IASTM (Graston 계열) — 단기 ROM·통증</td><td><span class="evidence ev-limited">🟠 Limited</span></td><td>Cheatham 2016 SR — high risk of bias</td></tr>
+          <tr><td>MFR — 만성 LBP 단기 효과</td><td><span class="evidence ev-limited">🟠 Limited</span></td><td>Ajimsha 2015 SR</td></tr>
+          <tr><td>MET — 척추·골반 ROM 증가</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Franke 2015 Cochrane</td></tr>
+          <tr><td>Dry Needling — 만성 myofascial pain</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Gattie 2017 meta-analysis</td></tr>
+          <tr><td>Cupping — 단기 통증</td><td><span class="evidence ev-limited">🟠 Limited</span></td><td>Cao 2010 Lancet (대부분 low quality)</td></tr>
+          <tr style="background:#fff3f3;"><td><strong>MFR가 fascia를 물리적으로 "녹인다"</strong></td><td><span class="evidence ev-none">🔴 No evidence</span></td><td>Schleip 신경학적 재해석 (Stretch 2003)</td></tr>
+          <tr style="background:#fff3f3;"><td><strong>Cupping 색반점 = 독소 배출</strong></td><td><span class="evidence ev-none">🔴 No evidence</span></td><td>모세혈관 파열로 인한 자국, 치료 효과 지표 아님</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-info">
+        <h4>🔵 본 강의의 자세</h4>
+        <p>
+          STT의 모든 기법이 같은 근거 수준을 갖는 것은 아닙니다. 본 강의는 각 기법을 <strong>3축</strong>으로 평가합니다:
+          (1) <strong>신경생리 기전</strong>의 합리성, (2) <strong>RCT/SR 근거</strong>의 양과 질, (3) <strong>임상 안전성</strong>.
+          세 축이 모두 양호한 기법(MET·일부 마사지)은 강하게 권고하고, 기전은 합리적이나 근거가 제한적인 기법(MFR·IASTM)은 "보조적"으로 사용을 권합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== PART II. 해부·생리 기초 ========== -->
+    <section id="anatomy">
+      <h2>Part II. 해부·생리 기초 — 근막·수용기·통증 회로</h2>
+      <p class="section-lead">STT가 작용하는 조직과 그 안의 신경 회로를 정리합니다. 이 토대가 Aff/Def/Eff 해석의 출발점입니다.</p>
+
+      <h3>2.1 근막(Fascia) 3층 구조</h3>
+      <div class="layer-block skin">
+        <div class="layer-depth">표층<br/>0-2mm</div>
+        <div class="layer-info"><strong>피부 + 피하지방</strong> — Meissner·Merkel·Ruffini 표층 수용기. IASTM의 1차 접촉면.</div>
+      </div>
+      <div class="layer-block fascia">
+        <div class="layer-depth">중층<br/>2-10mm</div>
+        <div class="layer-info"><strong>천근막(superficial fascia)</strong> — 풍부한 자유신경종말. 슬라이딩 능력 핵심. MFR의 주 타겟.</div>
+      </div>
+      <div class="layer-block muscle">
+        <div class="layer-depth">심층<br/>10-40mm</div>
+        <div class="layer-info"><strong>심근막 + 근육</strong> — 근방추(<abbr class="med-abbr" title="Muscle Spindle · 근방추 — 근육 신장 감지 Ia/II afferent 수용기">Ia/II</abbr>), <abbr class="med-abbr" title="Golgi Tendon Organ · 골지건기관 — 근육 장력 감지 Ib afferent">GTO</abbr>(Ib), Pacinian. TPT·Nimmo·ART·DN의 표적.</div>
+      </div>
+      <div class="layer-block bone">
+        <div class="layer-depth">최심부<br/>>40mm</div>
+        <div class="layer-info"><strong>골막 + 부착부(enthesis)</strong> — 풍부한 통각·기계수용기. Cyriax DTFM과 O-I 기법의 표적.</div>
+      </div>
+
+      <h3>2.2 근육 내 4 수용기와 임상 의의</h3>
+      <table class="data-table">
+        <thead>
+          <tr><th>수용기</th><th>섬유</th><th>감지</th><th>자극 기법</th><th>임상 효과</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>근방추 (Muscle Spindle)</td><td>Ia · II</td><td>근육 길이·속도</td><td>Tapping · Quick stretch</td><td>α-motor neuron 흥분 → 톤 ↑</td></tr>
+          <tr><td>골지건기관 (GTO)</td><td>Ib</td><td>근육 장력</td><td>지속 압박 · 등척성 수축 후 이완</td><td>α-motor neuron 억제 → 톤 ↓ (autogenic inhibition)</td></tr>
+          <tr><td>Pacinian</td><td>II</td><td>진동·빠른 변화</td><td>IASTM 스트로크 · 진동</td><td>일시적 통증 게이트 (Gate control)</td></tr>
+          <tr><td>자유신경종말</td><td>Aδ · C</td><td>통각·온도·화학</td><td>모든 압박 자극</td><td>통증·염증 시그널</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2.3 Gate Control Theory (Melzack-Wall, 1965)</h3>
+      <p>
+        척수 후각(<abbr class="med-abbr" title="Dorsal Horn · 척수 후각 — 통증 정보 1차 처리 영역">Dorsal Horn</abbr>) substantia gelatinosa에서
+        <strong>Aβ(굵은 기계수용 섬유)가 활성화되면 C섬유(통각)의 시냅스 전달을 억제</strong>합니다.
+        STT의 압박·진동·마찰 자극이 Aβ를 활성화 → 통증 게이트 닫힘 → 일시적 진통.
+        이것이 모든 manual therapy 즉시 효과의 1차 신경학적 설명입니다.
+      </p>
+
+      <h3>2.4 하행성 통증 조절 (Descending Modulation)</h3>
+      <p>
+        중뇌 <abbr class="med-abbr" title="Periaqueductal Gray · 중뇌 수도 주변 회색질 — 하행성 통증 조절 중추">PAG</abbr> → 연수 <abbr class="med-abbr" title="Rostral Ventromedial Medulla · 연수 복내측부 — PAG 출력 중계">RVM</abbr> → 척수 후각으로 내려가는 회로가
+        <strong>내인성 오피오이드·세로토닌·노르에피네프린</strong>을 분비하여 통증 신호를 억제합니다.
+        장시간 압박(>90초)이나 환자-치료자 신뢰 관계(touch alone)도 이 회로를 활성화시키며,
+        이것이 placebo·맥락 효과의 신경학적 기반입니다 (Vincent·Lewith 1995).
+      </p>
+
+      <h3>2.5 Viscoelastic Creep — 근막 변형의 물리학</h3>
+      <p>
+        근막은 <strong>점탄성(viscoelastic) 조직</strong>이라 일정 압력을 지속하면 시간에 따라 점진적으로 늘어나는
+        "<strong>creep</strong>" 현상을 보입니다. MFR이 90-120초 지속 압력을 강조하는 이유입니다.
+        다만 in vitro 실험(Chaudhry 2008)은 실제 근막을 의미 있게 변형시키려면 <strong>2000 N/cm² 이상</strong>이 필요하다고 보고하여,
+        <strong>임상에서의 변화는 물리적 변형보다는 신경학적 반사(GTO·CNS 톤 변화)에 더 가까울 가능성</strong>이 큽니다.
+        이 점은 Part VIII 비판 섹션에서 다시 다룹니다.
+      </p>
+    </section>
+
+    <!-- ========== PART III. Aff/Def/Eff ========== -->
+    <section id="aff-def-eff">
+      <h2>⭐ Part III. Afferentation · Deafferentation · Efferentation 프레임워크</h2>
+      <p class="section-lead">Ch 2 Functional Neurology에서 정립한 3축 프레임을 STT에 적용합니다. 11 기법을 같은 언어로 해석하는 도구입니다.</p>
+
+      <h3>3.1 STT는 본질적으로 Afferentation 중재이다</h3>
+      <p>
+        모든 STT는 <strong>피부·근막·근방추·GTO·자유신경종말</strong>에 기계적 자극을 가하여
+        구심성 신호를 CNS로 보내는 행위입니다.
+        교정자(시술자)의 손이 직접 조작하는 것은 조직이지만, <strong>실제 효과를 만들어내는 것은 그 자극이 척수·뇌간·피질에서 처리된 후의 출력 변화</strong>입니다.
+      </p>
+
+      <h3>3.2 Deafferentation 회복 — 조직 침묵을 깨우다</h3>
+      <p>
+        만성 통증·과사용 부위의 조직에서는 기계수용기가 <strong>중추 감작(central sensitization)</strong> 안에서 침묵하거나 왜곡된 신호를 보냅니다.
+        STT는 그 조직에 다양한 빈도·강도의 입력을 주어 CNS의 감각 지도를 재교정합니다.
+        이것이 단순한 "근육 풀기"를 넘어선 신경학적 의미입니다.
+      </p>
+
+      <h3>3.3 Efferentation 변화 — 톤·자세·자율신경</h3>
+      <ul>
+        <li><strong>α-motor neuron 톤 감소</strong> — GTO 자극(MET·DTFM 지속 압박)이 자가 억제(autogenic inhibition)를 유발</li>
+        <li><strong>γ-motor neuron 재조정</strong> — 근방추 민감도 변화로 근육 휴식 길이 회복</li>
+        <li><strong>자율신경 균형</strong> — 미주신경 자극(천천히·깊게·따뜻하게)으로 부교감 우위 → 심박변이도 증가 (Field 2010 review)</li>
+      </ul>
+
+      <h3>3.4 11 기법의 Aff/Def/Eff 매트릭스</h3>
+      <table class="data-table">
+        <thead>
+          <tr><th>기법</th><th>1차 표적 수용기</th><th>주된 Aff 입력</th><th>예상 Eff 변화</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Cyriax DTFM</td><td>Aδ + Pacinian</td><td>90° 횡마찰 (10-15분)</td><td>통증 게이트 + 부착부 fibroblast 재조직</td></tr>
+          <tr><td>ART</td><td>근방추 Ia + GTO Ib</td><td>단축 자세 접촉 + 능동 신장</td><td>Reciprocal + autogenic inhibition</td></tr>
+          <tr><td>IASTM (Graston)</td><td>표층 기계수용기 + Aδ</td><td>금속 기구 스트로크</td><td>Gate control + 국소 혈류 (충혈)</td></tr>
+          <tr><td>MFR</td><td>심근막 + 신경 외막</td><td>90-120초 지속 압력</td><td>점탄성 creep + 하행성 억제</td></tr>
+          <tr><td>TPT (ischemic compression)</td><td>활성 trigger point Aδ/C</td><td>30-60초 압박</td><td>국소 ischemia → reperfusion + 근절 sarcomere 재정렬</td></tr>
+          <tr><td>Nimmo Receptor-Tonus</td><td>GTO + 자유신경종말</td><td>5-7초 hold × 3 cycle</td><td>autogenic inhibition (반복)</td></tr>
+          <tr><td>MET</td><td>GTO + 근방추</td><td>등척성 수축 → PIR</td><td>α-motor neuron 일시 억제 → ROM 증가</td></tr>
+          <tr><td>PNF stretching</td><td>근방추 + GTO</td><td>Hold-Relax · CRAC</td><td>autogenic + reciprocal inhibition 결합</td></tr>
+          <tr><td>Origin-Insertion (O-I)</td><td>골막·부착부 자유신경종말</td><td>부착부 30초 압박</td><td>근전도상 활성 변화 (AK 연구)</td></tr>
+          <tr><td>Dry Needling</td><td>활성 trigger point + Aδ</td><td>침으로 LTR 유발</td><td>근절 reset + 척수 후각 modulation</td></tr>
+          <tr><td>Cupping</td><td>피하·근막</td><td>음압으로 조직 들어올림</td><td>혈류 ↑ + 게이트 + 자율신경 반응</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-info">
+        <h4>🔵 임상 통찰</h4>
+        <p>
+          11 기법이 표면적으로 다른 동작처럼 보이지만, <strong>신경학적 기전은 4-5개 공통 회로(GTO·근방추·Gate·PAG-RVM·자율신경)에 수렴</strong>합니다.
+          이것이 "여러 기법 중 무엇을 골라야 하는가"라는 질문에 대한 답이기도 합니다 — <strong>환자의 표층/심층 선호, 통증 민감도, 시간 제약</strong>에 따라 같은 회로를 더 잘 활성화하는 기법을 선택.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== PART IV. ASSESSMENT ========== -->
+    <section id="assessment">
+      <h2>⭐ Part IV. Assessment — 평가의 4 층위와 임상 검사</h2>
+      <p class="section-lead">Cyriax의 "tissue tension test" 전통을 따라 표층-심층 순서로 평가합니다. 한 가지 검사로 결론 내리지 않는 것이 원칙입니다.</p>
+
+      <h3>4.1 Palpation의 4 층위 (Layer Palpation)</h3>
+      <p>Cyriax 학파의 핵심 원칙: 시술자는 <strong>의식적으로 한 층씩</strong> 손가락 압력을 깊이 조절하며 조직을 구분합니다. 무작정 누르면 모든 층의 신호가 섞입니다.</p>
+      <ol>
+        <li><strong>층 1 — 피부 + 피하</strong>: 슬라이딩(skin rolling), 온도, 발한, 부종. <em>Test:</em> "피부 들어올리기 검사" (Kibler skin roll)</li>
+        <li><strong>층 2 — 천근막</strong>: 미끄러짐 저항, 방향성. <em>Test:</em> 손바닥 전체로 4방향(상하좌우) 슬라이드</li>
+        <li><strong>층 3 — 근육 + 심근막</strong>: taut band, trigger point, 톤. <em>Test:</em> Snapping palpation(섬유 90° 횡단)</li>
+        <li><strong>층 4 — 부착부 + 골막</strong>: 점압통. <em>Test:</em> 부착부 정확 누르기 (Cyriax pin-point)</li>
+      </ol>
+
+      <h3>4.2 Static vs Dynamic Palpation</h3>
+      <ul>
+        <li><strong>Static palpation</strong> — 환자 휴식 상태. 톤·온도·구조 차이</li>
+        <li><strong>Dynamic palpation</strong> — 환자가 움직이거나 시술자가 수동 동원. 조직의 미끄러짐·끝느낌(end-feel) 평가</li>
+      </ul>
+
+      <h3>4.3 능동·수동·저항 ROM (Cyriax Selective Tension)</h3>
+      <table class="data-table">
+        <thead>
+          <tr><th>검사</th><th>+ Finding</th><th>시사하는 구조</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Active ROM 통증</td><td>특정 각도 통증</td><td>수축 조직 + 비수축 조직 어느 쪽일 수 있음</td></tr>
+          <tr><td>Passive ROM 통증 (같은 각도)</td><td>능동과 같은 통증</td><td>비수축 조직 (관절낭·인대·신경)</td></tr>
+          <tr><td>Passive ROM 통증 없음 + Resistive isometric 통증</td><td>저항 시 통증</td><td>수축 조직 (근육·건)</td></tr>
+          <tr><td>모두 통증</td><td>광범위</td><td>심한 염증·신경 자극·중추 감작 의심</td></tr>
+        </tbody>
+      </table>
+
+      <h3>4.4 End-feel 분류 (Cyriax-Kaltenborn)</h3>
+      <ul>
+        <li><strong>Hard / Bony</strong> — 정상 (예: 팔꿈치 신전)</li>
+        <li><strong>Soft / Tissue approximation</strong> — 정상 (예: 팔꿈치 굴곡 시 이두근 접촉)</li>
+        <li><strong>Firm / Capsular</strong> — 정상 (예: 어깨 외회전 끝). 비정상 시 관절낭 단축</li>
+        <li><strong>Empty</strong> — 통증으로 환자가 더 이상 못 가는 상태 (구조적 차단 아님). 종양·심한 염증 의심</li>
+        <li><strong>Springy / Block</strong> — 비정상. 반월판·관절 내 mouse</li>
+        <li><strong>Spasm</strong> — 비정상. 보호적 근수축</li>
+      </ul>
+
+      <h3>4.5 근육 길이 검사</h3>
+      <div class="test-card">
+        <h4>Thomas Test — 장요근(Iliopsoas) 길이</h4>
+        <div class="test-proc">
+          <strong>절차:</strong>
+          <ol>
+            <li>환자 앙와위. 반대쪽 무릎을 가슴까지 굴곡</li>
+            <li>검사하는 쪽 다리가 테이블에 평평히 닿는지 관찰</li>
+          </ol>
+        </div>
+        <div class="test-findings">
+          <div class="finding-box positive"><span class="box-title">+ Finding</span>대퇴가 테이블에서 떠 있음 (고관절 굴곡 잔여)</div>
+          <div class="finding-box meaning"><span class="box-title">의미</span>장요근 단축. 모든 만성 LBP·골반 전방 경사에서 우선 평가</div>
+          <div class="finding-box lesion"><span class="box-title">병변</span>장요근 myofascial 긴장 → 요추 hyperlordosis · 골반 전경 · 전방 슬개골 통증</div>
+        </div>
+      </div>
+
+      <div class="test-card">
+        <h4>Ober Test — IT band / TFL 길이</h4>
+        <div class="test-proc">
+          <strong>절차:</strong>
+          <ol>
+            <li>환자 측와위, 검사하지 위로</li>
+            <li>고관절 신전 + 외전 → 수동 내전 (drop)</li>
+          </ol>
+        </div>
+        <div class="test-findings">
+          <div class="finding-box positive"><span class="box-title">+ Finding</span>대퇴가 수평 아래로 내려가지 않음</div>
+          <div class="finding-box meaning"><span class="box-title">의미</span>IT band·TFL 단축. 달리기 손상·patellofemoral pain에서 흔함</div>
+          <div class="finding-box lesion"><span class="box-title">병변</span>외측 슬관절·전외측 고관절 통증 · 골반 외측 이동 결함</div>
+        </div>
+      </div>
+
+      <div class="test-card">
+        <h4>Ely Test — 대퇴직근(Rectus Femoris) 길이</h4>
+        <div class="test-proc">
+          <strong>절차:</strong>
+          <ol>
+            <li>환자 복와위, 양 다리 신전</li>
+            <li>검사 다리 무릎 수동 굴곡</li>
+          </ol>
+        </div>
+        <div class="test-findings">
+          <div class="finding-box positive"><span class="box-title">+ Finding</span>같은 쪽 고관절이 함께 굴곡되어 엉덩이가 떠오름</div>
+          <div class="finding-box meaning"><span class="box-title">의미</span>대퇴직근 단축. 무릎 통증·요통 동반 시 단축이 가속 인자</div>
+          <div class="finding-box lesion"><span class="box-title">병변</span>전방 슬개골 통증 · 골반 전경 · L4-S1 부담 증가</div>
+        </div>
+      </div>
+
+      <div class="test-card">
+        <h4>Tripod Sign — 슬괵근(Hamstring) 길이</h4>
+        <div class="test-proc">
+          <strong>절차:</strong>
+          <ol>
+            <li>환자 좌위, 양 슬관절 90° 굴곡</li>
+            <li>검사 다리 수동으로 천천히 신전</li>
+          </ol>
+        </div>
+        <div class="test-findings">
+          <div class="finding-box positive"><span class="box-title">+ Finding</span>완전 신전 못함, 통증 또는 골반 후방 경사 보상</div>
+          <div class="finding-box meaning"><span class="box-title">의미</span>슬괵근 단축. SLR과 함께 보는 길이 평가</div>
+          <div class="finding-box lesion"><span class="box-title">병변</span>골반 후경 · 요추 평탄화 · 좌골신경 자극 가능</div>
+        </div>
+      </div>
+
+      <h3>4.6 Trigger Point 진단 기준 (Travell·Simons)</h3>
+      <p>다음 6 기준 중 <strong>최소 5개 충족 시 활성 trigger point</strong>로 진단합니다 (Gerwin 1997 minimal criteria):</p>
+      <ol>
+        <li><strong>Taut band</strong> — 근섬유 방향으로 만져지는 끈 모양 긴장</li>
+        <li><strong>Tender spot</strong> — taut band 위 가장 압통이 강한 점</li>
+        <li><strong>Jump sign</strong> — 압박 시 환자가 움찔하거나 회피</li>
+        <li><strong>Referred pain</strong> — 환자가 인지하는 통증 패턴 재현</li>
+        <li><strong>Local Twitch Response (LTR)</strong> — taut band 횡단 시 일시적 수축 (snapping palpation)</li>
+        <li><strong>제한된 ROM</strong> — 해당 근육 신장 시 통증 또는 가동 제한</li>
+      </ol>
+
+      <h3>4.7 Pain Pressure Threshold (PPT) — 알고미터 정량</h3>
+      <p>
+        압통점에 0.5-1 kg/s로 압력을 증가시키며, 환자가 처음으로 "압박감"이 아닌 "통증"으로 인식하는 시점을 측정합니다.
+        정상 근육 3-5 kg/cm², trigger point 1-2 kg/cm² 미만이 일반적.
+        <strong>치료 전후 PPT 비교가 가장 신뢰 가능한 객관 지표</strong>입니다 (ICC > 0.9).
+        한국 임상에서 알고미터는 흔치 않지만, 엄지 손톱 압박 + NRS가 대안.
+      </p>
+
+      <h3>4.8 신경역동 (Neurodynamic) 스크리닝</h3>
+      <ul>
+        <li><strong>Slump test</strong> — 좌위 척추 굴곡 + 경부 굴곡 + 슬관절 신전 + 발등 굴곡. 신경학적 통증 재현 시 + (Maitland)</li>
+        <li><strong>SLR (Straight Leg Raise)</strong> — 좌골신경 견인. 30-70° 사이 통증 재현이 좌골신경 자극 시사</li>
+        <li><strong>ULNT (Upper Limb Neural Tension)</strong> — 정중·요골·척골 신경 별 sequence. Butler·Shacklock 분류</li>
+      </ul>
+
+      <div class="callout callout-warn">
+        <h4>⚠️ 평가 신뢰도의 솔직한 한계</h4>
+        <p>
+          Palpation 검사자 간 신뢰도(ICC)는 <strong>0.3-0.6 수준</strong>으로 보고되며 (Sciotti 2001 trapezius TrP·Nice 1992 LBP),
+          한 검사로 단정 짓는 것은 권장되지 않습니다.
+          <strong>병력 + 다중 검사 일치 + 치료 반응</strong>을 종합하는 것이 임상 표준입니다.
+          PPT 알고미터 사용 시 신뢰도가 가장 높아지므로, 만성 환자에서는 권장합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== PART V. TREATMENT — 11 TECHNIQUES ========== -->
+    <section id="treatment">
+      <h2>⭐ Part V. 치료 — 11 연부조직 기법 상세</h2>
+      <p class="section-lead">
+        각 기법을 <strong>역사·기전·자세·접촉·dose·금기·근거</strong> 7요소로 정리합니다.
+        제목 옆 <strong>🔬 상세보기</strong> 버튼은 SVG 일러스트 + 임상 절차 모달을 엽니다 (Ch 3과 공유).
+      </p>
+
+      <!-- 1. Cyriax DTFM -->
+      <div class="tech-card cyriax" id="tech-cyriax">
+        <h3><span class="tech-num">①</span> Cyriax Deep Transverse Friction Massage (DTFM) <span class="tech-creator">— James Cyriax, MD (1940s 영국)</span></h3>
+        <div class="tech-grid">
+          <div class="tech-box theory"><span class="box-title">기전</span>90° 횡마찰로 건·인대 섬유 사이 부착(adhesion) 분리 + Aδ Gate control + 부착부 fibroblast 재조직</div>
+          <div class="tech-box"><span class="box-title">자세</span>치료부를 약간 신장된 자세 (예: 외측상과염 — 손목 굴곡)</div>
+          <div class="tech-box"><span class="box-title">접촉</span>엄지 또는 검지+중지 끝, 섬유 방향에 정확히 90°</div>
+          <div class="tech-box dose"><span class="box-title">Dose</span>10-15분 / 부위. 환자가 무감각해질 때까지 점진 증가. 직후 eccentric exercise 필수</div>
+          <div class="tech-box danger"><span class="box-title">금기</span>급성 염증(첫 48시간) · 혈종 · 항응고제 복용 · 감염 · 종양</div>
+          <div class="tech-box evidence"><span class="box-title">근거</span>🟡 Moderate (외측상과염, Brosseau 2002 Cochrane — eccentric 병행 시 명확한 이득. 단독 사용은 효과 제한적)</div>
+        </div>
+        <button class="tech-detail-btn" data-stt="cyriax">🔬 SVG 일러스트 + 상세 절차</button>
+      </div>
+
+      <!-- 2. ART -->
+      <div class="tech-card art" id="tech-art">
+        <h3><span class="tech-num">②</span> Active Release Technique (ART) <span class="tech-creator">— Michael Leahy, DC (1990s)</span></h3>
+        <div class="tech-grid">
+          <div class="tech-box theory"><span class="box-title">기전</span>단축 자세 접촉 + 환자 능동 신장 → 근육·신경의 longitudinal tension + reciprocal inhibition</div>
+          <div class="tech-box"><span class="box-title">자세</span>표적 근육을 단축 자세에 놓고 환자가 천천히 능동 신장</div>
+          <div class="tech-box"><span class="box-title">접촉</span>엄지 1지·2지로 표적 근육 접촉. 환자 동작에 맞춰 압력 유지</div>
+          <div class="tech-box dose"><span class="box-title">Dose</span>1 동작 = 5-7초 longitudinal tension. 3 cycle / 부위</div>
+          <div class="tech-box danger"><span class="box-title">금기</span>급성 손상 · 신경병증성 통증 · 환자가 능동 동작 불가능한 경우</div>
+          <div class="tech-box evidence"><span class="box-title">근거</span>🟠 Limited (대부분 ART 시술자 사내 연구. 독립 RCT 부족. 임상 보고 풍부)</div>
+        </div>
+        <button class="tech-detail-btn" data-stt="art">🔬 SVG 일러스트 + 상세 절차</button>
+      </div>
+
+      <!-- 3. IASTM -->
+      <div class="tech-card iastm" id="tech-iastm">
+        <h3><span class="tech-num">③</span> IASTM / Graston Technique <span class="tech-creator">— David Graston (1990s)</span></h3>
+        <div class="tech-grid">
+          <div class="tech-box theory"><span class="box-title">기전</span>금속 기구로 표층 자극 → microtrauma 가설(fibroblast 활성) + Aβ Gate control + 국소 충혈</div>
+          <div class="tech-box"><span class="box-title">자세</span>치료부 노출, 약간 신장 자세</div>
+          <div class="tech-box"><span class="box-title">접촉</span>6 종 GT-1~GT-6 기구. 스트로크: Sweeping · Fanning · Brushing · Strumming · Framing</div>
+          <div class="tech-box dose"><span class="box-title">Dose</span>5-15분 / 부위. punctate erythema(점상 발적)까지 — petechiae(반점 출혈)는 과도, 즉시 중단</div>
+          <div class="tech-box danger"><span class="box-title">금기</span>항응고제 · 정맥류 · 림프 부종 · 활성 감염 · 임신부 복부 · 종양 · 출혈 경향</div>
+          <div class="tech-box evidence"><span class="box-title">근거</span>🟠 Limited (Cheatham 2016 SR — 단기 ROM·통증 효과 있으나 high risk of bias. 장기 근거 부족)</div>
+        </div>
+        <button class="tech-detail-btn" data-stt="iastm">🔬 SVG 일러스트 + 상세 절차</button>
+      </div>
+
+      <!-- 4. MFR -->
+      <div class="tech-card mfr" id="tech-mfr">
+        <h3><span class="tech-num">④</span> Myofascial Release (MFR) <span class="tech-creator">— John Barnes·Robert Ward (1990s)</span></h3>
+        <div class="tech-grid">
+          <div class="tech-box theory"><span class="box-title">기전</span>90-120초 지속 압력 → 점탄성 creep (가설) + GTO autogenic inhibition + 하행성 통증 억제 (재해석, Schleip)</div>
+          <div class="tech-box"><span class="box-title">자세</span>치료부 약간 신장. 환자 깊은 호흡 유도</div>
+          <div class="tech-box"><span class="box-title">접촉</span>손바닥 · 전완 · 팔꿈치. 넓은 면적 + 균일한 압력</div>
+          <div class="tech-box dose"><span class="box-title">Dose</span>90-120초 / 부위 (release 감 인지될 때까지). 3-5 부위 / 세션</div>
+          <div class="tech-box danger"><span class="box-title">금기</span>심부 정맥 혈전 · 항응고제 · 골다공증 · 광범위 발진</div>
+          <div class="tech-box evidence"><span class="box-title">근거</span>🟠 Limited (Ajimsha 2015 SR — 만성 LBP·경부통 단기 효과 있으나 RCT 질이 낮음. fascia 물리 변형 가설은 in vitro 한계)</div>
+        </div>
+        <button class="tech-detail-btn" data-stt="mfr">🔬 SVG 일러스트 + 상세 절차</button>
+      </div>
+
+      <!-- 5. TPT -->
+      <div class="tech-card tpt" id="tech-tpt">
+        <h3><span class="tech-num">⑤</span> Trigger Point Therapy — Ischemic Compression <span class="tech-creator">— Travell·Simons (1942-1983)</span></h3>
+        <div class="tech-grid">
+          <div class="tech-box theory"><span class="box-title">기전</span>활성 trigger point 30-60초 압박 → 국소 ischemia → 해제 시 reperfusion. 근절(sarcomere) 정렬 + 척수 후각 modulation</div>
+          <div class="tech-box"><span class="box-title">자세</span>표적 근육 중립 또는 약간 신장 자세</div>
+          <div class="tech-box"><span class="box-title">접촉</span>엄지 또는 손바닥 받침으로 trigger point pin-point 압박</div>
+          <div class="tech-box dose"><span class="box-title">Dose</span>30-60초 / point, NRS 6-7/10 수준 압력. 직후 active stretch + spray-stretch</div>
+          <div class="tech-box danger"><span class="box-title">금기</span>출혈 경향 · 항응고제 · 감염 · 종양 · 환자가 압력을 견디기 어려운 경우</div>
+          <div class="tech-box evidence"><span class="box-title">근거</span>🟡 Moderate (Vernon-Schneider 2009 chiropractic SR; Renan-Ordine 2011 plantar fasciitis RCT)</div>
+        </div>
+        <button class="tech-detail-btn" data-stt="tpt">🔬 SVG 일러스트 + 상세 절차</button>
+      </div>
+
+      <!-- 6. Nimmo -->
+      <div class="tech-card nimmo" id="tech-nimmo">
+        <h3><span class="tech-num">⑥</span> Nimmo Receptor-Tonus Technique <span class="tech-creator">— Raymond Nimmo, DC (1950s)</span></h3>
+        <div class="tech-grid">
+          <div class="tech-box theory"><span class="box-title">기전</span>반복 압박 cycle로 GTO Ib 활성 → autogenic inhibition. TPT보다 짧은 hold + 반복 강조</div>
+          <div class="tech-box"><span class="box-title">자세</span>환자 편안한 자세. 표적 부위 접근 가능하게</div>
+          <div class="tech-box"><span class="box-title">접촉</span>엄지 · 검지로 PPT 부근 압력</div>
+          <div class="tech-box dose"><span class="box-title">Dose</span>5-7초 hold × 3 cycle / point. cycle 사이 5-10초 휴식</div>
+          <div class="tech-box danger"><span class="box-title">금기</span>TPT와 동일 (급성 손상·항응고제 등)</div>
+          <div class="tech-box evidence"><span class="box-title">근거</span>🟠 Limited (Nimmo 학파 내 임상 보고 다수. 독립 RCT는 적으나 TPT와 기전 유사하므로 외삽 가능)</div>
+        </div>
+        <button class="tech-detail-btn" data-stt="nimmo">🔬 SVG 일러스트 + 상세 절차</button>
+      </div>
+
+      <!-- 7. MET -->
+      <div class="tech-card met" id="tech-met">
+        <h3><span class="tech-num">⑦</span> Muscle Energy Technique (MET) <span class="tech-creator">— Fred Mitchell·Philip Greenman (1980s, Osteopathic)</span></h3>
+        <div class="tech-grid">
+          <div class="tech-box theory"><span class="box-title">기전</span>환자 등척성 수축(5-10초) → Post-Isometric Relaxation (PIR) → 새 운동범위로 신장. GTO + α-motor neuron 일시 억제</div>
+          <div class="tech-box"><span class="box-title">자세</span>표적 근육 신장 끝 직전(restriction barrier)에 위치</div>
+          <div class="tech-box"><span class="box-title">접촉</span>환자가 시술자에 저항하도록 손 위치 + 시술자는 정확한 반대 방향 등척성 저항 제공</div>
+          <div class="tech-box dose"><span class="box-title">Dose</span>5-10초 수축 (max 20-30% 노력) → 3-5초 휴식 → 새 barrier로 이동. 3-5 cycle</div>
+          <div class="tech-box danger"><span class="box-title">금기</span>최근 골절 · 급성 신경근병증 · 심한 골다공증 · 환자가 명령 수행 불가</div>
+          <div class="tech-box evidence"><span class="box-title">근거</span>🟡 Moderate (Franke 2015 Cochrane — 비특이적 LBP에 단기 효과. 안전성 우수)</div>
+        </div>
+      </div>
+
+      <!-- 8. PNF -->
+      <div class="tech-card pnf" id="tech-pnf">
+        <h3><span class="tech-num">⑧</span> PNF Stretching <span class="tech-creator">— Kabat·Knott·Voss (1950s, PT 전통)</span></h3>
+        <div class="tech-grid">
+          <div class="tech-box theory"><span class="box-title">기전</span>Hold-Relax (HR) · Contract-Relax (CR) · CRAC (Contract-Relax with Agonist Contraction) — autogenic + reciprocal inhibition 결합</div>
+          <div class="tech-box"><span class="box-title">자세</span>표적 근육 신장 끝에 위치</div>
+          <div class="tech-box"><span class="box-title">접촉</span>시술자가 환자 사지 안정 + 저항 방향 제어</div>
+          <div class="tech-box dose"><span class="box-title">Dose</span>6초 등척성 → 30초 신장 → 반복 3 cycle. 주 2-3회</div>
+          <div class="tech-box danger"><span class="box-title">금기</span>MET와 유사. 환자 협조 필수</div>
+          <div class="tech-box evidence"><span class="box-title">근거</span>🟢 Strong (스포츠과학·재활 영역에서 가장 풍부한 RCT. Mahieu 2007 등)</div>
+        </div>
+      </div>
+
+      <!-- 9. O-I -->
+      <div class="tech-card oi" id="tech-oi">
+        <h3><span class="tech-num">⑨</span> Origin-Insertion Technique <span class="tech-creator">— George Goodheart, DC (AK 전통)</span></h3>
+        <div class="tech-grid">
+          <div class="tech-box theory"><span class="box-title">기전</span>근육 기시·정지부 자유신경종말·골막 자극 → 골프 신경(Ib) afferent → 근전도 활성 변화 (AK 측정)</div>
+          <div class="tech-box"><span class="box-title">자세</span>환자 편안한 자세, 표적 근육 접근 가능</div>
+          <div class="tech-box"><span class="box-title">접촉</span>엄지로 origin과 insertion 부착부 각각 30초 압박</div>
+          <div class="tech-box dose"><span class="box-title">Dose</span>30초 × origin + 30초 × insertion. AK Manual Muscle Test로 전후 확인</div>
+          <div class="tech-box danger"><span class="box-title">금기</span>건염 급성기 · 부착부 골절 · 활액낭염</div>
+          <div class="tech-box evidence"><span class="box-title">근거</span>🟠 Limited (AK 학파 내 임상 보고. 독립 검증 부족. Ch 12 AK 참조)</div>
+        </div>
+      </div>
+
+      <!-- 10. Dry Needling -->
+      <div class="tech-card dn" id="tech-dn">
+        <h3><span class="tech-num">⑩</span> Dry Needling (DN) <span class="tech-creator">— Karel Lewit·Jan Dommerholt·Jay Shah (1990s-2000s 서구화)</span></h3>
+        <div class="tech-grid">
+          <div class="tech-box theory"><span class="box-title">기전</span>침으로 활성 trigger point 자극 → LTR 유발 → 근절 reset + 척수 후각 modulation + 국소 ATP 회복 (Shah 2005 microdialysis)</div>
+          <div class="tech-box"><span class="box-title">자세</span>표적 부위 노출, 무균 영역 확보. 환자 동의 + 의식 명료</div>
+          <div class="tech-box"><span class="box-title">접촉</span>32-34G 일회용 멸균 침. 표적 trigger point에 LTR 유발될 때까지 가는 동작</div>
+          <div class="tech-box dose"><span class="box-title">Dose</span>점당 LTR 3-5회 또는 30-60초. 회당 5-10 point. 주 1-2회</div>
+          <div class="tech-box danger"><span class="box-title">금기</span>출혈 경향 · 면역 결핍 · 침공포증 · 임신 1-3개월 · 폐 부위 시술 시 기흉 위험. <strong>한국에서는 의료기사법상 의료인 면허 필수</strong></div>
+          <div class="tech-box evidence"><span class="box-title">근거</span>🟡 Moderate (Gattie 2017 meta-analysis · Espí-López 2017 SR. 침술과 별개 paradigm으로 서구 의학 인정)</div>
+        </div>
+      </div>
+
+      <!-- 11. Cupping -->
+      <div class="tech-card cup" id="tech-cup">
+        <h3><span class="tech-num">⑪</span> Cupping Therapy <span class="tech-creator">— 정적(static) · 동적(dynamic/glide) · flash</span></h3>
+        <div class="tech-grid">
+          <div class="tech-box theory"><span class="box-title">기전</span>음압으로 피부·천근막 들어올림 → 국소 혈류 증가 + 신경 Aβ 활성 + 자율신경 반응 (가설)</div>
+          <div class="tech-box"><span class="box-title">자세</span>치료부 노출, 피부 청결 + 오일 (glide cupping 시)</div>
+          <div class="tech-box"><span class="box-title">접촉</span>실리콘·플라스틱·유리 컵. flash = 짧은 흡인 반복, static = 5-15분 유지, dynamic = 컵을 미끄러뜨림</div>
+          <div class="tech-box dose"><span class="box-title">Dose</span>5-15분 / 부위. 음압 강도는 환자 내성 + ecchymosis(자국) 수준 관찰</div>
+          <div class="tech-box danger"><span class="box-title">금기</span>혈우병 · 항응고제 · 광범위 피부 질환 · 정맥류 · 임신부 복부·요추 · 종양</div>
+          <div class="tech-box evidence"><span class="box-title">근거</span>🟠 Limited (Cao 2010 Lancet meta-analysis — 대부분 low quality. 단기 통증 감소 보고는 있으나 placebo 효과 분리가 어려움. 색반점 ≠ 치료 효과)</div>
+        </div>
+      </div>
+
+      <h3>5.12 기법별 신체 부위 매트릭스</h3>
+      <p>각 기법의 표적 부위 적합도를 한눈에 정리. <span class="yes">●</span> 1순위 · <span class="maybe">○</span> 가능 · <span class="no">×</span> 권장 안함.</p>
+      <table class="region-matrix">
+        <thead>
+          <tr>
+            <th>부위</th>
+            <th>Cyriax</th><th>ART</th><th>IASTM</th><th>MFR</th><th>TPT</th>
+            <th>Nimmo</th><th>MET</th><th>PNF</th><th>O-I</th><th>DN</th><th>Cup</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="region">경추 (후두하·SCM·승모근)</td>
+            <td class="maybe">○</td><td class="yes">●</td><td class="maybe">○</td><td class="yes">●</td><td class="yes">●</td>
+            <td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="maybe">○</td><td class="maybe">○</td><td class="maybe">○</td></tr>
+          <tr><td class="region">흉추·견갑간 (능형근·전거근)</td>
+            <td class="no">×</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td>
+            <td class="yes">●</td><td class="maybe">○</td><td class="maybe">○</td><td class="maybe">○</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td class="region">요추·기립근</td>
+            <td class="no">×</td><td class="maybe">○</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td>
+            <td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="maybe">○</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td class="region">골반·둔근·이상근</td>
+            <td class="no">×</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td>
+            <td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="maybe">○</td><td class="yes">●</td><td class="yes">●</td></tr>
+          <tr><td class="region">대퇴 (햄스트링·내전근·대퇴직근)</td>
+            <td class="no">×</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td>
+            <td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="maybe">○</td><td class="maybe">○</td><td class="yes">●</td></tr>
+          <tr><td class="region">슬관절·IT band</td>
+            <td class="maybe">○</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="maybe">○</td>
+            <td class="maybe">○</td><td class="maybe">○</td><td class="yes">●</td><td class="yes">●</td><td class="maybe">○</td><td class="maybe">○</td></tr>
+          <tr><td class="region">하퇴·아킬레스</td>
+            <td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="maybe">○</td>
+            <td class="maybe">○</td><td class="maybe">○</td><td class="yes">●</td><td class="yes">●</td><td class="maybe">○</td><td class="maybe">○</td></tr>
+          <tr><td class="region">족저·발목</td>
+            <td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td>
+            <td class="maybe">○</td><td class="no">×</td><td class="maybe">○</td><td class="yes">●</td><td class="maybe">○</td><td class="no">×</td></tr>
+          <tr><td class="region">어깨 (회전근개·이두근건)</td>
+            <td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td>
+            <td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="maybe">○</td></tr>
+          <tr><td class="region">팔꿈치 (외측·내측상과)</td>
+            <td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="maybe">○</td><td class="yes">●</td>
+            <td class="yes">●</td><td class="maybe">○</td><td class="maybe">○</td><td class="yes">●</td><td class="yes">●</td><td class="no">×</td></tr>
+          <tr><td class="region">손목·전완</td>
+            <td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="maybe">○</td><td class="yes">●</td>
+            <td class="yes">●</td><td class="maybe">○</td><td class="maybe">○</td><td class="yes">●</td><td class="yes">●</td><td class="no">×</td></tr>
+          <tr><td class="region">악관절 (저작근·교근)</td>
+            <td class="maybe">○</td><td class="yes">●</td><td class="no">×</td><td class="yes">●</td><td class="yes">●</td>
+            <td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="maybe">○</td><td class="maybe">○</td><td class="no">×</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ========== PART VI. RE-ASSESSMENT ========== -->
+    <section id="outcome">
+      <h2>⭐ Part VI. 재평가 — Post-Treatment Reassessment</h2>
+      <p class="section-lead">치료 효과를 객관화하지 않으면 학습도 책무성도 어렵습니다. 동일 세션 안의 즉시 재평가 + 다음 세션 시작 시 PROMs 변화를 비교합니다.</p>
+
+      <h3>6.1 즉시 재평가 — 같은 세션 안에서</h3>
+      <ol>
+        <li><strong>NRS (Numeric Rating Scale)</strong> — 치료 전 / 직후 / 5분 후. 한 자릿수 변화도 의미 있음</li>
+        <li><strong>ROM</strong> — 각도계 또는 ipad 앱(Goniometer)으로 같은 동작 측정</li>
+        <li><strong>PPT (Pain Pressure Threshold)</strong> — 알고미터 또는 엄지 압통 + NRS</li>
+        <li><strong>length test 재실행</strong> — Thomas·Ober 등 단축 검사가 양적 변화 보이는지</li>
+        <li><strong>특이 검사 재실행</strong> — 양성이었던 검사가 음전(陰轉)되는지</li>
+      </ol>
+
+      <h3>6.2 PROMs (Patient-Reported Outcome Measures) — 세션 간 비교</h3>
+      <table class="data-table">
+        <thead>
+          <tr><th>도구</th><th>범위·축</th><th>MCID*</th><th>적용</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>NPRS</td><td>0-10 통증</td><td>2점</td><td>모든 통증 환자</td></tr>
+          <tr><td>ODI (Oswestry)</td><td>0-100% 요통 장애</td><td>10%</td><td>요통 환자</td></tr>
+          <tr><td>NDI (Neck Disability Index)</td><td>0-50 경부 장애</td><td>7점</td><td>경부통 환자</td></tr>
+          <tr><td>FAAM (Foot Ankle Ability Measure)</td><td>0-100% 발·발목 기능</td><td>8%</td><td>족·하지 환자</td></tr>
+          <tr><td>DASH (Disabilities of Arm/Shoulder/Hand)</td><td>0-100 상지 장애</td><td>10점</td><td>상지 환자</td></tr>
+          <tr><td>PCS (Pain Catastrophizing Scale)</td><td>0-52 통증 재앙화</td><td>9.1</td><td>만성·심리 동반 환자</td></tr>
+          <tr><td>GROC (Global Rating of Change)</td><td>-7 ~ +7</td><td>+3</td><td>환자 주관적 호전 판정</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.88em; color:#6e6e73;">*MCID = Minimal Clinically Important Difference — "임상가가 의미 있다고 판단하는 최소 변화" (Jaeschke 1989).</p>
+
+      <h3>6.3 재평가가 알려주는 것</h3>
+      <ul>
+        <li><strong>호전</strong> — 같은 기법 유지 + 다음 세션 dose 미세 조정</li>
+        <li><strong>변화 없음</strong> — 진단 재검토 (다른 통증 generator? 중추 감작 비중?) 또는 다른 기법으로 전환</li>
+        <li><strong>악화</strong> — 즉시 중단. 적신호(red flag) 재평가. 의뢰 검토</li>
+        <li><strong>일시적 호전 + 다음 세션 원상복귀</strong> — 자세·습관·역학적 부하 미해결. 운동 처방 강화</li>
+      </ul>
+    </section>
+
+    <!-- ========== PART VII. CLINICAL ========== -->
+    <section id="clinical">
+      <h2>Part VII. 임상 케이스 — 자주 보는 6 + 2 시나리오 상세 프로토콜</h2>
+      <p class="section-lead">
+        외래에서 가장 자주 마주치는 케이스 8가지를 <strong>평가 → 1차/2차/3차 STT → HVLA 통합 → 자가관리·운동 → 재평가 → 의뢰 시점</strong>의 일관된 형식으로 상세히 정리합니다.
+        각 케이스는 30분 세션 1회 분량 + 후속 처치 계획까지 포함합니다.
+      </p>
+
+      <h3 id="case-rotator-cuff">7.1 케이스 A — 회전근개 손상 (Rotator Cuff Tendinopathy / Partial Tear)</h3>
+      <div class="callout callout-info" style="margin: 1rem 0;">
+        <h4>임상 표현</h4>
+        <p>40-60대 어깨 외측·전외측 통증, 야간통, 야간 환측 와위 어려움. 머리 빗기·뒷주머니 손 넣기·등 가려운 곳 긁기 어려움. 보통 supraspinatus·infraspinatus가 먼저 침범됩니다.</p>
+      </div>
+
+      <h4>① 평가 (10분)</h4>
+      <ul>
+        <li><strong>PROMs</strong>: DASH · SPADI · NRS (휴식 / 외전 / 야간)</li>
+        <li><strong>ROM</strong>: 능동·수동 외전 + 외회전·내회전. painful arc 60-120°?</li>
+        <li><strong>특이 검사</strong>:
+          <ul>
+            <li>Empty can (Jobe) — supraspinatus</li>
+            <li>External rotation lag sign — infraspinatus/teres minor</li>
+            <li>Hawkins-Kennedy · Neer — impingement</li>
+            <li>Lift-off / Belly press — subscapularis</li>
+            <li>Drop arm — full thickness tear 의심</li>
+          </ul>
+        </li>
+        <li><strong>STT 평가</strong>:
+          <ul>
+            <li>Supraspinatus 부착부(대결절) Cyriax pin-point 압통</li>
+            <li>Infraspinatus 근복(견갑 외측연) trigger point</li>
+            <li>상부 승모근·견갑거근 taut band</li>
+            <li>흉근(pectoralis minor·major) 단축 — 어깨 anterior tilt 보상</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>② 1차 STT — 부착부 통증 직접 처치 (8분)</h4>
+      <ul>
+        <li><strong>Supraspinatus 대결절 부착부 Cyriax DTFM</strong>: 환자 좌위, 어깨 30° 외전 + 내회전(Hawkins 자세, 부착부 노출). 시술자 엄지 끝으로 90° 횡마찰 <strong>10분</strong>. 자극 후 무감각해질 때까지 점진 증가. 직후 eccentric exercise 필수.</li>
+        <li><strong>Infraspinatus 근복 TPT (ischemic compression)</strong>: 환자 측와위 또는 좌위. 견갑 외측연 따라 활성 trigger point 1-2점 확인 → <strong>30-60초 압박</strong> (NRS 6-7/10), 직후 active stretch (외전 + 내회전).</li>
+      </ul>
+
+      <h4>③ 2차 STT — 보상 근육 및 자세 (10분)</h4>
+      <ul>
+        <li><strong>흉근 단축 ART</strong>: 환자 앙와위, 어깨 외전·외회전. 흉근 단축 자세 접촉 → 환자가 천천히 능동 신장 (어깨 horizontal abduction). 5-7초 longitudinal tension × 3 cycle.</li>
+        <li><strong>상부 승모근·견갑거근 Nimmo</strong>: 환자 좌위. 압통 부위 5-7초 hold × 3 cycle (cycle 사이 5-10초 휴식).</li>
+        <li><strong>외회전근(infraspinatus + teres minor) MET</strong>: 환자 측와위, 환측 위. 어깨 외회전 끝범위에서 등척성 내회전 (20-30% 노력, 5초) → 5초 휴식 → 새 외회전 범위. 3 cycle.</li>
+      </ul>
+
+      <h4>④ HVLA 통합 (선택, 3분)</h4>
+      <ul>
+        <li>상흉추(T2-T5) 평가 후 hypomobility 시 Diversified seated thoracic adjustment</li>
+        <li>관절가동범위 회복에 흉추 모빌리티가 어깨 외전 ROM과 직접 연결됨 (scapulohumeral rhythm)</li>
+        <li>경추(C5-C7) 평가는 ULNT 양성 시 신중하게</li>
+      </ul>
+
+      <h4>⑤ 운동 처방·자가관리</h4>
+      <ul>
+        <li><strong>Pendulum exercise</strong>: 환측 늘어뜨려 작은 원 그리기 (passive ROM, 통증 없이)</li>
+        <li><strong>Eccentric external rotation</strong>: 탄력 밴드, 천천히(3초) 외회전 후 빠르게 복귀. 3 × 10회, 주 3회</li>
+        <li><strong>Scapular retraction</strong>: bird dog · band pull-apart — 견갑 안정화</li>
+        <li><strong>야간 자세</strong>: 환측 와위 회피, 베개로 어깨 받침</li>
+      </ul>
+
+      <h4>⑥ 재평가 · 의뢰 시점</h4>
+      <ul>
+        <li>세션 종료 시: SPADI · 능동 외전 · Hawkins · Jobe 재실행 → MCID 10% 이상 호전이면 같은 프로토콜 유지</li>
+        <li>주 2회 × 3주(6세션) 후 호전 부족 → <strong>초음파·MRI 의뢰</strong> (full-thickness tear 감별)</li>
+        <li><strong>적신호</strong>: 외상 후 즉시 외전 불가 (drop arm + dramatic weakness) → 즉시 정형외과 의뢰 (수술적 봉합 검토)</li>
+      </ul>
+
+      <h3 id="case-frozen-shoulder">7.2 케이스 B — 유착성 피막염 / 동결견 (Adhesive Capsulitis, Frozen Shoulder)</h3>
+      <div class="callout callout-info" style="margin: 1rem 0;">
+        <h4>임상 표현</h4>
+        <p>40-60대(특히 여성·당뇨병 환자) 점진적 어깨 통증 + 모든 방향 ROM 제한 (특히 외회전 + 외전). 3단계 진행: ① Freezing(통증 우세, 6주-9개월) → ② Frozen(강직 우세, 4-9개월) → ③ Thawing(점진적 회복, 5-26개월). 본 강의는 ② Frozen 단계 STT 적용 중심.</p>
+      </div>
+
+      <h4>① 평가 (10분)</h4>
+      <ul>
+        <li><strong>PROMs</strong>: SPADI · DASH</li>
+        <li><strong>ROM</strong>: 6 방향 능동·수동 비교. 핵심: <strong>능동과 수동 ROM이 모두 동일하게 제한</strong>되면 관절낭 문제 의심 (회전근개 손상은 수동 ROM은 보존되는 경향)</li>
+        <li><strong>Capsular pattern</strong>: 외회전 > 외전 > 내회전 순으로 제한 (Cyriax 분류)</li>
+        <li><strong>End-feel</strong>: capsular firm 또는 통증으로 인한 empty</li>
+        <li>HbA1c 확인 권유 (당뇨 동반 시 회복 느림)</li>
+      </ul>
+
+      <h4>② 1차 STT — 관절낭 주변 근막 release (12분)</h4>
+      <ul>
+        <li><strong>견갑하근(Subscapularis) TPT + 길이</strong>: 환자 앙와위, 어깨 약간 외전. 시술자 손을 액와(겨드랑이) 안으로 → 견갑하근 anterior 면 접촉 → 30-60초 압박. 환자가 어깨 외회전을 천천히 시도하도록 유도 (ART 변형).</li>
+        <li><strong>흉근(pectoralis major·minor) MFR</strong>: 환자 앙와위, 환측 팔 외전·외회전. 손바닥 또는 전완으로 흉근 부위 <strong>90-120초 지속 압력</strong>. 환자 깊은 호흡 유도.</li>
+        <li><strong>광배근·대원근 ART</strong>: 환자 측와위. 광배근 단축 자세 접촉 후 환자가 어깨를 굴곡으로 능동 신장.</li>
+      </ul>
+
+      <h4>③ 2차 STT — 관절낭 직접 신장 (8분)</h4>
+      <ul>
+        <li><strong>Capsular stretching via PNF Hold-Relax</strong>: 외회전 끝범위에서 등척성 내회전 6초 → 30초 외회전 유지. 외전도 동일 패턴. 3 cycle × 2-3 방향.</li>
+        <li><strong>Posterior capsule 신장</strong>: 환자 앙와위, 어깨 90° 굴곡 + 견갑 고정 → 시술자가 horizontal adduction 천천히 + 환자 깊은 호흡 일치. 30초 hold × 3.</li>
+      </ul>
+
+      <h4>④ HVLA 통합 (선택)</h4>
+      <ul>
+        <li>경흉추(C7-T6) hypomobility 평가 후 Diversified adjustment</li>
+        <li>어깨 관절 자체 manipulation은 강한 강직 단계에서는 권장되지 않음 (humerus 골절 위험 보고). 대신 mobilization(grade III-IV)으로 대체.</li>
+      </ul>
+
+      <h4>⑤ 운동 처방·자가관리</h4>
+      <ul>
+        <li><strong>Codman pendulum</strong>: 매일 5-10분, 통증 없이</li>
+        <li><strong>Wall walking (finger ladder)</strong>: 벽 짚고 손가락으로 위로 기어오르기 — 굴곡·외전 ROM 회복</li>
+        <li><strong>Door frame stretch</strong>: 문틀 잡고 흉근 신장 30초 × 3</li>
+        <li><strong>온찜질</strong>: 시술 전 10-15분 (관절낭 viscoelastic 변형 촉진)</li>
+        <li>당뇨 환자는 혈당 조절이 회복 속도에 직결됨을 설명</li>
+      </ul>
+
+      <h4>⑥ 재평가 · 의뢰 시점</h4>
+      <ul>
+        <li>주 2회 × 4-6주 후 SPADI · 외회전 ROM 재측정 → 호전 부족 시 정형외과 의뢰</li>
+        <li>의뢰 옵션: 관절강 내 스테로이드 주사 · hydrodilatation · manipulation under anesthesia (MUA) · 관절경적 capsular release</li>
+        <li><strong>적신호</strong>: 외상 후 갑작스러운 강직 + 야간 발열 → 화농성 관절염·결정성 관절염 감별 (즉시 의뢰)</li>
+      </ul>
+
+      <h3 id="case-epicondylitis">7.3 케이스 C — 주관절 외측·내측 상과염 (Tennis & Golfer's Elbow)</h3>
+      <div class="callout callout-info" style="margin: 1rem 0;">
+        <h4>임상 표현</h4>
+        <p>외측: 손목 신전·잡기 동작에서 외측상과 통증 (ECRB 부착부). 내측: 손목 굴곡·회내(pronation) 동작에서 내측상과 통증 (pronator teres·flexor carpi radialis 부착부). 본질은 부착부 tendinopathy → Cyriax DTFM의 정통 적응증.</p>
+      </div>
+
+      <h4>① 평가 (5분)</h4>
+      <ul>
+        <li><strong>PROMs</strong>: PRTEE (Patient-Rated Tennis Elbow Evaluation) · DASH</li>
+        <li><strong>특이 검사</strong>:
+          <ul>
+            <li><strong>외측</strong>: Cozen test (저항 손목 신전 시 외측상과 통증), Mill test (수동 손목 굴곡 + 회내 시 외측 통증), 중지 신전 저항 검사</li>
+            <li><strong>내측</strong>: Reverse Cozen (저항 손목 굴곡 + 회내), 골프 elbow 부착부 직접 압통</li>
+          </ul>
+        </li>
+        <li><strong>STT 평가</strong>: 부착부 점압통 + 전완 근육 trigger point (특히 ECRB 근복) + 상부 흉추 hypomobility</li>
+      </ul>
+
+      <h4>② 1차 STT — Cyriax DTFM (정통 적응증, 12-15분)</h4>
+      <ul>
+        <li><strong>외측 상과염 (ECRB 부착부)</strong>:
+          <ul>
+            <li>환자 좌위, 팔꿈치 90° 굴곡, 손목 굴곡 자세 (부착부 신장)</li>
+            <li>시술자 검지+중지 끝으로 외측상과 바로 원위 ECRB 부착부 정확 위치</li>
+            <li><strong>섬유 방향에 90° 횡마찰</strong>, 손가락은 피부와 함께 움직임 (피부 위 미끄러지면 X)</li>
+            <li>처음 2-3분: NRS 6/10 압력 → 환자 적응 후 점진 증가</li>
+            <li><strong>10-15분 / 부위</strong>, 환자가 무감각해질 때까지</li>
+            <li>직후 active wrist extension + eccentric loading 필수</li>
+          </ul>
+        </li>
+        <li><strong>내측 상과염 (Common flexor origin)</strong>:
+          <ul>
+            <li>환자 좌위, 팔꿈치 90°, 손목 신전 + 회외(supination) 자세</li>
+            <li>내측상과 바로 원위 부착부 정확 접촉</li>
+            <li>동일 90° 횡마찰 10-15분</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>③ 2차 STT — 전완 근육 풀기 (5분)</h4>
+      <ul>
+        <li><strong>외측</strong>: ECRB·brachioradialis 근복 ART 3 cycle. 환자 손목 굴곡으로 능동 신장.</li>
+        <li><strong>내측</strong>: Pronator teres·FCR 근복 TPT 30초 + MET (저항 회외 5초 → 회외 끝범위 신장 30초).</li>
+        <li>양측 공통: IASTM (GT-3 또는 GT-5) 5분으로 전완 신근/굴근 그룹 sweeping</li>
+      </ul>
+
+      <h4>④ HVLA 통합</h4>
+      <ul>
+        <li>상흉추(T2-T5) + 경추(C5-C7) 평가 후 Diversified adjustment</li>
+        <li>주관절 자체에 manipulation은 hypomobility 검사 양성 시에만 (radial head, ulnar fossa)</li>
+      </ul>
+
+      <h4>⑤ 운동 처방 — Tyler Twist (eccentric의 핵심)</h4>
+      <ul>
+        <li><strong>외측 상과염</strong>: FlexBar (red, green, blue 단계). 양손으로 잡고 환측 손목 신전 + 건측으로 굴곡 비틀기 → 환측이 천천히 eccentric으로 풀림. 3초 풀어내기 × 15회 × 3 set, 매일.</li>
+        <li><strong>내측 상과염</strong>: 동일 FlexBar 반대 방향 (Reverse Tyler twist).</li>
+        <li><strong>근거</strong>: Tyler 2010 RCT — eccentric exercise + DTFM 병행 시 4주 후 PRTEE 큰 폭 호전.</li>
+      </ul>
+
+      <h4>⑥ 재평가 · 의뢰 시점</h4>
+      <ul>
+        <li>주 2회 × 3-4주(6-8세션). PRTEE · Cozen 재실행</li>
+        <li>호전 부족 시 초음파 (부착부 calcification·partial tear 평가) · MRI</li>
+        <li>주사 치료 옵션: PRP > 스테로이드 (Coombes 2010 — 스테로이드는 단기 효과 후 장기 재발 ↑)</li>
+        <li><strong>적신호</strong>: 안정 시 통증·야간통·신경학적 결손 → 신경 압박 또는 다른 질환 감별</li>
+      </ul>
+
+      <h3 id="case-acute-lbp-psoas">7.4 케이스 D — 급성 요통 + 장요근(Psoas) 경직</h3>
+      <div class="callout callout-info" style="margin: 1rem 0;">
+        <h4>임상 표현</h4>
+        <p>물건 들거나 몸 비틀다가 갑자기 시작된 요통. 똑바로 서기 어렵고, 누우면 다리를 약간 굽혀야 편함. 걷기 어렵고 한쪽으로 기우뚱(antalgic gait). <strong>핵심 단서: 앙와위에서 양 다리 신전이 통증을 유발하지만 무릎 굴곡 시 즉시 완화</strong> — psoas 경직의 전형적 표현. Adam Forward Bend 등으로 보일 수 있는 협의 측만(scoliosis)도 종종 동반.</p>
+      </div>
+
+      <h4>① 평가 (8분)</h4>
+      <ul>
+        <li><strong>적신호 스크리닝 우선</strong>: 야간통 · 체중 감소 · 발열 · saddle anesthesia · cauda equina (즉시 의뢰)</li>
+        <li><strong>PROMs</strong>: NRS · ODI · STarT Back Tool</li>
+        <li><strong>특이 검사</strong>:
+          <ul>
+            <li><strong>Thomas test</strong>: 매우 양성 — 검사하는 다리가 테이블에서 떠 있음. <strong>Psoas 단축의 1차 지표</strong></li>
+            <li>SLR 30-60° 통증 (좌골신경 자극 가능)</li>
+            <li>FABER · 천장관절 stress test</li>
+            <li>Slump test (신경역동)</li>
+          </ul>
+        </li>
+        <li><strong>Psoas trigger point palpation</strong>:
+          <ul>
+            <li>환자 앙와위, 무릎 굴곡 (psoas 이완 자세)</li>
+            <li>제대(umbilicus) 옆 2-3 횡지 외측에서 천천히 후방으로 내려가며 압박</li>
+            <li>장골 내측 가장자리 따라 내려가며 (proximal psoas)</li>
+            <li>환측에서 통증·연관통(앞쪽 대퇴 또는 요추부) 재현 = 활성 trigger point</li>
+            <li><strong>주의</strong>: 복부 깊이가 깊어 압통이 다른 구조(대장·대동맥) 일 수 있음. 박동성 압통 시 즉시 중단</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>② 1차 STT — Psoas release (10분)</h4>
+      <ul>
+        <li><strong>Psoas TPT (ischemic compression)</strong>:
+          <ul>
+            <li>환자 앙와위, 양 무릎 굴곡 (psoas 이완 자세)</li>
+            <li>시술자 손가락 끝으로 천천히 깊이 침투 (환자 호기 시 더 깊이)</li>
+            <li>활성 point 확인 후 <strong>30-60초 지속 압박</strong>, NRS 6-7/10</li>
+            <li>압박 중 환자에게 깊은 복식 호흡 + 양 무릎 동시에 가슴 쪽으로 능동 굴곡 유도 → release 가속</li>
+          </ul>
+        </li>
+        <li><strong>Psoas MET (PIR)</strong>:
+          <ul>
+            <li>환자 Thomas test 자세 (반대쪽 무릎 가슴, 검사 쪽 다리 테이블 가장자리에 내림)</li>
+            <li>검사 쪽 대퇴가 굴곡 잔여 (psoas 단축)되어 있을 때, 환자가 시술자에 저항하며 대퇴 굴곡 5초(20-30% 노력)</li>
+            <li>이완 후 시술자가 대퇴를 추가 신전(extension) 방향으로 새 barrier로 천천히 이동</li>
+            <li>3-5 cycle, 매 cycle마다 ROM 증가 확인</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>③ 2차 STT — 동반 근육 (7분)</h4>
+      <ul>
+        <li><strong>요방형근(QL) TPT</strong>: 환자 측와위, 환측 위. 12 번 늑골과 장골능 사이 압통점 30-60초 압박. 요통의 흔한 hidden generator.</li>
+        <li><strong>둔근·이상근 TPT</strong>: 동측 SI joint 통증 동반 시. 둔근 중심에 30초 압박, 이상근은 piriformis stretch 자세 + 압박.</li>
+        <li><strong>흉요근막 MFR</strong>: 환자 복와위, 양손바닥으로 흉요근막 90-120초 지속 압력.</li>
+      </ul>
+
+      <h4>④ HVLA 통합 — 신중하게</h4>
+      <ul>
+        <li>급성 통증 + 보호 spasm 강한 단계에서는 HVLA보다 STT + Cox flexion-distraction 우선</li>
+        <li>L4-L5·L5-S1 hypomobility 평가 후, 보호 spasm 가라앉은 후 (보통 2-3 세션 후) Diversified side-posture adjustment</li>
+        <li>Gonstead listing 평가 권장 (Ch 4 참조)</li>
+      </ul>
+
+      <h4>⑤ 운동 처방·자가관리</h4>
+      <ul>
+        <li><strong>급성기(첫 3일)</strong>: 절대 안정 X, 무릎 굴곡 + 베개 받침 와위 자세로 짧은 휴식. 통증 허용 범위에서 움직임 유지</li>
+        <li><strong>Psoas self-stretch</strong>: half-kneeling lunge stretch 30초 × 3, 매일 2회</li>
+        <li><strong>Core stability</strong>: dead bug · bird-dog · plank — 통증 호전 후</li>
+        <li><strong>좌식 시간 줄이기</strong> + 1시간마다 스탠딩</li>
+      </ul>
+
+      <h4>⑥ 재평가 · 의뢰 시점</h4>
+      <ul>
+        <li>세션 종료 시: 똑바로 서기 · Thomas · NRS 재측정. 즉각 호전이 일반적</li>
+        <li>주 2-3회 × 2주 후 호전 부족 → MRI (디스크 탈출·신경근병증 감별)</li>
+        <li><strong>적신호 즉시 의뢰</strong>: cauda equina (saddle anesthesia + 양측 좌골 통증 + 요실금/대변 실금) → 응급 신경외과</li>
+      </ul>
+
+      <h3 id="case-plantar-fasciitis">7.5 케이스 E — 족저근막염 (Plantar Fasciitis) — 상세 프로토콜</h3>
+      <div class="callout callout-info" style="margin: 1rem 0;">
+        <h4>임상 표현</h4>
+        <p>아침 첫 걸음·장시간 앉아 있다 일어선 후 처음 몇 걸음 발뒤꿈치 통증. 점차 걷다 보면 완화되지만 오래 서있으면 다시 악화. 족저근막(plantar aponeurosis)의 calcaneal 부착부 또는 medial calcaneal tubercle 압통이 핵심.</p>
+      </div>
+
+      <h4>① 평가 (5분)</h4>
+      <ul>
+        <li><strong>PROMs</strong>: FAAM · NRS (아침 첫걸음 / 종일 / 저녁)</li>
+        <li><strong>특이 검사</strong>:
+          <ul>
+            <li><strong>Windlass test</strong>: 환자 좌위 또는 stance, 무지(big toe) 수동 dorsiflexion → 족저 부착부 통증 재현 = +</li>
+            <li>Medial calcaneal tubercle 직접 압통 (Cyriax pin-point)</li>
+            <li>발목 dorsiflexion ROM (knee straight) — 비복근 단축 평가</li>
+            <li>Heel raise endurance — 가자미근 약화 평가</li>
+          </ul>
+        </li>
+        <li><strong>STT 평가</strong>: 족저근막 두께 (정상 < 4mm, 비후 시 만성 시사), 비복근·가자미근 trigger point, 발 내전·외전 ROM</li>
+      </ul>
+
+      <h4>② 1차 STT — 족저근막 직접 처치 (10분)</h4>
+      <ul>
+        <li><strong>족저근막 Cyriax DTFM</strong>:
+          <ul>
+            <li>환자 복와위 또는 좌위, 무릎 굴곡, 발목 dorsiflexion (근막 신장 자세)</li>
+            <li>시술자 엄지로 medial calcaneal tubercle 정확 접촉</li>
+            <li>섬유 방향(전후 종축)에 <strong>90° 횡마찰(내외 방향)</strong> 10분</li>
+            <li>환자 적응 후 점진 증가, 무감각해질 때까지</li>
+          </ul>
+        </li>
+        <li><strong>족저 표층 IASTM</strong>: GT-3 또는 손가락 부드러운 모서리로 족저 전체를 sweeping 5분. 발뒤꿈치 → 발가락 방향.</li>
+      </ul>
+
+      <h4>③ 2차 STT — 비복근·가자미근 (10분)</h4>
+      <ul>
+        <li><strong>비복근(Gastrocnemius) TPT</strong>: 환자 복와위. 비복근 medial head·lateral head 각각 활성 trigger point 30-60초 압박. 직후 능동 dorsiflexion.</li>
+        <li><strong>가자미근(Soleus) IASTM</strong>: 환자 복와위, 무릎 90° 굴곡 (비복근 비활성 자세 → 가자미근 표적). GT-3로 종아리 후면 깊이 sweeping 3-5분.</li>
+        <li><strong>비복근 MET</strong>: 환자 앙와위, 발목 dorsiflexion 끝범위에서 등척성 plantarflexion 5초 → 이완 후 새 dorsiflexion 범위. 3 cycle.</li>
+        <li><strong>비복근·가자미근 O-I (Goodheart)</strong>: 슬와부 + 아킬레스 부착부 각각 30초 압박.</li>
+      </ul>
+
+      <h4>④ HVLA 통합</h4>
+      <ul>
+        <li>발목 talocrural joint hypomobility 시 Diversified ankle adjustment</li>
+        <li>입방골(cuboid) drop 시 cuboid manipulation</li>
+        <li>SI joint 평가 (kinetic chain) 후 필요 시 교정</li>
+      </ul>
+
+      <h4>⑤ 운동 처방·자가관리</h4>
+      <ul>
+        <li><strong>아침 첫걸음 전</strong>: 침대에서 발목 dorsiflexion + 무지 신장 30초 × 3 (족저근막 pre-loading)</li>
+        <li><strong>골프공·테니스공 마사지</strong>: 족저 5-10분, 매일 2회</li>
+        <li><strong>비복근 신장 (계단 가장자리)</strong>: 30초 × 3 set, 매일 2회. 무릎 신전(비복근) + 무릎 굴곡(가자미근) 분리하여</li>
+        <li><strong>Heel raise (eccentric 강조)</strong>: 양발 들기 → 환측 한 발로 천천히(3초) 내려오기. 3 × 12회, 주 3회</li>
+        <li><strong>Night splint</strong>: dorsiflexion 5° 유지하여 자는 동안 족저근막 신장 유지 — 만성에서 유용</li>
+        <li><strong>신발</strong>: 충격 흡수 + 적절한 arch support. 깔창 (orthotics) 고려</li>
+      </ul>
+
+      <h4>⑥ 재평가 · 의뢰 시점</h4>
+      <ul>
+        <li>주 2회 × 4-6주. FAAM · windlass · 아침 첫걸음 NRS</li>
+        <li>호전 부족 시 초음파 (족저근막 두께·calcification) · MRI (drop test로 partial tear 감별)</li>
+        <li>중재 옵션: ESWT (Extracorporeal Shockwave) > PRP > 스테로이드 주사 (스테로이드는 fat pad atrophy·rupture 위험)</li>
+        <li><strong>적신호</strong>: 야간 안정 시 통증 · 발열 · 종창 → 골수염·뼈 종양 감별</li>
+      </ul>
+
+      <h3 id="case-cervical-strain">7.6 케이스 F — 경추 염좌 / 편타손상 (Cervical Strain / Whiplash) — SCM·Scalene Release 상세</h3>
+      <div class="callout callout-info" style="margin: 1rem 0;">
+        <h4>임상 표현</h4>
+        <p>교통사고(특히 후방 추돌) 또는 갑작스러운 경부 굴곡-신전 손상 후 경부 후방·측방 통증, 두통(특히 후두부), 경부 강직, 어지러움. 보호적 근수축으로 SCM·scalene·승모근이 과긴장 상태가 됩니다. 신경역동 자극(상지 저림) 동반 가능 — scalene이 brachial plexus·subclavian artery를 통과시키는 통로(thoracic outlet)이기 때문.</p>
+      </div>
+
+      <h4>① 평가 (10분)</h4>
+      <ul>
+        <li><strong>적신호 우선</strong>: 의식 변화 · 신경학적 결손 · 척수 증상 · VBI(Vertebrobasilar Insufficiency) symptoms · 외상 후 즉시 골절 의심 → 즉시 응급실 또는 X-ray (NEXUS·Canadian C-spine rule 적용)</li>
+        <li><strong>PROMs</strong>: NDI · NRS · WAD Quebec Grade (I-IV)</li>
+        <li><strong>ROM</strong>: 6 방향 능동·수동. WAD Grade II는 ROM 제한 + 근육성 통증 (HVLA·STT 모두 적용 가능)</li>
+        <li><strong>특이 검사</strong>:
+          <ul>
+            <li>Spurling test — 신경근병증</li>
+            <li>Distraction test — 신경근 압박 완화 여부</li>
+            <li>Cervical compression — 통증 재현</li>
+            <li>ULNT 1·2·3 — brachial plexus tension</li>
+            <li>Adson, Roos (3-min EAST) — thoracic outlet syndrome 감별</li>
+          </ul>
+        </li>
+        <li><strong>STT 평가</strong>:
+          <ul>
+            <li><strong>SCM</strong>: 환자 앙와위, 머리 약간 회전 → 반대측 SCM이 표면 융기. 흉골부(sternal head) + 쇄골부(clavicular head) 별도 평가. 활성 trigger point는 측두부·이마·눈주위 연관통 재현 (Travell map)</li>
+            <li><strong>Scalenus anticus (전사각근)</strong>: 쇄골 위 1-2cm, SCM 후방 깊이. brachial plexus 신경 통과 영역이므로 신중. 압통 시 어깨·상완 외측 연관통 가능</li>
+            <li><strong>Scalenus medius (중사각근)</strong>: 1차 늑골 부착부 — anticus와 medius 사이가 brachial plexus 통로</li>
+            <li>상부 승모근·견갑거근·후두하근(suboccipital) trigger point</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>② 1차 STT — SCM Release (5분)</h4>
+      <ul>
+        <li><strong>SCM TPT (pincer grip)</strong>:
+          <ul>
+            <li>환자 앙와위. 시술자 환자 머리를 약간 동측으로 회전 (SCM 이완 자세)</li>
+            <li>엄지와 검지로 <strong>pincer grip</strong>으로 SCM 전체를 부드럽게 집어 올리듯 잡기 (조직을 잡는 게 아니라 들어올리는 느낌)</li>
+            <li>흉골부(sternal head): 흉골 부착부에서 상행하며 활성 trigger point 확인</li>
+            <li>쇄골부(clavicular head): 쇄골 안쪽 부착부 별도로</li>
+            <li><strong>각 활성 point 30초 압박</strong>, NRS 6-7/10</li>
+            <li>압박 중 환자가 머리를 반대측으로 천천히 회전 시도 → ART 변형 효과</li>
+            <li><strong>주의</strong>: 경동맥은 SCM 안쪽에 있음. SCM 표면을 집는 한 안전. 박동성 압통 시 즉시 중단</li>
+          </ul>
+        </li>
+        <li><strong>SCM MFR</strong>: pincer grip 유지하면서 60-90초 지속, 환자 호흡 따라 미세 조정</li>
+      </ul>
+
+      <h4>③ 2차 STT — Scalene Release (5분, 매우 신중)</h4>
+      <ul>
+        <li><strong>Scalenus anticus 평가</strong>:
+          <ul>
+            <li>환자 앙와위. 시술자 환자 머리 반대측 회전 + 약간 측방 굴곡 (anticus 단축 자세)</li>
+            <li>쇄골 바로 위, SCM 후방 깊이로 손가락 천천히 침투</li>
+            <li>1차 늑골 부착부 부근 압통 확인. <strong>박동성·신경 자극 증상 즉시 중단</strong> (subclavian artery / brachial plexus 인접)</li>
+          </ul>
+        </li>
+        <li><strong>Scalenus 부드러운 release (Static pressure 또는 light MFR)</strong>:
+          <ul>
+            <li>강한 ischemic compression은 권장되지 않음 (신경 자극 위험)</li>
+            <li>1-2개 손가락 끝으로 가벼운 압박 (3-4/10 압력) <strong>60초</strong></li>
+            <li>환자가 천천히 호흡하며 머리를 반대측으로 측굴 능동 신장 (ART 변형)</li>
+            <li>anticus와 medius 사이 brachial plexus 통로는 직접 누르지 않음</li>
+          </ul>
+        </li>
+        <li><strong>Scalene MET</strong>:
+          <ul>
+            <li>환자 앙와위. 시술자가 환자 머리를 반대측 측굴 + 약간 회전</li>
+            <li>환자가 동측 측굴로 등척성 저항 5초 (20-30% 노력) → 5초 휴식 → 새 측굴 범위로 천천히 이동</li>
+            <li>3 cycle. 매 cycle마다 신경 증상 없는지 확인</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>④ 3차 STT — 후두하 + 승모근 (5분)</h4>
+      <ul>
+        <li><strong>후두하근(Suboccipital) sub-occipital release</strong>:
+          <ul>
+            <li>환자 앙와위. 시술자 머리 받치고 양손가락 끝으로 후두골 바로 아래 (rectus capitis · obliquus capitis) 깊이 접촉</li>
+            <li>머리 무게로 자연 압박 <strong>90초 지속</strong></li>
+            <li>긴장성 두통·VBI 의심 시 매우 효과적이며 안전한 기법</li>
+          </ul>
+        </li>
+        <li><strong>상부 승모근 Nimmo</strong>: 5-7초 hold × 3 cycle, 양측</li>
+        <li><strong>견갑거근 ART</strong>: 환자 좌위, 머리 반대측 굴곡 + 약간 회전 (단축 자세) → 환자 어깨 elevation으로 능동 신장</li>
+      </ul>
+
+      <h4>⑤ HVLA 통합 — VBI 평가 후 매우 신중하게</h4>
+      <ul>
+        <li>급성기·WAD Grade II 초기에는 HVLA보다 STT + Cox + mobilization 우선</li>
+        <li>WAD 호전 후 (보통 2-3주) hypomobility 평가 → Diversified seated cervical adjustment</li>
+        <li>상부 경추(C1-C2) 교정은 VBI screening (sustained extension·rotation 30초 시 어지러움·nystagmus 부재 확인) 후에만</li>
+        <li>외상 후 즉시 (수시간 내) HVLA는 일반적으로 권장되지 않음</li>
+      </ul>
+
+      <h4>⑥ 운동 처방·자가관리</h4>
+      <ul>
+        <li><strong>Chin tuck</strong>: 깊은 경부 굴근 활성화. 10초 hold × 10회, 주 3회</li>
+        <li><strong>Scapular retraction (band pull-apart)</strong>: 견갑 안정화</li>
+        <li><strong>SCM self-stretch</strong>: 머리 반대측 회전 + 측굴 + 신전 30초 × 3</li>
+        <li><strong>온열 + 휴식</strong> (급성기 24-48시간은 ice 또는 contrast 가능)</li>
+        <li><strong>심리적 지지</strong>: WAD 만성화의 큰 예측 인자는 catastrophizing — 정상 회복 패턴 설명 + PCS 점수 추적</li>
+      </ul>
+
+      <h4>⑦ 재평가 · 의뢰 시점</h4>
+      <ul>
+        <li>주 2-3회 × 2-4주. NDI · ROM · ULNT · NRS</li>
+        <li><strong>상지 신경 증상 (저림·약력 저하·근전도 이상)</strong> → 신경과·재활의학과 의뢰</li>
+        <li><strong>두통이 4주 후에도 지속</strong> → 신경과 의뢰 (post-traumatic headache, ICHD-3)</li>
+        <li>WAD Grade III-IV (신경학적 결손·골절) → 즉시 정형외과·신경외과</li>
+      </ul>
+
+      <h3 id="case-tension-headache">7.7 케이스 G — 만성 긴장성 두통 + 후두하 부위 (보조)</h3>
+      <ol>
+        <li><strong>평가</strong>: NDI · 후두하·승모근·SCM trigger point · ROM · ULNT</li>
+        <li><strong>1차</strong>: 후두하근 TPT (앙와위 sub-occipital release 90초)</li>
+        <li><strong>2차</strong>: 상부 승모근·견갑거근 Nimmo 3 cycle</li>
+        <li><strong>3차</strong>: 경부 신근 PNF Hold-Relax</li>
+        <li><strong>HVLA</strong>: 상부 경추 평가 후 신중하게 (VAD 평가)</li>
+        <li><strong>자가관리</strong>: chin tuck · 1시간마다 자세 점검</li>
+        <li>(케이스 F 6.3 SCM·Scalene 프로토콜 일부 통합 가능)</li>
+      </ol>
+
+      <h3 id="case-tmj">7.8 케이스 H — TMJ 통증·개구 제한 (보조)</h3>
+      <ol>
+        <li><strong>평가</strong>: 개구량 · 측방 이동 · 교근·측두근 trigger point · 클릭음</li>
+        <li><strong>1차</strong>: 교근·측두근 TPT (외측 + 내측 — 구내 접근은 면허 범위 확인)</li>
+        <li><strong>2차</strong>: 흉쇄유돌근(SCM) MFR (케이스 F 프로토콜 참조)</li>
+        <li><strong>3차</strong>: 턱 개폐 PNF (양손 가벼운 저항)</li>
+        <li><strong>의뢰</strong>: 디스크 변위·관절원판 손상 의심 시 치과·구강외과</li>
+      </ol>
+
+      <h3>7.9 한국 외래 시간 배분 (사 9710 도수치료 기준 30분 세션)</h3>
+      <ul>
+        <li><strong>0-5분</strong>: 평가·NRS·ROM 측정·당일 적응증 확인</li>
+        <li><strong>5-10분</strong>: HVLA 교정 (필요 시)</li>
+        <li><strong>10-25분</strong>: STT 핵심 2-3 기법 (예: MET + TPT + MFR)</li>
+        <li><strong>25-28분</strong>: 재평가 (NRS·ROM)</li>
+        <li><strong>28-30분</strong>: 자가관리 지침·다음 약속</li>
+      </ul>
+    </section>
+
+    <!-- ========== PART VIII. CRITICAL ========== -->
+    <section id="critical" style="scroll-margin-top: 120px;">
+      <h2>🔴 Part VIII. 비판적 시각 — 논쟁과 한계</h2>
+      <p class="section-lead">STT는 임상 가치가 충분하지만, 일부 주장은 근거 한계가 명확합니다. 이를 솔직히 정리하는 것이 학문적 자세입니다.</p>
+
+      <h3>8.1 Trigger Point 존재 논쟁 — Quintner·Cohen 2015</h3>
+      <p>
+        Quintner와 Cohen은 <em>Rheumatology</em>에 발표한 비판 리뷰에서 trigger point의 객관적 영상·조직학적 검증 한계를 지적했습니다:
+      </p>
+      <ul>
+        <li>MRE(자기공명 elastography)·USE(초음파 elastography)에서 일관된 taut band 신호 부재</li>
+        <li>병리학적 부검 표본에서 sarcomere 응축 소견의 reproducibility 부족</li>
+        <li>"central sensitization 임상상의 신경학적 특징을 잘못 명명한 것 아닌가"라는 대안 설명 제시</li>
+      </ul>
+      <p>
+        그러나 임상가 입장에서는 <strong>taut band·jump sign·연관통 재현</strong>이라는 표현형은 분명히 환자에게 존재합니다.
+        본 강의는 "trigger point"를 <strong>임상적 표현형(clinical phenotype)</strong>으로 다루고, 그 정확한 조직학적 본질에 대해서는 결론을 유보하는 입장을 취합니다.
+        치료는 표현형에 반응합니다.
+      </p>
+
+      <h3>8.2 MFR fascia 슬라이딩·"녹임" 가설의 한계</h3>
+      <p>
+        Barnes 학파의 초기 마케팅은 "MFR이 fascia를 물리적으로 변형시킨다"는 인상을 줬습니다.
+        그러나 Chaudhry 2008 in vitro 연구는 의미 있는 fascial deformation에 <strong>2000 N/cm² 이상</strong>이 필요하다고 보고했으며, 이는 임상에서 가능한 수준이 아닙니다.
+        대안 설명으로 <strong>Robert Schleip의 신경학적 모델</strong>이 받아들여지고 있습니다:
+      </p>
+      <ul>
+        <li>근막 내 풍부한 자유신경종말이 압력에 반응 → CNS로 입력</li>
+        <li>척수·하행성 회로를 통해 톤·통증 변화</li>
+        <li>임상 효과는 진짜이지만, "fascia를 변형시켰다"는 메커니즘은 부정확</li>
+      </ul>
+      <p>이는 MFR의 가치를 깎지 않습니다. 단지 더 정확한 설명이 필요합니다.</p>
+
+      <h3>8.3 IASTM microtrauma 가설 vs Nocebo</h3>
+      <p>
+        Graston·M2T 등 IASTM 전통은 "표층 microtrauma → fibroblast 활성 → 치유 촉진"이라는 가설을 강조합니다.
+        그러나 Cheatham 2016 SR은 다음을 지적합니다:
+      </p>
+      <ul>
+        <li>대부분의 RCT가 high risk of bias (블라인딩 한계, 대조군 active 처치)</li>
+        <li>punctate erythema가 cellular 수준 fibroblast 활성과 연관된다는 직접 증거 부족</li>
+        <li>nocebo (특히 시각적 자국)가 환자 경험에 영향을 줄 가능성</li>
+      </ul>
+      <p>실용적 권고: <strong>IASTM은 manual 압력으로 접근하기 어려운 부위(아킬레스 주변·심부 IT band)에서 보조적으로 사용</strong>하고, 단독 1차 선택은 권장되지 않습니다.</p>
+
+      <h3>8.4 Cupping — 색반점은 효과 지표가 아니다</h3>
+      <p>
+        Cao 2010 <em>The Lancet</em> meta-analysis는 cupping의 단기 통증 감소 효과를 보고했으나 대부분 RCT가 low quality였습니다.
+        특히 강조할 점:
+      </p>
+      <ul>
+        <li>피부 색반점(ecchymosis)은 모세혈관 파열로 인한 자국이며, <strong>치료 효과나 "독소 배출"의 지표가 아닙니다</strong></li>
+        <li>"진한 자국 = 깊은 치료" 라는 marketing 메시지는 과학적 근거가 없습니다</li>
+        <li>오히려 강한 흡인은 표층 미세 손상이 더 크다는 의미일 수 있어 신중히</li>
+      </ul>
+
+      <h3>8.5 Dry Needling = Acupuncture? 차이의 본질</h3>
+      <p>
+        Dorsher 2009는 Travell trigger point map과 전통 침술 경혈 map이 <strong>약 70% 중첩</strong>한다고 보고했습니다.
+        그렇다면 dry needling과 침술은 같은 것인가? 본 강의의 입장:
+      </p>
+      <ul>
+        <li><strong>이론적 paradigm은 다릅니다</strong> — DN은 신경·근절·CNS modulation, 침술은 경락·기 흐름</li>
+        <li><strong>자극 위치는 종종 중첩</strong>합니다 — 양쪽 다 통증·민감 부위를 다루기 때문</li>
+        <li><strong>법적·교육적으로는 별개</strong> — 한국에서 DN은 의료기사법상 의료인 면허 범위, 침술은 한의사 면허 범위</li>
+        <li>본 강의는 DN을 <strong>서구 의학 paradigm 안에서만 다루며</strong>, 침술과의 비교·통합은 다루지 않습니다</li>
+      </ul>
+
+      <h3>8.6 Touch alone — Placebo·맥락 효과의 비중</h3>
+      <p>
+        Vincent & Lewith 1995 <em>JR Soc Med</em>는 manual therapy 효과의 30-60%가 비특이적 효과(placebo·맥락·치료자-환자 관계·기대)일 수 있다고 보고했습니다.
+        이는 STT의 가치를 깎는 사실이 아닙니다. 오히려:
+      </p>
+      <ul>
+        <li>치료자의 자신감·설명·접촉의 질이 효과에 기여한다는 점을 의식하고 활용</li>
+        <li>비특이적 효과가 "가짜"라는 의미가 아니라, 신경학적으로 실재하는 회로(PAG-RVM 하행성 억제, 옥시토신·내인성 오피오이드)</li>
+        <li>단, "내 손이 특별해서 효과가 있다"는 마케팅과는 거리를 두기</li>
+      </ul>
+
+      <h3>8.7 한국 임상에서의 통합 — 보험·법규</h3>
+      <ul>
+        <li><strong>도수치료 (사 9710)</strong> — 의료기관 비급여. 한 세션 30분 기준 STT 적용 가능</li>
+        <li><strong>Dry Needling</strong> — 의료인 면허 범위. 카이로프랙틱 전공자가 한국에서 DN을 하려면 의사·치과의사·한의사·물리치료사 등 의료인 면허 추가 필요</li>
+        <li><strong>Cupping</strong> — 한국에서는 부항이 한의사 면허 범위. 카이로프랙틱·도수치료에서는 silicone glide cupping을 사용</li>
+        <li><strong>다학제 협진</strong> — 통증의학과·재활의학과·정형외과 의뢰 시점은 명확히 (red flag·치료 반응 부족·심리적 동반)</li>
+      </ul>
+
+      <h3>8.8 미래로 열린 질문들</h3>
+      <ul>
+        <li>Force-sensitive plate·EMG 기반 술기 표준화 — dose-response가 측정 가능해지는가</li>
+        <li>심박변이도(HRV) 등 자율신경 measure가 routine assessment에 통합될 가능성</li>
+        <li>환자 맞춤형 통증 표현형 분류 (central sensitization 지수)와 STT 선택 알고리즘</li>
+        <li>AI 기반 palpation feedback (haptic) — 교육·신뢰도 향상</li>
+      </ul>
+
+      <div class="callout callout-info">
+        <h4>🔵 본 강의의 결론적 자세</h4>
+        <p>
+          <strong>"단정은 피하되, 방법은 과학적으로."</strong>
+          STT는 유효한 임상 도구이며 카이로프랙틱·도수치료의 핵심 자산입니다.
+          그러나 각 기법의 근거는 차등적이며, 마케팅 언어와 임상 현실 사이의 거리를 의식적으로 좁히는 것이 학문적 책무입니다.
+          11 기법 모두를 동등하게 다루는 것이 아니라, <strong>환자·근거·자신의 손 — 세 가지를 동시에 존중</strong>하는 임상가가 되는 것이 본 강의의 목표입니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== RESOURCES ========== -->
+    <section id="resources">
+      <h2>강의 자료</h2>
+      <p class="section-lead">강의록 MD + v3 4부작 팟캐스트 라이브. 영상·슬라이드·리포트는 후속 배포 예정.</p>
+      <h3>📖 강의록</h3>
+      <div class="resource-row">
+        <a class="resource-link" href="./viewer.html?src=soft_tissue/lecture/chapter13_soft_tissue.md"><span class="icon">📖</span><span><strong>상세 강의록 MD</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>근거 기반 · 참고문헌</small></span></a>
+      </div>
+      <h3>🎧 팟캐스트 (v3 — 부드러운 전문가 톤 4부작 · 인식론적 겸손 + EBM)</h3>
+      <p class="section-lead" style="margin:0 0 0.8rem;">두 전문가(정형외과의·도수치료 PT)의 부드러운 학술 라디오 대화. 각 약 15분 · 한국어. "단정은 피하되, 방법은 과학적으로." 인체에 대해 아는 것은 한 방울이고 모르는 것은 바다와 같다는 인식론적 자세 + EBM 방법론.</p>
+      <div class="resource-row">
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/soft_tissue/podcasts_v3/01_episode1_history.m4a?v=20260529b"><span class="icon">🎧</span><span><strong>Ep 1 · 연부조직 술기의 뿌리 — Cyriax·Travell·Nimmo부터 ART·IASTM까지</strong> <span class="status-badge ready">✅ NEW</span><br/><small>1940s 영국 정형외과 · 케네디 주치의 일화 · 카이로프랙틱 안의 위치</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/soft_tissue/podcasts_v3/02_episode2_assessment.m4a?v=20260529b"><span class="icon">🎧</span><span><strong>Ep 2 · 평가의 4 층위 — Cyriax tissue tension부터 PPT까지</strong> <span class="status-badge ready">✅ NEW</span><br/><small>Layer palpation · Active/Passive/Resistive · Length tests · Trigger point 6 기준 · 신뢰도 한계</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/soft_tissue/podcasts_v3/03_episode3_treatment.m4a?v=20260529b"><span class="icon">🎧</span><span><strong>Ep 3 · 11 기법 깊이 보기 — 신경학적 공통 회로의 시선으로</strong> <span class="status-badge ready">✅ NEW</span><br/><small>Cyriax·ART·IASTM·MFR·TPT·Nimmo·MET·PNF·O-I·DN·Cupping · GTO·Gate·PAG-RVM 수렴</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/soft_tissue/podcasts_v3/04_episode4_critical.m4a?v=20260529b"><span class="icon">🎧</span><span><strong>Ep 4 · 비판과 인식론적 겸손 — Trigger point 논쟁부터 한국 임상까지</strong> <span class="status-badge ready">✅ NEW</span><br/><small>Quintner-Cohen · MFR fascia 가설 · Cupping 색반점 · DN과 침술 paradigm · 다학제 협진</small></span></a>
+      </div>
+
+      <h3>🎥 AI 동영상</h3>
+      <div class="resource-row">
+        <span class="resource-link" style="opacity:.7;"><span class="icon">⏳</span><span><strong>Part 1 (이론·해부)</strong> <span class="status-badge" style="background:#fff3cd;color:#664d03;">제작 대기</span><br/><small>NotebookLM 비디오 생성 예정</small></span></span>
+        <span class="resource-link" style="opacity:.7;"><span class="icon">⏳</span><span><strong>Part 2 (임상·11 기법)</strong> <span class="status-badge" style="background:#fff3cd;color:#664d03;">제작 대기</span><br/><small>NotebookLM 비디오 생성 예정</small></span></span>
+      </div>
+
+      <h3>🎴 PPTX 슬라이드 (4개 × 15장 예정)</h3>
+      <div class="resource-row">
+        <span class="resource-link" style="opacity:.7;"><span class="icon">⏳</span><span><strong>Part 1 · 기초</strong> <span class="status-badge" style="background:#fff3cd;color:#664d03;">제작 대기</span><br/><small>15장 예정</small></span></span>
+        <span class="resource-link" style="opacity:.7;"><span class="icon">⏳</span><span><strong>Part 2 · Aff/Def/Eff</strong> <span class="status-badge" style="background:#fff3cd;color:#664d03;">제작 대기</span><br/><small>15장 예정</small></span></span>
+        <span class="resource-link" style="opacity:.7;"><span class="icon">⏳</span><span><strong>Part 3 · 11 기법</strong> <span class="status-badge" style="background:#fff3cd;color:#664d03;">제작 대기</span><br/><small>15장 예정</small></span></span>
+        <span class="resource-link" style="opacity:.7;"><span class="icon">⏳</span><span><strong>Part 4 · 임상·비판</strong> <span class="status-badge" style="background:#fff3cd;color:#664d03;">제작 대기</span><br/><small>15장 예정</small></span></span>
+      </div>
+
+      <p style="margin-top:1rem">NotebookLM 노트북: <a href="https://notebooklm.google.com/notebook/864b5f73-6fa2-44f4-83fa-7a4620e0c17a" target="_blank" rel="noopener">열기 →</a> (88 sources)</p>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5>챕터 탐색</h5>
+          <ul>
+            <li><a href="./index.html">← 메인</a></li>
+            <li><a href="./chapter12_ak.html">← 12. Applied Kinesiology</a></li>
+            <li><strong>Chapter 13 (현재)</strong></li>
+            <li><em>다음 챕터 대기</em></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>이 챕터 자료</h5>
+          <ul>
+            <li><a href="./viewer.html?src=soft_tissue/lecture/chapter13_soft_tissue.md">전체 강의록 MD</a></li>
+            <li><a href="#resources">🎧 팟캐스트 v3 4부작</a></li>
+            <li><em>영상 제작 대기</em></li>
+            <li><em>PPTX 제작 대기</em></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>외부 근거</h5>
+          <ul>
+            <li><a href="https://www.cochranelibrary.com/" target="_blank" rel="noopener">Cochrane Library</a></li>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a></li>
+            <li><a href="https://fasciaresearchsociety.org/" target="_blank" rel="noopener">Fascia Research Society</a></li>
+            <li><a href="https://notebooklm.google.com/notebook/864b5f73-6fa2-44f4-83fa-7a4620e0c17a" target="_blank" rel="noopener">이 챕터 NotebookLM</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>계정</h5>
+          <ul>
+            <li><a href="./login.html">로그인</a></li>
+            <li><a href="./signup.html">가입</a></li>
+            <li><a href="./admin.html">관리자</a></li>
+            <li><a href="mailto:drjang00@gmail.com">문의</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Dr. Jang · Chapter 13. Soft Tissue Technique</span>
+        <span>교육 목적 · 임상 판단은 담당 의료진의 책임</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

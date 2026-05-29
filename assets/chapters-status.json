@@ -379,5 +379,43 @@
       "html": "chapter12_ak.html"
     },
     "ready": 11
+  },
+  "13": {
+    "meta": {
+      "num": 13,
+      "slug": "soft_tissue",
+      "file": "chapter13_soft_tissue.html",
+      "title": "Soft Tissue Technique",
+      "subtitle": "연부조직 술기 · 11 기법 · 8 임상 케이스",
+      "assets_dir": "soft_tissue",
+      "lecture_dir": "soft_tissue/lecture",
+      "notebook_id": "864b5f73-6fa2-44f4-83fa-7a4620e0c17a"
+    },
+    "status": {
+      "podcast": "soft_tissue/podcasts_v3/01_episode1_history.m4a",
+      "podcast_v3": [
+        "soft_tissue/podcasts_v3/01_episode1_history.m4a",
+        "soft_tissue/podcasts_v3/02_episode2_assessment.m4a",
+        "soft_tissue/podcasts_v3/03_episode3_treatment.m4a",
+        "soft_tissue/podcasts_v3/04_episode4_critical.m4a"
+      ],
+      "video_part1": null,
+      "video_part2": null,
+      "slides": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "reports": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "lecture_md": "soft_tissue/lecture/chapter13_soft_tissue.md",
+      "html": "chapter13_soft_tissue.html"
+    },
+    "ready": 2
   }
 }
