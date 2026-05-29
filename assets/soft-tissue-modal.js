@@ -375,23 +375,75 @@
       title: '⑥ Myofascial Release (MFR · 근막 이완술)',
       founder: 'Andrew Taylor Still (osteopathy) → John F. Barnes 체계화 (1970s)',
       sections: [
-        { h: '🎯 근막 해부학 기초',
+        { h: '🎯 정의 및 개요',
+          body: '<strong>근막 이완술(Myofascial Release, MFR)</strong>은 인체를 둘러싸고 있는 결합조직인 근막의 <strong>제한(restriction)</strong>을 해소하여 정상적인 정렬과 기능을 회복하는 도수치료 기법입니다. 신경기계적 장벽(neuro-mechanical barrier)을 다루는 방식에 따라 크게 <strong>직접법(Direct MFR)</strong>과 <strong>간접법(Indirect MFR)</strong>으로 구분되며, 임상에서는 환자 상태에 따라 두 방식을 적절히 혼합 적용합니다.'
+        },
+        { h: '🧬 근막 해부학 기초',
           body: '근막은 단일 결합조직 sheet로 전신을 그물처럼 연결합니다. <strong>표재근막</strong>(피하)·<strong>심부근막</strong>(epimysium/perimysium)·<strong>장기근막</strong>(visceral fascia)으로 분류. 손상·만성 자세 stress·수술 흉터는 근막에 <strong>제한 패턴(restriction pattern)</strong>을 만들고 원거리까지 영향을 줍니다.'
         },
-        { h: '🩻 작용 기전',
-          body: '<ul><li><strong>Thixotropy</strong> — 지속 압력 90초+ 시 ground substance가 gel → sol로 액화</li><li><strong>Myofibroblast 이완</strong> — 근막 내 수축성 세포의 활성 감소</li><li><strong>GAG hydration 회복</strong> — 글리코사미노글리칸의 수분 함량 증가 → 활주 개선</li><li><strong>Mechanotransduction</strong> — 세포외기질 신호전달로 fibroblast 활성 변화</li></ul>'
+        { h: '🩻 작용 기전 — 생체역학과 신경학',
+          body: '<ul>' +
+            '<li><strong>Thixotropy(촉변성)</strong> — 지속 압력 90초+ 시 ground substance가 gel → sol로 액화</li>' +
+            '<li><strong>점탄성 변형(viscoelastic deformation · creep)</strong> — 콜라겐·엘라스틴 섬유의 시간-의존적 변형</li>' +
+            '<li><strong>Myofibroblast 이완</strong> — 근막 내 수축성 세포의 활성 감소</li>' +
+            '<li><strong>GAG hydration 회복</strong> — 글리코사미노글리칸 수분 함량 증가 → 활주 개선</li>' +
+            '<li><strong>Mechanotransduction</strong> — 세포외기질 신호전달로 fibroblast 활성 변화</li>' +
+            '<li><strong>고유수용기 재정렬</strong> — 간접법에서 신경 반사 이완을 유도</li>' +
+            '</ul>'
         },
-        { h: '📋 두 가지 양식',
-          body: '<strong>Direct MFR (Rolfing 계열)</strong> — 제한 방향으로 강한 접촉 (1-5 kg). 빠른 변화, 통증 동반 가능.<br><br><strong>Indirect MFR (Barnes 방식)</strong> — 최소 저항 방향으로 5g-1kg의 가벼운 sustained pressure. <strong>90-120초 유지</strong>가 핵심 — "release" 감각이 올 때까지.'
+        { h: '🟢 직접법 (Direct MFR Technique)',
+          body: '치료사가 촉진한 <strong>근막의 가동성 제한 장벽(restrictive barrier)을 향해 "정면으로" 힘을 가하는 방식</strong>입니다. 조직의 유착을 직접 늘리고 장력을 가해 생체역학적 변화를 유도합니다.' +
+            '<ul style="margin-top:.6rem;">' +
+            '<li><strong>방향(Direction)</strong> — 제한 장벽 방향으로 정면 돌파. 조직에 수직으로 압박해 고정점(anchor)을 만든 후, 제한된 섬유 방향을 따라 평행하게 밀어내거나(shaving · gliding) 양방향으로 견인(traction)합니다.</li>' +
+            '<li><strong>힘의 크기(Force Magnitude)</strong> — 중등도~깊은 압력(moderate to deep pressure). 피하 조직을 지나 타깃이 되는 근막층(fascial layer)까지 압력이 도달해야 합니다. 환자의 방어적 근수축(guarding spasm)을 일으키지 않는 <strong>"기분 좋은 압박감(sweet pain)"</strong> 수준 — HVLA처럼 순간적인 강한 힘이 아니라 묵직하고 지속적인 힘입니다.</li>' +
+            '<li><strong>유지 시간(Duration)</strong> — 3~5분 이상 지속 유지. 점탄성 변형과 thixotropy가 나타나려면 <strong>최소 90~120초 이상</strong>의 지속적 장력이 필요하며, 완전한 release를 위해 보통 한 부위에 3~5분간 압력을 유지합니다.</li>' +
+            '</ul>'
+        },
+        { h: '🔵 간접법 (Indirect MFR Technique)',
+          body: '저항이 느껴지는 장벽을 피해 <strong>조직이 가장 편안해하는 방향(position of ease)으로 부드럽게 이끄는 방식</strong>입니다. 조직에 가해지는 긴장(threat)을 최소화하여 신경계의 반사적 이완을 유도하는 데 초점을 둡니다.' +
+            '<ul style="margin-top:.6rem;">' +
+            '<li><strong>방향(Direction)</strong> — 제한 장벽의 반대, 즉 저항이 전혀 없고 가장 느슨해지는(slack) 방향. 상하·좌우·시계/반시계 등 3차원적으로 가장 편안한 균형점(<strong>still point</strong>)을 찾아 그 위치로 조직을 몰고 갑니다.</li>' +
+            '<li><strong>힘의 크기(Force Magnitude)</strong> — 매우 가벼운 압력(약 0.5~1kg 미만, 수 온즈 oz 수준). 감은 눈꺼풀을 살짝 누르는 정도 — 피부 표면의 기계수용기(mechanoreceptors)와 중추신경계가 "위협"으로 인지하지 않도록 부드럽게 접촉합니다.</li>' +
+            '<li><strong>유지 시간(Duration)</strong> — 조직이 가장 느슨해진 still point에서 가만히 대기. 대개 <strong>90초에서 수 분 동안</strong> 접촉을 유지하면 어느 순간 열감·미세 떨림(fasciculation)·조직이 스르륵 풀려나가는 듯한 <strong>근막의 자율적 해제(unwinding · release)</strong> 반응을 감지하게 됩니다.</li>' +
+            '</ul>'
+        },
+        { h: '⚖ 직접법 vs 간접법 비교표',
+          body: '<div style="overflow-x:auto;">' +
+            '<table style="width:100%; border-collapse:collapse; margin-top:.4rem; min-width:520px;">' +
+            '<tr style="background:#f1f5f9;">' +
+              '<th style="text-align:left; padding:6px; border:1px solid #d0d7de; width:18%;">구분</th>' +
+              '<th style="text-align:left; padding:6px; border:1px solid #d0d7de;">직접 MFR</th>' +
+              '<th style="text-align:left; padding:6px; border:1px solid #d0d7de;">간접 MFR</th>' +
+            '</tr>' +
+            '<tr><td style="padding:6px; border:1px solid #d0d7de;"><strong>작용 기전</strong></td>' +
+              '<td style="padding:6px; border:1px solid #d0d7de;">생체역학적 신연, 점탄성 변형 유도</td>' +
+              '<td style="padding:6px; border:1px solid #d0d7de;">신경학적 반사 호 차단, 고유수용기 재정렬</td></tr>' +
+            '<tr><td style="padding:6px; border:1px solid #d0d7de;"><strong>방향</strong></td>' +
+              '<td style="padding:6px; border:1px solid #d0d7de;">제한이 있는 방향 (정면 돌파)</td>' +
+              '<td style="padding:6px; border:1px solid #d0d7de;">느슨하고 편안한 방향 (우회·이완 유도)</td></tr>' +
+            '<tr><td style="padding:6px; border:1px solid #d0d7de;"><strong>힘의 크기</strong></td>' +
+              '<td style="padding:6px; border:1px solid #d0d7de;">중등도~깊은 압력 (근막층까지 도달)</td>' +
+              '<td style="padding:6px; border:1px solid #d0d7de;">극히 가벼운 압력 (접촉 수준의 경량 force)</td></tr>' +
+            '<tr><td style="padding:6px; border:1px solid #d0d7de;"><strong>유지 시간</strong></td>' +
+              '<td style="padding:6px; border:1px solid #d0d7de;">3~5분 (콜라겐 변형 시간)</td>' +
+              '<td style="padding:6px; border:1px solid #d0d7de;">조직이 풀릴 때까지 수 분간 지속 대기</td></tr>' +
+            '<tr><td style="padding:6px; border:1px solid #d0d7de;"><strong>주요 적응증</strong></td>' +
+              '<td style="padding:6px; border:1px solid #d0d7de;">만성 조직 유착, 섬유화된 근막 병변</td>' +
+              '<td style="padding:6px; border:1px solid #d0d7de;">급성 염증·염좌, 극심한 통증기, 고령자·골감소증 환자</td></tr>' +
+            '</table>' +
+            '</div>'
+        },
+        { h: '🏥 임상 적용 — 두 방식의 혼합 전략',
+          body: '통증이 너무 심한 <strong>급성기</strong>에는 <strong>간접법</strong>으로 신경계의 경직(guarding)을 먼저 다운그레이드 시킨 후, 만성적인 유착이 남아있는 부위에 <strong>직접법</strong>을 적용하여 조직의 가동 범위를 물리적으로 늘려주는 순서가 가장 효율적입니다. 한 세션 내에서도 부위·조직 상태에 따라 두 방식을 유연하게 전환합니다.'
         },
         { h: '✅ 적응증',
-          body: '만성 LBP, 만성 경추통, 섬유근통, 수술 후 흉터·유착, 두통, 만성 골반통, 유착성 관절낭염, 림프부종 보조.'
+          body: '만성 LBP, 만성 경추통, 섬유근통, 수술 후 흉터·유착, 두통, 만성 골반통, 유착성 관절낭염, 림프부종 보조 — 직접법은 만성 섬유화 병변에, 간접법은 급성·고통증·고령자 케이스에 우선 고려합니다.'
         },
         { h: '⚠ 금기·주의',
-          body: '활동성 감염, 급성 외상, 심부정맥혈전증, 종양 부위, 진행성 신경질환, 활동성 출혈성 질환.'
+          body: '활동성 감염, 급성 외상 직후, 심부정맥혈전증, 종양 부위, 진행성 신경질환, 활동성 출혈성 질환 — 골다공증·항응고제 복용 환자에서는 직접법보다 간접법으로 전환을 우선 고려합니다.'
         },
         { h: '📊 근거 수준',
-          body: '<strong>Ajimsha MS, Al-Mudahka NR, Al-Madzhar JA (2015) J Bodyw Mov Ther</strong> — Systematic Review of RCTs. 만성 근골격 통증에 효과적, 다만 비교군과의 차이는 small to moderate. AHRQ·NICE 가이드라인이 만성 LBP의 비약물 옵션으로 권장.'
+          body: '<strong>Ajimsha MS, Al-Mudahka NR, Al-Madzhar JA (2015) J Bodyw Mov Ther</strong> — Systematic Review of RCTs. 만성 근골격 통증에 효과적이며, 비교군과의 차이는 small to moderate 수준. AHRQ·NICE 가이드라인이 만성 LBP의 비약물 옵션으로 권장. 점탄성 변형의 분 단위 시간 의존성은 기전 연구에서 일관되게 확인되었으나, 일부 임상 효과는 신경반사·플라시보 기여 가능성도 함께 보고됩니다.'
         }
       ]
     },
