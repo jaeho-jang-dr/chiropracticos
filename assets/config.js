@@ -16,6 +16,7 @@ window.PUBLIC_PAGES = new Set([
   "/auth-callback", "/auth-callback.html",
   "/chapter01_introduction", "/chapter01_introduction.html",
   "/chapter02_functional_neurology", "/chapter02_functional_neurology.html",
+  "/chapter13_soft_tissue", "/chapter13_soft_tissue.html",
   "/viewer", "/viewer.html",
   "/debug", "/debug.html",
   "/guide", "/guide.html",
@@ -25,6 +26,7 @@ window.PUBLIC_PAGES = new Set([
 // (로그인 사용자는 모든 src 접근, 익명자는 이 목록에 매칭되는 것만)
 window.PUBLIC_VIEWER_PREFIXES = [
   "functional_neurology/",
+  "soft_tissue/",
 ];
 
 // admin 전용 페이지
