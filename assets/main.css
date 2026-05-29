@@ -1420,13 +1420,13 @@ body.is-anonymous .auth-only { display: none !important; }
   100% { box-shadow: 0 0 0 1px var(--c-accent), 0 6px 18px rgba(10, 132, 255, .12); }
 }
 
-/* 익명자: ch1·ch2 외 카드는 잠금 표시. 클릭은 가능 — auth-guard 가 /login 으로 보냄 */
-body.is-anonymous .dash-card:not([href*="chapter01"]):not([href*="chapter02"]) {
+/* 익명자: 비공개 카드는 잠금 표시. 클릭은 가능 — auth-guard 가 /login 으로 보냄. 공개 챕터(ch1·ch2·ch13)는 잠금 표시 제외 */
+body.is-anonymous .dash-card:not([href*="chapter01"]):not([href*="chapter02"]):not([href*="chapter13"]) {
   position: relative;
   opacity: .68;
   transition: opacity .15s var(--ease);
 }
-body.is-anonymous .dash-card:not([href*="chapter01"]):not([href*="chapter02"])::after {
+body.is-anonymous .dash-card:not([href*="chapter01"]):not([href*="chapter02"]):not([href*="chapter13"])::after {
   content: '🔒 로그인 필요';
   position: absolute;
   top: 10px; right: 10px;
@@ -1439,7 +1439,7 @@ body.is-anonymous .dash-card:not([href*="chapter01"]):not([href*="chapter02"])::
   letter-spacing: .02em;
   z-index: 2;
 }
-body.is-anonymous .dash-card:not([href*="chapter01"]):not([href*="chapter02"]):hover {
+body.is-anonymous .dash-card:not([href*="chapter01"]):not([href*="chapter02"]):not([href*="chapter13"]):hover {
   opacity: 1;
 }
 
