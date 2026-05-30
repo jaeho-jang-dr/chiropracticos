@@ -492,7 +492,7 @@ HTML 버전 Part V 끝에 12 부위 × 11 기법 매트릭스(● 1순위, ○ �
 
 ---
 
-### 7.1 케이스 A — 회전근개 손상 (Rotator Cuff Tendinopathy / Partial Tear)
+<details><summary><b>7.1 케이스 A — 회전근개 손상 (Rotator Cuff Tendinopathy / Partial Tear)</b></summary>
 
 **임상 표현**: 40-60대 어깨 외측·전외측 통증, 야간통, 야간 환측 와위 어려움. 머리 빗기·뒷주머니 손 넣기·등 가려운 곳 긁기 어려움. Supraspinatus·infraspinatus가 먼저 침범되는 경향.
 
@@ -542,9 +542,11 @@ HTML 버전 Part V 끝에 12 부위 × 11 기법 매트릭스(● 1순위, ○ �
 - 주 2회 × 3주(6세션) 후 호전 부족 → **초음파·MRI 의뢰** (full-thickness tear 감별)
 - **적신호**: 외상 후 즉시 외전 불가 (drop arm + dramatic weakness) → 즉시 정형외과 의뢰 (수술적 봉합 검토)
 
+</details>
+
 ---
 
-### 7.2 케이스 B — 유착성 피막염 / 동결견 (Adhesive Capsulitis, Frozen Shoulder)
+<details><summary><b>7.2 케이스 B — 유착성 피막염 / 동결견 (Adhesive Capsulitis, Frozen Shoulder)</b></summary>
 
 **임상 표현**: 40-60대(특히 여성·당뇨병 환자) 점진적 어깨 통증 + 모든 방향 ROM 제한 (특히 외회전 + 외전). 3단계: ① Freezing(통증 우세, 6주-9개월) → ② Frozen(강직 우세, 4-9개월) → ③ Thawing(점진적 회복, 5-26개월). 본 강의는 ② Frozen 단계 STT 적용 중심.
 
@@ -586,9 +588,11 @@ HTML 버전 Part V 끝에 12 부위 × 11 기법 매트릭스(● 1순위, ○ �
 - 의뢰 옵션: 관절강 내 스테로이드 주사 · hydrodilatation · manipulation under anesthesia (MUA) · 관절경적 capsular release
 - **적신호**: 외상 후 갑작스러운 강직 + 야간 발열 → 화농성 관절염·결정성 관절염 감별 (즉시 의뢰)
 
+</details>
+
 ---
 
-### 7.3 케이스 C — 주관절 외측·내측 상과염 (Tennis & Golfer's Elbow)
+<details><summary><b>7.3 케이스 C — 주관절 외측·내측 상과염 (Tennis & Golfer's Elbow)</b></summary>
 
 **임상 표현**: 외측은 손목 신전·잡기 동작에서 외측상과 통증 (ECRB 부착부). 내측은 손목 굴곡·회내(pronation) 동작에서 내측상과 통증 (pronator teres·flexor carpi radialis 부착부). 본질은 부착부 tendinopathy → **Cyriax DTFM의 정통 적응증**.
 
@@ -639,9 +643,11 @@ HTML 버전 Part V 끝에 12 부위 × 11 기법 매트릭스(● 1순위, ○ �
 - 주사 치료 옵션: PRP > 스테로이드 (Coombes 2010 — 스테로이드는 단기 효과 후 장기 재발 ↑)
 - **적신호**: 안정 시 통증·야간통·신경학적 결손 → 신경 압박 또는 다른 질환 감별
 
+</details>
+
 ---
 
-### 7.4 케이스 D — 급성 요통 + 장요근(Psoas) 경직
+<details><summary><b>7.4 케이스 D — 급성 요통 + 장요근(Psoas) 경직</b></summary>
 
 **임상 표현**: 물건 들거나 몸 비틀다가 갑자기 시작된 요통. 똑바로 서기 어렵고, 누우면 다리를 약간 굽혀야 편함. **핵심 단서: 앙와위에서 양 다리 신전이 통증을 유발하지만 무릎 굴곡 시 즉시 완화** — psoas 경직의 전형. Adam Forward Bend로 보일 수 있는 협의 측만(scoliosis)도 종종 동반.
 
@@ -700,9 +706,11 @@ HTML 버전 Part V 끝에 12 부위 × 11 기법 매트릭스(● 1순위, ○ �
 - 주 2-3회 × 2주 후 호전 부족 → MRI (디스크 탈출·신경근병증 감별)
 - **적신호 즉시 의뢰**: cauda equina (saddle anesthesia + 양측 좌골 통증 + 요실금/대변 실금) → 응급 신경외과
 
+</details>
+
 ---
 
-### 7.5 케이스 E — 족저근막염 (Plantar Fasciitis) — 상세 프로토콜
+<details><summary><b>7.5 케이스 E — 족저근막염 (Plantar Fasciitis) — 상세 프로토콜</b></summary>
 
 **임상 표현**: 아침 첫 걸음·장시간 앉아 있다 일어선 후 처음 몇 걸음 발뒤꿈치 통증. 점차 걷다 보면 완화되지만 오래 서있으면 다시 악화. 족저근막(plantar aponeurosis)의 calcaneal 부착부 또는 medial calcaneal tubercle 압통이 핵심.
 
@@ -755,9 +763,11 @@ HTML 버전 Part V 끝에 12 부위 × 11 기법 매트릭스(● 1순위, ○ �
 - 중재 옵션: ESWT (Extracorporeal Shockwave) > PRP > 스테로이드 주사 (스테로이드는 fat pad atrophy·rupture 위험)
 - **적신호**: 야간 안정 시 통증 · 발열 · 종창 → 골수염·뼈 종양 감별
 
+</details>
+
 ---
 
-### 7.6 케이스 F — 경추 염좌 / 편타손상 (Cervical Strain / Whiplash) — SCM·Scalene Release 상세
+<details><summary><b>7.6 케이스 F — 경추 염좌 / 편타손상 (Cervical Strain / Whiplash) — SCM·Scalene Release 상세</b></summary>
 
 **임상 표현**: 교통사고(특히 후방 추돌) 또는 갑작스러운 경부 굴곡-신전 손상 후 경부 후방·측방 통증, 두통(특히 후두부), 경부 강직, 어지러움. 보호적 근수축으로 SCM·scalene·승모근이 과긴장 상태가 됩니다. 신경역동 자극(상지 저림) 동반 가능 — scalene이 brachial plexus·subclavian artery를 통과시키는 통로(thoracic outlet)이기 때문.
 
@@ -842,9 +852,11 @@ HTML 버전 Part V 끝에 12 부위 × 11 기법 매트릭스(● 1순위, ○ �
 - **두통이 4주 후에도 지속** → 신경과 의뢰 (post-traumatic headache, ICHD-3)
 - WAD Grade III-IV (신경학적 결손·골절) → 즉시 정형외과·신경외과
 
+</details>
+
 ---
 
-### 7.7 케이스 G — 만성 긴장성 두통 + 후두하 부위 (보조)
+<details><summary><b>7.7 케이스 G — 만성 긴장성 두통 + 후두하 부위 (보조)</b></summary>
 
 1. 평가: NDI · 후두하·승모근·SCM trigger point · ROM · ULNT
 2. 1차: 후두하근 TPT (앙와위 sub-occipital release 90초)
@@ -854,15 +866,19 @@ HTML 버전 Part V 끝에 12 부위 × 11 기법 매트릭스(● 1순위, ○ �
 6. 자가관리: 턱당김(chin tuck) · 1시간마다 자세 점검
 7. (케이스 F 6.3 SCM·Scalene 프로토콜 일부 통합 가능)
 
+</details>
+
 ---
 
-### 7.8 케이스 H — TMJ 통증·개구 제한 (보조)
+<details><summary><b>7.8 케이스 H — TMJ 통증·개구 제한 (보조)</b></summary>
 
 1. 평가: 개구량 · 측방 이동 · 교근·측두근 trigger point · 클릭음
 2. 1차: 교근·측두근 TPT (외측 + 내측 — 구내 접근은 면허 범위 확인)
 3. 2차: 흉쇄유돌근(SCM) MFR (케이스 F 프로토콜 참조)
 4. 3차: 턱 개폐 PNF (양손 가벼운 저항)
 5. 의뢰: 디스크 변위·관절원판 손상 의심 시 치과·구강외과
+
+</details>
 
 ---
 
