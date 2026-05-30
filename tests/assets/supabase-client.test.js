@@ -173,9 +173,12 @@ describe('supabase-client.js', () => {
     state.session = { user: state.user };
     state.onAuthStateChange?.('INITIAL_SESSION', state.session);
 
+    // 일시적 조회 실패는 row:null + error를 함께 반환해야 함 — 호출자가
+    // "확정 거부"와 "판단 불가"를 구분할 수 있도록(승인 대기벽 오인 방지).
     await expect(mod.getCurrentUserWithRow(1)).resolves.toEqual({
       user: state.user,
       row: null,
+      error: state.userRowError,
     });
   });
 

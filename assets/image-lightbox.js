@@ -94,11 +94,6 @@
         : '🔒 미리보기 전용 · 다운로드 제한 · 클릭하면 원본 크기 · ESC 닫기';
     });
 
-    // ESC
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && ov.classList.contains('is-open')) close();
-    });
-
     return ov;
   }
 
@@ -119,6 +114,9 @@
     return false;
   }
 
+  // aria-modal 다이얼로그의 포커스 복원용 — 라이트박스를 연 요소를 기억.
+  var lastOpener = null;
+
   function open(src, alt, title) {
     if (!isSafeSrc(src)) {
       // 안전하지 않은 URL은 무시 (overlay 열지 않음)
@@ -130,9 +128,17 @@
     var img = ov.querySelector('.imgz-img');
     img.src = src;
     img.alt = alt || '';
-    if (title) ov.setAttribute('aria-label', title);
+    // 항상 설정 — title 없을 때 이전 이미지의 제목이 남아 새 나는 것을 방지.
+    ov.setAttribute('aria-label', title || '이미지 확대');
     ov.classList.add('is-open');
     document.body.style.overflow = 'hidden';
+    // 포커스를 다이얼로그 안으로 이동(스크린리더/키보드 사용자가 모달 뒤에 남지 않도록).
+    // opener는 오버레이 바깥의 요소만 기억 — 이미 다이얼로그 내부에 포커스가 있던
+    // 경우(재진입 등) closeBtn을 opener로 덮어쓰지 않도록.
+    var active = document.activeElement;
+    if (active && active !== document.body && !ov.contains(active)) lastOpener = active;
+    var closeBtn = ov.querySelector('.imgz-close');
+    if (closeBtn && closeBtn.focus) closeBtn.focus();
   }
 
   function close() {
@@ -148,11 +154,15 @@
     if (frame) frame.classList.remove('is-1to1');
     var bar = ov.querySelector('.imgz-bar');
     if (bar) bar.textContent = '🔒 미리보기 전용 · 다운로드 제한 · 클릭하면 원본 크기 · ESC 닫기';
+    ov.setAttribute('aria-label', '이미지 확대');  // 기본 라벨로 리셋
     document.body.style.overflow = '';
+    // 모달을 연 요소로 포커스 복원(아무데도 안 남기고 <body>로 떨어지지 않도록).
+    if (lastOpener && lastOpener.focus) { try { lastOpener.focus(); } catch (_) {} }
+    lastOpener = null;
   }
 
   // 클릭 위임: [data-img-zoom] 또는 그 자식이 클릭되면 라이트박스 열기
-  document.addEventListener('click', function (e) {
+  function onDocClick(e) {
     var t = e.target;
     if (!t) return;
     var trig = t.closest && t.closest('[data-img-zoom]');
@@ -163,17 +173,33 @@
     var alt = trig.getAttribute('data-img-alt') || '';
     var title = trig.getAttribute('data-img-title') || '';
     if (src) open(src, alt, title);
-  }, true);
+  }
 
-  // 키보드 접근성: Enter/Space 로도 열기
-  document.addEventListener('keydown', function (e) {
+  // 키보드: Enter/Space로 열기, ESC로 닫기
+  function onDocKeydown(e) {
+    if (e.key === 'Escape') {
+      var ov = document.getElementById('imgz-root');
+      if (ov && ov.classList.contains('is-open')) close();
+      return;
+    }
     if (e.key !== 'Enter' && e.key !== ' ') return;
     var t = document.activeElement;
     if (!t || !t.matches || !t.matches('[data-img-zoom]')) return;
     e.preventDefault();
     var src = t.getAttribute('data-img-zoom');
     if (src) open(src, t.getAttribute('data-img-alt') || '', t.getAttribute('data-img-title') || '');
-  });
+  }
+
+  // 같은 페이지에서 중복 로드 시(주로 테스트 환경) 이전 인스턴스의 document 리스너를
+  // 제거 — 누적된 stale 리스너가 한 번의 클릭에 open()을 여러 번 호출(opener 오염)하지
+  // 않도록.
+  try { if (window.__imgZoomCleanup) window.__imgZoomCleanup(); } catch (_) {}
+  document.addEventListener('click', onDocClick, true);
+  document.addEventListener('keydown', onDocKeydown);
+  window.__imgZoomCleanup = function () {
+    document.removeEventListener('click', onDocClick, true);
+    document.removeEventListener('keydown', onDocKeydown);
+  };
 
   ensureStyles();
 

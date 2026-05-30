@@ -80,6 +80,11 @@ function publicUrl(key) {
 // 차단: 빈 문자열, 비문자열, ../traversal, 절대경로, 백슬래시, null-byte,
 //        제어문자, URL-encoded traversal(%2e%2e, %2f), 과도하게 긴 키.
 const MAX_KEY_LEN = 1024;
+
+// presign-upload 전용 제약 — 업로드는 스테이징 prefix + 안전한 MIME만.
+const UPLOAD_PREFIX_RE = /^uploads\//;
+const ALLOWED_UPLOAD_CT = /^(image\/|audio\/|video\/|application\/(pdf|octet-stream)$)/i;
+
 function validateKey(k) {
   if (k === undefined || k === null) return { ok: false, error: 'key required' };
   if (typeof k !== 'string') return { ok: false, error: 'key must be string' };
@@ -158,7 +163,9 @@ export default async function handler(req, res) {
     }
 
     // ---------- DELETE (single via ?key= or batch via body.keys) ----------
-    if (op === 'delete' || req.method === 'DELETE') {
+    // op이 명시되면 op이 우선 — DELETE 메서드 + op=copy/presign-get 같은 조합이
+    // 의도치 않게 삭제 분기로 흡수되지 않도록, 메서드 fallback은 op이 없을 때만.
+    if (op === 'delete' || (!op && req.method === 'DELETE')) {
       const body = await readJsonBody(req);
       const rawKeys = body.keys && Array.isArray(body.keys)
         ? body.keys
@@ -184,7 +191,16 @@ export default async function handler(req, res) {
       const v = validateKey(body.key);
       if (!v.ok) return res.status(400).json({ error: v.error });
       const key = v.key;
+      // least-privilege: 업로드 presign은 스테이징 prefix(uploads/)로만 발급.
+      // 게시된 콘텐츠 키(예: chapter12_ak/...) 덮어쓰기를 차단 — leaked URL 영향 최소화.
+      if (!UPLOAD_PREFIX_RE.test(key)) {
+        return res.status(400).json({ error: 'presign-upload key must be under uploads/' });
+      }
       const contentType = (body.contentType || 'application/octet-stream').toString();
+      // content-type 화이트리스트 — text/html 등 stored-XSS 소지 타입 차단
+      if (!ALLOWED_UPLOAD_CT.test(contentType)) {
+        return res.status(400).json({ error: 'contentType not allowed' });
+      }
       const url = await getSignedUrl(
         s3,
         new PutObjectCommand({ Bucket: BUCKET, Key: key, ContentType: contentType }),

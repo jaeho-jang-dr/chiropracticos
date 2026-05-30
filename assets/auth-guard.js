@@ -3,6 +3,17 @@
 
 import { supabase, sessionReady, getCurrentUserWithRow, signOut } from "./supabase-client.js";
 
+// FOUC 방어 — 보호 챕터 HTML은 <head>에 인라인 cloak(<style id="auth-cloak">
+// html{visibility:hidden}</style>)을 실어 가드 완료 전 콘텐츠 페인트를 막는다.
+// 가드는 콘텐츠를 보여줄 분기에서만 cloak을 제거하고, 리다이렉트 경로에서는 유지.
+function uncloak() {
+  try {
+    const c = document.getElementById("auth-cloak");
+    if (c) c.remove();
+    document.documentElement.style.visibility = "";
+  } catch (_) {}
+}
+
 (async () => {
   const path = location.pathname.replace(/\/+$/, "") || "/";
   // cleanUrl 환경에서 /login 과 /login.html 둘 다 매치
@@ -18,30 +29,40 @@ import { supabase, sessionReady, getCurrentUserWithRow, signOut } from "./supaba
   const session = await sessionReady;
 
   if (isPublic && !isAdmin) {
-    // 공개 페이지: 로그인 상태면 nav 위젯만 갱신, 비로그인이면 .auth-only 게이팅
+    // 공개 페이지: 로그인 상태면 nav 위젯 갱신. 단, 차단 사용자는 공개 페이지에서도
+    // 차단 안내를 보여주고 admin 다운로드-언락 신호(is-admin)를 부여하지 않는다.
     if (session) {
-      updateNavWidget((await getCurrentUserWithRow()).row);
+      const { row } = await getCurrentUserWithRow();
+      if (row?.blocked_at) { showBlocked(row); return; }
+      updateNavWidget(row);
     } else {
       document.body.classList.add("is-anonymous");
+      uncloak();
     }
     return;
   }
 
   if (!session) {
     // redirect loop 방지: 이미 /login에 있으면 다시 redirect 안 함
-    if (location.pathname.startsWith("/login")) return;
+    if (location.pathname.startsWith("/login")) { uncloak(); return; }
     const next = encodeURIComponent(location.pathname + location.search);
     location.replace(`/login?next=${next}`);
-    return;
+    return;  // 리다이렉트 — cloak 유지(보호 콘텐츠 플래시 방지)
   }
 
-  const { row } = await getCurrentUserWithRow();
+  const { row, error } = await getCurrentUserWithRow();
 
-  if (row?.blocked_at) {
-    showFullPage(`<h1>🚫 접근이 차단되었습니다</h1>
-      <p>관리자 차단 사유: ${escapeHtml(row.blocked_reason || "")}</p>
-      <p>문의: <a href="mailto:drjang00@gmail.com">drjang00@gmail.com</a></p>
-      <button onclick="window.__signOut()">로그아웃</button>`);
+  if (row?.blocked_at) { showBlocked(row); return; }
+
+  // 행 조회가 일시적으로 실패(네트워크/5xx) → 승인 대기·403으로 오인하지 말 것.
+  // 확정 거부(행 없음, error null)와 "판단 불가"(error 有)를 구분.
+  if (!row && error) {
+    showFullPage(`<h1 style="margin:0 0 .8rem">⏳ 일시적인 오류</h1>
+      <p style="color:#444;line-height:1.7;font-size:.95em">계정 정보를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.</p>
+      <div style="margin-top:1.5rem;display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap">
+        <button class="btn btn-primary btn-sm" onclick="location.reload()">새로고침</button>
+        <button class="btn btn-ghost btn-sm" onclick="window.__signOut()">로그아웃</button>
+      </div>`);
     window.__signOut = signOut;
     return;
   }
@@ -80,7 +101,16 @@ import { supabase, sessionReady, getCurrentUserWithRow, signOut } from "./supaba
   updateNavWidget(row);
 })();
 
+function showBlocked(row) {
+  showFullPage(`<h1>🚫 접근이 차단되었습니다</h1>
+    <p>관리자 차단 사유: ${escapeHtml(row.blocked_reason || "")}</p>
+    <p>문의: <a href="mailto:drjang00@gmail.com">drjang00@gmail.com</a></p>
+    <button onclick="window.__signOut()">로그아웃</button>`);
+  window.__signOut = signOut;
+}
+
 function updateNavWidget(row) {
+  uncloak();
   const unicorn = document.getElementById("hero-unicorn");
   if (row?.role === "admin" && unicorn) unicorn.style.display = "block";
 
@@ -103,6 +133,7 @@ function updateNavWidget(row) {
 }
 
 function showFullPage(inner) {
+  uncloak();
   document.body.innerHTML = `
     <div style="max-width:640px;margin:6rem auto;padding:2.5rem;text-align:center;font-family:system-ui;
                 border:1px solid #e0e0e3;border-radius:16px;background:#fff;box-shadow:0 4px 20px rgba(0,0,0,.04)">

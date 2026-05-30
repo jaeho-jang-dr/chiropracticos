@@ -71,14 +71,30 @@ export const sessionReady = new Promise((resolve) => {
   }, timeoutMs);
 });
 
+// 일시적(네트워크/타임아웃/5xx) 오류인지 — 확정 거부와 구분해 재시도/상태 분기.
+function isTransientError(error) {
+  if (!error) return false;
+  const code = String(error.code || "");
+  const msg = String(error.message || "").toLowerCase();
+  if (/fetch|network|timeout|econn|socket|temporar/.test(msg)) return true;
+  const status = Number(error.status || code);
+  if (status >= 500 && status < 600) return true;
+  return false;
+}
+
+// 반환: { user, row, error }
+//  - row 있음        → 정상 (error: null)
+//  - row null·error null → 행이 진짜 없음(신규 가입/미승인) = "확정 거부"
+//  - row null·error 有   → 조회 실패(네트워크/5xx) = "판단 불가" → 호출자가 대기벽 대신 재시도 안내
 export async function getCurrentUserWithRow(retries = 6) {
   await sessionReady;
   const { data: { user } } = await supabase.auth.getUser();
   trace("getCurrentUserWithRow", { user: user?.email });
-  if (!user) return { user: null, row: null };
+  if (!user) return { user: null, row: null, error: null };
 
   // 백오프: 300, 600, 1200, 2000, 3000, 4000 ms = 최대 ~11초 대기
   const delays = [300, 600, 1200, 2000, 3000, 4000];
+  let lastError = null;
   for (let i = 0; i < retries; i++) {
     const { data, error } = await supabase
       .from("users")
@@ -87,18 +103,23 @@ export async function getCurrentUserWithRow(retries = 6) {
       .single();
     if (data) {
       trace("user row loaded", { attempt: i + 1, role: data.role });
-      return { user, row: data };
+      return { user, row: data, error: null };
     }
-    if (error?.code === "PGRST116") {
-      trace("trigger race, retry", { attempt: i + 1, nextDelay: delays[i] });
+    lastError = error;
+    // PGRST116(트리거 레이스 — 행 미생성) + 일시적 오류는 재시도 대상.
+    const retryable = error && (error.code === "PGRST116" || isTransientError(error));
+    if (retryable && i < retries - 1) {
+      trace("row fetch retry", { attempt: i + 1, code: error.code, nextDelay: delays[i] });
       await new Promise((r) => setTimeout(r, delays[i] || 4000));
       continue;
     }
+    // PGRST116로 종료 → 행이 진짜 없음(확정). 그 외 오류는 "판단 불가"로 surface.
+    if (error?.code === "PGRST116") return { user, row: null, error: null };
     trace("user row error", error);
-    return { user, row: null };
+    return { user, row: null, error: error || null };
   }
   trace("user row not found after all retries");
-  return { user, row: null };
+  return { user, row: null, error: lastError?.code === "PGRST116" ? null : lastError };
 }
 
 export async function getCurrentUser() {

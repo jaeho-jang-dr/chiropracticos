@@ -25,19 +25,38 @@ function rateLimitHit(ip) {
   const recent = arr.filter((t) => t > cutoff);
   recent.push(now);
   rateMap.set(ip, recent);
-  // 메모리 누수 방지 — 1000 IP 넘으면 오래된 것 정리
+  // 메모리 누수 방지 — 1000 IP 넘으면 window 밖의 항목 정리.
+  // unique-IP flood로 모두 window 안이면 가장 오래 들어온 키부터 하드 컷.
   if (rateMap.size > 1000) {
     for (const [k, v] of rateMap) {
-      if (v.length === 0 || v[v.length - 1] < cutoff) rateMap.delete(k);
+      const live = v.filter((t) => t > cutoff);
+      if (live.length === 0) rateMap.delete(k);
+      else rateMap.set(k, live);
+    }
+    if (rateMap.size > 1000) {
+      const excess = rateMap.size - 1000;
+      let i = 0;
+      for (const k of rateMap.keys()) {
+        if (i++ >= excess) break;
+        rateMap.delete(k); // Map은 삽입순 — 가장 오래된 키부터 제거
+      }
     }
   }
   return recent.length > RATE_LIMIT_MAX;
 }
 
+// rate-limit 키는 클라이언트가 위조할 수 없는 값이어야 함.
+// XFF의 leftmost hop은 클라이언트가 임의 주입 가능 → 매 요청 회전시키면 우회됨.
+// 플랫폼이 주입하는 x-real-ip(또는 XFF의 trailing hop = 가장 가까운 신뢰 프록시)를 사용.
 function clientIp(req) {
+  const realIp = (req.headers['x-real-ip'] || '').toString().trim();
+  if (realIp) return realIp;
   const xff = (req.headers['x-forwarded-for'] || '').toString();
-  if (xff) return xff.split(',')[0].trim();
-  return (req.headers['x-real-ip'] || req.socket?.remoteAddress || '').toString();
+  if (xff) {
+    const hops = xff.split(',').map((s) => s.trim()).filter(Boolean);
+    if (hops.length) return hops[hops.length - 1];
+  }
+  return (req.socket?.remoteAddress || '').toString();
 }
 
 const ALLOWED_CT = [
@@ -111,7 +130,11 @@ export default async function handler(req, res) {
         directive: sanitizeField(v['violated-directive'] || v.effectiveDirective),
         blocked: sanitizeField(v['blocked-uri'] || v.blockedURL),
         source: sanitizeField(v['source-file'] || v.sourceFile),
-        line: v['line-number'] || v.lineNumber,
+        // line-number는 항상 숫자여야 함. 숫자면 그대로, 아니면 sanitize로
+        // 길이 캡·제어문자 제거(로그 인젝션 차단)를 거치게 함.
+        line: Number.isFinite(Number(v['line-number'] ?? v.lineNumber))
+          ? Number(v['line-number'] ?? v.lineNumber)
+          : sanitizeField(v['line-number'] ?? v.lineNumber),
         document: sanitizeField(v['document-uri'] || v.documentURL),
       };
       console.log('[csp]', JSON.stringify(summary));

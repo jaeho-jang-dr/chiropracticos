@@ -18,7 +18,6 @@ window.PUBLIC_PAGES = new Set([
   "/chapter02_functional_neurology", "/chapter02_functional_neurology.html",
   "/chapter13_soft_tissue", "/chapter13_soft_tissue.html",
   "/viewer", "/viewer.html",
-  "/debug", "/debug.html",
   "/guide", "/guide.html",
 ]);
 
@@ -29,7 +28,8 @@ window.PUBLIC_VIEWER_PREFIXES = [
   "soft_tissue/",
 ];
 
-// admin 전용 페이지
+// admin 전용 페이지 — debug.html은 세션/JWT를 덤프하므로 공개 금지, admin 게이팅.
 window.ADMIN_PAGES = new Set([
   "/admin", "/admin.html",
+  "/debug", "/debug.html",
 ]);

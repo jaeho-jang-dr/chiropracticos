@@ -9,10 +9,11 @@
 (function () {
   'use strict';
 
-  // NotebookLM 산출물 패턴:
-  //   ① 1세대: 01_podcast*, 02_video_part1*, 03_video_part2*
+  // NotebookLM 산출물의 canonical 짝만 허용:
+  //   ① 1세대: 01_podcast, 02_video_part1, 03_video_part2 (고정 짝 — 03_podcast 등
+  //      존재하지 않는 cross-product는 제외)
   //   ② v3 4부작: podcasts_v3/01_episode1_*.m4a ~ 04_episode4_*.m4a
-  const NLM_RE = /\/(0[123]_(podcast|video_part[12])[^\/]*|podcasts_v3\/0[1-4]_episode[1-4]_[^\/]+)\.(mp4|m4a)(?:[?#]|$)/i;
+  const NLM_RE = /\/(01_podcast[^\/]*|02_video_part1[^\/]*|03_video_part2[^\/]*|podcasts_v3\/0[1-4]_episode[1-4]_[^\/]+)\.(mp4|m4a)(?:[?#]|$)/i;
   const MEDIA_RE = /\.(mp4|m4a|pdf|docx?)(?:[?#]|$)/i;
 
   // 비로그인 공개 챕터(추가 시 여기 갱신) — 이 페이지에서는 익명자도 NLM 산출물 재생/다운로드 허용
@@ -41,7 +42,9 @@
   // ---- 1) 모든 <a> 의 download 속성 정리 + 화이트리스트 부여 ----
   function normalizeAnchors(root) {
     if (isAdmin()) return;  // admin은 그대로 유지 — 모든 미디어 다운로드 가능
-    (root || document).querySelectorAll('a[href]').forEach(function (a) {
+    // collect()로 root 자신이 <a>인 경우(MutationObserver가 넘기는 동적 삽입
+    // 최상위 anchor)도 포함 — querySelectorAll은 root 자신을 빼먹음.
+    collect(root, 'a[href]').forEach(function (a) {
       const href = a.getAttribute('href') || '';
       if (isAllowedAsset(href)) {
         // NotebookLM 산출물 → download 속성 보장
@@ -100,7 +103,11 @@
     if (!t) return;
     if (t.closest('.allow-download')) return;
     if (t.closest('input, textarea, [contenteditable="true"]')) return;
-    if (t.matches('img, video, audio') || t.closest('a[href$=".pdf"], a[href*=".docx"], a[href$=".mp4"], a[href$=".m4a"]')) {
+    // href$= suffix 셀렉터는 ?v=·#frag가 붙은 R2/캐시버스트 URL을 놓침.
+    // 가장 가까운 anchor의 href를 MEDIA_RE로 검사(쿼리/프래그먼트 허용).
+    const a = t.closest && t.closest('a[href]');
+    if (t.matches('img, video, audio') ||
+        (a && MEDIA_RE.test(a.getAttribute('href') || ''))) {
       e.preventDefault();
     }
   }, true);

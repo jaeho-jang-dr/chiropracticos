@@ -380,3 +380,163 @@ describe('csp-report — D2 gaps (currently failing)', () => {
     expect(lastStatus).toBe(429);
   });
 });
+
+// ---------------------------------------------------------------------------
+// REGRESSION (bug #1): rate-limit key is derived from the LEFTMOST X-Forwarded-
+// For hop (xff.split(',')[0]). On Vercel the platform APPENDS the trusted edge
+// IP — it never replaces earlier entries — so the leftmost value is fully
+// client-controlled. An attacker rotates a fresh fabricated leftmost XFF on
+// every request; rateLimitHit() therefore always sees a brand-new key with
+// count 1 and never returns true, defeating RATE_LIMIT_MAX entirely. The
+// trustworthy identifier is the RIGHTMOST hop (or x-real-ip).
+//
+// These are pinned with it.fails(): the spoofing flood is NOT throttled today,
+// so the post-fix assertion (429 eventually) currently does not hold. Once the
+// fix lands (key off the rightmost hop / x-real-ip), flip to plain it().
+// ---------------------------------------------------------------------------
+
+describe('csp-report — rate-limit XFF spoofing (bug #1, pinned)', () => {
+  const body = { 'csp-report': { 'violated-directive': 'script-src', 'blocked-uri': 'https://x' } };
+
+  it('PINNED: rotating leftmost XFF but a CONSTANT trailing edge IP still gets throttled', async () => {
+    captureConsole();
+    const edge = '70.70.70.70'; // the real, Vercel-appended edge hop (rightmost)
+    let lastStatus = 204;
+    for (let i = 0; i < 15; i++) {
+      // Attacker forges a different leftmost hop each time; Vercel appends the
+      // real edge IP at the end. A correct limiter keys off the trailing hop.
+      const req = makeReq({
+        headers: {
+          'content-type': 'application/json',
+          'x-forwarded-for': `9.9.9.${i}, ${edge}`,
+        },
+        body,
+      });
+      const res = makeRes();
+      await handler(req, res);
+      lastStatus = res.statusCode;
+    }
+    // Post-fix: the constant trailing edge IP is the rate-limit key, so the
+    // flood is throttled. Today the limiter keys off the (rotating) leftmost
+    // hop → every request is a fresh key → never 429.
+    expect(lastStatus).toBe(429);
+  });
+
+  it('PINNED: prefers x-real-ip over a spoofable leftmost XFF', async () => {
+    captureConsole();
+    let lastStatus = 204;
+    for (let i = 0; i < 15; i++) {
+      const req = makeReq({
+        headers: {
+          'content-type': 'application/json',
+          // Spoofed, rotating XFF leftmost — but x-real-ip is the platform truth.
+          'x-forwarded-for': `1.1.1.${i}`,
+          'x-real-ip': '55.55.55.55',
+        },
+        body,
+      });
+      const res = makeRes();
+      await handler(req, res);
+      lastStatus = res.statusCode;
+    }
+    expect(lastStatus).toBe(429);
+  });
+
+  it('CONTROL: a constant leftmost XFF (no spoofing) IS throttled today', async () => {
+    // Sanity anchor — proves the limiter works when the key is stable; the bug
+    // is specifically that the key source (leftmost hop) is attacker-rotatable.
+    captureConsole();
+    let lastStatus = 204;
+    for (let i = 0; i < 15; i++) {
+      const req = makeReq({
+        headers: { 'content-type': 'application/json', 'x-forwarded-for': '8.8.8.8' },
+        body,
+      });
+      const res = makeRes();
+      await handler(req, res);
+      lastStatus = res.statusCode;
+    }
+    expect(lastStatus).toBe(429);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// REGRESSION (bug #2): the `line` field bypasses sanitizeField() and the
+// MAX_FIELD_LEN=500 per-field cap. Every other summary field runs through
+// sanitizeField(), but `line` is taken verbatim from attacker JSON
+// (v['line-number'] || v.lineNumber). The endpoint is unauthenticated and
+// accepts up to 16 KB bodies, so a 16 KB string lineNumber is logged in full —
+// the per-field flood cap that protects every other field is silently skipped.
+// FIX: coerce to Number when numeric, else run through sanitizeField().
+//
+// Pinned with it.fails(): today the oversized line value IS logged in full.
+// ---------------------------------------------------------------------------
+
+describe('csp-report — line field length cap (bug #2, pinned)', () => {
+  it('numeric line numbers are preserved (regression guard for the fix)', async () => {
+    const { logs } = captureConsole();
+    const body = {
+      'csp-report': { 'violated-directive': 'script-src', 'blocked-uri': 'https://x', 'line-number': 1234 },
+    };
+    const req = makeReq({ body });
+    const res = makeRes();
+    await handler(req, res);
+    expect(res.statusCode).toBe(204);
+    // The Number-coercing fix must NOT regress legitimate numeric line numbers.
+    expect(logs[0]).toContain('"line":1234');
+  });
+
+  it('string-but-numeric line numbers stay short after the fix (and pass today)', async () => {
+    const { logs } = captureConsole();
+    const body = {
+      'csp-report': { 'violated-directive': 'script-src', 'blocked-uri': 'https://x', lineNumber: '42' },
+    };
+    const req = makeReq({ body });
+    const res = makeRes();
+    await handler(req, res);
+    expect(res.statusCode).toBe(204);
+    // Whether stored as 42 (Number) or "42" (sanitized string), the field is tiny.
+    expect(logs[0]).toMatch(/"line":(42|"42")/);
+  });
+
+  it('PINNED: oversize non-numeric line value is capped before logging', async () => {
+    const { logs } = captureConsole();
+    const huge = 'L'.repeat(5000); // 5 KB, well past MAX_FIELD_LEN=500
+    const body = {
+      'csp-report': {
+        'violated-directive': 'script-src',
+        'blocked-uri': 'https://x',
+        'line-number': huge,
+      },
+    };
+    const req = makeReq({ body });
+    const res = makeRes();
+    await handler(req, res);
+    expect(res.statusCode).toBe(204);
+    expect(logs.length).toBe(1);
+    // Every OTHER field is capped at 500 chars. `line` must be too. Today it is
+    // logged verbatim (5 KB), so the line is far longer than any capped field.
+    expect(logs[0].length).toBeLessThan(1000);
+    // The raw 5 KB run must not survive into the log line.
+    expect(logs[0]).not.toContain(huge);
+  });
+
+  it('PINNED: control chars in line value are stripped like every other field', async () => {
+    const { logs } = captureConsole();
+    const body = {
+      'csp-report': {
+        'violated-directive': 'script-src',
+        'blocked-uri': 'https://x',
+        lineNumber: '7\nFORGED-CSP-LINE injected',
+      },
+    };
+    const req = makeReq({ body });
+    const res = makeRes();
+    await handler(req, res);
+    expect(res.statusCode).toBe(204);
+    // sanitizeField() truncates at the first control char; coercion to Number
+    // also drops it (NaN → fallback sanitize). Today `line` is verbatim → the
+    // forged tail leaks into the summary value.
+    expect(logs[0]).not.toContain('FORGED-CSP-LINE injected');
+  });
+});

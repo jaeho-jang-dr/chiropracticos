@@ -386,3 +386,249 @@ describe('vercel.json — functions config sanity', () => {
     expect(cfg.trailingSlash).toBe(false);
   });
 });
+
+// ===========================================================================
+// Vercel header RESOLUTION model — first-match-wins merge across all rules
+// ===========================================================================
+// Vercel evaluates EVERY headers rule whose source matches the request path
+// and merges the resulting header sets. When two matching rules set the SAME
+// header key, the FIRST matching rule (in array order) wins for that key.
+// (This mirrors observed behavior: earlier, more-specific rules like
+// /assets/(.*) override the catch-all Cache-Control.)
+//
+// We compile every rule's source once and, for a given served path, compute
+// the effective header map. This lets us assert what a real visitor receives —
+// which is what the cleanUrls footgun is about: the served path for an
+// internal page is the EXTENSIONLESS form, so a `.html`-only source never
+// matches and the page silently loses its Cache-Control.
+// ---------------------------------------------------------------------------
+
+function effectiveHeaders(path) {
+  const merged = {};
+  for (const rule of cfg.headers) {
+    const re = vercelSourceToRegExp(rule.source);
+    if (!re.test(path)) continue;
+    for (const { key, value } of rule.headers) {
+      // First matching rule wins for a given key.
+      if (!(key in merged)) merged[key] = value;
+    }
+  }
+  return merged;
+}
+
+describe('vercel.json — header resolution model (sanity)', () => {
+  it('chapter clean URL still receives must-revalidate + noindex', () => {
+    const h = effectiveHeaders('/chapter04_gonstead');
+    expect(h['Cache-Control']).toBe('public, max-age=0, must-revalidate');
+    expect(h['X-Robots-Tag']).toBe('noindex, nofollow');
+  });
+
+  it('chapter .html URL also receives must-revalidate + noindex', () => {
+    const h = effectiveHeaders('/chapter04_gonstead.html');
+    expect(h['Cache-Control']).toBe('public, max-age=0, must-revalidate');
+    expect(h['X-Robots-Tag']).toBe('noindex, nofollow');
+  });
+
+  it('/assets/* Cache-Control wins over the catch-all (first-match)', () => {
+    const h = effectiveHeaders('/assets/main.css');
+    expect(h['Cache-Control']).toBe('public, max-age=31536000, immutable');
+  });
+
+  it('every served path still gets the security header bundle from catch-all', () => {
+    for (const p of ['/login', '/index', '/chapter04_gonstead', '/assets/main.css']) {
+      const h = effectiveHeaders(p);
+      expect(h['X-Content-Type-Options']).toBe('nosniff');
+      expect(h['X-Frame-Options']).toBe('DENY');
+    }
+  });
+
+  it('a literal /*.html request gets must-revalidate via the .html catch-all', () => {
+    // Direct .html hits still match /(.*\.html) even though cleanUrls 308s them.
+    const h = effectiveHeaders('/login.html');
+    expect(h['Cache-Control']).toBe('public, max-age=0, must-revalidate');
+  });
+});
+
+// ===========================================================================
+// BUG 1 [low] REGRESSION — cleanUrls strips .html, so the served path for
+// internal/landing pages is extensionless. The only Cache-Control rule that
+// could apply is /(.*\.html), whose source literally requires ".html" — it
+// never matches /login, /signup, /guide, /index, /admin, /editor, /viewer,
+// /auth-callback, /archive. The catch-all /(.*) sets no Cache-Control. Net
+// effect: these pages are served WITHOUT 'public, max-age=0, must-revalidate'
+// and fall back to Vercel's default static CDN caching.
+//
+// These tests are pinned with it.fails(): they assert the FIXED behavior
+// (clean URLs DO get must-revalidate). They pass once the rule source is made
+// suffix-optional (or Cache-Control is added to a broader rule).
+// ===========================================================================
+
+describe('vercel.json — BUG 1: clean (extensionless) HTML URLs lose must-revalidate', () => {
+  const CLEAN_PAGES = [
+    '/login',
+    '/signup',
+    '/guide',
+    '/index',
+    '/admin',
+    '/editor',
+    '/viewer',
+    '/auth-callback',
+    '/archive',
+  ];
+
+  // First, DOCUMENT the buggy status quo so the regression is unambiguous:
+  // the .html-only rule does NOT match the clean form.
+  it('DOCUMENTS current buggy state: /(.*\\.html) does not match clean URLs', () => {
+    const re = vercelSourceToRegExp('/(.*\\.html)');
+    for (const p of CLEAN_PAGES) {
+      expect(re.test(p)).toBe(false);
+    }
+  });
+
+  it('clean /login is now served WITH must-revalidate Cache-Control (fixed)', () => {
+    const h = effectiveHeaders('/login');
+    expect(h['Cache-Control']).toBe('public, max-age=0, must-revalidate');
+  });
+
+  // The desired post-fix behavior, now passing:
+  it.each([
+    ['/login'],
+    ['/signup'],
+    ['/guide'],
+    ['/index'],
+    ['/admin'],
+    ['/editor'],
+    ['/viewer'],
+    ['/auth-callback'],
+    ['/archive'],
+  ])('clean URL %s should be served with must-revalidate Cache-Control', (path) => {
+    const h = effectiveHeaders(path);
+    expect(h['Cache-Control']).toBe('public, max-age=0, must-revalidate');
+  });
+
+  it('the bare site root "/" should also get must-revalidate (index)', () => {
+    const h = effectiveHeaders('/');
+    expect(h['Cache-Control']).toBe('public, max-age=0, must-revalidate');
+  });
+});
+
+// ===========================================================================
+// BUG 2 [low] REGRESSION — debug.html is a PUBLIC (no-auth) page that surfaces
+// the Supabase session, current user, public.users row, and sb-* localStorage
+// JWT tokens. config.js lists '/debug' + '/debug.html' in PUBLIC_PAGES, so
+// auth-guard treats it as not requiring login. A diagnostic page that exposes
+// session tokens should be admin-gated, not public.
+//
+// We load assets/config.js into a sandboxed `window`-ish global and inspect
+// the resulting PUBLIC_PAGES / ADMIN_PAGES sets. The pinned tests assert the
+// FIXED state (debug NOT public; debug IS admin-gated) and flip green once
+// config.js is corrected.
+// ===========================================================================
+
+function loadConfig() {
+  // config.js assigns onto `window.*`. We give it a fresh fake window each
+  // call so test ordering can't leak state, then return that window.
+  const src = readFileSync(
+    resolve(__dirname, '..', '..', 'assets', 'config.js'),
+    'utf-8'
+  );
+  const win = {};
+  // `window` inside the script resolves to our sandbox object.
+  // eslint-disable-next-line no-new-func
+  const fn = new Function('window', src);
+  fn(win);
+  return win;
+}
+
+describe('config.js — page access classification (Bug 2 context)', () => {
+  let win;
+  beforeAll(() => {
+    win = loadConfig();
+  });
+
+  it('PUBLIC_PAGES and ADMIN_PAGES are Sets', () => {
+    expect(win.PUBLIC_PAGES).toBeInstanceOf(Set);
+    expect(win.ADMIN_PAGES).toBeInstanceOf(Set);
+  });
+
+  it('genuinely public pages stay public (login/signup/guide/root)', () => {
+    for (const p of ['/', '/login', '/login.html', '/signup', '/guide']) {
+      expect(win.PUBLIC_PAGES.has(p)).toBe(true);
+    }
+  });
+
+  it('admin.html is admin-gated and NOT public', () => {
+    expect(win.ADMIN_PAGES.has('/admin')).toBe(true);
+    expect(win.ADMIN_PAGES.has('/admin.html')).toBe(true);
+    expect(win.PUBLIC_PAGES.has('/admin')).toBe(false);
+    expect(win.PUBLIC_PAGES.has('/admin.html')).toBe(false);
+  });
+
+  it('no page is simultaneously listed PUBLIC and ADMIN (disjoint sets)', () => {
+    const overlap = [...win.ADMIN_PAGES].filter((p) => win.PUBLIC_PAGES.has(p));
+    expect(overlap).toEqual([]);
+  });
+});
+
+describe('config.js — BUG 2: debug page must not be publicly accessible', () => {
+  let win;
+  beforeAll(() => {
+    win = loadConfig();
+  });
+
+  // Fixed: debug is no longer public (token-dumping diagnostic now admin-gated).
+  it('/debug and /debug.html are no longer in PUBLIC_PAGES (fixed)', () => {
+    expect(win.PUBLIC_PAGES.has('/debug')).toBe(false);
+    expect(win.PUBLIC_PAGES.has('/debug.html')).toBe(false);
+  });
+
+  // Pinned desired state: debug must NOT be public (token-dumping diagnostic).
+  it('/debug should NOT be in PUBLIC_PAGES (exposes session JWTs)', () => {
+    expect(win.PUBLIC_PAGES.has('/debug')).toBe(false);
+  });
+
+  it('/debug.html should NOT be in PUBLIC_PAGES (exposes session JWTs)', () => {
+    expect(win.PUBLIC_PAGES.has('/debug.html')).toBe(false);
+  });
+
+  it('/debug should be admin-gated (in ADMIN_PAGES) or removed entirely', () => {
+    // Acceptable fix: gate behind admin. (Deleting debug.html from prod also
+    // satisfies "not public" above; this pin documents the recommended fix.)
+    expect(win.ADMIN_PAGES.has('/debug')).toBe(true);
+  });
+});
+
+// ===========================================================================
+// robots.txt — advisory-only noindex is NOT access control (Bug 2 context).
+// We assert robots Disallow covers the sensitive internal paths AND that
+// vercel.json backs it with X-Robots-Tag noindex — documenting that both are
+// SEO-only and cannot substitute for auth gating on /debug.
+// ===========================================================================
+
+describe('robots.txt — disallows sensitive internal paths (advisory only)', () => {
+  let robots;
+  beforeAll(() => {
+    robots = readFileSync(
+      resolve(__dirname, '..', '..', 'robots.txt'),
+      'utf-8'
+    );
+  });
+
+  it.each([
+    ['/debug'],
+    ['/admin'],
+    ['/editor'],
+    ['/viewer'],
+    ['/auth-callback'],
+    ['/api/'],
+  ])('Disallow: %s is present', (path) => {
+    expect(robots).toMatch(new RegExp('^Disallow:\\s*' + path.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'm'));
+  });
+
+  it('debug is covered by vercel.json X-Robots-Tag noindex too', () => {
+    const INTERNAL_SRC = '/:p(admin|debug|editor|viewer|auth-callback)(\\.html)?';
+    const re = vercelSourceToRegExp(INTERNAL_SRC);
+    expect(re.test('/debug')).toBe(true);
+    expect(headersFor(INTERNAL_SRC)['X-Robots-Tag']).toBe('noindex, nofollow');
+  });
+});

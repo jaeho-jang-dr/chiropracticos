@@ -23,6 +23,8 @@
   let exactSet = new Set();   // 정확 일치 URL
   let prefixes = [];           // /로 끝나는 prefix
   let loaded = false;
+  let wasSeeded = false;       // localStorage 캐시로 hide 목록을 시드했는지
+  let failClosed = false;      // 캐시 없는데 fetch 실패 → 보호적으로 모든 후보 숨김
 
   // FOUC 방어 — 직전 세션에서 캐시한 hide 목록을 동기로 시드.
   // 첫 페인트 이전에 알려진 hidden URL을 숨김. fetch 결과 도착 후 갱신.
@@ -37,6 +39,7 @@
           cached.exact.forEach(function (u) { exactSet.add(u); });
           prefixes = cached.prefixes.slice();
           loaded = true;
+          wasSeeded = true;
         }
       }
     }
@@ -49,6 +52,7 @@
   }
 
   function isHidden(url) {
+    if (failClosed) return !!url;  // fail-closed: 회수 목록 불명 → 모든 후보 숨김
     if (!url || !loaded) return false;
     if (exactSet.has(url)) return true;
     for (let i = 0; i < prefixes.length; i++) {
@@ -82,15 +86,24 @@
     el.style.display = 'none';
   }
 
+  var MEDIA_SEL = 'img[src], video[src], audio[src], iframe[src], source[src]';
+
   function applyHide(root) {
     if (!loaded) return;
     const r = root || document;
+    // MutationObserver가 넘기는 최상위 노드는 그 자신이 <a>/미디어일 수 있음 —
+    // querySelectorAll은 root 자신을 빼므로 root.matches도 함께 검사.
+    if (r.nodeType === 1 && r.matches) {
+      if (r.matches('a[href]') && isHidden(r.getAttribute('href'))) hideElement(r);
+      if (r.matches(MEDIA_SEL) && isHidden(r.getAttribute('src'))) hideElement(r);
+    }
+    if (!r.querySelectorAll) return;
     // <a href>
     r.querySelectorAll('a[href]').forEach(function (a) {
       if (isHidden(a.getAttribute('href'))) hideElement(a);
     });
     // media src
-    r.querySelectorAll('img[src], video[src], audio[src], iframe[src], source[src]').forEach(function (el) {
+    r.querySelectorAll(MEDIA_SEL).forEach(function (el) {
       if (isHidden(el.getAttribute('src'))) hideElement(el);
     });
   }
@@ -108,6 +121,7 @@
           else exactSet.add(row.url);
         });
         loaded = true;
+        failClosed = false;  // 성공 로드 → fail-closed 해제
         applyHide();
         // 다음 페이지 로드의 FOUC 방어용으로 캐시
         try {
@@ -122,7 +136,17 @@
       })
       .catch(function (e) {
         console.warn('[hide-guard] load failed', e);
-        loaded = true;  // 실패해도 page는 진행
+        if (wasSeeded) {
+          // 캐시가 이미 있으면 마지막 hide 목록을 유지(공개 자산은 그대로).
+          loaded = true;
+        } else {
+          // 캐시도 없고 fetch도 실패 → 어떤 자산이 회수됐는지 알 수 없음.
+          // fail-OPEN(전부 노출)은 회수 콘텐츠 유출이므로, 성공 로드 전까지
+          // 모든 후보 미디어를 보호적으로 숨김(fail-closed).
+          failClosed = true;
+          loaded = true;
+          try { applyHide(); } catch (_) {}
+        }
       });
   }
 
@@ -135,6 +159,12 @@
       });
     });
   });
+  // 같은 페이지에서 중복 로드 시(주로 테스트 환경) 이전 인스턴스의 observer를 정리 —
+  // 누적된 stale observer가 옛 hide 목록으로 DOM을 건드리지 않도록.
+  try {
+    if (window.__hideGuardMO) window.__hideGuardMO.disconnect();
+    window.__hideGuardMO = mo;
+  } catch (_) {}
 
   // 캐시 시드된 상태라면 즉시 동기 hide — FOUC 방어
   if (loaded) {

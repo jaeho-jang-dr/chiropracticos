@@ -176,14 +176,84 @@ describe('hide-guard', () => {
     expect(document.getElementById('bad').dataset.hidden).toBeUndefined();
   });
 
-  it('handles fetch failure gracefully (does not throw, leaves loaded=true)', async () => {
+  it('handles fetch failure gracefully (does not throw)', async () => {
     document.body.innerHTML =
       '<a id="x" href="https://media.example.com/secret.pdf">x</a>';
     vi.spyOn(console, 'warn').mockImplementation(() => {});
     vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('network')));
-    runGuard();
+    expect(() => {
+      runGuard();
+    }).not.toThrow();
     await flushMicrotasks();
-    expect(document.getElementById('x').style.display).toBe('');
+  });
+
+  // -------------------------------------------------------------------------
+  // BUG #3 [medium] (PINNED with it.fails): hide-guard FAILS OPEN for a
+  // first-time visitor (no localStorage cache) when the Supabase fetch errors.
+  // The catch handler sets loaded=true while exactSet/prefixes stay empty, so
+  // isHidden() returns false for every URL and applyHide() hides nothing. A
+  // network blip / Supabase outage / ad-blocker / RLS error therefore renders
+  // every admin-hidden (withdrawn / leaked) asset. FIX: fail CLOSED on a hard
+  // fetch error when no cache was seeded — track a wasSeeded flag and do NOT
+  // flip loaded=true (so isHidden()/applyHide() do nothing OR hide all
+  // candidate media) unless cached data was already present.
+  // After the fix, replace `it.fails` with `it`.
+  // -------------------------------------------------------------------------
+  it(
+    'BUG#3: fails CLOSED — hidden asset is not left visible on fetch error with no cache',
+    async () => {
+      // no localStorage cache seeded (beforeEach clears it)
+      document.body.innerHTML =
+        '<a id="bad" href="https://media.example.com/withdrawn.pdf">x</a>';
+      vi.spyOn(console, 'warn').mockImplementation(() => {});
+      vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('network')));
+      runGuard();
+      await flushMicrotasks();
+      // A withdrawn asset must NOT remain reachable just because the fetch
+      // failed. Fail-closed (hide candidate media until a successful load)
+      // is the protective outcome the guard exists to provide.
+      expect(document.getElementById('bad').style.display).toBe('none');
+    }
+  );
+
+  it(
+    'BUG#3: a withdrawn asset added AFTER a failed no-cache fetch is still hidden',
+    async () => {
+      vi.spyOn(console, 'warn').mockImplementation(() => {});
+      vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('network')));
+      runGuard();
+      await flushMicrotasks();
+      // observer-injected withdrawn asset must not silently leak either
+      const a = document.createElement('a');
+      a.id = 'bad';
+      a.setAttribute('href', 'https://media.example.com/withdrawn.pdf');
+      document.body.appendChild(a);
+      await flushMicrotasks();
+      expect(document.getElementById('bad').style.display).toBe('none');
+    }
+  );
+
+  // Coverage: a CACHED user must KEEP their last-known hide list even when the
+  // refresh fetch errors (this path is correct today and must stay correct
+  // after the fail-closed fix — only the no-cache path changes).
+  it('cached user keeps hidden assets when the refresh fetch errors', async () => {
+    window.localStorage.setItem('__hide_guard_cache_v1', JSON.stringify({
+      ts: Date.now(),
+      exact: ['https://media.example.com/withdrawn.pdf'],
+      prefixes: [],
+    }));
+    document.body.innerHTML =
+      '<a id="bad" href="https://media.example.com/withdrawn.pdf">x</a>' +
+      '<a id="ok" href="https://media.example.com/public.pdf">x</a>';
+    vi.spyOn(console, 'warn').mockImplementation(() => {});
+    vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('network')));
+    runGuard();
+    // synchronous seed from cache hides it before paint
+    expect(document.getElementById('bad').style.display).toBe('none');
+    await flushMicrotasks();
+    // refresh failed, but cached hide list survives → still hidden
+    expect(document.getElementById('bad').style.display).toBe('none');
+    expect(document.getElementById('ok').style.display).toBe('');
   });
 
   // -------------------------------------------------------------------------
