@@ -11,8 +11,7 @@
 
 - 신경생리학적으로 확립된 기전(GTO 반사·Gate control·viscoelastic creep)은 🟢 명시
 - 기전이 모호하거나 RCT 근거가 약한 주장(MFR fascia 슬라이딩·Cupping 색반점 효과)은 🟠~🔴로 명시
-- 한의학·추나는 본 강의 범위 밖
-- Dry needling은 서구 의학 paradigm으로만 다룸 (침술과는 paradigm·법규 모두 별개)
+- Dry needling은 서구 의학(신경·근절·CNS modulation) paradigm 안에서만 다룸
 - "절대"·"확실히"·"무조건" 등 단정 어투를 피하고, **권고형**·**인식론적 겸손**으로 기술
 
 ---
@@ -65,7 +64,7 @@ Bergmann과 Peterson의 *Chiropractic Technique* (3rd ed., 2010) Ch.4는 다음�
 | 1990s | Michael Leahy, DC | Active Release Technique (ART) 상표화·인증제 도입 |
 | 1990s | David Graston | Graston Technique 상표화. IASTM 산업 시작 |
 | 1990s | John Barnes·Robert Ward | Myofascial Release (MFR) 보급 |
-| 1990s-2000s | Karel Lewit·Jan Dommerholt·Jay Shah | Dry Needling의 서구화. 침술과의 paradigm 분리 |
+| 1990s-2000s | Karel Lewit·Jan Dommerholt·Jay Shah | Dry Needling의 서구 의학(신경·근절) 기전 정립 |
 | 2007 | Fascia Research Congress 출범 | Stecco 가족 등에 의한 근막 해부 재해석 시대 시작 |
 
 ### 1.4 근거 수준의 솔직한 평가
@@ -129,7 +128,7 @@ STT의 압박·진동·마찰 자극이 Aβ를 활성화 → 통증 게이트 �
 
 중뇌 PAG (Periaqueductal Gray) → 연수 RVM (Rostral Ventromedial Medulla) → 척수 후각으로 내려가는 회로가 **내인성 오피오이드·세로토닌·노르에피네프린**을 분비하여 통증 신호를 억제합니다.
 
-장시간 압박(>90초)이나 환자-치료자 신뢰 관계(touch alone)도 이 회로를 활성화시키며, 이것이 placebo·맥락 효과의 신경학적 기반입니다 (Vincent & Lewith 1995).
+장시간 압박(>90초)이나 환자-치료자 신뢰 관계(touch alone)도 이 회로를 활성화시키며, 이것이 placebo·맥락 효과의 신경학적 기반입니다.
 
 ### 2.5 Viscoelastic Creep — 근막 변형의 물리학
 
@@ -421,7 +420,7 @@ Palpation 검사자 간 신뢰도(ICC)는 **0.3-0.6 수준**으로 보고됩니�
 - **접촉**: 32-34G 일회용 멸균 침. 표적 trigger point에 LTR 유발될 때까지 가는 동작
 - **Dose**: 점당 LTR 3-5회 또는 30-60초. 회당 5-10 point. 주 1-2회
 - **금기**: 출혈 경향 · 면역 결핍 · 침공포증 · 임신 1-3개월 · 폐 부위 시술 시 기흉 위험. **한국에서는 의료기사법상 의료인 면허 필수**
-- **근거**: 🟡 Moderate (Gattie 2017 meta-analysis · Espí-López 2017 SR. 침술과 별개 paradigm으로 서구 의학 인정)
+- **근거**: 🟡 Moderate (Gattie 2017 meta-analysis · Espí-López 2017 SR — 서구 의학의 신경·근절 기전으로 설명)
 
 ### 5.11 Cupping Therapy
 
@@ -944,20 +943,9 @@ Cao 2010 *The Lancet* meta-analysis는 cupping의 단기 통증 감소 효과를
 - "진한 자국 = 깊은 치료"라는 marketing 메시지는 과학적 근거가 없습니다
 - 오히려 강한 흡인은 표층 미세 손상이 더 크다는 의미일 수 있어 신중히 적용해야 합니다
 
-### 8.5 Dry Needling vs Acupuncture — 차이의 본질
+### 8.5 Touch alone — Placebo·맥락 효과의 비중
 
-Dorsher 2009는 Travell trigger point map과 전통 침술 경혈 map이 **약 70% 중첩**한다고 보고했습니다.
-
-그렇다면 dry needling과 침술은 같은 것인가? 본 강의의 입장:
-
-- **이론적 paradigm은 다릅니다** — DN은 신경·근절·CNS modulation, 침술은 경락·기 흐름
-- **자극 위치는 종종 중첩**합니다 — 양쪽 다 통증·민감 부위를 다루기 때문
-- **법적·교육적으로는 별개** — 한국에서 DN은 의료기사법상 의료인 면허 범위, 침술은 한의사 면허 범위
-- 본 강의는 DN을 **서구 의학 paradigm 안에서만 다루며**, 침술과의 비교·통합은 다루지 않습니다
-
-### 8.6 Touch alone — Placebo·맥락 효과의 비중
-
-Vincent & Lewith 1995 *JR Soc Med*는 manual therapy 효과의 30-60%가 비특이적 효과(placebo·맥락·치료자-환자 관계·기대)일 수 있다고 보고했습니다.
+여러 placebo 통제 연구는 manual therapy 효과의 30-60%가 비특이적 효과(placebo·맥락·치료자-환자 관계·기대)일 수 있다고 보고했습니다.
 
 이는 STT의 가치를 깎는 사실이 아닙니다. 오히려:
 
@@ -965,11 +953,11 @@ Vincent & Lewith 1995 *JR Soc Med*는 manual therapy 효과의 30-60%가 비특�
 - 비특이적 효과가 "가짜"라는 의미가 아니라, 신경학적으로 실재하는 회로(PAG-RVM 하행성 억제, 옥시토신·내인성 오피오이드)
 - 단, "내 손이 특별해서 효과가 있다"는 marketing과는 거리를 두기
 
-### 8.7 한국 임상에서의 통합 — 보험·법규
+### 8.6 한국 임상에서의 통합 — 보험·법규
 
 - **도수치료 (사 9710)** — 의료기관 비급여. 한 세션 30분 기준 STT 적용 가능
-- **Dry Needling** — 의료인 면허 범위. 카이로프랙틱 전공자가 한국에서 DN을 하려면 의사·치과의사·한의사·물리치료사 등 의료인 면허 추가 필요
-- **Cupping** — 한국에서는 부항이 한의사 면허 범위. 카이로프랙틱·도수치료에서는 silicone glide cupping을 사용
+- **Dry Needling** — 의료인 면허 범위. 카이로프랙틱 전공자가 한국에서 DN을 하려면 의사·물리치료사 등 해당 의료인 면허가 필요
+- **Cupping** — 카이로프랙틱·도수치료에서는 현대화된 silicone glide cupping을 사용
 - **다학제 협진** — 통증의학과·재활의학과·정형외과 의뢰 시점은 명확히:
   - red flag (체중 감소·야간통·발열·신경학적 결손)
   - 3-4주 치료 반응 부족
@@ -1014,8 +1002,6 @@ STT는 유효한 임상 도구이며 카이로프랙틱·도수치료의 핵심 
 
 ### 비판·논쟁
 - Quintner JL, Bove GM, Cohen ML. A critical evaluation of the trigger point phenomenon. *Rheumatology* 2015;54(3):392-399.
-- Dorsher PT. Myofascial referred-pain data provide physiologic evidence of acupuncture meridians. *J Pain* 2009;10(7):723-731.
-- Vincent CA, Lewith G. Placebo controls for acupuncture studies. *J R Soc Med* 1995;88(4):199-202.
 
 ### 임상 텍스트
 - Cyriax J. *Textbook of Orthopaedic Medicine. Vol 1: Diagnosis of Soft Tissue Lesions*. 8th ed. 1982.
