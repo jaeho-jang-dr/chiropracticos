@@ -174,6 +174,48 @@
 .layer-block.fascia  { border-left: 4px solid #14b8a6; }
 .layer-block.muscle  { border-left: 4px solid #c0392b; }
 .layer-block.bone    { border-left: 4px solid #6b7280; }
+
+/* ── 임상 케이스 접기/펼치기 (처음엔 제목만) ── */
+.case-collapse {
+  margin: 1rem 0;
+  border: 1px solid rgba(0,0,0,.1);
+  border-left: 4px solid #0071e3;
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+  scroll-margin-top: 110px;
+}
+.case-collapse > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1rem 1.25rem;
+  font-weight: 700;
+  font-size: 1.06em;
+  color: #1d1d1f;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  user-select: none;
+  transition: background .15s ease;
+}
+.case-collapse > summary::-webkit-details-marker { display: none; }
+.case-collapse > summary:hover { background: #f5f8ff; }
+.case-collapse > summary::before {
+  content: "▸";
+  color: #0071e3;
+  font-size: .9em;
+  transition: transform .18s ease;
+  flex: 0 0 auto;
+}
+.case-collapse[open] > summary::before { transform: rotate(90deg); }
+.case-collapse[open] > summary {
+  border-bottom: 1px solid rgba(0,0,0,.07);
+  background: #f5f8ff;
+}
+.case-collapse .case-body { padding: .25rem 1.25rem 1.25rem; }
+.case-collapse .case-body > h4:first-child { margin-top: .9rem; }
+/* 직접 링크(#case-…)로 들어오면 자동으로 펼침 */
+.case-collapse:target { border-left-color: #0a84ff; box-shadow: 0 0 0 2px rgba(10,132,255,.15); }
 </style>
 <style id="med-abbr-css">
 abbr.med-abbr {
@@ -919,8 +961,10 @@ strong abbr.med-abbr { color: inherit; }
         각 케이스는 30분 세션 1회 분량 + 후속 처치 계획까지 포함합니다.
       </p>
 
-      <h3 id="case-rotator-cuff">7.1 케이스 A — 회전근개 손상 (Rotator Cuff Tendinopathy / Partial Tear)</h3>
-      <div class="callout callout-info" style="margin: 1rem 0;">
+      <details class="case-collapse" id="case-rotator-cuff">
+        <summary>7.1 케이스 A — 회전근개 손상 (Rotator Cuff Tendinopathy / Partial Tear)</summary>
+        <div class="case-body">
+<div class="callout callout-info" style="margin: 1rem 0;">
         <h4>임상 표현</h4>
         <p>40-60대 어깨 외측·전외측 통증, 야간통, 야간 환측 와위 어려움. 머리 빗기·뒷주머니 손 넣기·등 가려운 곳 긁기 어려움. 보통 supraspinatus·infraspinatus가 먼저 침범됩니다.</p>
       </div>
@@ -982,9 +1026,13 @@ strong abbr.med-abbr { color: inherit; }
         <li>주 2회 × 3주(6세션) 후 호전 부족 → <strong>초음파·MRI 의뢰</strong> (full-thickness tear 감별)</li>
         <li><strong>적신호</strong>: 외상 후 즉시 외전 불가 (drop arm + dramatic weakness) → 즉시 정형외과 의뢰 (수술적 봉합 검토)</li>
       </ul>
+        </div>
+      </details>
 
-      <h3 id="case-frozen-shoulder">7.2 케이스 B — 유착성 피막염 / 동결견 (Adhesive Capsulitis, Frozen Shoulder)</h3>
-      <div class="callout callout-info" style="margin: 1rem 0;">
+      <details class="case-collapse" id="case-frozen-shoulder">
+        <summary>7.2 케이스 B — 유착성 피막염 / 동결견 (Adhesive Capsulitis, Frozen Shoulder)</summary>
+        <div class="case-body">
+<div class="callout callout-info" style="margin: 1rem 0;">
         <h4>임상 표현</h4>
         <p>40-60대(특히 여성·당뇨병 환자) 점진적 어깨 통증 + 모든 방향 ROM 제한 (특히 외회전 + 외전). 3단계 진행: ① Freezing(통증 우세, 6주-9개월) → ② Frozen(강직 우세, 4-9개월) → ③ Thawing(점진적 회복, 5-26개월). 본 강의는 ② Frozen 단계 STT 적용 중심.</p>
       </div>
@@ -1032,9 +1080,13 @@ strong abbr.med-abbr { color: inherit; }
         <li>의뢰 옵션: 관절강 내 스테로이드 주사 · hydrodilatation · manipulation under anesthesia (MUA) · 관절경적 capsular release</li>
         <li><strong>적신호</strong>: 외상 후 갑작스러운 강직 + 야간 발열 → 화농성 관절염·결정성 관절염 감별 (즉시 의뢰)</li>
       </ul>
+        </div>
+      </details>
 
-      <h3 id="case-epicondylitis">7.3 케이스 C — 주관절 외측·내측 상과염 (Tennis & Golfer's Elbow)</h3>
-      <div class="callout callout-info" style="margin: 1rem 0;">
+      <details class="case-collapse" id="case-epicondylitis">
+        <summary>7.3 케이스 C — 주관절 외측·내측 상과염 (Tennis & Golfer's Elbow)</summary>
+        <div class="case-body">
+<div class="callout callout-info" style="margin: 1rem 0;">
         <h4>임상 표현</h4>
         <p>외측: 손목 신전·잡기 동작에서 외측상과 통증 (ECRB 부착부). 내측: 손목 굴곡·회내(pronation) 동작에서 내측상과 통증 (pronator teres·flexor carpi radialis 부착부). 본질은 부착부 tendinopathy → Cyriax DTFM의 정통 적응증.</p>
       </div>
@@ -1099,9 +1151,13 @@ strong abbr.med-abbr { color: inherit; }
         <li>주사 치료 옵션: PRP > 스테로이드 (Coombes 2010 — 스테로이드는 단기 효과 후 장기 재발 ↑)</li>
         <li><strong>적신호</strong>: 안정 시 통증·야간통·신경학적 결손 → 신경 압박 또는 다른 질환 감별</li>
       </ul>
+        </div>
+      </details>
 
-      <h3 id="case-acute-lbp-psoas">7.4 케이스 D — 급성 요통 + 장요근(Psoas) 경직</h3>
-      <div class="callout callout-info" style="margin: 1rem 0;">
+      <details class="case-collapse" id="case-acute-lbp-psoas">
+        <summary>7.4 케이스 D — 급성 요통 + 장요근(Psoas) 경직</summary>
+        <div class="case-body">
+<div class="callout callout-info" style="margin: 1rem 0;">
         <h4>임상 표현</h4>
         <p>물건 들거나 몸 비틀다가 갑자기 시작된 요통. 똑바로 서기 어렵고, 누우면 다리를 약간 굽혀야 편함. 걷기 어렵고 한쪽으로 기우뚱(antalgic gait). <strong>핵심 단서: 앙와위에서 양 다리 신전이 통증을 유발하지만 무릎 굴곡 시 즉시 완화</strong> — psoas 경직의 전형적 표현. Adam Forward Bend 등으로 보일 수 있는 협의 측만(scoliosis)도 종종 동반.</p>
       </div>
@@ -1177,9 +1233,13 @@ strong abbr.med-abbr { color: inherit; }
         <li>주 2-3회 × 2주 후 호전 부족 → MRI (디스크 탈출·신경근병증 감별)</li>
         <li><strong>적신호 즉시 의뢰</strong>: cauda equina (saddle anesthesia + 양측 좌골 통증 + 요실금/대변 실금) → 응급 신경외과</li>
       </ul>
+        </div>
+      </details>
 
-      <h3 id="case-plantar-fasciitis">7.5 케이스 E — 족저근막염 (Plantar Fasciitis) — 상세 프로토콜</h3>
-      <div class="callout callout-info" style="margin: 1rem 0;">
+      <details class="case-collapse" id="case-plantar-fasciitis">
+        <summary>7.5 케이스 E — 족저근막염 (Plantar Fasciitis) — 상세 프로토콜</summary>
+        <div class="case-body">
+<div class="callout callout-info" style="margin: 1rem 0;">
         <h4>임상 표현</h4>
         <p>아침 첫 걸음·장시간 앉아 있다 일어선 후 처음 몇 걸음 발뒤꿈치 통증. 점차 걷다 보면 완화되지만 오래 서있으면 다시 악화. 족저근막(plantar aponeurosis)의 calcaneal 부착부 또는 medial calcaneal tubercle 압통이 핵심.</p>
       </div>
@@ -1243,9 +1303,13 @@ strong abbr.med-abbr { color: inherit; }
         <li>중재 옵션: ESWT (Extracorporeal Shockwave) > PRP > 스테로이드 주사 (스테로이드는 fat pad atrophy·rupture 위험)</li>
         <li><strong>적신호</strong>: 야간 안정 시 통증 · 발열 · 종창 → 골수염·뼈 종양 감별</li>
       </ul>
+        </div>
+      </details>
 
-      <h3 id="case-cervical-strain">7.6 케이스 F — 경추 염좌 / 편타손상 (Cervical Strain / Whiplash) — SCM·Scalene Release 상세</h3>
-      <div class="callout callout-info" style="margin: 1rem 0;">
+      <details class="case-collapse" id="case-cervical-strain">
+        <summary>7.6 케이스 F — 경추 염좌 / 편타손상 (Cervical Strain / Whiplash) — SCM·Scalene Release 상세</summary>
+        <div class="case-body">
+<div class="callout callout-info" style="margin: 1rem 0;">
         <h4>임상 표현</h4>
         <p>교통사고(특히 후방 추돌) 또는 갑작스러운 경부 굴곡-신전 손상 후 경부 후방·측방 통증, 두통(특히 후두부), 경부 강직, 어지러움. 보호적 근수축으로 SCM·scalene·승모근이 과긴장 상태가 됩니다. 신경역동 자극(상지 저림) 동반 가능 — scalene이 brachial plexus·subclavian artery를 통과시키는 통로(thoracic outlet)이기 때문.</p>
       </div>
@@ -1353,9 +1417,13 @@ strong abbr.med-abbr { color: inherit; }
         <li><strong>두통이 4주 후에도 지속</strong> → 신경과 의뢰 (post-traumatic headache, ICHD-3)</li>
         <li>WAD Grade III-IV (신경학적 결손·골절) → 즉시 정형외과·신경외과</li>
       </ul>
+        </div>
+      </details>
 
-      <h3 id="case-tension-headache">7.7 케이스 G — 만성 긴장성 두통 + 후두하 부위 (보조)</h3>
-      <ol>
+      <details class="case-collapse" id="case-tension-headache">
+        <summary>7.7 케이스 G — 만성 긴장성 두통 + 후두하 부위 (보조)</summary>
+        <div class="case-body">
+<ol>
         <li><strong>평가</strong>: NDI · 후두하·승모근·SCM trigger point · ROM · ULNT</li>
         <li><strong>1차</strong>: 후두하근 TPT (앙와위 sub-occipital release 90초)</li>
         <li><strong>2차</strong>: 상부 승모근·견갑거근 Nimmo 3 cycle</li>
@@ -1364,15 +1432,21 @@ strong abbr.med-abbr { color: inherit; }
         <li><strong>자가관리</strong>: chin tuck · 1시간마다 자세 점검</li>
         <li>(케이스 F 6.3 SCM·Scalene 프로토콜 일부 통합 가능)</li>
       </ol>
+        </div>
+      </details>
 
-      <h3 id="case-tmj">7.8 케이스 H — TMJ 통증·개구 제한 (보조)</h3>
-      <ol>
+      <details class="case-collapse" id="case-tmj">
+        <summary>7.8 케이스 H — TMJ 통증·개구 제한 (보조)</summary>
+        <div class="case-body">
+<ol>
         <li><strong>평가</strong>: 개구량 · 측방 이동 · 교근·측두근 trigger point · 클릭음</li>
         <li><strong>1차</strong>: 교근·측두근 TPT (외측 + 내측 — 구내 접근은 면허 범위 확인)</li>
         <li><strong>2차</strong>: 흉쇄유돌근(SCM) MFR (케이스 F 프로토콜 참조)</li>
         <li><strong>3차</strong>: 턱 개폐 PNF (양손 가벼운 저항)</li>
         <li><strong>의뢰</strong>: 디스크 변위·관절원판 손상 의심 시 치과·구강외과</li>
       </ol>
+        </div>
+      </details>
 
       <h3>7.9 한국 외래 시간 배분 (사 9710 도수치료 기준 30분 세션)</h3>
       <ul>
