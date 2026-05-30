@@ -216,6 +216,25 @@
 .case-collapse .case-body > h4:first-child { margin-top: .9rem; }
 /* 직접 링크(#case-…)로 들어오면 자동으로 펼침 */
 .case-collapse:target { border-left-color: #0a84ff; box-shadow: 0 0 0 2px rgba(10,132,255,.15); }
+
+/* ── NotebookLM AI 동영상 플레이어 ── */
+.nlm-video {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 12px;
+  padding: 1rem 1rem 1.1rem;
+  flex: 1 1 320px;
+  min-width: 280px;
+}
+.nlm-video .nlm-video-head {
+  display: flex; align-items: center; gap: .5rem;
+  font-weight: 700; margin-bottom: .6rem;
+}
+.nlm-video video {
+  width: 100%; border-radius: 10px; background: #000;
+  display: block; aspect-ratio: 16 / 9;
+}
+.nlm-video small { display: block; margin-top: .5rem; color: #6e6e73; font-size: .84em; }
 </style>
 <style id="med-abbr-css">
 abbr.med-abbr {
@@ -1567,7 +1586,7 @@ strong abbr.med-abbr { color: inherit; }
     <!-- ========== RESOURCES ========== -->
     <section id="resources">
       <h2>강의 자료</h2>
-      <p class="section-lead">강의록 MD + v3 4부작 팟캐스트 라이브. 영상·슬라이드·리포트는 후속 배포 예정.</p>
+      <p class="section-lead">강의록 MD · v3 4부작 팟캐스트 · AI 동영상 2부 · 슬라이드 4부 모두 라이브.</p>
       <h3>📖 강의록</h3>
       <div class="resource-row">
         <a class="resource-link" href="./viewer.html?src=soft_tissue/lecture/chapter13_soft_tissue.md"><span class="icon">📖</span><span><strong>상세 강의록 MD</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>근거 기반 · 참고문헌</small></span></a>
@@ -1581,18 +1600,26 @@ strong abbr.med-abbr { color: inherit; }
         <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/soft_tissue/podcasts_v3/04_episode4_critical.m4a?v=20260529b"><span class="icon">🎧</span><span><strong>Ep 4 · 비판과 인식론적 겸손 — Trigger point 논쟁부터 한국 임상까지</strong> <span class="status-badge ready">✅ NEW</span><br/><small>Quintner-Cohen · MFR fascia 가설 · Cupping 색반점 · DN과 침술 paradigm · 다학제 협진</small></span></a>
       </div>
 
-      <h3>🎥 AI 동영상</h3>
+      <h3>🎥 AI 동영상 (NotebookLM · 한국어)</h3>
       <div class="resource-row">
-        <span class="resource-link" style="opacity:.7;"><span class="icon">⏳</span><span><strong>Part 1 (이론·해부)</strong> <span class="status-badge" style="background:#fff3cd;color:#664d03;">제작 대기</span><br/><small>NotebookLM 비디오 생성 예정</small></span></span>
-        <span class="resource-link" style="opacity:.7;"><span class="icon">⏳</span><span><strong>Part 2 (임상·11 기법)</strong> <span class="status-badge" style="background:#fff3cd;color:#664d03;">제작 대기</span><br/><small>NotebookLM 비디오 생성 예정</small></span></span>
+        <div class="nlm-video">
+          <div class="nlm-video-head">🎬 Part 1 · 이론·해부 <span class="status-badge ready">✅ NEW</span></div>
+          <video controls preload="metadata" playsinline src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/soft_tissue/videos_v1/02_video_part1_theory.mp4"></video>
+          <small>역사(Cyriax·Travell·Nimmo·Rolf·Janda) · 신경생리(근막·수용기·Gate·creep) · Aff/Def/Eff</small>
+        </div>
+        <div class="nlm-video">
+          <div class="nlm-video-head">🎬 Part 2 · 임상·11 기법 <span class="status-badge ready">✅ NEW</span></div>
+          <video controls preload="metadata" playsinline src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/soft_tissue/videos_v1/03_video_part2_clinical.mp4"></video>
+          <small>평가 4 층위 · 11 기법 · 임상 케이스 · 비판과 인식론적 겸손</small>
+        </div>
       </div>
 
-      <h3>🎴 PPTX 슬라이드 (4개 × 15장 예정)</h3>
+      <h3>🎴 슬라이드 (NotebookLM · PDF · 클릭하면 미리보기)</h3>
       <div class="resource-row">
-        <span class="resource-link" style="opacity:.7;"><span class="icon">⏳</span><span><strong>Part 1 · 기초</strong> <span class="status-badge" style="background:#fff3cd;color:#664d03;">제작 대기</span><br/><small>15장 예정</small></span></span>
-        <span class="resource-link" style="opacity:.7;"><span class="icon">⏳</span><span><strong>Part 2 · Aff/Def/Eff</strong> <span class="status-badge" style="background:#fff3cd;color:#664d03;">제작 대기</span><br/><small>15장 예정</small></span></span>
-        <span class="resource-link" style="opacity:.7;"><span class="icon">⏳</span><span><strong>Part 3 · 11 기법</strong> <span class="status-badge" style="background:#fff3cd;color:#664d03;">제작 대기</span><br/><small>15장 예정</small></span></span>
-        <span class="resource-link" style="opacity:.7;"><span class="icon">⏳</span><span><strong>Part 4 · 임상·비판</strong> <span class="status-badge" style="background:#fff3cd;color:#664d03;">제작 대기</span><br/><small>15장 예정</small></span></span>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/soft_tissue/slides_v1/01_part1_basics.pdf"><span class="icon">🎴</span><span><strong>Part 1 · 기초</strong> <span class="status-badge ready">✅ NEW</span><br/><small>역사·STT 위치·근거 수준</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/soft_tissue/slides_v1/02_part2_affdefeff.pdf"><span class="icon">🎴</span><span><strong>Part 2 · Aff/Def/Eff</strong> <span class="status-badge ready">✅ NEW</span><br/><small>신경생리·11 기법 매트릭스</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/soft_tissue/slides_v1/03_part3_techniques.pdf"><span class="icon">🎴</span><span><strong>Part 3 · 11 기법</strong> <span class="status-badge ready">✅ NEW</span><br/><small>각 기법 원리·시술법·근거</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/soft_tissue/slides_v1/04_part4_clinical.pdf"><span class="icon">🎴</span><span><strong>Part 4 · 임상·비판</strong> <span class="status-badge ready">✅ NEW</span><br/><small>평가·8 케이스·근거 한계</small></span></a>
       </div>
 
       <p style="margin-top:1rem">NotebookLM 노트북: <a href="https://notebooklm.google.com/notebook/864b5f73-6fa2-44f4-83fa-7a4620e0c17a" target="_blank" rel="noopener">열기 →</a> (88 sources)</p>
@@ -1618,8 +1645,8 @@ strong abbr.med-abbr { color: inherit; }
           <ul>
             <li><a href="./viewer.html?src=soft_tissue/lecture/chapter13_soft_tissue.md">전체 강의록 MD</a></li>
             <li><a href="#resources">🎧 팟캐스트 v3 4부작</a></li>
-            <li><em>영상 제작 대기</em></li>
-            <li><em>PPTX 제작 대기</em></li>
+            <li><a href="#resources">🎥 AI 동영상 2부</a></li>
+            <li><a href="#resources">🎴 슬라이드 4부 (PDF)</a></li>
           </ul>
         </div>
         <div class="footer-col">
