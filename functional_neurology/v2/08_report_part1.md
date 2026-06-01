@@ -5,7 +5,7 @@
 본 보고서는 한국의 의사(MD) 및 물리치료사(PT)를 대상으로, 기능 신경학(Functional Neurology, 이하 FN)을 현대 신경과학의 관점에서 재해석하여 임상 현장에서 활용할 수 있도록 돕는 보완 지침서입니다. 본 보고서는 Carrick Institute의 전통적인 개념을 수용하되, 동료 검토(Peer-reviewed) 문헌과 생리학적 기전에 근거한 엄격한 기준을 적용하며 다음의 편집 원칙을 준수합니다.
 
 *   🟢 **포함 원칙:** 신경생리학적 기초, 근거 기반의 조작적 정의(Operational Definition), 비침습적 재활 기전, 정량적 기능 평가, 최신 신경가소성 연구.
-*   🔴 **제외 원칙:** 두개천골 요법(CST), 내장 교정, <abbr class="med-abbr" title="Applied Kinesiology · 응용 운동학 (George Goodheart, 1964)">AK</abbr>(Applied Kinesiology) 진단법 등 과학적 근거가 부족하거나 생리학적 기전이 입증되지 않은 대안 요법.
+*   🔴 **제외 원칙:** 두개천골 요법(CST), 내장 교정, AK(Applied Kinesiology) 진단법 등 과학적 근거가 부족하거나 생리학적 기전이 입증되지 않은 대안 요법.
 
 ### Paradigm Shift: 하드웨어(Hardware)에서 소프트웨어(Software)로
 전통적인 임상 신경학이 <abbr class="med-abbr" title="Magnetic Resonance Imaging · 자기공명영상">MRI</abbr>나 CT와 같은 영상 진단을 통해 뇌의 구조적 손상(Hardware, 예: 병변, 종양, 출혈)을 찾는 데 주력한다면, 기능 신경학은 신경계의 정보 처리 효율성과 네트워크의 운영 상태, 즉 **소프트웨어(Software)**적 측면에 집중합니다. 이는 기능 신경학이 표준 의학적 치료를 대체하는 것이 아니라, 기존의 진단 시스템에서 명확한 원인을 찾지 못하는 '회색 지대(Grey Area)' 환자들을 위한 **보완적 패러다임(Complementary Paradigm)**임을 의미합니다.
@@ -81,7 +81,7 @@ FN은 심박수(HR), 혈압(BP), 산소 관류량을 실시간 지표로 활용�
 *   **진단 및 평가:** 
     *   안구 운동 분석 (Saccade, Pursuit 평가)
     *   동적 균형 측정 (Computerized Posturography)
-    *   말초 신경 포착 증후군 검사 (<abbr class="med-abbr" title="Thoracic Outlet Syndrome · 흉곽출구 증후군">TOS</abbr>, 수근관 증후군, 비골신경 압박 등)
+    *   말초 신경 포착 증후군 검사 (TOS, 수근관 증후군, 비골신경 압박 등)
 *   **치료 기법:**
     *   **결합형 경추 교정(Coupled cervical adjustments):** 전통적인 '비결합(Uncoupled)' 방식보다 경추 후관절의 자연스러운 움직임을 활용하여 척추에 무리를 주지 않으면서(Kinder to the spine) 특정 뇌 반구에 정밀한 **편측성 자극(Unilateral brain stimulation)**을 전달합니다.
     *   **빠른 신장 중재(Fast-stretch adjustments):** 관절 및 인대 수용기를 자극하여 뇌 기반 기전으로 근육 톤(Muscle Tone)을 정상화하고 관절 유착을 해제합니다.

@@ -17,7 +17,7 @@
 
 1.  **1단계: 병력 청취(History)** - 주소증 파악 및 신경학적 배경 탐색 (OPQRST + FN)
 2.  **2단계: 관찰(Observation)** - 정적/동적 자세, 보행, 피부 상태를 통한 비언어적 징후 포착
-3.  **3단계: 기본 신경학 검사(Basic Neurology)** - 뇌신경, DTR, 병적 반사, 근력(<abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr>) 확인
+3.  **3단계: 기본 신경학 검사(Basic Neurology)** - 뇌신경, DTR, 병적 반사, 근력(MMT) 확인
 4.  **4단계: FN 특화 검사(Functional Neurology Specifics)** - 안구 운동, 전정 기관, 소뇌, 자율신경계 및 뇌 균형 정밀 분석
 5.  **5단계: 영상 및 실험실 의뢰(Imaging/Lab Referral)** - 기질적 병변 확진을 위한 MRI, CT, 혈액 검사 의뢰
 
@@ -32,7 +32,7 @@
 | **Onset** | 발병 시기 및 상황 | 기질적(갑작스러운 외상) vs 기능적(점진적 불균형) 감별 |
 | **Provocation** | 악화/완화 요인 | 특정 머리 움직임, 빛/소리 과민성, 자세에 따른 증상 변화 |
 | **Quality** | 증상의 성격 | 둔한 통증, 박동성, 회전성 어지럼증, 인지적 안개(Brain Fog) |
-| **Region** | 발생 부위 | 피부분절(Dermatome) 및 말초신경 포착 지점(<abbr class="med-abbr" title="Thoracic Outlet Syndrome · 흉곽출구 증후군">TOS</abbr>, 수근관 등) 확인 |
+| **Region** | 발생 부위 | 피부분절(Dermatome) 및 말초신경 포착 지점(TOS, 수근관 등) 확인 |
 | **Severity** | 강도 (<abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도">VAS</abbr> 0-10) | 자율신경계 과활성(교감신경 항진)과의 상관관계 파악 |
 | **Timing** | 시간적 패턴 | 지속성 vs 간헐성, 하루 중 증상이 심해지는 시간대 분석 |
 | **FN 특화** | **<abbr class="med-abbr" title="Traumatic Brain Injury · 외상성 뇌손상">TBI</abbr>/Concussion** | 과거 두부 외상력, 의식 소실 여부, 외상 후 인지/감각 변화 |

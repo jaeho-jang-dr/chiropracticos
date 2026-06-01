@@ -14,7 +14,7 @@
 *   **역치(Threshold)와 반복(Repetition):** 효과적인 가소성을 유도하려면 자극이 신경 세포의 활성 역치를 넘어야 하지만, 세포의 대사 한계를 초과하는 과부하(Metabolic fatigue)는 피해야 합니다. 자극의 '일관된 반복'만이 장기 강화(LTP)를 형성할 수 있습니다.
 
 ### 의사결정 트리 및 수기 기전
-*   **신경학적 수기 (Haavik et al. 2017):** 관절 수기(<abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr>, MOB, MET)는 단순한 골격 정렬이 아닙니다. 이는 고유수용성 수용기를 통해 뇌로 전달되는 강력한 '신경학적 신호'입니다. 특히 분절적 분사(Segmental firing)를 통해 감각-운동 통합(Sensorimotor integration) 과정에서 전두엽 및 소뇌의 가소성을 자극하는 도구로 활용됩니다.
+*   **신경학적 수기 (Haavik et al. 2017):** 관절 수기(HVLA, MOB, MET)는 단순한 골격 정렬이 아닙니다. 이는 고유수용성 수용기를 통해 뇌로 전달되는 강력한 '신경학적 신호'입니다. 특히 분절적 분사(Segmental firing)를 통해 감각-운동 통합(Sensorimotor integration) 과정에서 전두엽 및 소뇌의 가소성을 자극하는 도구로 활용됩니다.
 
 ### 재활 드릴(Drill) 상세화
 *   **시운동 재훈련 (Visual Rehab):**
@@ -38,7 +38,7 @@
 ### 객관적 지표와 PROM 매칭
 | 분류 | 객관적 지표 (Standardized Tests) | 환자 보고 성과 지표 (PROM) |
 | :--- | :--- | :--- |
-| **통증 및 척추 기능** | 관절 가동 범위(<abbr class="med-abbr" title="Range of Motion · 관절가동범위">ROM</abbr>), 도수 근력 테스트(<abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr>) | <abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도">VAS</abbr>, <abbr class="med-abbr" title="Numeric Pain Rating Scale · 숫자통증등급 (0-10)">NPRS</abbr>, <abbr class="med-abbr" title="Oswestry Disability Index · Oswestry 요통 장애지수 (0-100)">ODI</abbr>, <abbr class="med-abbr" title="Neck Disability Index · 경부장애지수 (0-50)">NDI</abbr> |
+| **통증 및 척추 기능** | 관절 가동 범위(ROM), 도수 근력 테스트(MMT) | <abbr class="med-abbr" title="Visual Analog Scale · 시각 아날로그 척도">VAS</abbr>, <abbr class="med-abbr" title="Numeric Pain Rating Scale · 숫자통증등급 (0-10)">NPRS</abbr>, ODI, NDI |
 | **전정 및 균형** | VNG(안구 운동 기록), Posturography | <abbr class="med-abbr" title="Dizziness Handicap Inventory · 어지럼장애지수 (0-100, ≥18 변화 = MCID)">DHI</abbr>(어지럼증), <abbr class="med-abbr" title="Post-Concussion Symptom Scale · 뇌진탕 후 증상 척도">PCSS</abbr>(뇌진탕 지표) |
 | **삶의 질 및 심리** | 심박 변이도(HRV), 혈압 변화 | SF-36(삶의 질), 벡 우울 척도(BDI) |
 
@@ -57,7 +57,7 @@ AHRQ(2007)의 <abbr class="med-abbr" title="Evidence-Based Medicine · 근거 �
 *   **🟢 Strong (강함):** 양질의 <abbr class="med-abbr" title="Randomized Controlled Trial · 무작위대조군시험">RCT</abbr> 및 메타분석 존재.
     *   <abbr class="med-abbr" title="Benign Paroxysmal Positional Vertigo · 양성돌발성체위현훈 (이석 이탈)">BPPV</abbr> 관관절 이석 정복술, 말초 전정 기관 손상 후 전정 재활 훈련, 낙상 방지를 위한 균형 훈련.
 *   **🟡 Moderate (보통):** 특정 상황에서 유효성 입증.
-    *   뇌진탕 후유증(Vestibular/Ocular), 경추성 두통의 <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr>, 만성 요통의 보충적 관리.
+    *   뇌진탕 후유증(Vestibular/Ocular), 경추성 두통의 SMT, 만성 요통의 보충적 관리.
 *   **🟠 Limited (제한적):** 증례 보고 중심.
     *   중추 감작 통증 교육(Moseley 2015), 복합부위통증증후군(CRPS)의 거울 치료.
 *   **🔴 No evidence (근거 없음):** 과학적 입증 부족 및 과장 주장.
@@ -157,7 +157,7 @@ AHRQ(2007)의 <abbr class="med-abbr" title="Evidence-Based Medicine · 근거 �
 27. Silber JH, et al. (2000). The hospital and patient characteristics of failure-to-rescue. *Med Care*.
 28. Taub E, et al. (2002). Constraint-induced movement therapy. *Arch Phys Med Rehabil*.
 29. Tourangeau AE, et al. (2002). Nursing-related determinants of 30-day mortality. *Nursing Research*.
-30. Van Essen <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>, et al. (2013). The WU-Minn Human Connectome Project. *NeuroImage*.
+30. Van Essen DC, et al. (2013). The WU-Minn Human Connectome Project. *NeuroImage*.
 31. Yardley L, et al. (2004). Vestibular rehabilitation for dizziness. *Cochrane Database Syst Rev*.
 32. Zedlitz AM, et al. (2012). Cognitive treatment for post-stroke fatigue. *Stroke*.
 33. Zetzsche T, et al. (2001). Neural mechanisms of visual orientation. *Nature*.

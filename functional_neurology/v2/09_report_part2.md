@@ -77,7 +77,7 @@ Hemisphericity는 교감 신경의 과활성화를 유도합니다. 이는 빈�
     *   **Coupled Cervical Adjustments:** 경추의 자연스러운 관절 각도(Side-bending과 Rotation이 같은 방향)를 활용하는 '커플드 모션' 교정은 관절에 가해지는 부담이 적고, 특정 편측 뇌 자극(Unilateral brain stimulation)을 훨씬 정교하게 수행할 수 있습니다.
     *   **Fast-Stretch:** 근긴장도의 장기적 정상화를 위해 활용합니다.
 3.  **Processing (신경 처리):** 선택된 자극이 뇌로 유입되어 신경 가소적 변화와 CIS의 최적화를 유도합니다.
-4.  **Efferent Change (원심성 변화):** 교정 후 즉각적인 근긴장도 정상화, HRV 안정, 혈압 감소, 그리고 <abbr class="med-abbr" title="Thoracic Outlet Syndrome · 흉곽출구 증후군">TOS</abbr>(흉곽출구증후군), 카팔 터널 증후군과 같은 말초 신경 포착 증후군의 개선 여부를 확인합니다.
+4.  **Efferent Change (원심성 변화):** 교정 후 즉각적인 근긴장도 정상화, HRV 안정, 혈압 감소, 그리고 TOS(흉곽출구증후군), 카팔 터널 증후군과 같은 말초 신경 포착 증후군의 개선 여부를 확인합니다.
 5.  **Re-Assessment (재평가):** 지표의 변화를 즉각 확인하여 치료 계획을 수정하거나 강화합니다.
 
 ## 6. 결론 및 요약

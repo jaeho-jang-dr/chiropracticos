@@ -133,7 +133,7 @@
 
 ### 왜 "Chiropractic" Functional Neurology인가
 
-카이로프랙틱 분야에서 이 프레임을 본격 발전시킨 사람이 **Frederick R. Carrick <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr>, PhD**이고, 그가 1979년 설립한 **Carrick Institute**를 중심으로 1980년대부터 **Diplomate of the American Chiropractic Neurology Board (<abbr class="med-abbr" title="Diplomate of American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 전문의">DACNB</abbr>)** 자격 체계가 구축되었다. 오늘날 "Chiropractic Functional Neurology"라 할 때는 이 카리큘럼·임상 전통을 가리킨다.
+카이로프랙틱 분야에서 이 프레임을 본격 발전시킨 사람이 **Frederick R. Carrick DC, PhD**이고, 그가 1979년 설립한 **Carrick Institute**를 중심으로 1980년대부터 **Diplomate of the American Chiropractic Neurology Board (<abbr class="med-abbr" title="Diplomate of American Chiropractic Neurology Board · 미국 카이로프랙틱 신경학 전문의">DACNB</abbr>)** 자격 체계가 구축되었다. 오늘날 "Chiropractic Functional Neurology"라 할 때는 이 카리큘럼·임상 전통을 가리킨다.
 
 그러나 본 강의는 카이로프랙틱 내부 학파에 국한되지 않고, **신경생리학·재활의학·물리치료·신경외과** 등 여러 분야의 근거를 통합적으로 활용한다.
 
@@ -198,7 +198,7 @@ FN 내부 주장들의 근거 수준은 크게 차이가 난다:
 - Vitalism·Innate Intelligence와 연결되는 설명
 - 두개골 리듬·내장 기능장애 등 측정 불가 개념
 - 측정 방법이 재현 불가능하거나 주관적인 평가 도구
-- Applied Kinesiology의 근력검사 기반 진단 (🔴 근거 부족; 본 강의에서는 <abbr class="med-abbr" title="Applied Kinesiology · 응용 운동학 (George Goodheart, 1964)">AK</abbr>는 Chapter 12에서 별도로 비판적으로 다룸)
+- Applied Kinesiology의 근력검사 기반 진단 (🔴 근거 부족; 본 강의에서는 AK는 Chapter 12에서 별도로 비판적으로 다룸)
 
 이 입장은 **학생·임상 동료·환자에게 설명할 때도 일관**되어야 한다. 과장이 필요하지 않다. 검증된 부분만으로도 FN은 임상에 **확실히 유용**하다.
 
@@ -406,7 +406,7 @@ FN 재활 프로토콜(안구 운동 훈련·전정 habituation·고유수용 �
 | III | Golgi 인대 | 인대 | 고역치 | 관절 끝범위·인대 장력 |
 | IV | 자유신경종말 | 전조직 분포 | 다양 | 통각·염증 감지 |
 
-**임상 해석**: 관절에 **<abbr class="med-abbr" title="High-Velocity Low-Amplitude · 고속·저진폭 수기 교정">HVLA</abbr> 추력(thrust)**이 가해지면 주로 Type I·II·III가 활성화되며, 이 입력이 척수·소뇌·피질로 전달되어 근긴장·통증·자세 조절을 즉시 변화시킬 수 있다.
+**임상 해석**: 관절에 **HVLA 추력(thrust)**이 가해지면 주로 Type I·II·III가 활성화되며, 이 입력이 척수·소뇌·피질로 전달되어 근긴장·통증·자세 조절을 즉시 변화시킬 수 있다.
 
 > **Wyke BD.** Articular neurology — a review. *Physiotherapy* 1972;58(3):94-99.
 
@@ -678,7 +678,7 @@ Deafferentation이 지속되면:
 
 🔴 병적 반사 양성 = **신경과 응급 의뢰 대상** (수기 전 반드시 확인)
 
-### 4.5.3 근력(<abbr class="med-abbr" title="Manual Muscle Testing · 도수 근력 검사">MMT</abbr>) · 감각 · 협응
+### 4.5.3 근력(MMT) · 감각 · 협응
 
 - **MMT 0-5** (Medical Research Council scale)
 - **감각**: 경증 촉각·바늘·진동·위치감각 분절별
@@ -918,7 +918,7 @@ Assessment에서 **저하된 입력·중추 처리 결함**을 확인했다면, 
 | BPPV canalith repositioning | 🟢 Strong | Bhattacharyya 2017 <abbr class="med-abbr" title="Clinical Practice Guideline · 임상진료지침">CPG</abbr> |
 | Vestibular rehab (unilateral periph) | 🟢 Strong | Hillier Cochrane 2015 |
 | Concussion vestib/ocular rehab | 🟡 Moderate | Schneider 2014 RCT |
-| Cervicogenic headache <abbr class="med-abbr" title="Spinal Manipulative Therapy · 척추 도수 치료">SMT</abbr> | 🟡 Moderate | Bryans JMPT 2011 |
+| Cervicogenic headache SMT | 🟡 Moderate | Bryans JMPT 2011 |
 | 중추 감작 통증 교육+운동 | 🟡 Moderate | Moseley 2015 |
 | 만성 요통 SMT | 🟡 Moderate | Rubinstein Cochrane 2013 |
 | "뇌 자극으로 자폐 호전" | 🔴 No evidence | — |
@@ -945,7 +945,7 @@ CFN의 많은 임상 주장은 **기초 신경생리학적 가능성**은 있으
 
 | 과장 주장 (🔴) | 근거 있는 주장 (🟢·🟡) |
 |---------------|---------------------|
-| 단일 교정으로 전신 질환 치료 | 관절 수기가 국소 통증·<abbr class="med-abbr" title="Range of Motion · 관절가동범위">ROM</abbr> 단기 개선 |
+| 단일 교정으로 전신 질환 치료 | 관절 수기가 국소 통증·ROM 단기 개선 |
 | 뇌 자극으로 자폐·ADHD 치료 | 전정 재활이 특정 어지럼증 개선 |
 | 눈 운동 훈련으로 모든 학습장애 해결 | 뇌진탕 후 VOR 훈련이 일부 증상 개선 |
 | 반구 불균형이 대부분 질환의 원인 | 소뇌·전정 기능 저하가 일부 증상에 기여 |
@@ -1029,7 +1029,7 @@ CFN의 많은 임상 주장은 **기초 신경생리학적 가능성**은 있으
 2. Bhattacharyya N, Gubbels SP, Schwartz SR, et al. Clinical Practice Guideline: Benign Paroxysmal Positional Vertigo (Update). *Otolaryngol Head Neck Surg* 2017;156(3_suppl):S1-S47.
 3. Schmahmann JD. The cerebellar cognitive affective syndrome. *Brain* 1998;121:561-579.
 4. Leigh RJ, Zee DS. **The Neurology of Eye Movements.** 5th ed. Oxford University Press, 2015.
-5. Herdman SJ, Clendaniel <abbr class="med-abbr" title="Rheumatoid Arthritis · 류마티스 관절염">RA</abbr>. **Vestibular Rehabilitation.** 4th ed. FA Davis, 2014.
+5. Herdman SJ, Clendaniel RA. **Vestibular Rehabilitation.** 4th ed. FA Davis, 2014.
 
 ## 10.8 자율신경과 수기 치료
 
