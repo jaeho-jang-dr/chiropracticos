@@ -103,7 +103,7 @@ echo "🚀 Deploying to Vercel (force purge)..."
 DEPLOY_OUT=$(vercel deploy --prod --yes --force \
   --token "$VERCEL_TOKEN" \
   --scope "$VERCEL_SCOPE" 2>&1)
-NEW_URL=$(echo "$DEPLOY_OUT" | grep -oE "https://chiropractic-[a-z0-9]+-perseus[^\"]+\.vercel\.app" | head -1)
+NEW_URL=$(echo "$DEPLOY_OUT" | grep -oE "https://chiro(praticos|practic)-[a-z0-9]+-perseus[^\"]+\.vercel\.app" | head -1)
 
 if [[ -z "$NEW_URL" ]]; then
   echo "❌ Deploy failed:"
