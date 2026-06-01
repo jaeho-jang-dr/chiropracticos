@@ -1533,3 +1533,122 @@ body {
   }
 }
 
+/* ========== 임상 워크플로우 (뼈대) 다이어그램 & 자극의 스펙트럼 테이블 ========== */
+.workflow-container {
+  margin: 1.5rem 0 2.5rem;
+}
+
+.workflow-diagram {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0.4rem;
+  padding: 0.5rem 0;
+}
+
+.workflow-step {
+  flex: 1;
+  background: var(--c-bg-elevated);
+  border: 1px solid var(--c-border-light);
+  border-radius: var(--r-md);
+  padding: 1.25rem 0.75rem;
+  text-align: center;
+  box-shadow: var(--sh-sm);
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), border-color 0.2s var(--ease);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workflow-step:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--sh-md);
+  border-color: var(--c-accent);
+}
+
+.workflow-step .step-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--c-accent);
+  background: rgba(0, 113, 227, 0.08);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--r-pill);
+  margin-bottom: 0.75rem;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.workflow-step h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: var(--c-text);
+  word-break: keep-all;
+}
+
+.workflow-step p {
+  font-size: 0.75rem;
+  color: var(--c-text-muted);
+  margin: 0;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.workflow-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--c-text-tertiary);
+  font-weight: bold;
+  user-select: none;
+}
+
+/* 스펙트럼 테이블 모바일 스크롤 및 레이아웃 최적화 */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: var(--r-md);
+  border: 1px solid var(--c-border-light);
+  box-shadow: var(--sh-sm);
+}
+
+.table-container .data-table {
+  margin: 0;
+  border: none;
+}
+
+.table-container .data-table th {
+  white-space: nowrap;
+}
+
+.table-container .data-table td strong {
+  color: var(--c-text);
+}
+
+/* 미디어 쿼리 - 태블릿 및 모바일 최적화 */
+@media (max-width: 1024px) {
+  .workflow-diagram {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .workflow-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .workflow-diagram {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .workflow-diagram {
+    grid-template-columns: 1fr;
+  }
+}
+

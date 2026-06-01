@@ -1,0 +1,52 @@
+[
+  [
+    "chiro_01_diversified_audio",
+    "SUBMITTED",
+    "{'artifact_id': '8970b784-6e2e-496d-b281-7107a822a4a3', 'notebook_id': '029dc58f-f7e8-481e-8e73-7ec40e7ae4bd', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "chiro_02_gonstead_audio",
+    "SUBMITTED",
+    "{'artifact_id': '437719b7-89ad-4e3e-98b1-cc6449d9c884', 'notebook_id': '029dc58f-f7e8-481e-8e73-7ec40e7ae4bd', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "chiro_03_toggle_recoil_audio",
+    "SUBMITTED",
+    "{'artifact_id': '7e2cf28b-ad06-497a-8d7f-122599aa6d5c', 'notebook_id': '029dc58f-f7e8-481e-8e73-7ec40e7ae4bd', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "chiro_04_thompson_audio",
+    "SUBMITTED",
+    "{'artifact_id': '932b8115-594f-4150-9c02-353d4829bd5e', 'notebook_id': '029dc58f-f7e8-481e-8e73-7ec40e7ae4bd', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "chiro_05_activator_audio",
+    "SUBMITTED",
+    "{'artifact_id': '228a8c78-2576-4759-82d9-9b8e10915358', 'notebook_id': '029dc58f-f7e8-481e-8e73-7ec40e7ae4bd', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "chiro_06_cox_audio",
+    "SUBMITTED",
+    "{'artifact_id': 'b807e81a-2cbe-4f0e-be16-ff56b75587ee', 'notebook_id': '029dc58f-f7e8-481e-8e73-7ec40e7ae4bd', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "chiro_07_logan_audio",
+    "SUBMITTED",
+    "{'artifact_id': '034867f4-1448-40bc-9ea9-214d3a20bcbc', 'notebook_id': '029dc58f-f7e8-481e-8e73-7ec40e7ae4bd', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "chiro_08_sot_audio",
+    "SUBMITTED",
+    "{'artifact_id': '11078fa6-f233-4cc6-a23c-05722fd977ea', 'notebook_id': '029dc58f-f7e8-481e-8e73-7ec40e7ae4bd', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "chiro_09_carrick_neuro_audio",
+    "SUBMITTED",
+    "{'artifact_id': '7a485697-0373-420e-9d98-1bf57b9b45a8', 'notebook_id': '029dc58f-f7e8-481e-8e73-7ec40e7ae4bd', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "chiro_10_cbp_harrison_audio",
+    "SUBMITTED",
+    "{'artifact_id': '61e6c61e-0287-43c0-b3f9-574afd0875bf', 'notebook_id': '029dc58f-f7e8-481e-8e73-7ec40e7ae4bd', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ]
+]

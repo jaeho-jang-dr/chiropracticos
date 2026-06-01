@@ -1,0 +1,97 @@
+{
+  "checked_at": "2026-04-24",
+  "completed": [
+    {
+      "name": "ch11_cbp_podcast",
+      "artifact_id": "00d8accc-8eca-4198-a5a3-1a6e2045771c",
+      "type": "audio"
+    },
+    {
+      "name": "ch11_cbp_video1",
+      "artifact_id": "b35a46e2-6d7b-462a-b2e1-ea7e107c280b",
+      "type": "video"
+    },
+    {
+      "name": "ch11_cbp_video2",
+      "artifact_id": "f2e9628d-1ed4-4cd6-b8fc-51aae7d7dd5e",
+      "type": "video"
+    },
+    {
+      "name": "ch12_ak_podcast",
+      "artifact_id": "cc6911b6-c8ea-4f99-bc2a-08e79906f147",
+      "type": "audio"
+    },
+    {
+      "name": "ch12_ak_video1",
+      "artifact_id": "916cf7f1-bf55-4f53-86e3-8b23ce69ded1",
+      "type": "video"
+    },
+    {
+      "name": "ch12_ak_video2",
+      "artifact_id": "77541dcf-7c3b-43da-affc-f207d38df5a8",
+      "type": "video"
+    },
+    {
+      "name": "ch04_gonstead_slides1",
+      "artifact_id": "bb037c18-f69f-4726-ac1d-a30f37977a18",
+      "type": "slide_deck"
+    },
+    {
+      "name": "ch04_gonstead_slides2",
+      "artifact_id": "86babbbc-b7ab-4bce-b3bb-3ec81a41b2f4",
+      "type": "slide_deck"
+    },
+    {
+      "name": "ch04_gonstead_slides3",
+      "artifact_id": "a4ac3ace-fc4b-4706-9a10-f5ef526f6fd8",
+      "type": "slide_deck"
+    },
+    {
+      "name": "ch04_gonstead_slides4",
+      "artifact_id": "93a9adda-9b5f-444f-ac99-303ba21ec14b",
+      "type": "slide_deck"
+    },
+    {
+      "name": "ch05_toggle_slides1",
+      "artifact_id": "29475d83-d901-4f0b-be22-2bbe7e775c2b",
+      "type": "slide_deck"
+    },
+    {
+      "name": "ch05_toggle_slides2",
+      "artifact_id": "411f798e-5e9b-4a38-b07d-a11a1e891c27",
+      "type": "slide_deck"
+    },
+    {
+      "name": "ch05_toggle_slides3",
+      "artifact_id": "c353c981-d08f-48d9-8e1b-84c82816722f",
+      "type": "slide_deck"
+    },
+    {
+      "name": "ch05_toggle_slides4",
+      "artifact_id": "f6340164-d4be-495b-a920-3367751b549d",
+      "type": "slide_deck"
+    },
+    {
+      "name": "ch06_thompson_slides1",
+      "artifact_id": "44032c6c-27af-429a-a97f-0c6756dd918f",
+      "type": "slide_deck"
+    },
+    {
+      "name": "ch06_thompson_slides2",
+      "artifact_id": "23319ee5-ecb4-4969-ad64-a84ccea57f08",
+      "type": "slide_deck"
+    },
+    {
+      "name": "ch06_thompson_slides3",
+      "artifact_id": "724fc7f6-8df6-45a0-be57-34f394ca5f9c",
+      "type": "slide_deck"
+    },
+    {
+      "name": "ch06_thompson_slides4",
+      "artifact_id": "327ef02b-a159-4bf8-abac-c4ef78fa9bb3",
+      "type": "slide_deck"
+    }
+  ],
+  "in_progress": [],
+  "errors": []
+}

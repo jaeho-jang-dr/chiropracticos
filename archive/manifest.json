@@ -1,0 +1,321 @@
+{
+  "neurologic_exam_mp4": [
+    {
+      "src": "G:\\내 드라이브\\01 Sensory Pain.MP4",
+      "dst": "archive/videos/neurologic_exam/01 Sensory Pain.MP4",
+      "name": "01 Sensory Pain.MP4",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\02 Weber vibration.MP4",
+      "dst": "archive/videos/neurologic_exam/02 Weber vibration.MP4",
+      "name": "02 Weber vibration.MP4",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\03 Motor.MP4",
+      "dst": "archive/videos/neurologic_exam/03 Motor.MP4",
+      "name": "03 Motor.MP4",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\04 Reflexes.MP4",
+      "dst": "archive/videos/neurologic_exam/04 Reflexes.MP4",
+      "name": "04 Reflexes.MP4",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\05 CNF test (1).mp4",
+      "dst": "archive/videos/neurologic_exam/05 CNF test (1).mp4",
+      "name": "05 CNF test (1).mp4",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\05 CNF test (2).mp4",
+      "dst": "archive/videos/neurologic_exam/05 CNF test (2).mp4",
+      "name": "05 CNF test (2).mp4",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\06 LOC.MP4",
+      "dst": "archive/videos/neurologic_exam/06 LOC.MP4",
+      "name": "06 LOC.MP4",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\07 posturegait.MP4",
+      "dst": "archive/videos/neurologic_exam/07 posturegait.MP4",
+      "name": "07 posturegait.MP4",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\08 Supine exam.MP4",
+      "dst": "archive/videos/neurologic_exam/08 Supine exam.MP4",
+      "name": "08 Supine exam.MP4",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\01 Sensory Pain.MP4",
+      "dst": "archive/videos/neurologic_exam/01 Sensory Pain.MP4",
+      "name": "01 Sensory Pain.MP4",
+      "copied": false
+    },
+    {
+      "src": "G:\\내 드라이브\\02 Weber vibration.MP4",
+      "dst": "archive/videos/neurologic_exam/02 Weber vibration.MP4",
+      "name": "02 Weber vibration.MP4",
+      "copied": false
+    },
+    {
+      "src": "G:\\내 드라이브\\03 Motor.MP4",
+      "dst": "archive/videos/neurologic_exam/03 Motor.MP4",
+      "name": "03 Motor.MP4",
+      "copied": false
+    },
+    {
+      "src": "G:\\내 드라이브\\04 Reflexes.MP4",
+      "dst": "archive/videos/neurologic_exam/04 Reflexes.MP4",
+      "name": "04 Reflexes.MP4",
+      "copied": false
+    },
+    {
+      "src": "G:\\내 드라이브\\05 CNF test (1).mp4",
+      "dst": "archive/videos/neurologic_exam/05 CNF test (1).mp4",
+      "name": "05 CNF test (1).mp4",
+      "copied": false
+    },
+    {
+      "src": "G:\\내 드라이브\\05 CNF test (2).mp4",
+      "dst": "archive/videos/neurologic_exam/05 CNF test (2).mp4",
+      "name": "05 CNF test (2).mp4",
+      "copied": false
+    },
+    {
+      "src": "G:\\내 드라이브\\06 LOC.MP4",
+      "dst": "archive/videos/neurologic_exam/06 LOC.MP4",
+      "name": "06 LOC.MP4",
+      "copied": false
+    },
+    {
+      "src": "G:\\내 드라이브\\07 posturegait.MP4",
+      "dst": "archive/videos/neurologic_exam/07 posturegait.MP4",
+      "name": "07 posturegait.MP4",
+      "copied": false
+    },
+    {
+      "src": "G:\\내 드라이브\\08 Supine exam.MP4",
+      "dst": "archive/videos/neurologic_exam/08 Supine exam.MP4",
+      "name": "08 Supine exam.MP4",
+      "copied": false
+    }
+  ],
+  "lectures": [
+    {
+      "src": "G:\\내 드라이브\\Neurologic Exam 2015.pptx",
+      "dst": "archive/lectures/Neurologic Exam 2015.pptx",
+      "name": "Neurologic Exam 2015.pptx",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\chiropractic neurology 2\\Chiropractic Neurology.pptx",
+      "dst": "archive/lectures/Chiropractic Neurology.pptx",
+      "name": "Chiropractic Neurology.pptx",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\chiropractic neurology 2\\Neurologic examination.docx",
+      "dst": "archive/lectures/Neurologic examination.docx",
+      "name": "Neurologic examination.docx",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호\\Chiropractic (SMT)-장재호.pptx",
+      "dst": "archive/lectures/Chiropractic (SMT)-장재호.pptx",
+      "name": "Chiropractic (SMT)-장재호.pptx",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호\\Chiropractic.ppt",
+      "dst": "archive/lectures/Chiropractic.ppt",
+      "name": "Chiropractic.ppt",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호\\2006chiro광주발표.ppt",
+      "dst": "archive/lectures/2006chiro광주발표.ppt",
+      "name": "2006chiro광주발표.ppt",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Spine Intervention\\정형통증학회 강의 2010\\장재호교수님발표\\Chirosymposium.ppt",
+      "dst": "archive/lectures/Chirosymposium.ppt",
+      "name": "Chirosymposium.ppt",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Spine Intervention\\정형통증학회 강의 2010\\장재호교수님발표\\도수치료.hwp",
+      "dst": "archive/lectures/도수치료.hwp",
+      "name": "도수치료.hwp",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Spine Intervention\\정형통증학회 강의 2010\\장재호교수님발표\\Chiropractic Technique\\Chirotech.ppt",
+      "dst": "archive/lectures/Chirotech.ppt",
+      "name": "Chirotech.ppt",
+      "copied": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Spine Intervention\\정형통증학회 강의 2010\\Caucal Block\\도수치료-교과서.hwp",
+      "dst": "archive/lectures/정형외과학6판_도수치료.hwp",
+      "name": "정형외과학6판_도수치료.hwp",
+      "copied": true
+    }
+  ],
+  "lecture_pdfs": [
+    {
+      "src": "G:\\내 드라이브\\chiropracticos\\archive\\lectures\\Neurologic Exam 2015.pptx",
+      "pdf": "archive/lectures/Neurologic Exam 2015.pdf",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\chiropracticos\\archive\\lectures\\Chiropractic Neurology.pptx",
+      "pdf": "archive/lectures/Chiropractic Neurology.pdf",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\chiropracticos\\archive\\lectures\\Chiropractic (SMT)-장재호.pptx",
+      "pdf": "archive/lectures/Chiropractic (SMT)-장재호.pdf",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\chiropracticos\\archive\\lectures\\Chiropractic.ppt",
+      "pdf": "archive/lectures/Chiropractic.pdf",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\chiropracticos\\archive\\lectures\\2006chiro광주발표.ppt",
+      "pdf": "archive/lectures/2006chiro광주발표.pdf",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\chiropracticos\\archive\\lectures\\Chirosymposium.ppt",
+      "pdf": "archive/lectures/Chirosymposium.pdf",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\chiropracticos\\archive\\lectures\\Chirotech.ppt",
+      "pdf": "archive/lectures/Chirotech.pdf",
+      "converted": true
+    }
+  ],
+  "technique_videos": [
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Activator Tech.avi",
+      "dst": "archive/videos/techniques/activator_tech.mp4",
+      "name": "activator_tech.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\AP Thoracic.avi",
+      "dst": "archive/videos/techniques/ap_thoracic.mp4",
+      "name": "ap_thoracic.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Bilateral Hyphothenar push.avi",
+      "dst": "archive/videos/techniques/bilateral_hypothenar_push.mp4",
+      "name": "bilateral_hypothenar_push.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\CBP Tech head.avi",
+      "dst": "archive/videos/techniques/cbp_tech_head.mp4",
+      "name": "cbp_tech_head.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\CBP Tech Trunk.avi",
+      "dst": "archive/videos/techniques/cbp_tech_trunk.mp4",
+      "name": "cbp_tech_trunk.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Diversified Nelson pull 6.avi",
+      "dst": "archive/videos/techniques/diversified_nelson_pull.mp4",
+      "name": "diversified_nelson_pull.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Gonstead sitting.avi",
+      "dst": "archive/videos/techniques/gonstead_sitting.mp4",
+      "name": "gonstead_sitting.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Hypothenar Ilium push.avi",
+      "dst": "archive/videos/techniques/hypothenar_ilium_push.mp4",
+      "name": "hypothenar_ilium_push.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Hypothenar sacral apex push.avi",
+      "dst": "archive/videos/techniques/hypothenar_sacral_apex_push.mp4",
+      "name": "hypothenar_sacral_apex_push.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Index Atlas push prone rt.avi",
+      "dst": "archive/videos/techniques/index_atlas_push_prone_rt.mp4",
+      "name": "index_atlas_push_prone_rt.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Index Atlas push sup lt.avi",
+      "dst": "archive/videos/techniques/index_atlas_push_sup_lt.mp4",
+      "name": "index_atlas_push_sup_lt.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Index Atlas push sup rt.avi",
+      "dst": "archive/videos/techniques/index_atlas_push_sup_rt.mp4",
+      "name": "index_atlas_push_sup_rt.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Index pillar push sup rt.avi",
+      "dst": "archive/videos/techniques/index_pillar_push_sup_rt.mp4",
+      "name": "index_pillar_push_sup_rt.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Leander Tech.avi",
+      "dst": "archive/videos/techniques/leander_tech.mp4",
+      "name": "leander_tech.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Nimmo Tech.avi",
+      "dst": "archive/videos/techniques/nimmo_tech.mp4",
+      "name": "nimmo_tech.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Spinous push and pull.avi",
+      "dst": "archive/videos/techniques/spinous_push_and_pull.mp4",
+      "name": "spinous_push_and_pull.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Thompson Tech.avi",
+      "dst": "archive/videos/techniques/thompson_tech.mp4",
+      "name": "thompson_tech.mp4",
+      "converted": true
+    },
+    {
+      "src": "G:\\내 드라이브\\Dropbox\\Chiropractic 장재호  KOA 2015\\Thumb movement.avi",
+      "dst": "archive/videos/techniques/thumb_movement.mp4",
+      "name": "thumb_movement.mp4",
+      "converted": true
+    }
+  ]
+}

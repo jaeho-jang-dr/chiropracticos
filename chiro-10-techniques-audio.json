@@ -1,0 +1,27 @@
+{
+  "_comment": "Palmer 8대 핵심 테크닉 + Carrick 기능신경학 + Harrison CBP 총 10강 오디오 북 일괄 생성 (2026-04-22). NotebookLM 노트북: 카이로프랙틱정형외과 (029dc58f-...)",
+  "notebooks": {
+    "CHIRO_NB": "029dc58f-f7e8-481e-8e73-7ec40e7ae4bd"
+  },
+  "jobs": [
+    {"profile": "default",   "notebook_id": "029dc58f-f7e8-481e-8e73-7ec40e7ae4bd", "type": "audio", "focus": "1강 Diversified Technique — D.D. Palmer 창시의 가장 보편적인 HVLA(고속 저진폭) 수기 카이로프랙틱 교정술. 미국 카이로프랙터의 95.9%가 사용. Otto Reinert와 Joe Janse의 정립 과정, 운동촉진(motion palpation) 기반 분석, 접촉점과 교정선(line of correction), 관절 기능장애 회복 원리, 요통·경추통·사지 관절 적응증, 금기증(골절·종양·골다공증·척추 불안정성), 근거 수준에 대해 설명해주세요.", "label": "chiro_01_diversified_audio", "save_path": "downloads/chiro_01_diversified_audio.mp4"},
+
+    {"profile": "default",   "notebook_id": "029dc58f-f7e8-481e-8e73-7ec40e7ae4bd", "type": "audio", "focus": "2강 Gonstead Technique — Clarence S. Gonstead가 1923년 정립한 특이적 분석 시스템. 골반 foundation 개념과 Level Disc Theory, 디스크 쐐기화(open/closed wedge), 5가지 분석 요소의 일치(문진·자세·Nervoscope 기구·촉진·전장척추 X-ray), Gonstead listing 부호 체계, cervical chair adjustment와 Hi-Lo 테이블 교정, 요추 디스크 탈출증 적응증, X-ray 의존의 장단점, 미국 카이로프랙터 58.5% 사용률에 대해 설명해주세요.", "label": "chiro_02_gonstead_audio", "save_path": "downloads/chiro_02_gonstead_audio.mp4"},
+
+    {"profile": "default",   "notebook_id": "029dc58f-f7e8-481e-8e73-7ec40e7ae4bd", "type": "audio", "focus": "3강 Toggle Recoil / HIO (Hole-In-One) — B.J. Palmer가 1930년대에 발표한 상부경추 특이 교정술. '모든 질병의 단 하나의 원인은 C1 환추 서브럭세이션'이라는 HIO 가설, pisiform 접촉과 측와위 자세, 드롭 헤드피스의 spring-like 진동, 고속·저진폭·즉시 리코일의 3요소, 상부경추 X-ray 분석, NUCCA/Atlas Orthogonal/Grostic 등 파생 기법, 환축관절 불안정성 등 안전 고려사항, 두통·어지럼증 적응증에 대해 설명해주세요.", "label": "chiro_03_toggle_recoil_audio", "save_path": "downloads/chiro_03_toggle_recoil_audio.mp4"},
+
+    {"profile": "default",   "notebook_id": "029dc58f-f7e8-481e-8e73-7ec40e7ae4bd", "type": "audio", "focus": "4강 Thompson Terminal Point Technique — J. Clay Thompson이 1950년대 개발한 드롭 테이블 교정술. Segmental Drop Table의 공압 텐션 원리와 테이블 낙하 보조 추력, Derifield-Thompson Leg Check 분석(Romer & Mabel Derifield 유산), PD/ND 판정과 골반·경추 교정 순서, 최소 힘·고속 추력, 고령자·임산부·수기 거부 환자에서의 적용, 검사자 간 신뢰도 훈련 요구량, 미국 55.9% 사용률에 대해 설명해주세요.", "label": "chiro_04_thompson_audio", "save_path": "downloads/chiro_04_thompson_audio.mp4"},
+
+    {"profile": "default",   "notebook_id": "029dc58f-f7e8-481e-8e73-7ec40e7ae4bd", "type": "audio", "focus": "5강 Activator Methods — Arlan Fuhr가 1960년대 공동 창시한 세계에서 가장 널리 쓰이는 기구 교정(instrument adjusting) 테크닉. Activator Instrument의 140N 스프링 구동과 0.3-1.6mm 미세 분절 변위, 방어 반사 회피 원리, Basic Scan Protocol과 Pressure/Isolation Test 기반 Leg Length Reactivity 분석, 150편 이상의 peer-reviewed 논문과 NIH grant 수혜(카이로프랙틱 최초) 이력, 고령·소아·임산부·골감소증 환자에서의 안전 프로파일에 대해 설명해주세요.", "label": "chiro_05_activator_audio", "save_path": "downloads/chiro_05_activator_audio.mp4"},
+
+    {"profile": "drjang000", "notebook_id": "029dc58f-f7e8-481e-8e73-7ec40e7ae4bd", "type": "audio", "focus": "6강 Cox Flexion-Distraction — James M. Cox가 개발한 척추 감압 치료 테크닉. Cox Table의 굴곡-신연(flexion-distraction) 기전과 -192mmHg 추간판 내압 감소·28% 추간공 면적 증가, Protocol I(방사통 전용, 4초×5회×3세트 장축 신연)과 Protocol II(신연+HVLA 조작)의 구분, 요추/경추 추간판 탈출 + 신경근증 적응증, 마미증후군 등 절대 금기, 연방 연구비 지원을 받은 evidence-based 테크닉으로서의 위상, 수술 전후 재활에 대해 설명해주세요.", "label": "chiro_06_cox_audio", "save_path": "downloads/chiro_06_cox_audio.mp4"},
+
+    {"profile": "drjang000", "notebook_id": "029dc58f-f7e8-481e-8e73-7ec40e7ae4bd", "type": "audio", "focus": "7강 Logan Basic Technique — Hugh B. Logan이 1931년 'Universal Health Basic Technique'으로 발표한 극저강도 교정술. 천골을 척추 기저로 보는 이론, 천골 apex(sacrotuberous ligament 부착부) 접촉과 감은 눈꺼풀을 누르는 정도(<1kg, 2-10 온스)의 극미한 압력, 근육-인대 레버 시스템 원리, 임산부와 영유아·소아·고령자에서의 최고 안전성 프로파일, Logan University 계승, Surface EMG 임상시험 근거, 척추측만증·월경통 증례 보고에 대해 설명해주세요.", "label": "chiro_07_logan_audio", "save_path": "downloads/chiro_07_logan_audio.mp4"},
+
+    {"profile": "drjang000", "notebook_id": "029dc58f-f7e8-481e-8e73-7ec40e7ae4bd", "type": "audio", "focus": "8강 Sacro-Occipital Technique (SOT) — Major Bertrand DeJarnette가 1920년대부터 1992년까지 발전시킨 카테고리 기반 통합 교정술. 천골-후두골 1차 호흡성 운동과 경막 연결, Category I(골반 torsion·sacral nutation), Category II(천장관절 체중지지 인대 무결성 상실), Category III(요천추 디스크 병태)의 진단과 대응, 쐐기형 Pelvic Blocks 배치법, Cranial(두개골)·Visceral(내장 CMRT)·신경학적 압박점 확장, VAS 연구와 SORSI 표준에 대해 설명해주세요.", "label": "chiro_08_sot_audio", "save_path": "downloads/chiro_08_sot_audio.mp4"},
+
+    {"profile": "drjang000", "notebook_id": "029dc58f-f7e8-481e-8e73-7ec40e7ae4bd", "type": "audio", "focus": "9강 Chiropractic Functional Neurology — Dr. Ted Carrick(Frederick R. Carrick)가 정립한 뇌 중심 접근 카이로프랙틱 신경학. Carrick Institute 40년 역사, 뇌의 가소성(neuroplasticity)을 활용해 중추신경계-신체 소통 오류를 교정하는 원리, 전정-안구 반사(VOR)와 소뇌 기능 평가, 뇌진탕 후유증·만성 어지럼증·편두통 적응증, DACNB(Diplomate of American Chiropractic Neurology Board) 자격 체계, peer-reviewed 연구 현황과 비판적 평가에 대해 설명해주세요.", "label": "chiro_09_carrick_neuro_audio", "save_path": "downloads/chiro_09_carrick_neuro_audio.mp4"},
+
+    {"profile": "drjang000", "notebook_id": "029dc58f-f7e8-481e-8e73-7ec40e7ae4bd", "type": "audio", "focus": "10강 Chiropractic BioPhysics (CBP) — Dr. Donald D. Harrison과 Dr. Deed E. Harrison이 수학·선형대수 기반으로 정립한 생체역학적 교정술. Harrison 정상 척추 모델과 mirror-image® 교정법(변형 방향의 반대로 자세·운동·견인 적용), 경추 전만과 요추 전만 회복 프로토콜, Denneroll 기구를 이용한 3차원 견인, 거북목(forward head posture) 구조적 재활, IntechOpen·PMC 학술자료와 증례 시리즈 근거, X-ray 분석의 신뢰도에 대해 설명해주세요.", "label": "chiro_10_cbp_harrison_audio", "save_path": "downloads/chiro_10_cbp_harrison_audio.mp4"}
+  ]
+}

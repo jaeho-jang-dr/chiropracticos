@@ -1,0 +1,19 @@
+{
+  "session": "Day 3 오전 09:15 KST cron",
+  "attempt_date": "2026-04-25",
+  "attempted": 6,
+  "succeeded": 0,
+  "failed": 6,
+  "all_errors": "Could not create slide deck.",
+  "items_failed": [
+    {"name": "ch08_cox_slides3", "notebook_id": "4c81bbd8-19e9-4727-9e48-eaf5a0a389b2", "part": "Part 3 교정"},
+    {"name": "ch08_cox_slides4", "notebook_id": "4c81bbd8-19e9-4727-9e48-eaf5a0a389b2", "part": "Part 4 임상·비판"},
+    {"name": "ch09_logan_slides1", "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "part": "Part 1 기초"},
+    {"name": "ch09_logan_slides2", "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "part": "Part 2 진단"},
+    {"name": "ch09_logan_slides3", "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "part": "Part 3 교정"},
+    {"name": "ch09_logan_slides4", "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "part": "Part 4 임상·비판"}
+  ],
+  "quota_pattern_revision": "이전 가설(6-8h 부분 리셋) 수정 필요. 어제 18:00경 차단 → 오늘 09:15 (15h 경과)에도 여전히 차단. 24시간 hard reset이 더 정확할 가능성",
+  "next_retry": "Day 3 오후 17:35 KST cron — 어제 마지막 성공 17:35 → +24h",
+  "alternative_strategy": "Cox P3-4 + Logan × 4 제출은 17:35에 재시도. 그동안 콘텐츠 폴리싱(Ch 1 서설 MD, Ch 4-12 SVG)으로 전환"
+}

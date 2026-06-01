@@ -1,0 +1,221 @@
+{
+  "_comment": "Ch 4-12 audio+video 아티팩트 제출 결과 (2026-04-22)",
+  "artifacts_by_chapter": {
+    "chapter_04_gonstead": {
+      "chapter": 4,
+      "technique": "gonstead",
+      "jobs": [
+        {
+          "label": "ch04_gonstead_podcast",
+          "type": "podcast",
+          "status": "SUBMITTED",
+          "artifact_id": "8ef7afc4-ee91-4233-b274-7204f17f03ac"
+        },
+        {
+          "label": "ch04_gonstead_video1",
+          "type": "video1",
+          "status": "SUBMITTED",
+          "artifact_id": "0861b2cb-5be1-4dae-9322-aed32fb0c950"
+        },
+        {
+          "label": "ch04_gonstead_video2",
+          "type": "video2",
+          "status": "SUBMITTED",
+          "artifact_id": "c84eb414-f0d9-4cdf-92cc-c8d7aed47417"
+        }
+      ]
+    },
+    "chapter_05_toggle_recoil": {
+      "chapter": 5,
+      "technique": "toggle_recoil",
+      "jobs": [
+        {
+          "label": "ch05_toggle_recoil_podcast",
+          "type": "podcast",
+          "status": "SUBMITTED",
+          "artifact_id": "7a611d16-dd11-4dd4-8a95-d511bd41fb07"
+        },
+        {
+          "label": "ch05_toggle_recoil_video1",
+          "type": "video1",
+          "status": "SUBMITTED",
+          "artifact_id": "56b210f4-92bd-4732-89c6-9ecc76711291"
+        },
+        {
+          "label": "ch05_toggle_recoil_video2",
+          "type": "video2",
+          "status": "SUBMITTED",
+          "artifact_id": "53f57e13-a4e6-47c1-b4bb-f0b0fab087e0"
+        }
+      ]
+    },
+    "chapter_06_thompson": {
+      "chapter": 6,
+      "technique": "thompson",
+      "jobs": [
+        {
+          "label": "ch06_thompson_podcast",
+          "type": "podcast",
+          "status": "SUBMITTED",
+          "artifact_id": "9292cd5f-db63-4648-a680-f719351b2f95"
+        },
+        {
+          "label": "ch06_thompson_video1",
+          "type": "video1",
+          "status": "SUBMITTED",
+          "artifact_id": "b3eaeab5-b3ed-404f-b950-97393bd5343f"
+        },
+        {
+          "label": "ch06_thompson_video2",
+          "type": "video2",
+          "status": "SUBMITTED",
+          "artifact_id": "d93437bb-dfbc-44e7-86ca-d95e3f1de1a0"
+        }
+      ]
+    },
+    "chapter_07_activator": {
+      "chapter": 7,
+      "technique": "activator",
+      "jobs": [
+        {
+          "label": "ch07_activator_podcast",
+          "type": "podcast",
+          "status": "SUBMITTED",
+          "artifact_id": "c00c8088-d0f0-4628-8504-1c500776d6d2"
+        },
+        {
+          "label": "ch07_activator_video1",
+          "type": "video1",
+          "status": "SUBMITTED",
+          "artifact_id": "6fcceeb8-3db3-4e2d-b1db-f13802f0f7ae"
+        },
+        {
+          "label": "ch07_activator_video2",
+          "type": "video2",
+          "status": "SUBMITTED",
+          "artifact_id": "0f0f5676-e2a2-4bca-8eff-2e5d27a64efa"
+        }
+      ]
+    },
+    "chapter_08_cox": {
+      "chapter": 8,
+      "technique": "cox",
+      "jobs": [
+        {
+          "label": "ch08_cox_podcast",
+          "type": "podcast",
+          "status": "SUBMITTED",
+          "artifact_id": "9d8b2925-b9fd-4b95-acc1-9a9a817ed9d9"
+        },
+        {
+          "label": "ch08_cox_video1",
+          "type": "video1",
+          "status": "SUBMITTED",
+          "artifact_id": "047871d4-9e33-43c9-a3d1-9adac22717ec"
+        },
+        {
+          "label": "ch08_cox_video2",
+          "type": "video2",
+          "status": "SUBMITTED",
+          "artifact_id": "14cc09b6-9315-4110-8277-d84e3c96bab3"
+        }
+      ]
+    },
+    "chapter_09_logan": {
+      "chapter": 9,
+      "technique": "logan",
+      "jobs": [
+        {
+          "label": "ch09_logan_podcast",
+          "type": "podcast",
+          "status": "SUBMITTED",
+          "artifact_id": "68244ea8-061e-45a2-acce-e1e8de2446d6"
+        },
+        {
+          "label": "ch09_logan_video1",
+          "type": "video1",
+          "status": "SUBMITTED",
+          "artifact_id": "f9e42340-8268-46c9-8335-ba4689ddbe0a"
+        },
+        {
+          "label": "ch09_logan_video2",
+          "type": "video2",
+          "status": "SUBMITTED",
+          "artifact_id": "ea7b6482-f01f-48fe-8447-50cdcd4a58ec"
+        }
+      ]
+    },
+    "chapter_10_sot": {
+      "chapter": 10,
+      "technique": "sot",
+      "jobs": [
+        {
+          "label": "ch10_sot_podcast",
+          "type": "podcast",
+          "status": "SUBMITTED",
+          "artifact_id": "44b467ef-6a54-445c-b16f-387e355163b2"
+        },
+        {
+          "label": "ch10_sot_video1",
+          "type": "video1",
+          "status": "SUBMITTED",
+          "artifact_id": "376a908f-2f53-4cce-a15f-54ba04175b9f"
+        },
+        {
+          "label": "ch10_sot_video2",
+          "type": "video2",
+          "status": "SUBMITTED",
+          "artifact_id": "26e7114d-72cc-497a-8de5-9acc975b4b00"
+        }
+      ]
+    },
+    "chapter_11_cbp": {
+      "chapter": 11,
+      "technique": "cbp",
+      "jobs": [
+        {
+          "label": "ch11_cbp_podcast",
+          "type": "podcast",
+          "status": "ERROR",
+          "artifact_id": null
+        },
+        {
+          "label": "ch11_cbp_video1",
+          "type": "video1",
+          "status": "ERROR",
+          "artifact_id": null
+        },
+        {
+          "label": "ch11_cbp_video2",
+          "type": "video2",
+          "status": "ERROR",
+          "artifact_id": null
+        }
+      ]
+    },
+    "chapter_12_ak": {
+      "chapter": 12,
+      "technique": "ak",
+      "jobs": [
+        {
+          "label": "ch12_ak_podcast",
+          "type": "podcast",
+          "status": "ERROR",
+          "artifact_id": null
+        },
+        {
+          "label": "ch12_ak_video1",
+          "type": "video1",
+          "status": "ERROR",
+          "artifact_id": null
+        },
+        {
+          "label": "ch12_ak_video2",
+          "type": "video2",
+          "status": "ERROR",
+          "artifact_id": null
+        }
+      ]
+    }
+  }
+}

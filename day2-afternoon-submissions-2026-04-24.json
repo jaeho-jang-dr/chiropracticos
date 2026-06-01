@@ -1,0 +1,49 @@
+{
+  "submission_date": "2026-04-24",
+  "session": "Day 2 오후 (17:35 KST cron fire)",
+  "planned": 12,
+  "submitted_total": 20,
+  "succeeded": 15,
+  "failed": 5,
+  "strategy_note": "오전 quota 이슈 이후 오후에 slide_deck quota 부분 리셋 확인. Ch 10-12 계획분 12건 100% + 오전 실패 9건 중 3건 복구(Activator Part 4, Cox 1-2). Cox Part 3부터 quota 재도달하여 Cox 3-4 + Logan × 4 실패.",
+  "slide_decks_succeeded": [
+    {"name": "ch10_sot_slides1", "artifact_id": "9a0c21c6-9ed8-4ccc-93c3-110404a2a5b1", "notebook_id": "2b73a534-51e0-4404-8538-7b60bc4dc780", "part": "Part 1 기초"},
+    {"name": "ch10_sot_slides2", "artifact_id": "3326b3ae-1f1f-43ba-a664-875892f3fa5b", "notebook_id": "2b73a534-51e0-4404-8538-7b60bc4dc780", "part": "Part 2 진단"},
+    {"name": "ch10_sot_slides3", "artifact_id": "08bb1b97-02c9-447f-acaa-f40890f41d8a", "notebook_id": "2b73a534-51e0-4404-8538-7b60bc4dc780", "part": "Part 3 교정"},
+    {"name": "ch10_sot_slides4", "artifact_id": "c897975c-e87f-473b-815d-2b263d869730", "notebook_id": "2b73a534-51e0-4404-8538-7b60bc4dc780", "part": "Part 4 임상·비판"},
+    {"name": "ch11_cbp_slides1", "artifact_id": "306d1a1c-5e76-4e62-aebb-fec9054cb50c", "notebook_id": "37eea36e-8142-45af-b223-108d078ebd09", "part": "Part 1 기초"},
+    {"name": "ch11_cbp_slides2", "artifact_id": "58886176-bd93-4343-861e-1282517c28e1", "notebook_id": "37eea36e-8142-45af-b223-108d078ebd09", "part": "Part 2 진단"},
+    {"name": "ch11_cbp_slides3", "artifact_id": "e072d298-6e01-403c-a2d5-39168a80739c", "notebook_id": "37eea36e-8142-45af-b223-108d078ebd09", "part": "Part 3 교정"},
+    {"name": "ch11_cbp_slides4", "artifact_id": "fec9b8eb-6f8d-41e3-a4e4-703165c7492d", "notebook_id": "37eea36e-8142-45af-b223-108d078ebd09", "part": "Part 4 임상·비판"},
+    {"name": "ch12_ak_slides1", "artifact_id": "b03e629c-fa96-41be-985d-1621f91d8dc2", "notebook_id": "416ef164-398d-46f0-8d11-45558467bd7f", "part": "Part 1 기초"},
+    {"name": "ch12_ak_slides2", "artifact_id": "59750aa6-68f9-4f22-a6b0-edeb0ef55284", "notebook_id": "416ef164-398d-46f0-8d11-45558467bd7f", "part": "Part 2 진단"},
+    {"name": "ch12_ak_slides3", "artifact_id": "82e904a1-267d-4394-9096-7cf8d82cbf2d", "notebook_id": "416ef164-398d-46f0-8d11-45558467bd7f", "part": "Part 3 교정"},
+    {"name": "ch12_ak_slides4", "artifact_id": "d4d890dc-5d0e-4418-b2db-5487b41a62b7", "notebook_id": "416ef164-398d-46f0-8d11-45558467bd7f", "part": "Part 4 임상·비판"},
+    {"name": "ch07_activator_slides4", "artifact_id": "2cc377b2-2ac6-4016-ace8-971e2a51f8c9", "notebook_id": "b250bba3-2ff3-44e1-9bd0-3b0fb26aaabd", "part": "Part 4 임상·비판", "recovered_from": "Day 2 오전 실패 9건 중 1"},
+    {"name": "ch08_cox_slides1", "artifact_id": "ffe191d2-02e7-4f08-ae87-cf8c46523069", "notebook_id": "4c81bbd8-19e9-4727-9e48-eaf5a0a389b2", "part": "Part 1 기초", "recovered_from": "Day 2 오전 실패 9건 중 1"},
+    {"name": "ch08_cox_slides2", "artifact_id": "c1833723-f7ac-43e9-9246-53e97c46d937", "notebook_id": "4c81bbd8-19e9-4727-9e48-eaf5a0a389b2", "part": "Part 2 진단", "recovered_from": "Day 2 오전 실패 9건 중 1"}
+  ],
+  "slide_decks_still_pending_retry": [
+    {"name": "ch08_cox_slides3", "notebook_id": "4c81bbd8-19e9-4727-9e48-eaf5a0a389b2", "part": "Part 3 교정"},
+    {"name": "ch08_cox_slides4", "notebook_id": "4c81bbd8-19e9-4727-9e48-eaf5a0a389b2", "part": "Part 4 임상·비판"},
+    {"name": "ch09_logan_slides1", "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "part": "Part 1 기초"},
+    {"name": "ch09_logan_slides2", "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "part": "Part 2 진단"},
+    {"name": "ch09_logan_slides3", "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "part": "Part 3 교정"},
+    {"name": "ch09_logan_slides4", "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "part": "Part 4 임상·비판"}
+  ],
+  "download_notes": {
+    "ch07_activator_08_report_week1_md": "downloaded from artifact_id 2e3a2f52-d61b-4cd5-b06d-bc930db31f16 (originally named 'quota-test'), content is Week 1 report",
+    "existing_files_confirmed": "Ch 4-6 완전 · Ch 7 Part 4 미제출 · Ch 8-12 slides 미제출 (제출 직후 렌더 중)"
+  },
+  "progress_after_this_session": {
+    "artifacts_total": 121,
+    "artifacts_completed": "~114 (15 new submissions still rendering, will download Day 3 AM)",
+    "percent": "~94%",
+    "remaining": "Ch 8 slides 3-4 + Ch 9 slides 1-4 = 6건 (Day 3 retry)"
+  },
+  "next_cron": "2026-04-25 09:15 KST — Day 3 오전: 어제 제출 15건 다운로드 + Ch 4-6 reports 이미 완료 → Day 3 오후 Ch 8-9 slides 6건 retry + 여유 있으면 Day 4 작업 선제",
+  "meta": {
+    "quota_observation_today": "오전 slide_deck 3건 후 막힘 → 오후 17:35에 15건 추가 성공 → 다시 Cox Part 3부터 막힘. Quota는 6-8시간 단위로 부분 리셋되는 패턴 추정",
+    "reports_quota_separate": "reports는 36건 연속 성공 — slide_deck과 quota pool 분리된 것으로 보임"
+  }
+}

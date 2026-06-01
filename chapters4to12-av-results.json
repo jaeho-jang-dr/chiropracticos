@@ -1,0 +1,137 @@
+[
+  [
+    "ch04_gonstead_podcast",
+    "SUBMITTED",
+    "{'artifact_id': '8ef7afc4-ee91-4233-b274-7204f17f03ac', 'notebook_id': '4e8b2040-ae5a-438c-90ad-a8acc7a542f2', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "ch04_gonstead_video1",
+    "SUBMITTED",
+    "{'artifact_id': '0861b2cb-5be1-4dae-9322-aed32fb0c950', 'notebook_id': '4e8b2040-ae5a-438c-90ad-a8acc7a542f2', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch04_gonstead_video2",
+    "SUBMITTED",
+    "{'artifact_id': 'c84eb414-f0d9-4cdf-92cc-c8d7aed47417', 'notebook_id': '4e8b2040-ae5a-438c-90ad-a8acc7a542f2', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch05_toggle_recoil_podcast",
+    "SUBMITTED",
+    "{'artifact_id': '7a611d16-dd11-4dd4-8a95-d511bd41fb07', 'notebook_id': '2b8b7956-cc5e-4591-a0c1-b0904f95d591', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "ch05_toggle_recoil_video1",
+    "SUBMITTED",
+    "{'artifact_id': '56b210f4-92bd-4732-89c6-9ecc76711291', 'notebook_id': '2b8b7956-cc5e-4591-a0c1-b0904f95d591', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch05_toggle_recoil_video2",
+    "SUBMITTED",
+    "{'artifact_id': '53f57e13-a4e6-47c1-b4bb-f0b0fab087e0', 'notebook_id': '2b8b7956-cc5e-4591-a0c1-b0904f95d591', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch06_thompson_podcast",
+    "SUBMITTED",
+    "{'artifact_id': '9292cd5f-db63-4648-a680-f719351b2f95', 'notebook_id': 'b01b6979-fff3-432e-b62c-d351a389b853', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "ch06_thompson_video1",
+    "SUBMITTED",
+    "{'artifact_id': 'b3eaeab5-b3ed-404f-b950-97393bd5343f', 'notebook_id': 'b01b6979-fff3-432e-b62c-d351a389b853', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch06_thompson_video2",
+    "SUBMITTED",
+    "{'artifact_id': 'd93437bb-dfbc-44e7-86ca-d95e3f1de1a0', 'notebook_id': 'b01b6979-fff3-432e-b62c-d351a389b853', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch07_activator_podcast",
+    "SUBMITTED",
+    "{'artifact_id': 'c00c8088-d0f0-4628-8504-1c500776d6d2', 'notebook_id': 'b250bba3-2ff3-44e1-9bd0-3b0fb26aaabd', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "ch07_activator_video1",
+    "SUBMITTED",
+    "{'artifact_id': '6fcceeb8-3db3-4e2d-b1db-f13802f0f7ae', 'notebook_id': 'b250bba3-2ff3-44e1-9bd0-3b0fb26aaabd', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch07_activator_video2",
+    "SUBMITTED",
+    "{'artifact_id': '0f0f5676-e2a2-4bca-8eff-2e5d27a64efa', 'notebook_id': 'b250bba3-2ff3-44e1-9bd0-3b0fb26aaabd', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch08_cox_podcast",
+    "SUBMITTED",
+    "{'artifact_id': '9d8b2925-b9fd-4b95-acc1-9a9a817ed9d9', 'notebook_id': '4c81bbd8-19e9-4727-9e48-eaf5a0a389b2', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "ch08_cox_video1",
+    "SUBMITTED",
+    "{'artifact_id': '047871d4-9e33-43c9-a3d1-9adac22717ec', 'notebook_id': '4c81bbd8-19e9-4727-9e48-eaf5a0a389b2', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch08_cox_video2",
+    "SUBMITTED",
+    "{'artifact_id': '14cc09b6-9315-4110-8277-d84e3c96bab3', 'notebook_id': '4c81bbd8-19e9-4727-9e48-eaf5a0a389b2', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch09_logan_podcast",
+    "SUBMITTED",
+    "{'artifact_id': '68244ea8-061e-45a2-acce-e1e8de2446d6', 'notebook_id': 'a8039cf8-6d09-49f4-b80b-9e5e78c0a968', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "ch09_logan_video1",
+    "SUBMITTED",
+    "{'artifact_id': 'f9e42340-8268-46c9-8335-ba4689ddbe0a', 'notebook_id': 'a8039cf8-6d09-49f4-b80b-9e5e78c0a968', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch09_logan_video2",
+    "SUBMITTED",
+    "{'artifact_id': 'ea7b6482-f01f-48fe-8447-50cdcd4a58ec', 'notebook_id': 'a8039cf8-6d09-49f4-b80b-9e5e78c0a968', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch10_sot_podcast",
+    "SUBMITTED",
+    "{'artifact_id': '44b467ef-6a54-445c-b16f-387e355163b2', 'notebook_id': '2b73a534-51e0-4404-8538-7b60bc4dc780', 'type': 'audio', 'status': 'in_progress', 'format': 'brief', 'length': 'default', 'language': 'ko'}"
+  ],
+  [
+    "ch10_sot_video1",
+    "SUBMITTED",
+    "{'artifact_id': '376a908f-2f53-4cce-a15f-54ba04175b9f', 'notebook_id': '2b73a534-51e0-4404-8538-7b60bc4dc780', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch10_sot_video2",
+    "SUBMITTED",
+    "{'artifact_id': '26e7114d-72cc-497a-8de5-9acc975b4b00', 'notebook_id': '2b73a534-51e0-4404-8538-7b60bc4dc780', 'type': 'video', 'status': 'in_progress', 'format': 'explainer', 'visual_style': 'auto_select', 'visual_style_prompt': None, 'language': 'ko'}"
+  ],
+  [
+    "ch11_cbp_podcast",
+    "ERROR",
+    "API error (code 8): type.googleapis.com/google.internal.labs.tailwind.orchestration.v1.UserDisplayableError"
+  ],
+  [
+    "ch11_cbp_video1",
+    "ERROR",
+    "API error (code 8): type.googleapis.com/google.internal.labs.tailwind.orchestration.v1.UserDisplayableError"
+  ],
+  [
+    "ch11_cbp_video2",
+    "ERROR",
+    "API error (code 8): type.googleapis.com/google.internal.labs.tailwind.orchestration.v1.UserDisplayableError"
+  ],
+  [
+    "ch12_ak_podcast",
+    "ERROR",
+    "API error (code 8): type.googleapis.com/google.internal.labs.tailwind.orchestration.v1.UserDisplayableError"
+  ],
+  [
+    "ch12_ak_video1",
+    "ERROR",
+    "API error (code 8): type.googleapis.com/google.internal.labs.tailwind.orchestration.v1.UserDisplayableError"
+  ],
+  [
+    "ch12_ak_video2",
+    "ERROR",
+    "API error (code 8): type.googleapis.com/google.internal.labs.tailwind.orchestration.v1.UserDisplayableError"
+  ]
+]

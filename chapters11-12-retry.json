@@ -1,0 +1,11 @@
+{
+  "_comment": "Ch 11 CBP + Ch 12 AK audio+video 재시도 (drjang002 프로필). drjang001이 할당량 초과했기 때문.",
+  "jobs": [
+    {"profile":"drjang002","notebook_id":"37eea36e-8142-45af-b223-108d078ebd09","type":"audio","label":"ch11_cbp_podcast_retry","focus":"[Evidence-Based] Chiropractic BioPhysics (CBP) 팟캐스트 60분+. Donald & Deed Harrison 수학·선형대수 기반. Mirror image® 교정, 경추·요추 lordosis 회복, Denneroll 3D 견인, 거북목 구조 재활 (PMC 60례). IntechOpen 학술자료. 방사선 측정 신뢰도 🟡 Moderate. Dynamic Chiropractic 'Spinal Graffiti' 비판 등 균형 시각. 🔴 Vitalism 제외."},
+    {"profile":"drjang002","notebook_id":"37eea36e-8142-45af-b223-108d078ebd09","type":"video","label":"ch11_cbp_video1_retry","focus":"[Evidence-Based] CBP Part 1 이론. Harrison 정상 척추 모델, mirror-image 교정 원리, Denneroll 장치."},
+    {"profile":"drjang002","notebook_id":"37eea36e-8142-45af-b223-108d078ebd09","type":"video","label":"ch11_cbp_video2_retry","focus":"[Evidence-Based] CBP Part 2 임상. 경추 lordosis 회복 증례, 거북목 재활. CBP 비판론(Spinal Graffiti) 균형 있게 소개."},
+    {"profile":"drjang002","notebook_id":"416ef164-398d-46f0-8d11-45558467bd7f","type":"audio","label":"ch12_ak_podcast_retry","focus":"[Evidence-Based] Applied Kinesiology (AK) 팟캐스트 60분+ — 한국 임상 중요. George Goodheart 1964. MMT, 5 Factors of IVF, Chapman 반사점(Statpearls 신경해부학). 🔴 근력검사 기반 알레르기·영양 진단은 No reliable evidence — FoodAllergy.org 'unproven' 명시. PMC 비판 리뷰(Haas 2007, Schwartz 2014). Double-blind RCT AK validity 부정적. 한국 대한응용근신경학회 맥락. 근육-장기 상관 차트는 역사적 참고로만, 진단 도구로는 🔴 No evidence. 🟡 MMT 자체(근력 측정)는 유용, AK의 확장 주장만 제외."},
+    {"profile":"drjang002","notebook_id":"416ef164-398d-46f0-8d11-45558467bd7f","type":"video","label":"ch12_ak_video1_retry","focus":"[Evidence-Based] AK Part 1 이론. Goodheart 역사, MMT 방법, 5 IVF factors, Chapman 반사점 해부학 기초. 진단 도구로서의 한계 명시."},
+    {"profile":"drjang002","notebook_id":"416ef164-398d-46f0-8d11-45558467bd7f","type":"video","label":"ch12_ak_video2_retry","focus":"[Evidence-Based] AK Part 2 🔴 비판적 평가. PMC 이중맹검 RCT 부정 결과, FoodAllergy.org 'unproven', PMC scoping review. 한국 임상 맥락에서 진단 확장 주장 경계. MMT 자체의 제한적 유용성만 인정."}
+  ]
+}

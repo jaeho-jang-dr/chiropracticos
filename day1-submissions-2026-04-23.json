@@ -1,0 +1,26 @@
+{
+  "submission_date": "2026-04-23",
+  "submission_time_kst": "17:05-17:10",
+  "total_submitted": 18,
+  "total_failed": 0,
+  "submissions": [
+    {"name": "ch11_cbp_podcast",       "type": "audio", "notebook_id": "37eea36e-8142-45af-b223-108d078ebd09", "artifact_id": "00d8accc-8eca-4198-a5a3-1a6e2045771c", "status": "in_progress"},
+    {"name": "ch11_cbp_video1",        "type": "video", "notebook_id": "37eea36e-8142-45af-b223-108d078ebd09", "artifact_id": "b35a46e2-6d7b-462a-b2e1-ea7e107c280b", "status": "in_progress"},
+    {"name": "ch11_cbp_video2",        "type": "video", "notebook_id": "37eea36e-8142-45af-b223-108d078ebd09", "artifact_id": "f2e9628d-1ed4-4cd6-b8fc-51aae7d7dd5e", "status": "in_progress"},
+    {"name": "ch12_ak_podcast",        "type": "audio", "notebook_id": "416ef164-398d-46f0-8d11-45558467bd7f", "artifact_id": "cc6911b6-c8ea-4f99-bc2a-08e79906f147", "status": "in_progress"},
+    {"name": "ch12_ak_video1",         "type": "video", "notebook_id": "416ef164-398d-46f0-8d11-45558467bd7f", "artifact_id": "916cf7f1-bf55-4f53-86e3-8b23ce69ded1", "status": "in_progress"},
+    {"name": "ch12_ak_video2",         "type": "video", "notebook_id": "416ef164-398d-46f0-8d11-45558467bd7f", "artifact_id": "77541dcf-7c3b-43da-affc-f207d38df5a8", "status": "in_progress"},
+    {"name": "ch04_gonstead_slides1",  "type": "slide_deck", "notebook_id": "4e8b2040-ae5a-438c-90ad-a8acc7a542f2", "artifact_id": "bb037c18-f69f-4726-ac1d-a30f37977a18", "status": "in_progress", "part": "Part 1 기초"},
+    {"name": "ch04_gonstead_slides2",  "type": "slide_deck", "notebook_id": "4e8b2040-ae5a-438c-90ad-a8acc7a542f2", "artifact_id": "86babbbc-b7ab-4bce-b3bb-3ec81a41b2f4", "status": "in_progress", "part": "Part 2 진단"},
+    {"name": "ch04_gonstead_slides3",  "type": "slide_deck", "notebook_id": "4e8b2040-ae5a-438c-90ad-a8acc7a542f2", "artifact_id": "a4ac3ace-fc4b-4706-9a10-f5ef526f6fd8", "status": "in_progress", "part": "Part 3 교정"},
+    {"name": "ch04_gonstead_slides4",  "type": "slide_deck", "notebook_id": "4e8b2040-ae5a-438c-90ad-a8acc7a542f2", "artifact_id": "93a9adda-9b5f-444f-ac99-303ba21ec14b", "status": "in_progress", "part": "Part 4 임상·비판"},
+    {"name": "ch05_toggle_slides1",    "type": "slide_deck", "notebook_id": "2b8b7956-cc5e-4591-a0c1-b0904f95d591", "artifact_id": "29475d83-d901-4f0b-be22-2bbe7e775c2b", "status": "in_progress", "part": "Part 1 기초"},
+    {"name": "ch05_toggle_slides2",    "type": "slide_deck", "notebook_id": "2b8b7956-cc5e-4591-a0c1-b0904f95d591", "artifact_id": "411f798e-5e9b-4a38-b07d-a11a1e891c27", "status": "in_progress", "part": "Part 2 진단"},
+    {"name": "ch05_toggle_slides3",    "type": "slide_deck", "notebook_id": "2b8b7956-cc5e-4591-a0c1-b0904f95d591", "artifact_id": "c353c981-d08f-48d9-8e1b-84c82816722f", "status": "in_progress", "part": "Part 3 교정"},
+    {"name": "ch05_toggle_slides4",    "type": "slide_deck", "notebook_id": "2b8b7956-cc5e-4591-a0c1-b0904f95d591", "artifact_id": "f6340164-d4be-495b-a920-3367751b549d", "status": "in_progress", "part": "Part 4 임상·비판"},
+    {"name": "ch06_thompson_slides1",  "type": "slide_deck", "notebook_id": "b01b6979-fff3-432e-b62c-d351a389b853", "artifact_id": "44032c6c-27af-429a-a97f-0c6756dd918f", "status": "in_progress", "part": "Part 1 기초"},
+    {"name": "ch06_thompson_slides2",  "type": "slide_deck", "notebook_id": "b01b6979-fff3-432e-b62c-d351a389b853", "artifact_id": "23319ee5-ecb4-4969-ad64-a84ccea57f08", "status": "in_progress", "part": "Part 2 진단"},
+    {"name": "ch06_thompson_slides3",  "type": "slide_deck", "notebook_id": "b01b6979-fff3-432e-b62c-d351a389b853", "artifact_id": "724fc7f6-8df6-45a0-be57-34f394ca5f9c", "status": "in_progress", "part": "Part 3 교정"},
+    {"name": "ch06_thompson_slides4",  "type": "slide_deck", "notebook_id": "b01b6979-fff3-432e-b62c-d351a389b853", "artifact_id": "327ef02b-a159-4bf8-abac-c4ef78fa9bb3", "status": "in_progress", "part": "Part 4 임상·비판"}
+  ]
+}

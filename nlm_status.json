@@ -1,0 +1,107 @@
+[
+  {
+    "id": "2073fa93-6d76-4714-a618-820a83feefb0",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[기본 전제 — 본 아티팩트가 반드시 따라야 할 인식론]\n우리가 인체와 세상에 대해 아는 것은 한 방울의 물 정도이며, 모르는 것은 바다처럼 광활합니다. 지금 진실이라 믿는 것들도 미래에는 다르게 평가될 수 있다는 인식론적 겸손이 본 콘텐츠의 자세입니다. 동시에 EBM으로 공부하고 탐구합니다 — peer-reviewed 인용·근거 수준(🟢 Strong · 🟡 Moderate · 🟠 Limited · 🔴 No evidence) 명시.\n\n[톤] 두 화자(정형외과의·도수치료 PT) 부드러운 학술 라디오 대화. 조롱·과장된 분개 금지.\n\n[금기] \"절대 아니다\", \"사이비\", \"엉터리\", 단정적 폄하\n[권장] \"현재 근거로는 권장하기 어렵습니다\" / \"흥미로운 가설이지만 더 많은 연구가 필요\" / \"향후 새 연구로 달라질 가능성은 열려 있습니다\"\n\n[대상] 한국 정형외과·재활의학·도수치료 의사·PT. 한국어 인사로 시작. 영어 인트로 금지.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Chapter 12 · AK 4부작 — Episode 3 (15분)]\n주제: \"진단에서 처치까지 — O/I·Spindle/GTO·NKT·PRI 5권역 처치 레시피\"\n\n다룰 흐름:\n1. **출발**: \"진단 11종을 봤으니, 이제 처치는 어떤 스펙트럼으로 채택되는가?\" 두 화자가 처치 의사결정 트리를 같이 그려봅니다.\n\n2. **A. 근육 활성화 — 🟡 myofascial과 motor learning에 부합**:\n   - **Origin/Insertion** — 양 부착부 bone-ward deep pressure 30-90초. Hains 2002·Cagnie 2013에서 trigger point release 단기 RCT 양성.\n   - **Spindle Pinch** — 근방추는 belly에 분포·길이 신호. Pull apart로 활성화 / Pinch together로 inhibition. Sherrington 1906 원전 신경생리.\n   - **GTO Release** — Golgi 건 기관, 장력 신호. Bone-ward stretch로 autogenic inhibition (Ib reflex).\n   - 세 도구의 선택 기준 — 부착부 tender시 O/I, 부착부 OK + 약화시 Spindle pull-apart, 과긴장시 GTO stretch.\n\n3. **B. 반사점 자극**:\n   - **Chapman (NL)** — Deep rotary rub 20-60초. 림프 흐름 변화는 1980-90 연구에서 입증 ×. 점 위치는 viscerosomatic·myofascial과 부분 일치 → 본 강의는 압박 자극 효과로만 🟡 보조 인정. \"장기 진단\" 주장은 다루지 않음.\n   - **Bennett (NV)** — 두피 가벼운 hold. 현재 권장하기 어려움.\n\n4. **C. NKT — Pin-and-Move (David Weinstock 2007) 🟡 motor learning 기반**:\n   - Compensator over-active 발견 → TL로 확인 → pin (의사) + move (환자 능동) 30-60초 → prime mover retest → challenge → home exercise.\n   - AK MMT의 직계 발전형. Sherrington reciprocal inhibition + cortical motor patterning에 plausible.\n   - 만성 motor pattern 문제(요통 chronic·scapular dyskinesis·recurrent ankle sprain)에서 1차 도구.\n\n5. **D. AK-style 척추 교정**:\n   - Mechanical Challenge로 vector 결정 후 표준 기법(Diversified·Thompson·Activator)으로 교정. Challenge는 motion palp 보조로만.\n\n6. **E. PRI re-positioning — 🟡 lumbopelvic 일부 RCT 양성**:\n   - 좌측 AIC pattern · 90-90 Hip Lift 호흡 sequence (inhale 4s · exhale 8s · end-exhale hold + ham/glut contract). Boyle 2010 · Skoglund 2011.\n\n7. **5권역 처치 레시피 (핵심만 빠르게)**:\n   - 요통/골반 — Glut med · Psoas · QL · Hamstrings 처치 순서\n   - 경추/두통 — SCM/scalene release 우선 → DNF activation\n   - 견갑 — upper trap release 우선 → lower trap·serratus activation\n   - TMJ — 외측 익돌근 myofascial · 치과 협진 우선\n   - 무릎 — Popliteus GTO · VMO spindle · TFL release\n\n8. **⚠️ 권장하기 어려운 치료**: AK 진단 기반 영양·알레르기 처방 · Cranial 교정 · Switching reset · AK 감정 진단/치료. 정중히 짚어줌.\n\n9. **마무리**: \"처치를 도구 박스로 보면, 어떤 도구가 어떤 환자에게 맞을지 보입니다\" → Episode 4 (비판적 검토 · 한국 임상) 예고.\n\n분량: 15분. NKT David Weinstock·PRI Ron Hruska 직접 언급. 사용자는 정형외과 6판 도수치료 챕터 저자.",
+    "visual_style_prompt": null
+  },
+  {
+    "id": "5c1642e1-a048-438e-be5c-fac2a59eeaf8",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[기본 전제 — 본 아티팩트가 반드시 따라야 할 인식론]\n우리가 인체와 세상에 대해 아는 것은 한 방울의 물 정도이며, 모르는 것은 바다처럼 광활합니다. 지금 진실이라 믿는 것들도 미래에는 다르게 평가될 수 있다는 인식론적 겸손이 본 콘텐츠의 자세입니다. 그러나 동시에 우리는 과학자답게 EBM(근거 기반 의학)으로 공부하고 탐구합니다 — peer-reviewed 연구·Cochrane SR·RCT 인용, 근거 수준(🟢 Strong · 🟡 Moderate · 🟠 Limited · 🔴 No evidence) 명시. \"단정은 피하되, 방법은 과학적으로.\" 겸손과 엄격함은 한 짝입니다.\n\n[톤 가이드]\n- 부드럽고 따뜻한 학술 라디오 톤 (조롱·비웃음·과장된 분개 금지)\n- 두 화자(정형외과 전문의 1인 + 도수치료 PT 1인)가 서로의 임상 경험을 존중하며 대화\n- 많이 알수록 가능성을 더 열어두는 태도\n\n[사용 금지] \"절대 아니다\", \"절대 금지\", \"말도 안 된다\", \"웃기다\", \"사이비\", \"사기\", \"엉터리\", 카이로프랙틱·도수치료·AK 전반 단정적 폄하\n\n[권장 표현] \"현재 근거로는 권장하기 어렵습니다\" / \"흥미로운 가설이지만 더 많은 연구가 필요한 영역\" / \"지금까지의 데이터로는 일관된 뒷받침을 얻지 못했지만, 향후 새 연구로 달라질 가능성은 열려 있습니다\"\n\n[대상 청중] 한국의 정형외과·재활의학·도수치료 의사·PT. 학술적이지만 따뜻한 동료 의료인 대화 톤. 한국어 인사로 자연스럽게 시작 — \"Welcome to Deep Dive\" 같은 영어 인트로 금지.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Chapter 12 · AK 4부작 — Episode 1 (15분)]\n주제: \"George Goodheart의 1964 — AK는 어떻게 태어났고, 어디서 갈라졌는가\"\n\n다룰 흐름:\n1. **시작**: Detroit의 한 카이로프랙틱 진료실, 1964년. George Goodheart, Jr. DC가 환자의 약화된 근육이 척추 조정 후 즉시 강해지는 것을 관찰합니다. \"근력 검사로 서브럭세이션을 식별할 수 있겠다\"는 한 줄짜리 아이디어가 어떻게 AK가 됐는지.\n2. **1973 ICAK 설립**: International College of Applied Kinesiology가 미국에서 출범. AK가 카이로프랙틱 한 분파로 자리잡는 과정.\n3. **Triad of Health (구조·화학·정신)**: Goodheart의 핵심 개념 틀. Engel의 biopsychosocial model(1977)과의 유사성 — 이 부분은 면담 frame으로 의미가 있다는 점.\n4. **1980s 확장의 분기점**: 근육-장기 상관 차트(Chapman reflex 차용), 영양 결핍·식품 감수성 진단 주장이 등장. 두 화자가 \"여기서부터 근거의 스펙트럼이 갈라지기 시작했다\"고 정중하게 짚어줌.\n5. **1990s+ 감정·심리 확장**: 향후 더 많은 연구가 필요한 영역으로 분류.\n6. **파생 기법**: Touch for Health (John Thie), Professional AK (David Leaf), NeuroKinetic Therapy (David Weinstock 2007), Clinical Kinesiology — 이들이 각각 어떻게 AK 원전에서 갈라져 나갔는지.\n7. **마무리**: \"이 회의 강연실이 1964년의 Detroit과 어떻게 연결되는지\" — 본 챕터에서 다룰 진단·치료·비판 4부작의 예고.\n\n분량 가이드: 15분 한국어 deep dive. 인용은 자연스럽게 (\"Goodheart 1964 원전 매뉴얼\", \"Cuthbert & Goodheart 2007 Chiropr Osteopat\"). 마지막에 Episode 2(진단 11종) 예고.\n\n[금기 재차 강조] 단정 어투·조롱·비웃음 금지. 카이로프랙틱·AK를 폄하하지 않고 정중히 학술적으로 다룸. 사용자는 정형외과 6판 도수치료 챕터 저자임을 기억.",
+    "visual_style_prompt": null
+  },
+  {
+    "id": "4d22e1d5-b8cd-4600-8dbf-d4db0e876d4e",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[기본 전제 — 본 아티팩트가 반드시 따라야 할 인식론]\n우리가 인체와 세상에 대해 아는 것은 한 방울의 물 정도이며, 모르는 것은 바다처럼 광활합니다. 지금 진실이라 믿는 것들도 미래에는 다르게 평가될 수 있다는 인식론적 겸손. 동시에 EBM으로 공부하고 탐구 — peer-reviewed 인용·근거 수준(🟢/🟡/🟠/🔴) 명시. \"단정은 피하되, 방법은 과학적으로.\"\n\n[톤] 두 화자(정형외과의·도수치료 PT) 부드러운 학술 라디오 대화. 비판은 정중·학술적으로. 조롱·과장된 분개 금지.\n\n[금기] \"절대 아니다\", \"사이비\", \"사기\", \"엉터리\", \"말도 안 된다\", 단정적 폄하\n[권장] \"현재 근거로는 권장하기 어렵습니다\" / \"다수 RCT에서 일관된 뒷받침을 얻지 못한 상태입니다\" / \"향후 새 연구로 달라질 가능성은 열려 있습니다\"\n\n[대상] 한국 정형외과·재활의학·도수치료 의사·PT. 한국어 인사로 시작.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Chapter 12 · AK 4부작 — Episode 4 (15분)]\n주제: \"근거의 경계선 — 무엇이 살아남고 무엇이 빠지는가, 한국 임상의 자리\"\n\n다룰 흐름:\n1. **출발**: \"지난 세 에피소드에서 AK의 역사·진단·치료를 봤습니다. 이제 가장 어려운 질문 — 무엇이 근거로 살아남는가, 무엇이 빠지는가?\"\n\n2. **🟠 다수 RCT 부정적 — 정중히 짚어 줌**:\n   - **Garrow 1988 BMJ 296:1573-1574** — Kinesiology and food allergy 이중맹검 RCT, 부정적 결과\n   - **Kenney 1988 J Am Diet Assoc** — AK unreliable for nutrient status, false positive 80%\n   - **Pothmann 2001 Forsch Komplementmed** — 위약과 동등\n   - **Lüdtke 2001** — sensitivity 14% / specificity 65% (chance below)\n   - **Staehle 2005 J Manip Physiol Ther** — 치과 재료 과민성 AK로 검출 불가\n   - **Haas 2007 PMC** — AK 비판적 검토\n   - 두 화자가 \"다수 연구가 일관된 부정적 결과를 보여줬다는 점은 정직하게 인정해야 합니다\"라고 따뜻하게 결론.\n\n3. **🟢 살아남는 부분**:\n   - **MMT 1차 약화 식별**(0-3 등급) — 재활의학 표준\n   - **MMT 미세 변화**(4↔5) — Cuthbert & Goodheart 2007 κ 0.41-0.64 (moderate)\n   - **Mechanical Challenge** — Pollard 2005 · Triano 2002 (moderate)\n   - **O/I · Spindle/GTO release** — Hains 2002 · Cagnie 2013 (myofascial 일치)\n   - **NKT pin-and-move** — Sherrington 1906 신경생리 plausible\n   - **PRI re-positioning + breathing** — Boyle 2010 · Skoglund 2011 (lumbopelvic 일부 RCT)\n\n4. **공식 의료 단체 입장**:\n   - **FoodAllergy.org** — \"Unproven Diagnostic Test\"로 분류\n   - **AAAAI** (American Academy of Allergy, Asthma & Immunology) — 동일 입장\n   - 실제 IgE 매개 알레르기가 AK로 \"safe\" 판정되면 anaphylaxis 위험. 정중히 환자 안전을 강조.\n\n5. **🔴 현재 근거 부재**: AK 11종 중 Switching/Cross-crawl만 — peer-reviewed 1차 연구가 매우 부족. 향후 여지는 열어두되 현재 권장하지 않음.\n\n6. **현대 응용 — AK의 학술적 재해석**:\n   - **NKT** (Weinstock 2007) — motor control pattern\n   - **PRI** (Hruska 1989) — 자세·호흡 비대칭\n   - **SFMA** (Cook 2000s) — Mobility vs Stability 7 movement patterns, κ 0.6+\n   - **FRC** (Spina 2010s) — CARs · PAILs/RAILs\n   - 본 강의 권장 조합: SFMA + 표준 MMT 14근육 routine · 만성 motor pattern은 NKT · 요통은 PRI + Diversified.\n\n7. **한국 임상 맥락**:\n   - 일부 DC·PT가 AK 교육 이수. 정형외과·재활의학과 의사 일부 노출.\n   - 알레르기·영양 AK 진단의 무분별 수용 사례는 환자 의료 혼선·표준 진단 지연 위험.\n   - 한국 의사·PT 대상 강의 시: MMT 기본 원리는 학습 가치, 확장 진단 주장은 비판적 수용, 환자에게 AK 진단을 표준 의학 진단 대체로 쓰지 말 것 강조.\n\n8. **마지막 인식론적 마무리**:\n   - \"오늘 우리가 부정적 근거로 평가한 것 중 일부는 미래에 다른 메커니즘으로 재발견될 수도 있습니다. 그러나 그 가능성을 위해 환자의 현재 안전을 양보할 수는 없습니다.\"\n   - \"겸손과 엄격함은 한 짝.\" — 인체에 대해 우리가 아는 것은 한 방울, 모르는 것은 바다라는 출발점으로 다시 돌아옴.\n   - \"Chapter 12로 본 12개 카이로프랙틱 테크닉 시리즈를 마무리합니다.\" (마지막 챕터임을 명시)\n\n분량: 15분. 사용자는 정형외과 6판 도수치료 챕터 저자임을 기억. 한국어 자연스러운 인사로 시작·마무리.",
+    "visual_style_prompt": null
+  },
+  {
+    "id": "2c8e4d6b-831c-4f29-9748-5853848f47ec",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[기본 전제 — 본 아티팩트가 반드시 따라야 할 인식론]\n우리가 인체와 세상에 대해 아는 것은 한 방울의 물 정도이며, 모르는 것은 바다처럼 광활합니다. 지금 진실이라 믿는 것들도 미래에는 다르게 평가될 수 있다는 인식론적 겸손이 본 콘텐츠의 자세입니다. 그러나 동시에 우리는 과학자답게 EBM(근거 기반 의학)으로 공부하고 탐구합니다 — peer-reviewed 연구·Cochrane SR·RCT 인용, 근거 수준(🟢 Strong · 🟡 Moderate · 🟠 Limited · 🔴 No evidence) 명시. \"단정은 피하되, 방법은 과학적으로.\"\n\n[톤] 두 화자(정형외과의·도수치료 PT) 부드러운 학술 라디오 대화. 조롱·비웃음·과장된 분개 금지. 많이 알수록 가능성을 더 열어두는 태도.\n\n[금기 표현] \"절대 아니다\", \"사이비\", \"엉터리\", 단정적 폄하\n[권장] \"현재 근거로는 권장하기 어렵습니다\" / \"더 많은 연구가 필요한 영역\" / \"향후 새 연구로 달라질 가능성은 열려 있습니다\"\n\n[대상] 한국 정형외과·재활의학·도수치료 의사·PT. 한국어 인사로 시작. 영어 인트로 금지.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Chapter 12 · AK 4부작 — Episode 2 (15분)]\n주제: \"진단 11종 — MMT부터 Switching까지 근거의 스펙트럼\"\n\n다룰 흐름:\n1. **출발**: AK 임상가들이 사용한다고 주장하는 11개 진단 도구. 각 도구의 절차·가설·근거 수준을 정중하게 한 줄 한 줄 짚어 봅니다.\n2. **🟡 채택 가능 도구** (먼저 좋은 것부터):\n   - **MMT Indicator** — 표준 자세 + 4초 저항. 1차 약화(0-3등급)는 PT 표준이며 🟢. 4↔5 미세 변화는 Cuthbert & Goodheart 2007 systematic review에서 κ 0.41-0.64 (moderate).\n   - **Mechanical Challenge** — 척추 분절을 6 방향 push → MMT 변화. Pollard 2005·Triano 2002에서 κ 0.4-0.7. 🟡 motion palpation 보조로 사용.\n   - **Origin/Insertion** — 부착부 deep pressure. Hains 2002·Cagnie 2013에서 myofascial release와 메커니즘 부분 일치. 🟡.\n3. **🟠 한정적·보조적 도구**:\n   - **Therapy Localization (TL)** — 환자가 의심 부위에 손가락 접촉 → MMT 변화. κ 0.41-0.64. 시선·호흡·각성에 흔들림. 표준 검사 병행 시 보조.\n   - **Triad of Health** — 진단 도구로는 🟠. 면담 frame으로는 🟡.\n   - **5 Factors of IVF** — Nerve(🟢), NL/NV/CSF는 🟠. Meridian은 본 강의 제외.\n   - **Chapman Neurolymphatic** — 림프 흐름 변화는 1980-90 연구에서 입증 ×. 점 위치가 viscerosomatic·myofascial trigger point와 부분 일치 → 압박 자극 효과로만 🟡 보조.\n   - **Bennett Neurovascular** — 직접 검증 연구가 매우 적음. 현재 권장하기 어려움.\n   - **Spinal/Cranial Listing** — 척추는 X-ray + motion palp 표준. Cranial은 inter-rater κ < 0.2.\n4. **🟠 다수 RCT 부정적 도구** (정중하게 짚어 줌):\n   - **Chemical / Oral Provocation Testing** — 식품·영양제를 입·혀·손에 두고 MMT. Garrow 1988 BMJ, Kenney 1988 (false positive 80%), Pothmann 2001, Lüdtke 2001 (sensitivity 14%/specificity 65%), Staehle 2005. 현재 임상 적용을 권장하기 어렵다는 점을 따뜻하게 설명.\n5. **🔴 현재 근거 부재 — AK 11종 중 유일**:\n   - **Switching / Cross-crawl polarity reset** — peer-reviewed 1차 연구가 매우 부족. 향후 연구 여지는 열어두되 현재 권장하지 않음.\n6. **마무리**: \"진단의 스펙트럼을 보고 나면 치료의 스펙트럼이 보입니다\" — Episode 3(치료) 예고.\n\n분량: 15분. 인용 자연스럽게. 사용자는 정형외과 6판 도수치료 챕터 저자임을 기억.",
+    "visual_style_prompt": null
+  },
+  {
+    "id": "82e904a1-267d-4394-9096-7cf8d82cbf2d",
+    "type": "slide_deck",
+    "status": "completed",
+    "custom_instructions": "AK Part 3 교정·치료 기법: Origin-insertion technique, strain-counterstrain, neurolymphatic release, nutritional testing (controversial). 실질적 근골격계 적용 — trigger point·근막이완술과의 접점. 🔴 Nutrient/allergen testing via MMT는 No evidence.",
+    "visual_style_prompt": null
+  },
+  {
+    "id": "59750aa6-68f9-4f22-a6b0-edeb0ef55284",
+    "type": "slide_deck",
+    "status": "completed",
+    "custom_instructions": "AK Part 2 진단: MMT 수행 표준 프로토콜, therapy localization, challenge procedures, neurolymphatic/neurovascular reflex points. 한국 임상 맥락 — MMT의 biomechanical 재현성 vs diagnostic claim 구분, 검사자 교육 기준.",
+    "visual_style_prompt": null
+  },
+  {
+    "id": "d4d890dc-5d0e-4418-b2db-5487b41a62b7",
+    "type": "slide_deck",
+    "status": "completed",
+    "custom_instructions": "AK Part 4 임상·비판: Cochrane/Cuthbert 리뷰 2007·2018 증거 평가, MMT 재현성 연구(Schmitt 2007 meta-analysis r=0.85 조건부), AK 적응증 한정(근골격계 평가·재활 보조), 금기(진단 대체 용도), MD/PT 협진 시 AK의 위치. 한국 임상에서 AK의 교육적·비판적 가치.",
+    "visual_style_prompt": null
+  },
+  {
+    "id": "b03e629c-fa96-41be-985d-1621f91d8dc2",
+    "type": "slide_deck",
+    "status": "completed",
+    "custom_instructions": "AK Part 1 기초: Applied Kinesiology 역사(George Goodheart 1964), Triad of Health 개념, Manual Muscle Testing(MMT) 기본 원리, muscle-organ-meridian 가설. 증거 — MMT 재현성 연구 🟠 Limited reliability, 🔴 경락·장기 연관 가설은 No evidence 명시.",
+    "visual_style_prompt": null
+  },
+  {
+    "id": "5be8e4a1-ed5b-4ba7-b825-0d91fe25d8ab",
+    "type": "report",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null
+  },
+  {
+    "id": "483ebfa4-90b8-4772-bb34-793ce3b42c6a",
+    "type": "report",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null
+  },
+  {
+    "id": "db011016-3059-43c5-8c42-8beef6493045",
+    "type": "report",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null
+  },
+  {
+    "id": "c3af2192-b02b-4940-97d1-75e8ccb63c30",
+    "type": "report",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null
+  },
+  {
+    "id": "916cf7f1-bf55-4f53-86e3-8b23ce69ded1",
+    "type": "video",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null
+  },
+  {
+    "id": "77541dcf-7c3b-43da-affc-f207d38df5a8",
+    "type": "video",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null
+  },
+  {
+    "id": "4fd331d1-f4ba-4f6d-aaac-c59f95ebd2b1",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null
+  }
+]

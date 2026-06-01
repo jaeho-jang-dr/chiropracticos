@@ -1,0 +1,1832 @@
+[
+  {
+    "sha": "0488c87bd2e9",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0003.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0003.jpg",
+    "duration_s": 16.95,
+    "base_name": "2006chiro광주발표__동영상_0003",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0003.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0003.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "0787dcae015e",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__신해식(편집).mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__신해식(편집).jpg",
+    "duration_s": 90.05,
+    "base_name": "2006chiro광주발표__신해식(편집)",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "신해식(편집).wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "신해식(편집).wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "07a5708cbaf3",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__media2.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__media2.jpg",
+    "duration_s": 114.71,
+    "base_name": "Chiropractic_SMT_장재호__media2",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "media2.avi",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "05_CNF_test_(1).avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "05_CNF_test_(1).avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "05_CNF_test_(1).avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "07c460e52df3",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__08_Supine_exam.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__08_Supine_exam.jpg",
+    "duration_s": 61.56,
+    "base_name": "Neurologic_Exam_2015__08_Supine_exam",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "08 Supine exam.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "08 Supine exam.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      }
+    ]
+  },
+  {
+    "sha": "08197540d9e1",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0021.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0021.jpg",
+    "duration_s": 17.92,
+    "base_name": "2006chiro광주발표__동영상_0021",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0021.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0021.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "허리디스크.pptx",
+        "filename": "동영상_0021.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/부산일보-시민공개강좌",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "0939bf2b1230",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0014.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0014.jpg",
+    "duration_s": 67.9,
+    "base_name": "2006chiro광주발표__동영상_0014",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0014.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0014.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "0ff8b2c4183b",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0023.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0023.jpg",
+    "duration_s": 19.97,
+    "base_name": "2006chiro광주발표__동영상_0023",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0023.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0023.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "허리디스크.pptx",
+        "filename": "동영상_0023.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/부산일보-시민공개강좌",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "139b5159e654",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0020.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0020.jpg",
+    "duration_s": 5.15,
+    "base_name": "2006chiro광주발표__동영상_0020",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0020.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0020.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "144261753129",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Leander_Tech.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Leander_Tech.jpg",
+    "duration_s": 23.42,
+    "base_name": "Chiropractic_SMT_장재호__Leander_Tech",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Leander Tech.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "1c0cf96f4bd5",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Index_Atlas_push_prone_rt.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Index_Atlas_push_prone_rt.jpg",
+    "duration_s": 7.92,
+    "base_name": "Chiropractic_SMT_장재호__Index_Atlas_push_prone_rt",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Index Atlas push prone rt.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "1f67d8f6bb93",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0025.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0025.jpg",
+    "duration_s": 21.45,
+    "base_name": "2006chiro광주발표__동영상_0025",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0025.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0025.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "허리디스크.pptx",
+        "filename": "동영상_0025.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/부산일보-시민공개강좌",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "2020a8373071",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Activator_Tech.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Activator_Tech.jpg",
+    "duration_s": 15.42,
+    "base_name": "Chiropractic_SMT_장재호__Activator_Tech",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Activator Tech.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "2540950e9e45",
+    "mp4": "archive/videos/harvest/Chiropractic_Neurology__media1.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_Neurology__media1.jpg",
+    "duration_s": 1321.96,
+    "base_name": "Chiropractic_Neurology__media1",
+    "origins": [
+      {
+        "ppt": "Chiropractic Neurology.pptx",
+        "filename": "media1.wmv",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Chiropractic Neurology.pptx",
+        "filename": "신경학검사.wmv",
+        "folder": "Dropbox/chiropractic neurology 2",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "270a92aed493",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__media8.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__media8.jpg",
+    "duration_s": 196.56,
+    "base_name": "Neurologic_Exam_2015__media8",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "media8.MP4",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "07 posturegait.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "07 posturegait.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      }
+    ]
+  },
+  {
+    "sha": "28043b3a39ce",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__06_LOC.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__06_LOC.jpg",
+    "duration_s": 108.21,
+    "base_name": "Chiropractic_SMT_장재호__06_LOC",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "06_LOC.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "06_LOC.avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "06_LOC.avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "2892fd2a1042",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__동영상_0017.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__동영상_0017.jpg",
+    "duration_s": 15.32,
+    "base_name": "Chiropractic_SMT_장재호__동영상_0017",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "동영상_0017.wmv",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0017.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0017.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "허리디스크.pptx",
+        "filename": "동영상_0017.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/부산일보-시민공개강좌",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "2cd94c800447",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0005.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0005.jpg",
+    "duration_s": 16.27,
+    "base_name": "2006chiro광주발표__동영상_0005",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0005.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0005.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "2ed3b83a9132",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__박효민(편집).mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__박효민(편집).jpg",
+    "duration_s": 90.24,
+    "base_name": "2006chiro광주발표__박효민(편집)",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "박효민(편집).wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "박효민(편집).wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "31e3c2473559",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0006.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0006.jpg",
+    "duration_s": 12.32,
+    "base_name": "2006chiro광주발표__동영상_0006",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0006.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0006.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "38aae878de96",
+    "mp4": "archive/videos/harvest/MIMD__contralaterl.mp4",
+    "thumb": "archive/videos/harvest_thumbs/MIMD__contralaterl.jpg",
+    "duration_s": 24.75,
+    "base_name": "MIMD__contralaterl",
+    "origins": [
+      {
+        "ppt": "MIMD.ppt",
+        "filename": "contralaterl.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/PASMISS2006(Jae-Ho Jang)",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "3e2b8cff7a50",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Thompson_Tech.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Thompson_Tech.jpg",
+    "duration_s": 11.42,
+    "base_name": "Chiropractic_SMT_장재호__Thompson_Tech",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Thompson Tech.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "3e35b28624b3",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상.jpg",
+    "duration_s": 16.95,
+    "base_name": "2006chiro광주발표__동영상",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "41ab49f37fde",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__media4.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__media4.jpg",
+    "duration_s": 136.14,
+    "base_name": "Neurologic_Exam_2015__media4",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "media4.MP4",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "04 Reflexes.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "04 Reflexes.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      }
+    ]
+  },
+  {
+    "sha": "42bdcf81ee8e",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__media1.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__media1.jpg",
+    "duration_s": 68.17,
+    "base_name": "Neurologic_Exam_2015__media1",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "media1.MP4",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "01 Sensory Pain.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "01 Sensory Pain.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      }
+    ]
+  },
+  {
+    "sha": "43458540ed1d",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__media8.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__media8.jpg",
+    "duration_s": 136.21,
+    "base_name": "Chiropractic_SMT_장재호__media8",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "media8.avi",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "04_Reflexes.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "04_Reflexes.avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "04_Reflexes.avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "48df2af100b3",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__동영상_0019.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__동영상_0019.jpg",
+    "duration_s": 11.16,
+    "base_name": "Neurologic_Exam_2015__동영상_0019",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "동영상_0019.wmv",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0019.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chiropractic Neurology.pptx",
+        "filename": "동영상_0019.wmv",
+        "folder": "Dropbox/chiropractic neurology 2",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0019.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "허리디스크.pptx",
+        "filename": "동영상_0019.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/부산일보-시민공개강좌",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "5035571aa4b9",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0016.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0016.jpg",
+    "duration_s": 15.15,
+    "base_name": "2006chiro광주발표__동영상_0016",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0016.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0016.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "허리디스크.pptx",
+        "filename": "동영상_0016.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/부산일보-시민공개강좌",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "5c98aeb6d14a",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Thumb_movement.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Thumb_movement.jpg",
+    "duration_s": 9.92,
+    "base_name": "Chiropractic_SMT_장재호__Thumb_movement",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Thumb movement.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "5d112227eab2",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__media4.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__media4.jpg",
+    "duration_s": 196.67,
+    "base_name": "Chiropractic_SMT_장재호__media4",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "media4.avi",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "07_posturegait.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "07_posturegait.avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "07_posturegait.avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "5e08cd054389",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__동영상_0012.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__동영상_0012.jpg",
+    "duration_s": 10.14,
+    "base_name": "Neurologic_Exam_2015__동영상_0012",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "동영상_0012.wmv",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0012.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chiropractic Neurology.pptx",
+        "filename": "동영상_0012.wmv",
+        "folder": "Dropbox/chiropractic neurology 2",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0012.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "5fb83211000d",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0012.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0012.jpg",
+    "duration_s": 10.08,
+    "base_name": "2006chiro광주발표__동영상_0012",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0012.avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "동영상_0012.avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "6340075ef55c",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Index_Atlas_push_sup_lt.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Index_Atlas_push_sup_lt.jpg",
+    "duration_s": 6.92,
+    "base_name": "Chiropractic_SMT_장재호__Index_Atlas_push_sup_lt",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Index Atlas push sup lt.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "65397854006e",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__media7.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__media7.jpg",
+    "duration_s": 108.11,
+    "base_name": "Neurologic_Exam_2015__media7",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "media7.MP4",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "06 LOC.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "06 LOC.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      }
+    ]
+  },
+  {
+    "sha": "6a55de54dcc7",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__황용태-짧은편집.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__황용태-짧은편집.jpg",
+    "duration_s": 10.0,
+    "base_name": "2006chiro광주발표__황용태-짧은편집",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "황용태-짧은편집.avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "황용태-짧은편집.avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "6da008012f1c",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0022.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0022.jpg",
+    "duration_s": 19.92,
+    "base_name": "2006chiro광주발표__동영상_0022",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0022.avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "동영상_0022.avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "73b0d16cd3a0",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__신해식.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__신해식.jpg",
+    "duration_s": 16.08,
+    "base_name": "2006chiro광주발표__신해식",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "신해식.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "신해식.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "허리디스크.pptx",
+        "filename": "신해식.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/부산일보-시민공개강좌",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "772955a25782",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__media6.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__media6.jpg",
+    "duration_s": 95.43,
+    "base_name": "Neurologic_Exam_2015__media6",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "media6.mp4",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "05 CNF test (2).mp4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "05 CNF test (2).mp4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      }
+    ]
+  },
+  {
+    "sha": "7892680e42df",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0019.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0019.jpg",
+    "duration_s": 11.08,
+    "base_name": "2006chiro광주발표__동영상_0019",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0019.avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "동영상_0019.avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "7ec883cf7d80",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Gonstead_sitting.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Gonstead_sitting.jpg",
+    "duration_s": 11.42,
+    "base_name": "Chiropractic_SMT_장재호__Gonstead_sitting",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Gonstead sitting.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "7f0e94054b32",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__08_Supine_exam.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__08_Supine_exam.jpg",
+    "duration_s": 61.62,
+    "base_name": "Chiropractic_SMT_장재호__08_Supine_exam",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "08_Supine_exam.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "08_Supine_exam.avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "08_Supine_exam.avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "81c953c96d1d",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__CBP_Tech_Trunk.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__CBP_Tech_Trunk.jpg",
+    "duration_s": 22.42,
+    "base_name": "Chiropractic_SMT_장재호__CBP_Tech_Trunk",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "CBP Tech Trunk.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "84df1845cce3",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__CBP_Tech_head.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__CBP_Tech_head.jpg",
+    "duration_s": 10.42,
+    "base_name": "Chiropractic_SMT_장재호__CBP_Tech_head",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "CBP Tech head.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "8a097db475fc",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0008.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0008.jpg",
+    "duration_s": 12.63,
+    "base_name": "2006chiro광주발표__동영상_0008",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0008.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0008.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "8c555f00efe8",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__media5.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__media5.jpg",
+    "duration_s": 68.25,
+    "base_name": "Chiropractic_SMT_장재호__media5",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "media5.avi",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "01_Sensory_Pain.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "01_Sensory_Pain.avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "01_Sensory_Pain.avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "8d3804f93d0d",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Hypothenar_sacral_apex_push.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Hypothenar_sacral_apex_push.jpg",
+    "duration_s": 16.42,
+    "base_name": "Chiropractic_SMT_장재호__Hypothenar_sacral_apex_push",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Hypothenar sacral apex push.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "8e8ff5cac6b6",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Hypothenar_Ilium_push.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Hypothenar_Ilium_push.jpg",
+    "duration_s": 15.92,
+    "base_name": "Chiropractic_SMT_장재호__Hypothenar_Ilium_push",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Hypothenar Ilium push.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "955067304683",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0010.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0010.jpg",
+    "duration_s": 15.09,
+    "base_name": "2006chiro광주발표__동영상_0010",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0010.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0010.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "허리디스크.pptx",
+        "filename": "동영상_0010.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/부산일보-시민공개강좌",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "965402a5f5aa",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Nimmo_Tech.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Nimmo_Tech.jpg",
+    "duration_s": 18.92,
+    "base_name": "Chiropractic_SMT_장재호__Nimmo_Tech",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Nimmo Tech.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "9b6e3233c385",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__박효민.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__박효민.jpg",
+    "duration_s": 23.17,
+    "base_name": "2006chiro광주발표__박효민",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "박효민.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "박효민.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "9cf493f077c9",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__AP_Thoracic.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__AP_Thoracic.jpg",
+    "duration_s": 11.92,
+    "base_name": "Chiropractic_SMT_장재호__AP_Thoracic",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "AP Thoracic.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "9d0fcc1dcaff",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0001.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0001.jpg",
+    "duration_s": 18.57,
+    "base_name": "2006chiro광주발표__동영상_0001",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0001.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0001.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "a63f3d301119",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Index_pillar_push_sup_rt.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Index_pillar_push_sup_rt.jpg",
+    "duration_s": 8.42,
+    "base_name": "Chiropractic_SMT_장재호__Index_pillar_push_sup_rt",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Index pillar push sup rt.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "a78be229188d",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__media1.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__media1.jpg",
+    "duration_s": 210.21,
+    "base_name": "Chiropractic_SMT_장재호__media1",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "media1.avi",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "05_CNF_test 동영상 합친것.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "05_CNF_test 동영상 합친것.avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "05_CNF_test 동영상 합친것.avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "a802d25e2fd6",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0024.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0024.jpg",
+    "duration_s": 13.93,
+    "base_name": "2006chiro광주발표__동영상_0024",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0024.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0024.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "a924dfb57bc5",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__media7.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__media7.jpg",
+    "duration_s": 147.29,
+    "base_name": "Chiropractic_SMT_장재호__media7",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "media7.avi",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "03_Motor.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "03_Motor.avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "03_Motor.avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "ae365d231667",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Index_Atlas_push_sup_rt.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Index_Atlas_push_sup_rt.jpg",
+    "duration_s": 9.42,
+    "base_name": "Chiropractic_SMT_장재호__Index_Atlas_push_sup_rt",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Index Atlas push sup rt.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "b276e19ec903",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0004.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0004.jpg",
+    "duration_s": 13.33,
+    "base_name": "2006chiro광주발표__동영상_0004",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0004.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0004.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "b3c29ebcd325",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__media3.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__media3.jpg",
+    "duration_s": 147.21,
+    "base_name": "Neurologic_Exam_2015__media3",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "media3.MP4",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "03 Motor.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "03 Motor.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      }
+    ]
+  },
+  {
+    "sha": "b568bb3bc491",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__동영상_0022.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__동영상_0022.jpg",
+    "duration_s": 19.97,
+    "base_name": "Neurologic_Exam_2015__동영상_0022",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "동영상_0022.wmv",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0022.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chiropractic Neurology.pptx",
+        "filename": "동영상_0022.wmv",
+        "folder": "Dropbox/chiropractic neurology 2",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0022.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "허리디스크.pptx",
+        "filename": "동영상_0022.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/부산일보-시민공개강좌",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "b6d7f7db3887",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0009.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0009.jpg",
+    "duration_s": 15.65,
+    "base_name": "2006chiro광주발표__동영상_0009",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0009.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0009.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "b83919a87ef5",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__media3.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__media3.jpg",
+    "duration_s": 95.5,
+    "base_name": "Chiropractic_SMT_장재호__media3",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "media3.avi",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "05_CNF_test_(2).avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "05_CNF_test_(2).avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "05_CNF_test_(2).avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "c2aa7dcd0511",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0013.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0013.jpg",
+    "duration_s": 68.28,
+    "base_name": "2006chiro광주발표__동영상_0013",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0013.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0013.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "cc8f14e21a9c",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__media6.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__media6.jpg",
+    "duration_s": 105.71,
+    "base_name": "Chiropractic_SMT_장재호__media6",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "media6.avi",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "02_Weber_vibration.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "02_Weber_vibration.avi",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "02_Weber_vibration.avi",
+        "folder": "Dropbox/강의 Interventional Tech/Neurologic exam 최종",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "cecd81510925",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0011.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0011.jpg",
+    "duration_s": 11.42,
+    "base_name": "2006chiro광주발표__동영상_0011",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0011.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0011.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "ceddb6b3e130",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__media2.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__media2.jpg",
+    "duration_s": 105.61,
+    "base_name": "Neurologic_Exam_2015__media2",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "media2.MP4",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "02 Weber vibration.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "02 Weber vibration.MP4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      }
+    ]
+  },
+  {
+    "sha": "cf93840c6869",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Diversified_Nelson_pull_6.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Diversified_Nelson_pull_6.jpg",
+    "duration_s": 10.92,
+    "base_name": "Chiropractic_SMT_장재호__Diversified_Nelson_pull_6",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Diversified Nelson pull 6.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "d1c58290cf16",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__황용태-짧은편집.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__황용태-짧은편집.jpg",
+    "duration_s": 10.05,
+    "base_name": "Neurologic_Exam_2015__황용태-짧은편집",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "황용태-짧은편집.wmv",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "황용태-짧은편집.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chiropractic Neurology.pptx",
+        "filename": "황용태-짧은편집.wmv",
+        "folder": "Dropbox/chiropractic neurology 2",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "황용태-짧은편집.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "허리디스크.pptx",
+        "filename": "황용태-짧은편집.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/부산일보-시민공개강좌",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "d7af586a1da7",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__동영상_0018.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__동영상_0018.jpg",
+    "duration_s": 15.32,
+    "base_name": "Chiropractic_SMT_장재호__동영상_0018",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "동영상_0018.wmv",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0018.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0018.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "허리디스크.pptx",
+        "filename": "동영상_0018.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/부산일보-시민공개강좌",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "d899bfbc0130",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0002.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0002.jpg",
+    "duration_s": 16.3,
+    "base_name": "2006chiro광주발표__동영상_0002",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0002.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0002.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "dbaeea0917f4",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Bilateral_Hyphothenar_push.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Bilateral_Hyphothenar_push.jpg",
+    "duration_s": 11.42,
+    "base_name": "Chiropractic_SMT_장재호__Bilateral_Hyphothenar_push",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Bilateral Hyphothenar push.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "e3cb90f64a5f",
+    "mp4": "archive/videos/harvest/MIMD__retractor.mp4",
+    "thumb": "archive/videos/harvest_thumbs/MIMD__retractor.jpg",
+    "duration_s": 12.12,
+    "base_name": "MIMD__retractor",
+    "origins": [
+      {
+        "ppt": "MIMD.ppt",
+        "filename": "retractor.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/PASMISS2006(Jae-Ho Jang)",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "e43c1b46cf2c",
+    "mp4": "archive/videos/harvest/Neurologic_Exam_2015__media5.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Neurologic_Exam_2015__media5.jpg",
+    "duration_s": 114.61,
+    "base_name": "Neurologic_Exam_2015__media5",
+    "origins": [
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "media5.mp4",
+        "folder": "EMBEDDED",
+        "source_type": "pptx-embedded"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "05 CNF test (1).mp4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      },
+      {
+        "ppt": "Neurologic Exam 2015.pptx",
+        "filename": "05 CNF test (1).mp4",
+        "folder": "G_root",
+        "source_type": "drive-root"
+      }
+    ]
+  },
+  {
+    "sha": "e7507e7034cc",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__황용태.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__황용태.jpg",
+    "duration_s": 38.68,
+    "base_name": "2006chiro광주발표__황용태",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "황용태.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "황용태.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "e9dd968dabfc",
+    "mp4": "archive/videos/harvest/MIMD__flavectomy.mp4",
+    "thumb": "archive/videos/harvest_thumbs/MIMD__flavectomy.jpg",
+    "duration_s": 10.17,
+    "base_name": "MIMD__flavectomy",
+    "origins": [
+      {
+        "ppt": "MIMD.ppt",
+        "filename": "flavectomy.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/PASMISS2006(Jae-Ho Jang)",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "ebbf00aae5a6",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0015.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0015.jpg",
+    "duration_s": 68.94,
+    "base_name": "2006chiro광주발표__동영상_0015",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0015.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0015.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "ebe5e5407caa",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0007.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0007.jpg",
+    "duration_s": 14.58,
+    "base_name": "2006chiro광주발표__동영상_0007",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0007.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0007.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "허리디스크.pptx",
+        "filename": "동영상_0007.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/부산일보-시민공개강좌",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "f16ab3904c01",
+    "mp4": "archive/videos/harvest/2006chiro광주발표__동영상_0026.mp4",
+    "thumb": "archive/videos/harvest_thumbs/2006chiro광주발표__동영상_0026.jpg",
+    "duration_s": 16.88,
+    "base_name": "2006chiro광주발표__동영상_0026",
+    "origins": [
+      {
+        "ppt": "2006chiro광주발표.ppt",
+        "filename": "동영상_0026.wmv",
+        "folder": "Dropbox/Chiropractic 장재호",
+        "source_type": "external-standalone"
+      },
+      {
+        "ppt": "Chirotech.ppt",
+        "filename": "동영상_0026.wmv",
+        "folder": "Dropbox/Spine Intervention/정형통증학회 강의 2010/장재호교수님발표/Chiropractic Technique",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "f6f821187b3e",
+    "mp4": "archive/videos/harvest/MIMD__medfacet.mp4",
+    "thumb": "archive/videos/harvest_thumbs/MIMD__medfacet.jpg",
+    "duration_s": 10.54,
+    "base_name": "MIMD__medfacet",
+    "origins": [
+      {
+        "ppt": "MIMD.ppt",
+        "filename": "medfacet.wmv",
+        "folder": "Dropbox/강의 Interventional Tech/PASMISS2006(Jae-Ho Jang)",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "f8266af3e679",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Spinous_push_and_pull.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Spinous_push_and_pull.jpg",
+    "duration_s": 15.92,
+    "base_name": "Chiropractic_SMT_장재호__Spinous_push_and_pull",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Spinous push and pull.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  },
+  {
+    "sha": "fb10f0ce3649",
+    "mp4": "archive/videos/harvest/Chiropractic_SMT_장재호__Index_Atlas_push_sup_Rt2.mp4",
+    "thumb": "archive/videos/harvest_thumbs/Chiropractic_SMT_장재호__Index_Atlas_push_sup_Rt2.jpg",
+    "duration_s": 7.42,
+    "base_name": "Chiropractic_SMT_장재호__Index_Atlas_push_sup_Rt2",
+    "origins": [
+      {
+        "ppt": "Chiropractic (SMT)-장재호.pptx",
+        "filename": "Index Atlas push sup Rt2.avi",
+        "folder": "Dropbox/Chiropractic 장재호  KOA 2015",
+        "source_type": "external-standalone"
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "_comment": "10개 테크닉 노트북 ID 매핑 (2026-04-22 생성). 향후 팟캐스트/영상/PPTX 생성 시 이 파일의 notebook_id 사용.",
+  "created_at": "2026-04-22",
+  "master_notebook": {
+    "id": "029dc58f-f7e8-481e-8e73-7ec40e7ae4bd",
+    "title": "카이로프랙틱정형외과",
+    "role": "마스터 종합 노트북 (기존)"
+  },
+  "technique_notebooks": [
+    {"no": 1,  "technique": "Diversified",            "title": "[테크닉] 1. Diversified — HVLA 수기 교정",         "notebook_id": "291e66c6-c8b5-4de0-9ef9-f3bab92ac4ff", "research_task_id": "98d661b5-91e0-4267-b76d-1a471e3256ae"},
+    {"no": 2,  "technique": "Gonstead",               "title": "[테크닉] 2. Gonstead — 특이적 분석 교정",            "notebook_id": "4e8b2040-ae5a-438c-90ad-a8acc7a542f2", "research_task_id": "a8cdf6e8-feaf-485a-a870-9e12750d8ed4"},
+    {"no": 3,  "technique": "Toggle Recoil / HIO",    "title": "[테크닉] 3. Toggle Recoil (HIO) — 상부경추 특이교정",  "notebook_id": "2b8b7956-cc5e-4591-a0c1-b0904f95d591", "research_task_id": "075d4331-dca6-4a6d-967f-ab6cc2bc139a"},
+    {"no": 4,  "technique": "Thompson",               "title": "[테크닉] 4. Thompson — 드롭 테이블 교정",              "notebook_id": "b01b6979-fff3-432e-b62c-d351a389b853", "research_task_id": "8b47159e-4252-4ddc-b21d-e5edacf3841d"},
+    {"no": 5,  "technique": "Activator Methods",      "title": "[테크닉] 5. Activator Methods — 기구 교정",           "notebook_id": "b250bba3-2ff3-44e1-9bd0-3b0fb26aaabd", "research_task_id": "636eb279-c2c2-4a97-a83c-592353dfd0ee"},
+    {"no": 6,  "technique": "Cox Flexion-Distraction","title": "[테크닉] 6. Cox Flexion-Distraction — 척추 감압",      "notebook_id": "4c81bbd8-19e9-4727-9e48-eaf5a0a389b2", "research_task_id": "18f86ffb-448d-479b-b89e-fd3b565020b4"},
+    {"no": 7,  "technique": "Logan Basic",            "title": "[테크닉] 7. Logan Basic — 천골 저강도 교정",          "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "research_task_id": "476cb540-4c31-4511-b51d-c8847b38b9d3"},
+    {"no": 8,  "technique": "SOT",                    "title": "[테크닉] 8. SOT — 카테고리 기반 통합 교정",            "notebook_id": "2b73a534-51e0-4404-8538-7b60bc4dc780", "research_task_id": "c7176e4e-9e3c-4cad-878a-aeb9b176659b"},
+    {"no": 9,  "technique": "Carrick Functional Neurology", "title": "[테크닉] 9. Carrick 기능 신경학",             "notebook_id": "e4f43415-ed66-4621-a902-c4c450a6925d", "research_task_id": "8090bfaf-fb84-4dc7-a23d-2d16e329919b"},
+    {"no": 10, "technique": "Harrison CBP",           "title": "[테크닉] 10. Harrison CBP — 생체역학 척추 재활",      "notebook_id": "37eea36e-8142-45af-b223-108d078ebd09", "research_task_id": "1ad9fde4-4aed-4168-aa5d-c32e4c3c632d"},
+    {"no": 11, "technique": "Applied Kinesiology (AK)","title": "[테크닉] 11. Applied Kinesiology (AK) — 근육검사 진단·교정술", "notebook_id": "416ef164-398d-46f0-8d11-45558467bd7f", "research_task_id": "04d16403-3640-476c-a827-02246c9a846c", "note": "한국 임상 핵심 테크닉 — 사용자 특별 지정"}
+  ]
+}

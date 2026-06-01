@@ -1,0 +1,20 @@
+{
+  "submission_date": "2026-04-27",
+  "session": "Day 5 09:55-10:11 KST — Cox P3-4 + Logan P1-4 재제출 + 다운로드 + 최종 빌드 ✅ 121/121 100%",
+  "planned": 6,
+  "submitted_total": 6,
+  "succeeded_submission": 6,
+  "failed_submission": 0,
+  "downloaded_total": 12,
+  "final_build_status": "121/121 (100%) NotebookLM artifacts ready",
+  "note": "Day 3 오전 0/6 실패 (24h hard reset 가설) → 약 48h 경과 후 재시도 → 6/6 in_progress → 약 10분 후 6/6 completed → 12파일(PDF+PPTX) 다운로드 → 최종 빌드 → 100%",
+  "render_time_observed": "약 5-10분 (00:56:03 시작 → 01:06:48 마지막 완료)",
+  "slide_decks": [
+    {"name": "ch08_cox_slides3", "artifact_id": "36e58ec5-f727-4631-8557-d77d8aed7684", "notebook_id": "4c81bbd8-19e9-4727-9e48-eaf5a0a389b2", "part": "Part 3 교정", "output_pdf": "cox/06_slides_part3.pdf", "output_pptx": "cox/06_slides_part3.pptx"},
+    {"name": "ch08_cox_slides4", "artifact_id": "7ec1301e-00b0-43d3-9b66-a7978b71d96f", "notebook_id": "4c81bbd8-19e9-4727-9e48-eaf5a0a389b2", "part": "Part 4 임상·비판", "output_pdf": "cox/07_slides_part4.pdf", "output_pptx": "cox/07_slides_part4.pptx"},
+    {"name": "ch09_logan_slides1", "artifact_id": "5a51a509-f8a3-4f10-9370-a5bea030ba8a", "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "part": "Part 1 기초", "output_pdf": "logan/04_slides_part1.pdf", "output_pptx": "logan/04_slides_part1.pptx"},
+    {"name": "ch09_logan_slides2", "artifact_id": "e0e0cf67-6ae9-4199-a937-dfe553d0581e", "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "part": "Part 2 진단", "output_pdf": "logan/05_slides_part2.pdf", "output_pptx": "logan/05_slides_part2.pptx"},
+    {"name": "ch09_logan_slides3", "artifact_id": "72036529-043f-4436-89c4-d8c28ef4815f", "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "part": "Part 3 교정", "output_pdf": "logan/06_slides_part3.pdf", "output_pptx": "logan/06_slides_part3.pptx"},
+    {"name": "ch09_logan_slides4", "artifact_id": "fc012b98-54bb-4c09-8583-815563fec896", "notebook_id": "a8039cf8-6d09-49f4-b80b-9e5e78c0a968", "part": "Part 4 임상·비판", "output_pdf": "logan/07_slides_part4.pdf", "output_pptx": "logan/07_slides_part4.pptx"}
+  ]
+}

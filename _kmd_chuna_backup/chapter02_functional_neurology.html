@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chiropractic Functional Neurology | Chiropractic</title>
+  <meta name="description" content="Chapter 2. Chiropractic Functional Neurology — 진단·치료·평가의 근간. Assessment 중심의 Afferentation/Deafferentation/Efferentation 프레임워크. 근거 기반, 비판적 시각 포함." />
+  <link rel="stylesheet" href="./assets/main.css" />
+</head>
+<body>
+
+  <!-- ========== GLASSMORPHIC NAV ========== -->
+  <nav class="site-nav" aria-label="주 메뉴">
+    <div class="nav-inner">
+      <a class="nav-brand" href="./index.html">
+        <span class="mark"></span>
+        <span>Chiropractic</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html#core">철학</a></li>
+        <li><a href="./index.html#history">역사</a></li>
+        <li><a href="./index.html#curriculum">커리큘럼</a></li>
+        <li><a href="./index.html#format">학습 포맷</a></li>
+        <li><a href="./index.html#principle">원칙</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-ghost btn-sm" href="./login.html">로그인</a>
+        <a class="btn btn-primary btn-sm" href="./index.html#curriculum">커리큘럼</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero-chapter">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="./index.html">Chiropractic</a>
+        &nbsp;/&nbsp;
+        <a href="./index.html#curriculum">커리큘럼</a>
+        &nbsp;/&nbsp;
+        Chapter 2 ⭐
+      </div>
+      <h1>Chiropractic Functional Neurology</h1>
+      <h2>진단 · 치료 · 평가의 근간 — Assessment를 중심으로 한 신경학적 임상 프레임워크</h2>
+    </div>
+  </header>
+
+  <!-- ========== IN-PAGE NAV ========== -->
+  <nav class="site-nav" aria-label="챕터 섹션" style="top: var(--nav-h); background: var(--glass-bg-strong);">
+    <div class="nav-inner" style="justify-content: center;">
+      <ul class="nav-links" style="justify-content: center;">
+        <li><a href="#intro">서론</a></li>
+        <li><a href="#basics">신경계 기초</a></li>
+        <li><a href="#aff-def-eff">Aff/Def/Eff</a></li>
+        <li><a href="#assessment">⭐ Assessment</a></li>
+        <li><a href="#treatment">치료</a></li>
+        <li><a href="#outcome">재평가</a></li>
+        <li><a href="#clinical">임상 적용</a></li>
+        <li><a href="#critical">🔴 비판적 시각</a></li>
+        <li><a href="#resources">자료</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ========== 0. 편집 원칙 ========== -->
+    <section id="editorial">
+      <div class="callout callout-info">
+        <h4>📘 본 강의록의 편집 원칙</h4>
+        <p>
+          Chapter 2는 카이로프랙틱 Functional Neurology(FN)의 이론을 <strong>근거 기반 의학(EBM)</strong> 관점에서 정리합니다.
+          신경생리학적으로 확립된 내용은 🟢 포함하고, 과학적 합의를 벗어난 주장은 🔴 비판적으로 명시합니다.
+          Vitalism · "Innate Intelligence" · 한의학 경락 이론 · 측정 불가한 추상 개념은 제외합니다.
+          Carrick FN 커뮤니티의 일부 과장 주장은 <strong>Part VIII. 비판적 시각</strong>에서 상세히 다룹니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== PART I. 서론 ========== -->
+    <section id="intro">
+      <h2>Part I. 서론 — Functional Neurology란 무엇인가</h2>
+
+      <div class="principle-card">
+        <h3>본 강의의 조작적 정의</h3>
+        <p>
+          <strong>Functional Neurology</strong>는 수기·운동·감각 자극이
+          말초 수용기를 통해 중추신경계에 입력(<strong>Afferentation</strong>)을 주고,
+          척수·뇌간·소뇌·피질에서의 처리를 거쳐
+          원심성 출력(<strong>Efferentation</strong>)을 조절함으로써,
+          기계적 근골격 기능장애와 일부 신경학적 증상을 개선할 수 있다는 가설에 기반한 임상 프레임워크다.
+        </p>
+        <p>
+          이 정의는 Sherrington(1906) 이래 확립된 신경생리학 원리에 부합하며,
+          Vitalism·전신 질환 인과론을 명시적으로 배제합니다.
+        </p>
+      </div>
+
+      <h3>1.1 전통(임상) 신경학과 기능 신경학의 비교</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>항목</th>
+            <th>임상 신경학 (Mainstream)</th>
+            <th>기능 신경학 (FN)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>초점</td><td>구조적 병변 진단</td><td>기능적 상태 평가·조절</td></tr>
+          <tr><td>도구</td><td>MRI · CT · EMG · 검사실</td><td>자세·안구·소뇌·전정 기능 검사</td></tr>
+          <tr><td>치료</td><td>약물·수술·재활 의뢰</td><td>수기·운동·감각 자극·재활</td></tr>
+          <tr><td>근거 수준</td><td><span class="evidence ev-strong">🟢 Strong</span> (주요 영역)</td><td><span class="evidence ev-mod">🟡 중간</span>~<span class="evidence ev-limited">🟠 제한</span> (중재별 편차)</td></tr>
+          <tr><td>위상</td><td colspan="2"><strong>상호 배타 아님 — FN은 임상 신경학의 보완</strong></td></tr>
+        </tbody>
+      </table>
+
+      <h3>1.2 역사 요약</h3>
+      <ul>
+        <li><strong>1970s 후반</strong> — Frederick R. Carrick, DC, PhD의 임상 신경학 기반 교육 시작</li>
+        <li><strong>1979</strong> — Carrick Institute 설립 (Cape Canaveral, Florida)</li>
+        <li><strong>1980s</strong> — ACNB (American Chiropractic Neurology Board) 설립, <strong>DACNB</strong> 자격 인증</li>
+        <li><strong>2000s</strong> — 뇌진탕·전정 재활 프로토콜 확장, NFL·NHL 협업</li>
+        <li><strong>2010s</strong> — Heidi Haavik 등 PMC 다수 논문으로 기초 과학 근거 축적</li>
+        <li><strong>2017</strong> — Meyer et al. <em>Unravelling Functional Neurology</em> — FN에 대한 <strong>체계적 비판 리뷰</strong> 발표</li>
+      </ul>
+
+      <h3>1.3 근거 수준의 솔직한 평가</h3>
+      <table class="data-table">
+        <thead>
+          <tr><th>영역</th><th>근거 수준</th><th>평가</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>기계수용기·근방추 신경생리</td><td><span class="evidence ev-strong">🟢 Strong</span></td><td>Sherrington 이래 확립된 기초</td></tr>
+          <tr><td>척추 수기의 신경생리 효과</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Pickar·Haavik 다수 연구</td></tr>
+          <tr><td>전정 재활 (말초 전정 기능장애)</td><td><span class="evidence ev-strong">🟢 Strong</span></td><td>Cochrane SR</td></tr>
+          <tr><td>뇌진탕 vestib/ocular 재활</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Schneider 2014 RCT</td></tr>
+          <tr><td>소뇌 자극으로 전신 기능 개선 (광의)</td><td><span class="evidence ev-limited">🟠 Limited</span></td><td>증례 중심, 일반화 어려움</td></tr>
+          <tr style="background:#fff3f3;"><td><strong>단일 교정으로 뇌 기능 재조정</strong></td><td><span class="evidence ev-none">🔴 No evidence</span></td><td>과장 주장</td></tr>
+          <tr style="background:#fff3f3;"><td><strong>자극으로 자폐·ADHD·학습장애 치료</strong></td><td><span class="evidence ev-none">🔴 No evidence</span></td><td>근거 부재</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ========== PART II. 신경계 기초 ========== -->
+    <section id="basics">
+      <h2>Part II. 신경계 기초 — 임상 응용을 위한 재정리</h2>
+
+      <figure style="margin:1.5rem 0;">
+        <img src="./images/chapter2/01_io_model.svg" alt="신경계 Input-Process-Output 3단 모델" style="width:100%; border:1px solid var(--c-border-light); border-radius:var(--r-md);" />
+        <figcaption style="margin-top:.5rem; font-size:.85rem; color:var(--c-text-muted); text-align:center;">그림 2-1. 신경계의 I/O 모델 — Sherrington 1906 기반.</figcaption>
+      </figure>
+
+      <h3>2.1 CNS/PNS와 기능적 임상 분류</h3>
+      <p>FN은 신경계를 <strong>Input(입력) → Process(처리) → Output(출력)</strong>의 3단으로 해석합니다. 각 단계가 Assessment와 Treatment의 타겟입니다.</p>
+
+      <h3>2.2 소뇌 — FN의 핵심 기관</h3>
+      <ul>
+        <li>운동 협응·평형·근긴장 조절의 중심</li>
+        <li>전정·시각·고유수용 입력을 통합</li>
+        <li>인지·감정 기능에도 관여 (Schmahmann 1998 — <em>cerebellar cognitive affective syndrome</em>)</li>
+        <li>신경가소성 높음 → 재활 반응 빠름</li>
+      </ul>
+
+      <div class="callout callout-warn">
+        <h4>⚠️ 과장 주의</h4>
+        <p>"소뇌 자극으로 자폐·ADHD·학습장애를 치료한다"는 확장 주장은 근거가 부족합니다. 소뇌 기능 검사 자체와, 이를 이용한 협응·평형 재활은 근거가 있으나, 효능 범위에 대한 과장은 본 강의에서 배제합니다.</p>
+      </div>
+
+      <h3>2.3 전정계 · 뇌간 · 척수 · 자율신경</h3>
+      <p>상세 내용은 <a href="./functional_neurology/lecture/chapter02_functional_neurology.md#part-ii-신경계-기초--임상-응용을-위한-재정리" target="_blank" rel="noopener">강의록 MD Part II</a>를 참조.</p>
+    </section>
+
+    <!-- ========== PART III. AFF/DEF/EFF ========== -->
+    <section id="aff-def-eff">
+      <h2>⭐ Part III. Afferentation · Deafferentation · Efferentation</h2>
+      <p class="section-lead">본 강의의 중추 개념 세트. 모든 카이로프랙틱·도수·재활 기법을 이 3개 축으로 해석합니다.</p>
+
+      <figure style="margin:1.5rem 0;">
+        <img src="./images/chapter2/02_aff_def_eff.svg" alt="Afferentation · Deafferentation · Efferentation 관계도" style="width:100%; border:1px solid var(--c-border-light); border-radius:var(--r-md);" />
+        <figcaption style="margin-top:.5rem; font-size:.85rem; color:var(--c-text-muted); text-align:center;">그림 2-2. 3개념의 구조적 관계. Deafferentation은 구심성 감소 상태로, 중추 처리와 Efferent 출력에 연쇄 영향.</figcaption>
+      </figure>
+
+      <h3>3.1 Afferentation (구심성 입력)</h3>
+      <p>말초 감각 수용기에서 CNS로 전달되는 신경 신호의 흐름. <strong>Sherrington(1906)</strong> 이래 확립된 개념.</p>
+
+      <h4>말초 기계수용기 4유형 (Freeman & Wyke, 1967)</h4>
+      <figure style="margin:1.5rem 0;">
+        <img src="./images/chapter2/03_mechanoreceptors.svg" alt="관절 기계수용기 4유형 다이어그램" style="width:100%; border:1px solid var(--c-border-light); border-radius:var(--r-md);" />
+        <figcaption style="margin-top:.5rem; font-size:.85rem; color:var(--c-text-muted); text-align:center;">그림 2-3. Type I-IV 기계수용기의 위치·적응·임상 의의.</figcaption>
+      </figure>
+      <table class="data-table">
+        <thead>
+          <tr><th>Type</th><th>명칭</th><th>위치</th><th>적응</th><th>임상 의의</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>I</td><td>Ruffini</td><td>관절낭 표층</td><td>서서히</td><td>정적 자세·위치감각</td></tr>
+          <tr><td>II</td><td>Pacinian</td><td>심부 관절낭·인대</td><td>빠르게</td><td>가속·진동</td></tr>
+          <tr><td>III</td><td>Golgi 인대</td><td>인대</td><td>고역치</td><td>관절 끝범위·장력</td></tr>
+          <tr><td>IV</td><td>자유신경종말</td><td>전조직</td><td>다양</td><td>통각·염증 감지</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout callout-info">
+        <h4>🔵 임상 해석</h4>
+        <p>
+          HVLA 추력은 주로 Type I·II·III를 활성화시키며, 이 입력이 척수·소뇌·피질로 전달되어
+          근긴장·통증·자세 조절을 즉시 변화시킵니다.
+          <em>Wyke BD. Articular neurology — a review. Physiotherapy 1972;58:94-99.</em>
+        </p>
+      </div>
+
+      <h3>3.2 Deafferentation (구심성 입력 감소)</h3>
+      <p>구심성 입력이 감소·결손된 상태. 해부학적 단절부터 기능적 감소(관절 hypomobility로 mechanoreceptor 입력 저하)까지 스펙트럼.</p>
+
+      <ul>
+        <li>관절 저운동성 → Type I/II/III 기계수용기 침묵 → 중추 처리 '정보 공백'</li>
+        <li>만성 통증에서 <strong>중추 감작(central sensitization)</strong>과 감각 지도 재조직 동반</li>
+        <li>임상 결과: 근긴장 이상·자세 편위·고유수용 오류·통증 감작·운동 조절 저하</li>
+      </ul>
+
+      <div class="callout callout-tip">
+        <h4>🔵 근거 인용</h4>
+        <p>
+          <strong>Pickar JG.</strong> Neurophysiological effects of spinal manipulation. <em>Spine J</em> 2002;2(5):357-371.<br />
+          <strong>Woolf CJ.</strong> Central sensitization. <em>Pain</em> 2011;152(3S):S2-S15.<br />
+          <strong>Haavik H, Murphy B.</strong> The role of spinal manipulation in addressing disordered sensorimotor integration. <em>J Electromyogr Kinesiol</em> 2012;22(5):768-776.
+        </p>
+      </div>
+
+      <h3>3.3 Efferentation (원심성 출력)</h3>
+      <ul>
+        <li><strong>α-운동뉴런</strong>: extrafusal 근 수축</li>
+        <li><strong>γ-운동뉴런</strong>: intrafusal (근방추 감도) 조절 → <strong>근긴장의 중추 조절 메커니즘</strong></li>
+        <li><strong>Renshaw cell</strong>: α-운동뉴런 귀환 억제</li>
+        <li><strong>자율신경</strong>: 교감·부교감 균형 (HRV로 대리 평가)</li>
+        <li><strong>중추 하행 조절</strong>: PAG·청반·RVM → 척수 후각 → 내인성 통증 억제</li>
+      </ul>
+
+      <h3>3.4 임상 사이클</h3>
+      <figure style="margin:1.5rem 0;">
+        <img src="./images/chapter2/05_clinical_cycle.svg" alt="Assessment 중심 임상 사이클 루프" style="width:100%; max-width:780px; border:1px solid var(--c-border-light); border-radius:var(--r-md);" />
+        <figcaption style="margin-top:.5rem; font-size:.85rem; color:var(--c-text-muted); text-align:center;">그림 2-4. 5단계 루프 — Re-Assessment 없는 치료는 FN이 아니다.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ========== PART IV. ASSESSMENT ========== -->
+    <section id="assessment">
+      <h2>⭐ Part IV. Assessment — 기능 신경학 임상의 근간</h2>
+
+      <div class="principle-card">
+        <h3>Assessment가 왜 가장 중요한가</h3>
+        <ul>
+          <li>치료 타겟 결정 — 어떤 afferent 경로가 저하되었는가</li>
+          <li>효과 측정의 기준선 — 전·후 비교 가능</li>
+          <li>의학적 Red Flag 배제 — 수기·자극이 부적절한 상태 차단</li>
+          <li>환자·동료 소통의 근거 — 주관적 호소가 아닌 객관적 지표</li>
+          <li>근거 기반 실천의 기초 — Assessment가 근거 중심이어야 Treatment도 근거 중심</li>
+        </ul>
+        <p><em>"You cannot treat what you cannot measure."</em></p>
+      </div>
+
+      <h3>4.1 평가의 5단계 계층 모델</h3>
+      <figure style="margin:1.5rem 0;">
+        <img src="./images/chapter2/04_assessment_hierarchy.svg" alt="Assessment 5단계 계층 모델" style="width:100%; max-width:900px; border:1px solid var(--c-border-light); border-radius:var(--r-md);" />
+        <figcaption style="margin-top:.5rem; font-size:.85rem; color:var(--c-text-muted); text-align:center;">그림 2-5. 평가의 5단계 — History → Observation → 기본 신경학 → FN 특화 → 영상·의뢰.</figcaption>
+      </figure>
+
+      <h3>4.2 병력 청취 — OPQRST + FN 추가</h3>
+      <ul>
+        <li><strong>기본</strong>: Onset · Provocation/Palliation · Quality · Radiation · Severity · Timing</li>
+        <li><strong>FN 추가</strong>: 두부 외상력 · 어지럼·평형 · 시각·청각 · 인지·수면 · 자율 증상</li>
+      </ul>
+
+      <div class="callout callout-danger">
+        <h4>🔴 Red Flag — 즉시 응급실·신경과 의뢰</h4>
+        <ul>
+          <li>생애 최악의 두통·thunderclap</li>
+          <li>의식 저하·혼동·국소 신경학적 결손</li>
+          <li>진행성 약화·감각 저하</li>
+          <li>배뇨·배변 장애·saddle anesthesia</li>
+          <li>최근 경부 외상 후 어지럼·두통 (VAD 가능성)</li>
+          <li>발열 + 경부 경직</li>
+        </ul>
+      </div>
+
+      <h3>4.3 기본 신경학 검사</h3>
+      <ul>
+        <li>뇌신경 I-XII (냄새·시력·안구운동·안면·청력·연하·혀)</li>
+        <li>DTR 0-4+ · 병적 반사(Hoffman·Babinski·Clonus)</li>
+        <li>MMT 0-5 · 감각(촉각·진동·위치감각) · 협응</li>
+      </ul>
+
+      <h3>4.4 소뇌 검사</h3>
+      <ul>
+        <li>Finger-to-nose · Heel-to-shin · RAM (dysmetria·intention tremor·dysdiadochokinesia)</li>
+        <li>Tandem gait · Romberg · Foam Romberg</li>
+      </ul>
+
+      <h3>4.5 전정 검사</h3>
+      <table class="data-table">
+        <thead><tr><th>검사</th><th>목적</th><th>양성 소견</th></tr></thead>
+        <tbody>
+          <tr><td>Dix-Hallpike</td><td>후반고리관 BPPV</td><td>회전성 어지럼·안진</td></tr>
+          <tr><td>Head Impulse Test (HIT)</td><td>VOR 이상</td><td>Catch-up saccade</td></tr>
+          <tr><td>Head Shake</td><td>전정 비대칭</td><td>안진 유발</td></tr>
+          <tr><td>Fukuda Stepping</td><td>전정척수</td><td>45° 이상 회전</td></tr>
+          <tr><td>Dynamic Visual Acuity</td><td>VOR 기능</td><td>3 라인 이상 시력 저하</td></tr>
+        </tbody>
+      </table>
+
+      <h3>4.6 안구 운동 평가 (Oculomotor)</h3>
+      <ul>
+        <li><strong>VOR</strong> — 머리 움직임 중 안구 안정화 (Bedside HIT, DVA)</li>
+        <li><strong>Saccade</strong> — 두 목표 사이 이동 (과소·과대 사정)</li>
+        <li><strong>Smooth Pursuit</strong> — 느린 목표 추적</li>
+        <li><strong>Fixation</strong> — 정면 응시 (안진 유무)</li>
+        <li><strong>Convergence (NPC)</strong> — 정상 &lt; 5-6 cm (뇌진탕 후 이상 흔함)</li>
+      </ul>
+
+      <div class="callout callout-info">
+        <h4>🔵 인용</h4>
+        <p>
+          <strong>Master CL et al.</strong> Vision Diagnoses Are Common After Concussion in Adolescents. <em>Clin Pediatr</em> 2016.<br />
+          <strong>Mucha A et al.</strong> VOMS assessment. <em>Am J Sports Med</em> 2014.
+        </p>
+      </div>
+
+      <h3>4.7 자율신경 평가</h3>
+      <ul>
+        <li>Orthostatic Vital Signs (dysautonomia·POTS 선별)</li>
+        <li>Heart Rate Variability (HRV)</li>
+        <li>Pupillary Light Reflex · Valsalva Ratio</li>
+      </ul>
+
+      <h3>4.8 재현성과 신뢰도</h3>
+      <p>대부분의 FN 검사는 <strong>중간 정도의 inter/intra-examiner reliability</strong>를 보이며, 훈련·표준화된 프로토콜이 필수입니다. (Hickey et al. <em>Chiropr Man Therap</em> 2021)</p>
+    </section>
+
+    <!-- ========== PART V. 치료 ========== -->
+    <section id="treatment">
+      <h2>Part V. 치료 — 신경학적 자극 선택의 원리</h2>
+
+      <h3>자극 선정 의사결정 트리</h3>
+      <figure style="margin:1.5rem 0;">
+        <img src="./images/chapter2/06_evidence_pyramid.svg" alt="근거 피라미드 — FN 임상 주장의 검증 기준" style="width:100%; max-width:900px; border:1px solid var(--c-border-light); border-radius:var(--r-md);" />
+        <figcaption style="margin-top:.5rem; font-size:.85rem; color:var(--c-text-muted); text-align:center;">그림 2-6. 근거 피라미드 — 치료·주장의 검증 기준. Carrick 증례는 낮은 층위, Cochrane SR은 정점.</figcaption>
+      </figure>
+
+      <ul>
+        <li>관절 hypomobility → HVLA / MOB / MET</li>
+        <li>VOR 저하 → Gaze stabilization · VOR x1 x2</li>
+        <li>Saccade·Pursuit 이상 → 시운동 재훈련</li>
+        <li>Romberg 이상 → 고유수용 재훈련 (BAPS · Foam)</li>
+        <li>자율 불균형 → 횡격막 호흡 · slow-paced breathing (6/min)</li>
+        <li>인지·주의 저하 → Dual-task 훈련</li>
+      </ul>
+
+      <div class="callout callout-info">
+        <h4>🔵 관절 수기의 신경학적 기전</h4>
+        <p>
+          HVLA → Type I/II/III 기계수용기 폭발적 활성 → 척수 후각 Gate Control → 통증 감소.<br />
+          <strong>Haavik H et al.</strong> Effects of 12 Weeks of Chiropractic Care on Central Integration of Dual Somatosensory Input. <em>JMPT</em> 2017.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== PART VI. 재평가 ========== -->
+    <section id="outcome">
+      <h2>Part VI. 치료 결과 모니터링</h2>
+
+      <ul>
+        <li><strong>객관적 재평가</strong>: 초기 Assessment 지표를 동일 조건에서 재측정</li>
+        <li><strong>환자 보고 결과</strong>: VAS · NPRS · ODI · NDI · DHI · PCSS · SF-36</li>
+        <li><strong>반응 해석</strong>:
+          <ul>
+            <li>즉각적 — 신경학적 reset (Gate control · 기계수용기)</li>
+            <li>수주 — Neuroplastic 재조직</li>
+            <li>무반응 — 진단 재검토 · 다른 기전 고려</li>
+            <li>악화 — 즉시 중단 · 재평가 · 영상 의뢰</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== PART VII. 임상 적용 ========== -->
+    <section id="clinical">
+      <h2>Part VII. 임상 적용 — 주요 적응증</h2>
+
+      <table class="data-table">
+        <thead><tr><th>적응증</th><th>근거 수준</th><th>대표 인용</th></tr></thead>
+        <tbody>
+          <tr><td>BPPV canalith repositioning</td><td><span class="evidence ev-strong">🟢 Strong</span></td><td>Bhattacharyya 2017 CPG</td></tr>
+          <tr><td>Vestibular rehab (unilateral periph)</td><td><span class="evidence ev-strong">🟢 Strong</span></td><td>Hillier Cochrane 2015</td></tr>
+          <tr><td>Concussion vestib/ocular rehab</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Schneider 2014 RCT</td></tr>
+          <tr><td>Cervicogenic headache SMT</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Bryans JMPT 2011</td></tr>
+          <tr><td>중추 감작 통증 교육+운동</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Moseley 2015</td></tr>
+          <tr><td>만성 요통 SMT</td><td><span class="evidence ev-mod">🟡 Moderate</span></td><td>Rubinstein Cochrane 2013</td></tr>
+          <tr style="background:#fff3f3;"><td>"뇌 자극으로 자폐 호전"</td><td><span class="evidence ev-none">🔴 No evidence</span></td><td>—</td></tr>
+          <tr style="background:#fff3f3;"><td>"소뇌 자극으로 ADHD 치료"</td><td><span class="evidence ev-none">🔴 No evidence</span></td><td>—</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ========== PART VIII. 비판적 시각 (강조 섹션) ========== -->
+    <section id="critical" style="scroll-margin-top: 120px;">
+      <h2>🔴 Part VIII. 비판적 시각 — 논쟁과 한계</h2>
+      <p class="section-lead"><strong>환자·학생·동료에게 솔직하게 알려야 할 FN의 한계와 논쟁 지점</strong>입니다. 근거 있는 부분과 그렇지 않은 부분을 명확히 구분하지 않으면 의학적 신뢰를 잃습니다.</p>
+
+      <div class="callout callout-danger">
+        <h4>🔴 Carrick Functional Neurology의 주요 비판 (Meyer et al. 2017, 2021)</h4>
+        <ul>
+          <li>일부 주장의 <strong>생리학적 근거 과장</strong></li>
+          <li>진단 도구의 재현성·신뢰도가 peer-review에서 충분히 확립되지 않음</li>
+          <li>"Hemisphericity" 개념의 단순화가 현대 신경과학과 거리</li>
+          <li>고가의 사설 교육·인증 시스템</li>
+          <li>임상 효과의 <strong>RCT 증명 부족</strong> — 개별 증례·공개 세션에서만 보고된 경우 다수</li>
+        </ul>
+        <p><strong>인용</strong>: Meyer AL, Meyer A, Etherington S, Leboeuf-Yde C. Unravelling functional neurology: a scoping review of theories and clinical applications. <em>Chiropr Man Therap</em> 2017;25:19.</p>
+      </div>
+
+      <h3>과장 주장 vs 근거 있는 주장의 구분</h3>
+      <table class="data-table">
+        <thead><tr><th>🔴 과장 주장</th><th>🟢·🟡 근거 있는 주장</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>단일 교정으로 전신 질환 치료</td>
+            <td>관절 수기가 국소 통증·ROM 단기 개선</td>
+          </tr>
+          <tr>
+            <td>뇌 자극으로 자폐·ADHD 치료</td>
+            <td>전정 재활이 특정 어지럼증 개선</td>
+          </tr>
+          <tr>
+            <td>눈 운동으로 모든 학습장애 해결</td>
+            <td>뇌진탕 후 VOR 훈련이 일부 증상 개선</td>
+          </tr>
+          <tr>
+            <td>반구 불균형이 대부분 질환의 원인</td>
+            <td>소뇌·전정 기능 저하가 일부 증상에 기여</td>
+          </tr>
+          <tr>
+            <td>"Innate Intelligence"로 자가 치유</td>
+            <td>Neuroplasticity 원리에 기반한 반복 재활</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>DACNB 자격의 현실</h3>
+      <ul>
+        <li>DACNB는 <strong>미국 내 사설 인증</strong>이며, 연방 의료 면허가 아님</li>
+        <li>한국에서는 <strong>별도 면허 효력 없음</strong></li>
+        <li>그럼에도 교육 내용 중 <strong>기초 신경학·재활 원리</strong>는 실무에 유용</li>
+      </ul>
+
+      <div class="callout callout-tip">
+        <h4>🟢 결론 — 과장 없이도 FN은 임상에 충분히 유용</h4>
+        <p>
+          검증된 부분(전정 재활·VOR·소뇌 평가·관절 수기 신경생리)만으로도 FN은 도수치료·재활·정형 임상에 <strong>실질적 가치</strong>를 더합니다.
+          과장 주장을 솔직하게 빼도 본 강의가 다루는 범위는 임상에 직접 적용 가능한 근거 기반 도구의 집합입니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== RESOURCES ========== -->
+    <section id="resources">
+      <h2>강의 자료</h2>
+      <p class="section-lead"><strong>11/11</strong> 자료 준비 완료.</p>
+      <h3>📖 강의록</h3>
+      <div class="resource-row">
+        <a class="resource-link" href="./functional_neurology/lecture/chapter02_functional_neurology.md"><span class="icon">📖</span><span><strong>상세 강의록 MD</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>근거 기반 · 참고문헌</small></span></a>
+      </div>
+      <h3>🎧 팟캐스트</h3>
+      <div class="resource-row">
+        <a class="resource-link" href="./functional_neurology/v2/01_podcast.m4a"><span class="icon">🎧</span><span><strong>Deep Dive 2인 대화 60분+</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>evidence-based · 비판적 시각</small></span></a>
+      </div>
+      <h3>🎥 AI 동영상</h3>
+      <div class="resource-row">
+        <a class="resource-link" href="./functional_neurology/v2/02_video_part1_theory.mp4"><span class="icon">🎥</span><span><strong>Part 1 (이론)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/03_video_part2_clinical.mp4"><span class="icon">🎥</span><span><strong>Part 2 (임상·비판)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
+      </div>
+      <h3>🎴 PPTX 슬라이드 (4개 × 15장)</h3>
+      <div class="resource-row">
+        <a class="resource-link" href="./functional_neurology/v2/04_slides_part1_basics.pptx"><span class="icon">🎴</span><span><strong>Part 1 · 기초</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/05_slides_part2_aff_def_eff.pptx"><span class="icon">🎴</span><span><strong>Part 2 · Aff/Def/Eff</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/06_slides_part3_assessment.pptx"><span class="icon">🎴</span><span><strong>Part 3 · Assessment</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/07_slides_part4_clinical.pptx"><span class="icon">🎴</span><span><strong>Part 4 · 임상·비판</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+      </div>
+      <h3>📄 Report Markdown</h3>
+      <div class="resource-row">
+        <a class="resource-link" href="./functional_neurology/v2/08_report_part1.md"><span class="icon">📄</span><span><strong>Report 1/4</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>NotebookLM 자동 생성</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/09_report_part2.md"><span class="icon">📄</span><span><strong>Report 2/4</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>NotebookLM 자동 생성</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/10_report_part3.md"><span class="icon">📄</span><span><strong>Report 3/4</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>NotebookLM 자동 생성</small></span></a>
+        <a class="resource-link" href="./functional_neurology/v2/11_report_part4.md"><span class="icon">📄</span><span><strong>Report 4/4</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>NotebookLM 자동 생성</small></span></a>
+      </div>
+      <p style="margin-top:1rem">NotebookLM 노트북: <a href="https://notebooklm.google.com/notebook/e4f43415-ed66-4621-a902-c4c450a6925d" target="_blank" rel="noopener">열기 →</a></p>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5>챕터 탐색</h5>
+          <ul>
+            <li><a href="./index.html">← 메인</a></li>
+            <li><a href="./chapter01_introduction.html">1. 서설</a></li>
+            <li><a href="./chapter02_functional_neurology.html">2. Functional Neurology (현재)</a></li>
+            <li><a href="./chapter03_diversified.html">3. Diversified →</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>이 챕터 자료</h5>
+          <ul>
+            <li><a href="./functional_neurology/lecture/chapter02_functional_neurology.md">전체 강의록 MD</a></li>
+            <li><em>팟캐스트 제작 대기</em></li>
+            <li><em>영상 제작 대기</em></li>
+            <li><em>PPTX 제작 대기</em></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>외부 근거</h5>
+          <ul>
+            <li><a href="https://www.cochranelibrary.com/" target="_blank" rel="noopener">Cochrane Library</a></li>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a></li>
+            <li><a href="https://www.iasp-pain.org/" target="_blank" rel="noopener">IASP</a></li>
+            <li><a href="https://www.carrickinstitute.com/" target="_blank" rel="noopener">Carrick Institute</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>계정</h5>
+          <ul>
+            <li><a href="./login.html">로그인</a></li>
+            <li><a href="./signup.html">가입</a></li>
+            <li><a href="./admin.html">관리자</a></li>
+            <li><a href="mailto:drjang00@gmail.com">문의</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Dr. Jang · Chapter 2. Chiropractic Functional Neurology</span>
+        <span>교육 목적 · 임상 판단은 담당 의료진의 책임</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+{
+  "_comment": "Diversified Technique 노트북의 11개 아티팩트 생성 결과 (2026-04-22). 상태 확인: nlm studio status / studio_status MCP. 완료 후 download_artifact로 파일 다운로드.",
+  "notebook_id": "291e66c6-c8b5-4de0-9ef9-f3bab92ac4ff",
+  "notebook_url": "https://notebooklm.google.com/notebook/291e66c6-c8b5-4de0-9ef9-f3bab92ac4ff",
+  "notebook_title": "[테크닉] 1. Diversified — HVLA 수기 교정",
+  "artifacts": {
+    "podcast": {
+      "type": "audio",
+      "format": "deep_dive",
+      "length": "long",
+      "language": "ko",
+      "artifact_id": "1de1870a-39d4-42f0-8bfa-fdba5669366b",
+      "description": "4주 커리큘럼 통합 심층 팟캐스트, 2인 대화형, 60분+ 상세",
+      "download_path": "downloads/diversified/01_podcast_deepdive.mp4"
+    },
+    "video_part1": {
+      "type": "video",
+      "format": "explainer",
+      "visual_style": "whiteboard",
+      "language": "ko",
+      "artifact_id": "2ae2ade0-e16f-42c3-856c-cdc2f6aaa740",
+      "description": "전반부 (Week 1-2): 역사·기초이론 + 분석·진단",
+      "download_path": "downloads/diversified/02_video_part1_week12.mp4"
+    },
+    "video_part2": {
+      "type": "video",
+      "format": "explainer",
+      "visual_style": "whiteboard",
+      "language": "ko",
+      "artifact_id": "b4403344-12c5-4477-8215-46d096a7a48f",
+      "description": "후반부 (Week 3-4): 교정 실무 + 임상·안전",
+      "download_path": "downloads/diversified/03_video_part2_week34.mp4"
+    },
+    "slides_week1": {
+      "type": "slide_deck",
+      "format": "detailed_deck",
+      "language": "ko",
+      "artifact_id": "7a4f973f-e0db-4188-b935-d270317818d7",
+      "description": "Week 1 PPTX — 역사와 기초 이론 (15장)",
+      "download_path": "downloads/diversified/04_slides_week1.pptx"
+    },
+    "slides_week2": {
+      "type": "slide_deck",
+      "format": "detailed_deck",
+      "language": "ko",
+      "artifact_id": "6aa02c21-33a2-4405-9933-1a6280df3ec4",
+      "description": "Week 2 PPTX — 분석과 진단 (15장)",
+      "download_path": "downloads/diversified/05_slides_week2.pptx"
+    },
+    "slides_week3": {
+      "type": "slide_deck",
+      "format": "detailed_deck",
+      "language": "ko",
+      "artifact_id": "3a59989f-d95e-4b27-aeff-d4478b96c2b3",
+      "description": "Week 3 PPTX — 교정 실무 (15장)",
+      "download_path": "downloads/diversified/06_slides_week3.pptx"
+    },
+    "slides_week4": {
+      "type": "slide_deck",
+      "format": "detailed_deck",
+      "language": "ko",
+      "artifact_id": "cbfd9d3f-8843-4567-8c2f-bf332c1a9b4f",
+      "description": "Week 4 PPTX — 임상 적용과 안전 (15장)",
+      "download_path": "downloads/diversified/07_slides_week4.pptx"
+    },
+    "report_week1": {
+      "type": "report",
+      "format": "Create Your Own",
+      "language": "ko",
+      "artifact_id": "661d3a29-8e98-43de-a3d7-919cf73c98c0",
+      "description": "Week 1 강의록 — 역사와 기초 이론 (1시간 분량, 약 9-12K 단어)",
+      "download_path": "downloads/diversified/08_report_week1.md"
+    },
+    "report_week2": {
+      "type": "report",
+      "format": "Create Your Own",
+      "language": "ko",
+      "artifact_id": "2122eedf-4814-4046-8fe1-be5ed55c3a28",
+      "description": "Week 2 강의록 — 분석과 진단 (1시간 분량)",
+      "download_path": "downloads/diversified/09_report_week2.md"
+    },
+    "report_week3": {
+      "type": "report",
+      "format": "Create Your Own",
+      "language": "ko",
+      "artifact_id": "a5d9b53b-80cb-48c1-8eb9-4967d7e8695d",
+      "description": "Week 3 강의록 — 교정 실무 (1시간 분량)",
+      "download_path": "downloads/diversified/10_report_week3.md"
+    },
+    "report_week4": {
+      "type": "report",
+      "format": "Create Your Own",
+      "language": "ko",
+      "artifact_id": "88b89c6b-0887-4011-92c0-f3721a9a7e1f",
+      "description": "Week 4 강의록 — 임상 적용과 안전 (1시간 분량)",
+      "download_path": "downloads/diversified/11_report_week4.md"
+    }
+  },
+  "next_steps": [
+    "생성 완료 대기 (Google 서버 15-30분)",
+    "studio_status로 완료 확인",
+    "download_artifact 또는 nlm-batch-download로 파일 다운로드",
+    "관련 영상 색인 + 전자북 마스터 문서에 통합"
+  ]
+}

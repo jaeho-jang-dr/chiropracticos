@@ -1,0 +1,414 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1900" font-family="Helvetica, Arial, sans-serif">
+  <style>
+    .frame { fill:none; stroke:#111; stroke-width:2; }
+    .title { font-size:26px; font-weight:700; fill:#111; }
+    .subtitle { font-size:16px; font-weight:700; fill:#111; }
+    .panel-title { font-size:18px; font-weight:700; fill:#111; }
+    .label { font-size:11px; fill:#111; }
+    .label-bold { font-size:11px; font-weight:700; fill:#111; }
+    .vtl { font-size:10px; font-weight:700; fill:#0b6; }
+    .body { fill:none; stroke:#222; stroke-width:1.6; }
+    .spine { fill:none; stroke:#222; stroke-width:1.4; }
+    .dot-ant { fill:#c0392b; stroke:#5b1a13; stroke-width:1; }
+    .dot-post { fill:#2563eb; stroke:#10306b; stroke-width:1; }
+    .leader { stroke:#555; stroke-width:0.6; fill:none; }
+    .nlabel-ant { fill:#fff; font-size:10px; font-weight:700; text-anchor:middle; }
+    .nlabel-post { fill:#fff; font-size:10px; font-weight:700; text-anchor:middle; }
+    .midline { stroke:#999; stroke-width:0.6; stroke-dasharray:3,3; fill:none; }
+    .ribs { fill:none; stroke:#444; stroke-width:1; }
+    .pelvis { fill:none; stroke:#222; stroke-width:1.4; }
+
+    .tbl-title { font-size:18px; font-weight:700; fill:#fff; }
+    .th { font-size:13px; font-weight:700; fill:#111; }
+    .td { font-size:13px; fill:#111; }
+    .td-bold { font-size:13px; font-weight:700; fill:#111; }
+    .td-vtl { font-size:12px; font-weight:700; fill:#0b6; }
+    .tbl-row-line { stroke:#cdd6df; stroke-width:0.8; }
+    .tbl-row-bg-alt { fill:#f3f6f9; }
+  </style>
+
+  <!-- Title block -->
+  <rect class="frame" x="20" y="20" width="1460" height="60" fill="#f5f5f5"/>
+  <text class="title" x="750" y="60" text-anchor="middle">TOPOGRAPHICAL LANDMARKS IN RELATION TO VERTEBRAL COLUMN ANATOMY</text>
+
+  <!-- Outer frame -->
+  <rect class="frame" x="20" y="90" width="1460" height="1790"/>
+  <!-- Divider for figure panels -->
+  <line x1="750" y1="90" x2="750" y2="980" stroke="#111" stroke-width="2"/>
+
+  <!-- ============ LEFT PANEL : ANTERIOR VIEW ============ -->
+  <text class="panel-title" x="385" y="120" text-anchor="middle">ANTERIOR VIEW — ANTERIOR LANDMARKS</text>
+  <text class="subtitle" x="385" y="140" text-anchor="middle" fill="#c0392b">● 적색 점 = Anterior landmark</text>
+
+  <!-- Anterior body silhouette -->
+  <ellipse class="body" cx="360" cy="200" rx="55" ry="62"/>
+  <path class="body" d="M 320 240 Q 360 268 400 240"/>
+  <path class="body" d="M 322 250 L 318 295 L 402 295 L 398 250"/>
+  <path class="body" d="M 318 295 Q 250 305 240 360 L 235 480 Q 235 580 270 700 L 290 800
+                        L 430 800 L 450 700 Q 485 580 485 480 L 480 360 Q 470 305 402 295"/>
+  <path class="ribs" d="M 280 380 Q 360 395 440 380"/>
+  <path class="ribs" d="M 275 410 Q 360 425 445 410"/>
+  <path class="ribs" d="M 272 445 Q 360 460 448 445"/>
+  <path class="ribs" d="M 272 485 Q 360 500 448 485"/>
+  <path class="ribs" d="M 280 525 Q 360 540 440 525"/>
+  <line class="midline" x1="360" y1="330" x2="360" y2="555"/>
+  <path class="pelvis" d="M 285 720 Q 360 705 435 720"/>
+  <line class="midline" x1="360" y1="555" x2="360" y2="790"/>
+
+  <!-- Anterior dots -->
+  <circle class="dot-ant" cx="360" cy="208" r="9"/><text class="nlabel-ant" x="360" y="212">1</text>
+  <circle class="dot-ant" cx="360" cy="232" r="9"/><text class="nlabel-ant" x="360" y="236">2</text>
+  <circle class="dot-ant" cx="360" cy="260" r="9"/><text class="nlabel-ant" x="360" y="264">3</text>
+  <circle class="dot-ant" cx="360" cy="278" r="9"/><text class="nlabel-ant" x="360" y="282">4</text>
+  <circle class="dot-ant" cx="360" cy="294" r="9"/><text class="nlabel-ant" x="360" y="298">5</text>
+  <circle class="dot-ant" cx="360" cy="310" r="9"/><text class="nlabel-ant" x="360" y="314">6</text>
+  <circle class="dot-ant" cx="360" cy="335" r="9"/><text class="nlabel-ant" x="360" y="339">7</text>
+  <circle class="dot-ant" cx="360" cy="352" r="9"/><text class="nlabel-ant" x="360" y="356">8</text>
+  <circle class="dot-ant" cx="360" cy="400" r="9"/><text class="nlabel-ant" x="360" y="404">9</text>
+  <circle class="dot-ant" cx="360" cy="540" r="9"/><text class="nlabel-ant" x="360" y="544">10</text>
+  <circle class="dot-ant" cx="360" cy="600" r="9"/><text class="nlabel-ant" x="360" y="604">11</text>
+  <circle class="dot-ant" cx="360" cy="635" r="9"/><text class="nlabel-ant" x="360" y="639">12</text>
+  <circle class="dot-ant" cx="360" cy="670" r="9"/><text class="nlabel-ant" x="360" y="674">13</text>
+  <circle class="dot-ant" cx="360" cy="720" r="9"/><text class="nlabel-ant" x="360" y="724">14</text>
+  <circle class="dot-ant" cx="305" cy="740" r="9"/><text class="nlabel-ant" x="305" y="744">15</text>
+  <circle class="dot-ant" cx="415" cy="740" r="9"/><text class="nlabel-ant" x="415" y="744">15</text>
+
+  <!-- Left-side labels (anterior) -->
+  <line class="leader" x1="350" y1="208" x2="190" y2="208"/>
+  <text class="label-bold" x="185" y="206" text-anchor="end">1. Hard palate</text>
+  <text class="vtl" x="185" y="218" text-anchor="end">C1</text>
+
+  <line class="leader" x1="350" y1="232" x2="190" y2="232"/>
+  <text class="label-bold" x="185" y="230" text-anchor="end">2. Upper teeth (occlusal plane)</text>
+  <text class="vtl" x="185" y="242" text-anchor="end">C2</text>
+
+  <line class="leader" x1="350" y1="260" x2="190" y2="260"/>
+  <text class="label-bold" x="185" y="258" text-anchor="end">3. Hyoid bone (설골)</text>
+  <text class="vtl" x="185" y="270" text-anchor="end">C3</text>
+
+  <line class="leader" x1="350" y1="278" x2="190" y2="278"/>
+  <text class="label-bold" x="185" y="276" text-anchor="end">4. Thyroid cartilage — sup. border</text>
+  <text class="vtl" x="185" y="288" text-anchor="end">C4</text>
+
+  <line class="leader" x1="350" y1="294" x2="190" y2="294"/>
+  <text class="label-bold" x="185" y="292" text-anchor="end">5. Thyroid cartilage — inf. border</text>
+  <text class="vtl" x="185" y="304" text-anchor="end">C5</text>
+
+  <line class="leader" x1="350" y1="310" x2="190" y2="310"/>
+  <text class="label-bold" x="185" y="308" text-anchor="end">6. Cricoid cartilage (윤상연골)</text>
+  <text class="vtl" x="185" y="320" text-anchor="end">C6</text>
+
+  <!-- Right-side labels (anterior) -->
+  <line class="leader" x1="370" y1="335" x2="540" y2="335"/>
+  <text class="label-bold" x="545" y="333">7. Suprasternal (jugular) notch</text>
+  <text class="vtl" x="545" y="345">C7 / T1</text>
+
+  <line class="leader" x1="370" y1="352" x2="540" y2="358"/>
+  <text class="label-bold" x="545" y="358">8. Top of manubrium</text>
+  <text class="vtl" x="545" y="370">T2</text>
+
+  <line class="leader" x1="370" y1="400" x2="540" y2="400"/>
+  <text class="label-bold" x="545" y="400">9. Sternal angle (Angle of Louis)</text>
+  <text class="vtl" x="545" y="412">T4 – T5 · 2nd rib</text>
+
+  <line class="leader" x1="370" y1="540" x2="540" y2="540"/>
+  <text class="label-bold" x="545" y="540">10. Xiphisternal joint / Xiphoid</text>
+  <text class="vtl" x="545" y="552">T9 – T10</text>
+
+  <line class="leader" x1="370" y1="600" x2="540" y2="600"/>
+  <text class="label-bold" x="545" y="600">11. Transpyloric plane</text>
+  <text class="vtl" x="545" y="612">L1</text>
+
+  <line class="leader" x1="370" y1="635" x2="540" y2="635"/>
+  <text class="label-bold" x="545" y="635">12. Subcostal plane (10th costal cart.)</text>
+  <text class="vtl" x="545" y="647">L2 – L3</text>
+
+  <line class="leader" x1="370" y1="670" x2="540" y2="670"/>
+  <text class="label-bold" x="545" y="670">13. Umbilicus (배꼽)</text>
+  <text class="vtl" x="545" y="682">L3 – L4 · 변동 큼</text>
+
+  <line class="leader" x1="370" y1="720" x2="540" y2="720"/>
+  <text class="label-bold" x="545" y="720">14. Transtubercular plane (iliac tuberc.)</text>
+  <text class="vtl" x="545" y="732">L5</text>
+
+  <line class="leader" x1="425" y1="740" x2="540" y2="752"/>
+  <text class="label-bold" x="545" y="752">15. ASIS (Ant. Superior Iliac Spine)</text>
+  <text class="vtl" x="545" y="764">S1</text>
+
+  <!-- ============ RIGHT PANEL : POSTERIOR VIEW ============ -->
+  <text class="panel-title" x="1115" y="120" text-anchor="middle">POSTERIOR VIEW — POSTERIOR LANDMARKS</text>
+  <text class="subtitle" x="1115" y="140" text-anchor="middle" fill="#2563eb">● 청색 점 = Posterior landmark</text>
+
+  <!-- Posterior body silhouette -->
+  <ellipse class="body" cx="1040" cy="200" rx="55" ry="62"/>
+  <path class="body" d="M 1002 250 L 998 295 L 1082 295 L 1078 250"/>
+  <path class="body" d="M 998 295 Q 930 305 920 360 L 915 480 Q 915 580 950 700 L 970 800
+                        L 1110 800 L 1130 700 Q 1165 580 1165 480 L 1160 360 Q 1150 305 1082 295"/>
+  <path class="body" d="M 945 360 L 990 360 L 1020 470 L 945 460 Z"/>
+  <path class="body" d="M 1135 360 L 1090 360 L 1060 470 L 1135 460 Z"/>
+  <line class="midline" x1="1040" y1="270" x2="1040" y2="730"/>
+  <path class="pelvis" d="M 940 700 Q 1040 685 1140 700"/>
+  <path class="pelvis" d="M 1000 740 L 1080 740 L 1040 820 Z"/>
+  <path class="body" d="M 980 820 Q 1040 850 1100 820"/>
+
+  <!-- Posterior dots -->
+  <circle class="dot-post" cx="1040" cy="250" r="9"/><text class="nlabel-post" x="1040" y="254">1</text>
+  <circle class="dot-post" cx="990" cy="248" r="9"/><text class="nlabel-post" x="990" y="252">2</text>
+  <circle class="dot-post" cx="1090" cy="248" r="9"/><text class="nlabel-post" x="1090" y="252">2</text>
+  <circle class="dot-post" cx="1040" cy="275" r="9"/><text class="nlabel-post" x="1040" y="279">3</text>
+  <circle class="dot-post" cx="1040" cy="305" r="9"/><text class="nlabel-post" x="1040" y="309">4</text>
+  <circle class="dot-post" cx="1040" cy="335" r="10"/><text class="nlabel-post" x="1040" y="339">5</text>
+  <circle class="dot-post" cx="1040" cy="358" r="9"/><text class="nlabel-post" x="1040" y="362">6</text>
+  <circle class="dot-post" cx="978" cy="370" r="9"/><text class="nlabel-post" x="978" y="374">7</text>
+  <circle class="dot-post" cx="1102" cy="370" r="9"/><text class="nlabel-post" x="1102" y="374">7</text>
+  <circle class="dot-post" cx="990" cy="400" r="9"/><text class="nlabel-post" x="990" y="404">8</text>
+  <circle class="dot-post" cx="1090" cy="400" r="9"/><text class="nlabel-post" x="1090" y="404">8</text>
+  <circle class="dot-post" cx="1010" cy="470" r="9"/><text class="nlabel-post" x="1010" y="474">9</text>
+  <circle class="dot-post" cx="1070" cy="470" r="9"/><text class="nlabel-post" x="1070" y="474">9</text>
+  <circle class="dot-post" cx="1040" cy="580" r="9"/><text class="nlabel-post" x="1040" y="584">10</text>
+  <circle class="dot-post" cx="965" cy="700" r="9"/><text class="nlabel-post" x="965" y="704">11</text>
+  <circle class="dot-post" cx="1115" cy="700" r="9"/><text class="nlabel-post" x="1115" y="704">11</text>
+  <circle class="dot-post" cx="1040" cy="695" r="9"/><text class="nlabel-post" x="1040" y="699">11</text>
+  <circle class="dot-post" cx="1005" cy="740" r="9"/><text class="nlabel-post" x="1005" y="744">12</text>
+  <circle class="dot-post" cx="1075" cy="740" r="9"/><text class="nlabel-post" x="1075" y="744">12</text>
+  <circle class="dot-post" cx="980" cy="785" r="9"/><text class="nlabel-post" x="980" y="789">13</text>
+  <circle class="dot-post" cx="1100" cy="785" r="9"/><text class="nlabel-post" x="1100" y="789">13</text>
+  <circle class="dot-post" cx="1010" cy="855" r="9"/><text class="nlabel-post" x="1010" y="859">14</text>
+  <circle class="dot-post" cx="1070" cy="855" r="9"/><text class="nlabel-post" x="1070" y="859">14</text>
+
+  <!-- Posterior left-side labels -->
+  <line class="leader" x1="1030" y1="250" x2="870" y2="250"/>
+  <text class="label-bold" x="865" y="248" text-anchor="end">1. Inion (외후두융기)</text>
+  <text class="vtl" x="865" y="260" text-anchor="end">Occipital base</text>
+
+  <line class="leader" x1="980" y1="248" x2="870" y2="278"/>
+  <text class="label-bold" x="865" y="278" text-anchor="end">2. Mastoid process</text>
+  <text class="vtl" x="865" y="290" text-anchor="end">C1 TVP — ½″ inf. + slightly ant.</text>
+
+  <line class="leader" x1="1030" y1="275" x2="870" y2="305"/>
+  <text class="label-bold" x="865" y="305" text-anchor="end">3. First palpable SP below inion</text>
+  <text class="vtl" x="865" y="317" text-anchor="end">C2 spinous process</text>
+
+  <line class="leader" x1="1030" y1="305" x2="870" y2="335"/>
+  <text class="label-bold" x="865" y="335" text-anchor="end">4. SP above vertebra prominens</text>
+  <text class="vtl" x="865" y="347" text-anchor="end">C6 (flexion)</text>
+
+  <line class="leader" x1="1030" y1="335" x2="870" y2="365"/>
+  <text class="label-bold" x="865" y="365" text-anchor="end">5. Vertebra prominens (융추)</text>
+  <text class="vtl" x="865" y="377" text-anchor="end">C7 — most prominent SP</text>
+
+  <line class="leader" x1="1030" y1="358" x2="870" y2="395"/>
+  <text class="label-bold" x="865" y="395" text-anchor="end">6. Largest SP in lower neck</text>
+  <text class="vtl" x="865" y="407" text-anchor="end">T1</text>
+
+  <line class="leader" x1="970" y1="370" x2="870" y2="425"/>
+  <text class="label-bold" x="865" y="425" text-anchor="end">7. Superior angle of scapula</text>
+  <text class="vtl" x="865" y="437" text-anchor="end">T2</text>
+
+  <line class="leader" x1="985" y1="400" x2="870" y2="455"/>
+  <text class="label-bold" x="865" y="455" text-anchor="end">8. Root of scapular spine</text>
+  <text class="vtl" x="865" y="467" text-anchor="end">T3</text>
+
+  <!-- Posterior right-side labels -->
+  <line class="leader" x1="1080" y1="470" x2="1220" y2="470"/>
+  <text class="label-bold" x="1225" y="468">9. Inferior angle of scapula</text>
+  <text class="vtl" x="1225" y="480">T7 (arms relaxed at sides)</text>
+
+  <line class="leader" x1="1050" y1="580" x2="1220" y2="555"/>
+  <text class="label-bold" x="1225" y="553">10. Midway between scap. tip &amp; crest</text>
+  <text class="vtl" x="1225" y="565">T12</text>
+
+  <line class="leader" x1="1120" y1="700" x2="1220" y2="640"/>
+  <text class="label-bold" x="1225" y="638">11. Iliac crest line (Tuffier's line)</text>
+  <text class="vtl" x="1225" y="650">L4 SP · Supracristal plane</text>
+
+  <line class="leader" x1="1080" y1="740" x2="1220" y2="700"/>
+  <text class="label-bold" x="1225" y="698">12. PSIS line · Venus dimples</text>
+  <text class="vtl" x="1225" y="710">S2 tubercle</text>
+
+  <line class="leader" x1="1105" y1="785" x2="1220" y2="760"/>
+  <text class="label-bold" x="1225" y="758">13. Sciatic notch</text>
+  <text class="vtl" x="1225" y="770">2″ inf. + 1″ lat. to PSIS</text>
+
+  <line class="leader" x1="1075" y1="855" x2="1220" y2="820"/>
+  <text class="label-bold" x="1225" y="818">14. Ischial tuberosity</text>
+  <text class="vtl" x="1225" y="830">2″ inf. to coccyx apex</text>
+
+  <text class="label" x="750" y="965" text-anchor="middle" fill="#555">
+    Sources: chiro.org ACA Press · Bergmann Ch.5 · NotebookLM「카이로프랙틱정형외과」  ·  ⚠ Surface landmarks have individual variability — confirm with imaging when precise level matters.
+  </text>
+
+  <!-- ====================== TABLES SECTION ====================== -->
+  <line x1="20" y1="990" x2="1480" y2="990" stroke="#111" stroke-width="2"/>
+
+  <!-- LEFT TABLE: Anterior -->
+  <rect x="40" y="1010" width="700" height="40" fill="#c0392b"/>
+  <text class="tbl-title" x="390" y="1037" text-anchor="middle">ANTERIOR LANDMARKS — 전면 체표 랜드마크</text>
+  <!-- header row -->
+  <rect x="40" y="1050" width="50" height="34" fill="#f1f5f9"/>
+  <rect x="90" y="1050" width="430" height="34" fill="#f1f5f9"/>
+  <rect x="520" y="1050" width="220" height="34" fill="#f1f5f9"/>
+  <text class="th" x="65" y="1072" text-anchor="middle">#</text>
+  <text class="th" x="105" y="1072">Landmark</text>
+  <text class="th" x="535" y="1072">Vertebral Level</text>
+  <!-- 15 rows for anterior -->
+  <g>
+    <!-- row helper drawn manually for each -->
+    <!-- Row 1 -->
+    <rect x="40" y="1084" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="65" y="1105" text-anchor="middle">1</text>
+    <text class="td" x="105" y="1105">Hard palate (경구개)</text>
+    <text class="td-vtl" x="535" y="1105">C1</text>
+    <!-- Row 2 -->
+    <text class="td-bold" x="65" y="1137" text-anchor="middle">2</text>
+    <text class="td" x="105" y="1137">Upper teeth (occlusal plane)</text>
+    <text class="td-vtl" x="535" y="1137">C2</text>
+    <!-- Row 3 -->
+    <rect x="40" y="1148" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="65" y="1169" text-anchor="middle">3</text>
+    <text class="td-bold" x="105" y="1169">Hyoid bone (설골)</text>
+    <text class="td-vtl" x="535" y="1169">C3</text>
+    <!-- Row 4 -->
+    <text class="td-bold" x="65" y="1201" text-anchor="middle">4</text>
+    <text class="td" x="105" y="1201">Thyroid cartilage — superior border</text>
+    <text class="td-vtl" x="535" y="1201">C4</text>
+    <!-- Row 5 -->
+    <rect x="40" y="1212" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="65" y="1233" text-anchor="middle">5</text>
+    <text class="td" x="105" y="1233">Thyroid cartilage — inferior border</text>
+    <text class="td-vtl" x="535" y="1233">C5</text>
+    <!-- Row 6 -->
+    <text class="td-bold" x="65" y="1265" text-anchor="middle">6</text>
+    <text class="td-bold" x="105" y="1265">Cricoid cartilage (윤상연골)</text>
+    <text class="td-vtl" x="535" y="1265">C6</text>
+    <!-- Row 7 -->
+    <rect x="40" y="1276" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="65" y="1297" text-anchor="middle">7</text>
+    <text class="td" x="105" y="1297">Suprasternal (jugular) notch</text>
+    <text class="td-vtl" x="535" y="1297">C7 / T1</text>
+    <!-- Row 8 -->
+    <text class="td-bold" x="65" y="1329" text-anchor="middle">8</text>
+    <text class="td" x="105" y="1329">Top of manubrium</text>
+    <text class="td-vtl" x="535" y="1329">T2</text>
+    <!-- Row 9 -->
+    <rect x="40" y="1340" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="65" y="1361" text-anchor="middle">9</text>
+    <text class="td-bold" x="105" y="1361">Sternal angle (Angle of Louis) · 2nd rib</text>
+    <text class="td-vtl" x="535" y="1361">T4 – T5</text>
+    <!-- Row 10 -->
+    <text class="td-bold" x="65" y="1393" text-anchor="middle">10</text>
+    <text class="td-bold" x="105" y="1393">Xiphisternal joint / Xiphoid process</text>
+    <text class="td-vtl" x="535" y="1393">T9 – T10</text>
+    <!-- Row 11 -->
+    <rect x="40" y="1404" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="65" y="1425" text-anchor="middle">11</text>
+    <text class="td" x="105" y="1425">Transpyloric plane (9th costal cart.)</text>
+    <text class="td-vtl" x="535" y="1425">L1</text>
+    <!-- Row 12 -->
+    <text class="td-bold" x="65" y="1457" text-anchor="middle">12</text>
+    <text class="td" x="105" y="1457">Subcostal plane (10th costal cart.)</text>
+    <text class="td-vtl" x="535" y="1457">L2 – L3</text>
+    <!-- Row 13 -->
+    <rect x="40" y="1468" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="65" y="1489" text-anchor="middle">13</text>
+    <text class="td-bold" x="105" y="1489">Umbilicus (배꼽)  ※ 체형 변동 큼</text>
+    <text class="td-vtl" x="535" y="1489">L3 – L4</text>
+    <!-- Row 14 -->
+    <text class="td-bold" x="65" y="1521" text-anchor="middle">14</text>
+    <text class="td" x="105" y="1521">Transtubercular plane</text>
+    <text class="td-vtl" x="535" y="1521">L5</text>
+    <!-- Row 15 -->
+    <rect x="40" y="1532" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="65" y="1553" text-anchor="middle">15</text>
+    <text class="td-bold" x="105" y="1553">ASIS (Ant. Superior Iliac Spine)</text>
+    <text class="td-vtl" x="535" y="1553">S1</text>
+  </g>
+  <rect x="40" y="1050" width="700" height="518" class="frame"/>
+
+  <!-- RIGHT TABLE: Posterior -->
+  <rect x="760" y="1010" width="700" height="40" fill="#2563eb"/>
+  <text class="tbl-title" x="1110" y="1037" text-anchor="middle">POSTERIOR LANDMARKS — 후면 체표 랜드마크</text>
+  <rect x="760" y="1050" width="50" height="34" fill="#f1f5f9"/>
+  <rect x="810" y="1050" width="430" height="34" fill="#f1f5f9"/>
+  <rect x="1240" y="1050" width="220" height="34" fill="#f1f5f9"/>
+  <text class="th" x="785" y="1072" text-anchor="middle">#</text>
+  <text class="th" x="825" y="1072">Landmark</text>
+  <text class="th" x="1255" y="1072">Vertebral Level</text>
+  <g>
+    <!-- Row 1 -->
+    <rect x="760" y="1084" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="785" y="1105" text-anchor="middle">1</text>
+    <text class="td-bold" x="825" y="1105">Inion (외후두융기)</text>
+    <text class="td-vtl" x="1255" y="1105">Occipital base midline</text>
+    <!-- Row 2 -->
+    <text class="td-bold" x="785" y="1137" text-anchor="middle">2</text>
+    <text class="td-bold" x="825" y="1137">Mastoid process (양측)</text>
+    <text class="td-vtl" x="1255" y="1137">C1 TVP — ½″ inf. + slightly ant.</text>
+    <!-- Row 3 -->
+    <rect x="760" y="1148" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="785" y="1169" text-anchor="middle">3</text>
+    <text class="td" x="825" y="1169">First palpable SP below inion</text>
+    <text class="td-vtl" x="1255" y="1169">C2 spinous process</text>
+    <!-- Row 4 -->
+    <text class="td-bold" x="785" y="1201" text-anchor="middle">4</text>
+    <text class="td" x="825" y="1201">SP above vertebra prominens</text>
+    <text class="td-vtl" x="1255" y="1201">C6 (목 굴곡 시)</text>
+    <!-- Row 5 -->
+    <rect x="760" y="1212" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="785" y="1233" text-anchor="middle">5</text>
+    <text class="td-bold" x="825" y="1233">Vertebra prominens (융추)</text>
+    <text class="td-vtl" x="1255" y="1233">C7 — most prominent SP</text>
+    <!-- Row 6 -->
+    <text class="td-bold" x="785" y="1265" text-anchor="middle">6</text>
+    <text class="td" x="825" y="1265">Largest SP in lower neck</text>
+    <text class="td-vtl" x="1255" y="1265">T1</text>
+    <!-- Row 7 -->
+    <rect x="760" y="1276" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="785" y="1297" text-anchor="middle">7</text>
+    <text class="td" x="825" y="1297">Superior angle of scapula</text>
+    <text class="td-vtl" x="1255" y="1297">T2</text>
+    <!-- Row 8 -->
+    <text class="td-bold" x="785" y="1329" text-anchor="middle">8</text>
+    <text class="td-bold" x="825" y="1329">Root of scapular spine (견갑극 내측 끝)</text>
+    <text class="td-vtl" x="1255" y="1329">T3</text>
+    <!-- Row 9 -->
+    <rect x="760" y="1340" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="785" y="1361" text-anchor="middle">9</text>
+    <text class="td-bold" x="825" y="1361">Inferior angle of scapula</text>
+    <text class="td-vtl" x="1255" y="1361">T7 (양팔 내림)</text>
+    <!-- Row 10 -->
+    <text class="td-bold" x="785" y="1393" text-anchor="middle">10</text>
+    <text class="td" x="825" y="1393">Midway between scap. tip &amp; iliac crest</text>
+    <text class="td-vtl" x="1255" y="1393">T12</text>
+    <!-- Row 11 -->
+    <rect x="760" y="1404" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="785" y="1425" text-anchor="middle">11</text>
+    <text class="td-bold" x="825" y="1425">Iliac crest line (Tuffier's line)</text>
+    <text class="td-vtl" x="1255" y="1425">L4 SP · Supracristal plane</text>
+    <!-- Row 12 -->
+    <text class="td-bold" x="785" y="1457" text-anchor="middle">12</text>
+    <text class="td-bold" x="825" y="1457">PSIS line · Venus dimples</text>
+    <text class="td-vtl" x="1255" y="1457">S2 tubercle</text>
+    <!-- Row 13 -->
+    <rect x="760" y="1468" width="700" height="32" class="tbl-row-bg-alt"/>
+    <text class="td-bold" x="785" y="1489" text-anchor="middle">13</text>
+    <text class="td" x="825" y="1489">Sciatic notch</text>
+    <text class="td-vtl" x="1255" y="1489">2″ inf. + 1″ lat. to PSIS</text>
+    <!-- Row 14 -->
+    <text class="td-bold" x="785" y="1521" text-anchor="middle">14</text>
+    <text class="td" x="825" y="1521">Ischial tuberosity</text>
+    <text class="td-vtl" x="1255" y="1521">2″ inf. to coccyx apex</text>
+  </g>
+  <rect x="760" y="1050" width="700" height="518" class="frame"/>
+
+  <!-- Footer note for tables -->
+  <rect x="40" y="1600" width="1420" height="240" fill="#fff8e1" stroke="#e0a800" stroke-width="1"/>
+  <text class="subtitle" x="60" y="1630">⚠ 임상 적용 시 주의사항</text>
+  <text class="label" x="60" y="1660">• 표면 랜드마크는 BMI · 연령 · 척추 측만/후만 정도 · 폐기능 · 자세에 따라 1–2 분절 변동될 수 있다.</text>
+  <text class="label" x="60" y="1680">• 특히 Umbilicus는 비만도에 따라 L3~L5 범위에서 크게 이동하며, Vertebra prominens는 인구의 약 60–70%에서 C7이지만 T1인 경우도 흔하다.</text>
+  <text class="label" x="60" y="1700">• 정확한 분절 결정이 임상적으로 중요한 경우(영상의학적 표지, 시술 전 마킹, 분절 특이 도수치료)에는 X-ray 또는 ultrasound로 교차 확인할 것.</text>
+  <text class="label" x="60" y="1720">• 출처: chiro.org ACA Press — General Spinal Biomechanics Ch.6 · Bergmann RW, *Chiropractic Technique* 3rd Ed Ch.5 · NotebookLM 「카이로프랙틱정형외과」(`029dc58f-…`) 인용.</text>
+  <text class="label" x="60" y="1750">• 표기: SP = Spinous Process · TVP = Transverse Process · ASIS = Anterior Superior Iliac Spine · PSIS = Posterior Superior Iliac Spine.</text>
+  <text class="label" x="60" y="1770">• 본 그림은 학습용 schemagram이며, 실제 임상 listing/level 결정은 다중 분석(History · Observation · Palpation · Motion · Imaging)의 일치 하에 내릴 것.</text>
+  <text class="label" x="60" y="1800" fill="#555">© 2026 카이로프랙틱정형외과 앱 — 비영리 교육 목적. 본문 통합 표는 chapter03_diversified.html 참조.</text>
+</svg>

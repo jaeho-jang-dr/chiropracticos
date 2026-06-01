@@ -1,0 +1,87 @@
+{
+  "_comment": "Chapter 2 Chiropractic Functional Neurology 아티팩트 (2026-04-22). 근거 기반, Carrick FN 과장 주장은 🔴 비판적으로 명시.",
+  "chapter": 2,
+  "notebook_id": "e4f43415-ed66-4621-a902-c4c450a6925d",
+  "notebook_url": "https://notebooklm.google.com/notebook/e4f43415-ed66-4621-a902-c4c450a6925d",
+  "notebook_title": "[테크닉] 9. Carrick 기능 신경학 (→ Ch 2로 재배치)",
+  "target_download_folder": "G:/내 드라이브/chiropracticos/functional_neurology/",
+  "artifacts": {
+    "audio_deepdive": {
+      "type": "audio", "format": "deep_dive", "length": "long",
+      "artifact_id": "37c573ac-ffd8-4735-8e6f-da3440da83c8",
+      "description": "4부작 심층 팟캐스트 — 서론·Aff/Def/Eff·Assessment·치료/비판",
+      "download_path": "01_podcast_deepdive.m4a"
+    },
+    "video_part1_theory": {
+      "type": "video",
+      "artifact_id": "30dbd56b-dab1-4a41-bc6d-438f5c93268a",
+      "description": "Part 1 이론 — 신경계 기초 + Aff/Def/Eff",
+      "download_path": "02_video_part1_theory.mp4"
+    },
+    "video_part2_clinical": {
+      "type": "video",
+      "artifact_id": "9165af94-fdbf-48e9-a852-c09b4ecc94e1",
+      "description": "Part 2 임상 — Assessment + 치료 + 비판",
+      "download_path": "03_video_part2_clinical.mp4"
+    },
+    "slides_part1_basics": {
+      "type": "slide_deck",
+      "artifact_id": "5f2d5b6d-7e3c-496d-adee-f1bccba2b26f",
+      "description": "Slides 1/4 — 이론 기초 (Part I+II)",
+      "download_path": "04_slides_part1_basics.pptx"
+    },
+    "slides_part2_aff_def_eff": {
+      "type": "slide_deck",
+      "artifact_id": "183755e9-6e06-4423-a931-6c1fb04d8524",
+      "description": "Slides 2/4 — Afferentation/Deafferentation/Efferentation",
+      "download_path": "05_slides_part2_aff_def_eff.pptx"
+    },
+    "slides_part3_assessment": {
+      "type": "slide_deck",
+      "artifact_id": "6de35606-b6b4-4b3e-ac0b-d521c08b2a12",
+      "description": "Slides 3/4 — ⭐ Assessment 심화",
+      "download_path": "06_slides_part3_assessment.pptx"
+    },
+    "slides_part4_clinical_critical": {
+      "type": "slide_deck",
+      "artifact_id": "0cf59b93-d41a-45be-bd8e-61814463cfda",
+      "description": "Slides 4/4 — 치료·임상·비판·한국 적용",
+      "download_path": "07_slides_part4_clinical_critical.pptx"
+    },
+    "report_part1_basics": {
+      "type": "report",
+      "artifact_id": "e422af9c-5945-48e3-b0dc-a18576cb688f",
+      "description": "Report 1/4 — 이론 기초",
+      "download_path": "08_report_part1_basics.md"
+    },
+    "report_part2_aff_def_eff": {
+      "type": "report",
+      "artifact_id": "e92ca7ae-8183-4bc7-8ea6-263a9982ee25",
+      "description": "Report 2/4 — Aff/Def/Eff",
+      "download_path": "09_report_part2_aff_def_eff.md"
+    },
+    "report_part3_assessment": {
+      "type": "report",
+      "artifact_id": "e0b00af0-053d-440e-bdf2-58dac617c310",
+      "description": "Report 3/4 — ⭐ Assessment 심화",
+      "download_path": "10_report_part3_assessment.md"
+    },
+    "report_part4_clinical_critical": {
+      "type": "report",
+      "artifact_id": "ce469fe3-1f68-454b-839a-a86a4604de9a",
+      "description": "Report 4/4 — 치료·임상·비판",
+      "download_path": "11_report_part4_clinical_critical.md"
+    }
+  },
+  "html": "G:/내 드라이브/chiropracticos/chapter02_functional_neurology.html",
+  "lecture_md": "G:/내 드라이브/chiropracticos/functional_neurology/lecture/chapter02_functional_neurology.md",
+  "diagrams_svg_folder": "G:/내 드라이브/chiropracticos/images/chapter2/",
+  "diagrams": [
+    "01_io_model.svg - Sherrington I/O model",
+    "02_aff_def_eff.svg - 3개념 핵심 다이어그램",
+    "03_mechanoreceptors.svg - 기계수용기 4유형",
+    "04_assessment_hierarchy.svg - 평가 5단계",
+    "05_clinical_cycle.svg - 임상 사이클 루프",
+    "06_evidence_pyramid.svg - 근거 피라미드"
+  ]
+}

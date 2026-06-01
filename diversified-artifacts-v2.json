@@ -1,0 +1,87 @@
+{
+  "_comment": "Diversified Technique v2 (Evidence-Based) 아티팩트 — 2026-04-22 재생성. MD/PT 대상, vitalism·pseudoscience 제외. 기존 v1은 동일 노트북에 보관됨(NotebookLM UI에서 구분 또는 삭제).",
+  "notebook_id": "291e66c6-c8b5-4de0-9ef9-f3bab92ac4ff",
+  "notebook_url": "https://notebooklm.google.com/notebook/291e66c6-c8b5-4de0-9ef9-f3bab92ac4ff",
+  "version": "v2",
+  "edition_principle": "Evidence-Based for Korean Orthopedic/Rehab MDs + trained PTs. Excludes vitalism, Innate Intelligence, systemic disease causation, Korean traditional medicine theories, cranial rhythm, visceral manipulation claims. Includes Cochrane/PMC/JMPT/ACR references with evidence grading 🟢🟡🟠🔴.",
+  "target_audience": "한국 정형외과·재활의학과 의사 + 도수치료 훈련 물리치료사",
+  "artifacts": {
+    "podcast_v2": {
+      "type": "audio",
+      "format": "deep_dive",
+      "length": "long",
+      "language": "ko",
+      "artifact_id": "67fd5541-5e5b-4087-9119-21970cbd290b",
+      "description": "v2 4주 통합 심층 팟캐스트 (evidence-based)",
+      "download_path": "01_podcast_v2.m4a"
+    },
+    "video_part1_v2": {
+      "type": "video",
+      "artifact_id": "70bebfba-e895-4f41-975e-0e63a3dc64f1",
+      "description": "v2 전반부 — Week 1-2 (정의·생체역학·근거 + 평가·진단)",
+      "download_path": "02_video_part1_v2.mp4"
+    },
+    "video_part2_v2": {
+      "type": "video",
+      "artifact_id": "aa9de531-483f-4c8c-a784-7b3e4444f73d",
+      "description": "v2 후반부 — Week 3-4 (분절별 교정 + 근거·안전·통합)",
+      "download_path": "03_video_part2_v2.mp4"
+    },
+    "slides_week1_v2": {
+      "type": "slide_deck",
+      "artifact_id": "3c022715-e151-445d-91c7-21bb6e850241",
+      "description": "v2 Week 1 슬라이드 15장 — 정의·생체역학·근거 개요",
+      "download_path": "04_slides_week1_v2.pptx"
+    },
+    "slides_week2_v2": {
+      "type": "slide_deck",
+      "artifact_id": "d1cfa8b4-a3a4-4b6b-bd85-2940117ca5dc",
+      "description": "v2 Week 2 슬라이드 15장 — 환자 평가와 진단",
+      "download_path": "05_slides_week2_v2.pptx"
+    },
+    "slides_week3_v2": {
+      "type": "slide_deck",
+      "artifact_id": "ead27208-7399-4540-9aaf-099462db5770",
+      "description": "v2 Week 3 슬라이드 15장 — 분절별 교정 실무",
+      "download_path": "06_slides_week3_v2.pptx"
+    },
+    "slides_week4_v2": {
+      "type": "slide_deck",
+      "artifact_id": "294e3028-73dc-4e29-8a3b-49c01a235d05",
+      "description": "v2 Week 4 슬라이드 15장 — 근거·안전·통합 치료",
+      "download_path": "07_slides_week4_v2.pptx"
+    },
+    "report_week1_v2": {
+      "type": "report",
+      "artifact_id": "b523bd76-d4b0-41ff-9138-9a763c42d397",
+      "description": "v2 Week 1 강의록 1시간 분량",
+      "download_path": "08_report_week1_v2.md"
+    },
+    "report_week2_v2": {
+      "type": "report",
+      "artifact_id": "f13672a0-9936-4eff-b8ce-148aa4c287e6",
+      "description": "v2 Week 2 강의록 1시간 분량",
+      "download_path": "09_report_week2_v2.md"
+    },
+    "report_week3_v2": {
+      "type": "report",
+      "artifact_id": "6f987086-c773-4e19-b55d-4adf02ec2132",
+      "description": "v2 Week 3 강의록 1시간 분량",
+      "download_path": "10_report_week3_v2.md"
+    },
+    "report_week4_v2": {
+      "type": "report",
+      "artifact_id": "707cb1ed-b69f-40fb-87ae-93cb2745a246",
+      "description": "v2 Week 4 강의록 1시간 분량",
+      "download_path": "11_report_week4_v2.md"
+    }
+  },
+  "target_download_folder": "G:/내 드라이브/chiropracticos/diversified/v2/",
+  "next_steps": [
+    "Google 서버 생성 대기 (~15-30분)",
+    "studio_status 폴링하여 완료 확인",
+    "G:/내 드라이브/chiropracticos/diversified/v2/ 로 일괄 다운로드",
+    "Week 2-4 강의록 MD 파일 작성 (이미 Week 1 완료)",
+    "v1 아티팩트는 NotebookLM UI에서 수동 정리 권장 (현재 MCP에 studio_delete 없음)"
+  ]
+}

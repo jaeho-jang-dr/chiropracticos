@@ -1,0 +1,11 @@
+{
+  "_comment": "Ch 11-12 재시도 2차 (drjang003). drjang002 실패 후.",
+  "jobs": [
+    {"profile":"drjang003","notebook_id":"37eea36e-8142-45af-b223-108d078ebd09","type":"audio","label":"ch11_cbp_podcast_r2","focus":"[Evidence-Based] Chiropractic BioPhysics (CBP) 팟캐스트 60분+. Donald & Deed Harrison 수학·선형대수 기반. Mirror image® 교정, 경추·요추 lordosis 회복, Denneroll 3D 견인, 거북목 구조 재활. PMC 60례 증례. Dynamic Chiropractic 'Spinal Graffiti' 비판 균형. 🔴 Vitalism 제외."},
+    {"profile":"drjang003","notebook_id":"37eea36e-8142-45af-b223-108d078ebd09","type":"video","label":"ch11_cbp_video1_r2","focus":"[Evidence-Based] CBP Part 1 이론. Harrison 정상 척추 모델, mirror-image 교정 원리, Denneroll 장치."},
+    {"profile":"drjang003","notebook_id":"37eea36e-8142-45af-b223-108d078ebd09","type":"video","label":"ch11_cbp_video2_r2","focus":"[Evidence-Based] CBP Part 2 임상. 경추 lordosis 회복 증례, 거북목 재활. CBP 비판론 균형 있게 소개."},
+    {"profile":"drjang003","notebook_id":"416ef164-398d-46f0-8d11-45558467bd7f","type":"audio","label":"ch12_ak_podcast_r2","focus":"[Evidence-Based] Applied Kinesiology (AK) 팟캐스트 60분+. Goodheart 1964. MMT, 5 IVF factors. 🔴 AK 근력검사로 알레르기·영양·장기 진단은 No evidence — FoodAllergy.org 'unproven'. 🟡 MMT 자체의 근력 평가는 유용. PMC 비판 리뷰 인용."},
+    {"profile":"drjang003","notebook_id":"416ef164-398d-46f0-8d11-45558467bd7f","type":"video","label":"ch12_ak_video1_r2","focus":"[Evidence-Based] AK Part 1 이론. Goodheart 역사, MMT, 5 IVF factors, Chapman 반사점 해부. 진단 도구 한계 명시."},
+    {"profile":"drjang003","notebook_id":"416ef164-398d-46f0-8d11-45558467bd7f","type":"video","label":"ch12_ak_video2_r2","focus":"[Evidence-Based] AK Part 2 🔴 비판. 이중맹검 RCT 부정, FoodAllergy.org unproven. 한국 임상 확장 진단 주장 경계."}
+  ]
+}
