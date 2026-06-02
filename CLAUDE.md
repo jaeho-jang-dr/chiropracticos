@@ -24,3 +24,5 @@ This file provides context and rules for Claude Code CLI when working in this re
 3. **Encoding**: Ensure all HTML and Markdown files are saved in **UTF-8** encoding to prevent Korean text corruption.
 4. **Environment Variables**: Local keys are kept in `.env` (gitignored). Reference `.env.example` to see key names.
 5. **Lint & Check**: Run `npm run test` before finishing tasks to verify that you did not break existing routes, HTTP headers, or R2 integrations.
+6. **Content Reduction**: 강의록(Markdown)이나 HTML 등의 문서를 요약하거나 텍스트 분량을 축소할 때는 사전에 사용자에게 구체적으로 어떤 내용을 얼마큼 줄일 것인지 명확히 전달하고, 반드시 승인을 얻은 후에 수행해야 한다. 임의로 본문(예: 팟캐스트, 학술 기전 등)을 과도하게 삭제하지 않는다.
+
