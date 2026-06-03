@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-06-03",
+  "project": "chiropraticos",
+  "agents": {
+    "orchestrator": "Antigravity (Gemini 2.5 Pro)",
+    "executor": "Claude Code (claude-opus-4)"
+  },
+  "current_session": {
+    "status": "active",
+    "started": "2026-06-03",
+    "goal": "하네스 엔지니어링 구조 구축",
+    "phase": "building"
+  },
+  "completed_tasks": [
+    {
+      "date": "2026-06-03",
+      "task": "ch02 팟캐스트 한국어 복원",
+      "result": "success",
+      "commit": "ecf35d5"
+    },
+    {
+      "date": "2026-06-03",
+      "task": "ch03 팟캐스트 한국어 복원",
+      "result": "success",
+      "commit": "ecf35d5"
+    },
+    {
+      "date": "2026-06-03",
+      "task": "ch04 팟캐스트 한국어 복원",
+      "result": "success",
+      "commit": "ecf35d5"
+    },
+    {
+      "date": "2026-06-03",
+      "task": "ch12 팟캐스트 한국어 복원",
+      "result": "success",
+      "commit": "ecf35d5"
+    },
+    {
+      "date": "2026-06-03",
+      "task": "ch3/4/12 UTF-8 BOM 인코딩 오류 수정",
+      "result": "success",
+      "commit": "581c843"
+    },
+    {
+      "date": "2026-06-03",
+      "task": "하네스 엔지니어링 구조 구축 시작",
+      "result": "in_progress",
+      "commit": null
+    }
+  ],
+  "pending_tasks": [
+    {
+      "priority": "high",
+      "task": "ch05~ch11 팟캐스트 한국어 버전 생성",
+      "gate": "Human Gate #1 필요",
+      "notes": "NLM 노트북 생성 → 팟캐스트 생성 → R2 업로드 → HTML 링크 추가"
+    },
+    {
+      "priority": "medium",
+      "task": "chapter13_soft_tissue.html 팟캐스트 추가",
+      "gate": "선택 사항",
+      "notes": null
+    }
+  ],
+  "known_issues": [
+    {
+      "issue": "yt-dlp JS 런타임 경고",
+      "severity": "low",
+      "notes": "deno 미설치로 경고 발생하지만 다운로드는 정상 작동"
+    }
+  ],
+  "environment": {
+    "R2_bucket": "chiropracticos-media",
+    "vercel_project": "chiropraticos",
+    "supabase_project": "configured",
+    "harness_version": "1.0.0"
+  }
+}
