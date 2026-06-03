@@ -40,8 +40,8 @@ python -m http.server 8888 --bind 127.0.0.1
 # 배포 (캐시버스팅 자동)
 bash deploy.sh "<commit message>"
 
-# 검증 실행 (작업 완료 전 필수)
-python .harness/verify/check_encoding.ps1
+# 검증 실행 (작업 완료 전 필수 — 3개 모두)
+python .harness/verify/check_encoding.py
 python .harness/verify/check_podcasts.py
 python .harness/verify/check_links.py
 ```
@@ -63,7 +63,9 @@ python .harness/verify/check_links.py
 
 ```
 [ ] npm run test 통과
-[ ] 인코딩 검사: PowerShell -c "Get-ChildItem *.html | % { ... }"
+[ ] python .harness/verify/check_encoding.py
+[ ] python .harness/verify/check_podcasts.py
+[ ] python .harness/verify/check_links.py
 [ ] 변경 파일 git diff 확인
 [ ] .harness/loops/progress.json 업데이트
 [ ] 사용자에게 완료 보고

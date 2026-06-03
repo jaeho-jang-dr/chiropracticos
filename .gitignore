@@ -64,3 +64,8 @@ downloads/
 
 tmp_fn_podcasts/
 korean_restore/
+
+# 하네스 런타임 파일 (검증 결과, 감사 로그 — Git 불필요)
+.harness/verify/last_sync_result.json
+korean_podcast_audit.json
+korean_podcasts_analysis.txt

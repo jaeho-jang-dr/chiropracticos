@@ -24,7 +24,7 @@ python .harness/skills/podcast_manager.py --chapter ch02 --action restore
 
 ```python
 # .harness/skills/encoding_fix.py 실행
-python .harness/skills/encoding_fix.py --file chapterNN_*.html
+python .harness/skills/encoding_fix.py --file chapter*.html
 ```
 
 **원인 확인**:
@@ -79,8 +79,9 @@ $bytes = [IO.File]::ReadAllBytes("chapter.html")
 npm run test
 
 # 2. 검증
-python .harness/verify/check_encoding.ps1
+python .harness/verify/check_encoding.py
 python .harness/verify/check_podcasts.py
+python .harness/verify/check_links.py
 
 # 3. 배포 (캐시버스팅 + push + vercel + 확인 자동)
 bash deploy.sh "fix: [변경 내용 한 줄 설명]"

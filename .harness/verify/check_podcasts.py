@@ -40,8 +40,9 @@ def extract_podcast_urls(html_path):
         return []
     with open(html_path, encoding='utf-8') as f:
         content = f.read()
-    # podcasts_v3/xxx.m4a?v=yyy 패턴
-    pattern = r'podcasts_v3/([^"\'?\s]+\.m4a)(?:\?[^"\']*)?'
+    # 실제 R2 키 구조: <technique>/podcasts_v3/xxx.m4a?v=yyy
+    # 테크닉 접두사까지 포함한 full key를 추출해야 R2 목록과 정확히 대조된다.
+    pattern = r'r2\.dev/([^"\'?\s]*podcasts_v3/[^"\'?\s]+\.m4a)'
     matches = re.findall(pattern, content)
     return list(set(matches))
 
@@ -62,18 +63,20 @@ def get_r2_client():
     )
 
 def list_r2_podcasts(client, bucket):
-    """R2에서 podcasts_v3/ 파일 목록 조회"""
+    """R2 버킷 전체 키 목록 조회 (full key 그대로 반환)
+
+    팟캐스트 키는 <technique>/podcasts_v3/... 형태라 단일 Prefix로 한 번에
+    못 잡는다. 전체를 받아 full key 집합으로 대조한다(버킷 ~850키, 충분히 가볍다).
+    """
     try:
         paginator = client.get_paginator('list_objects_v2')
-        pages = paginator.paginate(Bucket=bucket, Prefix='podcasts_v3/')
-        files = []
+        pages = paginator.paginate(Bucket=bucket)
+        keys = set()
         for page in pages:
             for obj in page.get('Contents', []):
-                key = obj['Key'].replace('podcasts_v3/', '')
-                if key:
-                    files.append(key)
-        return set(files)
-    except Exception as e:
+                keys.add(obj['Key'])
+        return keys
+    except Exception:
         return None
 
 def main():
