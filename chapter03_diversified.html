@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diversified HVLA | Chiropractic</title>
-  <meta name="description" content="Diversified High-Velocity Low-Amplitude 移댁씠濡쒗봽?숉떛 HVLA ?섍린 ??4二?洹쇨굅 湲곕컲 而ㅻ━?섎읆. 媛뺤쓽濡씲텾PTX쨌?숈쁺?겶룻뙚罹먯뒪???듯빀 ?먮즺." />
+  <meta name="description" content="Diversified High-Velocity Low-Amplitude 카이로프랙틱 HVLA 수기 — 4주 근거 기반 커리큘럼. 강의록·PPTX·동영상·팟캐스트 통합 자료." />
   <link rel="stylesheet" href="./assets/main.css?v=20260603d" />
 
 <script defer src="./assets/ui.js?v=20260603d"></script>
@@ -13,7 +13,7 @@
 <script defer src="./assets/pdf-viewer.js?v=20260603d"></script>
 <script defer src="./assets/soft-tissue-modal.js?v=20260603d"></script>
 <style id="technique-grid-css">
-/* 遺?꾨퀎 湲곗닠 ?쇱씠釉뚮윭由?洹몃━??*/
+/* 부위별 기술 라이브러리 그리드 */
 .technique-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1.25rem;margin:1.25rem 0 2rem}
 .technique-card{display:flex;flex-direction:column;background:#fff;border:1px solid #ebebed;border-radius:14px;overflow:hidden;transition:transform .15s,box-shadow .15s}
 .technique-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.06)}
@@ -36,11 +36,11 @@
 }
 </style>
 <style id="concept-block-css">
-/* 蹂몃Ц 蹂닿컯 ???듭떖 媛쒕뀗 details/summary 釉붾줉 */
+/* 본문 보강 — 핵심 개념 details/summary 블록 */
 .concept-block{margin:0.9rem 0;background:#fff;border:1px solid #ebebed;border-radius:12px;overflow:hidden}
 .concept-block summary{padding:0.95rem 1.2rem;cursor:pointer;list-style:none;font-size:1em;background:#fafafc;border-bottom:1px solid transparent;transition:background .15s}
 .concept-block summary::-webkit-details-marker{display:none}
-.concept-block summary::before{content:"??;display:inline-block;margin-right:0.6rem;color:#0a84ff;transition:transform .2s ease}
+.concept-block summary::before{content:"▸";display:inline-block;margin-right:0.6rem;color:#0a84ff;transition:transform .2s ease}
 .concept-block[open] summary::before{transform:rotate(90deg)}
 .concept-block[open] summary{background:#f0f7ff;border-bottom-color:#ebebed}
 .concept-block summary:hover{background:#f5f5f7}
@@ -83,27 +83,27 @@
   <script type="module" src="./assets/auth-guard.js?v=20260603d"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">蹂몃Ц 諛붾줈媛湲?/a>
+  <a class="skip-link" href="#main">본문 바로가기</a>
 
   <!-- ========== GLASSMORPHIC NAV ========== -->
   <!-- archive link injected -->
-  <nav class="site-nav" aria-label="二?硫붾돱">
+  <nav class="site-nav" aria-label="주 메뉴">
     <div class="nav-inner">
       <a class="nav-brand" href="./index.html">
         <span class="mark"></span>
         <span>Chiropractic</span>
       </a>
       <ul class="nav-links">
-        <li><a href="./index.html#core">泥좏븰</a></li>
-        <li><a href="./index.html#history">??궗</a></li>
-        <li><a href="./index.html#curriculum">而ㅻ━?섎읆</a></li>
-        <li><a href="./index.html#format">?숈뒿 ?щ㎎</a></li>
-        <li><a href="./index.html#principle">?먯튃</a></li>
-        <li><a href="./archive.html">?뱛 ?꾩뭅?대툕</a></li>
+        <li><a href="./index.html#core">철학</a></li>
+        <li><a href="./index.html#history">역사</a></li>
+        <li><a href="./index.html#curriculum">커리큘럼</a></li>
+        <li><a href="./index.html#format">학습 포맷</a></li>
+        <li><a href="./index.html#principle">원칙</a></li>
+        <li><a href="./archive.html">📂 아카이브</a></li>
       </ul>
       <div class="nav-actions">
-        <a class="btn btn-ghost btn-sm" href="./login.html">濡쒓렇??/a>
-        <a class="btn btn-primary btn-sm" href="./index.html#curriculum">而ㅻ━?섎읆</a>
+        <a class="btn btn-ghost btn-sm" href="./login.html">로그인</a>
+        <a class="btn btn-primary btn-sm" href="./index.html#curriculum">커리큘럼</a>
       </div>
     </div>
   </nav>
@@ -114,28 +114,28 @@
       <div class="breadcrumb">
         <a href="./index.html">Chiropractic</a>
         &nbsp;/&nbsp;
-        <a href="./index.html#curriculum">而ㅻ━?섎읆</a>
+        <a href="./index.html#curriculum">커리큘럼</a>
         &nbsp;/&nbsp;
         Chapter 3
       </div>
       <h1>Diversified HVLA</h1>
-      <h2>?붾쾭?쒗뙆?대뱶 怨좎냽 ?吏꾪룺 援먯젙????誘멸뎅 <abbr class="med-abbr" title="Doctor of Chiropractic 쨌 移댁씠濡쒗봽?숉떛 ?섏궗 ?숈쐞">DC</abbr> 95.9%媛 ?곕뒗 湲곕낯湲?/h2>
+      <h2>디버시파이드 고속 저진폭 교정술 — 미국 <abbr class="med-abbr" title="Doctor of Chiropractic · 카이로프랙틱 의사 학위">DC</abbr> 95.9%가 쓰는 기본기</h2>
     </div>
   </header>
 
   <!-- ========== IN-PAGE NAV ========== -->
-  <nav class="site-nav" aria-label="梨뺥꽣 ?뱀뀡" style="top: var(--nav-h); background: var(--glass-bg-strong);">
+  <nav class="site-nav" aria-label="챕터 섹션" style="top: var(--nav-h); background: var(--glass-bg-strong);">
     <div class="nav-inner" style="justify-content: center;">
       <ul class="nav-links" style="justify-content: center;">
-        <li><a href="#overview">媛쒖슂</a></li>
+        <li><a href="#overview">개요</a></li>
         <li><a href="#week1">Week 1</a></li>
         <li><a href="#week2">Week 2</a></li>
         <li><a href="#week3">Week 3</a></li>
-        <li><a href="#technique-library">湲곗닠 ?쇱씠釉뚮윭由?/a></li>
+        <li><a href="#technique-library">기술 라이브러리</a></li>
         <li><a href="#week4">Week 4</a></li>
-        <li><a href="#resources">?ㅼ슫濡쒕뱶</a></li>
-        <li><a href="#videos">?숈쁺??/a></li>
-        <li><a href="#references">李멸퀬臾명뿄</a></li>
+        <li><a href="#resources">다운로드</a></li>
+        <li><a href="#videos">동영상</a></li>
+        <li><a href="#references">참고문헌</a></li>
       </ul>
     </div>
   </nav>
@@ -144,42 +144,42 @@
 
     <!-- ========== OVERVIEW ========== -->
     <section id="overview">
-      <h2>梨뺥꽣 媛쒖슂</h2>
-      <p class="section-lead">蹂?梨뺥꽣??Otto Reinert쨌Joe Janse媛 ?앹껜??븰 湲곕컲?쇰줈 ?ш뎄?깊븳 <em>?꾨? Diversified</em>瑜??ㅻ９?덈떎. D.D. Palmer 珥덇린??vitalism 泥좏븰? ??궗??留λ씫?먯꽌留?鍮꾪뙋?곸쑝濡??멸툒?⑸땲??</p>
+      <h2>챕터 개요</h2>
+      <p class="section-lead">본 챕터는 Otto Reinert·Joe Janse가 생체역학 기반으로 재구성한 <em>현대 Diversified</em>를 다룹니다. D.D. Palmer 초기의 vitalism 철학은 역사적 맥락에서만 비판적으로 언급합니다.</p>
 
       <div class="principle-card">
-        <h3>??梨뺥꽣???숈뒿 ?꾨젅??/h3>
+        <h3>이 챕터의 학습 프레임</h3>
         <p>
-          Diversified???뱀젙 泥숈텛 遺꾩젅??媛?섎뒗 <strong>怨좎냽(&lt;100 ms) 쨌 ?吏꾪룺(1-3 mm) ?섍린 異붾젰</strong>?낅땲??
-          Palmer Package 4? 湲곕쾿??以묒떖?대ŉ, ACA ?듦퀎 湲곗? <strong>誘멸뎅 DC??95.9%</strong>媛 ?ъ슜?⑸땲??
+          Diversified는 특정 척추 분절에 가하는 <strong>고속(&lt;100 ms) · 저진폭(1-3 mm) 수기 추력</strong>입니다.
+          Palmer Package 4대 기법의 중심이며, ACA 통계 기준 <strong>미국 DC의 95.9%</strong>가 사용합니다.
         </p>
         <p>
-          ?듭떖 ?먮━: 愿?덉쓽 湲곌퀎?섏슜湲곗? 泥숈닔 諛섏궗瑜?<strong>議곗젅??異붾젰?쇰줈 ?먭레</strong>??洹쇨낏寃?湲곕뒫?μ븷(segmental dysfunction)瑜?媛쒖꽑?⑸땲??
-          ?닿쾬??蹂?媛뺤쓽 ?꾩껜??肉뚮━ ??<em>"愿?댟룰렐???먭레 ???좉꼍 ?먭레 ??移섏쑀"</em> ?먯튃??媛???쒖닔???뺥깭?낅땲??
+          핵심 원리: 관절의 기계수용기와 척수 반사를 <strong>조절된 추력으로 자극</strong>해 근골격 기능장애(segmental dysfunction)를 개선합니다.
+          이것이 본 강의 전체의 뿌리 — <em>"관절·근육 자극 → 신경 자극 → 치유"</em> 원칙의 가장 순수한 형태입니다.
         </p>
       </div>
 
-      <h3>4二??숈뒿 濡쒕뱶留?/h3>
+      <h3>4주 학습 로드맵</h3>
       <div class="roadmap-grid">
         <a class="roadmap-step" href="#week1">
           <span class="roadmap-num">Week 1</span>
-          <span class="roadmap-title">?뺤쓽 쨌 ?앹껜??븰 쨌 洹쇨굅</span>
-          <small>HVLA ?뺤쓽 쨌 CPT/ICD-10 쨌 ???쒓컙 ?꾨줈?뚯씪 쨌 ROM 4援ъ뿭 쨌 Cavitation 쨌 Joint Dysfunction</small>
+          <span class="roadmap-title">정의 · 생체역학 · 근거</span>
+          <small>HVLA 정의 · CPT/ICD-10 · 힘-시간 프로파일 · ROM 4구역 · Cavitation · Joint Dysfunction</small>
         </a>
         <a class="roadmap-step" href="#week2">
           <span class="roadmap-num">Week 2</span>
-          <span class="roadmap-title">?섏옄 ?됯? 쨌 吏꾨떒</span>
-          <small>4?④퀎 ?뚮줈??쨌 OPQRST 쨌 Red Flag 11 쨌 Motion Palpation 쨌 ?좉꼍/?뺥삎 寃??쨌 VBI 쨌 ACR Imaging</small>
+          <span class="roadmap-title">환자 평가 · 진단</span>
+          <small>4단계 플로우 · OPQRST · Red Flag 11 · Motion Palpation · 신경/정형 검사 · VBI · ACR Imaging</small>
         </a>
         <a class="roadmap-step" href="#week3">
           <span class="roadmap-num">Week 3</span>
-          <span class="roadmap-title">遺꾩젅蹂?援먯젙 ?ㅻТ</span>
-          <small>3? ?붿냼 쨌 Pre-load ??Elastic Barrier ??Thrust 쨌 寃쎌텛쨌?됱텛쨌?붿텛쨌怨⑤컲쨌?ъ? 쨌 States Manual ?쒓린踰?/small>
+          <span class="roadmap-title">분절별 교정 실무</span>
+          <small>3대 요소 · Pre-load → Elastic Barrier → Thrust · 경추·흉추·요추·골반·사지 · States Manual 표기법</small>
         </a>
         <a class="roadmap-step" href="#week4">
           <span class="roadmap-num">Week 4</span>
-          <span class="roadmap-title">洹쇨굅 쨌 ?덉쟾 쨌 ?듯빀</span>
-          <small>GRADE 쨌 Cochrane SR 쨌 ?뷀넻/寃쎌텛???먰넻 ?꾨줈?좎퐳 쨌 VAD ?덉쟾 쨌 湲덇린 泥댄겕由ъ뒪??쨌 ?묒쭊</small>
+          <span class="roadmap-title">근거 · 안전 · 통합</span>
+          <small>GRADE · Cochrane SR · 요통/경추통/두통 프로토콜 · VAD 안전 · 금기 체크리스트 · 협진</small>
         </a>
       </div>
       <style>
@@ -191,40 +191,40 @@
         .roadmap-step small{font-size:.82em;color:#666;line-height:1.45}
       </style>
 
-      <h3>洹쇨굅 ?섏? 誘몃━蹂닿린</h3>
+      <h3>근거 수준 미리보기</h3>
       <table class="data-table">
         <thead>
           <tr>
-            <th>?곸쓳利?/th>
-            <th>洹쇨굅 ?섏?</th>
-            <th>????몄슜</th>
+            <th>적응증</th>
+            <th>근거 수준</th>
+            <th>대표 인용</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>湲됱꽦쨌?꾧툒???뷀넻</td>
-            <td><span class="evidence ev-mod">?윞 Moderate</span></td>
+            <td>급성·아급성 요통</td>
+            <td><span class="evidence ev-mod">🟡 Moderate</span></td>
             <td>Rubinstein SM et al. Cochrane 2011/2013</td>
           </tr>
           <tr>
-            <td>留뚯꽦 ?뷀넻</td>
-            <td><span class="evidence ev-mod">?윞 Moderate</span></td>
+            <td>만성 요통</td>
+            <td><span class="evidence ev-mod">🟡 Moderate</span></td>
             <td>ACA Clinical Practice Guidelines</td>
           </tr>
           <tr>
-            <td>湲곌퀎??寃쎌텛??/td>
-            <td><span class="evidence ev-mod">?윞 Moderate</span></td>
-            <td>Gross A et al. Cochrane 2015 ??MOB怨??숇벑</td>
+            <td>기계적 경추통</td>
+            <td><span class="evidence ev-mod">🟡 Moderate</span></td>
+            <td>Gross A et al. Cochrane 2015 — MOB과 동등</td>
           </tr>
           <tr>
-            <td>湲댁옣?굿룰꼍?몄꽦 ?먰넻</td>
-            <td><span class="evidence ev-limited">?윝 Limited-Moderate</span></td>
+            <td>긴장성·경인성 두통</td>
+            <td><span class="evidence ev-limited">🟠 Limited-Moderate</span></td>
             <td>Bryans R et al. JMPT 2011</td>
           </tr>
           <tr>
-            <td>泥쒖떇 쨌 怨좏삁??쨌 ?붽꼍??/td>
-            <td><span class="evidence ev-none">?뵶 No evidence</span></td>
-            <td>Cochrane ??沅뚯옣?섏? ?딆쓬</td>
+            <td>천식 · 고혈압 · 월경통</td>
+            <td><span class="evidence ev-none">🔴 No evidence</span></td>
+            <td>Cochrane — 권장하지 않음</td>
           </tr>
         </tbody>
       </table>
@@ -232,1223 +232,1223 @@
 
     <!-- ========== WEEK 1 ========== -->
     <section id="week1">
-      <h2>Week 1. ?뺤쓽쨌?앹껜??븰쨌洹쇨굅</h2>
+      <h2>Week 1. 정의·생체역학·근거</h2>
 
       <div class="week-card">
-        <h3><span class="week-badge">WEEK 1</span>?뺤쓽쨌?앹껜??븰쨌洹쇨굅 媛쒖슂</h3>
-        <h4>?렞 ?숈뒿 紐⑺몴</h4>
+        <h3><span class="week-badge">WEEK 1</span>정의·생체역학·근거 개요</h3>
+        <h4>🎯 학습 목표</h4>
         <ul>
-          <li>Diversified HVLA瑜?OMT쨌MOB쨌MET? 援щ텇???뺤쓽?쒕떎</li>
-          <li>???쒓컙 ?꾨줈?뚯씪(peak 400-1000 N 쨌 thrust 100-150 ms 쨌 displacement 1-3 mm)???쒖떆?쒕떎</li>
-          <li>愿??<abbr class="med-abbr" title="Range of Motion 쨌 愿?덇??숇쾾??>ROM</abbr> 4援ъ뿭 紐⑤뜽怨?HVLA ?곸슜 吏?먯쓣 ?ㅻ챸?쒕떎</li>
-          <li>Cavitation??怨쇳븰??湲곗쟾(Kawchuk 2015)???ㅻ챸?쒕떎</li>
-          <li>?꾪넻 Subluxation vs ?꾨? Joint Dysfunction 紐⑤뜽 李⑥씠瑜??쇳븳??/li>
+          <li>Diversified HVLA를 OMT·MOB·MET와 구분해 정의한다</li>
+          <li>힘-시간 프로파일(peak 400-1000 N · thrust 100-150 ms · displacement 1-3 mm)을 제시한다</li>
+          <li>관절 <abbr class="med-abbr" title="Range of Motion · 관절가동범위">ROM</abbr> 4구역 모델과 HVLA 적용 지점을 설명한다</li>
+          <li>Cavitation의 과학적 기전(Kawchuk 2015)을 설명한다</li>
+          <li>전통 Subluxation vs 현대 Joint Dysfunction 모델 차이를 논한다</li>
         </ul>
-        <h4>?뵎 ?듭떖 媛쒕뀗</h4>
+        <h4>🔑 핵심 개념</h4>
 
         <details class="concept-block" open>
-          <summary><strong>1. ?섑븰???뺤쓽? ?쒖? 肄붾뱶</strong></summary>
-          <p>Diversified High-Velocity, Low-Amplitude(HVLA) spinal manipulation? ?ㅼ쓬 議곌굔??媛뽯뒗 ?꾩닔 ?섎즺 ?됱쐞?낅땲??</p>
+          <summary><strong>1. 의학적 정의와 표준 코드</strong></summary>
+          <p>Diversified High-Velocity, Low-Amplitude(HVLA) spinal manipulation은 다음 조건을 갖는 도수 의료 행위입니다.</p>
           <ul>
-            <li>?뱀젙 泥숈텛 遺꾩젅(segment) ?먮뒗 留먯큹 愿?덉뿉 媛?섎뒗 ?섍린</li>
-            <li>?꾩꽦 ???쓣 ?섏뼱?쒕뒗 鍮좊Ⅴ怨?&lt; 100 ms) 吏㏃?(1?? mm) 異붾젰</li>
-            <li>愿?덉씠 ?앸━???대룞踰붿쐞 ?댁뿉???꾩꽦?λ꼍(elastic barrier)???쇱떆 珥덇낵?섎룄濡??좊룄</li>
-            <li>紐⑺몴: 愿????대룞??hypomobility) ?댁냼 諛?遺꾩젅 湲곕뒫 ?뚮났</li>
+            <li>특정 척추 분절(segment) 또는 말초 관절에 가하는 수기</li>
+            <li>탄성 저항을 넘어서는 빠르고(&lt; 100 ms) 짧은(1–3 mm) 추력</li>
+            <li>관절이 생리적 운동범위 내에서 탄성장벽(elastic barrier)을 일시 초과하도록 유도</li>
+            <li>목표: 관절 저운동성(hypomobility) 해소 및 분절 기능 회복</li>
           </ul>
           <table class="data-table">
-            <thead><tr><th>肄붾뵫 泥닿퀎</th><th>肄붾뱶</th><th>?ㅻ챸</th></tr></thead>
+            <thead><tr><th>코딩 체계</th><th>코드</th><th>설명</th></tr></thead>
             <tbody>
-              <tr><td rowspan="4"><strong>CPT (誘멸뎅)</strong></td><td>98940</td><td>Chiropractic manipulative treatment (CMT), 1?? spinal regions</td></tr>
-              <tr><td>98941</td><td>CMT, 3?? spinal regions</td></tr>
+              <tr><td rowspan="4"><strong>CPT (미국)</strong></td><td>98940</td><td>Chiropractic manipulative treatment (CMT), 1–2 spinal regions</td></tr>
+              <tr><td>98941</td><td>CMT, 3–4 spinal regions</td></tr>
               <tr><td>98942</td><td>CMT, 5 spinal regions</td></tr>
               <tr><td>98943</td><td>CMT, extraspinal (1+ regions)</td></tr>
               <tr><td rowspan="2"><strong>ICD-10-CM</strong></td><td>M99.0x</td><td>Segmental and somatic dysfunction</td></tr>
               <tr><td>M99.1x</td><td>Subluxation complex (vertebral)</td></tr>
             </tbody>
           </table>
-          <p class="callout callout-warn"><strong>?⑹뼱 二쇱쓽.</strong> ICD-10-CM??"Subluxation complex"??移댁씠濡쒗봽?숉떛 怨좎쑀 媛쒕뀗?쇰줈, ?뺥삎?멸낵??<em>遺덉셿???덇뎄(愿?덈㈃ 遺遺??댄깉)</em>? ?ㅻ쫭?덈떎. ?숈닠 湲?먯꽌???쇰룞 諛⑹?瑜??꾪빐 <strong>Segmental dysfunction</strong> ?먮뒗 <strong>Joint restriction</strong>?대씪???⑹뼱媛 沅뚯옣?⑸땲??</p>
+          <p class="callout callout-warn"><strong>용어 주의.</strong> ICD-10-CM의 "Subluxation complex"는 카이로프랙틱 고유 개념으로, 정형외과의 <em>불완전 탈구(관절면 부분 이탈)</em>와 다릅니다. 학술 글에서는 혼동 방지를 위해 <strong>Segmental dysfunction</strong> 또는 <strong>Joint restriction</strong>이라는 용어가 권장됩니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>2. ?좎궗 ?섍린移섎즺 Modality???援щ텇</strong></summary>
+          <summary><strong>2. 유사 수기치료 Modality와의 구분</strong></summary>
           <table class="data-table">
-            <thead><tr><th>Modality</th><th>二쇱껜</th><th>?샕룹냽???뱀꽦</th><th>?듭떖 李⑥씠</th></tr></thead>
+            <thead><tr><th>Modality</th><th>주체</th><th>힘·속도 특성</th><th>핵심 차이</th></tr></thead>
             <tbody>
-              <tr><td><strong>Diversified HVLA</strong></td><td>DC</td><td>怨좎냽 쨌 ?吏꾪룺 異붾젰</td><td>遺꾩젅 ?뱀씠??吏꾨떒(Motion Palpation) + 異붾젰</td></tr>
-              <tr><td>Osteopathic HVLA (OMT)</td><td>DO</td><td>怨좎냽 쨌 ?吏꾪룺 異붾젰</td><td>5 Osteopathic models ??Biomechanical 쨌 Respiratory ???듯빀</td></tr>
-              <tr><td>Joint Mobilization (MOB)</td><td>PT</td><td>???쨌 諛섎났 (Maitland I?밒V)</td><td>Thrust ?놁쓬 ??吏꾨룞??oscillation 以묒떖</td></tr>
-              <tr><td>Muscle Energy Technique (MET)</td><td>DO/PT</td><td>?섏옄 ?깆쿃???섏텞 ?쒖슜</td><td>?섎룞 援먯젙 + ?섏옄 ?먮컻 洹??쒖꽦</td></tr>
-              <tr><td>Manipulation under anesthesia (MUA)</td><td>MD/DO</td><td>留덉랬??HVLA/stretch</td><td>?좎갑 쨌 洹뱀떖??洹쇨컯吏???/td></tr>
+              <tr><td><strong>Diversified HVLA</strong></td><td>DC</td><td>고속 · 저진폭 추력</td><td>분절 특이적 진단(Motion Palpation) + 추력</td></tr>
+              <tr><td>Osteopathic HVLA (OMT)</td><td>DO</td><td>고속 · 저진폭 추력</td><td>5 Osteopathic models — Biomechanical · Respiratory 등 통합</td></tr>
+              <tr><td>Joint Mobilization (MOB)</td><td>PT</td><td>저속 · 반복 (Maitland I–IV)</td><td>Thrust 없음 — 진동성 oscillation 중심</td></tr>
+              <tr><td>Muscle Energy Technique (MET)</td><td>DO/PT</td><td>환자 등척성 수축 활용</td><td>수동 교정 + 환자 자발 근 활성</td></tr>
+              <tr><td>Manipulation under anesthesia (MUA)</td><td>MD/DO</td><td>마취하 HVLA/stretch</td><td>유착 · 극심한 근강직 시</td></tr>
             </tbody>
           </table>
-          <p class="callout callout-info"><strong>?듭떖.</strong> Diversified HVLA??怨좎쑀??"?먮꼫吏 移섎즺"媛 ?꾨떃?덈떎. 湲곕쾿???듭떖? 遺꾩젅 ?뱀씠??Motion Palpation 湲곕컲 吏꾨떒怨??꾩꽦?λ꼍 吏곸쟾??怨좎냽 ?吏꾪룺 異붾젰?대씪??<strong>?ы쁽 媛?ν븳 ?섎즺 ?됱쐞</strong>?낅땲?? OMT 諛??섏궗媛 ?쒗뻾?섎뒗 ?꾩닔移섎즺???쇰?? 湲곗닠?곸쑝濡?以묒꺽?섎ŉ, ?곹샇 李몄“ 媛?ν빀?덈떎.</p>
+          <p class="callout callout-info"><strong>핵심.</strong> Diversified HVLA는 고유한 "에너지 치료"가 아닙니다. 기법의 핵심은 분절 특이적 Motion Palpation 기반 진단과 탄성장벽 직전의 고속 저진폭 추력이라는 <strong>재현 가능한 의료 행위</strong>입니다. OMT 및 의사가 시행하는 도수치료의 일부와 기술적으로 중첩하며, 상호 참조 가능합니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>3. ??궗??留λ씫 ??Reinert 쨌 Janse??"?몄냽??</strong></summary>
-          <p>Diversified??李쎌떆??D.D. Palmer??珥덇린 泥좏븰(1895??910s)? vitalism怨?"?좉꼍 媛꾩꽠 ???꾩떊 吏덊솚" 媛?ㅼ뿉 湲곕컲?덉뒿?덈떎. ?꾨? ?섑븰 湲곗??쇰줈??寃利앸릺吏 ?딆? 媛?ㅻ줈 遺꾨쪟?⑸땲?? 洹몃윭??<strong>?꾨? Diversified</strong>??Otto Reinert(1950s??0s)? Joseph Janse(1945??3, National College ?숈옣)???섑빐 ?앹껜??븰쨌?좉꼍?대???湲곕컲?쇰줈 ?ш뎄?깅맂 湲곕쾿?낅땲??</p>
+          <summary><strong>3. 역사적 맥락 — Reinert · Janse의 "세속화"</strong></summary>
+          <p>Diversified의 창시자 D.D. Palmer의 초기 철학(1895–1910s)은 vitalism과 "신경 간섭 → 전신 질환" 가설에 기반했습니다. 현대 의학 기준으로는 검증되지 않은 가설로 분류됩니다. 그러나 <strong>현대 Diversified</strong>는 Otto Reinert(1950s–60s)와 Joseph Janse(1945–83, National College 학장)에 의해 생체역학·신경해부학 기반으로 재구성된 기법입니다.</p>
           <ul>
-            <li>Palmer ?꾪넻??Innate ?몄뼱瑜??쒓굅?섍퀬 <strong>Joint dysfunction ?⑹뼱</strong> ?꾩엯</li>
-            <li>Motion Palpation??1李?吏꾨떒 ?꾧뎄濡??뺣┰ (?ы쁽 媛??쨌 痢≪젙 媛??</li>
-            <li>泥숈텛 遺?꾨퀎(Cervical 쨌 Thoracic 쨌 Lumbopelvic 쨌 Extremity) 紐⑤뱢??援먯쑁怨쇱젙 援ъ텞</li>
-            <li>National University of Health Sciences ?꾩옱 而ㅻ━?섎읆? ?앹껜??븰쨌洹쇨굅 以묒떖 ?쒖?</li>
+            <li>Palmer 전통의 Innate 언어를 제거하고 <strong>Joint dysfunction 용어</strong> 도입</li>
+            <li>Motion Palpation을 1차 진단 도구로 정립 (재현 가능 · 측정 가능)</li>
+            <li>척추 부위별(Cervical · Thoracic · Lumbopelvic · Extremity) 모듈형 교육과정 구축</li>
+            <li>National University of Health Sciences 현재 커리큘럼은 생체역학·근거 중심 표준</li>
           </ul>
-          <p class="callout callout-info"><strong>?꾨? Diversified???뺤껜??</strong> ?ㅻ뒛??誘멸뎅 DC 95.9%媛 ?ъ슜?섎뒗 Diversified??Palmer???뺤씠?곹븰??移댁씠濡쒗봽?숉떛???꾨땶, <strong>Reinert쨌Janse 怨꾩뿴???앹껜??븰???섍린移섎즺</strong>??媛源앹뒿?덈떎. ?섑븰 ?꾨Ц媛 ???媛뺤쓽?먯꽌????怨꾨낫瑜?紐낆떆?곸쑝濡?援щ텇?섎뒗 ?몄씠 ?뺤쭅???묎렐?낅땲??</p>
+          <p class="callout callout-info"><strong>현대 Diversified의 정체성.</strong> 오늘날 미국 DC 95.9%가 사용하는 Diversified는 Palmer의 형이상학적 카이로프랙틱이 아닌, <strong>Reinert·Janse 계열의 생체역학적 수기치료</strong>에 가깝습니다. 의학 전문가 대상 강의에서는 이 계보를 명시적으로 구분하는 편이 정직한 접근입니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>4. HVLA ???쒓컙 ?꾨줈?뚯씪 ??痢≪젙 媛?ν븳 ?뚮씪誘명꽣</strong></summary>
+          <summary><strong>4. HVLA 힘-시간 프로파일 — 측정 가능한 파라미터</strong></summary>
           <table class="data-table">
-            <thead><tr><th>?뚮씪誘명꽣</th><th>痢≪젙媛?(?됯퇏)</th><th>踰붿쐞</th><th>?꾩긽 ?섏쓽</th></tr></thead>
+            <thead><tr><th>파라미터</th><th>측정값 (평균)</th><th>범위</th><th>임상 의의</th></tr></thead>
             <tbody>
-              <tr><td>Preload force</td><td>40??00 N</td><td>遺?꾨퀎</td><td>議곗쭅 ?λ젰 援ъ텞, ?꾩꽦?λ꼍 媛먯?</td></tr>
-              <tr><td><strong>Peak force</strong></td><td><strong>400??,000 N</strong></td><td>?됱텛 &gt; ?붿텛 &gt; 寃쎌텛</td><td>愿??媛??踰붿쐞 ?뚰뙆</td></tr>
-              <tr><td><strong>Thrust duration</strong></td><td><strong>100??50 ms</strong></td><td>80??50</td><td>洹?諛⑹뼱 諛섏궗(~70 ms)蹂대떎 鍮좊쫫</td></tr>
-              <tr><td>Loading rate</td><td>4,000??,000 N/s</td><td>?믪쓣?섎줉 ?④낵??/td><td>遺꾩젅 媛?띿쓽 ?듭떖</td></tr>
-              <tr><td><strong>Displacement</strong></td><td><strong>1?? mm</strong></td><td>0.5??</td><td>Paraphysiological space 吏꾩엯</td></tr>
+              <tr><td>Preload force</td><td>40–100 N</td><td>부위별</td><td>조직 장력 구축, 탄성장벽 감지</td></tr>
+              <tr><td><strong>Peak force</strong></td><td><strong>400–1,000 N</strong></td><td>흉추 &gt; 요추 &gt; 경추</td><td>관절 가동 범위 돌파</td></tr>
+              <tr><td><strong>Thrust duration</strong></td><td><strong>100–150 ms</strong></td><td>80–250</td><td>근 방어 반사(~70 ms)보다 빠름</td></tr>
+              <tr><td>Loading rate</td><td>4,000–8,000 N/s</td><td>높을수록 효과적</td><td>분절 가속의 핵심</td></tr>
+              <tr><td><strong>Displacement</strong></td><td><strong>1–3 mm</strong></td><td>0.5–5</td><td>Paraphysiological space 진입</td></tr>
             </tbody>
           </table>
-          <p class="ref-cite">?뱰 Gudavalli MR et al. <em>Effects of thrust amplitude and duration of high-velocity low-amplitude spinal manipulations</em>. JMPT 2013.</p>
-          <p>愿???대룞踰붿쐞 4援ъ뿭: <strong>Active ROM ??Passive ROM ??Elastic Barrier ??Paraphysiological Space ??Anatomical Limit</strong>. HVLA??Passive ROM 留먮떒??Elastic Barrier 吏곸쟾?먯꽌 Paraphysiological Space濡?遺꾩젅??吏㏐쾶 ?대룞?쒗궎硫? Anatomical Limit???덈? 珥덇낵?섏? ?딆뒿?덈떎. 洹??덈㉧???몃?쨌愿?덈궘 ?먯긽 ?꾪뿕??諛쒖깮?⑸땲??</p>
+          <p class="ref-cite">📖 Gudavalli MR et al. <em>Effects of thrust amplitude and duration of high-velocity low-amplitude spinal manipulations</em>. JMPT 2013.</p>
+          <p>관절 운동범위 4구역: <strong>Active ROM → Passive ROM → Elastic Barrier → Paraphysiological Space → Anatomical Limit</strong>. HVLA는 Passive ROM 말단의 Elastic Barrier 직전에서 Paraphysiological Space로 분절을 짧게 이동시키며, Anatomical Limit는 절대 초과하지 않습니다. 그 너머는 인대·관절낭 손상 위험이 발생합니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>5. Cavitation ??Kawchuk 2015 PLOS ONE MRI ?곌뎄</strong></summary>
-          <p><strong>Kawchuk GN et al. Real-Time Visualization of Joint Cavitation. PLOS ONE 2015;10(4):e0119470.</strong> ???곌뎄??"pop ?뚮━???뺤껜"瑜??ㅼ떆媛?MRI濡?泥섏쓬 洹쒕챸?덉뒿?덈떎.</p>
+          <summary><strong>5. Cavitation — Kawchuk 2015 PLOS ONE MRI 연구</strong></summary>
+          <p><strong>Kawchuk GN et al. Real-Time Visualization of Joint Cavitation. PLOS ONE 2015;10(4):e0119470.</strong> 이 연구는 "pop 소리의 정체"를 실시간 MRI로 처음 규명했습니다.</p>
           <ol>
-            <li>愿?덈궘 ?댁븬 媛먯냼 (愿??遺꾨━ ??</li>
-            <li>?⑺빐 媛?ㅺ? 湲고룷(cavity)瑜??뺤꽦 ??<strong>Tribonucleation</strong></li>
-            <li><strong>湲고룷 ?뺤꽦 ?쒓컙??"pop" ?뚮━? ?쇱튂</strong> ??湲고룷媛 ?곗???寃껋씠 ?꾨땲??<em>?앹꽦?섎뒗</em> 寃껋씠 ?뚮━???먯씤</li>
+            <li>관절낭 내압 감소 (관절 분리 시)</li>
+            <li>용해 가스가 기포(cavity)를 형성 — <strong>Tribonucleation</strong></li>
+            <li><strong>기포 형성 순간이 "pop" 소리와 일치</strong> — 기포가 터지는 것이 아니라 <em>생성되는</em> 것이 소리의 원인</li>
           </ol>
-          <p class="callout callout-warn"><strong>?꾩긽??二쇱쓽.</strong> Cavitation ?좊Т???꾩긽 寃곌낵(?듭쬆쨌ROM쨌?μ븷 吏?????좎쓽誘명븯寃??곹뼢??二쇱? ?딅뒗 寃껋쑝濡?蹂닿퀬?⑸땲??Flynn 2003 <em>Arch Phys Med Rehabil</em>). ?섏옄媛 "?뚮━媛 ???섎㈃ 移섎즺媛 ????嫄닿???"?쇨퀬 臾삳뒗?ㅻ㈃, "愿?덉쓽 ?뺤긽 ?吏곸엫???뚮났?섎뒗 寃껋씠 ??以묒슂?⑸땲?? ?뚮━ ?놁씠???숈씪???④낵瑜??삳뒗 ?섏옄媛 留롮뒿?덈떎"?쇨퀬 ?듯븯???몄씠 ?뺥솗?⑸땲?? ?좎옄??臾대━?섍쾶 cavitation???좊룄?섎젮 ?섏? ?딅뒗 寃껋씠 ?덉쟾?⑸땲??</p>
+          <p class="callout callout-warn"><strong>임상적 주의.</strong> Cavitation 유무는 임상 결과(통증·ROM·장애 지표)에 유의미하게 영향을 주지 않는 것으로 보고됩니다(Flynn 2003 <em>Arch Phys Med Rehabil</em>). 환자가 "소리가 안 나면 치료가 안 된 건가요?"라고 묻는다면, "관절의 정상 움직임이 회복되는 것이 더 중요합니다. 소리 없이도 동일한 효과를 얻는 환자가 많습니다"라고 답하는 편이 정확합니다. 술자도 무리하게 cavitation을 유도하려 하지 않는 것이 안전합니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>6. "Subluxation" ??"Joint Dysfunction" ???⑹뼱 沅뚯옣?ы빆</strong></summary>
+          <summary><strong>6. "Subluxation" → "Joint Dysfunction" — 용어 권장사항</strong></summary>
           <table class="data-table">
-            <thead><tr><th>??ぉ</th><th>?꾪넻 紐⑤뜽 (Classical)</th><th>?꾨? 紐⑤뜽 (Joint Dysfunction)</th></tr></thead>
+            <thead><tr><th>항목</th><th>전통 모델 (Classical)</th><th>현대 모델 (Joint Dysfunction)</th></tr></thead>
             <tbody>
-              <tr><td>蹂묓깭?앸━</td><td>堉?蹂?????좉꼍 ?뺣컯 ???먭굅由??κ린 湲곕뒫?μ븷</td><td>愿???쨌怨쇱슫?숈꽦 ??湲곌퀎?섏슜湲??낅젰 蹂????援?냼 ?듭쬆쨌洹쇨릿??/td></tr>
-              <tr><td>吏꾨떒</td><td>X-ray listing, 洹밸룎湲??꾩튂</td><td>Motion Palpation, 湲곕뒫 ?됯?, ?듭쬆 provocation</td></tr>
-              <tr><td>?곸쓳利?踰붿쐞</td><td>?꾩떊 吏덊솚源뚯? 二쇱옣</td><td>?윟 湲곌퀎??洹쇨낏寃??듭쬆??援?븳</td></tr>
-              <tr><td>怨쇳븰??洹쇨굅</td><td>?뵶 ?遺遺?洹쇨굅 ?놁쓬</td><td>?윞 以묎컙 ?섏? 洹쇨굅 (?뷀넻쨌寃쎌텛??</td></tr>
+              <tr><td>병태생리</td><td>뼈 변위 → 신경 압박 → 원거리 장기 기능장애</td><td>관절 저·과운동성 → 기계수용기 입력 변화 → 국소 통증·근긴장</td></tr>
+              <tr><td>진단</td><td>X-ray listing, 극돌기 위치</td><td>Motion Palpation, 기능 평가, 통증 provocation</td></tr>
+              <tr><td>적응증 범위</td><td>전신 질환까지 주장</td><td>🟢 기계적 근골격 통증에 국한</td></tr>
+              <tr><td>과학적 근거</td><td>🔴 대부분 근거 없음</td><td>🟡 중간 수준 근거 (요통·경추통)</td></tr>
             </tbody>
           </table>
-          <p><strong>?숈닠쨌?꾩긽 湲?곌린 沅뚯옣 ?⑹뼱</strong>: Subluxation ??<em>Segmental dysfunction / Joint restriction / Hypomobility</em>. Adjustment ??<em>HVLA Manipulation / Spinal manipulative therapy (SMT)</em>. "Innate Intelligence" 諛?"Misalignment causing organ disease"???꾨? ?섑븰 湲?곌린?먯꽌???ъ슜?섏? ?딆뒿?덈떎.</p>
+          <p><strong>학술·임상 글쓰기 권장 용어</strong>: Subluxation → <em>Segmental dysfunction / Joint restriction / Hypomobility</em>. Adjustment → <em>HVLA Manipulation / Spinal manipulative therapy (SMT)</em>. "Innate Intelligence" 및 "Misalignment causing organ disease"는 현대 의학 글쓰기에서는 사용하지 않습니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>7. 洹쇨굅 ?섏? 誘몃━蹂닿린 (Week 4 ?곸꽭)</strong></summary>
+          <summary><strong>7. 근거 수준 미리보기 (Week 4 상세)</strong></summary>
           <ul>
-            <li>?윟 <strong>Strong</strong>: 湲됱꽦 湲곌퀎???뷀넻 (Paige 2017 JAMA 쨌 Cochrane 2012)</li>
-            <li>?윞 <strong>Moderate</strong>: 留뚯꽦 LBP, 湲곌퀎??寃쎌텛?? cervicogenic headache (Rubinstein 2019 BMJ 쨌 Gross 2015 Cochrane 쨌 Chaibi 2019)</li>
-            <li>?윝 <strong>Limited</strong>: tension-type headache, peripheral mobilization</li>
-            <li>?뵶 <strong>No evidence</strong>: 怨좏삁?? 泥쒖떇, ?붽꼍?? ?꾨룞 諛쒕떖, 硫댁뿭 媛뺥솕 ??Cochrane systematic reviews?먯꽌 遺?뺤쟻 寃곕줎. 蹂?媛뺤쓽?먯꽌???대윴 ?곸쓳利앹쑝濡?沅뚯옣?섏? ?딆뒿?덈떎.</li>
+            <li>🟢 <strong>Strong</strong>: 급성 기계적 요통 (Paige 2017 JAMA · Cochrane 2012)</li>
+            <li>🟡 <strong>Moderate</strong>: 만성 LBP, 기계적 경추통, cervicogenic headache (Rubinstein 2019 BMJ · Gross 2015 Cochrane · Chaibi 2019)</li>
+            <li>🟠 <strong>Limited</strong>: tension-type headache, peripheral mobilization</li>
+            <li>🔴 <strong>No evidence</strong>: 고혈압, 천식, 월경통, 아동 발달, 면역 강화 — Cochrane systematic reviews에서 부정적 결론. 본 강의에서는 이런 적응증으로 권장되지 않습니다.</li>
           </ul>
-          <p class="ref-cite">?뱰 Pickar JG. <em>Neurophysiological effects of spinal manipulation</em>. Spine J 2002;2(5):357??71.</p>
+          <p class="ref-cite">📖 Pickar JG. <em>Neurophysiological effects of spinal manipulation</em>. Spine J 2002;2(5):357–371.</p>
         </details>
 
         <div class="week-resources">
-          <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week1_history_foundations.md">?뱰 ?곸꽭 媛뺤쓽濡?/a>
-          <a class="resource-pill" href="./viewer.html?src=diversified/08_report_week1.md">?뱞 Report</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/04_slides_week1.pdf" download>?렣 PPTX</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/02_video_part1_week12.mp4">?렏 Video Part 1</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">?렒 Podcast</a>
+          <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week1_history_foundations.md">📖 상세 강의록</a>
+          <a class="resource-pill" href="./viewer.html?src=diversified/08_report_week1.md">📄 Report</a>
+          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/04_slides_week1.pdf" download>🎴 PPTX</a>
+          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/02_video_part1_week12.mp4">🎥 Video Part 1</a>
+          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">🎧 Podcast</a>
         </div>
       </div>
     </section>
 
     <!-- ========== WEEK 2 ========== -->
     <section id="week2">
-      <h2>Week 2. ?섏옄 ?됯?? 吏꾨떒</h2>
+      <h2>Week 2. 환자 평가와 진단</h2>
 
       <div class="week-card">
-        <h3><span class="week-badge">WEEK 2</span>?섏옄 ?됯?? 吏꾨떒</h3>
-        <h4>?렞 ?숈뒿 紐⑺몴</h4>
+        <h3><span class="week-badge">WEEK 2</span>환자 평가와 진단</h3>
+        <h4>🎯 학습 목표</h4>
         <ul>
-          <li>?섏옄 ?됯? 5?④퀎 ?뚮줈??History ??Inspection ??Palpation ??Special Tests ??Imaging)</li>
-          <li>OPQRST 臾몄쭊 + Red Flag ?ㅽ겕由щ떇 泥닿퀎 ?곸슜</li>
-          <li>Motion Palpation ?섑뻾 諛??좊ː???쒓퀎 ?댄빐</li>
-          <li>二쇱슂 ?좉꼍?쇑룹젙?뺥븰 ?뱀닔寃?ъ쓽 sensitivity/specificity ?쒖떆</li>
-          <li>VBAI ?ㅽ겕由щ떇(5Ds/3Ns 쨌 De Kleyn test ?쒓퀎) ?ㅻ챸</li>
-          <li>ACR ?곸긽 ?곸쓳利?湲곗??쇰줈 X-ray쨌MRI쨌CT ?섎ː 寃곗젙</li>
+          <li>환자 평가 5단계 플로우(History → Inspection → Palpation → Special Tests → Imaging)</li>
+          <li>OPQRST 문진 + Red Flag 스크리닝 체계 적용</li>
+          <li>Motion Palpation 수행 및 신뢰도 한계 이해</li>
+          <li>주요 신경학·정형학 특수검사의 sensitivity/specificity 제시</li>
+          <li>VBAI 스크리닝(5Ds/3Ns · De Kleyn test 한계) 설명</li>
+          <li>ACR 영상 적응증 기준으로 X-ray·MRI·CT 의뢰 결정</li>
         </ul>
-        <h4>?뵎 ?듭떖 媛쒕뀗</h4>
+        <h4>🔑 핵심 개념</h4>
 
         <details class="concept-block" open>
-          <summary><strong>1. ?섏옄 ?됯? 4?④퀎 ?뚮줈??/strong></summary>
-          <p>紐⑤뱺 Diversified ?곸슜 ???ㅼ쓬 ?섏궗寃곗젙 ?뚭퀬由ъ쬁??嫄곗묩?덈떎.</p>
+          <summary><strong>1. 환자 평가 4단계 플로우</strong></summary>
+          <p>모든 Diversified 적용 전 다음 의사결정 알고리즘을 거칩니다.</p>
           <ol>
-            <li><strong>Screening</strong> ??Red Flag ?좊Т ?뺤씤. ?묒꽦 ??利됱떆 ?곸긽쨌?꾨Ц???섎ː, 援먯젙 蹂대쪟</li>
-            <li><strong>Diagnosis</strong> ??臾몄쭊(OPQRST) + 愿李?+ 珥됱쭊 + ?뺥삎쨌?좉꼍 寃?? 湲곌퀎??臾몄젣?멸??</li>
-            <li><strong>Analysis</strong> ???대뒓 遺꾩젅쨌?대뒓 諛⑺뼢 湲곕뒫?μ븷?멸?? Motion + Static Palpation ?쇱튂 ?뺤씤</li>
-            <li><strong>Planning</strong> ???섏옄 ?먯꽭쨌?묒큺?먃룹텛??踰≫꽣 寃곗젙. 移섎즺 ???숈쓽쨌湲덇린 理쒖쥌 ?뺤씤</li>
+            <li><strong>Screening</strong> — Red Flag 유무 확인. 양성 → 즉시 영상·전문의 의뢰, 교정 보류</li>
+            <li><strong>Diagnosis</strong> — 문진(OPQRST) + 관찰 + 촉진 + 정형·신경 검사. 기계적 문제인가?</li>
+            <li><strong>Analysis</strong> — 어느 분절·어느 방향 기능장애인가? Motion + Static Palpation 일치 확인</li>
+            <li><strong>Planning</strong> — 환자 자세·접촉점·추력 벡터 결정. 치료 전 동의·금기 최종 확인</li>
           </ol>
           <table class="data-table">
-            <thead><tr><th>?④퀎</th><th>珥덉쭊</th><th>?ъ쭊</th></tr></thead>
+            <thead><tr><th>단계</th><th>초진</th><th>재진</th></tr></thead>
             <tbody>
-              <tr><td>Screening</td><td>2??遺?/td><td>30珥?/td></tr>
-              <tr><td>Diagnosis</td><td>15??0遺?/td><td>3??遺?/td></tr>
-              <tr><td>Analysis</td><td>5??0遺?/td><td>2??遺?/td></tr>
-              <tr><td>Planning + 援먯젙</td><td>3??遺?/td><td>2??遺?/td></tr>
-              <tr><td><strong>?⑷퀎</strong></td><td><strong>25??0遺?/strong></td><td><strong>8??2遺?/strong></td></tr>
+              <tr><td>Screening</td><td>2–3분</td><td>30초</td></tr>
+              <tr><td>Diagnosis</td><td>15–20분</td><td>3–5분</td></tr>
+              <tr><td>Analysis</td><td>5–10분</td><td>2–3분</td></tr>
+              <tr><td>Planning + 교정</td><td>3–5분</td><td>2–3분</td></tr>
+              <tr><td><strong>합계</strong></td><td><strong>25–40분</strong></td><td><strong>8–12분</strong></td></tr>
             </tbody>
           </table>
         </details>
 
         <details class="concept-block">
-          <summary><strong>2. OPQRST 臾몄쭊 + Red Flag 11媛吏</strong></summary>
-          <p><strong>OPQRST</strong>: Onset 쨌 Provoking/Palliating 쨌 Quality 쨌 Radiation 쨌 Severity(VAS/NPRS 0??0) 쨌 Timing. Diversified ?뱀씠 異붽?: 怨쇨굅 泥숈텛 ?쒖닠?? anticoagulant 蹂듭슜, 怨⑤떎怨듭쬆/DEXA, VBI 利앹긽 ?대젰, 理쒓렐 ?몄긽.</p>
+          <summary><strong>2. OPQRST 문진 + Red Flag 11가지</strong></summary>
+          <p><strong>OPQRST</strong>: Onset · Provoking/Palliating · Quality · Radiation · Severity(VAS/NPRS 0–10) · Timing. Diversified 특이 추가: 과거 척추 시술력, anticoagulant 복용, 골다공증/DEXA, VBI 증상 이력, 최근 외상.</p>
           <table class="data-table">
-            <thead><tr><th>#</th><th>Red Flag</th><th>?쒖궗 蹂묐?</th><th>沅뚯옣 議곗튂</th></tr></thead>
+            <thead><tr><th>#</th><th>Red Flag</th><th>시사 병변</th><th>권장 조치</th></tr></thead>
             <tbody>
-              <tr><td>1</td><td>?앹븷 泥?媛???ы븳 ?먰넻 (thunderclap)</td><td>SAH 쨌 VAD</td><td>利됱떆 ER ??CT</td></tr>
-              <tr><td>2</td><td>吏꾪뻾???좉꼍?숈쟻 寃곗넀</td><td>Myelopathy 쨌 醫낆뼇</td><td>?좉꼍怨?쨌 MRI</td></tr>
-              <tr><td>3</td><td>?덉옣 留덉랬 + 諛곕?쨌諛곕눊 ?μ븷</td><td>Cauda equina</td><td>?묎툒 MRI</td></tr>
-              <tr><td>4</td><td>?ㅻ챸 ???섎뒗 泥댁쨷 媛먯냼 ??5kg/6媛쒖썡</td><td>Neoplasm</td><td>?곸긽 + 醫낆뼇?쒖???/td></tr>
-              <tr><td>5</td><td>?쇨컙 ?듭쬆 &gt; 湲곗긽 ?듭쬆</td><td>醫낆뼇 쨌 媛먯뿼</td><td>MRI</td></tr>
-              <tr><td>6</td><td>諛쒖뿴 + 泥숈텛 ?듭쬆</td><td>媛먯뿼 (discitis, osteomyelitis)</td><td>CRP 쨌 MRI with Gd</td></tr>
-              <tr><td>7</td><td>?몄긽 ???ы븳 寃쎈???+ VBI 利앹긽</td><td>Vertebral artery dissection</td><td>CT angio 쨌 利됱떆</td></tr>
-              <tr><td>8</td><td>50???댁긽 珥덈컻 ?깊넻利?+ ?꾪뿕?몄옄</td><td>?뺣컯 怨⑥젅 쨌 ?꾩씠</td><td>X-ray 쨌 MRI</td></tr>
-              <tr><td>9</td><td>?ㅽ뀒濡쒖씠???κ린 ?ъ슜 + 泥숈텛??/td><td>蹂묒쟻 怨⑥젅</td><td>X-ray 쨌 DEXA</td></tr>
-              <tr><td>10</td><td>硫댁뿭?듭젣 + 泥숈텛??/td><td>媛먯뿼</td><td>CRP 쨌 MRI</td></tr>
-              <tr><td>11</td><td>?먭?硫댁뿭 蹂묐젰 (AS ??</td><td>媛뺤쭅泥숈텛??/td><td>HLA-B27 쨌 ?곸긽</td></tr>
+              <tr><td>1</td><td>생애 첫 가장 심한 두통 (thunderclap)</td><td>SAH · VAD</td><td>즉시 ER → CT</td></tr>
+              <tr><td>2</td><td>진행성 신경학적 결손</td><td>Myelopathy · 종양</td><td>신경과 · MRI</td></tr>
+              <tr><td>3</td><td>안장 마취 + 배변·배뇨 장애</td><td>Cauda equina</td><td>응급 MRI</td></tr>
+              <tr><td>4</td><td>설명 안 되는 체중 감소 ≥ 5kg/6개월</td><td>Neoplasm</td><td>영상 + 종양표지자</td></tr>
+              <tr><td>5</td><td>야간 통증 &gt; 기상 통증</td><td>종양 · 감염</td><td>MRI</td></tr>
+              <tr><td>6</td><td>발열 + 척추 통증</td><td>감염 (discitis, osteomyelitis)</td><td>CRP · MRI with Gd</td></tr>
+              <tr><td>7</td><td>외상 후 심한 경부통 + VBI 증상</td><td>Vertebral artery dissection</td><td>CT angio · 즉시</td></tr>
+              <tr><td>8</td><td>50세 이상 초발 등통증 + 위험인자</td><td>압박 골절 · 전이</td><td>X-ray · MRI</td></tr>
+              <tr><td>9</td><td>스테로이드 장기 사용 + 척추통</td><td>병적 골절</td><td>X-ray · DEXA</td></tr>
+              <tr><td>10</td><td>면역억제 + 척추통</td><td>감염</td><td>CRP · MRI</td></tr>
+              <tr><td>11</td><td>자가면역 병력 (AS 등)</td><td>강직척추염</td><td>HLA-B27 · 영상</td></tr>
             </tbody>
           </table>
-          <p class="callout callout-warn"><strong>援먯젙 ??留덉?留??뺤씤.</strong> "吏??2二????덈줈??利앹긽 ?앷꼈?섏슂?" Red Flag 諛쒓껄 ??援먯젙 湲덉?, ?섏옄?먭쾶 ?댁쑀 ?ㅻ챸, ?섎ː 臾몄꽌 ?묒꽦?⑸땲??</p>
+          <p class="callout callout-warn"><strong>교정 전 마지막 확인.</strong> "지난 2주 내 새로운 증상 생겼나요?" Red Flag 발견 시 교정 금지, 환자에게 이유 설명, 의뢰 문서 작성합니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>3. ?쒕㈃?대?????泥숈텛 遺꾩젅 泥댄몴 ?쒕뱶留덊겕 (Topographical Landmarks)</strong></summary>
-          <p>Motion Palpation쨌Static Palpation쨌援먯젙 ?뗭뾽??紐⑤뱺 異쒕컻?먯? <strong>?뺥솗??遺꾩젅 ?꾩튂 寃곗젙</strong>?낅땲?? 泥댄몴 ?쒕뱶留덊겕??X-ray ?놁씠 遺꾩젅 ?덈꺼??異붿젙?섎뒗 泥??④퀎濡? States Manual쨌Bergmann <em>Chiropractic Technique</em> 3rd Ed Ch.5 ?쒖? ?щ㎎???곕씪 <strong>Anterior</strong>(?꾨㈃ 15媛?? <strong>Posterior</strong>(?꾨㈃ 14媛?濡??섎늻???숈뒿?⑸땲??</p>
+          <summary><strong>3. 표면해부학 — 척추 분절 체표 랜드마크 (Topographical Landmarks)</strong></summary>
+          <p>Motion Palpation·Static Palpation·교정 셋업의 모든 출발점은 <strong>정확한 분절 위치 결정</strong>입니다. 체표 랜드마크는 X-ray 없이 분절 레벨을 추정하는 첫 단계로, States Manual·Bergmann <em>Chiropractic Technique</em> 3rd Ed Ch.5 표준 포맷에 따라 <strong>Anterior</strong>(전면 15개)와 <strong>Posterior</strong>(후면 14개)로 나누어 학습합니다.</p>
           <figure class="figure-block" style="margin:1.5rem 0;">
             <picture>
               <img src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/topographical_landmarks_inline.jpg"
-                   alt="Topographical Landmarks in Relation to Vertebral Column Anatomy ??Anterior &amp; Posterior schemagram with 15 anterior + 14 posterior landmark points mapped to vertebral levels C1?밪2"
+                   alt="Topographical Landmarks in Relation to Vertebral Column Anatomy — Anterior &amp; Posterior schemagram with 15 anterior + 14 posterior landmark points mapped to vertebral levels C1–S2"
                    loading="lazy"
                    style="width:100%; max-width:1100px; height:auto; border:1px solid #d0d7de; border-radius:8px; display:block; margin:0 auto;">
             </picture>
             <figcaption style="text-align:center; font-size:0.9rem; color:#555; margin-top:0.5rem;">
-              <strong>Figure.</strong> Anterior(醫? ?곸깋 ??15媛?? Posterior(?? 泥?깋 ??14媛? 泥댄몴 ?쒕뱶留덊겕 schemagram.
+              <strong>Figure.</strong> Anterior(좌, 적색 점 15개)와 Posterior(우, 청색 점 14개) 체표 랜드마크 schemagram.
               <a href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/topographical_landmarks_vertebral_column.jpg"
                  download="topographical_landmarks_vertebral_column.jpg"
-                 style="margin-left:0.5em;">燧??ㅼ슫濡쒕뱶 (JPG)</a>
+                 style="margin-left:0.5em;">⬇ 다운로드 (JPG)</a>
             </figcaption>
           </figure>
 
-          <h5>?뵶 Anterior Landmarks ???꾨㈃ 泥댄몴 ?쒕뱶留덊겕 (15媛?</h5>
+          <h5>🔴 Anterior Landmarks — 전면 체표 랜드마크 (15개)</h5>
           <table class="data-table">
             <thead><tr><th>#</th><th>Landmark</th><th>Vertebral Level</th></tr></thead>
             <tbody>
-              <tr><td>1</td><td>Hard palate (寃쎄뎄媛?</td><td>C1</td></tr>
+              <tr><td>1</td><td>Hard palate (경구개)</td><td>C1</td></tr>
               <tr><td>2</td><td>Upper teeth (occlusal plane)</td><td>C2</td></tr>
-              <tr><td>3</td><td><strong>Hyoid bone (?ㅺ낏)</strong></td><td>C3</td></tr>
-              <tr><td>4</td><td>Thyroid cartilage ??superior border</td><td>C4</td></tr>
-              <tr><td>5</td><td>Thyroid cartilage ??inferior border</td><td>C5</td></tr>
-              <tr><td>6</td><td><strong>Cricoid cartilage (?ㅼ긽?곌낏)</strong></td><td>C6</td></tr>
+              <tr><td>3</td><td><strong>Hyoid bone (설골)</strong></td><td>C3</td></tr>
+              <tr><td>4</td><td>Thyroid cartilage — superior border</td><td>C4</td></tr>
+              <tr><td>5</td><td>Thyroid cartilage — inferior border</td><td>C5</td></tr>
+              <tr><td>6</td><td><strong>Cricoid cartilage (윤상연골)</strong></td><td>C6</td></tr>
               <tr><td>7</td><td>Suprasternal (jugular) notch</td><td>C7 / T1</td></tr>
               <tr><td>8</td><td>Top of manubrium</td><td>T2</td></tr>
-              <tr><td>9</td><td><strong>Sternal angle (Angle of Louis)</strong> 쨌 2nd rib</td><td>T4 ??T5</td></tr>
-              <tr><td>10</td><td><strong>Xiphisternal joint / Xiphoid process</strong></td><td>T9 ??T10</td></tr>
+              <tr><td>9</td><td><strong>Sternal angle (Angle of Louis)</strong> · 2nd rib</td><td>T4 – T5</td></tr>
+              <tr><td>10</td><td><strong>Xiphisternal joint / Xiphoid process</strong></td><td>T9 – T10</td></tr>
               <tr><td>11</td><td>Transpyloric plane (9th costal cartilage)</td><td>L1</td></tr>
-              <tr><td>12</td><td>Subcostal plane (10th costal cartilage)</td><td>L2 ??L3</td></tr>
-              <tr><td>13</td><td><strong>Umbilicus (諛곌섹)</strong> <span style="color:#888">??泥댄삎 蹂????/span></td><td>L3 ??L4</td></tr>
+              <tr><td>12</td><td>Subcostal plane (10th costal cartilage)</td><td>L2 – L3</td></tr>
+              <tr><td>13</td><td><strong>Umbilicus (배꼽)</strong> <span style="color:#888">※ 체형 변동 큼</span></td><td>L3 – L4</td></tr>
               <tr><td>14</td><td>Transtubercular plane (iliac tubercle)</td><td>L5</td></tr>
-              <tr><td>15</td><td><strong><abbr class="med-abbr" title="Anterior Superior Iliac Spine 쨌 ?꾩긽?κ낏洹?>ASIS</abbr></strong></td><td>S1</td></tr>
+              <tr><td>15</td><td><strong><abbr class="med-abbr" title="Anterior Superior Iliac Spine · 전상장골극">ASIS</abbr></strong></td><td>S1</td></tr>
             </tbody>
           </table>
 
-          <h5 style="margin-top:1.5rem;">?뵷 Posterior Landmarks ???꾨㈃ 泥댄몴 ?쒕뱶留덊겕 (14媛?</h5>
+          <h5 style="margin-top:1.5rem;">🔵 Posterior Landmarks — 후면 체표 랜드마크 (14개)</h5>
           <table class="data-table">
             <thead><tr><th>#</th><th>Landmark</th><th>Vertebral Level</th></tr></thead>
             <tbody>
-              <tr><td>1</td><td><strong>Inion (?명썑?먯쑖湲?</strong></td><td>Occipital base midline</td></tr>
-              <tr><td>2</td><td><strong>Mastoid process</strong> (?묒륫)</td><td>C1 TVP ??쩍??inf. + slightly ant.</td></tr>
+              <tr><td>1</td><td><strong>Inion (외후두융기)</strong></td><td>Occipital base midline</td></tr>
+              <tr><td>2</td><td><strong>Mastoid process</strong> (양측)</td><td>C1 TVP — ½″ inf. + slightly ant.</td></tr>
               <tr><td>3</td><td>First palpable SP below inion</td><td>C2 spinous process</td></tr>
-              <tr><td>4</td><td>SP above vertebra prominens</td><td>C6 (紐?援닿끝 ??</td></tr>
-              <tr><td>5</td><td><strong>Vertebra prominens (?듭텛)</strong></td><td>C7 ??most prominent SP</td></tr>
+              <tr><td>4</td><td>SP above vertebra prominens</td><td>C6 (목 굴곡 시)</td></tr>
+              <tr><td>5</td><td><strong>Vertebra prominens (융추)</strong></td><td>C7 — most prominent SP</td></tr>
               <tr><td>6</td><td>Largest SP in lower neck</td><td>T1</td></tr>
               <tr><td>7</td><td>Superior angle of scapula</td><td>T2</td></tr>
-              <tr><td>8</td><td><strong>Root of scapular spine</strong> (寃ш컩洹??댁륫 ??</td><td>T3</td></tr>
-              <tr><td>9</td><td><strong>Inferior angle of scapula</strong></td><td>T7 (?묓뙏 ?대┝ ?먯꽭)</td></tr>
+              <tr><td>8</td><td><strong>Root of scapular spine</strong> (견갑극 내측 끝)</td><td>T3</td></tr>
+              <tr><td>9</td><td><strong>Inferior angle of scapula</strong></td><td>T7 (양팔 내림 자세)</td></tr>
               <tr><td>10</td><td>Midway between scapular tip &amp; iliac crest</td><td>T12</td></tr>
-              <tr><td>11</td><td><strong>Iliac crest line (Tuffier's line)</strong></td><td>L4 SP 쨌 Supracristal plane</td></tr>
-              <tr><td>12</td><td><strong><abbr class="med-abbr" title="Posterior Superior Iliac Spine 쨌 ?꾩긽?κ낏洹?>PSIS</abbr> line 쨌 Venus dimples</strong></td><td>S2 tubercle</td></tr>
-              <tr><td>13</td><td>Sciatic notch</td><td>2??inf. + 1??lat. to PSIS</td></tr>
-              <tr><td>14</td><td>Ischial tuberosity</td><td>2??inf. to coccyx apex</td></tr>
+              <tr><td>11</td><td><strong>Iliac crest line (Tuffier's line)</strong></td><td>L4 SP · Supracristal plane</td></tr>
+              <tr><td>12</td><td><strong><abbr class="med-abbr" title="Posterior Superior Iliac Spine · 후상장골극">PSIS</abbr> line · Venus dimples</strong></td><td>S2 tubercle</td></tr>
+              <tr><td>13</td><td>Sciatic notch</td><td>2″ inf. + 1″ lat. to PSIS</td></tr>
+              <tr><td>14</td><td>Ischial tuberosity</td><td>2″ inf. to coccyx apex</td></tr>
             </tbody>
           </table>
 
-          <p class="callout callout-warn" style="margin-top:1rem;"><strong>???꾩긽 ?곸슜 ??蹂?숈꽦.</strong> ?쒕㈃ ?쒕뱶留덊겕??BMI 쨌 ?곕졊 쨌 泥숈텛 痢〓쭔/?꾨쭔 쨌 ?먯꽭???곕씪 1?? 遺꾩젅 ?대룞?????덉뒿?덈떎. ?뱁엳 <strong>Umbilicus</strong>??鍮꾨쭔?꾩뿉 ?곕씪 L3~L5?먯꽌 ?ш쾶 蹂?숉븯硫? <strong>Vertebra prominens</strong>???멸뎄????60??0%?먯꽌 C7?댁?留?T1??寃쎌슦???뷀빀?덈떎. ?뺥솗??遺꾩젅 寃곗젙???꾩긽?곸쑝濡?以묒슂??寃쎌슦(遺꾩젅 ?뱀씠 援먯젙쨌?쒖닠 ??留덊궧)?먮뒗 ?곸긽 援먯감 ?뺤씤??沅뚭퀬?⑸땲??</p>
-          <p class="ref-cite">?뱰 Bergmann TF, Peterson DH. <em>Chiropractic Technique: Principles and Procedures</em>, 3rd Ed. Mosby, 2010. Ch.5 ??The Spine: Anatomy, Biomechanics, Assessment and Adjustive Techniques.</p>
-          <p class="ref-cite">?뱰 Kirk CR, Lawrence DJ, Valvo NL. <em>States Manual of Spinal, Pelvic and Extravertebral Technic</em>, 2nd Ed. National College of Chiropractic, 1985. Part One Introduction.</p>
-          <p class="ref-cite">?뱰 Chiro.org ACA Press ??<em>General Spinal Biomechanics</em>, Ch.6 Topographical Landmarks.</p>
+          <p class="callout callout-warn" style="margin-top:1rem;"><strong>⚠ 임상 적용 시 변동성.</strong> 표면 랜드마크는 BMI · 연령 · 척추 측만/후만 · 자세에 따라 1–2 분절 이동될 수 있습니다. 특히 <strong>Umbilicus</strong>는 비만도에 따라 L3~L5에서 크게 변동하며, <strong>Vertebra prominens</strong>는 인구의 약 60–70%에서 C7이지만 T1인 경우도 흔합니다. 정확한 분절 결정이 임상적으로 중요한 경우(분절 특이 교정·시술 전 마킹)에는 영상 교차 확인을 권고합니다.</p>
+          <p class="ref-cite">📖 Bergmann TF, Peterson DH. <em>Chiropractic Technique: Principles and Procedures</em>, 3rd Ed. Mosby, 2010. Ch.5 — The Spine: Anatomy, Biomechanics, Assessment and Adjustive Techniques.</p>
+          <p class="ref-cite">📖 Kirk CR, Lawrence DJ, Valvo NL. <em>States Manual of Spinal, Pelvic and Extravertebral Technic</em>, 2nd Ed. National College of Chiropractic, 1985. Part One Introduction.</p>
+          <p class="ref-cite">📖 Chiro.org ACA Press — <em>General Spinal Biomechanics</em>, Ch.6 Topographical Landmarks.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>4. Motion Palpation ??吏꾨떒 ?듭떖怨??좊ː???쒓퀎</strong></summary>
-          <p><strong>Motion Palpation (MP)</strong>: 遺꾩젅蹂??섎룞???대룞 踰붿쐞? ?앸뒓??end-feel)???됯??섏뿬 湲곕뒫?μ븷 遺꾩젅??李얜뒗 湲곕쾿. Diversified 吏꾨떒??媛???뱀쭠???덉감?낅땲??</p>
+          <summary><strong>4. Motion Palpation — 진단 핵심과 신뢰도 한계</strong></summary>
+          <p><strong>Motion Palpation (MP)</strong>: 분절별 수동적 운동 범위와 끝느낌(end-feel)을 평가하여 기능장애 분절을 찾는 기법. Diversified 진단의 가장 특징적 절차입니다.</p>
           <table class="data-table">
-            <thead><tr><th>End-feel</th><th>?ㅻ챸</th><th>?쒖궗??/th></tr></thead>
+            <thead><tr><th>End-feel</th><th>설명</th><th>시사점</th></tr></thead>
             <tbody>
-              <tr><td>Soft / Firm (?뺤긽)</td><td>遺?쒕윭??elastic ???/td><td>?뺤긽 遺꾩젅 ?먮뒗 寃쎈룄 ?쒗븳</td></tr>
-              <tr><td><strong>Hard</strong> (?댁긽)</td><td>媛묒옉?ㅻ윴 ???/td><td>Joint fixation 쨌 愿?덉뿼</td></tr>
-              <tr><td><strong>Empty</strong> (?댁긽)</td><td>?섏옄媛 ?듭쬆?쇰줈 以묐떒</td><td>?쇱쬆 쨌 湲됱꽦 蹂묐?</td></tr>
-              <tr><td>Boggy (?댁긽)</td><td>臾쇰쟻??쨌 ?먯꽦</td><td>遺醫?쨌 ?쇱쬆</td></tr>
+              <tr><td>Soft / Firm (정상)</td><td>부드러운 elastic 저항</td><td>정상 분절 또는 경도 제한</td></tr>
+              <tr><td><strong>Hard</strong> (이상)</td><td>갑작스런 저항</td><td>Joint fixation · 관절염</td></tr>
+              <tr><td><strong>Empty</strong> (이상)</td><td>환자가 통증으로 중단</td><td>염증 · 급성 병변</td></tr>
+              <tr><td>Boggy (이상)</td><td>물렁함 · 점성</td><td>부종 · 염증</td></tr>
             </tbody>
           </table>
-          <p class="callout callout-warn"><strong>?ы쁽???쒓퀎.</strong> Inter-rater reliability ICC 0.2??.5 (Seffinger 2004 systematic review). ?쒖???遺議???寃?ъ옄留덈떎 吏?쒓? ?ㅻ쫭?덈떎. <strong>MP ?⑤룆 吏꾨떒? 洹쇨굅媛 異⑸텇?섏? ?딆쑝誘濡?/strong> 諛섎뱶??Static Palpation 쨌 ?뺥삎 寃??쨌 ?곸긽怨?議고빀 ?댁꽍?댁빞 ?⑸땲??</p>
-          <p class="ref-cite">?뱰 Seffinger MA et al. <em>Reliability of spinal palpation for diagnosis of back and neck pain</em>. Spine 2004.</p>
+          <p class="callout callout-warn"><strong>재현성 한계.</strong> Inter-rater reliability ICC 0.2–0.5 (Seffinger 2004 systematic review). 표준화 부족 — 검사자마다 지표가 다릅니다. <strong>MP 단독 진단은 근거가 충분하지 않으므로</strong> 반드시 Static Palpation · 정형 검사 · 영상과 조합 해석해야 합니다.</p>
+          <p class="ref-cite">📖 Seffinger MA et al. <em>Reliability of spinal palpation for diagnosis of back and neck pain</em>. Spine 2004.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>5. ?좉꼍??寃????寃쎌텛쨌?붿텛 諛⑹궗??/strong></summary>
-          <h5>寃쎌텛 諛⑹궗?????곸? ?좉꼍??/h5>
+          <summary><strong>5. 신경학 검사 — 경추·요추 방사통</strong></summary>
+          <h5>경추 방사통 — 상지 신경학</h5>
           <table class="data-table">
-            <thead><tr><th>?됯?</th><th>諛⑸쾿</th><th>遺꾩젅 ???/th></tr></thead>
+            <thead><tr><th>평가</th><th>방법</th><th>분절 대표</th></tr></thead>
             <tbody>
-              <tr><td>媛먭컖</td><td>媛?dermatome</td><td>C5: ?쇨컖洹?쨌 C6: ?꾩? 쨌 C7: 以묒? 쨌 C8: ?뚯? 쨌 T1: ?꾩셿 ?댁륫</td></tr>
-              <tr><td>洹쇰젰 (MMT 0??)</td><td>???寃??/td><td>C5: ?쇨컖洹?쨌 C6: ?대몢 쨌 C7: ?쇰몢 쨌 C8: ?섏? flexor</td></tr>
-              <tr><td>?щ?嫄대컲??/td><td>留앹튂</td><td>C5??: biceps 쨌 C6: brachioradialis 쨌 C7: triceps</td></tr>
-              <tr><td>蹂묒쟻 諛섏궗</td><td>Hoffmann</td><td>Upper motor neuron ?먯긽 ?쒖궗</td></tr>
+              <tr><td>감각</td><td>각 dermatome</td><td>C5: 삼각근 · C6: 엄지 · C7: 중지 · C8: 소지 · T1: 전완 내측</td></tr>
+              <tr><td>근력 (MMT 0–5)</td><td>저항 검사</td><td>C5: 삼각근 · C6: 이두 · C7: 삼두 · C8: 수지 flexor</td></tr>
+              <tr><td>심부건반사</td><td>망치</td><td>C5–6: biceps · C6: brachioradialis · C7: triceps</td></tr>
+              <tr><td>병적 반사</td><td>Hoffmann</td><td>Upper motor neuron 손상 시사</td></tr>
             </tbody>
           </table>
-          <h5>?붿텛 諛⑹궗?????섏? ?좉꼍??/h5>
+          <h5>요추 방사통 — 하지 신경학</h5>
           <table class="data-table">
-            <thead><tr><th>?됯?</th><th>諛⑸쾿</th><th>遺꾩젅</th></tr></thead>
+            <thead><tr><th>평가</th><th>방법</th><th>분절</th></tr></thead>
             <tbody>
-              <tr><td>媛먭컖</td><td>Dermatome</td><td>L3: ?꾨???쨌 L4: ?댁륫 쨌 L5: ?몄륫쨌?꾩? 쨌 S1: ?몄륫쨌?덈겮</td></tr>
-              <tr><td>洹쇰젰</td><td>MMT</td><td>L4: 議깅같援?쨌 L5: ?꾩? ?좎쟾 (EHL) 쨌 S1: 議깆?援?/td></tr>
-              <tr><td>諛섏궗</td><td>留앹튂</td><td>L4: patellar 쨌 S1: Achilles</td></tr>
-              <tr><td>蹂묒쟻 諛섏궗</td><td>Babinski</td><td>Upper motor neuron ?먯긽</td></tr>
+              <tr><td>감각</td><td>Dermatome</td><td>L3: 전대퇴 · L4: 내측 · L5: 외측·엄지 · S1: 외측·새끼</td></tr>
+              <tr><td>근력</td><td>MMT</td><td>L4: 족배굴 · L5: 엄지 신전 (EHL) · S1: 족저굴</td></tr>
+              <tr><td>반사</td><td>망치</td><td>L4: patellar · S1: Achilles</td></tr>
+              <tr><td>병적 반사</td><td>Babinski</td><td>Upper motor neuron 손상</td></tr>
             </tbody>
           </table>
-          <h5>?뱀닔 寃??/h5>
+          <h5>특수 검사</h5>
           <ul>
-            <li><strong>Spurling test</strong> ???숈륫 ?뚯쟾 + 痢↔뎬 + axial compression ??諛⑹궗???ы쁽 = ?좉꼍洹??먭레. Sens 30??0%, Spec 92??00%</li>
-            <li><strong>Straight Leg Raise (SLR)</strong> ??30??0째 ?ъ씠 諛⑹궗??= L5/S1 ?좉꼍洹??먭레. Sens 91%, Spec 26%</li>
-            <li><strong>Crossed SLR</strong> ??諛섎?痢?嫄곗긽???섏륫 ?듭쬆 = ???붿뒪??蹂묐?. Sens 29%, Spec 88%</li>
-            <li><strong>Slump test</strong> ???좉꼍 湲댁옣 寃?? Sens 84%, Spec 83%</li>
+            <li><strong>Spurling test</strong> — 동측 회전 + 측굴 + axial compression → 방사통 재현 = 신경근 자극. Sens 30–50%, Spec 92–100%</li>
+            <li><strong>Straight Leg Raise (SLR)</strong> — 30–70° 사이 방사통 = L5/S1 신경근 자극. Sens 91%, Spec 26%</li>
+            <li><strong>Crossed SLR</strong> — 반대측 거상시 환측 통증 = 큰 디스크 병변. Sens 29%, Spec 88%</li>
+            <li><strong>Slump test</strong> — 신경 긴장 검사. Sens 84%, Spec 83%</li>
           </ul>
         </details>
 
         <details class="concept-block">
-          <summary><strong>6. VBI ?ㅽ겕由щ떇 ??5Ds/3Ns? Sharp-Purser Test</strong></summary>
-          <p><strong>VBI (Vertebrobasilar Insufficiency)</strong>??寃쎌텛 HVLA ?쒗뻾 ??諛섎뱶???됯??⑸땲?? 利앹긽 5Ds + 3Ns:</p>
+          <summary><strong>6. VBI 스크리닝 — 5Ds/3Ns와 Sharp-Purser Test</strong></summary>
+          <p><strong>VBI (Vertebrobasilar Insufficiency)</strong>는 경추 HVLA 시행 전 반드시 평가합니다. 증상 5Ds + 3Ns:</p>
           <ul>
-            <li><strong>5 Ds</strong>: Dizziness 쨌 Diplopia (蹂듭떆) 쨌 Drop attacks 쨌 Dysarthria (援ъ쓬?μ븷) 쨌 Dysphagia (?쇳궡怨ㅻ?)</li>
-            <li><strong>3 Ns</strong>: Nausea 쨌 Numbness (?덈㈃ ?먮뒗 ?ъ?) 쨌 Nystagmus</li>
+            <li><strong>5 Ds</strong>: Dizziness · Diplopia (복시) · Drop attacks · Dysarthria (구음장애) · Dysphagia (삼킴곤란)</li>
+            <li><strong>3 Ns</strong>: Nausea · Numbness (안면 또는 사지) · Nystagmus</li>
           </ul>
-          <p><strong>Sharp-Purser Test</strong> ??Transverse ligament (C1?밅2) ?덉젙???됯?. ?섏옄 醫뚯쐞 ?쎄컙 寃쎌텛 援닿끝(30째), 寃?ъ옄 ?????대쭏, ?ㅻⅨ ??C2 洹밸룎湲??덉젙. ?대쭏???쒖꽌??posterior ?뺣젰 ??Head媛 posterior濡?slide ?섎뒗 ?먮굦쨌利앹긽 媛먯냼 ???묒꽦 ??<strong>C1?밅2 instability ??寃쎌텛 HVLA ?덈? 湲덇린</strong>. 誘쇨컧??88%, ?뱀씠??96% (Uitvlugt 1988).</p>
-          <p class="callout callout-warn"><strong>De Kleyn test???쒓퀎.</strong> ?꾪넻?곸씤 De Kleyn(寃쎌텛 ?좎쟾쨌?뚯쟾 ???댁????좊컻) 寃?щ뒗 sens/spec 紐⑤몢 ??퀬, ?꾩뼇?굿룹쐞?뚯꽦??鍮덈쾲???⑤룆 ?ъ슜? 沅뚯옣?섏? ?딆뒿?덈떎. <strong>蹂묐젰 + 寃??+ ?곸긽</strong> 3以?議고빀?쇰줈留??섏궗寃곗젙?⑸땲??</p>
+          <p><strong>Sharp-Purser Test</strong> — Transverse ligament (C1–C2) 안정성 평가. 환자 좌위 약간 경추 굴곡(30°), 검사자 한 손 이마, 다른 손 C2 극돌기 안정. 이마에 서서히 posterior 압력 → Head가 posterior로 slide 되는 느낌·증상 감소 시 양성 → <strong>C1–C2 instability → 경추 HVLA 절대 금기</strong>. 민감도 88%, 특이도 96% (Uitvlugt 1988).</p>
+          <p class="callout callout-warn"><strong>De Kleyn test의 한계.</strong> 전통적인 De Kleyn(경추 신전·회전 후 어지럼 유발) 검사는 sens/spec 모두 낮고, 위양성·위음성이 빈번해 단독 사용은 권장되지 않습니다. <strong>병력 + 검사 + 영상</strong> 3중 조합으로만 의사결정합니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>7. ACR Appropriateness Criteria ???곸긽 ?섎ː 寃곗젙</strong></summary>
-          <p>ACR(American College of Radiology) 媛?대뱶?쇱씤 湲곕컲 ?곸긽 ?섎ː ?섏궗寃곗젙:</p>
+          <summary><strong>7. ACR Appropriateness Criteria — 영상 의뢰 결정</strong></summary>
+          <p>ACR(American College of Radiology) 가이드라인 기반 영상 의뢰 의사결정:</p>
           <table class="data-table">
-            <thead><tr><th>?꾩긽 ?곹솴</th><th>1李??곸긽</th><th>鍮꾧퀬</th></tr></thead>
+            <thead><tr><th>임상 상황</th><th>1차 영상</th><th>비고</th></tr></thead>
             <tbody>
-              <tr><td>鍮꾪듅?댁꽦 湲됱꽦 LBP (Red Flag ?놁쓬, &lt; 6二?</td><td>?곸긽 遺덊븘??/td><td>NICE/ACP 媛?대뱶?쇱씤 ?쇱튂</td></tr>
-              <tr><td>?몄긽 + 怨⑥젅 ?섏떖</td><td>X-ray (AP/lateral)</td><td>Canadian C-spine rule ?곸슜</td></tr>
-              <tr><td>?좉꼍?숈쟻 寃곗넀 (吏꾪뻾??</td><td>MRI</td><td>?묎툒 ??留덈?利앺썑援?諛곗젣</td></tr>
-              <tr><td>媛먯뿼 ?섏떖 (諛쒖뿴 + 泥숈텛??</td><td>MRI with Gd</td><td>CRP쨌ESR 蹂묓뻾</td></tr>
-              <tr><td>醫낆뼇 ?섏떖 (泥댁쨷媛먯냼, ?쇨컙??</td><td>MRI</td><td>tumor marker 蹂묓뻾</td></tr>
-              <tr><td>VBI ?섏떖</td><td>CT angiography</td><td>?묎툒</td></tr>
-              <tr><td>OPLL 쨌 泥숈텛愿 ?묒갑</td><td>MRI</td><td>寃쎌텛 ?좎쟾 ?뚰뵾</td></tr>
+              <tr><td>비특이성 급성 LBP (Red Flag 없음, &lt; 6주)</td><td>영상 불필요</td><td>NICE/ACP 가이드라인 일치</td></tr>
+              <tr><td>외상 + 골절 의심</td><td>X-ray (AP/lateral)</td><td>Canadian C-spine rule 적용</td></tr>
+              <tr><td>신경학적 결손 (진행성)</td><td>MRI</td><td>응급 — 마미증후군 배제</td></tr>
+              <tr><td>감염 의심 (발열 + 척추통)</td><td>MRI with Gd</td><td>CRP·ESR 병행</td></tr>
+              <tr><td>종양 의심 (체중감소, 야간통)</td><td>MRI</td><td>tumor marker 병행</td></tr>
+              <tr><td>VBI 의심</td><td>CT angiography</td><td>응급</td></tr>
+              <tr><td>OPLL · 척추관 협착</td><td>MRI</td><td>경추 신전 회피</td></tr>
             </tbody>
           </table>
         </details>
 
         <details class="concept-block">
-          <summary><strong>8. ?곕?議곗쭅 ?뚰겕??媛쒓? ??Soft Tissue Techniques (?명렪 쨌 蹂댁땐)</strong></summary>
-          <p>Diversified??HVLA 援먯젙? <strong>愿??joint) 湲곕뒫?μ븷</strong>瑜??쒖쟻?쇰줈 ?섏?留? 愿??臾몄젣? <strong>洹쇱쑁쨌洹쇰쭑쨌?몃????곕?議곗쭅(soft tissue) 臾몄젣???쒕줈瑜??낇솕?쒗궎???먭린?곴뎄??cycle(self-perpetuating cycle)</strong>???뺤꽦?⑸땲??(Bergmann &amp; Peterson 2011). ?곕씪??移댁씠濡쒗봽?숉떛 ?꾩긽?먯꽌??援먯젙 ?꾪썑濡??곕?議곗쭅 湲곕쾿??蹂묓뻾?섎뒗 寃껋씠 ?쒖??낅땲?? 蹂?釉붾줉? <strong>?낅┰ 梨뺥꽣濡??⑹뼱吏吏 ?딆? 11? 湲곕쾿</strong>????怨녹뿉 ?뺣━???명렪(supplementary)?낅땲??</p>
+          <summary><strong>8. 연부조직 테크닉 개관 — Soft Tissue Techniques (외편 · 보충)</strong></summary>
+          <p>Diversified의 HVLA 교정은 <strong>관절(joint) 기능장애</strong>를 표적으로 하지만, 관절 문제와 <strong>근육·근막·인대의 연부조직(soft tissue) 문제는 서로를 악화시키는 자기영구화 cycle(self-perpetuating cycle)</strong>을 형성합니다 (Bergmann &amp; Peterson 2011). 따라서 카이로프랙틱 임상에서는 교정 전후로 연부조직 기법을 병행하는 것이 표준입니다. 본 블록은 <strong>독립 챕터로 흩어지지 않은 11대 기법</strong>을 한 곳에 정리한 외편(supplementary)입니다.</p>
 
-          <p class="callout callout-info"><strong>?숈닠 異쒖쿂.</strong> 移댁씠濡쒗봽?숉떛 ?쒖? 援먯옱?먯꽌 ?곕?議곗쭅 ?덉감瑜?蹂꾨룄 遺꾨쪟濡??ㅻ（??怨녹? <strong>Bergmann &amp; Peterson <em>Chiropractic Technique</em> 3rd Ed Ch.4 "Soft Tissue Manipulative Procedures"</strong>媛 ?좎씪?⑸땲?? ?쒖뒪??由щ럭??<strong>Vernon &amp; Schneider 2009</strong> (JMPT)? <strong>Pfefer et al. 2009</strong>媛 ?쒖? 李몄“?먯엯?덈떎.</p>
+          <p class="callout callout-info"><strong>학술 출처.</strong> 카이로프랙틱 표준 교재에서 연부조직 절차를 별도 분류로 다루는 곳은 <strong>Bergmann &amp; Peterson <em>Chiropractic Technique</em> 3rd Ed Ch.4 "Soft Tissue Manipulative Procedures"</strong>가 유일합니다. 시스템 리뷰는 <strong>Vernon &amp; Schneider 2009</strong> (JMPT)와 <strong>Pfefer et al. 2009</strong>가 표준 참조점입니다.</p>
 
-          <h5>?썱 11? ?곕?議곗쭅 湲곕쾿 ???먮━ 쨌 ?ㅺ린 쨌 洹쇨굅</h5>
+          <h5>🛠 11대 연부조직 기법 — 원리 · 실기 · 근거</h5>
           <table class="data-table">
-            <thead><tr><th>湲곕쾿</th><th>?먮━ 쨌 ?ㅺ린 ?붿젏</th><th>二??곸쓳利?/th><th>洹쇨굅</th></tr></thead>
+            <thead><tr><th>기법</th><th>원리 · 실기 요점</th><th>주 적응증</th><th>근거</th></tr></thead>
             <tbody>
               <tr>
-                <td><strong data-stt="art" title="?대┃ ???먯꽭??蹂닿린">??ART</strong><br>(Active Release Technique)</td>
-                <td>?쒖닠?먯쓽 ?뺥솗???묒큺 + ?섏옄 ?λ룞 ?좎옣 ?대룞 寃고빀. ?⑥텞 ?먯꽭?먯꽌 ?묒큺 ???λ룞 ?좎옣 ??5-7珥?longitudinal tension 횞 3??/td>
-                <td>?μ슂洹??⑥텞, ?뚯쟾洹쇨컻 異⑸룎, ?몄륫?곴낵?? ?먮ぉ?곕꼸利앺썑援?/td>
-                <td>Case series 쨌 Low?밠oderate</td>
+                <td><strong data-stt="art" title="클릭 → 자세히 보기">① ART</strong><br>(Active Release Technique)</td>
+                <td>시술자의 정확한 접촉 + 환자 능동 신장 운동 결합. 단축 자세에서 접촉 → 능동 신장 → 5-7초 longitudinal tension × 3회</td>
+                <td>장요근 단축, 회전근개 충돌, 외측상과염, 손목터널증후군</td>
+                <td>Case series · Low–Moderate</td>
               </tr>
               <tr>
-                <td><strong data-stt="iastm" title="?대┃ ???먯꽭??蹂닿린">??Graston / IASTM</strong><br>(Instrument-Assisted Soft Tissue Mobilization)</td>
-                <td>6媛??ㅽ뀒?몃━??湲곌뎄濡?fibrotic adhesion 珥됱쭊쨌湲곌퀎??留덉씠?щ줈?몃씪?곕쭏 ??肄쒕씪寃??ы빀?? Sweeping쨌Fanning쨌Strumming stroke 쨌 5-15遺?遺??/td>
-                <td>?꾪궗?덉뒪嫄댁뿼, 議깆?洹쇰쭑?? ?몄륫?곴낵?? ?됲꽣議곗쭅, 留뚯꽦 ?ㅽ룷痢??먯긽</td>
-                <td>Cheatham 2016 SR ??short-term ROM쨌?듭쬆 ?④낵</td>
+                <td><strong data-stt="iastm" title="클릭 → 자세히 보기">② Graston / IASTM</strong><br>(Instrument-Assisted Soft Tissue Mobilization)</td>
+                <td>6개 스테인리스 기구로 fibrotic adhesion 촉진·기계적 마이크로트라우마 → 콜라겐 재합성. Sweeping·Fanning·Strumming stroke · 5-15분/부위</td>
+                <td>아킬레스건염, 족저근막염, 외측상과염, 흉터조직, 만성 스포츠 손상</td>
+                <td>Cheatham 2016 SR — short-term ROM·통증 효과</td>
               </tr>
               <tr>
-                <td><strong data-stt="nimmo" title="?대┃ ???먯꽭??蹂닿린">??Nimmo Receptor-Tonus</strong></td>
-                <td>?듭쬆?좊컻?먯뿉 ?꾩?쨌?덊겢濡??덊삁???뺣컯 5-7珥????먯쭊??媛먯냼 ??2-3 cycle. ?덉젙 ??洹쇱쑁 湲몄씠(resting length) ?뚮났</td>
-                <td>留뚯꽦 LBP, 洹쇰쭑?듭쬆利앺썑援? 愿??湲곕뒫?μ븷 ?숇컲 洹쇱쑁 怨쇳솢??/td>
-                <td>Koo 2012 JMPT RCT ??利됱떆 ?④낵 寃利?/td>
+                <td><strong data-stt="nimmo" title="클릭 → 자세히 보기">③ Nimmo Receptor-Tonus</strong></td>
+                <td>통증유발점에 엄지·너클로 허혈성 압박 5-7초 → 점진적 감소 → 2-3 cycle. 안정 시 근육 길이(resting length) 회복</td>
+                <td>만성 LBP, 근막통증증후군, 관절 기능장애 동반 근육 과활성</td>
+                <td>Koo 2012 JMPT RCT — 즉시 효과 검증</td>
               </tr>
               <tr>
-                <td><strong data-stt="tpt" title="?대┃ ???먯꽭??蹂닿린">??Trigger Point Therapy</strong></td>
-                <td>Active/Latent TrP 吏꾨떒 (taut band + tender spot + ?곌???+ jump sign + LTR). 移섎즺: ischemic compression 쨌 spray &amp; stretch 쨌 PIR 쨌 cross-friction</td>
-                <td>湲댁옣???먰넻(?곷? ?밸え洹쇄넂痢〓몢), 醫뚭낏?좉꼍???묒긽(?댁긽洹?, ?덉?遺 ?듭쬆(SCM)</td>
-                <td>Vernon-Schneider 2009 SR ??Moderately strong</td>
+                <td><strong data-stt="tpt" title="클릭 → 자세히 보기">④ Trigger Point Therapy</strong></td>
+                <td>Active/Latent TrP 진단 (taut band + tender spot + 연관통 + jump sign + LTR). 치료: ischemic compression · spray &amp; stretch · PIR · cross-friction</td>
+                <td>긴장성 두통(상부 승모근→측두), 좌골신경통 양상(이상근), 안와부 통증(SCM)</td>
+                <td>Vernon-Schneider 2009 SR — Moderately strong</td>
               </tr>
               <tr>
-                <td><strong data-stt="cyriax" title="?대┃ ???먯꽭??蹂닿린">??Cyriax Cross-Friction</strong></td>
-                <td>蹂묐? ?ъ쑀??90째 源딆? 留덉같 10-15遺???cross-link 遺꾨━ + traumatic hyperemia. 留덉같 吏곹썑 active stretching/eccentric loading ?꾩닔</td>
-                <td>?몄륫?곴낵?? ?ш컻嫄댁뿼, ?꾪궗?덉뒪嫄댁뿼, ?뚯쟾洹쇨컻 嫄댁뿼</td>
-                <td>Brosseau 2002 Cochrane ??eccentric exercise 蹂묓뻾 ???대뱷 紐낇솗</td>
+                <td><strong data-stt="cyriax" title="클릭 → 자세히 보기">⑤ Cyriax Cross-Friction</strong></td>
+                <td>병변 섬유에 90° 깊은 마찰 10-15분 → cross-link 분리 + traumatic hyperemia. 마찰 직후 active stretching/eccentric loading 필수</td>
+                <td>외측상과염, 슬개건염, 아킬레스건염, 회전근개 건염</td>
+                <td>Brosseau 2002 Cochrane — eccentric exercise 병행 시 이득 명확</td>
               </tr>
               <tr>
-                <td><strong data-stt="mfr" title="?대┃ ???먯꽭??蹂닿린">??Myofascial Release</strong><br>(Direct / Indirect)</td>
-                <td>洹쇰쭑 ?쒗븳 諛⑺뼢(Direct) ?먮뒗 理쒖냼 ???諛⑺뼢(Indirect)?쇰줈 5g-5kg ?뺣젰 90-120珥?sustained pressure ??myofibroblast ?댁셿 + GAG hydration</td>
-                <td>留뚯꽦 LBP, 留뚯꽦 寃쎌텛?? ?ъ쑀洹쇳넻, ?섏닠 ???됲꽣</td>
-                <td>Ajimsha 2015 SR ??Low?밠oderate 쨌 AHRQ/NICE 沅뚯옣</td>
+                <td><strong data-stt="mfr" title="클릭 → 자세히 보기">⑥ Myofascial Release</strong><br>(Direct / Indirect)</td>
+                <td>근막 제한 방향(Direct) 또는 최소 저항 방향(Indirect)으로 5g-5kg 압력 90-120초 sustained pressure → myofibroblast 이완 + GAG hydration</td>
+                <td>만성 LBP, 만성 경추통, 섬유근통, 수술 후 흉터</td>
+                <td>Ajimsha 2015 SR — Low–Moderate · AHRQ/NICE 권장</td>
               </tr>
               <tr>
-                <td><strong data-stt="pnf" title="?대┃ ???먯꽭??蹂닿린">??PNF Stretching</strong><br>(CR 쨌 HR 쨌 SRHR)</td>
-                <td>Autogenic (Ib쨌GTO) + Reciprocal inhibition ?쒖슜. Contract-Relax: ?좎옣 ??6珥??깆옣???섏텞 ???댁셿 ??源딆? ?좎옣. D1쨌D2 ?⑦꽩 ?대룞</td>
-                <td>愿??媛???뚮났(?뱁엳 SI dysfunction), ?ㅽ룷痢??ы솢, ?좉꼍 媛?숈꽦</td>
-                <td>?뺤쟻 ?ㅽ듃?덉묶 ?鍮?+5-10째 ROM ?낆쬆</td>
+                <td><strong data-stt="pnf" title="클릭 → 자세히 보기">⑦ PNF Stretching</strong><br>(CR · HR · SRHR)</td>
+                <td>Autogenic (Ib·GTO) + Reciprocal inhibition 활용. Contract-Relax: 신장 → 6초 등장성 수축 → 이완 → 깊은 신장. D1·D2 패턴 운동</td>
+                <td>관절 가동 회복(특히 SI dysfunction), 스포츠 재활, 신경 가동성</td>
+                <td>정적 스트레칭 대비 +5-10° ROM 입증</td>
               </tr>
               <tr>
-                <td><strong data-stt="met" title="?대┃ ???먯꽭??蹂닿린">??MET</strong><br>(Muscle Energy Technique)</td>
-                <td>20-25% MVC 遺?쒕윭???깆쿃???섏텞 5-7珥????댁셿 2-3珥?????barrier ??3-5 cycle. PNF蹂대떎 ??遺?쒕윭?</td>
-                <td>鍮꾪듅?댁꽦 LBP, sacroiliac dysfunction, 寃쎌텛 ?꾧????쒗븳</td>
-                <td>Franke 2015 SR ???④린 ?④낵 (LBP)</td>
+                <td><strong data-stt="met" title="클릭 → 자세히 보기">⑧ MET</strong><br>(Muscle Energy Technique)</td>
+                <td>20-25% MVC 부드러운 등척성 수축 5-7초 → 이완 2-3초 → 새 barrier → 3-5 cycle. PNF보다 더 부드러움</td>
+                <td>비특이성 LBP, sacroiliac dysfunction, 경추 후관절 제한</td>
+                <td>Franke 2015 SR — 단기 효과 (LBP)</td>
               </tr>
               <tr>
-                <td><strong data-stt="oi" title="?대┃ ???먯꽭??蹂닿린">??Origin-Insertion</strong></td>
-                <td>洹쇱쑁 湲곗떆-?뺤? ???곸뿭 longitudinal stripping 1cm/sec. 諛쒓껄 nodule?먯꽌 ?뺤?쨌?뺣컯</td>
-                <td>洹쇰났 ?꾩껜 hypertonicity, fibrotic 蹂??/td>
-                <td>Kaleida Health ?꾩긽吏移??쒖? 5媛??ы븿</td>
+                <td><strong data-stt="oi" title="클릭 → 자세히 보기">⑨ Origin-Insertion</strong></td>
+                <td>근육 기시-정지 전 영역 longitudinal stripping 1cm/sec. 발견 nodule에서 정지·압박</td>
+                <td>근복 전체 hypertonicity, fibrotic 변화</td>
+                <td>Kaleida Health 임상지침 표준 5개 포함</td>
               </tr>
               <tr>
-                <td><strong data-stt="dn" title="?대┃ ???먯꽭??蹂닿린">??Dry Needling</strong></td>
-                <td>?듭쬆?좊컻?먯뿉 媛??移??먯엯 ??LTR ?좊룄 ??洹쇱쑁 ?댁셿. <span style="color:#888">???쒓뎅?먯꽌??移댁씠濡?硫댄뿀 踰붿쐞 ??/span></td>
-                <td>留뚯꽦 洹쇨낏寃??듭쬆, ?듭쬆?좊컻???쒖꽦??/td>
-                <td>Gattie 2017 SR ??Low?밠oderate</td>
+                <td><strong data-stt="dn" title="클릭 → 자세히 보기">⑩ Dry Needling</strong></td>
+                <td>통증유발점에 가는 침 자입 → LTR 유도 → 근육 이완. <span style="color:#888">※ 한국에서는 카이로 면허 범위 외</span></td>
+                <td>만성 근골격 통증, 통증유발점 활성화</td>
+                <td>Gattie 2017 SR — Low–Moderate</td>
               </tr>
               <tr>
-                <td><strong data-stt="cup" title="?대┃ ???먯꽭??蹂닿린">??Cupping (Myofascial Decompression)</strong></td>
-                <td>Static/Dynamic cupping?쇰줈 ?뚯븬 ?곸슜 ??洹쇰쭑 hydration + 誘몄꽭?쒗솚 利앷? + ?듭쬆 寃뚯씠??蹂??/td>
-                <td>留뚯꽦 寃쎌텛?? 留뚯꽦 LBP, ?ㅽ룷痢??뚮났</td>
-                <td>Short-term 쨌 Moderate (Cao 2012 SR)</td>
+                <td><strong data-stt="cup" title="클릭 → 자세히 보기">⑪ Cupping (Myofascial Decompression)</strong></td>
+                <td>Static/Dynamic cupping으로 음압 적용 → 근막 hydration + 미세순환 증가 + 통증 게이트 변화</td>
+                <td>만성 경추통, 만성 LBP, 스포츠 회복</td>
+                <td>Short-term · Moderate (Cao 2012 SR)</td>
               </tr>
             </tbody>
           </table>
 
-          <h5 style="margin-top:1.5rem;">?㎥ 移댁씠濡쒗봽?숉떛 怨좎쑀 ?뚰겕????'?곕?議곗쭅 ?붿냼' (?깆쓽 ?ㅻⅨ 梨뺥꽣???곗옱)</h5>
+          <h5 style="margin-top:1.5rem;">🧩 카이로프랙틱 고유 테크닉 내 '연부조직 요소' (앱의 다른 챕터에 산재)</h5>
           <table class="data-table">
-            <thead><tr><th>梨뺥꽣</th><th>湲곕쾿</th><th>?곕?議곗쭅 ?붿냼</th></tr></thead>
+            <thead><tr><th>챕터</th><th>기법</th><th>연부조직 요소</th></tr></thead>
             <tbody>
-              <tr><td>Ch.4 蹂?梨뺥꽣</td><td>Diversified</td><td>Static Palpation ??muscle hypertonicity ?됯? 쨌 援먯젙 ??sub-occipital release 沅뚯옣</td></tr>
-              <tr><td><strong>Ch.8 Cox</strong></td><td>Flexion-Distraction</td><td>媛먯븬 5횞4珥??명듃 <strong>?ъ씠</strong>???댁긽洹셋룻뻹?ㅽ듃留겶룹삤湲댟룹쥌?꾨━ <strong>Trigger Point Work</strong> ?꾩닔 (3 sets ?쒖? ?꾨줈?좎퐳)</td></tr>
-              <tr><td><strong>Ch.9 Logan</strong></td><td>Basic Sacral Apex Contact</td><td><strong>Sacrotuberous ligament</strong>??2-10 oz(??60-300g) 吏???뺣젰 ???댁옱洹?諛섏궗???댁셿 ?좊룄. 蹂몄쭏? ?곕?議곗쭅 湲곕쾿??媛源뚯?</td></tr>
-              <tr><td><strong>Ch.10 SOT</strong></td><td>Pelvic Blocking + Cat.III</td><td>Category III??寃고빀議곗쭅(異붽컙?먃룹뿰怨?쨌?붿텛 ?붿뒪???묒뾽 以묒떖</td></tr>
-              <tr><td><strong>Ch.12 AK</strong></td><td>Muscle Testing 湲곕컲 移섎즺</td><td>Origin-Insertion 쨌 Spindle Cell 쨌 Golgi Tendon technique 쨌 Neurolymphatic point 쨌 Neurovascular point ??紐⑤몢 ?곕?議곗쭅 ?묎렐</td></tr>
+              <tr><td>Ch.4 본 챕터</td><td>Diversified</td><td>Static Palpation 시 muscle hypertonicity 평가 · 교정 전 sub-occipital release 권장</td></tr>
+              <tr><td><strong>Ch.8 Cox</strong></td><td>Flexion-Distraction</td><td>감압 5×4초 세트 <strong>사이</strong>에 이상근·햄스트링·오금·종아리 <strong>Trigger Point Work</strong> 필수 (3 sets 표준 프로토콜)</td></tr>
+              <tr><td><strong>Ch.9 Logan</strong></td><td>Basic Sacral Apex Contact</td><td><strong>Sacrotuberous ligament</strong>에 2-10 oz(약 60-300g) 지속 압력 → 내재근 반사적 이완 유도. 본질은 연부조직 기법에 가까움</td></tr>
+              <tr><td><strong>Ch.10 SOT</strong></td><td>Pelvic Blocking + Cat.III</td><td>Category III는 결합조직(추간판·연골)·요추 디스크 작업 중심</td></tr>
+              <tr><td><strong>Ch.12 AK</strong></td><td>Muscle Testing 기반 치료</td><td>Origin-Insertion · Spindle Cell · Golgi Tendon technique · Neurolymphatic point · Neurovascular point — 모두 연부조직 접근</td></tr>
             </tbody>
           </table>
 
-          <h5 style="margin-top:1.5rem;">?뱦 ?곸쓳利?쨌 湲덇린 ?듯빀</h5>
+          <h5 style="margin-top:1.5rem;">📌 적응증 · 금기 통합</h5>
           <table class="data-table">
-            <thead><tr><th>遺꾨쪟</th><th>?댁슜</th></tr></thead>
+            <thead><tr><th>분류</th><th>내용</th></tr></thead>
             <tbody>
-              <tr><td><strong>?곸쓳利?/strong></td><td>洹쇰쭑?듭쬆利앺썑援?쨌 ?듭쬆?좊컻???쒖꽦??쨌 留뚯꽦 LBP/寃쎌텛??湲댁옣???먰넻 쨌 嫄대퀝利??뚮땲??怨⑦봽 ?섎낫쨌?꾪궗?덉뒪쨌議깆?洹쇰쭑?? 쨌 ?뚯쟾洹쇨컻 利앺썑援?쨌 ?좎갑??愿?덈궘??쨌 ?ㅽ룷痢?怨쇱궗???먯긽 쨌 ?섏닠 ???됲꽣 議곗쭅</td></tr>
-              <tr><td><strong>?덈? 湲덇린</strong></td><td>湲됱꽦 怨⑥젅쨌?덇뎄 쨌 ?щ??뺣㎘?덉쟾利?DVT) 쨌 ?곕?議곗쭅 ???낆꽦 醫낆뼇 쨌 ?쒕룞??媛먯뿼 쨌 ?쇰? ?댁긽쨌?붿긽쨌?쒕룞???쇰? 媛먯뿼</td></tr>
-              <tr><td><strong>?곷? 湲덇린</strong></td><td>?ы븳 怨⑤떎怨듭쬆 쨌 ??쓳怨좎젣 蹂듭슜(媛뺥븳 留덉같쨌Graston 二쇱쓽) 쨌 ?꾩떊(?뱀젙 遺?꽷룹븬???쒗븳) 쨌 湲됱꽦 ?쇱쬆??愿?덉뿼</td></tr>
+              <tr><td><strong>적응증</strong></td><td>근막통증증후군 · 통증유발점 활성화 · 만성 LBP/경추통/긴장성 두통 · 건병증(테니스/골프 엘보·아킬레스·족저근막염) · 회전근개 증후군 · 유착성 관절낭염 · 스포츠 과사용 손상 · 수술 후 흉터 조직</td></tr>
+              <tr><td><strong>절대 금기</strong></td><td>급성 골절·탈구 · 심부정맥혈전증(DVT) · 연부조직 내 악성 종양 · 활동성 감염 · 피부 열상·화상·활동성 피부 감염</td></tr>
+              <tr><td><strong>상대 금기</strong></td><td>심한 골다공증 · 항응고제 복용(강한 마찰·Graston 주의) · 임신(특정 부위·압력 제한) · 급성 염증성 관절염</td></tr>
             </tbody>
           </table>
 
-          <p class="callout callout-info" style="margin-top:1rem;"><strong>?눖?눟 ?쒓뎅 ?꾩긽 留λ씫.</strong> Graston쨌IASTM쨌MFR쨌MET???꾩닔移섎즺 ?섍? ??ぉ?쇰줈 ?ы븿 媛?ν빀?덈떎. PNF쨌MET??PT 硫댄뿀濡쒕룄 ?쒗뻾 媛?ν븯誘濡??뺥삎?멸낵쨌?ы솢?섑븰怨??묒쭊 ???섎ː ???꾩냽 移댁씠濡?援먯젙怨??쒕꼫吏瑜??????덉뒿?덈떎. ?뚯쟾洹쇨컻 利앺썑援곗? 寃ш컩怨??덉젙??+ ?꾧??덈궘 ?ㅽ듃?덉묶怨?寃고빀???꾩닔?낅땲??</p>
+          <p class="callout callout-info" style="margin-top:1rem;"><strong>🇰🇷 한국 임상 맥락.</strong> Graston·IASTM·MFR·MET는 도수치료 수가 항목으로 포함 가능합니다. PNF·MET는 PT 면허로도 시행 가능하므로 정형외과·재활의학과 협진 시 의뢰 후 후속 카이로 교정과 시너지를 낼 수 있습니다. 회전근개 증후군은 견갑골 안정화 + 후관절낭 스트레칭과 결합이 필수입니다.</p>
 
-          <p class="callout callout-warn"><strong>???몄떇濡좎쟻 寃몄넀.</strong> ?곕?議곗쭅 湲곕쾿 ?ㅼ닔??<strong>?④린 ?④낵 洹쇨굅媛 以묐벑??/strong>??癒몃Т由낅땲?????κ린 異붿쟻 RCT媛 遺議깊빀?덈떎. ?섏옄?먭쾶??"湲됱꽦湲?利앹긽 ?꾪솕???꾩????????덈떎" ?섏??쇰줈 ?꾨떖?섍퀬, <strong>?λ룞 ?대룞(exercise)쨌?앺솢?듦? 援먯젙怨?蹂묓뻾?섏? ?딅뒗 ?섎룞移섎즺 ?⑤룆 ?ъ슜? 沅뚯옣?섏? ?딆뒿?덈떎</strong> (AHRQ 2018쨌2020 SR).</p>
+          <p class="callout callout-warn"><strong>⚠ 인식론적 겸손.</strong> 연부조직 기법 다수는 <strong>단기 효과 근거가 중등도</strong>에 머무릅니다 — 장기 추적 RCT가 부족합니다. 환자에게는 "급성기 증상 완화에 도움이 될 수 있다" 수준으로 전달하고, <strong>능동 운동(exercise)·생활습관 교정과 병행하지 않는 수동치료 단독 사용은 권장되지 않습니다</strong> (AHRQ 2018·2020 SR).</p>
 
-          <p class="ref-cite">?뱰 Bergmann TF, Peterson DH. <em>Chiropractic Technique: Principles and Procedures</em>, 3rd Ed. Mosby, 2011. Ch.4 ??Soft Tissue Manipulative Procedures.</p>
-          <p class="ref-cite">?뱰 Vernon H, Schneider M. <em>Chiropractic management of myofascial trigger points and myofascial pain syndrome: a systematic review of the literature</em>. JMPT 2009;32(1):14-24.</p>
-          <p class="ref-cite">?뱰 Pfefer MT, Cooper SR, Uhl NL. <em>Chiropractic management of tendinopathy: a literature synthesis</em>. JMPT 2009;32(1):41-52.</p>
-          <p class="ref-cite">?뱰 Koo TK, Cohen JH, Zheng YP. <em>Immediate effect of Nimmo receptor tonus technique on muscle elasticity, pain perception, and disability in subjects with chronic low back pain</em>. JMPT 2012;35(1):45-53.</p>
-          <p class="ref-cite">?뱰 Cheatham SW et al. <em>The efficacy of instrument assisted soft tissue mobilization: a systematic review</em>. JCCA 2016;60(3):200-211.</p>
-          <p class="ref-cite">?뱰 Ajimsha MS, Al-Mudahka NR, Al-Madzhar JA. <em>Effectiveness of myofascial release: systematic review of randomized controlled trials</em>. J Bodyw Mov Ther 2015;19(1):102-112.</p>
+          <p class="ref-cite">📖 Bergmann TF, Peterson DH. <em>Chiropractic Technique: Principles and Procedures</em>, 3rd Ed. Mosby, 2011. Ch.4 — Soft Tissue Manipulative Procedures.</p>
+          <p class="ref-cite">📖 Vernon H, Schneider M. <em>Chiropractic management of myofascial trigger points and myofascial pain syndrome: a systematic review of the literature</em>. JMPT 2009;32(1):14-24.</p>
+          <p class="ref-cite">📖 Pfefer MT, Cooper SR, Uhl NL. <em>Chiropractic management of tendinopathy: a literature synthesis</em>. JMPT 2009;32(1):41-52.</p>
+          <p class="ref-cite">📖 Koo TK, Cohen JH, Zheng YP. <em>Immediate effect of Nimmo receptor tonus technique on muscle elasticity, pain perception, and disability in subjects with chronic low back pain</em>. JMPT 2012;35(1):45-53.</p>
+          <p class="ref-cite">📖 Cheatham SW et al. <em>The efficacy of instrument assisted soft tissue mobilization: a systematic review</em>. JCCA 2016;60(3):200-211.</p>
+          <p class="ref-cite">📖 Ajimsha MS, Al-Mudahka NR, Al-Madzhar JA. <em>Effectiveness of myofascial release: systematic review of randomized controlled trials</em>. J Bodyw Mov Ther 2015;19(1):102-112.</p>
         </details>
 
         <div class="week-resources">
-          <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week2_analysis_diagnosis.md">?뱰 ?곸꽭 媛뺤쓽濡?/a>
-          <a class="resource-pill" href="./viewer.html?src=diversified/09_report_week2.md">?뱞 Report</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/05_slides_week2.pdf" download>?렣 PPTX</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/02_video_part1_week12.mp4">?렏 Video Part 1</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">?렒 Podcast</a>
+          <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week2_analysis_diagnosis.md">📖 상세 강의록</a>
+          <a class="resource-pill" href="./viewer.html?src=diversified/09_report_week2.md">📄 Report</a>
+          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/05_slides_week2.pdf" download>🎴 PPTX</a>
+          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/02_video_part1_week12.mp4">🎥 Video Part 1</a>
+          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">🎧 Podcast</a>
         </div>
       </div>
     </section>
 
     <!-- ========== WEEK 3 ========== -->
     <section id="week3">
-      <h2>Week 3. 遺꾩젅蹂?援먯젙 ?ㅻТ</h2>
+      <h2>Week 3. 분절별 교정 실무</h2>
 
       <div class="week-card">
-        <h3><span class="week-badge">WEEK 3</span>遺꾩젅蹂?援먯젙 ?ㅻТ</h3>
-        <h4>?렞 ?숈뒿 紐⑺몴</h4>
+        <h3><span class="week-badge">WEEK 3</span>분절별 교정 실무</h3>
+        <h4>🎯 학습 목표</h4>
         <ul>
-          <li>援먯젙 3? ?붿냼(?섏옄 ?먯꽭 쨌 ?묒큺??쨌 異붾젰 踰≫꽣) 泥닿퀎???ㅻ챸</li>
-          <li>Pre-load tension怨?Elastic barrier 媛먯? ?덈젴</li>
-          <li>寃쎌텛 C0-C1 / C1 Rotary Break / C2-C7 援먯젙 ?쒖뿰</li>
-          <li>?됱텛 AP thrust 쨌 Prone pisiform 쨌 醫뚯쐞 쨌 Rib 援먯젙 援щ텇</li>
-          <li>?붿텛 Lumbar Roll 쨌 Prone 쨌 L5-S1 湲곕쾿 ?쒖뿰</li>
-          <li>怨⑤컲쨌泥쒖옣愿??<abbr class="med-abbr" title="Anterior Superior Iliac Spine 쨌 ?꾩긽?κ낏洹?>ASIS</abbr>/Ilium listing蹂?援먯젙 諛⑺뼢 寃곗젙</li>
-          <li>?ъ? 愿??TMJ 쨌 ?닿묠 쨌 ?붽퓞移?쨌 ?먮ぉ 쨌 臾대쫷 쨌 諛쒕ぉ) ?곸쓳</li>
-          <li>?좎옄 ?먯꽭 怨듯븰 쨌 諛섎났 ?먯긽 ?덈갑</li>
+          <li>교정 3대 요소(환자 자세 · 접촉점 · 추력 벡터) 체계적 설명</li>
+          <li>Pre-load tension과 Elastic barrier 감지 훈련</li>
+          <li>경추 C0-C1 / C1 Rotary Break / C2-C7 교정 시연</li>
+          <li>흉추 AP thrust · Prone pisiform · 좌위 · Rib 교정 구분</li>
+          <li>요추 Lumbar Roll · Prone · L5-S1 기법 시연</li>
+          <li>골반·천장관절 <abbr class="med-abbr" title="Anterior Superior Iliac Spine · 전상장골극">ASIS</abbr>/Ilium listing별 교정 방향 결정</li>
+          <li>사지 관절(TMJ · 어깨 · 팔꿈치 · 손목 · 무릎 · 발목) 적응</li>
+          <li>술자 자세 공학 · 반복 손상 예방</li>
         </ul>
-        <h4>?뵎 ?듭떖 媛쒕뀗</h4>
+        <h4>🔑 핵심 개념</h4>
 
         <details class="concept-block" open>
-          <summary><strong>1. 援먯젙 3? ?붿냼 ??Position 쨌 Contact 쨌 Vector</strong></summary>
-          <p>紐⑤뱺 Diversified HVLA?????붿냼??議고빀?낅땲??</p>
+          <summary><strong>1. 교정 3대 요소 — Position · Contact · Vector</strong></summary>
+          <p>모든 Diversified HVLA는 세 요소의 조합입니다.</p>
           <ol>
-            <li><strong>?섏옄 ?먯꽭 (Position)</strong> ??蹂묐? 遺꾩젅???묎렐 媛?ν븳 ?곹깭濡? Supine 쨌 Prone 쨌 Side Posture 쨌 Seated 쨌 Standing. 以묐젰쨌泥댁쨷 ?쒖슜 + 遺꾩젅 pre-tension 留뚮뱾湲??⑹씠???먯꽭 ?좏깮</li>
-            <li><strong>?묒큺??(Contact Point)</strong> ???뺥솗???대??숈쟻 吏?먯뿉 ?쒕㈃??理쒖냼</li>
-            <li><strong>異붾젰 踰≫꽣 (Line of Drive, LOD)</strong> ??諛⑺뼢 쨌 媛곷룄 쨌 ?띾룄(100??50 ms) 쨌 源딆씠(1?? mm)</li>
+            <li><strong>환자 자세 (Position)</strong> — 병변 분절을 접근 가능한 상태로. Supine · Prone · Side Posture · Seated · Standing. 중력·체중 활용 + 분절 pre-tension 만들기 용이한 자세 선택</li>
+            <li><strong>접촉점 (Contact Point)</strong> — 정확한 해부학적 지점에 표면적 최소</li>
+            <li><strong>추력 벡터 (Line of Drive, LOD)</strong> — 방향 · 각도 · 속도(100–150 ms) · 깊이(1–3 mm)</li>
           </ol>
           <table class="data-table">
-            <thead><tr><th>?묒큺 ?꾧뎄</th><th>?쒕㈃??/th><th>?ъ슜 遺꾩젅</th></tr></thead>
+            <thead><tr><th>접촉 도구</th><th>표면적</th><th>사용 분절</th></tr></thead>
             <tbody>
-              <tr><td>Thumb</td><td>?묒쓬 쨌 怨좎젙諛</td><td>寃쎌텛 transverse process 쨌 mamillary</td></tr>
-              <tr><td>Index MCP</td><td>以묎컙</td><td>C1 TP 쨌 以뫢룻븯遺 寃쎌텛</td></tr>
-              <tr><td>Pisiform</td><td>以묎컙 쨌 ?덉젙</td><td>?됱텛 TP 쨌 ?붿텛 mamillary 쨌 怨⑤컲 PSIS</td></tr>
-              <tr><td>Hypothenar</td><td>?볦쓬 쨌 ?뚯썙</td><td>?됱텛 ?묒륫 TP 쨌 sacrum</td></tr>
-              <tr><td>Web (?꾩?-寃吏)</td><td>?볦쓬</td><td>Cervical (?꾨옒履?</td></tr>
+              <tr><td>Thumb</td><td>작음 · 고정밀</td><td>경추 transverse process · mamillary</td></tr>
+              <tr><td>Index MCP</td><td>중간</td><td>C1 TP · 중·하부 경추</td></tr>
+              <tr><td>Pisiform</td><td>중간 · 안정</td><td>흉추 TP · 요추 mamillary · 골반 PSIS</td></tr>
+              <tr><td>Hypothenar</td><td>넓음 · 파워</td><td>흉추 양측 TP · sacrum</td></tr>
+              <tr><td>Web (엄지-검지)</td><td>넓음</td><td>Cervical (아래쪽)</td></tr>
             </tbody>
           </table>
-          <p class="callout callout-info"><strong>Set-up??以묒슂??</strong> 寃쏀뿕??援먯젙 寃곌낵??70%??set-up(?먯꽭쨌?묒큺쨌pre-tension)???щ젮 ?덇퀬, 30%媛 thrust ?먯껜?낅땲?? 珥덈낫?먮뒗 thrust??吏묒쨷?섏?留? ?숇젴?먮뒗 set-up???쒓컙???ъ옄?⑸땲??</p>
+          <p class="callout callout-info"><strong>Set-up의 중요성.</strong> 경험상 교정 결과의 70%는 set-up(자세·접촉·pre-tension)에 달려 있고, 30%가 thrust 자체입니다. 초보자는 thrust에 집중하지만, 숙련자는 set-up에 시간을 투자합니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>2. Pre-load Tension ??Elastic Barrier ??Thrust ?쒖? 9?④퀎</strong></summary>
+          <summary><strong>2. Pre-load Tension → Elastic Barrier → Thrust 표준 9단계</strong></summary>
           <ol>
-            <li>?섏옄 ?먯꽭 ?꾩꽦 (?꾩떊 湲댁옣 ?쒓굅 ?뺤씤)</li>
-            <li>?묒큺???뺥솗 ?꾩튂 ???섏옄 ?명씉 (?ㅼ닲 or ?좎닲 ??</li>
-            <li><strong>Slack ?쒓굅</strong> ??愿?덉씠 passive range ?앹뿉 ?꾨떖???뚭퉴吏 遺?쒕읇寃?/li>
-            <li><strong>Pre-load tension</strong> ?뺤꽦 ??"tension on tissue"</li>
-            <li><strong>Elastic barrier 媛먭컖</strong> ??寃?ъ옄媛 ?먮겮??"遺?쒕윭?????踰?</li>
-            <li><strong>Thrust</strong> ??HVLA thrust (100??50 ms, 1?? mm)</li>
-            <li>Cavitation ?뚮━ (audible release, ??80% ?깃났 ?????꾩닔 ?꾨떂)</li>
-            <li><strong>Release</strong> ??寃?ъ옄 ?뺣젰 利됱떆 ?댁젣</li>
-            <li>Re-assessment ??Motion palpation ?ы솗??/li>
+            <li>환자 자세 완성 (전신 긴장 제거 확인)</li>
+            <li>접촉점 정확 위치 — 환자 호흡 (들숨 or 날숨 끝)</li>
+            <li><strong>Slack 제거</strong> — 관절이 passive range 끝에 도달할 때까지 부드럽게</li>
+            <li><strong>Pre-load tension</strong> 형성 — "tension on tissue"</li>
+            <li><strong>Elastic barrier 감각</strong> — 검사자가 느끼는 "부드러운 저항 벽"</li>
+            <li><strong>Thrust</strong> — HVLA thrust (100–150 ms, 1–3 mm)</li>
+            <li>Cavitation 소리 (audible release, 약 80% 성공 시 — 필수 아님)</li>
+            <li><strong>Release</strong> — 검사자 압력 즉시 해제</li>
+            <li>Re-assessment — Motion palpation 재확인</li>
           </ol>
-          <p class="callout callout-info"><strong>?숈뒿???덈젴 ??</strong> Slack ?쒓굅媛 媛???대젮???④퀎?낅땲?? 泥섏쓬 3媛쒖썡? ?뺥솗??elastic barrier 媛먭컖 李얘린?먮쭔 吏묒쨷?섍퀬, "?? ?뚮━???곗뿰?섏? ?딆뒿?덈떎. 留ㅼ씪 10遺????palpation ?덈젴??沅뚯옣?⑸땲??</p>
+          <p class="callout callout-info"><strong>학습자 훈련 팁.</strong> Slack 제거가 가장 어려운 단계입니다. 처음 3개월은 정확한 elastic barrier 감각 찾기에만 집중하고, "딱" 소리에 연연하지 않습니다. 매일 10분 셀프 palpation 훈련을 권장합니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>3. 寃쎌텛 援먯젙 ??C0 ?꾨몢怨⑤???C7源뚯?</strong></summary>
-          <p>寃쎌텛??媛???뺣???set-up怨?媛???좎쨷???섏옄 ?좊퀎???꾩슂???곸뿭?낅땲?? 蹂몃Ц? ?듭떖 4湲곕쾿留??뚭컻?섎ŉ, States Manual 18媛?listing ?곸꽭???곸꽭 媛뺤쓽濡앹쓣 李몄“?⑸땲??</p>
+          <summary><strong>3. 경추 교정 — C0 후두골부터 C7까지</strong></summary>
+          <p>경추는 가장 정밀한 set-up과 가장 신중한 환자 선별이 필요한 영역입니다. 본문은 핵심 4기법만 소개하며, States Manual 18개 listing 상세는 상세 강의록을 참조합니다.</p>
           <ul>
-            <li><strong>Superior Condyle (C0?밅1)</strong> ??Supine, headpiece neutral. CH(caudad hand) index媛 mastoid process ?몄륫 ?묒큺, IH(cephalad hand) ?깆뿉 fingers ?묒큺. Thrust: mastoid?먯꽌 mastoid 諛⑺뼢, ?뺤쨷??吏곴컖</li>
-            <li><strong>Atlas Rotary Break (C1)</strong> ??Supine, ?섏옄 癒몃━瑜?蹂묐? 諛섎?痢≪쑝濡?35??5째 ?뚯쟾. CH index pillar contact on C1 TP. Thrust: 吏㏐퀬 鍮좊Ⅸ ?뚯쟾 ?깅텇 ??媛???듭닕?댁?湲??대젮??湲곕쾿?대ŉ dens fracture 諛곗젣 ?꾩뿉留??쒗뻾</li>
-            <li><strong>Cervical Index Pillar Push (C2?밅7)</strong> ??Supine, ?섏옄 癒몃━瑜???30째 ?뚯쟾. CH index媛 articular pillar ?꾩륫 ?묒큺. Thrust: anterior?뱒uperior 諛⑺뼢, 吏㏐퀬 ?뺥솗</li>
-            <li><strong>Cervical Chair Technique</strong> ??Seated ?섏옄. ?뚯쟾쨌痢↔뎬 set-up. ?쇰? ?섏옄?먭쾶 supine 蹂대떎 ?몄븞 ???ㅻ쭔 ?섏옄 head support ?덉젙?깆씠 ?듭떖</li>
+            <li><strong>Superior Condyle (C0–C1)</strong> — Supine, headpiece neutral. CH(caudad hand) index가 mastoid process 외측 접촉, IH(cephalad hand) 턱에 fingers 접촉. Thrust: mastoid에서 mastoid 방향, 정중선 직각</li>
+            <li><strong>Atlas Rotary Break (C1)</strong> — Supine, 환자 머리를 병변 반대측으로 35–45° 회전. CH index pillar contact on C1 TP. Thrust: 짧고 빠른 회전 성분 — 가장 익숙해지기 어려운 기법이며 dens fracture 배제 후에만 시행</li>
+            <li><strong>Cervical Index Pillar Push (C2–C7)</strong> — Supine, 환자 머리를 약 30° 회전. CH index가 articular pillar 후측 접촉. Thrust: anterior–superior 방향, 짧고 정확</li>
+            <li><strong>Cervical Chair Technique</strong> — Seated 환자. 회전·측굴 set-up. 일부 환자에게 supine 보다 편안 — 다만 환자 head support 안정성이 핵심</li>
           </ul>
-          <p class="callout callout-warn"><strong>寃쎌텛 HVLA 寃쎄퀬.</strong> RA 쨌 Down syndrome 쨌 媛뺤쭅泥숈텛???섏옄???섏텞愿??遺덉븞?뺤꽦?쇰줈 寃쎌텛 HVLA ?덈? 湲덇린. ?몄긽 吏곹썑쨌VBI 利앹긽쨌dens fracture ?섏떖 ?쒕룄 湲덇린?낅땲?? ?섏떖?ㅻ윭?곕㈃ Mobilization?쇰줈 ?泥댄빀?덈떎.</p>
+          <p class="callout callout-warn"><strong>경추 HVLA 경고.</strong> RA · Down syndrome · 강직척추염 환자는 환축관절 불안정성으로 경추 HVLA 절대 금기. 외상 직후·VBI 증상·dens fracture 의심 시도 금기입니다. 의심스러우면 Mobilization으로 대체합니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>4. ?됱텛 援먯젙 ??AP thrust 쨌 Pisiform 쨌 Rib head</strong></summary>
+          <summary><strong>4. 흉추 교정 — AP thrust · Pisiform · Rib head</strong></summary>
           <ul>
-            <li><strong>Anterior Thoracic (AP thrust)</strong> ???섏옄 supine, 媛?????묒넀 cross. 寃?ъ옄媛 ?섏옄 ?ㅼ뿉??thenar/hypothenar濡?泥숈텛 ?꾨갑 吏吏, ?섏옄 媛?댁쓣 ?듯빐 thrust. 媛???뷀엳 ?곗씠???됱텛 湲곕쾿</li>
-            <li><strong>Prone Pisiform Thoracic</strong> ??Prone, drop piece ?숇컲. Pisiform contact on TP. Thrust: PA + slight cephalad ?먮뒗 caudad ??listing???곕쫫</li>
-            <li><strong>Seated Thoracic</strong> ???섏옄 醫뚯쐞, ?묒넀 源띿? ?꾨몢 ?? 寃?ъ옄媛 ?ㅼ뿉??knee濡??섏옄 ??吏吏?섎㈃????elbow瑜??듯빐 stretch + thrust</li>
-            <li><strong>Rib Head Adjustment</strong> ??Prone, hypothenar contact on rib angle. Thrust: AP + slight lateral. ?명씉怨??숆린?????좎닲 ?앹뿉 thrust</li>
+            <li><strong>Anterior Thoracic (AP thrust)</strong> — 환자 supine, 가슴 위 양손 cross. 검사자가 환자 뒤에서 thenar/hypothenar로 척추 후방 지지, 환자 가슴을 통해 thrust. 가장 흔히 쓰이는 흉추 기법</li>
+            <li><strong>Prone Pisiform Thoracic</strong> — Prone, drop piece 동반. Pisiform contact on TP. Thrust: PA + slight cephalad 또는 caudad — listing에 따름</li>
+            <li><strong>Seated Thoracic</strong> — 환자 좌위, 양손 깍지 후두 뒤. 검사자가 뒤에서 knee로 환자 등 지지하면서 양 elbow를 통해 stretch + thrust</li>
+            <li><strong>Rib Head Adjustment</strong> — Prone, hypothenar contact on rib angle. Thrust: AP + slight lateral. 호흡과 동기화 — 날숨 끝에 thrust</li>
           </ul>
-          <p class="callout callout-info"><strong>?됱텛???μ젏.</strong> ?됱텛??寃쎌텛 ?鍮??덉쟾 留덉쭊???ш퀬 ?섏옄 遺?댁씠 ?곸뼱, ?듯빀 ?꾩닔移섎즺?먯꽌 媛??鍮덈쾲???ъ슜?⑸땲?? ?묎낏怨쇱쓽 寃고빀?쇰줈 ?명씉쨌?먯꽭??愿묐쾾?꾪븳 ?곹뼢??以띾땲??</p>
+          <p class="callout callout-info"><strong>흉추의 장점.</strong> 흉추는 경추 대비 안전 마진이 크고 환자 부담이 적어, 통합 도수치료에서 가장 빈번히 사용됩니다. 늑골과의 결합으로 호흡·자세에 광범위한 영향을 줍니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>5. ?붿텛 援먯젙 ??Lumbar Roll (Side Posture) 쨌 Prone</strong></summary>
+          <summary><strong>5. 요추 교정 — Lumbar Roll (Side Posture) · Prone</strong></summary>
           <ul>
-            <li><strong>Lumbar Roll (Side Posture)</strong> ??媛????쒖쟻???붿텛 湲곕쾿. ?섏옄 痢≪??? ?꾩そ ?ㅻ━ 援닿끝 + ?꾨옒 ?ㅻ━ ?좎쟾. 寃?ъ옄 ?????섏옄 ?닿묠 ?덉젙, ?ㅻⅨ ??mamillary process contact. Set-up: ?섏옄 ?뚯쟾 + 痢↔뎬濡?遺꾩젅 lock. Thrust: pisiform/hypothenar濡?PA + slight rotation. L4??, L5?밪1?먯꽌 媛???뷀븿</li>
-            <li><strong>Prone Lumbar</strong> ??Prone, drop piece ?숇컲. ??pisiform???묒륫 mamillary process contact. Thrust: PA</li>
-            <li><strong>L5?밪1 Side Posture (Push/Pull)</strong> ??Standard Lumbar Roll??蹂?? Disc herniation ?섏옄???좎쨷 ??諛⑹궗???낇솕 ??利됱떆 以묐떒</li>
+            <li><strong>Lumbar Roll (Side Posture)</strong> — 가장 대표적인 요추 기법. 환자 측와위, 위쪽 다리 굴곡 + 아래 다리 신전. 검사자 한 손 환자 어깨 안정, 다른 손 mamillary process contact. Set-up: 환자 회전 + 측굴로 분절 lock. Thrust: pisiform/hypothenar로 PA + slight rotation. L4–5, L5–S1에서 가장 흔함</li>
+            <li><strong>Prone Lumbar</strong> — Prone, drop piece 동반. 양 pisiform이 양측 mamillary process contact. Thrust: PA</li>
+            <li><strong>L5–S1 Side Posture (Push/Pull)</strong> — Standard Lumbar Roll의 변형. Disc herniation 환자는 신중 — 방사통 악화 시 즉시 중단</li>
           </ul>
-          <p class="callout callout-warn"><strong>諛⑹궗???섏옄 二쇱쓽.</strong> Straight Leg Raise ?묒꽦 + ?좉꼍?숈쟻 寃곗넀 ?섏옄??Diversified HVLA蹂대떎 <strong>Flexion-distraction (Cox 湲곕쾿)</strong>?????덉쟾??first-line?낅땲?? HVLA ??諛⑹궗???낇솕 ??利됱떆 以묐떒?섍퀬 6二??몄쟾 ?놁쑝硫?MRI瑜??섎ː?⑸땲??</p>
+          <p class="callout callout-warn"><strong>방사통 환자 주의.</strong> Straight Leg Raise 양성 + 신경학적 결손 환자는 Diversified HVLA보다 <strong>Flexion-distraction (Cox 기법)</strong>이 더 안전한 first-line입니다. HVLA 후 방사통 악화 시 즉시 중단하고 6주 호전 없으면 MRI를 의뢰합니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>6. 怨⑤컲쨌泥쒖옣愿????18 Listings ?듭떖</strong></summary>
-          <p>怨⑤컲쨌泥쒖옣愿??SI joint) listing? ASIS/PSIS ?꾩튂濡?遺꾨쪟?⑸땲?? ?듭떖 ?⑦꽩 5媛?</p>
+          <summary><strong>6. 골반·천장관절 — 18 Listings 핵심</strong></summary>
+          <p>골반·천장관절(SI joint) listing은 ASIS/PSIS 위치로 분류됩니다. 핵심 패턴 5개:</p>
           <table class="data-table">
-            <thead><tr><th>Listing</th><th>?섎?</th><th>援먯젙 諛⑺뼢</th></tr></thead>
+            <thead><tr><th>Listing</th><th>의미</th><th>교정 방향</th></tr></thead>
             <tbody>
-              <tr><td><strong>AS</strong> Ilium</td><td>Anterior Superior ???κ낏 ?꾩긽諛??뚯쟾</td><td>PSIS push, PI 諛⑺뼢</td></tr>
-              <tr><td><strong>PI</strong> Ilium</td><td>Posterior Inferior ???κ낏 ?꾪븯諛??뚯쟾</td><td>ASIS ?먮뒗 ischial tuberosity push, AS 諛⑺뼢</td></tr>
-              <tr><td><strong>EX</strong> Ilium</td><td>External ???κ낏 ?몄륫 flare</td><td>PSIS lateral-to-medial</td></tr>
-              <tr><td><strong>IN</strong> Ilium</td><td>Internal ???κ낏 ?댁륫 ?뚯쟾</td><td>ASIS medial-to-lateral</td></tr>
+              <tr><td><strong>AS</strong> Ilium</td><td>Anterior Superior — 장골 전상방 회전</td><td>PSIS push, PI 방향</td></tr>
+              <tr><td><strong>PI</strong> Ilium</td><td>Posterior Inferior — 장골 후하방 회전</td><td>ASIS 또는 ischial tuberosity push, AS 방향</td></tr>
+              <tr><td><strong>EX</strong> Ilium</td><td>External — 장골 외측 flare</td><td>PSIS lateral-to-medial</td></tr>
+              <tr><td><strong>IN</strong> Ilium</td><td>Internal — 장골 내측 회전</td><td>ASIS medial-to-lateral</td></tr>
               <tr><td><strong>P-L</strong> Sacrum</td><td>Posterior-Left/Right Sacral Base</td><td>sacral base PA thrust</td></tr>
             </tbody>
           </table>
-          <p class="callout callout-info"><strong>?꾩긽 ?⑥닚??</strong> 18 listing ?꾨? ?몄슱 ?꾩슂???놁뒿?덈떎. ?ㅼ젣濡?媛??鍮덈쾲??5??媛??⑦꽩???듭닕?댁?怨? ?섎㉧吏??reference濡??먮뒗 ?몄씠 ?⑥쑉?곸엯?덈떎.</p>
+          <p class="callout callout-info"><strong>임상 단순화.</strong> 18 listing 전부 외울 필요는 없습니다. 실제로 가장 빈번한 5–7개 패턴에 익숙해지고, 나머지는 reference로 두는 편이 효율적입니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>7. ?ъ? 愿??+ ?좎옄 ?먭린愿由?/strong></summary>
-          <p><strong>留먯큹 愿???곸쓳利?/strong>: TMJ 쨌 ?닿묠 (GH/AC) 쨌 ?붽퓞移?(?붾몢) 쨌 ?먮ぉ (carpal) 쨌 臾대쫷 (PF 쨌 TF) 쨌 諛쒕ぉ (talocrural 쨌 subtalar). 異붾젰 ?묒긽? 泥숈텛蹂대떎 ?묎퀬, ?섏옄 ?듭쬆 諛섏쓳????誘쇨컧?⑸땲??</p>
-          <p><strong>?좎옄 ?먭린愿由?(Self-care)</strong>:</p>
+          <summary><strong>7. 사지 관절 + 술자 자기관리</strong></summary>
+          <p><strong>말초 관절 적응증</strong>: TMJ · 어깨 (GH/AC) · 팔꿈치 (요두) · 손목 (carpal) · 무릎 (PF · TF) · 발목 (talocrural · subtalar). 추력 양상은 척추보다 작고, 환자 통증 반응에 더 민감합니다.</p>
+          <p><strong>술자 자기관리 (Self-care)</strong>:</p>
           <ul>
-            <li><strong>Toggle stance</strong> ??諛쒖쓣 ?닿묠 ?덈퉬蹂대떎 ?볤쾶, 臾대쫷 ?댁쭩 援쏀? 泥댁쨷 ?쒖슜. ?굿룻뿀由?遺???덈갑???듭떖</li>
-            <li><strong>?먮ぉ 以묐┰ ?먯꽭</strong> ??怨쇱떊??怨쇨뎬怨??뚰뵾. ?먮ぉ stress fracture쨌tendinopathy ?덈갑</li>
-            <li><strong>留ㅼ씪 thumb/wrist stretching</strong> ??DC 吏곸뾽蹂?1?꾩씤 first CMC OA ?덈갑</li>
-            <li><strong>?쒕∼?쇱뒪 ?쒖슜</strong> ???좎옄 force ?섏〈??媛먯냼, ?섏옄???몄븞</li>
+            <li><strong>Toggle stance</strong> — 발을 어깨 너비보다 넓게, 무릎 살짝 굽혀 체중 활용. 등·허리 부상 예방의 핵심</li>
+            <li><strong>손목 중립 자세</strong> — 과신전/과굴곡 회피. 손목 stress fracture·tendinopathy 예방</li>
+            <li><strong>매일 thumb/wrist stretching</strong> — DC 직업병 1위인 first CMC OA 예방</li>
+            <li><strong>드롭피스 활용</strong> — 술자 force 의존도 감소, 환자도 편안</li>
           </ul>
-          <p class="ref-cite">?뱰 異쒖쿂 ?덈궡: 蹂?寃쎌텛쨌?됱텛쨌?붿텛 ?뱀뀡???좎떇 ?쒓린??<strong>States Manual of Spinal, Pelvic and Extravertebral Technics</strong> (2nd Ed, Kirk쨌Lawrence쨌Valvo eds., National College of Chiropractic, 1985)???곕쫭?덈떎. 援먯쑁 紐⑹쟻??諛쒖톸 ?몄슜?낅땲??</p>
+          <p class="ref-cite">📖 출처 안내: 본 경추·흉추·요추 섹션의 술식 표기는 <strong>States Manual of Spinal, Pelvic and Extravertebral Technics</strong> (2nd Ed, Kirk·Lawrence·Valvo eds., National College of Chiropractic, 1985)을 따릅니다. 교육 목적의 발췌 인용입니다.</p>
         </details>
 
         <div class="week-resources">
-          <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week3_adjustment_practice.md">?뱰 ?곸꽭 媛뺤쓽濡?/a>
-          <a class="resource-pill" href="./viewer.html?src=diversified/10_report_week3.md">?뱞 Report</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/06_slides_week3.pdf" download>?렣 PPTX</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/03_video_part2_week34.mp4">?렏 Video Part 2</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">?렒 Podcast</a>
+          <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week3_adjustment_practice.md">📖 상세 강의록</a>
+          <a class="resource-pill" href="./viewer.html?src=diversified/10_report_week3.md">📄 Report</a>
+          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/06_slides_week3.pdf" download>🎴 PPTX</a>
+          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/03_video_part2_week34.mp4">🎥 Video Part 2</a>
+          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">🎧 Podcast</a>
         </div>
       </div>
     </section>
 
-    <!-- ========== 遺?꾨퀎 湲곗닠 ?쇱씠釉뚮윭由?========== -->
+    <!-- ========== 부위별 기술 라이브러리 ========== -->
     <section id="technique-library">
-      <h2>?썱 遺?꾨퀎 湲곗닠 ?쇱씠釉뚮윭由???Listing 쨌 SCP/CP/LOD 쨌 ?쒖뿰 ?숈쁺??/h2>
+      <h2>🛠 부위별 기술 라이브러리 — Listing · SCP/CP/LOD · 시연 동영상</h2>
       <p class="section-lead">
-        Diversified??蹂몄쭏? <strong>"?대뵒瑜?listing?섍퀬, ?대뵒瑜??묒큺?? ?대뒓 諛⑺뼢?쇰줈 thrust?섎뒓??</strong>?낅땲??
-        蹂??쇱씠釉뚮윭由щ뒗 遺?꾨퀎 ???湲곕쾿??<strong>Listing 쨌 SCP(Segmental Contact Point) 쨌 CP(Contact ???? 쨌 LOD(Line of Drive)</strong>濡?遺꾪빐?섍퀬,
-        寃利앸맂 ?쒖뿰 ?숈쁺?곸쓣 ?④퍡 ?쒖떆?⑸땲?? <strong>怨④???Bone Joint) 쨌 ?ъ? 怨④???Extremity) 쨌 ?곕?議곗쭅(Soft Tissue)</strong> 3 移댄뀒怨좊━濡??뺣━?덉뒿?덈떎.
+        Diversified의 본질은 <strong>"어디를 listing하고, 어디를 접촉해, 어느 방향으로 thrust하느냐"</strong>입니다.
+        본 라이브러리는 부위별 대표 기법을 <strong>Listing · SCP(Segmental Contact Point) · CP(Contact — 손) · LOD(Line of Drive)</strong>로 분해하고,
+        검증된 시연 동영상을 함께 제시합니다. <strong>골관절(Bone Joint) · 사지 골관절(Extremity) · 연부조직(Soft Tissue)</strong> 3 카테고리로 정리했습니다.
       </p>
 
       <p class="callout callout-warn">
-        <strong>?쎌뼱.</strong>
-        <abbr class="med-abbr" title="Segmental Contact Point 쨌 遺꾩젅 ?묒큺??(?섏옄痢?">SCP</abbr> = ?섏옄痢??대??숈쟻 ?묒큺??쨌
-        <abbr class="med-abbr" title="Contact Point 쨌 ?좎옄痢????묒큺遺">CP</abbr> = ?좎옄痢????묒큺遺 쨌
-        <abbr class="med-abbr" title="Line of Drive 쨌 異붾젰 諛⑺뼢">LOD</abbr> = 異붾젰 諛⑺뼢 쨌
-        <abbr class="med-abbr" title="Patient Position 쨌 ?섏옄 ?먯꽭">PP</abbr> = ?섏옄 ?먯꽭 쨌
-        <abbr class="med-abbr" title="Doctor Position 쨌 ?좎옄 ?먯꽭">DP</abbr> = ?좎옄 ?먯꽭 쨌
-        <abbr class="med-abbr" title="Indifferent Hand 쨌 鍮꾩텛????(吏吏쨌寃ъ씤)">IH</abbr> = 鍮꾩텛????
+        <strong>약어.</strong>
+        <abbr class="med-abbr" title="Segmental Contact Point · 분절 접촉점 (환자측)">SCP</abbr> = 환자측 해부학적 접촉점 ·
+        <abbr class="med-abbr" title="Contact Point · 술자측 손 접촉부">CP</abbr> = 술자측 손 접촉부 ·
+        <abbr class="med-abbr" title="Line of Drive · 추력 방향">LOD</abbr> = 추력 방향 ·
+        <abbr class="med-abbr" title="Patient Position · 환자 자세">PP</abbr> = 환자 자세 ·
+        <abbr class="med-abbr" title="Doctor Position · 술자 자세">DP</abbr> = 술자 자세 ·
+        <abbr class="med-abbr" title="Indifferent Hand · 비추력 손 (지지·견인)">IH</abbr> = 비추력 손
       </p>
 
-      <h3 id="bone-joints">?┫ 泥숈텛 怨④???(Bone Joint Adjustments)</h3>
+      <h3 id="bone-joints">🦴 척추 골관절 (Bone Joint Adjustments)</h3>
 
       <div class="technique-grid">
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">C0 ?꾨몢怨?/span>
+            <span class="tc-region">C0 후두골</span>
             <h4>Superior Condyle</h4>
-            <p class="tc-meta">???listing: <strong>RLS / LLS occiput</strong></p>
+            <p class="tc-meta">대표 listing: <strong>RLS / LLS occiput</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Supine 쨌 headpiece neutral 쨌 癒몃━ 以묐┰</td></tr>
-              <tr><td>SCP</td><td>mastoid process ?몄륫硫?/td></tr>
-              <tr><td>CP</td><td>caudad hand 쨌 index ?묒큺, wrist ulnar deviation</td></tr>
-              <tr><td>IH</td><td>cephalad hand 쨌 ??cradle, 痢〓㈃ 寃ъ씤</td></tr>
-              <tr><td>LOD</td><td><strong>mastoid ??mastoid ?섑룊</strong> (以묒떆?곷㈃ 吏곴컖)</td></tr>
+              <tr><td>PP</td><td>Supine · headpiece neutral · 머리 중립</td></tr>
+              <tr><td>SCP</td><td>mastoid process 외측면</td></tr>
+              <tr><td>CP</td><td>caudad hand · index 접촉, wrist ulnar deviation</td></tr>
+              <tr><td>IH</td><td>cephalad hand · 턱 cradle, 측면 견인</td></tr>
+              <tr><td>LOD</td><td><strong>mastoid → mastoid 수평</strong> (중시상면 직각)</td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/RKoNKcG9Z7I" title="C0-C1 Chin Hold Rotational HVLAT" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">??TMJ ?묒큺 ?덈? 湲덉?. ?좎쟾 ?뚰뵾 ??vertebral artery torsion ?꾪뿕.</p>
+          <p class="tc-note">⚠ TMJ 접촉 절대 금지. 신전 회피 — vertebral artery torsion 위험.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">C1 ?섏텛</span>
+            <span class="tc-region">C1 환추</span>
             <h4>Lateral Atlas Pisiform</h4>
-            <p class="tc-meta">???listing: <strong>RI / LI atlas</strong> (以뫢룸?泥댄삎 ?깆씤)</p>
+            <p class="tc-meta">대표 listing: <strong>RI / LI atlas</strong> (중·대체형 성인)</p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Supine 쨌 headpiece lowered 쨌 癒몃━ 90째 諛섎?痢??뚯쟾</td></tr>
+              <tr><td>PP</td><td>Supine · headpiece lowered · 머리 90° 반대측 회전</td></tr>
               <tr><td>SCP</td><td>Atlas TP apex</td></tr>
-              <tr><td>CP</td><td>caudad hand 쨌 <strong>pisiform</strong>, ?덈겮?먭??쎌씠 ?섏븙 ?꾨옒濡??뚯쟾</td></tr>
-              <tr><td>IH</td><td>cephalad hand 쨌 #1 contact (洹 cup), occiput 寃ъ씤</td></tr>
-              <tr><td>LOD</td><td>IH cephalad 寃ъ씤 ??CH ?섏쭅 ?섎갑 thrust</td></tr>
+              <tr><td>CP</td><td>caudad hand · <strong>pisiform</strong>, 새끼손가락이 하악 아래로 회전</td></tr>
+              <tr><td>IH</td><td>cephalad hand · #1 contact (귀 cup), occiput 견인</td></tr>
+              <tr><td>LOD</td><td>IH cephalad 견인 → CH 수직 하방 thrust</td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/tuueBSwTrmo" title="HVLA Upper Cervical C1-C2 Cradle Hold" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">??湲덇린: 寃쎌텛 arthritis, 怨⑤떎怨듭쬆, 90째 ?뚯쟾 遺덇?. ?뚯븘쨌?뚯껜?뺤? Lateral Atlas Index 沅뚯옣.</p>
+          <p class="tc-note">⚠ 금기: 경추 arthritis, 골다공증, 90° 회전 불가. 소아·소체형은 Lateral Atlas Index 권장.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">C2 異뺤텛</span>
+            <span class="tc-region">C2 축추</span>
             <h4>C2 Spinous Thumb Push (Bergmann)</h4>
-            <p class="tc-meta">???listing: <strong>C2 PR / PL spinous</strong></p>
+            <p class="tc-meta">대표 listing: <strong>C2 PR / PL spinous</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Supine 쨌 癒몃━ ?쎄컙 援닿끝</td></tr>
-              <tr><td>SCP</td><td>C2 spinous process ?몄륫 (listing 諛섎?痢?</td></tr>
-              <tr><td>CP</td><td>thumb pad ??broad contact</td></tr>
-              <tr><td>IH</td><td>contralateral hand 쨌 cradle occiput</td></tr>
-              <tr><td>LOD</td><td><strong>listing 諛섎? 諛⑺뼢 (PR ??A+L) 쨌 rotary break 蹂??/strong></td></tr>
+              <tr><td>PP</td><td>Supine · 머리 약간 굴곡</td></tr>
+              <tr><td>SCP</td><td>C2 spinous process 외측 (listing 반대측)</td></tr>
+              <tr><td>CP</td><td>thumb pad — broad contact</td></tr>
+              <tr><td>IH</td><td>contralateral hand · cradle occiput</td></tr>
+              <tr><td>LOD</td><td><strong>listing 반대 방향 (PR → A+L) · rotary break 변형</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/G93ifpp4Q8k" title="C2 cervical supine Chiropractic Adjustment" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">??States Manual?먮뒗 C2 ?⑤룆 ?좎떇???놁뼱 Bergmann 3rd Ed Ch 5 湲곕컲. dens fracture 諛곗젣 ?꾩뿉留?</p>
+          <p class="tc-note">⚠ States Manual에는 C2 단독 술식이 없어 Bergmann 3rd Ed Ch 5 기반. dens fracture 배제 후에만.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">C3?밅7 以묓븯遺 寃쎌텛</span>
+            <span class="tc-region">C3–C7 중하부 경추</span>
             <h4>Rotary Cervical (Index Pillar)</h4>
-            <p class="tc-meta">???listing: <strong>RP / LP, C2?밅7</strong></p>
+            <p class="tc-meta">대표 listing: <strong>RP / LP, C2–C7</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Supine 쨌 headpiece neutral 쨌 癒몃━ listing 痢??뚯쟾</td></tr>
-              <tr><td>SCP</td><td>articular pillar (AP) ?꾨㈃</td></tr>
-              <tr><td>CP</td><td>caudad hand 쨌 index 2nd/3rd digit pad, wrist ulnar deviation</td></tr>
-              <tr><td>IH</td><td>cephalad hand 쨌 洹 cup + occipital base</td></tr>
-              <tr><td>LOD</td><td><strong>facet 媛곷룄 ?곕씪 45째 ?ъ꽑 cephalad rotation</strong></td></tr>
+              <tr><td>PP</td><td>Supine · headpiece neutral · 머리 listing 측 회전</td></tr>
+              <tr><td>SCP</td><td>articular pillar (AP) 후면</td></tr>
+              <tr><td>CP</td><td>caudad hand · index 2nd/3rd digit pad, wrist ulnar deviation</td></tr>
+              <tr><td>IH</td><td>cephalad hand · 귀 cup + occipital base</td></tr>
+              <tr><td>LOD</td><td><strong>facet 각도 따라 45° 사선 cephalad rotation</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/o_FpuybUxSE" title="Palmer Master Cervical Rotary Break" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">???좎쟾 ?덈? 湲덉?. 珥덉쭊 ?섏옄???뚯쟾 媛곷룄 理쒖냼??+ IH dominance. VBI cluster ?ㅽ겕由щ떇 ?좏뻾.</p>
+          <p class="tc-note">⚠ 신전 절대 금지. 초진 환자는 회전 각도 최소화 + IH dominance. VBI cluster 스크리닝 선행.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-region-card-rib">
-            <span class="tc-region">?곷? ?됱텛</span>
+            <span class="tc-region">상부 흉추</span>
             <h4>Anterior Thoracic (Supine AP)</h4>
-            <p class="tc-meta">???listing: <strong>T1?밫4 PR/PL 쨌 援닿끝 ?쒗븳</strong></p>
+            <p class="tc-meta">대표 listing: <strong>T1–T4 PR/PL · 굴곡 제한</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Supine 쨌 ?묒넀 媛????cross</td></tr>
-              <tr><td>SCP</td><td>蹂묐? 遺꾩젅 spinous process / TP</td></tr>
-              <tr><td>CP</td><td>thenar/hypothenar ???섏옄 ???꾨옒</td></tr>
-              <tr><td>IH</td><td>?섏옄 媛?는룻뙏 而⑦듃濡? body drop?쇰줈 thrust ?꾨떖</td></tr>
-              <tr><td>LOD</td><td><strong>P?밃 (?섏옄 媛?댁쓣 ?듯븳 ?꾨갑 thrust) + slight cephalad</strong></td></tr>
+              <tr><td>PP</td><td>Supine · 양손 가슴 위 cross</td></tr>
+              <tr><td>SCP</td><td>병변 분절 spinous process / TP</td></tr>
+              <tr><td>CP</td><td>thenar/hypothenar — 환자 등 아래</td></tr>
+              <tr><td>IH</td><td>환자 가슴·팔 컨트롤, body drop으로 thrust 전달</td></tr>
+              <tr><td>LOD</td><td><strong>P–A (환자 가슴을 통한 후방 thrust) + slight cephalad</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/n0USssTFxZY" title="HVLA Upper Thoracic T1-T4 Supine AP" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">?뮕 媛???덉쟾 留덉쭊???ш퀬 ?섏옄 遺???곸쓬 ???듯빀 ?꾩닔移섎즺?먯꽌 鍮덈쾲 ?ъ슜. 怨⑤떎怨듭쬆? force 70%濡?</p>
+          <p class="tc-note">💡 가장 안전 마진이 크고 환자 부담 적음 — 통합 도수치료에서 빈번 사용. 골다공증은 force 70%로.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">以묓븯遺 ?됱텛</span>
+            <span class="tc-region">중하부 흉추</span>
             <h4>Prone Pisiform Thoracic</h4>
-            <p class="tc-meta">???listing: <strong>T5?밫12 ?⑥륫 PR/PL</strong></p>
+            <p class="tc-meta">대표 listing: <strong>T5–T12 단측 PR/PL</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Prone 쨌 drop piece ?숇컲</td></tr>
-              <tr><td>SCP</td><td>蹂묐? 遺꾩젅 ?쒖そ TP (listing 痢?</td></tr>
+              <tr><td>PP</td><td>Prone · drop piece 동반</td></tr>
+              <tr><td>SCP</td><td>병변 분절 한쪽 TP (listing 측)</td></tr>
               <tr><td>CP</td><td>pisiform contact</td></tr>
-              <tr><td>IH</td><td>諛섎?痢?TP ?덉젙??/td></tr>
-              <tr><td>LOD</td><td><strong>P?밃 + listing ?곕Ⅸ slight cephalad/caudad 媛곷룄</strong></td></tr>
+              <tr><td>IH</td><td>반대측 TP 안정화</td></tr>
+              <tr><td>LOD</td><td><strong>P–A + listing 따른 slight cephalad/caudad 각도</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/NB7xvoNpyR4" title="Prone Upper Thoracic Spine Adjustment" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">??T12?밚1 ?됱슂異??댄뻾遺???뚯쟾 諛⑺뼢 ?대룞 ??set-up 蹂꾨룄 ?먭?.</p>
+          <p class="tc-note">⚠ T12–L1 흉요추 이행부는 회전 방향 이동 — set-up 별도 점검.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">?묎낏 (Rib)</span>
+            <span class="tc-region">늑골 (Rib)</span>
             <h4>Rib Head / Costovertebral</h4>
-            <p class="tc-meta">???listing: <strong>Rib 2??0 posterior, ?명씉 ?쒗븳</strong></p>
+            <p class="tc-meta">대표 listing: <strong>Rib 2–10 posterior, 호흡 제한</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Supine (anterior rib) ?먮뒗 Prone (posterior rib)</td></tr>
-              <tr><td>SCP</td><td>rib angle ?먮뒗 costotransverse joint</td></tr>
-              <tr><td>CP</td><td>hypothenar / pisiform ??醫곸? ?묒큺</td></tr>
-              <tr><td>IH</td><td>?섏옄 ?명씉 而⑦듃濡? ?좎닲 ?앹뿉 thrust ?좏샇</td></tr>
-              <tr><td>LOD</td><td><strong>?명씉 ?좎닲 ?앹뿉 lateral + anterior thrust</strong></td></tr>
+              <tr><td>PP</td><td>Supine (anterior rib) 또는 Prone (posterior rib)</td></tr>
+              <tr><td>SCP</td><td>rib angle 또는 costotransverse joint</td></tr>
+              <tr><td>CP</td><td>hypothenar / pisiform — 좁은 접촉</td></tr>
+              <tr><td>IH</td><td>환자 호흡 컨트롤, 날숨 끝에 thrust 신호</td></tr>
+              <tr><td>LOD</td><td><strong>호흡 날숨 끝에 lateral + anterior thrust</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/vVcvx_KLh5A" title="HVLA Rib Costovertebral T4-9 Supine AP" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">??怨⑤떎怨듭쬆쨌怨좊졊 ?섏옄 ?묎낏 怨⑥젅 ?꾪뿕 ??force 50??0%濡??좎쨷?섍쾶.</p>
+          <p class="tc-note">⚠ 골다공증·고령 환자 늑골 골절 위험 — force 50–60%로 신중하게.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">?붿텛</span>
+            <span class="tc-region">요추</span>
             <h4>Lumbar Roll (Side Posture)</h4>
-            <p class="tc-meta">???listing: <strong>L1?밚5 PL/PR 쨌 PLI 쨌 PRS</strong></p>
+            <p class="tc-meta">대표 listing: <strong>L1–L5 PL/PR · PLI · PRS</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Side posture 쨌 ?섏륫 ??쨌 ?꾨옒 ?ㅻ━ ?좎쟾 쨌 ???ㅻ━ 援닿끝</td></tr>
-              <tr><td>SCP</td><td>mamillary process (?섏륫)</td></tr>
-              <tr><td>CP</td><td>pisiform ?먮뒗 hypothenar</td></tr>
-              <tr><td>IH</td><td>contralateral ?붾슍 쨌 ?섏옄 ???닿묠 吏吏</td></tr>
-              <tr><td>LOD</td><td><strong>P?밃 + slight rotation (listing 諛섎? 諛⑺뼢)</strong></td></tr>
+              <tr><td>PP</td><td>Side posture · 환측 위 · 아래 다리 신전 · 위 다리 굴곡</td></tr>
+              <tr><td>SCP</td><td>mamillary process (환측)</td></tr>
+              <tr><td>CP</td><td>pisiform 또는 hypothenar</td></tr>
+              <tr><td>IH</td><td>contralateral 팔뚝 · 환자 위 어깨 지지</td></tr>
+              <tr><td>LOD</td><td><strong>P–A + slight rotation (listing 반대 방향)</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/byEY-V-zc84" title="HVLA L5-S1 Mamillary Side-lying Technique" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">?뮕 "Million dollar roll" ??媛??鍮덈쾲???붿텛 湲곕쾿. Disc herniation + 諛⑹궗????利됱떆 以묐떒, Cox flexion-distraction ???</p>
+          <p class="tc-note">💡 "Million dollar roll" — 가장 빈번한 요추 기법. Disc herniation + 방사통 시 즉시 중단, Cox flexion-distraction 대안.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">L5?밪1 ?뱀씠</span>
-            <h4>L5?밪1 Side Posture Push</h4>
-            <p class="tc-meta">???listing: <strong>L5 PI / Acute LBP</strong></p>
+            <span class="tc-region">L5–S1 특이</span>
+            <h4>L5–S1 Side Posture Push</h4>
+            <p class="tc-meta">대표 listing: <strong>L5 PI / Acute LBP</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Side posture 쨌 ?섏륫 ??쨌 怨⑤컲 ?뚯쟾 媛뺤“</td></tr>
-              <tr><td>SCP</td><td>L5 mamillary ?먮뒗 ischial tuberosity 痢?/td></tr>
+              <tr><td>PP</td><td>Side posture · 환측 위 · 골반 회전 강조</td></tr>
+              <tr><td>SCP</td><td>L5 mamillary 또는 ischial tuberosity 측</td></tr>
               <tr><td>CP</td><td>pisiform / hypothenar</td></tr>
-              <tr><td>IH</td><td>?섏옄 ?곸껜 stabilize, ?뚯쟾 lock</td></tr>
-              <tr><td>LOD</td><td><strong>Anterior + Superior (PI listing ??A+S)</strong></td></tr>
+              <tr><td>IH</td><td>환자 상체 stabilize, 회전 lock</td></tr>
+              <tr><td>LOD</td><td><strong>Anterior + Superior (PI listing → A+S)</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/iRfD9IeLV3A" title="Specific Chiropractic Adjustment of L5-S1 and Sacrum (Walter Salubro)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">??Straight Leg Raise ?묒꽦 + ?좉꼍?숈쟻 寃곗넀? first-line???꾨떃?덈떎. 6二??몄쟾 ?놁쓬 ??MRI ?섎ː.</p>
+          <p class="tc-note">⚠ Straight Leg Raise 양성 + 신경학적 결손은 first-line이 아닙니다. 6주 호전 없음 → MRI 의뢰.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">怨⑤컲 / 泥쒖옣愿??/span>
-            <h4>Pelvic Diversified ??AS / PI Ilium</h4>
-            <p class="tc-meta">???listing: <strong>R AS 쨌 L PI 쨌 EX 쨌 IN ilium (18 listings)</strong></p>
+            <span class="tc-region">골반 / 천장관절</span>
+            <h4>Pelvic Diversified — AS / PI Ilium</h4>
+            <p class="tc-meta">대표 listing: <strong>R AS · L PI · EX · IN ilium (18 listings)</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Side posture 쨌 ?섏륫 ??(AS??醫뚯륫 lie, PI???곗륫 lie 蹂??</td></tr>
-              <tr><td>SCP</td><td><strong>AS</strong>: PSIS 쨌 <strong>PI</strong>: ischial tuberosity 쨌 <strong>EX/IN</strong>: PSIS lateral</td></tr>
-              <tr><td>CP</td><td>pisiform 쨌 hypothenar</td></tr>
-              <tr><td>IH</td><td>?곸껜 cross-support, ?뚯쟾 lock</td></tr>
-              <tr><td>LOD</td><td><strong>AS ??P+I 쨌 PI ??A+S 쨌 EX ??L?묺 쨌 IN ??M?묹</strong></td></tr>
+              <tr><td>PP</td><td>Side posture · 환측 위 (AS는 좌측 lie, PI는 우측 lie 변동)</td></tr>
+              <tr><td>SCP</td><td><strong>AS</strong>: PSIS · <strong>PI</strong>: ischial tuberosity · <strong>EX/IN</strong>: PSIS lateral</td></tr>
+              <tr><td>CP</td><td>pisiform · hypothenar</td></tr>
+              <tr><td>IH</td><td>상체 cross-support, 회전 lock</td></tr>
+              <tr><td>LOD</td><td><strong>AS → P+I · PI → A+S · EX → L→M · IN → M→L</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/EgVDJYIglGU" title="Sacroiliac Joint Chiropractic Adjustments (Walter Salubro)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">?뮕 18 listing ?꾨? ?몄슱 ?꾩슂 X ??鍮덈쾲??5?? ?⑦꽩(AS쨌PI쨌EX쨌IN쨌sacral base)???듭닕?댁쭊 ???섎㉧吏??reference.</p>
+          <p class="tc-note">💡 18 listing 전부 외울 필요 X — 빈번한 5–7 패턴(AS·PI·EX·IN·sacral base)에 익숙해진 후 나머지는 reference.</p>
         </article>
 
       </div>
 
-      <h3 id="extremity-joints">?┻ ?ъ? 怨④???(Extremity Joint Adjustments)</h3>
+      <h3 id="extremity-joints">🦵 사지 골관절 (Extremity Joint Adjustments)</h3>
 
       <div class="technique-grid">
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">?닿묠 ??GH joint</span>
+            <span class="tc-region">어깨 — GH joint</span>
             <h4>Glenohumeral Joint Mobilization + HVLA</h4>
-            <p class="tc-meta">????곸쓳: <strong>?꾨갑 罹≪뒓 ?쒗븳 쨌 adhesive capsulitis 珥덇린</strong></p>
+            <p class="tc-meta">대표 적응: <strong>전방 캡슐 제한 · adhesive capsulitis 초기</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Supine 쨌 ?닿묠 ?몄쟾 90째 쨌 ?붽퓞移?援닿끝</td></tr>
+              <tr><td>PP</td><td>Supine · 어깨 외전 90° · 팔꿈치 굴곡</td></tr>
               <tr><td>SCP</td><td>humeral head</td></tr>
-              <tr><td>CP</td><td>thumb web ??humeral head anterior</td></tr>
-              <tr><td>IH</td><td>elbow 而⑦듃濡? 寃ъ씤 + ?명쉶??/td></tr>
-              <tr><td>LOD</td><td><strong>Anterior?밣osterior glide + long-axis distraction</strong></td></tr>
+              <tr><td>CP</td><td>thumb web — humeral head anterior</td></tr>
+              <tr><td>IH</td><td>elbow 컨트롤, 견인 + 외회전</td></tr>
+              <tr><td>LOD</td><td><strong>Anterior–Posterior glide + long-axis distraction</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/l8_LG3KYP0Q" title="Glenohumeral Joint Adjustment Shoulder Flexed (Ozello)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">???뚯쟾洹쇨컻 ?먯긽쨌SLAP lesion ?섏떖 ??MRI ?곗꽑. HVLA蹂대떎 mobilization??二쇰줈 ?덉쟾.</p>
+          <p class="tc-note">⚠ 회전근개 손상·SLAP lesion 의심 시 MRI 우선. HVLA보다 mobilization이 주로 안전.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">?닿묠 ??AC joint</span>
+            <span class="tc-region">어깨 — AC joint</span>
             <h4>Acromioclavicular Joint Adjustment</h4>
-            <p class="tc-meta">????곸쓳: <strong>AC 遺꾨━ grade I, 寃щ큺?꾧낏 ?듭쬆</strong></p>
+            <p class="tc-meta">대표 적응: <strong>AC 분리 grade I, 견봉쇄골 통증</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Supine ?먮뒗 seated</td></tr>
-              <tr><td>SCP</td><td>distal clavicle (AC 愿?덈㈃ 吏곸긽遺)</td></tr>
-              <tr><td>CP</td><td>thumb / index ??醫곸? ?묒큺</td></tr>
-              <tr><td>IH</td><td>寃щ큺 stabilize</td></tr>
-              <tr><td>LOD</td><td><strong>P?밃 short thrust 쨌 ?먮뒗 S?밒 ?뺣컯 ?댁젣</strong></td></tr>
+              <tr><td>PP</td><td>Supine 또는 seated</td></tr>
+              <tr><td>SCP</td><td>distal clavicle (AC 관절면 직상부)</td></tr>
+              <tr><td>CP</td><td>thumb / index — 좁은 접촉</td></tr>
+              <tr><td>IH</td><td>견봉 stabilize</td></tr>
+              <tr><td>LOD</td><td><strong>P–A short thrust · 또는 S–I 압박 해제</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/MZIGE0-CZcc" title="Chiropractic Extremity Adjustment Acromioclavicular Joint (Ozello)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">??AC 遺꾨━ grade II?밒II??HVLA 湲덇린 ??蹂댁〈??愿由?+ ?멸낵 ?묒쭊.</p>
+          <p class="tc-note">⚠ AC 분리 grade II–III는 HVLA 금기 — 보존적 관리 + 외과 협진.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">?먮ぉ</span>
-            <h4>Carpal ??Scaphoid / Lunate</h4>
-            <p class="tc-meta">????곸쓳: <strong>?먮ぉ limited extension 쨌 CTS 蹂댁“</strong></p>
+            <span class="tc-region">손목</span>
+            <h4>Carpal — Scaphoid / Lunate</h4>
+            <p class="tc-meta">대표 적응: <strong>손목 limited extension · CTS 보조</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Seated 쨌 ?섏옄 ??寃?ъ옄 ?먯뿉 嫄곗튂</td></tr>
-              <tr><td>SCP</td><td>Scaphoid ?먮뒗 Lunate (proximal carpal row)</td></tr>
-              <tr><td>CP</td><td>thumb pad 쨌 distal traction</td></tr>
-              <tr><td>IH</td><td>?꾩셿 stabilize, proximal counter-force</td></tr>
-              <tr><td>LOD</td><td><strong>distal traction + "scissoring" ?뚯쟾 (lunate)</strong></td></tr>
+              <tr><td>PP</td><td>Seated · 환자 손 검사자 손에 거치</td></tr>
+              <tr><td>SCP</td><td>Scaphoid 또는 Lunate (proximal carpal row)</td></tr>
+              <tr><td>CP</td><td>thumb pad · distal traction</td></tr>
+              <tr><td>IH</td><td>전완 stabilize, proximal counter-force</td></tr>
+              <tr><td>LOD</td><td><strong>distal traction + "scissoring" 회전 (lunate)</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/EN2RBAw63ak" title="Chiropractic Wrist Adjustment (Carpal Bones)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">?뮕 CTS??1李?蹂댁〈(splint + ?대룞) 沅뚯옣 ??移댁씠濡쒗봽?숉떛 ?⑤룆 ?④낵??limited evidence.</p>
+          <p class="tc-note">💡 CTS는 1차 보존(splint + 운동) 권장 — 카이로프랙틱 단독 효과는 limited evidence.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">臾대쫷</span>
+            <span class="tc-region">무릎</span>
             <h4>Knee Long-axis Distraction + Patella Glide</h4>
-            <p class="tc-meta">????곸쓳: <strong>Patellofemoral syndrome 쨌 IT band</strong></p>
+            <p class="tc-meta">대표 적응: <strong>Patellofemoral syndrome · IT band</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Supine 쨌 ?ㅻ━ ?꾩쟾 ?좎쟾 ?먮뒗 ?쎄컙 援닿끝</td></tr>
-              <tr><td>SCP</td><td>patella (medial/lateral border) 쨌 proximal tibia</td></tr>
-              <tr><td>CP</td><td>thumb-thumb on patella 쨌 ?먮뒗 ?묒넀 distal tibia grip</td></tr>
-              <tr><td>IH</td><td>??대? stabilize</td></tr>
-              <tr><td>LOD</td><td><strong>medial/lateral patella glide 쨌 long-axis distraction thrust</strong></td></tr>
+              <tr><td>PP</td><td>Supine · 다리 완전 신전 또는 약간 굴곡</td></tr>
+              <tr><td>SCP</td><td>patella (medial/lateral border) · proximal tibia</td></tr>
+              <tr><td>CP</td><td>thumb-thumb on patella · 또는 양손 distal tibia grip</td></tr>
+              <tr><td>IH</td><td>대퇴부 stabilize</td></tr>
+              <tr><td>LOD</td><td><strong>medial/lateral patella glide · long-axis distraction thrust</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/WtGT2Mt9gW4" title="Knee HVLA Traction Thrust Technique" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">??Meniscus tear 쨌 ACL ?먯긽 ?섏떖 ??MRI ?곗꽑. HVLA蹂대떎 ?대룞?ы솢 + IT band release.</p>
+          <p class="tc-note">⚠ Meniscus tear · ACL 손상 의심 시 MRI 우선. HVLA보다 운동재활 + IT band release.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">諛쒕ぉ</span>
+            <span class="tc-region">발목</span>
             <h4>Talocrural + Subtalar</h4>
-            <p class="tc-meta">????곸쓳: <strong>議깃????쇱쥖 ??mortise ?쒗븳</strong></p>
+            <p class="tc-meta">대표 적응: <strong>족관절 염좌 후 mortise 제한</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Supine ?먮뒗 prone 쨌 諛?寃?ъ옄 ?먯뿉 嫄곗튂</td></tr>
-              <tr><td>SCP</td><td>talus ?먮뒗 calcaneus</td></tr>
-              <tr><td>CP</td><td>?묒넀 grip (forefoot + heel)</td></tr>
-              <tr><td>IH</td><td>寃쎄낏 stabilize</td></tr>
-              <tr><td>LOD</td><td><strong>Long-axis distraction + A?밣 glide (talocrural) / eversion-inversion thrust (subtalar)</strong></td></tr>
+              <tr><td>PP</td><td>Supine 또는 prone · 발 검사자 손에 거치</td></tr>
+              <tr><td>SCP</td><td>talus 또는 calcaneus</td></tr>
+              <tr><td>CP</td><td>양손 grip (forefoot + heel)</td></tr>
+              <tr><td>IH</td><td>경골 stabilize</td></tr>
+              <tr><td>LOD</td><td><strong>Long-axis distraction + A–P glide (talocrural) / eversion-inversion thrust (subtalar)</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/dJ9X-_7sfkg" title="Chiropractic Extremity Adjustment Talocrural Ankle (Ozello)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">?뮕 Long-axis distraction??紐⑤뱺 諛?諛쒕ぉ manipulation??湲곕낯 ??諛쒓???愿?덉뿉???숈씪 ?먯튃.</p>
+          <p class="tc-note">💡 Long-axis distraction이 모든 발/발목 manipulation의 기본 — 발가락 관절에도 동일 원칙.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">?낃???(TMJ)</span>
-            <h4>TMJ ??Extra/Intraoral Mobilization</h4>
-            <p class="tc-meta">????곸쓳: <strong>媛쒓뎄 ?쒗븳 쨌 TMD (?묒쭊 ?곸뿭)</strong></p>
+            <span class="tc-region">악관절 (TMJ)</span>
+            <h4>TMJ — Extra/Intraoral Mobilization</h4>
+            <p class="tc-meta">대표 적응: <strong>개구 제한 · TMD (협진 영역)</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>PP</td><td>Supine 쨌 ?섏옄 ???댁쭩 踰뚮┝</td></tr>
-              <tr><td>SCP</td><td>mandibular condyle (extraoral) 쨌 ?먮뒗 ?닿툑???꾨갑 (intraoral)</td></tr>
-              <tr><td>CP</td><td>thumb pad (?κ컩 ?꾩닔 ??intraoral)</td></tr>
-              <tr><td>IH</td><td>?먮? stabilize</td></tr>
-              <tr><td>LOD</td><td><strong>Caudal distraction + lateral glide (?몄쐞 諛섎? 諛⑺뼢)</strong></td></tr>
+              <tr><td>PP</td><td>Supine · 환자 입 살짝 벌림</td></tr>
+              <tr><td>SCP</td><td>mandibular condyle (extraoral) · 또는 어금니 후방 (intraoral)</td></tr>
+              <tr><td>CP</td><td>thumb pad (장갑 필수 — intraoral)</td></tr>
+              <tr><td>IH</td><td>두부 stabilize</td></tr>
+              <tr><td>LOD</td><td><strong>Caudal distraction + lateral glide (편위 반대 방향)</strong></td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/VUgYWwgoaPM" title="Chiropractic TMJ Adjustment Jaw Manipulation" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">??<strong>移섍낵쨌援ш컯?멸낵 ?곸뿭怨?以묒꺽</strong> ???묒쭊 ?먯튃. Disc displacement ?섏떖 ??MRI + 移섍낵 ?섎ː.</p>
+          <p class="tc-note">⚠ <strong>치과·구강외과 영역과 중첩</strong> — 협진 원칙. Disc displacement 의심 시 MRI + 치과 의뢰.</p>
         </article>
 
       </div>
 
-      <h3 id="soft-tissue">?뮞 ?곕?議곗쭅 (Soft Tissue Techniques)</h3>
+      <h3 id="soft-tissue">💪 연부조직 (Soft Tissue Techniques)</h3>
 
       <p class="callout callout-info">
-        ?곕?議곗쭅 湲곕쾿? HVLA??<strong>?꽷룻썑 蹂댁“ ?꾧뎄</strong>濡??ъ슜?⑸땲?? 洹쇨릿???꾪솕 ??set-up ?⑹씠 ??異붾젰 ?④낵 利앸?. ?먮뒗 異붾젰 ???붾쪟 trigger point 愿由?
-        <strong>Diversified??蹂??곸뿭? ?꾨땲吏留?/strong>, ?쒓뎅 ?꾩닔移섎즺 ?꾩옣?먯꽌 鍮덈쾲???듯빀 ?ъ슜?섎?濡??쒖? 湲곕쾿???뺣━?⑸땲??
+        연부조직 기법은 HVLA의 <strong>전·후 보조 도구</strong>로 사용됩니다. 근긴장 완화 → set-up 용이 → 추력 효과 증대. 또는 추력 후 잔류 trigger point 관리.
+        <strong>Diversified의 본 영역은 아니지만</strong>, 한국 도수치료 현장에서 빈번히 통합 사용되므로 표준 기법을 정리합니다.
       </p>
 
       <div class="technique-grid">
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">洹쇰쭑 ?댁셿</span>
+            <span class="tc-region">근막 이완</span>
             <h4>Myofascial Release (MFR)</h4>
-            <p class="tc-meta">????곸쓳: <strong>泥숈텛湲곕┰洹셋룹듅紐④렐 chronic tension</strong></p>
+            <p class="tc-meta">대표 적응: <strong>척추기립근·승모근 chronic tension</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>?묎렐</td><td>?쇰? sustained pressure (90??20珥? 쨌 barrier release</td></tr>
-              <tr><td>CP</td><td>thumb 쨌 finger pads 쨌 forearm 쨌 elbow</td></tr>
-              <tr><td>媛뺣룄</td><td>?섏옄 ?듭쬆 4??/10 NPRS 踰붿쐞 (李몄쓣 留뚰븳 ?뺣룄)</td></tr>
-              <tr><td>?⑸룄</td><td>HVLA ??set-up ?⑹씠??쨌 ?먮뒗 post-adjustment ?붾쪟 tension</td></tr>
+              <tr><td>접근</td><td>피부 sustained pressure (90–120초) · barrier release</td></tr>
+              <tr><td>CP</td><td>thumb · finger pads · forearm · elbow</td></tr>
+              <tr><td>강도</td><td>환자 통증 4–6/10 NPRS 범위 (참을 만한 정도)</td></tr>
+              <tr><td>용도</td><td>HVLA 전 set-up 용이화 · 또는 post-adjustment 잔류 tension</td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/mIxEKtkccNQ" title="Myofascial Release (Graston IASTM ART MFR Visceral)" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">?뮕 洹쇨굅 ?섏? ?윝 Limited ???⑤룆 ?④낵蹂대떎 HVLA쨌?대룞移섎즺? 蹂묓뻾 ???쒕꼫吏.</p>
+          <p class="tc-note">💡 근거 수준 🟠 Limited — 단독 효과보다 HVLA·운동치료와 병행 시 시너지.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
-            <span class="tc-region">湲곌뎄 蹂댁“ (IASTM)</span>
+            <span class="tc-region">기구 보조 (IASTM)</span>
             <h4>Graston / IASTM</h4>
-            <p class="tc-meta">????곸쓳: <strong>scar tissue 쨌 tendinopathy 쨌 myofascial adhesion</strong></p>
+            <p class="tc-meta">대표 적응: <strong>scar tissue · tendinopathy · myofascial adhesion</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>?묎렐</td><td>?ㅽ뀒?몃━???꾧뎄濡??쇰? ?쒕㈃ cross-friction strokes</td></tr>
-              <tr><td>?꾧뎄</td><td>Graston 쨌 HawkGrips 쨌 ASTYM tools (?몄쬆 怨쇱젙 ?꾩슂)</td></tr>
-              <tr><td>媛뺣룄</td><td>?쇳븯 異쒗삁??petechiae) 諛쒖깮 吏곸쟾源뚯? ???덈Т 媛뺥븯硫??먯긽</td></tr>
-              <tr><td>?곸슜</td><td>二?1????횞 4??二?沅뚯옣</td></tr>
+              <tr><td>접근</td><td>스테인리스 도구로 피부 표면 cross-friction strokes</td></tr>
+              <tr><td>도구</td><td>Graston · HawkGrips · ASTYM tools (인증 과정 필요)</td></tr>
+              <tr><td>강도</td><td>피하 출혈점(petechiae) 발생 직전까지 — 너무 강하면 손상</td></tr>
+              <tr><td>적용</td><td>주 1–2회 × 4–6주 권장</td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/GQuAeLVCcYQ" title="Graston Technique for Scar Tissue" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">????쓳怨좎젣 蹂듭슜쨌怨⑤떎怨듭쬆쨌?쇰? 媛먯뿼? 湲덇린. ?몄쬆 怨쇱젙(Graston M1/M2) 沅뚯옣.</p>
+          <p class="tc-note">⚠ 항응고제 복용·골다공증·피부 감염은 금기. 인증 과정(Graston M1/M2) 권장.</p>
         </article>
 
         <article class="technique-card">
           <header class="tc-header">
             <span class="tc-region">Active Release</span>
             <h4>ART (Active Release Technique)</h4>
-            <p class="tc-meta">????곸쓳: <strong>nerve entrapment (CTS 쨌 piriformis syndrome)</strong></p>
+            <p class="tc-meta">대표 적응: <strong>nerve entrapment (CTS · piriformis syndrome)</strong></p>
           </header>
           <table class="tc-table">
             <tbody>
-              <tr><td>?묎렐</td><td>?좎옄 tension on 蹂묐? 遺??쨌 ?섏옄 ?λ룞 ?대룞</td></tr>
+              <tr><td>접근</td><td>술자 tension on 병변 부위 · 환자 능동 운동</td></tr>
               <tr><td>CP</td><td>thumb / finger broad contact</td></tr>
-              <tr><td>?듭떖</td><td>tissue lengthening through full ROM 쨌 3????諛섎났</td></tr>
-              <tr><td>?곸슜</td><td>nerve glide? 議고빀 ???④낵 利앸?</td></tr>
+              <tr><td>핵심</td><td>tissue lengthening through full ROM · 3–5회 반복</td></tr>
+              <tr><td>적용</td><td>nerve glide와 조합 시 효과 증대</td></tr>
             </tbody>
           </table>
           <div class="tc-video">
             <iframe src="https://www.youtube-nocookie.com/embed/NbDDJitAdSE" title="IASTM Technique on Calf Muscle" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
-          <p class="tc-note">?뮕 ART???곹몴 ?깅줉 湲곕쾿 ???뺤떇 ?몄쬆(art-corp.com) ?놁씠???숈씪 ?먮━(active stretching with tension) ?곸슜 媛??</p>
+          <p class="tc-note">💡 ART는 상표 등록 기법 — 정식 인증(art-corp.com) 없이도 동일 원리(active stretching with tension) 적용 가능.</p>
         </article>
 
       </div>
 
       <div class="callout callout-info" style="margin-top:1.5rem;">
-        <strong>?뱴 ??源딆? ?숈뒿.</strong>
-        遺?꾨퀎 紐⑤뱺 蹂??湲곕쾿(C0 9媛吏쨌C1 3媛吏쨌C2?밅7 6媛吏쨌怨⑤컲 18 listing ???
-        <a href="./viewer.html?src=diversified/lecture/week3_adjustment_practice.md">?곸꽭 媛뺤쓽濡?week3_adjustment_practice.md)</a>??States Manual ?곷Ц ?먮Ц + ?쒓뎅???붿젏?쇰줈 ?뺣━?섏뼱 ?덉뒿?덈떎.
+        <strong>📚 더 깊은 학습.</strong>
+        부위별 모든 변형 기법(C0 9가지·C1 3가지·C2–C7 6가지·골반 18 listing 등)은
+        <a href="./viewer.html?src=diversified/lecture/week3_adjustment_practice.md">상세 강의록(week3_adjustment_practice.md)</a>에 States Manual 영문 원문 + 한국어 요점으로 정리되어 있습니다.
       </div>
     </section>
 
     <!-- ========== WEEK 4 ========== -->
     <section id="week4">
-      <h2>Week 4. 洹쇨굅쨌?덉쟾쨌?듯빀 移섎즺</h2>
+      <h2>Week 4. 근거·안전·통합 치료</h2>
 
       <div class="week-card">
-        <h3><span class="week-badge">WEEK 4</span>洹쇨굅쨌?덉쟾쨌?듯빀 移섎즺</h3>
-        <h4>?렞 ?숈뒿 紐⑺몴</h4>
+        <h3><span class="week-badge">WEEK 4</span>근거·안전·통합 치료</h3>
+        <h4>🎯 학습 목표</h4>
         <ul>
-          <li>洹쇨굅 ?쇰씪誘몃뱶? Cochrane쨌SR 寃곕줎 ?붿빟</li>
-          <li>?뷀넻쨌寃쎌텛?돠룸몢?돠룹궗吏 ?꾩긽 ?꾨줈?좎퐳 ?④퀎蹂??곸슜</li>
-          <li>VAD 諛쒖깮瑜???Cassidy 2008 쨌 Church 2016 洹쇨굅</li>
-          <li>?덈?쨌?곷? 湲덇린 泥댄겕由ъ뒪?몃줈 ?먮떒</li>
-          <li>Post-adjustment soreness ?섏옄?먭쾶 ?ъ쟾 ?ㅻ챸쨌愿由?/li>
-          <li>?ㅽ븰???묒쭊(MD 쨌 PT 쨌 DC) ?섎ː 湲곗?</li>
-          <li>?쒓뎅 湲됱뿬/鍮꾧툒??援ъ“ ?댄빐</li>
-          <li>洹쇨굅 ?녿뒗 二쇱옣(怨좏삁?빧룹쿇?씲룹썡寃쏀넻 移섎즺 ?? 鍮꾪뙋??援щ텇</li>
+          <li>근거 피라미드와 Cochrane·SR 결론 요약</li>
+          <li>요통·경추통·두통·사지 임상 프로토콜 단계별 적용</li>
+          <li>VAD 발생률 — Cassidy 2008 · Church 2016 근거</li>
+          <li>절대·상대 금기 체크리스트로 판단</li>
+          <li>Post-adjustment soreness 환자에게 사전 설명·관리</li>
+          <li>다학제 협진(MD · PT · DC) 의뢰 기준</li>
+          <li>한국 급여/비급여 구조 이해</li>
+          <li>근거 없는 주장(고혈압·천식·월경통 치료 등) 비판적 구분</li>
         </ul>
-        <h4>?뵎 ?듭떖 媛쒕뀗</h4>
+        <h4>🔑 핵심 개념</h4>
 
         <details class="concept-block" open>
-          <summary><strong>1. 洹쇨굅 ?쇰씪誘몃뱶 + GRADE ?쒖뒪??/strong></summary>
-          <p>洹쇨굅 ?꾧퀎: Systematic Review ??RCT ??Cohort/Case-control ??Case series/Expert opinion. SMT/Diversified RCT??<strong>blinding 遺덇?</strong>(?섏옄???좎옄??SMT 諛쏆쓬???????덉쓬) ?뚮Ц??GRADE ?쒖옉?먯씠 ???깃툒 ??떠吏묐땲?? ?대뒗 蹂몄쭏???쒓퀎濡?Cochrane 由щ럭?ㅻ룄 ?몄젙?⑸땲??</p>
+          <summary><strong>1. 근거 피라미드 + GRADE 시스템</strong></summary>
+          <p>근거 위계: Systematic Review → RCT → Cohort/Case-control → Case series/Expert opinion. SMT/Diversified RCT는 <strong>blinding 불가</strong>(환자도 술자도 SMT 받음을 알 수 있음) 때문에 GRADE 시작점이 한 등급 낮춰집니다. 이는 본질적 한계로 Cochrane 리뷰들도 인정합니다.</p>
           <table class="data-table">
-            <thead><tr><th>Quality</th><th>?섎?</th><th>異붽? ?곌뎄???곹뼢</th></tr></thead>
+            <thead><tr><th>Quality</th><th>의미</th><th>추가 연구의 영향</th></tr></thead>
             <tbody>
-              <tr><td>?윟 High</td><td>?④낵 異붿젙??留ㅼ슦 ?뺤떊</td><td>異붽? RCT媛 異붿젙??諛붽? 媛?μ꽦 留ㅼ슦 ??쓬</td></tr>
-              <tr><td>?윞 Moderate</td><td>?④낵 異붿젙???곷떦???뺤떊</td><td>異붽? ?곌뎄媛 異붿젙??蹂寃쏀븷 媛?μ꽦 ?덉쓬</td></tr>
-              <tr><td>?윝 Low</td><td>?④낵 異붿젙???쒗븳???뺤떊</td><td>異붽? ?곌뎄媛 異붿젙??蹂寃쏀븷 媛?μ꽦 ??/td></tr>
-              <tr><td>?뵶 Very Low</td><td>?④낵 異붿젙??留ㅼ슦 ?쒗븳???뺤떊</td><td>?대뼡 ?④낵 異붿젙??留ㅼ슦 遺덊솗??/td></tr>
+              <tr><td>🟢 High</td><td>효과 추정에 매우 확신</td><td>추가 RCT가 추정을 바꿀 가능성 매우 낮음</td></tr>
+              <tr><td>🟡 Moderate</td><td>효과 추정에 적당히 확신</td><td>추가 연구가 추정을 변경할 가능성 있음</td></tr>
+              <tr><td>🟠 Low</td><td>효과 추정에 제한적 확신</td><td>추가 연구가 추정을 변경할 가능성 큼</td></tr>
+              <tr><td>🔴 Very Low</td><td>효과 추정에 매우 제한적 확신</td><td>어떤 효과 추정도 매우 불확실</td></tr>
             </tbody>
           </table>
         </details>
 
         <details class="concept-block">
-          <summary><strong>2. Cochrane Systematic Reviews ??Diversified/SMT ?듭떖 4??/strong></summary>
+          <summary><strong>2. Cochrane Systematic Reviews — Diversified/SMT 핵심 4편</strong></summary>
           <ul>
-            <li><strong>?윞 Rubinstein 2012/2019 ??留뚯꽦 ?뷀넻 SMT (Cochrane)</strong>: 47 RCT, 9,211紐? SMT???ㅻⅨ 沅뚯옣 移섎즺(?대룞쨌CBT)? ?좎궗???㉱룹쨷湲??④낵 (NPRS ?됯퇏 -1?? MCID 蹂대떎 ?묒쓬). <em>"SMT???ㅻⅨ 沅뚯옣 移섎즺?????以??섎굹"</em></li>
-            <li><strong>?윟 Paige 2017 ??湲됱꽦 ?뷀넻 SMT (JAMA)</strong>: 26 RCT, 1,711紐? SMT 諛쏆? 援곗씠 NPRS 1二쇱감 -1.0?? ?듭쬆 媛쒖꽑 25??0% ?곗썡. 遺?묒슜 50??7% transient muscle soreness, ?ш컖 遺?묒슜 ?놁쓬. <em>"SMT??modest benefit"</em></li>
-            <li><strong>?윞 Gross 2015 ??寃쎌텛??SMT (Cochrane)</strong>: 51 RCT. SMT???④린?곸쑝濡?mobilization怨??숇벑 ?④낵. <em>"SMT??異붽? 媛移섎뒗 mobilization ?鍮?紐낇솗?섏? ?딆쓬"</em> ???섏옄 ?좏샇쨌?좎옄 ?숇젴?꾩뿉 ?곕씪 ?좏깮</li>
-            <li><strong>?윞 Chaibi 2019 ??留뚯꽦 ?먰넻 (Cochrane)</strong>: 8 RCT. Cervicogenic headache?먯꽌 attack frequency 媛먯냼 (low-quality evidence). <em>"寃곗젙??沅뚯옣 ?대젮?. ?곸? 遺?묒슜쨌?섏옄 ?좏샇 怨좊젮???좏깮???ъ슜 媛??</em></li>
+            <li><strong>🟡 Rubinstein 2012/2019 — 만성 요통 SMT (Cochrane)</strong>: 47 RCT, 9,211명. SMT는 다른 권장 치료(운동·CBT)와 유사한 단·중기 효과 (NPRS 평균 -1점, MCID 보다 작음). <em>"SMT는 다른 권장 치료의 대안 중 하나"</em></li>
+            <li><strong>🟢 Paige 2017 — 급성 요통 SMT (JAMA)</strong>: 26 RCT, 1,711명. SMT 받은 군이 NPRS 1주차 -1.0점, 통증 개선 25–30% 우월. 부작용 50–67% transient muscle soreness, 심각 부작용 없음. <em>"SMT는 modest benefit"</em></li>
+            <li><strong>🟡 Gross 2015 — 경추통 SMT (Cochrane)</strong>: 51 RCT. SMT는 단기적으로 mobilization과 동등 효과. <em>"SMT의 추가 가치는 mobilization 대비 명확하지 않음"</em> — 환자 선호·술자 숙련도에 따라 선택</li>
+            <li><strong>🟡 Chaibi 2019 — 만성 두통 (Cochrane)</strong>: 8 RCT. Cervicogenic headache에서 attack frequency 감소 (low-quality evidence). <em>"결정적 권장 어려움. 적은 부작용·환자 선호 고려해 선택적 사용 가능"</em></li>
           </ul>
-          <p class="callout callout-info"><strong>理쒖떊 ?먮쫫 (2020??025).</strong> Foster N et al. Lancet 2021? stratified care + 鍮꾩빟臾??곗꽑 ?⑤윭?ㅼ엫?먯꽌 SMT ?듯빀??沅뚯옣. Coulter ID et al. Spine 2023? chiropractic 耳?닿? ?묐갑 ?쇰컲吏꾨즺 ?鍮?cost-effective. Bialosky JE 2025??neurophysiologic + biomechanical ?듯빀 ?묒슜 湲곗쟾 紐⑤뜽???쒖떆?덉뒿?덈떎.</p>
+          <p class="callout callout-info"><strong>최신 흐름 (2020–2025).</strong> Foster N et al. Lancet 2021은 stratified care + 비약물 우선 패러다임에서 SMT 통합을 권장. Coulter ID et al. Spine 2023은 chiropractic 케어가 양방 일반진료 대비 cost-effective. Bialosky JE 2025는 neurophysiologic + biomechanical 통합 작용 기전 모델을 제시했습니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>3. ?꾩긽 ?꾨줈?좎퐳 ???뷀넻 쨌 寃쎌텛??쨌 ?먰넻</strong></summary>
-          <h5>湲됱꽦 ?뷀넻 (&lt; 6二?</h5>
+          <summary><strong>3. 임상 프로토콜 — 요통 · 경추통 · 두통</strong></summary>
+          <h5>급성 요통 (&lt; 6주)</h5>
           <ul>
-            <li>1二쇱감: Diversified 횞 2????(寃⑹씪). Side posture ?遺遺? L4?? ?먮뒗 L5?밪1 mobilization. Low force ?쒖옉 ???섏옄 諛섏쓳 ?뺤씤</li>
-            <li>2二쇱감: Diversified 횞 1????+ ?대룞 (McKenzie 쨌 core stabilization)</li>
-            <li>4??二???<strong>50% ?듭쬆 媛먯냼</strong>媛 紐⑺몴. ?몄쟾 ?놁쓬 ??MRI 쨌 ?꾨Ц???섎ː</li>
+            <li>1주차: Diversified × 2–3회 (격일). Side posture 대부분. L4–5 또는 L5–S1 mobilization. Low force 시작 → 환자 반응 확인</li>
+            <li>2주차: Diversified × 1–2회 + 운동 (McKenzie · core stabilization)</li>
+            <li>4–6주 내 <strong>50% 통증 감소</strong>가 목표. 호전 없음 → MRI · 전문의 의뢰</li>
           </ul>
-          <h5>留뚯꽦 ?뷀넻 (&gt; 12二?</h5>
+          <h5>만성 요통 (&gt; 12주)</h5>
           <ul>
-            <li>Diversified ?⑤룆 ?④낵 ?쒗븳????<strong>蹂묓뻾 ?꾩닔</strong></li>
-            <li>Diversified 횞 1/二?횞 4??二?+ Core stability + Education + CBT 怨좊젮</li>
-            <li><strong>STarT Back Tool</strong>濡?留뚯꽦???꾪뿕 遺꾨쪟 ??High risk (psychosocial 2???댁긽)??CBT ?곗꽑, Diversified??遺?섏쟻</li>
+            <li>Diversified 단독 효과 제한적 → <strong>병행 필수</strong></li>
+            <li>Diversified × 1/주 × 4–6주 + Core stability + Education + CBT 고려</li>
+            <li><strong>STarT Back Tool</strong>로 만성화 위험 분류 — High risk (psychosocial 2점 이상)는 CBT 우선, Diversified는 부수적</li>
           </ul>
-          <h5>寃쎌텛??+ Cervicogenic headache</h5>
+          <h5>경추통 + Cervicogenic headache</h5>
           <ul>
-            <li>二?2????횞 2二???二?1????횞 4二????ы룊媛</li>
-            <li>Mobilization怨??④낵 ?숇벑 ???섏옄 ?좏샇 ?곕씪 ?좏깮</li>
-            <li>Tension-type headache??Limited evidence ??媛쒕퀎???쒕룄</li>
+            <li>주 2–3회 × 2주 → 주 1–2회 × 4주 → 재평가</li>
+            <li>Mobilization과 효과 동등 — 환자 선호 따라 선택</li>
+            <li>Tension-type headache는 Limited evidence — 개별화 시도</li>
           </ul>
-          <p class="callout callout-warn"><strong>MCID 湲곗? ?ы룊媛.</strong> NPRS 2??媛먯냼, ODI 10??媛먯냼, NDI 7??媛먯냼瑜?紐⑺몴濡?留?4二쇰쭏???ы룊媛. ?꾨떖 紐??섎㈃ 移섎즺 ?꾨왂 ?ш퀬?⑸땲??</p>
+          <p class="callout callout-warn"><strong>MCID 기준 재평가.</strong> NPRS 2점 감소, ODI 10점 감소, NDI 7점 감소를 목표로 매 4주마다 재평가. 도달 못 하면 치료 전략 재고합니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>4. VAD ?덉쟾 ??Cassidy 2008 쨌 Church 2016</strong></summary>
-          <p><strong>VAD (Vertebral Artery Dissection)</strong>??移댁씠濡쒗봽?숉떛怨?愿?⑦빐 媛???곕젮?섎뒗 ?⑸퀝利앹엯?덈떎. ?듭떖 洹쇨굅:</p>
+          <summary><strong>4. VAD 안전 — Cassidy 2008 · Church 2016</strong></summary>
+          <p><strong>VAD (Vertebral Artery Dissection)</strong>는 카이로프랙틱과 관련해 가장 우려되는 합병증입니다. 핵심 근거:</p>
           <ul>
-            <li><strong>Cassidy JD et al. 2008 Spine</strong> (case-crossover, 818嫄? ??移댁씠濡쒗봽?숉떛 耳?댁? ?쇰컲??吏꾨즺 紐⑤몢 VBA stroke ?꾪뿕怨?<strong>鍮꾩듂???섏????곌???/strong>??蹂댁엫. ?멸낵愿怨꾧? ?꾨땶 prodromal symptom (紐??듭쬆쨌?먰넻) ?④퀎?먯꽌 ?묒そ 吏꾨즺瑜?紐⑤몢 李얜뒗 ?⑦꽩?쇰줈 ?댁꽍</li>
-            <li><strong>Church EW et al. 2016 systematic review</strong> ???덈? ?꾪뿕 異붿젙: <strong>1:5.85 million</strong> 寃쎌텛 SMT ?쒖닠??1嫄? ?멸낵愿怨꾨뒗 ?낆쬆?섏? ?딆븯怨??뺤꽦??沅뚭퀬: prodrome ?됯? + ?몄긽 ???좎쨷</li>
-            <li>Kosloff TM 2015 Mil Med ??Medicare ?곗씠??遺꾩꽍: SMT ??VAD 諛쒖깮瑜??뚯꽦 ?議곌뎔怨??좎쓽李??놁쓬</li>
+            <li><strong>Cassidy JD et al. 2008 Spine</strong> (case-crossover, 818건) — 카이로프랙틱 케어와 일반의 진료 모두 VBA stroke 위험과 <strong>비슷한 수준의 연관성</strong>을 보임. 인과관계가 아닌 prodromal symptom (목 통증·두통) 단계에서 양쪽 진료를 모두 찾는 패턴으로 해석</li>
+            <li><strong>Church EW et al. 2016 systematic review</strong> — 절대 위험 추정: <strong>1:5.85 million</strong> 경추 SMT 시술당 1건. 인과관계는 입증되지 않았고 정성적 권고: prodrome 평가 + 외상 후 신중</li>
+            <li>Kosloff TM 2015 Mil Med — Medicare 데이터 분석: SMT 후 VAD 발생률 음성 대조군과 유의차 없음</li>
           </ul>
-          <p class="callout callout-info"><strong>?꾩긽 ?섏궗寃곗젙.</strong> ?덈? ?꾪뿕? 留ㅼ슦 ???留? prodrome ?됯?(?몄긽?Β톞hunderclap headache쨌5Ds/3Ns)????긽 ?쒗뻾?⑸땲?? ?섏떖?ㅻ윭?곕㈃ 寃쎌텛 HVLA ???mobilization ?먮뒗 ?섎ː瑜??좏깮?⑸땲?? ?섏옄 ?숈쓽 ?쒖뿉???꾪뿕쨌?댁씡??紐낆떆?곸쑝濡??ㅻ챸?⑸땲??</p>
+          <p class="callout callout-info"><strong>임상 의사결정.</strong> 절대 위험은 매우 낮지만, prodrome 평가(외상력·thunderclap headache·5Ds/3Ns)는 항상 시행합니다. 의심스러우면 경추 HVLA 대신 mobilization 또는 의뢰를 선택합니다. 환자 동의 시에도 위험·이익을 명시적으로 설명합니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>5. ?덈? 湲덇린 쨌 ?곷? 湲덇린 泥댄겕由ъ뒪??/strong></summary>
-          <h5>?뵶 ?덈? 湲덇린 (Absolute)</h5>
+          <summary><strong>5. 절대 금기 · 상대 금기 체크리스트</strong></summary>
+          <h5>🔴 절대 금기 (Absolute)</h5>
           <ul>
-            <li><strong>留덈?利앺썑援?/strong> (Cauda equina syndrome) ???묎툒 ?섏닠</li>
-            <li><strong>泥숈닔 ?뺣컯 利앹긽</strong> (吏꾪뻾??洹쇰젰 ?쏀솕, 蹂묒쟻 諛섏궗)</li>
-            <li><strong>泥숈텛 媛먯뿼 쨌 醫낆뼇 쨌 湲됱꽦 怨⑥젅</strong></li>
-            <li><strong>?덇? 諛뺣━ ?섏떖</strong> (理쒓렐 ?몄긽 ??寃쎌텛 利앹긽, ?댁???</li>
-            <li><strong>RA 쨌 Down syndrome 쨌 媛뺤쭅泥숈텛??/strong> ???섏텞愿??遺덉븞?뺤꽦 (寃쎌텛)</li>
-            <li>?섏옄 ?숈쓽 ?놁쓬</li>
+            <li><strong>마미증후군</strong> (Cauda equina syndrome) — 응급 수술</li>
+            <li><strong>척수 압박 증상</strong> (진행성 근력 약화, 병적 반사)</li>
+            <li><strong>척추 감염 · 종양 · 급성 골절</strong></li>
+            <li><strong>혈관 박리 의심</strong> (최근 외상 후 경추 증상, 어지럼)</li>
+            <li><strong>RA · Down syndrome · 강직척추염</strong> — 환축관절 불안정성 (경추)</li>
+            <li>환자 동의 없음</li>
           </ul>
-          <h5>?윞 ?곷? 湲덇린 (Relative)</h5>
+          <h5>🟡 상대 금기 (Relative)</h5>
           <ul>
-            <li>以묒쬆 怨⑤떎怨듭쬆 (T-score &lt; -2.5)</li>
-            <li>?κ린 ?ㅽ뀒濡쒖씠??蹂듭슜</li>
-            <li>??쓳怨좎젣 移섎즺 以?(Warfarin 쨌 DOAC)</li>
-            <li>泥숈텛愿 ?묒갑利???寃쏀븳 寃쎌슦 媛?? 以묒쬆? ?뚰뵾</li>
-            <li>泥숈닔 利앹긽 ?녿뒗 ?붿뒪???덉텧 ??Cox flexion-distraction ?좏샇</li>
-            <li>怨좊졊 (&gt; 75?? ??媛쒕퀎 ?됯?, low-force 蹂??/li>
-            <li>?꾩떊 ??side posture + 怨⑤컲 荑좎뀡 媛?? 蹂듬? ?뺣컯 ?뚰뵾</li>
+            <li>중증 골다공증 (T-score &lt; -2.5)</li>
+            <li>장기 스테로이드 복용</li>
+            <li>항응고제 치료 중 (Warfarin · DOAC)</li>
+            <li>척추관 협착증 — 경한 경우 가능, 중증은 회피</li>
+            <li>척수 증상 없는 디스크 탈출 — Cox flexion-distraction 선호</li>
+            <li>고령 (&gt; 75세) — 개별 평가, low-force 변형</li>
+            <li>임신 — side posture + 골반 쿠션 가능, 복부 압박 회피</li>
           </ul>
         </details>
 
         <details class="concept-block">
-          <summary><strong>6. Post-adjustment Soreness ???섏옄 ?ㅻ챸</strong></summary>
-          <p><strong>鍮덈룄</strong>: 30??0% ?섏옄媛 ?쒖닠 ??24??8?쒓컙 ??transient muscle soreness 寃쏀뿕 (Paige 2017 JAMA). ?遺遺?24?쒓컙 ???댁냼, 72?쒓컙 珥덇낵 吏?띿? ?쒕춦?덈떎.</p>
-          <p><strong>?ъ쟾 ?ㅻ챸 沅뚯옣 臾멸뎄</strong>: <em>"?쒖닠 ??1???쇨컙 媛踰쇱슫 洹쇱쑁?듭씠??六먭렐?⑥씠 ?덉쓣 ???덉뒿?덈떎. ?대룞 ??洹쇱쑁?듦낵 鍮꾩듂???묒긽?대ŉ, 蹂댄넻 24??8?쒓컙 ???댁냼?⑸땲?? 洹??댁긽 吏?띾릺嫄곕굹 ?덈줈???좉꼍??利앹긽(?由셋룰렐???쏀솕)???앷린硫?利됱떆 ?뚮젮 二쇱꽭??"</em></p>
-          <p>?ш컖 遺?묒슜(VAD쨌怨⑥젅쨌?좉꼍 ?먯긽)? 留ㅼ슦 ?쒕Ъ吏留? ?덈? ?꾪뿕 0? ?꾨떃?덈떎. <strong>shared decision making</strong>???듭떖? ?섏옄媛 ?꾪뿕쨌?댁씡???댄빐???곹깭?먯꽌 ?좏깮?섎뒗 寃껋엯?덈떎.</p>
+          <summary><strong>6. Post-adjustment Soreness — 환자 설명</strong></summary>
+          <p><strong>빈도</strong>: 30–50% 환자가 시술 후 24–48시간 내 transient muscle soreness 경험 (Paige 2017 JAMA). 대부분 24시간 내 해소, 72시간 초과 지속은 드뭅니다.</p>
+          <p><strong>사전 설명 권장 문구</strong>: <em>"시술 후 1–2일간 가벼운 근육통이나 뻐근함이 있을 수 있습니다. 운동 후 근육통과 비슷한 양상이며, 보통 24–48시간 내 해소됩니다. 그 이상 지속되거나 새로운 신경학 증상(저림·근력 약화)이 생기면 즉시 알려 주세요."</em></p>
+          <p>심각 부작용(VAD·골절·신경 손상)은 매우 드물지만, 절대 위험 0은 아닙니다. <strong>shared decision making</strong>의 핵심은 환자가 위험·이익을 이해한 상태에서 선택하는 것입니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>7. ?ㅽ븰???묒쭊 쨌 ?쒓뎅 湲됱뿬 留λ씫</strong></summary>
-          <p><strong>?쒓뎅 ?몃옒 ?뚰겕?뚮줈</strong> (?뺥삎?멸낵쨌?ы솢?섑븰怨?湲곗?):</p>
+          <summary><strong>7. 다학제 협진 · 한국 급여 맥락</strong></summary>
+          <p><strong>한국 외래 워크플로</strong> (정형외과·재활의학과 기준):</p>
           <ul>
-            <li>1李? 吏꾨떒(MD) ???곸긽쨌?좉꼍 寃??쨌 Red Flag 諛곗젣</li>
-            <li>2李? ?꾩닔移섎즺(MD 吏곸젒 ?먮뒗 ?덈젴??PT) ??蹂?梨뺥꽣 Diversified</li>
-            <li>3李? ?대룞?ы솢(PT) ??McKenzie 쨌 core stabilization 蹂묓뻾</li>
-            <li>4李? ?쎈Ъ쨌二쇱궗쨌?섏닠 ??蹂댁〈 移섎즺 ?ㅽ뙣 ??/li>
+            <li>1차: 진단(MD) — 영상·신경 검사 · Red Flag 배제</li>
+            <li>2차: 도수치료(MD 직접 또는 훈련된 PT) — 본 챕터 Diversified</li>
+            <li>3차: 운동재활(PT) — McKenzie · core stabilization 병행</li>
+            <li>4차: 약물·주사·수술 — 보존 치료 실패 시</li>
           </ul>
-          <p><strong>?쒓뎅 ?꾩닔移섎즺 ?섍? (2026 湲곗?)</strong>: ?섏썝湲됀룸퀝?먭툒 鍮꾧툒?? ?뚮떦 5??5留???踰붿쐞. ?섏옄 遺?댁쓣 怨좊젮??6????肄붿뒪濡??⑦궎吏 ?댁쁺???쇰컲?곸엯?덈떎. ?ㅼ넀蹂댄뿕 媛?낆옄???듭썝?섎즺鍮??쎄? ?뺤씤???꾩슂?⑸땲??</p>
-          <p class="callout callout-info"><strong>硫댄뿀쨌湲곕쾿蹂대떎 洹쇨굅쨌?덉쟾.</strong> ?쒓뎅 ?섎즺 ?꾩떎?먯꽌????紐낆쓽 ?섏궗(?뱁엳 ?뺥삎?멸낵쨌?ы솢?섑븰怨?媛 吏꾨떒 + HVLA + ?대룞泥섎갑???듯빀 ?섑뻾?섍굅?? ?꾩닔移섎즺 ?덈젴??PT媛 湲곌퀎???듭쬆??愿由ы븯??寃쎌슦媛 留롮뒿?덈떎. 以묒슂??寃껋? 洹쇨굅? ?덉쟾?댁? 硫댄뿀 ?좏삎 ?먯껜媛 ?꾨떃?덈떎.</p>
+          <p><strong>한국 도수치료 수가 (2026 기준)</strong>: 의원급·병원급 비급여. 회당 5–15만 원 범위. 환자 부담을 고려해 6–8회 코스로 패키지 운영이 일반적입니다. 실손보험 가입자는 통원의료비 약관 확인이 필요합니다.</p>
+          <p class="callout callout-info"><strong>면허·기법보다 근거·안전.</strong> 한국 의료 현실에서는 한 명의 의사(특히 정형외과·재활의학과)가 진단 + HVLA + 운동처방을 통합 수행하거나, 도수치료 훈련된 PT가 기계적 통증을 관리하는 경우가 많습니다. 중요한 것은 근거와 안전이지 면허 유형 자체가 아닙니다.</p>
         </details>
 
         <details class="concept-block">
-          <summary><strong>8. 洹쇨굅 ?녿뒗 二쇱옣 ???섏옄쨌?숇즺 援먯쑁</strong></summary>
-          <p>?ㅼ쓬 二쇱옣? systematic review 寃곌낵 洹쇨굅媛 ?녾굅??遺?뺤쟻 寃곕줎???섏? ?덉뼱, 蹂?梨뺥꽣?먯꽌??沅뚯옣?섏? ?딆뒿?덈떎.</p>
+          <summary><strong>8. 근거 없는 주장 — 환자·동료 교육</strong></summary>
+          <p>다음 주장은 systematic review 결과 근거가 없거나 부정적 결론이 나와 있어, 본 챕터에서는 권장되지 않습니다.</p>
           <ul>
-            <li>"移댁씠濡쒗봽?숉떛 援먯젙??怨좏삁?뺤쓣 移섎즺?쒕떎" (Cochrane 2013 ??no reliable evidence)</li>
-            <li>"援먯젙???뚯븘 泥쒖떇??媛쒖꽑?쒕떎" (Cochrane 2005 ??no evidence)</li>
-            <li>"援먯젙???붽꼍?돠룹냼?붾텋?됀룹빞?⑥쬆??移섎즺?쒕떎" (洹쇨굅 遺??</li>
-            <li>"援먯젙??硫댁뿭怨꾨? 媛뺥솕?쒕떎" (洹쇨굅 遺??</li>
-            <li>"??踰덉쓽 ?곷?寃쎌텛 援먯젙???꾩떊 ?좉꼍怨꾨? ?ъ“?뺥븳?? (B.J. Palmer HIO 媛?????섑븰??洹쇨굅 ?놁쓬)</li>
-            <li>"援먯젙??ADHD쨌?먰룓쨌?숈뒿?μ븷瑜?媛쒖꽑?쒕떎" (洹쇨굅 遺??</li>
+            <li>"카이로프랙틱 교정이 고혈압을 치료한다" (Cochrane 2013 — no reliable evidence)</li>
+            <li>"교정이 소아 천식을 개선한다" (Cochrane 2005 — no evidence)</li>
+            <li>"교정이 월경통·소화불량·야뇨증을 치료한다" (근거 부재)</li>
+            <li>"교정이 면역계를 강화한다" (근거 부재)</li>
+            <li>"한 번의 상부경추 교정이 전신 신경계를 재조정한다" (B.J. Palmer HIO 가설 — 의학적 근거 없음)</li>
+            <li>"교정이 ADHD·자폐·학습장애를 개선한다" (근거 부재)</li>
           </ul>
-          <p class="callout callout-warn"><strong>?섏옄 援먯쑁 ??</strong> 洹쇨굅媛 ?녿떎怨??⑥젙?섍린蹂대떎, <em>"?꾩옱源뚯???systematic review?먯꽌?????곸쓳利앹뿉 ???洹쇨굅媛 異⑸텇移??딆뒿?덈떎. 蹂??쒖닠? 湲곌퀎??洹쇨낏寃??듭쬆??媛????留욌뒗 ?꾧뎄?낅땲??</em> ?쇨퀬 ?ㅻ챸?섎뒗 ?몄씠 ?섏옄 ?좊ː瑜??껋? ?딆쑝硫댁꽌???뺥솗?⑸땲??</p>
+          <p class="callout callout-warn"><strong>환자 교육 톤.</strong> 근거가 없다고 단정하기보다, <em>"현재까지의 systematic review에서는 이 적응증에 대한 근거가 충분치 않습니다. 본 시술은 기계적 근골격 통증에 가장 잘 맞는 도구입니다"</em> 라고 설명하는 편이 환자 신뢰를 잃지 않으면서도 정확합니다.</p>
         </details>
 
         <div class="week-resources">
-          <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week4_clinical_safety.md">?뱰 ?곸꽭 媛뺤쓽濡?/a>
-          <a class="resource-pill" href="./viewer.html?src=diversified/11_report_week4.md">?뱞 Report</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/07_slides_week4.pdf" download>?렣 PPTX</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/03_video_part2_week34.mp4">?렏 Video Part 2</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">?렒 Podcast</a>
+          <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week4_clinical_safety.md">📖 상세 강의록</a>
+          <a class="resource-pill" href="./viewer.html?src=diversified/11_report_week4.md">📄 Report</a>
+          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/07_slides_week4.pdf" download>🎴 PPTX</a>
+          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/03_video_part2_week34.mp4">🎥 Video Part 2</a>
+          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">🎧 Podcast</a>
         </div>
       </div>
     </section>
 
     <!-- ========== RESOURCES ========== -->
     <section id="resources">
-      <h2>媛뺤쓽 ?먮즺</h2>
-      <p class="section-lead"><strong>11/11</strong> ?먮즺 以鍮??꾨즺.</p>
-      <h3>?뱰 媛뺤쓽濡?/h3>
+      <h2>강의 자료</h2>
+      <p class="section-lead"><strong>11/11</strong> 자료 준비 완료.</p>
+      <h3>📖 강의록</h3>
       <div class="resource-row">
-        <a class="resource-link" href="./viewer.html?src=diversified/lecture/week1_history_foundations.md"><span class="icon">?뱰</span><span><strong>?곸꽭 媛뺤쓽濡?MD</strong> <span class="status-badge ready">??以鍮??꾨즺</span><br/><small>洹쇨굅 湲곕컲 쨌 李멸퀬臾명뿄</small></span></a>
+        <a class="resource-link" href="./viewer.html?src=diversified/lecture/week1_history_foundations.md"><span class="icon">📖</span><span><strong>상세 강의록 MD</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>근거 기반 · 참고문헌</small></span></a>
       </div>
-      <h3>?렒 ?잛틦?ㅽ듃 (v3 ??遺?쒕윭???꾨Ц媛 ??4遺??쨌 ?몄떇濡좎쟻 寃몄넀 + EBM)</h3>
-      <p class="section-lead" style="margin:0 0 0.8rem;">???꾨Ц媛(?뺥삎?멸낵?샕룸룄?섏튂猷?PT)??遺?쒕윭???숈닠 ?쇰뵒????? 媛???15遺?쨌 ?쒓뎅?? "?⑥젙? ?쇳븯?? 諛⑸쾿? 怨쇳븰?곸쑝濡?" ?몄떇濡좎쟻 寃몄넀??諛뷀깢?쇰줈 ??鍮꾪뙋??寃?좎? EBM 諛⑸쾿濡?</p>
+      <h3>🎧 팟캐스트 (v3 — 부드러운 전문가 톤 4부작 · 인식론적 겸손 + EBM)</h3>
+      <p class="section-lead" style="margin:0 0 0.8rem;">두 전문가(정형외과의·도수치료 PT)의 부드러운 학술 라디오 대화. 각 약 15분 · 한국어. "단정은 피하되, 방법은 과학적으로." 인식론적 겸손을 바탕으로 한 비판적 검토와 EBM 방법론.</p>
       <div class="resource-row">
-        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/podcasts_v3/01_episode1_history.m4a?v=20260603a"><span class="icon">?렒</span><span><strong>Ep 1 쨌 ?ㅼ씠踰꾩떆?뚯씠?쒕씪???대쫫???섎? ??Palmer 媛臾몄뿉???꾨? ?쒖?源뚯?</strong> <span class="status-badge ready">??NEW</span><br/><small>D.D./B.J. Palmer 쨌 Reinert쨌Janse 怨꾨낫 쨌 ?쒓뎅 ?꾩닔移섎즺 ?묒젏</small></span></a>
-        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/podcasts_v3/02_episode2_palpation.m4a?v=20260603a"><span class="icon">?렒</span><span><strong>Ep 2 쨌 Motion Palpation ???먭????앹쓽 ?꾩긽 ?좉꼍??/strong> <span class="status-badge ready">??NEW</span><br/><small>18 listing 쨌 觀 ?좊ː??쨌 Stochkendahl 2006 쨌 ?쒓뎅 ?몃옒 ?듯빀</small></span></a>
-        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/podcasts_v3/03_episode3_hvla.m4a?v=20260603a"><span class="icon">?렒</span><span><strong>Ep 3 쨌 HVLA ??踰덉씠 ?좉꼍怨꾩뿉 ?④린???붿쟻</strong> <span class="status-badge ready">??NEW</span><br/><small>Pickar 2002 쨌 Haavik 2017 쨌 Cavitation 쨌 Rubinstein Cochrane</small></span></a>
-        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/podcasts_v3/04_episode4_safety.m4a?v=20260603a"><span class="icon">?렒</span><span><strong>Ep 4 쨌 ?④낵? ?꾪뿕 ?ъ씠 ??VAD瑜??뺤쨷??留덉＜?섍린</strong> <span class="status-badge ready">??NEW</span><br/><small>Cassidy 2008 쨌 Church 2016 쨌 5D's 3N's 쨌 ?덉쟾 ?꾨줈?좎퐳</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/podcasts_v3/01_episode1_history.m4a?v=20260603a"><span class="icon">🎧</span><span><strong>Ep 1 · 다이버시파이드라는 이름의 의미 — Palmer 가문에서 현대 표준까지</strong> <span class="status-badge ready">✅ NEW</span><br/><small>D.D./B.J. Palmer · Reinert·Janse 계보 · 한국 도수치료 접점</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/podcasts_v3/02_episode2_palpation.m4a?v=20260603a"><span class="icon">🎧</span><span><strong>Ep 2 · Motion Palpation — 손가락 끝의 임상 신경학</strong> <span class="status-badge ready">✅ NEW</span><br/><small>18 listing · κ 신뢰도 · Stochkendahl 2006 · 한국 외래 통합</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/podcasts_v3/03_episode3_hvla.m4a?v=20260603a"><span class="icon">🎧</span><span><strong>Ep 3 · HVLA 한 번이 신경계에 남기는 흔적</strong> <span class="status-badge ready">✅ NEW</span><br/><small>Pickar 2002 · Haavik 2017 · Cavitation · Rubinstein Cochrane</small></span></a>
+        <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/podcasts_v3/04_episode4_safety.m4a?v=20260603a"><span class="icon">🎧</span><span><strong>Ep 4 · 효과와 위험 사이 — VAD를 정중히 마주하기</strong> <span class="status-badge ready">✅ NEW</span><br/><small>Cassidy 2008 · Church 2016 · 5D's 3N's · 안전 프로토콜</small></span></a>
       </div>
       <details style="margin-top:0.8rem;">
-        <summary style="cursor:pointer; color:var(--c-text-muted); font-size:0.9em;">?뱴 ?댁쟾 踰꾩쟾 ?잛틦?ㅽ듃 (Reference 쨌 ???뺣━ ??</summary>
+        <summary style="cursor:pointer; color:var(--c-text-muted); font-size:0.9em;">📚 이전 버전 팟캐스트 (Reference · 톤 정리 전)</summary>
         <div class="resource-row" style="margin-top:0.5rem;">
-          <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a"><span class="icon">?뱴</span><span><strong>Deep Dive 60遺? (援щ쾭??</strong> <span class="status-badge" style="background:#e5e5ea;color:#666;">Reference</span><br/><small>4二쇱감 ?듯빀 ?ъ링 쨌 ???뺣━ ?댁쟾 踰꾩쟾</small></span></a>
+          <a class="resource-link" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a"><span class="icon">📚</span><span><strong>Deep Dive 60분+ (구버전)</strong> <span class="status-badge" style="background:#e5e5ea;color:#666;">Reference</span><br/><small>4주차 통합 심층 · 톤 정리 이전 버전</small></span></a>
         </div>
       </details>
-      <h3>?렏 AI ?숈쁺??/h3>
+      <h3>🎥 AI 동영상</h3>
       <div class="resource-row">
-        <a class="resource-link" href="./diversified/02_video_part1_week12.mp4"><span class="icon">?렏</span><span><strong>Part 1 (?대줎)</strong> <span class="status-badge ready">??以鍮??꾨즺</span><br/><small>?붿씠?몃낫??explainer</small></span></a>
-        <a class="resource-link" href="./diversified/03_video_part2_week34.mp4"><span class="icon">?렏</span><span><strong>Part 2 (?꾩긽쨌鍮꾪뙋)</strong> <span class="status-badge ready">??以鍮??꾨즺</span><br/><small>?붿씠?몃낫??explainer</small></span></a>
+        <a class="resource-link" href="./diversified/02_video_part1_week12.mp4"><span class="icon">🎥</span><span><strong>Part 1 (이론)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
+        <a class="resource-link" href="./diversified/03_video_part2_week34.mp4"><span class="icon">🎥</span><span><strong>Part 2 (임상·비판)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
       </div>
-      <h3>?렣 PPTX ?щ씪?대뱶 (4媛?횞 15??</h3>
+      <h3>🎴 PPTX 슬라이드 (4개 × 15장)</h3>
       <div class="resource-row">
-        <a class="resource-link" href="./diversified/04_slides_week1.pdf"><span class="icon">?렣</span><span><strong>Part 1 쨌 湲곗큹</strong> <span class="status-badge ready">??以鍮??꾨즺</span><br/><small>15??/small></span></a>
-        <a class="resource-link" href="./diversified/05_slides_week2.pdf"><span class="icon">?렣</span><span><strong>Part 2 쨌 Aff/Def/Eff</strong> <span class="status-badge ready">??以鍮??꾨즺</span><br/><small>15??/small></span></a>
-        <a class="resource-link" href="./diversified/06_slides_week3.pdf"><span class="icon">?렣</span><span><strong>Part 3 쨌 Assessment</strong> <span class="status-badge ready">??以鍮??꾨즺</span><br/><small>15??/small></span></a>
-        <a class="resource-link" href="./diversified/07_slides_week4.pdf"><span class="icon">?렣</span><span><strong>Part 4 쨌 ?꾩긽쨌鍮꾪뙋</strong> <span class="status-badge ready">??以鍮??꾨즺</span><br/><small>15??/small></span></a>
+        <a class="resource-link" href="./diversified/04_slides_week1.pdf"><span class="icon">🎴</span><span><strong>Part 1 · 기초</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./diversified/05_slides_week2.pdf"><span class="icon">🎴</span><span><strong>Part 2 · Aff/Def/Eff</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./diversified/06_slides_week3.pdf"><span class="icon">🎴</span><span><strong>Part 3 · Assessment</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
+        <a class="resource-link" href="./diversified/07_slides_week4.pdf"><span class="icon">🎴</span><span><strong>Part 4 · 임상·비판</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>15장</small></span></a>
       </div>
-      <h3>?뱞 Report Markdown</h3>
+      <h3>📄 Report Markdown</h3>
       <div class="resource-row">
-        <a class="resource-link" href="./viewer.html?src=diversified/08_report_week1.md"><span class="icon">?뱞</span><span><strong>Report 1/4</strong> <span class="status-badge ready">??以鍮??꾨즺</span><br/><small>NotebookLM ?먮룞 ?앹꽦</small></span></a>
-        <a class="resource-link" href="./viewer.html?src=diversified/09_report_week2.md"><span class="icon">?뱞</span><span><strong>Report 2/4</strong> <span class="status-badge ready">??以鍮??꾨즺</span><br/><small>NotebookLM ?먮룞 ?앹꽦</small></span></a>
-        <a class="resource-link" href="./viewer.html?src=diversified/10_report_week3.md"><span class="icon">?뱞</span><span><strong>Report 3/4</strong> <span class="status-badge ready">??以鍮??꾨즺</span><br/><small>NotebookLM ?먮룞 ?앹꽦</small></span></a>
-        <a class="resource-link" href="./viewer.html?src=diversified/11_report_week4.md"><span class="icon">?뱞</span><span><strong>Report 4/4</strong> <span class="status-badge ready">??以鍮??꾨즺</span><br/><small>NotebookLM ?먮룞 ?앹꽦</small></span></a>
+        <a class="resource-link" href="./viewer.html?src=diversified/08_report_week1.md"><span class="icon">📄</span><span><strong>Report 1/4</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>NotebookLM 자동 생성</small></span></a>
+        <a class="resource-link" href="./viewer.html?src=diversified/09_report_week2.md"><span class="icon">📄</span><span><strong>Report 2/4</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>NotebookLM 자동 생성</small></span></a>
+        <a class="resource-link" href="./viewer.html?src=diversified/10_report_week3.md"><span class="icon">📄</span><span><strong>Report 3/4</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>NotebookLM 자동 생성</small></span></a>
+        <a class="resource-link" href="./viewer.html?src=diversified/11_report_week4.md"><span class="icon">📄</span><span><strong>Report 4/4</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>NotebookLM 자동 생성</small></span></a>
       </div>
-      <p style="margin-top:1rem">NotebookLM ?명듃遺? <a href="https://notebooklm.google.com/notebook/291e66c6-c8b5-4de0-9ef9-f3bab92ac4ff" target="_blank" rel="noopener">?닿린 ??/a></p>
+      <p style="margin-top:1rem">NotebookLM 노트북: <a href="https://notebooklm.google.com/notebook/291e66c6-c8b5-4de0-9ef9-f3bab92ac4ff" target="_blank" rel="noopener">열기 →</a></p>
     </section>
 
-    <!-- ========== AI 媛뺤쓽 ?숈쁺??(?대? MP4 ?꾨쿋?? ========== -->
+    <!-- ========== AI 강의 동영상 (내부 MP4 임베드) ========== -->
     <section id="ai-videos">
-      <h2>媛뺤쓽 ?숈쁺??/h2>
-      <p class="section-lead">2遺??쨌 ?붿씠?몃낫??explainer ?뺤떇 쨌 ?쒓뎅???대젅?댁뀡 쨌 ?쒓뎅???먮쭑 吏??</p>
+      <h2>강의 동영상</h2>
+      <p class="section-lead">2부작 · 화이트보드 explainer 형식 · 한국어 내레이션 · 한국어 자막 지원.</p>
 
       <div class="video-player-grid">
 
@@ -1462,27 +1462,27 @@
             <track
               kind="subtitles"
               srclang="ko"
-              label="?쒓뎅??
+              label="한국어"
               src="./diversified/subtitles/video_part1_week12.ko.vtt"
               default />
-            ??釉뚮씪?곗????숈쁺???ъ깮??吏?먰븯吏 ?딆뒿?덈떎.
-            <a href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/02_video_part1_week12.mp4">MP4 吏곸젒 ?ㅼ슫濡쒕뱶</a>
+            이 브라우저는 동영상 재생을 지원하지 않습니다.
+            <a href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/02_video_part1_week12.mp4">MP4 직접 다운로드</a>
           </video>
           <figcaption>
-            <h4>?붾쾭?쒗뙆?대뱶 HVLA ???꾨컲遺 (Week 1-2)</h4>
+            <h4>디버시파이드 HVLA — 전반부 (Week 1-2)</h4>
             <div class="meta">
-              <span>?뺤쓽쨌?앹껜??븰쨌?됯?쨌吏꾨떒</span>
-              <span class="dot">쨌</span>
+              <span>정의·생체역학·평가·진단</span>
+              <span class="dot">·</span>
               <span>46 MB</span>
-              <span class="dot">쨌</span>
-              <span>?쒓뎅???대젅?댁뀡</span>
+              <span class="dot">·</span>
+              <span>한국어 내레이션</span>
             </div>
             <p>
-              愿???대룞踰붿쐞 4援ъ뿭 紐⑤뜽, Kawchuk 2015 Cavitation MRI, Motion Palpation ?좊ː??
-              VBAI ?ㅽ겕由щ떇???붿씠?몃낫???꾩떇?쇰줈 ?ㅻ챸?⑸땲??
+              관절 운동범위 4구역 모델, Kawchuk 2015 Cavitation MRI, Motion Palpation 신뢰도,
+              VBAI 스크리닝을 화이트보드 도식으로 설명합니다.
             </p>
             <span class="cc-notice">
-              ?뿋 ?쒓뎅???먮쭑 (placeholder) ???꾩껜 ?꾩궗??Whisper濡?異뷀썑 ?꾩꽦
+              🗒 한국어 자막 (placeholder) — 전체 전사는 Whisper로 추후 완성
             </span>
           </figcaption>
         </figure>
@@ -1497,27 +1497,27 @@
             <track
               kind="subtitles"
               srclang="ko"
-              label="?쒓뎅??
+              label="한국어"
               src="./diversified/subtitles/video_part2_week34.ko.vtt"
               default />
-            ??釉뚮씪?곗????숈쁺???ъ깮??吏?먰븯吏 ?딆뒿?덈떎.
-            <a href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/03_video_part2_week34.mp4">MP4 吏곸젒 ?ㅼ슫濡쒕뱶</a>
+            이 브라우저는 동영상 재생을 지원하지 않습니다.
+            <a href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/03_video_part2_week34.mp4">MP4 직접 다운로드</a>
           </video>
           <figcaption>
-            <h4>?붾쾭?쒗뙆?대뱶 HVLA ???꾨컲遺 (Week 3-4)</h4>
+            <h4>디버시파이드 HVLA — 후반부 (Week 3-4)</h4>
             <div class="meta">
-              <span>遺꾩젅蹂?援먯젙쨌洹쇨굅쨌?덉쟾쨌?듯빀</span>
-              <span class="dot">쨌</span>
+              <span>분절별 교정·근거·안전·통합</span>
+              <span class="dot">·</span>
               <span>39 MB</span>
-              <span class="dot">쨌</span>
-              <span>?쒓뎅???대젅?댁뀡</span>
+              <span class="dot">·</span>
+              <span>한국어 내레이션</span>
             </div>
             <p>
-              寃쎌텛쨌?됱텛쨌?붿텛쨌怨⑤컲쨌?ъ? 援먯젙 ?쒖뿰 ?ㅻ챸, Cochrane ?뷀넻쨌寃쎌텛??洹쇨굅, Cassidy 2008 VAD ?듦퀎,
-              ?덈?쨌?곷? 湲덇린 泥댄겕由ъ뒪?? ?쒓뎅 湲됱뿬 留λ씫???ㅻ９?덈떎.
+              경추·흉추·요추·골반·사지 교정 시연 설명, Cochrane 요통·경추통 근거, Cassidy 2008 VAD 통계,
+              절대·상대 금기 체크리스트, 한국 급여 맥락을 다룹니다.
             </p>
             <span class="cc-notice">
-              ?뿋 ?쒓뎅???먮쭑 (placeholder) ???꾩껜 ?꾩궗??Whisper濡?異뷀썑 ?꾩꽦
+              🗒 한국어 자막 (placeholder) — 전체 전사는 Whisper로 추후 완성
             </span>
           </figcaption>
         </figure>
@@ -1525,67 +1525,67 @@
       </div>
 
       <div class="callout callout-info">
-        <h4>?먮쭑 ?꾩꽦 怨꾪쉷</h4>
+        <h4>자막 완성 계획</h4>
         <p>
-          ?꾩옱 ?먮쭑 ?뚯씪? ?ㅽ봽????댄?留??ы븿??<strong>placeholder ?곹깭</strong>?낅땲??
-          NotebookLM???쒓뎅?대줈 ?대젅?댁뀡???먮낯??<strong>OpenAI Whisper large-v3</strong>濡??꾩궗 ??
-          ?섑븰 ?⑹뼱瑜?援먯젙??<code>./diversified/subtitles/*.ko.vtt</code>????뼱???덉젙?낅땲??
-          ?먮쭑 on/off???숈쁺???ъ깮湲??ㅻⅨ履??섎떒 <strong>CC 踰꾪듉</strong>?쇰줈 ?꾪솚 媛?ν빀?덈떎.
+          현재 자막 파일은 오프닝 타이틀만 포함된 <strong>placeholder 상태</strong>입니다.
+          NotebookLM이 한국어로 내레이션한 원본을 <strong>OpenAI Whisper large-v3</strong>로 전사 후
+          의학 용어를 교정해 <code>./diversified/subtitles/*.ko.vtt</code>에 덮어쓸 예정입니다.
+          자막 on/off는 동영상 재생기 오른쪽 하단 <strong>CC 버튼</strong>으로 전환 가능합니다.
         </p>
       </div>
     </section>
 
-    <!-- ========== 愿???몃? ?숈쁺??(YouTube) ========== -->
+    <!-- ========== 관련 외부 동영상 (YouTube) ========== -->
     <section id="videos">
-      <h2>愿???몃? ?숈쁺??(YouTube ?쒖뿰)</h2>
-      <p class="section-lead">NotebookLM Deep Research濡??좊퀎??????쒖뿰 ?곸긽 ??媛??곸긽? ?대떦 二쇱감 湲곕쾿怨??곌껐?⑸땲??</p>
+      <h2>관련 외부 동영상 (YouTube 시연)</h2>
+      <p class="section-lead">NotebookLM Deep Research로 선별된 대표 시연 영상 — 각 영상은 해당 주차 기법과 연결됩니다.</p>
 
       <div class="video-grid">
         <a class="video-card" href="https://www.youtube.com/watch?v=o_FpuybUxSE" target="_blank" rel="noopener">
           <img class="thumb-img" src="https://img.youtube.com/vi/o_FpuybUxSE/hqdefault.jpg" alt="Palmer Master Cervical Rotary Break" loading="lazy" />
-          <span class="play-overlay">??/span>
+          <span class="play-overlay">▶</span>
           <div class="body">
             <h4>Palmer Master Cervical Rotary Break</h4>
-            <p>Week 3 쨌 寃쎌텛 Rotary Break 쨌 Dr. Gregory Johnson</p>
+            <p>Week 3 · 경추 Rotary Break · Dr. Gregory Johnson</p>
           </div>
         </a>
         <a class="video-card" href="https://www.youtube.com/watch?v=Y1Cr-7M5GNs" target="_blank" rel="noopener">
           <img class="thumb-img" src="https://img.youtube.com/vi/Y1Cr-7M5GNs/hqdefault.jpg" alt="Thoracic Spine Thrust Manipulation" loading="lazy" />
-          <span class="play-overlay">??/span>
+          <span class="play-overlay">▶</span>
           <div class="body">
             <h4>Thoracic Spine Thrust Manipulation</h4>
-            <p>Week 3 쨌 ?됱텛 AP thrust ?쒖뿰</p>
+            <p>Week 3 · 흉추 AP thrust 시연</p>
           </div>
         </a>
         <a class="video-card" href="https://www.youtube.com/shorts/lh_4b6sLodE" target="_blank" rel="noopener">
           <img class="thumb-img" src="https://img.youtube.com/vi/lh_4b6sLodE/hqdefault.jpg" alt="Lumbar Side Posture Kick-Push Adjustment" loading="lazy" />
-          <span class="play-overlay">??/span>
+          <span class="play-overlay">▶</span>
           <div class="body">
             <h4>Lumbar Side Posture Kick-Push</h4>
-            <p>Week 3 쨌 ?붿텛 Lumbar Roll ???/p>
+            <p>Week 3 · 요추 Lumbar Roll 대안</p>
           </div>
         </a>
         <a class="video-card" href="https://www.youtube.com/watch?v=EgVDJYIglGU" target="_blank" rel="noopener">
           <img class="thumb-img" src="https://img.youtube.com/vi/EgVDJYIglGU/hqdefault.jpg" alt="Sacroiliac Joint Chiropractic Adjustments Demonstration" loading="lazy" />
-          <span class="play-overlay">??/span>
+          <span class="play-overlay">▶</span>
           <div class="body">
             <h4>Sacroiliac Joint Adjustments</h4>
-            <p>Week 3 쨌 泥쒖옣愿??쨌 Dr. Walter Salubro</p>
+            <p>Week 3 · 천장관절 · Dr. Walter Salubro</p>
           </div>
         </a>
         <a class="video-card" href="https://www.youtube.com/watch?v=PxCUtrJOzsU" target="_blank" rel="noopener">
           <img class="thumb-img" src="https://img.youtube.com/vi/PxCUtrJOzsU/hqdefault.jpg" alt="Motion Palpation Part 4" loading="lazy" />
-          <span class="play-overlay">??/span>
+          <span class="play-overlay">▶</span>
           <div class="body">
-            <h4>Motion Palpation ??Part 4</h4>
-            <p>Week 2 쨌 泥숈텛 媛?숈꽦 珥됱쭊 援먯쑁</p>
+            <h4>Motion Palpation — Part 4</h4>
+            <p>Week 2 · 척추 가동성 촉진 교육</p>
           </div>
         </a>
         <a class="video-card" href="https://www.youtube.com/results?search_query=HVLA+Upper+Cervical+C0-C1+Head+Chin+Hold" target="_blank" rel="noopener">
-          <div class="thumb">?뵇</div>
+          <div class="thumb">🔍</div>
           <div class="body">
             <h4>HVLA Upper Cervical (C0-C1)</h4>
-            <p>Week 3 쨌 ?곷?寃쎌텛 쨌 YouTube 寃??寃곌낵濡??대룞</p>
+            <p>Week 3 · 상부경추 · YouTube 검색 결과로 이동</p>
           </div>
         </a>
       </div>
@@ -1593,14 +1593,14 @@
 
     <!-- ========== REFERENCES ========== -->
     <section id="references">
-      <h2>李멸퀬臾명뿄</h2>
-      <p class="section-lead">Peer-reviewed ?듭떖 ?먮즺.</p>
+      <h2>참고문헌</h2>
+      <p class="section-lead">Peer-reviewed 핵심 자료.</p>
 
-      <h3>?앹껜??븰</h3>
+      <h3>생체역학</h3>
       <ul>
         <li>Gudavalli MR et al. Effects of thrust amplitude and duration of HVLA spinal manipulations. <em>JMPT</em> 2013.</li>
         <li>Pickar JG. Neurophysiological effects of spinal manipulation. <em>Spine J</em> 2002;2(5):357-371.</li>
-        <li>High-Velocity Low-Amplitude Manipulation Techniques ??<em>StatPearls NCBI</em>.</li>
+        <li>High-Velocity Low-Amplitude Manipulation Techniques — <em>StatPearls NCBI</em>.</li>
       </ul>
 
       <h3>Cavitation</h3>
@@ -1609,31 +1609,31 @@
         <li>Flynn TW et al. The audible pop is not necessary for successful HVLA manipulation. <em>Arch Phys Med Rehabil</em> 2003;84:1057-60.</li>
       </ul>
 
-      <h3>洹쇨굅 쨌 Cochrane 쨌 泥닿퀎??寃??/h3>
+      <h3>근거 · Cochrane · 체계적 검토</h3>
       <ul>
         <li>Rubinstein SM et al. Spinal manipulative therapy for acute low-back pain. <em>Cochrane</em> 2013.</li>
         <li>Gross A et al. Manipulation and mobilisation for neck pain. <em>Cochrane</em> 2015.</li>
         <li>Bryans R et al. Chiropractic treatment of adults with headache. <em>JMPT</em> 2011.</li>
       </ul>
 
-      <h3>?덉쟾??쨌 VAD</h3>
+      <h3>안전성 · VAD</h3>
       <ul>
         <li>Cassidy JD et al. Risk of vertebrobasilar stroke and chiropractic care. <em>Spine</em> 2008.</li>
-        <li>Church EW et al. Chiropractic care and cervical artery dissection ??systematic review. 2016.</li>
+        <li>Church EW et al. Chiropractic care and cervical artery dissection — systematic review. 2016.</li>
       </ul>
 
-      <h3>?먮낯 NotebookLM</h3>
+      <h3>원본 NotebookLM</h3>
       <p>
-        Diversified ?명듃遺?(Deep Research 47媛?1李??먮즺):
-        <a href="https://notebooklm.google.com/notebook/291e66c6-c8b5-4de0-9ef9-f3bab92ac4ff" target="_blank" rel="noopener">NotebookLM ?닿린 ??/a>
+        Diversified 노트북 (Deep Research 47개 1차 자료):
+        <a href="https://notebooklm.google.com/notebook/291e66c6-c8b5-4de0-9ef9-f3bab92ac4ff" target="_blank" rel="noopener">NotebookLM 열기 →</a>
       </p>
     </section>
 
       <section id="legacy-demos" class="archive-inline">
-      <h2>?렗 ?덇굅???쒖뿰 ?곸긽 (?ъ슜??吏곸젒 ?쒖뿰)</h2>
-      <p class="section-lead">2015??KOA ?숉쉶 諛??꾩긽 ?쒖뿰 ?뱀떆 ?ъ슜?먭? 珥ъ쁺???먮낯 ?곸긽?낅땲?? 李멸퀬??쨌 吏곸젒 ?쒖뿰 以묒떖?대?濡??대줎 ?ㅻ챸? 梨뺥꽣 蹂몃Ц??李멸퀬?섏꽭??</p>
+      <h2>🎬 레거시 시연 영상 (사용자 직접 시연)</h2>
+      <p class="section-lead">2015년 KOA 학회 및 임상 시연 당시 사용자가 촬영한 원본 영상입니다. 참고용 · 직접 시연 중심이므로 이론 설명은 챕터 본문을 참고하세요.</p>
       <div class="video-thumb-grid">
-        <div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/techniques/diversified_nelson_pull.mp4" controls preload="none"></video><div class="info"><div class="title">Diversified Nelson Pull</div><div class="meta">痢≪???湲곕쾿</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/techniques/spinous_push_and_pull.mp4" controls preload="none"></video><div class="info"><div class="title">Spinous Push & Pull</div><div class="meta">洹밸룎湲??묒큺</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/techniques/bilateral_hypothenar_push.mp4" controls preload="none"></video><div class="info"><div class="title">Bilateral Hypothenar Push</div><div class="meta">?묒륫 ?뚯?援?/div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/techniques/ap_thoracic.mp4" controls preload="none"></video><div class="info"><div class="title">AP Thoracic</div><div class="meta">?욌뮘 ?됱텛 援먯젙</div></div></div>
+        <div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/techniques/diversified_nelson_pull.mp4" controls preload="none"></video><div class="info"><div class="title">Diversified Nelson Pull</div><div class="meta">측와위 기법</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/techniques/spinous_push_and_pull.mp4" controls preload="none"></video><div class="info"><div class="title">Spinous Push & Pull</div><div class="meta">극돌기 접촉</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/techniques/bilateral_hypothenar_push.mp4" controls preload="none"></video><div class="info"><div class="title">Bilateral Hypothenar Push</div><div class="meta">양측 소지구</div></div></div><div class="video-card"><video src="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/archive/videos/techniques/ap_thoracic.mp4" controls preload="none"></video><div class="info"><div class="title">AP Thoracic</div><div class="meta">앞뒤 흉추 교정</div></div></div>
       </div>
     </section>
     
@@ -1644,53 +1644,52 @@
     <div class="footer-inner">
       <div class="footer-grid">
         <div class="footer-col">
-          <h5>梨뺥꽣 ?먯깋</h5>
+          <h5>챕터 탐색</h5>
           <ul>
-            <li><a href="./index.html">??硫붿씤</a></li>
-            <li><a href="./chapter01_introduction.html">1. ?쒖꽕</a></li>
-            <li><a href="./chapter02_functional_neurology.html">??2. Functional Neurology</a></li>
-            <li><a href="./chapter03_diversified.html">3. Diversified (?꾩옱)</a></li>
-            <li><a href="./chapter04_gonstead.html">4. Gonstead ??/a></li>
+            <li><a href="./index.html">← 메인</a></li>
+            <li><a href="./chapter01_introduction.html">1. 서설</a></li>
+            <li><a href="./chapter02_functional_neurology.html">← 2. Functional Neurology</a></li>
+            <li><a href="./chapter03_diversified.html">3. Diversified (현재)</a></li>
+            <li><a href="./chapter04_gonstead.html">4. Gonstead →</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h5>??梨뺥꽣 ?먮즺</h5>
+          <h5>이 챕터 자료</h5>
           <ul>
-            <li><a href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">?잛틦?ㅽ듃</a></li>
-            <li><a href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/02_video_part1_week12.mp4">?곸긽 Part 1</a></li>
-            <li><a href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/03_video_part2_week34.mp4">?곸긽 Part 2</a></li>
-            <li><a href="./viewer.html?src=diversified/lecture/00_master_index.md">媛뺤쓽濡?Master</a></li>
+            <li><a href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">팟캐스트</a></li>
+            <li><a href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/02_video_part1_week12.mp4">영상 Part 1</a></li>
+            <li><a href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/03_video_part2_week34.mp4">영상 Part 2</a></li>
+            <li><a href="./viewer.html?src=diversified/lecture/00_master_index.md">강의록 Master</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h5>?몃? ?먮즺</h5>
+          <h5>외부 자료</h5>
           <ul>
-            <li><a href="https://notebooklm.google.com/notebook/291e66c6-c8b5-4de0-9ef9-f3bab92ac4ff" target="_blank" rel="noopener">NotebookLM ?명듃遺?/a></li>
+            <li><a href="https://notebooklm.google.com/notebook/291e66c6-c8b5-4de0-9ef9-f3bab92ac4ff" target="_blank" rel="noopener">NotebookLM 노트북</a></li>
             <li><a href="https://www.cochranelibrary.com/" target="_blank" rel="noopener">Cochrane Library</a></li>
             <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a></li>
             <li><a href="https://www.acatoday.org/" target="_blank" rel="noopener">ACA</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h5>怨꾩젙</h5>
+          <h5>계정</h5>
           <ul>
-            <li><a href="./login.html">濡쒓렇??/a></li>
-            <li><a href="./signup.html">媛??/a></li>
-            <li><a href="./admin.html">愿由ъ옄</a></li>
-            <li><a href="mailto:drjang00@gmail.com">臾몄쓽</a></li>
+            <li><a href="./login.html">로그인</a></li>
+            <li><a href="./signup.html">가입</a></li>
+            <li><a href="./admin.html">관리자</a></li>
+            <li><a href="mailto:drjang00@gmail.com">문의</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-credit">
         Edited by <strong>Jae-Ho Jang, M.D., BAppSc(Chiro)., D.C., PhD</strong>
-        <span class="credit-creds">Board Certified Orthopedic Surgeon 쨌 Member of Korean Spine Society 쨌 ?뺥삎?멸낵?꾨Ц??쨌 泥숈텛?숉쉶?뺥쉶??/span>
+        <span class="credit-creds">Board Certified Orthopedic Surgeon · Member of Korean Spine Society · 정형외과전문의 · 척추학회정회원</span>
       </div>
       <div class="footer-bottom">
-        <span>援먯쑁 紐⑹쟻 쨌 ?꾩긽 ?먮떒? ?대떦 ?섎즺吏꾩쓽 梨낆엫</span>
+        <span>교육 목적 · 임상 판단은 담당 의료진의 책임</span>
       </div>
     </div>
   </footer>
 
 </body>
 </html>
-
