@@ -53,3 +53,11 @@ test_after_*.log
 test_round*.log
 test_final.log
 
+# 팟캐스트 임시 및 상태 파일
+*_status.json
+regeneration_queue.json
+create_output.txt
+extracted_prompts.txt
+status_analysis.txt
+nlm_status*.json
+downloads/

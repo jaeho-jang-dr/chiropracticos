@@ -1,0 +1,146 @@
+[
+  {
+    "id": "19015f78-a6fb-4b56-8049-a71f03dd8ad4",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[기본 전제]\nEBM 기반 학술 라디오 대화. 단정 피하되 방법은 과학적으로. peer-reviewed를 자연스럽게 녹임.\n\n[톤] 사색적이고 따뜻한 대화. 비판은 정중·학술적으로. 조롱·과장 금지.\n\n[⚠️ 반복하지 말 것]\n1. \"한 방울/바다/물방울\" 비유 절대 사용 금지. 인식론적 겸손은 비유 없이 평이하고 학술적인 어휘로만 표현합니다.\n2. EBM·근거 수준은 🔴 주장 등장 시 가볍게 한 번 환기. 매 섹션 반복 금지. 본 에피소드는 비판적 검토이므로 자연스럽게 근거 수준이 거론되겠지만, \"근거 수준은 🔴…\" 식의 반복적 라벨링은 자제.\n\n[금기] \"사이비\", \"사기꾼\", \"100% 거짓\", \"절대 아니다\", \"한 방울/물방울/바다\" 비유\n[권장] \"현재 근거 수준에서는 그렇게 말하기 어렵습니다\" / \"흥미로운 가설로 남겨두고 지켜볼 수 있겠죠\" / \"20년 전에 안 된다고 생각했던 게 지금 표준이 된 경우도 있죠\"\n\n[대상] 한국 정형외과·재활의학·도수치료 의사·PT. 한국어 인사 시작.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Chapter 2 · Functional Neurology — Episode 4 (약 15분)]\n주제: \"비판적 검토와 미래로 열린 질문들\"\n\n다룰 흐름:\n1. **시작**: 한국어 인사 + 4부작 마무리편임을 짧게 언급. 비유 금지. \"한 방울/물방울/바다\" 비유를 절대 말하지 마세요.\n2. **Meyer et al. 2017 \"Unravelling Functional Neurology\"** 비판 리뷰 — 정당한 지적과 여전히 열려있는 영역을 균형 있게.\n3. **Hemisphericity (좌·우뇌 우세) 단순 모델의 한계** — 실제 뇌는 그렇게 단순하지 않다. 단순화가 임상가 휴리스틱으로 갖는 가치는 별개.\n4. **DACNB의 위상** — 미국 사설 인증, 한국 면허 효력 없음. 학술·교육 가치는 별개로 인정.\n5. **FN의 과장된 주장들** (자폐·ADHD·천식·고혈압 치료) — 현재 근거가 매우 제한적 (이 부분에서 🔴 가볍게 한 번만 짚음 — 본 에피소드의 유일한 무거운 EBM 환기). 그렇다고 모든 가능성을 닫는 것은 아님 — 향후 신경면역·자율신경 연구가 어떻게 발전할지는 열린 질문.\n6. **현재 우리가 모르는 영역** — 신경가소성의 진짜 한계, 만성 통증의 중추 회로, 자율신경과 면역의 연결 (비유 없이 평이하게).\n7. **한국 임상 통합** — 정형외과·재활의학·도수치료·PT 협진 모델. FN 단독보다는 다학제 안에서.\n8. **결론** — \"과장 없이도 검증된 부분만으로 임상은 충분히 유용하고, 검증되지 않은 부분도 함부로 닫지는 말자. 정중한 인식이 가장 정확하다.\" EBM은 도구로 계속 공부하자는 짧은 마무리.\n\n분량 15분. 마지막 인사 자연스럽게. 사용자는 정형외과 6판 도수치료 챕터 저자.",
+    "visual_style_prompt": null,
+    "title": "MRI가 놓친 만성 통증의 기능신경학적 실체",
+    "url": ""
+  },
+  {
+    "id": "df7a5d5f-b9cd-4334-b15d-3e6d63a1a218",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[기본 전제]\nEBM 기반 학술 라디오 대화. 단정 피하되 방법은 과학적으로. peer-reviewed를 자연스럽게.\n\n[톤] 부드럽고 따뜻한 학술 라디오. 두 화자(정형외과의 + 도수치료 PT) 동료 대화. 조롱·과장 금지.\n\n[⚠️ 반복하지 말 것]\n1. \"한 방울/바다/물방울\" 비유 절대 사용 금지. 인식론적 겸손은 비유 없이 평이하고 학술적인 어휘로만 표현합니다.\n2. EBM·근거 수준은 🔴 주장 등장 시에만 가볍게 한 번 환기. 매 문단 반복 금지.\n\n[금기] 단정적 폄하, \"절대 아니다\", \"한 방울/물방울/바다\" 비유, \"근거 수준이…\" 반복\n[권장] \"이 환자군에서는 일관된 결과를 봤지만 모든 환자에게 동일하다고 단정할 순 없죠\" / \"객관 지표가 좋아지는 걸 보는 게 임상의의 보람\"\n\n[대상] 한국 정형외과·재활의학·도수치료 의사·PT. 한국어 인사 시작.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Chapter 2 · Functional Neurology — Episode 3 (약 15분)]\n주제: \"자극에서 회복까지 — 치료 자극의 선정과 Re-Assessment의 본질\"\n\n다룰 흐름:\n1. **시작**: 한국어 인사 + Ep 2 복습 짧게.\n2. **자극 선정 의사결정 트리** — Assessment 결과별로 어떤 자극을 고를지.\n3. **HVLA·MOB·MET의 신경학적 기전** — Haavik 2017 JMPT, sensorimotor integration 측정 가능 효과.\n4. **시운동 재훈련** — Saccade·Pursuit·Fixation·NPC 드릴.\n5. **전정 재활** — Cawthorne-Cooksey · VOR x1·x2 · Gaze stabilization · Habituation. Hillier Cochrane 2015 양호한 근거.\n6. **고유수용 재훈련** — BAPS · Foam · Tandem stance 점진.\n7. **자율 조절** — 횡격막 호흡, slow-paced 6/min, HRV 개선.\n8. **자극 dosage** — 역치 이상·과부하 이하, 초기 짧고 자주.\n9. **Re-Assessment의 핵심 원칙** — 치료 후 같은 검사로 재측정하지 않으면 FN이 아니다. 객관 지표 + PROM (VAS·ODI·NDI·DHI·PCSS·SF-36).\n10. **🔴 절제 환기**: 자폐·ADHD·천식·고혈압 같은 전신질환을 \"치료\"한다는 주장은 현재 근거가 매우 제한적임을 정중히 한 번만 짚어줌. (본 에피소드의 유일한 🔴 환기 지점.)\n11. **마무리**: Ep 4 (Critical·Humility) 예고.\n\n분량 15분. 인용 자연스럽게. 사용자는 정형외과 6판 도수치료 챕터 저자.",
+    "visual_style_prompt": null,
+    "title": "뇌를 바꾸는 정밀 자극과 객관적 재평가",
+    "url": ""
+  },
+  {
+    "id": "7456cfca-b509-4463-ab74-d02b43f4e193",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[기본 전제 — 본 아티팩트가 반드시 따라야 할 인식론]\n우리는 과학자답게 EBM(근거 기반 의학)으로 공부하고 탐구합니다. 단정은 피하되, 방법은 과학적으로 — peer-reviewed 인용·체계적 고찰을 자연스럽게 녹이되, 매 문단마다 \"근거 수준이…\"라고 끊어 말하지 않습니다.\n\n[톤 가이드]\n- 부드럽고 따뜻한 학술 라디오 톤 (조롱·비웃음·과장된 분개 금지)\n- 두 화자(정형외과 전문의 + 도수치료 PT)의 동료 의료인 대화\n- 많이 알수록 가능성을 더 열어두는 태도. 인식론적 겸손을 평이한 학술 어휘로 표현.\n\n[⚠️ 반복하지 말 것 — 사용자 명시 요청]\n1. 본 에피소드는 Ch 2 Episode 1입니다. **딱 한 번**, 도입부에서 \"우리가 인체에 대해 아는 것은 한 방울, 모르는 것은 바다\"라는 비유를 자연스럽게 인용하세요. 이후 Ep 2/3/4 및 다른 챕터에서는 이 비유를 다시 쓰지 않으니, 본 에피소드 도입부에 정중히 한 번만 등장시키면 됩니다.\n2. EBM·근거 수준은 🔴 No evidence (현재 근거 매우 제한적) 주장이 등장할 때만 가볍게 한 번 환기. 매 섹션마다 \"근거 수준은…\"이라고 반복 금지. 청취자는 앱 본문에서 이미 근거 수준을 보고 있습니다.\n\n[사용 금지] \"절대 아니다\", \"사이비\", \"엉터리\", 단정적 폄하, \"한 방울/물방울/바다\" 비유 사용\n[권장] \"현재 근거로는 권장하기 어렵습니다\" / \"흥미로운 가설이지만 더 많은 연구가 필요\" / \"향후 새 연구로 달라질 가능성\"\n\n[대상] 한국 정형외과·재활의학·도수치료 의사·PT. 한국어 자연스러운 인사로 시작 (영어 인트로 금지).\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Chapter 2 · Functional Neurology — Episode 1 (약 15분)]\n주제: \"신경계라는 영역에 들어서기 — FN의 출발점과 Afferentation의 의미\"\n\n다룰 흐름:\n1. **시작**: 한국어 인사로 시작. 본 4부작 시리즈의 첫 회임을 언급. 도입부에 현대 의학이 규명하지 못한 미지의 영역이 매우 광활함을 인정하고 답을 단정하기보다 질문을 함께 나누는 학술적이고 겸손한 인트로 문장을 사용하세요.\n2. **FN의 조작적 정의**: 입력이 출력을 형성한다는 단순하면서 깊은 가설. Sherrington 1906 통합 행동 모델을 짧게 인용.\n3. **Afferentation의 의미**: 기계수용기 4유형 (Freeman & Wyke 1967 — Ruffini·Pacinian·Golgi·자유신경종말), 근방추·GTO·α/γ 운동뉴런.\n4. **Gate Control 이론** (Melzack & Wall 1965)이 통증 이해를 바꾼 방식.\n5. **역사적 맥락**: Frederick Carrick 1979 Carrick Institute, DACNB가 미국 사설 인증임을 정중히 언급. 신경학 전문의 표준 자격과는 다른 트랙임을 짧게.\n6. **임상 신경학과 기능 신경학의 관계**: 대체가 아닌 보완.\n7. **마무리**: Episode 2 (Assessment)로 자연스럽게 예고.\n\n분량 15분. 인용은 자연스럽게 (\"Sherrington이 1906년에\", \"Wyke 1972 4유형 분류\"). 사용자는 정형외과 6판 도수치료 챕터 저자.",
+    "visual_style_prompt": null,
+    "title": "만성 통증의 해답은 뇌의 입력에 있다",
+    "url": ""
+  },
+  {
+    "id": "db92ed08-d2ae-4f0d-81f3-68a3dc6dd396",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[기본 전제]\nEBM 기반 학술 라디오 대화. 단정은 피하되 방법은 과학적으로. peer-reviewed 인용을 자연스럽게 녹이고, \"근거 수준이…\"를 매 문단마다 끊어 말하지 않습니다.\n\n[톤] 부드럽고 따뜻한 학술 라디오. 두 화자(정형외과의 + 도수치료 PT) 동료 대화. 조롱·비웃음·과장된 분개 금지.\n\n[⚠️ 반복하지 말 것]\n1. \"한 방울/물방울/바다\" 비유는 본 에피소드에서 **절대 사용 금지**. (이 비유는 Ch 2 Ep 1 도입부에서만 단 1회 사용됨.) 인식론적 겸손은 비유 없이 평이한 학술 어휘로.\n2. EBM·근거 수준은 🔴 주장 등장 시에만 가볍게 한 번 환기. 매 섹션 반복 금지.\n\n[금기] \"절대 아니다\", \"사이비\", \"엉터리\", 단정적 폄하, \"한 방울/물방울/바다\" 비유\n[권장] \"현재 근거로는 권장하기 어렵습니다\" / \"한계가 있지만 안 하는 것보다 훨씬 낫습니다\" / \"신뢰도가 완벽하진 않지만 임상적 의미는 있습니다\"\n\n[대상] 한국 정형외과·재활의학·도수치료 의사·PT. 한국어 인사 시작.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Chapter 2 · Functional Neurology — Episode 2 (약 15분)]\n주제: \"측정할 수 없으면 치료할 수 없다 — Assessment의 깊이와 한계\"\n\n다룰 흐름:\n1. **시작**: 한국어 인사 + Ep 1 짧은 복습 (Afferentation 출발). 비유 사용 ×.\n2. **\"You cannot treat what you cannot measure\"** — 평가가 FN의 근간인 이유.\n3. **5단계 계층 평가**: History → Observation → 기본 신경학 → FN 특화 → 영상.\n4. **OPQRST + FN 추가 항목** (두부 외상·어지럼·시각·청각·인지·자율).\n5. **🔴 Red Flag 스크리닝** — 생애 최악 두통·마미증후군·VBI·발열+경부 경직·외상후 신경 결손. 환자 안전 최우선임을 짧게. (이 부분이 본 에피소드의 유일한 🔴 환기 지점 — EBM 강조는 여기서 한 번 가볍게.)\n6. **뇌신경 I-XII 요점 · DTR 0-4+ · 병적 반사** (Hoffman·Babinski·Clonus) · MMT 0-5.\n7. **소뇌 검사** — Finger-to-nose · Heel-to-shin · RAM · Romberg · Foam Romberg · Tandem (Schmahmann).\n8. **전정 검사** — Dix-Hallpike (BPPV) · HIT (VOR) · Head Shake · Fukuda · DVA.\n9. **안구 운동** — VOR · Saccade · Smooth Pursuit · Fixation · Convergence (NPC 정상 < 5-6cm) · VOMS (Mucha 2014).\n10. **자율** — Orthostatic vital signs · HRV · 동공 반사.\n11. **재현성·신뢰도 한계** — Hickey 2021 Chiropr Man Therap, κ 값. 한계 솔직 인정하되 임상 가치는 살림.\n12. **마무리**: Ep 3 (Treatment) 예고.\n\n분량 15분. 인용 자연스럽게. 사용자는 정형외과 6판 도수치료 챕터 저자.",
+    "visual_style_prompt": null,
+    "title": "MRI가 놓친 목 통증의 눈동자 신호",
+    "url": ""
+  },
+  {
+    "id": "216f714c-7df2-406f-847e-8ea378ae9bdc",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null,
+    "title": "간호사 비율과 뇌 회로가 생사를 가른다",
+    "url": ""
+  },
+  {
+    "id": "9165af94-fdbf-48e9-a852-c09b4ecc94e1",
+    "type": "video",
+    "status": "completed",
+    "custom_instructions": "[Evidence-Based] Chiropractic Functional Neurology Part 2 — Assessment + 치료 + 비판. 한국 의사·PT 대상.\n\n**편집 원칙**: Carrick FN 과장 주장은 🔴 명시적 비판. 근거 있는 부분만 임상 권장.\n\n**Part 2 범위 (30분 내외)**\n\n도입(2분): Part 1 복습. \"Assessment 없이 Treatment 없다\" 원칙.\n\n1. Assessment 심화 (15분, **가장 상세**)\n- 5단계 계층: History → Observation → 기본 신경학 → FN 특화 → 영상\n- Red Flag 스크리닝 (마미·VAD·종양·감염)\n- 뇌신경 I-XII 요점 · DTR/병적 반사 · MMT·감각\n- 소뇌: Finger-to-nose·Heel-to-shin·RAM·Romberg·Foam Romberg\n- 전정: Dix-Hallpike·HIT·DVA·Fukuda (각 sensitivity)\n- 안구운동: VOR·Saccade·Smooth Pursuit·Fixation·Convergence (NPC < 5-6cm 정상)\n- 자율: Orthostatic·HRV·동공 반사\n- 신뢰도 (Hickey 2021 Chiropr Man Therap)\n\n2. 치료 자극 선정 (8분)\n- Afferent 경로별 자극 선택 트리\n- HVLA/MOB/MET의 신경학적 기전 (Haavik 2017)\n- 시운동 재훈련 · 전정 재활 (Hillier Cochrane 2015)\n- 고유수용 재훈련 (BAPS·Foam)\n- 자율 조절 (호흡·slow-paced 6/min)\n- Re-Assessment 필수\n\n3. 임상 적용 · 근거 수준 (3분)\n- 🟢 BPPV · 전정재활 · 🟡 뇌진탕 vestib/ocular · 경추성 두통\n- 🟠 limited: 만성 통증 neuroscience education\n- 🔴 근거 없음: 자폐·ADHD 치료 · 전신 질환 · 단일 교정으로 뇌 재조정\n\n4. 비판적 시각 (2분)\n- Meyer et al. 2017 Unravelling FN 리뷰\n- Hemisphericity 단순화 비판\n- DACNB 한국 면허 효력 없음\n- 과장 없이도 검증된 부분만으로 임상 충분히 유용\n\n마무리(2분): 본 강의 Chapter 2의 역할 — 이후 Chapter 3-12 각 기법을 이 프레임으로 재해석.\n\n자막: 근거 출처 명시. 금지: vitalism·경락·AK 진단·두개천골·내장 교정 주장.",
+    "visual_style_prompt": null,
+    "title": "기능 신경학 2: 평가, 치료, 비판",
+    "url": ""
+  },
+  {
+    "id": "30dbd56b-dab1-4a41-bc6d-438f5c93268a",
+    "type": "video",
+    "status": "completed",
+    "custom_instructions": "[Evidence-Based] Chiropractic Functional Neurology Part 1 — 이론 (신경계 기초 + Aff/Def/Eff). 한국 의사·PT 대상. 화이트보드 explainer.\n\n**편집 원칙**: Vitalism 제외. Carrick FN 과장 주장은 🔴 No evidence로 명시. Peer-reviewed 근거 중심.\n\n**Part 1 범위 — 이론 구축 (30분 내외)**\n\n도입(2분): FN의 조작적 정의 — \"관절·근육 자극 → 신경 자극 → 치유\"의 신경생리 기반. Sherrington 1906 이래 기초.\n\n1. 신경계 기초 재정리 (8분)\n- CNS/PNS · Input-Process-Output 3단\n- 뇌 주요 영역과 임상 관련 기능\n- 소뇌 — FN의 핵심 기관 (Schmahmann cognitive affective syndrome)\n- 뇌간·RAS·전정계\n- 척수 Gate Control (Melzack & Wall 1965)\n- 자율신경 · Neuroplasticity (Kandel)\n\n2. Afferentation (8분)\n- 정의: 말초 → CNS 입력\n- 기계수용기 4유형 Freeman & Wyke 1967: Ruffini·Pacinian·Golgi·자유신경종말\n- 근방추·GTO·α/γ-운동뉴런\n- 피부·시각·전정 통합\n- 섬유 분류 Aα·Aβ·Aδ·C와 임상\n\n3. Deafferentation (6분)\n- 관절 hypomobility → mechanoreceptor 침묵 → 중추 '정보 공백'\n- 만성 통증 Central sensitization (Woolf 2011)\n- 임상 결과: 근긴장·자세·통증 감작\n\n4. Efferentation (6분)\n- α/γ/Renshaw 해부\n- 자율신경 균형\n- 하행 조절 (PAG·RVM)\n\n마무리(2분): Assessment·치료가 이 3축 프레임에서 어떻게 작동하는지 Part 2 예고.\n\n화이트보드 + 해부 일러스트 + 인용 출처 자막. \"이 부분은 Pickar 2002에서 확인\", \"Wyke 1972 4유형 분류\" 등 자막 명시.\n\n금지: 두개천골 리듬·내장 교정·경락·기혈·AK 근력검사로 알레르기 진단.",
+    "visual_style_prompt": null,
+    "title": "기능 신경학의 과학적 기초: Part 1",
+    "url": ""
+  },
+  {
+    "id": "37c573ac-ffd8-4735-8e6f-da3440da83c8",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[Evidence-Based] Chiropractic Functional Neurology 심층 팟캐스트 — 한국 정형외과·재활의학과 의사·도수치료 훈련 PT 대상. 2인 대화형 60분+. 근거 기반 의학 관점, Carrick FN 커뮤니티의 과장 주장은 명시적으로 비판.\n\n**편집 원칙 (반드시 준수)**\n- Vitalism·\"Innate Intelligence\" 등 제외\n- \"교정으로 자폐·ADHD·학습장애·전신질환 치료\" 주장은 🔴 No reliable evidence 명시하여 반박\n- Peer-reviewed 근거(Sherrington·Wyke·Pickar·Haavik·Woolf·Schmahmann·Hillier Cochrane·Schneider·Meyer et al. 비판 리뷰) 우선\n- 근거 수준 🟢Strong 🟡Moderate 🟠Limited 🔴No evidence 명시\n\n**팟캐스트 구조 (각 10-15분)**\n\nPart 1 서론·역사·근거 프레이밍 (15분)\n- FN의 조작적 정의 (신경생리 기반 가설)\n- Frederick Carrick과 Carrick Institute(1979) · DACNB(1980s)\n- 전통 신경학 vs 기능 신경학의 보완 관계 (대체 아님)\n- 근거 수준 정직한 평가 — 강한 것·중간·약한 것·근거 없는 것 구분\n- 🔴 Meyer et al. 2017 Unravelling FN 비판 리뷰 요약\n\nPart 2 Afferentation·Deafferentation·Efferentation (15분)\n- 신경계 Input→Process→Output 3단 모델 (Sherrington 1906)\n- 기계수용기 Type I-IV (Freeman & Wyke 1967)\n- 근방추·GTO·α/γ-운동뉴런·Renshaw\n- Gate Control (Melzack & Wall 1965)\n- Central sensitization (Woolf 2011)\n- 관절 hypomobility → 중추 처리 공백\n- Haavik·Pickar가 밝힌 척추 수기의 중추 효과\n\nPart 3 Assessment 심화 (15-20분)\n- 왜 Assessment가 가장 중요한가\n- 5단계 계층: History→Observation→기본 신경학→FN 특화→영상\n- Red Flag 스크리닝 (생애 최악 두통·마미증후군·VAD)\n- 뇌신경 I-XII, DTR·병적 반사·MMT·감각\n- 소뇌 (Finger-to-nose·Heel-to-shin·RAM·Romberg)\n- 전정 (Dix-Hallpike·HIT·DVA·Fukuda)\n- 안구운동 (VOR·saccade·smooth pursuit·NPC)\n- 자율 (Orthostatic·HRV·동공 반사)\n- 재현성·신뢰도 (Hickey 2021)\n\nPart 4 치료·임상·비판 (15-20분)\n- 자극 선정 원리 — Assessment 결과별 의사결정 트리\n- 관절 수기·시운동 재훈련·전정 재활·고유수용 재훈련·자율 조절\n- 근거 수준별 적응증: 🟢 BPPV canalith/전정재활 · 🟡 뇌진탕·경추성 두통·만성 요통 · 🔴 자폐/ADHD 치료\n- 치료 전후 Re-Assessment 필수\n- 🔴 Carrick FN 과장 주장 명시 비판: Hemisphericity 단순 모델·단일 교정으로 뇌 재조정 등\n- DACNB = 미국 사설 인증, 한국 면허 효력 없음\n- 한국 임상 — 정형외과·재활의학·도수치료와의 통합 경로\n\n진행자 두 명이 \"실제 임상에서 어떻게 적용하시나요?\" 질문·구체 수치·연구 인용으로 대화. \"이건 근거가 약합니다\", \"이건 과장입니다\" 명시적 언급 주저 없이. Vitalism·한의학적 주장 언급 금지.",
+    "visual_style_prompt": null,
+    "title": "MRI에 안 보이는 뇌 소프트웨어 오류",
+    "url": ""
+  },
+  {
+    "id": "183755e9-6e06-4423-a931-6c1fb04d8524",
+    "type": "slide_deck",
+    "status": "completed",
+    "custom_instructions": "[Evidence-Based] Chapter 2 FN Slides 2/4 — Afferentation · Deafferentation · Efferentation 심화. 정확히 15장.\n\n1. 표지 — \"FN Part 2/4: 신경계 I/O 모델\"\n2. 학습 목표 — 3개념 정확한 이해 및 임상 적용\n3. Sherrington 1906 통합 행동 모델 — CNS Input→Process→Output\n4. Afferentation 정의 — 말초→CNS 입력 흐름\n5. 말초 기계수용기 Freeman & Wyke 1967: Type I Ruffini (관절낭 표층·정적), Type II Pacinian (심부·진동), Type III Golgi (인대·고역치), Type IV 자유신경종말 (통각)\n6. 근방추·GTO (Ia·Ib·II 섬유·α/γ 공활성)\n7. 섬유 분류 Aα/Aβ/Aδ/C와 전도속도·임상\n8. Gate Control 후각 기전 — Aβ가 Aδ·C 통증 차단\n9. Deafferentation 정의와 원인\n10. 관절 hypomobility → mechanoreceptor 침묵 → 중추 '정보 공백' (Pickar 2002·Haavik 2012)\n11. Central Sensitization (Woolf 2011) — 만성 통증의 중추 과흥분·감각 지도 재조직 (Flor 1997)\n12. Efferentation — α/γ/Renshaw 회로\n13. 자율 효능 + 하행 조절 (PAG·RVM·내인성 opioid)\n14. 임상 사이클 — Assessment → 자극 선정 → 처리 → Efferent 변화 → Re-Assessment (loop)\n15. 요약 + Part 3 예고 (Assessment 심화)\n\n각 슬라이드 도표 + 출처. Haavik 2017 JMPT 인용 강조 (관절 수기가 sensorimotor integration에 미치는 실증 효과).",
+    "visual_style_prompt": null,
+    "title": "Neural IO Model",
+    "url": ""
+  },
+  {
+    "id": "6de35606-b6b4-4b3e-ac0b-d521c08b2a12",
+    "type": "slide_deck",
+    "status": "completed",
+    "custom_instructions": "[Evidence-Based] Chapter 2 FN Slides 3/4 — ⭐ Assessment 심화. 정확히 15장. **가장 중요한 슬라이드**.\n\n1. 표지 — \"FN Part 3/4: ⭐ Assessment — 임상의 근간\"\n2. Assessment가 왜 가장 중요한가 — \"You cannot treat what you cannot measure\"\n3. 평가 5단계 계층: History → Observation → 기본 신경학 → FN 특화 → 영상\n4. OPQRST + FN 추가(두부 외상·어지럼·시각·청각·인지·자율)\n5. 🔴 Red Flag 체크리스트 (생애 최악 두통·마미·VAD·saddle anesthesia·발열+경부 경직·최근 외상후 어지럼)\n6. 뇌신경 I-XII 검사 요점표\n7. DTR 0-4+ · 병적 반사 (Hoffman·Babinski·Clonus)\n8. MMT 0-5 · 피부분절 감각 · 협응\n9. 소뇌 검사 — Finger-to-nose·Heel-to-shin·RAM·Romberg·Foam Romberg·Tandem (Schmahmann)\n10. 전정 검사 — Dix-Hallpike BPPV·HIT VOR·Head Shake·Fukuda·Dynamic Visual Acuity (3 라인 손실 기준)\n11. 안구 운동 — VOR·Saccade·Smooth Pursuit·Fixation·Convergence (NPC 정상 <5-6cm)\n12. 뇌진탕 평가 VOMS (Mucha 2014) · Convergence Insufficiency 흔함 (Master 2016)\n13. 자율 평가 — Orthostatic Vital Signs·HRV·Pupillary Light·Valsalva\n14. 재현성·신뢰도 — 훈련과 표준화 필수 (Hickey 2021)\n15. 임상 체크리스트 요약 + Part 4 예고 (치료)\n\n각 검사: sensitivity/specificity·수행법·양성 소견 구체 수치 포함. Red Flag 슬라이드는 시각적 강조(빨간 박스).",
+    "visual_style_prompt": null,
+    "title": "Functional Neurology Assessment Blueprint",
+    "url": ""
+  },
+  {
+    "id": "0cf59b93-d41a-45be-bd8e-61814463cfda",
+    "type": "slide_deck",
+    "status": "completed",
+    "custom_instructions": "[Evidence-Based] Chapter 2 FN Slides 4/4 — 치료·임상 적용·비판적 시각·한국 현장. 정확히 15장.\n\n1. 표지 — \"FN Part 4/4: 치료 · 임상 · 비판 · 한국 적용\"\n2. 자극 선정 의사결정 트리 (Assessment 결과별)\n3. 관절 수기 신경학적 기전 (HVLA/MOB/MET) — Haavik 2017 JMPT\n4. 시운동 재훈련 — Saccade/Pursuit/Fixation/NPC 드릴\n5. 전정 재활 — Cawthorne-Cooksey · VOR x1·x2 · Gaze stabilization · Habituation (Hillier Cochrane 2015 🟢)\n6. 고유수용 재훈련 — BAPS·Foam·Tandem stance 점진\n7. 자율 조절 — 횡격막 호흡·slow-paced 6/min (HRV 개선 근거)\n8. 자극 Dosage — 역치 이상·과부하 이하·초기 짧고 자주\n9. Re-Assessment — 객관 지표 + PROM (VAS·ODI·NDI·DHI·PCSS·SF-36)\n10. 임상 적응증 근거표 — 🟢 BPPV·전정재활 / 🟡 뇌진탕·경추성두통·만성요통 / 🔴 자폐·ADHD·천식·고혈압 치료\n11. 🔴 Part VIII. 비판적 시각 — Meyer et al. 2017 체계적 리뷰 요점\n12. 🔴 Carrick FN 과장 주장 vs 🟢 근거 주장 비교표\n13. 🔴 Hemisphericity 단순화 비판 · DACNB 미국 사설 인증 한국 효력 없음\n14. 한국 임상 현장 — 정형외과·재활의학과·도수치료 PT·추나 통합 경로\n15. 결론 — 과장 없이도 검증된 부분만으로 임상 충분히 유용 + 전체 4부작 요약\n\n비판 슬라이드(11-13)는 시각적으로 뚜렷하게. \"이것은 근거가 없습니다\"라고 명시. \"Evidence 기반만 임상 적용 권장\" 강조.",
+    "visual_style_prompt": null,
+    "title": "Refined Clinical Functional Neurology",
+    "url": ""
+  },
+  {
+    "id": "5f2d5b6d-7e3c-496d-adee-f1bccba2b26f",
+    "type": "slide_deck",
+    "status": "completed",
+    "custom_instructions": "[Evidence-Based] Chapter 2 FN Slides 1/4 — 이론 기초 (서론 + 신경계 기초). 정확히 15장. 한국 의사·PT 대상.\n\n1. 표지 — \"Chiropractic Functional Neurology Part 1/4: 이론 기초\"\n2. 편집 원칙 — 🟢 포함 / 🔴 제외 (vitalism·자폐·ADHD 치료 주장 등)\n3. FN 조작적 정의 — Afferentation/Processing/Efferentation 프레임\n4. 임상 신경학 vs 기능 신경학 비교표 (대체 아닌 보완)\n5. 역사 — Carrick Institute 1979 · DACNB 1980s · Meyer 2017 비판 리뷰\n6. 근거 수준 정직한 평가표 — 🟢 기초 신경생리 / 🟡 척추 수기 효과·전정 재활 / 🔴 자폐·ADHD 치료\n7. 신경계 3단 모델: Input→Process→Output\n8. 뇌 주요 영역과 임상 기능 (엽별)\n9. 소뇌 — FN 핵심 (Schmahmann 1998 cognitive affective syndrome)\n10. 뇌간·RAS·뇌신경 출입구\n11. 전정계 해부 (반고리관·이석·VOR·전정척수로)\n12. 척수 Gate Control (Melzack & Wall 1965)\n13. 자율신경 — 교감·부교감 균형, HRV 대리 지표\n14. Neuroplasticity 원리 (반복·특이·강도·과제관련·피드백)\n15. 요약 + Part 2 예고 (Aff/Def/Eff)\n\n각 슬라이드 3-5 bullet + 도표 + peer-reviewed 출처. 금지: 경락·기혈·두개천골·내장 교정·AK 진단.",
+    "visual_style_prompt": null,
+    "title": "Functional Neurology Foundations",
+    "url": ""
+  },
+  {
+    "id": "ce469fe3-1f68-454b-839a-a86a4604de9a",
+    "type": "report",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null,
+    "title": "[증거기반 보고서 4/4] 기능 신경학(FN)의 치료 원리, 임상적 근거 및 비판적 분석",
+    "url": ""
+  },
+  {
+    "id": "e0b00af0-053d-440e-bdf2-58dac617c310",
+    "type": "report",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null,
+    "title": "[Evidence-Based] FN Report 3/4 — ⭐ Assessment 심화 (Part IV)",
+    "url": ""
+  },
+  {
+    "id": "e92ca7ae-8183-4bc7-8ea6-263a9982ee25",
+    "type": "report",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null,
+    "title": "[Evidence-Based] FN Report 2/4: 구심성(Afferentation), 탈구심성(Deafferentation), 원심성(Efferentation) 기전과 임상적 적용",
+    "url": ""
+  },
+  {
+    "id": "e422af9c-5945-48e3-b0dc-a18576cb688f",
+    "type": "report",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null,
+    "title": "[Evidence-Based] FN Report 1/4 — 이론 기초 (Part I·II)",
+    "url": ""
+  }
+]

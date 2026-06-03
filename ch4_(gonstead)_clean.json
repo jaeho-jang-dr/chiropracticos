@@ -1,0 +1,137 @@
+[
+  {
+    "id": "c52924ad-edf9-4aea-aacd-967e42226f64",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[기본 전제]\nEBM 기반 학술 라디오. 단정 피하되 방법은 과학적으로.\n\n[톤] 사색적이고 따뜻한 대화. 비판은 정중·학술적으로.\n\n[⚠️ 반복하지 말 것]\n1. \"한 방울/바다/물방울\" 비유 절대 사용 금지. 인식론적 겸손은 비유 없이 평이하고 학술적인 어휘로만 표현합니다.\n2. EBM·근거 수준은 🔴 주장 등장 시에만 가볍게 한 번 환기. 비판적 검토라 자연스럽게 근거가 거론되겠지만 라벨링 반복 금지.\n\n[금기] \"사이비\", \"사기꾼\", \"100% 거짓\", \"절대 아니다\", \"한 방울/물방울/바다\" 비유, \"근거 수준이…\" 반복\n[권장] \"현재 근거 수준에서는 그렇게 말하기 어렵습니다\" / \"흥미로운 가설로 남겨두고 지켜볼 수 있겠죠\" / \"Gonstead가 1920년대 정립한 5단계 분석은 임상적 엄격함의 모범\"\n\n[대상] 한국 정형외과·재활의학·도수치료 의사·PT. 한국어 인사 시작.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Chapter 4 · Gonstead — Episode 4 (약 15분)]\n주제: \"Gonstead의 근거와 한국 임상 통합 — 미래로 열린 질문들\"\n\n다룰 흐름:\n1. **시작**: 한국어 인사 + 4부작 마무리편. 비유 금지. \"한 방울/물방울/바다\" 비유를 절대 말하지 마세요.\n2. **Gonstead 기법의 근거** — Pickar SMT 효과 연구, 그러나 Gonstead-specific RCT는 제한적.\n3. **X-ray 의존도 비판** — 방사선 노출 vs 진단 정확성 trade-off. ALARA 원칙. 한국 영상 진단 기기 발달(MRI 접근성)로 X-ray 의존도 재고. (환자 안전 한 번 가볍게.)\n4. **Nervoscope 신뢰도의 한계** — peer-reviewed 검증 부족. 그러나 분절 자율신경 활성도 측정이라는 가설 자체는 흥미로운 연구 주제.\n5. **Pelvic deficiency 개념** — biomechanical 모델로 부분 설명 가능, 임상 outcome과의 연관은 연구 더 필요.\n6. **Vitalism적 표현** — Gonstead 원전 일부에 \"Innate Intelligence\" 언급 있으나 본 강의는 현대 신경생리 관점에서만. 역사적 표현은 시대적 맥락에서 이해.\n7. **🔴 절제 환기**: 단일 상부경추 교정이 전신질환을 치료한다는 일부 주장은 현재 근거가 매우 제한적임을 정중히 한 번만. (본 에피소드의 유일한 🔴 라벨링.)\n8. **한국 임상 통합** — 정형외과·재활의학·도수치료 협진. Gonstead 단독보다는 다학제 안에서.\n9. **모르는 것들** — Adjustment의 정확한 신경학적 효과 메커니즘, X-ray 소견과 환자 증상의 일치 정확성, Nervoscope가 측정하는 생리학적 변수의 본질 (비유 없이 평이하게).\n10. **결론** — \"Gonstead는 체계적 분석의 모범. 정확성은 임상의 훈련에 달려 있고, 모르는 부분은 정중히 인정하며 향후 연구로 채워가는 자세.\"\n\n분량 15분. 사용자는 정형외과 6판 도수치료 챕터 저자.",
+    "visual_style_prompt": null,
+    "title": "현대 생리학으로 검증한 간스테드 테크닉",
+    "url": ""
+  },
+  {
+    "id": "1948c915-0b8a-4e2f-9850-160f0e8130d1",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[기본 전제]\nEBM 기반 학술 라디오. 단정 피하되 방법은 과학적으로.\n\n[톤] 부드럽고 따뜻한 학술 대화. 두 화자(정형외과의 + 도수치료 PT). 역사적 인물·기법에 단정적 폄하 ×.\n\n[⚠️ 반복하지 말 것]\n1. \"한 방울/바다/물방울\" 비유 절대 사용 금지. 인식론적 겸손은 비유 없이 평이하고 학술적인 어휘로만 표현합니다.\n2. EBM·근거 수준은 🔴 주장 등장 시에만 가볍게 한 번 환기. 매 섹션 반복 금지.\n\n[금기] 단정적 폄하, \"사이비\", \"절대 아니다\", \"한 방울/물방울/바다\" 비유, \"근거 수준이…\" 반복\n[권장] \"역사적 표현은 시대적 맥락에서 이해할 만했죠\" / \"X-ray와 환자 증상의 일치도는 연구마다 다양해요\"\n\n[대상] 한국 정형외과·재활의학·도수치료 의사·PT. 한국어 인사 시작.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Chapter 4 · Gonstead — Episode 1 (약 15분)]\n주제: \"Clarence Gonstead의 발견 — Mt. Horeb에서 시작된 시각적 신경학\"\n\n다룰 흐름:\n1. **시작**: 한국어 인사. Ch 4 첫 회임을 짧게. 비유 금지. \"한 방울/물방울/바다\" 비유를 절대 말하지 마세요.\n2. **Clarence S. Gonstead (1898-1978)** — Wisconsin Mt. Horeb 개원, 1923년 Palmer 졸업 후 자신만의 분석법 정립.\n3. **엔지니어 배경이 임상에 미친 영향** — 척추를 건축물처럼 보는 시각.\n4. **Gonstead Clinic이 1970년대 세계 최대 카이로프랙틱 클리닉이 된 배경** — 환자 결과 중심 reputation.\n5. **Gonstead 5단계 분석법 개관** — Visualization · Instrumentation(Nervoscope) · Static palpation · Motion palpation · X-ray analysis (이후 Ep 2에서 상세).\n6. **Pelvic deficiency 개념** — 다른 기법과 차별화된 척추 기저(base) 강조.\n7. **Hi-Lo · Knee-chest · Cervical chair** 등 특수 테이블의 의미.\n8. **다른 카이로프랙틱 기법과의 차이** — Diversified보다 X-ray 의존도가 높음. 현대 영상의학 관점에서는 어떻게 평가할지 짧게.\n9. **마무리**: Ep 2 (5단계 분석) 예고.\n\n분량 15분. 인용 자연스럽게. 사용자는 정형외과 6판 도수치료 챕터 저자.",
+    "visual_style_prompt": null,
+    "title": "간스테드는 왜 단 하나의 뼈에 집착했나",
+    "url": ""
+  },
+  {
+    "id": "a4446d49-31f5-4498-a7a7-b9d6fc1cac46",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[기본 전제]\nEBM 기반 학술 라디오. 단정 피하되 방법은 과학적으로.\n\n[톤] 부드럽고 따뜻한 학술 대화. 검사 도구 한계를 솔직히 인정하되 임상 가치 살림.\n\n[⚠️ 반복하지 말 것]\n1. \"한 방울/바다/물방울\" 비유 절대 사용 금지. 인식론적 겸손은 비유 없이 평이하고 학술적인 어휘로만 표현합니다.\n2. EBM·근거 수준은 🔴 주장 등장 시에만 가볍게 한 번 환기.\n\n[금기] \"절대 정확\", \"100% 알려준다\", \"한 방울/물방울/바다\" 비유, \"근거 수준이…\" 반복\n[권장] \"한계가 있지만 안 하는 것보다 낫고요\" / \"Nervoscope가 측정하는 변수의 본질은 아직 연구 중\"\n\n[대상] 한국 정형외과·재활의학·도수치료 의사·PT. 한국어 인사 시작.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Chapter 4 · Gonstead — Episode 2 (약 15분)]\n주제: \"5단계 분석 — Visualization부터 X-ray까지\"\n\n다룰 흐름:\n1. **시작**: 한국어 인사 + Ep 1 짧은 복습. 비유 금지. \"한 방울/물방울/바다\" 비유를 절대 말하지 마세요.\n2. **Gonstead 5-step analysis 상세**:\n   - ① **Visualization** — 자세·보행·gluteal fold·shoulder level\n   - ② **Instrumentation (Nervoscope)** — 분절 좌우 피부온도 차이 측정, 0.5°C 이상 양성\n   - ③ **Static palpation** — 근긴장·압통\n   - ④ **Motion palpation** — 분절 운동 제한\n   - ⑤ **Full-spine X-ray** (필요 시 cervical 14×17)\n3. **Nervoscope의 가설** — 분절 자율신경 활성도 차이가 피부온도로 반영. 신뢰도 연구 (Owens 2007 등) — κ 변동성. 한계 솔직 인정.\n4. **Static palpation의 한국 임상 응용** — 도수치료에서도 같은 원리.\n5. **X-ray 분석** — Pelvic deficiency·Disc wedge·Spinal listing. **방사선 ALARA 원칙** (이 부분에서 환자 안전 짧게 한 번만 강조).\n6. **한국 의료법상 X-ray 촬영 권한** — 의사 협진 필요.\n7. **5단계 통합** — 한 단계만으로 결정하지 않고 일치도 확인.\n8. **신뢰도 한계** — Nervoscope inter-rater κ 0.3-0.5, X-ray reading κ 0.4-0.6 (솔직 인정).\n9. **한국 외래에서 5단계 다 하기는 어려우니, 신뢰도 높은 2-3가지를 빠르게 통합하는 게 현실적**.\n10. **마무리**: Ep 3 (Listing·교정 기법) 예고.\n\n분량 15분. 인용 자연스럽게. 사용자는 정형외과 6판 도수치료 챕터 저자.",
+    "visual_style_prompt": null,
+    "title": "간스테드 5단계 분석으로 찾는 척추 아탈구",
+    "url": ""
+  },
+  {
+    "id": "e6465743-e608-4118-a15a-d231ea97bd57",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": "[기본 전제]\nEBM 기반 학술 라디오. 단정 피하되 방법은 과학적으로.\n\n[톤] 부드럽고 따뜻한 학술 대화. 임상 자세·접촉점·thrust 방향을 구체적으로.\n\n[⚠️ 반복하지 말 것]\n1. \"한 방울/바다/물방울\" 비유 절대 사용 금지. 인식론적 겸손은 비유 없이 평이하고 학술적인 어휘로만 표현합니다.\n2. EBM·근거 수준은 🔴 주장 등장 시에만 가볍게 한 번 환기.\n\n[금기] \"무조건 효과\", \"절대 안 됩니다\", \"한 방울/물방울/바다\" 비유, \"근거 수준이…\" 반복\n[권장] \"이 환자군에서 일관된 결과를 봤지만 모든 환자에게 동일하다고 단정할 순 없죠\" / \"Hi-Lo 테이블의 drop mechanism은 단순한 기계 같지만 thrust 에너지를 안전하게 전달하는 정교한 설계죠\"\n\n[대상] 한국 정형외과·재활의학·도수치료 의사·PT. 한국어 인사 시작.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Chapter 4 · Gonstead — Episode 3 (약 15분)]\n주제: \"Listing의 정확성 — 분절별 교정 자세의 미학\"\n\n다룰 흐름:\n1. **시작**: 한국어 인사 + Ep 2 짧은 복습. 비유 금지. \"한 방울/물방울/바다\" 비유를 절대 말하지 마세요.\n2. **Gonstead listing 코드** — Spinous (P/A) + Laterality (R/L) + Rotational (S/I). 예: PRS (Posterior-Right-Superior), PLI (Posterior-Left-Inferior). 처음에는 외계어 같지만 정확한 표현 언어.\n3. **Pelvic listing** — AS-In/AS-Ex/PI-In/PI-Ex (Ilium 4가지 패턴). Pelvic deficiency 분석.\n4. **Cervical chair 자세** — atlas (AS, ASR/ASL, ASRS 등) 정밀 접촉.\n5. **Hi-Lo table for lumbar** — drop mechanism으로 thrust 감쇄.\n6. **Knee-chest for thoracic** — flexion 자세에서 정확한 분절 접근.\n7. **Side posture for SI**.\n8. **Adjustment 한 번의 신경학적 효과** — Pickar 2002 · Haavik 2012 — 척수 reflex modulation 측정.\n9. **Re-Assessment의 원칙** — 같은 5단계 분석으로 변화 확인.\n10. **마무리**: Ep 4 (근거·비판·한국 임상) 예고.\n\n분량 15분. 인용 자연스럽게. 사용자는 정형외과 6판 도수치료 챕터 저자.",
+    "visual_style_prompt": null,
+    "title": "5대 2 골반 비율의 허상과 3차원 리스팅",
+    "url": ""
+  },
+  {
+    "id": "2ae3b235-8dce-4834-8eb0-e03c682026b3",
+    "type": "audio",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null,
+    "title": "1도 오차가 부르는 치명적인 척추 오진",
+    "url": ""
+  },
+  {
+    "id": "b7564023-4495-48bb-a085-071f2e4f8f80",
+    "type": "report",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null,
+    "title": "곤스테드 기술(Gonstead Technique)의 5대 구성 요소 및 임상 체계 분석 브리핑",
+    "url": ""
+  },
+  {
+    "id": "15ca411e-db47-47bc-bfc6-de1eeec4737d",
+    "type": "report",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null,
+    "title": "곤스테드 테크닉(Gonstead Technique) 분석 브리핑 문서",
+    "url": ""
+  },
+  {
+    "id": "2acf357d-05ca-4b81-89d3-a72042492139",
+    "type": "report",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null,
+    "title": "곤스테드 기술(Gonstead Technique) 학습 가이드",
+    "url": ""
+  },
+  {
+    "id": "1aeae868-846f-48fd-bfa8-6026f47f3d60",
+    "type": "report",
+    "status": "completed",
+    "custom_instructions": null,
+    "visual_style_prompt": null,
+    "title": "간스테드 기술(Gonstead Technique) 종합 브리핑",
+    "url": ""
+  },
+  {
+    "id": "93a9adda-9b5f-444f-ac99-303ba21ec14b",
+    "type": "slide_deck",
+    "status": "completed",
+    "custom_instructions": "Gonstead Part 4 임상·비판: 적응증·금기증 · EBM 근거 수준 · 한국 임상 적용",
+    "visual_style_prompt": null,
+    "title": "Gonstead Clinical Blueprint",
+    "url": ""
+  },
+  {
+    "id": "bb037c18-f69f-4726-ac1d-a30f37977a18",
+    "type": "slide_deck",
+    "status": "completed",
+    "custom_instructions": "Gonstead Part 1 기초: 5 Components 분석 · listing 체계 · X-ray 자세 측정 · pelvic deficiency",
+    "visual_style_prompt": null,
+    "title": "Gonstead Structural Blueprint",
+    "url": ""
+  },
+  {
+    "id": "a4ac3ace-fc4b-4706-9a10-f5ef526f6fd8",
+    "type": "slide_deck",
+    "status": "completed",
+    "custom_instructions": "Gonstead Part 3 교정 기법: Cervical chair · pelvic bench · knee-chest · side posture 자세별 HVLA",
+    "visual_style_prompt": null,
+    "title": "The Gonstead Blueprint",
+    "url": ""
+  },
+  {
+    "id": "86babbbc-b7ab-4bce-b3bb-3ec81a41b2f4",
+    "type": "slide_deck",
+    "status": "completed",
+    "custom_instructions": "Gonstead Part 2 진단: Motion palpation · static palpation · instrumentation · thermography 해석",
+    "visual_style_prompt": null,
+    "title": "Gonstead Diagnostic Blueprint",
+    "url": ""
+  },
+  {
+    "id": "c84eb414-f0d9-4cdf-92cc-c8d7aed47417",
+    "type": "video",
+    "status": "completed",
+    "custom_instructions": "[Evidence-Based] Gonstead Part 2 임상·근거·비판. 요추 디스크 탈출 프로토콜, 경추 chair adjustment, 안전성(VAD Cassidy 2008), 금기, 다학제 협진. 🔴 Innate·전신질환 치료 No evidence. 현대 의학 수용 가능 부분만 권장.",
+    "visual_style_prompt": null,
+    "title": "곤스테드 시스템",
+    "url": ""
+  },
+  {
+    "id": "0861b2cb-5be1-4dae-9322-aed32fb0c950",
+    "type": "video",
+    "status": "completed",
+    "custom_instructions": "[Evidence-Based] Gonstead Part 1 이론. 화이트보드. Clarence Gonstead 역사, 5 Components 분석, Level Disc/wedging 생체역학, X-ray listing 시스템, 측와위 교정 자세. 🔴 vitalism·한의학·cranial 제외. Peer-reviewed 인용(GCSS, PMC).",
+    "visual_style_prompt": null,
+    "title": "곤스테드 시스템: 척추에 대한 엔지니어의 접근법",
+    "url": ""
+  }
+]
