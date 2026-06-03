@@ -78,6 +78,32 @@
 .archive-inline .video-card .info { padding: 10px 14px; }
 .archive-inline .video-card .title { font-weight: 600; font-size: .92em; }
 .archive-inline .video-card .meta { font-size: .78em; color: #86868b; }
+/* ── video play button (a → button 교체) ──────────────────────── */
+button.resource-link {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+button.resource-pill {
+  background: none;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
 </style>
   <script src="./assets/config.js?v=20260603d"></script>
   <script type="module" src="./assets/auth-guard.js?v=20260603d"></script>
@@ -352,7 +378,7 @@
           <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week1_history_foundations.md">📖 상세 강의록</a>
           <a class="resource-pill" href="./viewer.html?src=diversified/08_report_week1.md">📄 Report</a>
           <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/04_slides_week1.pdf" download>🎴 PPTX</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/02_video_part1_week12.mp4">🎥 Video Part 1</a>
+          <button type="button" class="resource-pill" onclick="(function(){var s=document.getElementById('ai-videos');var v=document.getElementById('video-ch03-part1');if(s)s.scrollIntoView({behavior:'smooth'});if(v){setTimeout(function(){v.scrollIntoView({behavior:'smooth'});v.play();},300);}})();">🎥 Video Part 1</button>
           <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">🎧 Podcast</a>
         </div>
       </div>
@@ -677,7 +703,7 @@
           <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week2_analysis_diagnosis.md">📖 상세 강의록</a>
           <a class="resource-pill" href="./viewer.html?src=diversified/09_report_week2.md">📄 Report</a>
           <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/05_slides_week2.pdf" download>🎴 PPTX</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/02_video_part1_week12.mp4">🎥 Video Part 1</a>
+          <button type="button" class="resource-pill" onclick="(function(){var s=document.getElementById('ai-videos');var v=document.getElementById('video-ch03-part1');if(s)s.scrollIntoView({behavior:'smooth'});if(v){setTimeout(function(){v.scrollIntoView({behavior:'smooth'});v.play();},300);}})();">🎥 Video Part 1</button>
           <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">🎧 Podcast</a>
         </div>
       </div>
@@ -805,7 +831,7 @@
           <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week3_adjustment_practice.md">📖 상세 강의록</a>
           <a class="resource-pill" href="./viewer.html?src=diversified/10_report_week3.md">📄 Report</a>
           <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/06_slides_week3.pdf" download>🎴 PPTX</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/03_video_part2_week34.mp4">🎥 Video Part 2</a>
+          <button type="button" class="resource-pill" onclick="(function(){var s=document.getElementById('ai-videos');var v=document.getElementById('video-ch03-part2');if(s)s.scrollIntoView({behavior:'smooth'});if(v){setTimeout(function(){v.scrollIntoView({behavior:'smooth'});v.play();},300);}})();">🎥 Video Part 2</button>
           <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">🎧 Podcast</a>
         </div>
       </div>
@@ -1395,7 +1421,7 @@
           <a class="resource-pill" href="./viewer.html?src=diversified/lecture/week4_clinical_safety.md">📖 상세 강의록</a>
           <a class="resource-pill" href="./viewer.html?src=diversified/11_report_week4.md">📄 Report</a>
           <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/07_slides_week4.pdf" download>🎴 PPTX</a>
-          <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/03_video_part2_week34.mp4">🎥 Video Part 2</a>
+          <button type="button" class="resource-pill" onclick="(function(){var s=document.getElementById('ai-videos');var v=document.getElementById('video-ch03-part2');if(s)s.scrollIntoView({behavior:'smooth'});if(v){setTimeout(function(){v.scrollIntoView({behavior:'smooth'});v.play();},300);}})();">🎥 Video Part 2</button>
           <a class="resource-pill" href="https://pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev/diversified/01_podcast_deepdive.m4a?v=20260508a">🎧 Podcast</a>
         </div>
       </div>
@@ -1425,8 +1451,8 @@
       </details>
       <h3>🎥 AI 동영상</h3>
       <div class="resource-row">
-        <a class="resource-link" href="./diversified/02_video_part1_week12.mp4"><span class="icon">🎥</span><span><strong>Part 1 (이론)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
-        <a class="resource-link" href="./diversified/03_video_part2_week34.mp4"><span class="icon">🎥</span><span><strong>Part 2 (임상·비판)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></a>
+        <button type="button" class="resource-link" onclick="(function(){var s=document.getElementById('ai-videos');var v=document.getElementById('video-ch03-part1');if(s)s.scrollIntoView({behavior:'smooth'});if(v){setTimeout(function(){v.scrollIntoView({behavior:'smooth'});v.play();},300);}})();"><span class="icon">🎥</span><span><strong>Part 1 (이론)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></button>
+        <button type="button" class="resource-link" onclick="(function(){var s=document.getElementById('ai-videos');var v=document.getElementById('video-ch03-part2');if(s)s.scrollIntoView({behavior:'smooth'});if(v){setTimeout(function(){v.scrollIntoView({behavior:'smooth'});v.play();},300);}})();"><span class="icon">🎥</span><span><strong>Part 2 (임상·비판)</strong> <span class="status-badge ready">✅ 준비 완료</span><br/><small>화이트보드 explainer</small></span></button>
       </div>
       <h3>🎴 PPTX 슬라이드 (4개 × 15장)</h3>
       <div class="resource-row">
@@ -1454,6 +1480,7 @@
 
         <figure class="video-player">
           <video
+            id="video-ch03-part1"
             poster="./images/posters/video_part1_week12.png"
             controls
             preload="none"
@@ -1489,6 +1516,7 @@
 
         <figure class="video-player">
           <video
+            id="video-ch03-part2"
             poster="./images/posters/video_part2_week34.png"
             controls
             preload="none"
