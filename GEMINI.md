@@ -94,9 +94,23 @@ Antigravity + Claude Code
 
 ---
 
-## 현재 프로젝트 상태
+## 현재 프로젝트 상태 (2026-06-03 기준)
 
-- **완료**: 챕터 2·3·4·12 팟캐스트 한국어 복원 (2026-06-03)
-- **완료**: 인코딩 오류 수정 (UTF-8 BOM 제거)
-- **진행 중**: 하네스 엔지니어링 구조 구축
-- **다음**: 챕터 5~11 팟캐스트 한국어 버전 생성 예정
+### ✅ 완료
+- 챕터 2·3·4·12 팟캐스트 한국어 복원
+- 인코딩 오류 수정 (UTF-8 BOM 제거, PowerShell 금지 원칙 확립)
+- **하네스 엔지니어링 구조 구축** (`.harness/` 전체 — commit `885ae20`)
+- **전역 antigravity-config 레포** GitHub 공개 (commit `134e684`)
+  - `github.com/jaeho-jang-dr/antigravity-config`
+  - `skills/harness_engineering/create_harness.py` — 어느 프로젝트나 하네스 1분 설치
+- **AI 동영상 인라인 재생** 수정 ch02/03/04/12 (commit `49afa48`)
+  - `<a href=mp4>` → `<video controls>` + R2 CDN URL 직접 스트리밍
+
+### 🔲 다음
+- 챕터 5~11 팟캐스트 한국어 버전 생성 (Human Gate #1 필요)
+- chapter13 팟캐스트 추가 (선택 사항)
+
+### 🔑 핵심 기억
+- 영상 링크는 반드시 `<video>` 태그 사용 (`<a href=mp4>`는 다운로드 유발)
+- R2 base URL: `pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev`
+- 다른 컴 이전: `git clone github.com/jaeho-jang-dr/antigravity-config ~/.gemini/config`

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "last_updated": "2026-06-03",
   "project": "chiropraticos",
   "agents": {
@@ -9,8 +9,8 @@
   "current_session": {
     "status": "active",
     "started": "2026-06-03",
-    "goal": "하네스 엔지니어링 구조 구축",
-    "phase": "building"
+    "goal": "하네스 엔지니어링 구조 구축 + AI 동영상 재생 수정",
+    "phase": "completed"
   },
   "completed_tasks": [
     {
@@ -45,9 +45,29 @@
     },
     {
       "date": "2026-06-03",
-      "task": "하네스 엔지니어링 구조 구축 시작",
-      "result": "in_progress",
-      "commit": null
+      "task": "하네스 엔지니어링 구조 구축 (.harness/ 전체)",
+      "result": "success",
+      "commit": "885ae20"
+    },
+    {
+      "date": "2026-06-03",
+      "task": "전역 antigravity-config GitHub 레포 생성 및 push",
+      "result": "success",
+      "commit": "134e684",
+      "repo": "jaeho-jang-dr/antigravity-config"
+    },
+    {
+      "date": "2026-06-03",
+      "task": "harness-engineering 스킬 (create_harness.py) 전역 등록",
+      "result": "success",
+      "path": "C:/Users/antigravity/.gemini/config/skills/harness_engineering/"
+    },
+    {
+      "date": "2026-06-03",
+      "task": "AI 동영상 클릭 시 다운로드→인라인 재생 수정 (ch02/03/04/12)",
+      "result": "success",
+      "commit": "49afa48",
+      "detail": "<a href=mp4> -> <video> 인라인 플레이어, R2 CDN URL 직접 스트리밍"
     }
   ],
   "pending_tasks": [
@@ -71,10 +91,18 @@
       "notes": "deno 미설치로 경고 발생하지만 다운로드는 정상 작동"
     }
   ],
+  "architecture": {
+    "hosting": "Vercel (auto-deploy, CDN)",
+    "media": "Cloudflare R2 (pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev)",
+    "auth": "Supabase Auth (유료 구독)",
+    "podcast_tool": "NotebookLM → R2",
+    "video_format": "<video controls preload=none> + R2 CDN URL"
+  },
   "environment": {
     "R2_bucket": "chiropracticos-media",
     "vercel_project": "chiropraticos",
     "supabase_project": "configured",
-    "harness_version": "1.0.0"
+    "harness_version": "1.1.0",
+    "global_config_repo": "jaeho-jang-dr/antigravity-config"
   }
 }
