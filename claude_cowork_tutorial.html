@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Co-work & Agentic Workspace 완벽 정리 가이드</title>
+    <!-- Google Fonts: Inter & Noto Sans KR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fcfbfa;
+            --text-color: #2b2a27;
+            --primary: #cc5a37; /* Anthropic style burnt orange */
+            --primary-light: #fdf5f2;
+            --secondary: #8c7b70;
+            --border-color: #e6e4e0;
+            --card-bg: #ffffff;
+            --sidebar-width: 280px;
+            --accent: #2e8b57;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Dark mode settings if preferred */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121110;
+                --text-color: #e6e4e0;
+                --primary: #e06d48;
+                --primary-light: #241d1a;
+                --secondary: #a39489;
+                --border-color: #2d2b29;
+                --card-bg: #1a1917;
+                --shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar navigation */
+        aside {
+            width: var(--sidebar-width);
+            background-color: var(--card-bg);
+            border-right: 1px solid var(--border-color);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .logo-area {
+            margin-bottom: 2.5rem;
+        }
+
+        .logo-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-subtitle {
+            font-size: 0.75rem;
+            color: var(--secondary);
+            margin-top: 0.25rem;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .nav-item a {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .nav-item a:hover {
+            background-color: var(--primary-light);
+            color: var(--primary);
+            padding-left: 1.25rem;
+        }
+
+        .nav-item.active a {
+            background-color: var(--primary-light);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Main Content Container */
+        main {
+            margin-left: var(--sidebar-width);
+            flex: 1;
+            padding: 3rem 4rem;
+            max-width: 1200px;
+        }
+
+        header {
+            margin-bottom: 4rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        .meta-tag {
+            display: inline-block;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.35rem 0.75rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.15rem;
+            color: var(--secondary);
+            font-weight: 400;
+        }
+
+        /* Video embed and player info */
+        .video-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .video-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+
+        .video-details h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .video-details p {
+            font-size: 0.85rem;
+            color: var(--secondary);
+        }
+
+        .video-path-badge {
+            display: inline-block;
+            background-color: var(--border-color);
+            color: var(--text-color);
+            font-family: monospace;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        /* Section layout */
+        section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 2rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+            border-left: 4px solid var(--primary);
+            padding-left: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        /* Feature grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+        }
+
+        .card-num {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--primary-light);
+            -webkit-text-stroke: 1px var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Comparison tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        th, td {
+            padding: 1rem 1.25rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--primary-light);
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Callout blocks */
+        .callout {
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            border-radius: 0 8px 8px 0;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Code snippets */
+        pre {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1.25rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            margin: 1.5rem 0;
+            border: 1px solid #333;
+        }
+
+        code {
+            font-family: inherit;
+        }
+
+        /* List styling */
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1.5rem;
+            }
+
+            main {
+                margin-left: 0;
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside>
+        <div class="logo-area">
+            <div class="logo-title">
+                <span>⚡</span> Claude Co-work
+            </div>
+            <div class="logo-subtitle">Agentic Workspace 완벽 요약서</div>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#intro">1. 들어가는 말</a></li>
+            <li class="nav-item"><a href="#problems">2. 기존 AI 협업의 한계</a></li>
+            <li class="nav-item"><a href="#concept">3. Claude Co-work란?</a></li>
+            <li class="nav-item"><a href="#features">4. 핵심 4대 혁신 기능</a></li>
+            <li class="nav-item"><a href="#dispatch">5. 디스패치 (원격 조작)</a></li>
+            <li class="nav-item"><a href="#project">6. 프로젝트 & 메모리</a></li>
+            <li class="nav-item"><a href="#architecture">7. 커넥터, 스킬, 플러그인</a></li>
+            <li class="nav-item"><a href="#guide">8. 실전 시작 가이드</a></li>
+            <li class="nav-item"><a href="#tips">9. 활용 시 주의사항</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <header>
+            <span class="meta-tag">Tutorial Summary & Guide</span>
+            <h1>Claude Co-work & Agentic Workspace</h1>
+            <div class="subtitle">앤스로픽의 혁신적 에이전트 환경 개념과 사용 가이드</div>
+        </header>
+
+        <!-- Video Player Info -->
+        <div class="video-box">
+            <div class="video-icon">🎬</div>
+            <div class="video-details">
+                <h3>유튜브 720p mp4 동영상 다운로드 완료</h3>
+                <p><strong>제목:</strong> 클로드 코워크 튜토리얼 (영상의 자막을 기반으로 번역 및 윤문하였습니다.)</p>
+                <p><strong>제작자:</strong> 메이커에반 (Maker Evan)</p>
+                <div class="video-path-badge">로컬 비디오 경로: ./_media_dl/클로드 코워크  튜토리얼.mp4</div>
+            </div>
+        </div>
+
+        <!-- Section 1: Intro -->
+        <section id="intro">
+            <h2>1. 들어가는 말</h2>
+            <p>앤스로픽(Anthropic)에서 발표한 <strong>클로드 코워크(Claude Co-work)</strong>(또는 <strong>에이전틱 워크스페이스(Agentic Workspace)</strong>)는 기존의 챗봇 형태의 한계를 뛰어넘어, AI를 진짜 인프라에 결합된 실질적 업무 동료(PM)로 활용할 수 있도록 설계된 차세대 작업 공간입니다.</p>
+            <p>이 문서는 유튜브 채널의 핵심 설명 자막을 면밀히 분석한 후, <u>어순이 불분명하고 중복이 많은 자동 번역 자막을 세련된 한국어 문어체로 완전히 윤문하고 재구조화</u>하여 만든 완벽 가이드북입니다.</p>
+        </section>
+
+        <!-- Section 2: Problems -->
+        <section id="problems">
+            <h2>2. 기존 AI 협업의 한계와 답답함</h2>
+            <p>우리가 지금까지 AI와 일할 때 겪었던 세 가지의 주요 걸림돌이 존재했습니다.</p>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-num">01</div>
+                    <h3>단발성 핑퐁 질문-답변</h3>
+                    <p>실제 업무는 자료 조사 -> 분석 -> 정리 -> 결론 도출이라는 여러 단계로 이루어집니다. 기존엔 매 단계마다 사람이 결과를 검토하고 지시를 반복하여 계속 모니터링해야 했습니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-num">02</div>
+                    <h3>세션 리셋과 기억 상실</h3>
+                    <p>어제 한 업무 내용이나 지난주의 지시 사항을 새로운 창을 열 때마다 AI가 기억하지 못하여, 매번 똑같은 맥락(Context)을 다시 주입해 가르쳐야 했습니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-num">03</div>
+                    <h3>로컬 파일 분리 및 업로드</h3>
+                    <p>내 컴퓨터 폴더 안의 파일들을 일일이 복사해서 채팅창에 올리고, 결과물을 받으면 다시 파일로 다운로드하여 덮어쓰는 수작업 노력이 극심했습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Concept -->
+        <section id="concept">
+            <h2>3. Claude Co-work의 정의와 개념</h2>
+            <p><strong>"AI에게 일을 통째로 위임해 두고, 다른 일을 하다가 결과만 확인하는 에이전틱 작업 공간"</strong></p>
+            <p>인테리어 공사를 예로 들어보겠습니다.</p>
+            <ul>
+                <li><strong>기존 AI 채팅</strong>: 인테리어 업자에게 시도때도없이 전화를 걸어 "콘센트 위치는요?", "벽지 색은요?", "조명은요?" 하고 하나하나 대답해주고 지시해야 해서 내가 진이 빠지는 상황.</li>
+                <li><strong>Claude Co-work</strong>: 도면과 시방서를 단 한 번 제공하고 일을 완전히 넘긴 다음, 업자가 알아서 진행하다가 아주 크리티컬하게 막히는 부분만 나에게 가끔 확인을 요청하는 상황.</li>
+            </ul>
+            <p>즉, 실행 중심에서 <strong>디렉터(감독) 역할로 인간의 생산성이 전환</strong>되며, 반복 연산 및 자원 처리는 클로드가 백그라운드에서 직접 수행하게 됩니다.</p>
+        </section>
+
+        <!-- Section 4: Features -->
+        <section id="features">
+            <h2>4. 핵심 4대 혁신 기능</h2>
+            <p>에이전틱 워크스페이스를 실현하는 4개의 핵심 기둥입니다.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="card-num">F1</div>
+                    <h3>로컬 파일 관리 (Local Files)</h3>
+                    <p>클로드가 내 로컬 컴퓨터의 특정 디렉토리를 <strong>직접 읽고(Read) 쓰는(Write)</strong> 권한을 갖습니다. 매번 텍스트 복사-붙여넣기 할 필요 없이 지정 폴더 내에서 파일들을 직접 정돈하고 저장합니다. 보안을 위한 디렉토리 마운트 설정 기능이 제공됩니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-num">F2</div>
+                    <h3>크롬 웹브라우저 조작 (Browser integration)</h3>
+                    <p>클로드가 사용자를 대신해 크롬 브라우저를 엽니다. 특정 사이트에 직접 접속해 링크를 타고 들어가며 데이터를 수집해 표로 정리하는 등 <strong>완전 자동 크롤링 및 조사</strong>를 수행합니다. 결제나 민감 정보 클릭 전에는 승인 팝업이 뜹니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-num">F3</div>
+                    <h3>병렬 작업 (Parallel Processing)</h3>
+                    <p>복잡하고 거대한 하나의 작업이 들어오면 클로드가 스스로 이를 하위 업무(Sub-task)들로 분할합니다. 이후 <strong>동시에 여러 개의 프로세스로 쪼개어 연산을 병렬 처리</strong>하기 때문에 단일 처리 방식 대비 압도적으로 빠른 속도를 보여줍니다.</p>
+                </div>
+                <div class="card">
+                    <div class="card-num">F4</div>
+                    <h3>진짜 동작하는 문서 생성</h3>
+                    <p>단순 마크다운 텍스트 출력을 넘어, 함수와 수식이 완벽히 포함된 <strong>엑셀(.xlsx), 레이아웃이 잡힌 파워포인트(.pptx), 워드(.docx)</strong> 문서를 최종적으로 뱉어내어 곧바로 현업에 투입할 수 있는 산출물을 제공합니다.</p>
+                </div>
+            </div>
+
+            <div class="callout">
+                <div class="callout-title">💡 로컬 파일 결합 시 시너지 예시</div>
+                <p><strong>"크롬 연동으로 경쟁 사이트의 매주 가격 데이터를 수집"</strong>한 뒤, <strong>"로컬 파일에 등록된 엑셀 보고서의 수식에 맞추어 자동으로 업데이트"</strong>하는 프로세스를 완전 자동화할 수 있어, 반복되는 단순 모니터링 업무에서 완전히 손을 뗄 수 있습니다.</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Dispatch -->
+        <section id="dispatch">
+            <h2>5. 디스패치 (Dispatch): 모바일과 데스크톱의 원격 연결</h2>
+            <p>외출 중이거나 이동할 때도 내 강력한 데스크톱 환경의 도구를 제어할 수 있는 원격 일 시키기 기능입니다.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>작동 시나리오</h3>
+                    <p>집의 고성능 데스크톱에 클로드 데스크톱 앱을 실행시켜 둔 채로 출근하거나 외부 카페로 나갑니다. 모바일 폰으로 모바일 클로드 앱에 접속하여 작업을 요청하면, 실제 고부하의 계산 및 파일 처리는 집의 PC 환경에서 돌아가고 그 결과만 폰으로 수신하게 됩니다.</p>
+                </div>
+                <div class="card">
+                    <h3>두 가지 핵심 이점</h3>
+                    <ul>
+                        <li><strong>자원 유지</strong>: 모바일 성능 한계를 뛰어넘어 데스크톱의 풍부한 CPU/GPU 자원을 그대로 씁니다.</li>
+                        <li><strong>환경 연계</strong>: 데스크톱에 미리 설치한 로컬 환경 및 마운트된 폴더들을 그대로 접근하여 작업할 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="callout">
+                <div class="callout-title">⚠️ 보안 장치: 10분 룰 (10-Minute Rule)</div>
+                <p>디스패치 명령 도중 파일 삭제나 외부 접속 등 민감한 동작이 발생하면 핸드폰으로 자동 푸시 알림("이 작업을 진행할까요?")이 옵니다. 만약 <strong>10분 이내에 답변하지 않으면 시스템은 안전을 위해 작업을 자동으로 중단하고 취소</strong>합니다.</p>
+            </div>
+        </section>
+
+        <!-- Section 6: Project -->
+        <section id="project">
+            <h2>6. 프로젝트(Project) & 메모리(Memory) 구조</h2>
+            <p>효율적인 업무 격리를 위해 각 영역별로 <strong>가상 프로젝트 사무실</strong>을 세팅해 두는 개념입니다.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>로컬 프로젝트 (Co-work Project)</th>
+                        <th>클라우드 프로젝트 (Claude AI Project)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>저장 위치</strong></td>
+                        <td>내 컴퓨터 하드디스크 (로컬 로컬 전용)</td>
+                        <td>앤스로픽 웹 서버 (클라우드 기반)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>파일 접근 권한</strong></td>
+                        <td>사용자가 지정한 로컬 디렉토리 직접 핸들링</td>
+                        <td>로컬 폴더를 직접 읽지 못하며 수동 업로드만 가능</td>
+                    </tr>
+                    <tr>
+                        <td><strong>협업 및 공유</strong></td>
+                        <td>타 기기 공유 불가 (Git 리포지토리 등으로 동기화 필요)</td>
+                        <td>유료 플랜 및 팀 계정에서 쉽게 클라우드 공유</td>
+                    </tr>
+                    <tr>
+                        <td><strong>특장점</strong></td>
+                        <td>내부 문서 수정 및 저장 등 에이전트 액션 최적화</td>
+                        <td>웹 접속이 가능한 어느 기기에서든 동일 맥락 유지</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>프로젝트를 구성하는 5대 핵심 요소</h3>
+            <ol>
+                <li><strong>설명(Description)</strong>: 프로젝트의 용도 기술. AI가 디스패치 원격 작업을 분류할 때 이 설명을 참고하여 알맞은 프로젝트에 할당합니다.</li>
+                <li><strong>폴더(Folders)</strong>: 클로드가 읽고 쓸 디렉토리 마운트. 파일당 최대 50MB까지 지원합니다.</li>
+                <li><strong>지시 사항(Instructions)</strong>: 매번 세션 시작 시 자동으로 로드되는 기본 개발/업무 규칙서. (예: "답변은 한국어", "코드는 타입스크립트")</li>
+                <li><strong>링크(Links)</strong>: 참고할 공식 가이드나 외부 웹 URL들.</li>
+                <li><strong>메모리(Memory)</strong>: 세션이 리셋되어도 영구 보존되는 전용 지식 저장소. 클로드가 일하며 얻은 성과나 교훈을 자율적으로 저장합니다.</li>
+            </ol>
+        </section>
+
+        <!-- Section 7: Architecture -->
+        <section id="architecture">
+            <h2>7. 확장 아키텍처: 커넥터, 스킬, 플러그인</h2>
+            <p>에이전틱 워크스페이스를 외부로 확장하는 유기적 부품 체계입니다.</p>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>🔌 커넥터 (Connectors) & MCP</h3>
+                    <p><strong>외부 툴을 연결하는 통로</strong>입니다. <strong>MCP</strong>(Model Context Protocol)라는 표준 콘센트 규격을 사용합니다. 노션(Notion), 슬랙(Slack), 깃허브(GitHub) 등과 연결하여 API 없이도 클로드가 해당 툴의 데이터를 조회하고 행동하게 해 줍니다.</p>
+                </div>
+                <div class="card">
+                    <h3>📄 스킬 (Skills)</h3>
+                    <p><strong>특정 전문 업무의 액션 매뉴얼</strong>입니다. <code>skills.md</code> 파일과 백업 스크립트로 동작합니다. 클로드는 모든 스킬 매뉴얼을 다 열어두지 않고, 필요할 때만 불러오는 <strong>점진적 공개(Progressive Disclosure)</strong> 방식을 취해 토큰 소모를 극적으로 줄입니다.</p>
+                </div>
+                <div class="card">
+                    <h3>📦 플러그인 (Plugins)</h3>
+                    <p><strong>스킬, 커넥터, 하위 에이전트, 훅(Hook)을 하나로 묶은 통합 앱 패키지</strong>입니다. 모바일의 전용 앱스토어처럼 앤스로픽 마켓플레이스나 깃허브 리포지토리를 통해 손쉽게 설치하여 전체 워크플로우를 한 번에 자동화할 수 있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Guide -->
+        <section id="guide">
+            <h2>8. 실전 시작하기: 6단계 로드맵</h2>
+            <p>에이전틱 워크스페이스의 적용 단계입니다.</p>
+            <ol>
+                <li><strong>최신 데스크톱 앱 다운로드</strong>: 맥/윈도우 최신 버전을 설치합니다. (Co-work는 웹 브라우저 클로드에서는 작동하지 않습니다.)</li>
+                <li><strong>프로 플랜 이상 구독 확인</strong>: 에이전틱 기능을 제한 없이 구동하기 위해 프로(Pro) 또는 맥스(Max) 플랜의 권한이 필요합니다.</li>
+                <li><strong>첫 번째 파일 자동화용 간소한 프로젝트 생성</strong>: 매주 쓰는 주간 업무 보고서 폴더를 골라 첫 로컬 마운트를 설정해보십시오.</li>
+                <li><strong>매뉴얼(Instructions) 작성</strong>: 보고서 양식, 자주 쓰는 톤앤매너, 코딩 규칙을 한 번 자세히 기입해 둡니다.</li>
+                <li><strong>스킬 기능 및 문서 생성 테스트</strong>: "이 데이터를 기반으로 작동하는 매출 추이 엑셀 파일을 만들어줘"라고 지시해 봅니다.</li>
+                <li><strong>디스패치(모바일 연결) 및 플러그인 확장</strong>: 점차적으로 외부 커넥터와 모바일 원격 관리를 도입하며 범위를 확장합니다.</li>
+            </ol>
+        </section>
+
+        <!-- Section 9: Tips -->
+        <section id="tips">
+            <h2>9. 도입 시 핵심 주의사항 (Best Practices)</h2>
+            <p>성공적인 Co-work 도입을 위한 필수 지침입니다.</p>
+            <ul>
+                <li><strong>권한 관리(샌드박스)의 중요성</strong>: 전체 드라이브(C:\ 또는 D:\ 루트)를 연결하지 마십시오. 반드시 한정된 하위 작업 디렉토리만 지정하여 권한 리스크를 최소화해야 합니다.</li>
+                <li><strong>에이전트 과신 금지</strong>: 클로드가 엑셀 수식이나 문서를 80% 이상 고도로 빌드해주지만, 실무 전개 및 배포 전 최종 검증(20%)은 반드시 사람의 눈으로 진행해야 합니다.</li>
+                <li><strong>데이터 유출 주의</strong>: 파일의 읽기/쓰기가 로컬에서 연산되더라도, 최종 추론 및 텍스트 빌드는 앤스로픽 클라우드 서버의 API를 거치므로 내부 핵심 극비 사항은 적절히 익명화(Masking)하여 처리할 필요가 있습니다.</li>
+                <li><strong>정밀한 업무 정의</strong>: 에이전트의 효과는 사람이 일을 얼마나 정확하고 모듈화된 프로세스로 기술(Prompting)하느냐에 정비례합니다.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        // Active Navigation Highlight
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const id = entry.target.getAttribute('id');
+                    if (entry.intersectionRatio > 0) {
+                        document.querySelectorAll('.nav-menu li').forEach(li => {
+                            li.classList.remove('active');
+                        });
+                        const activeNav = document.querySelector(`.nav-menu a[href="#${id}"]`);
+                        if (activeNav) {
+                            activeNav.parentElement.classList.add('active');
+                        }
+                    }
+                });
+            });
+
+            // Track all sections
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
