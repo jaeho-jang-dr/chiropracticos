@@ -61,3 +61,6 @@ extracted_prompts.txt
 status_analysis.txt
 nlm_status*.json
 downloads/
+
+tmp_fn_podcasts/
+korean_restore/
