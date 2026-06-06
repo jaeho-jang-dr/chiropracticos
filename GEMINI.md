@@ -113,4 +113,12 @@ Antigravity + Claude Code
 ### 🔑 핵심 기억
 - 영상 링크는 반드시 `<video>` 태그 사용 (`<a href=mp4>`는 다운로드 유발)
 - R2 base URL: `pub-e44b2168eea2482095d15cb22dc4d9b7.r2.dev`
-- 다른 컴 이전: `git clone github.com/jaeho-jang-dr/antigravity-config ~/.gemini/config`
+- **전역 설치 필수**: `antigravity-config` (ancrang)와 전역 스킬(harness_engineering 등)은 모든 프로젝트에서 공용으로 사용 가능하도록 반드시 `~/.gemini/config/plugins/antigravity-config` 경로에 플러그인 형태로 설치되어 있어야 함.
+- 다른 컴 이전:
+  ```powershell
+  # 1. 플러그인 경로에 클론
+  git clone https://github.com/jaeho-jang-dr/antigravity-config.git "$env:USERPROFILE\.gemini\config\plugins\antigravity-config"
+  # 2. plugin.json 생성하여 활성화
+  Set-Content -Path "$env:USERPROFILE\.gemini\config\plugins\antigravity-config\plugin.json" -Value '{"name": "antigravity-config", "version": "1.0.0", "description": "Global custom skills for Antigravity", "author": {"name": "DRJAY"}}'
+  ```
+
