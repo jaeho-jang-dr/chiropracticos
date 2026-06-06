@@ -1,18 +1,24 @@
 {
   "schema_version": "1.1",
-  "last_updated": "2026-06-03",
+  "last_updated": "2026-06-06",
   "project": "chiropraticos",
   "agents": {
-    "orchestrator": "Antigravity (Gemini 2.5 Pro)",
+    "orchestrator": "Antigravity (Gemini 3.5 Flash)",
     "executor": "Claude Code (claude-opus-4)"
   },
   "current_session": {
     "status": "active",
-    "started": "2026-06-03",
-    "goal": "하네스 엔지니어링 구조 구축 + AI 동영상 재생 수정",
+    "started": "2026-06-06",
+    "goal": "앱 전반 최적화 (성능, 캐싱, SEO, UX CLS 및 비디오 프리로드)",
     "phase": "completed"
   },
   "completed_tasks": [
+    {
+      "date": "2026-06-06",
+      "task": "앱 전반 최적화 (성능 캐싱, SEO 수집 허용, 이미지 CLS, 비디오 프리로드)",
+      "result": "success",
+      "commit": "deeffc9"
+    },
     {
       "date": "2026-06-03",
       "task": "ch02 팟캐스트 한국어 복원",
