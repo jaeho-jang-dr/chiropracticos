@@ -16,11 +16,11 @@
     {
       "source": "/images/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     },
     {
-      "source": "/chapter:rest((?:_|[a-zA-Z0-9-]).*?)(\\.html)?",
+      "source": "/chapter(?!01_introduction|02_functional_neurology|13_soft_tissue):rest((?:_|[a-zA-Z0-9-]).*?)(\\.html)?",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
         { "key": "X-Robots-Tag", "value": "noindex, nofollow" }

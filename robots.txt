@@ -5,6 +5,9 @@ Allow: /login.html
 Allow: /signup.html
 Allow: /guide.html
 Allow: /assets/
+Allow: /chapter01_introduction
+Allow: /chapter02_functional_neurology
+Allow: /chapter13_soft_tissue
 Disallow: /chapter
 Disallow: /admin
 Disallow: /debug

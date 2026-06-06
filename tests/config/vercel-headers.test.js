@@ -248,7 +248,7 @@ describe('vercel.json — /assets/(.*) cache-control', () => {
 // ---------------------------------------------------------------------------
 
 describe('vercel.json — chapter source pattern (X-Robots-Tag)', () => {
-  const CHAPTER_SRC = '/chapter:rest((?:_|[a-zA-Z0-9-]).*?)(\\.html)?';
+  const CHAPTER_SRC = '/chapter(?!01_introduction|02_functional_neurology|13_soft_tissue):rest((?:_|[a-zA-Z0-9-]).*?)(\\.html)?';
   let re;
 
   beforeAll(() => {
@@ -261,29 +261,31 @@ describe('vercel.json — chapter source pattern (X-Robots-Tag)', () => {
     expect(h['X-Robots-Tag']).toBe('noindex, nofollow');
   });
 
-  it('matches /chapter01_introduction.html (file URL)', () => {
-    expect(re.test('/chapter01_introduction.html')).toBe(true);
+  it('does NOT match public chapter01 (introduction)', () => {
+    expect(re.test('/chapter01_introduction.html')).toBe(false);
+    expect(re.test('/chapter01_introduction')).toBe(false);
   });
 
-  it('matches /chapter01_introduction (cleanUrls)', () => {
-    expect(re.test('/chapter01_introduction')).toBe(true);
+  it('does NOT match public chapter02 (functional neurology)', () => {
+    expect(re.test('/chapter02_functional_neurology.html')).toBe(false);
+    expect(re.test('/chapter02_functional_neurology')).toBe(false);
   });
 
-  it('matches /chapter12_applied_kinesiology', () => {
+  it('does NOT match public chapter13 (soft tissue)', () => {
+    expect(re.test('/chapter13_soft_tissue.html')).toBe(false);
+    expect(re.test('/chapter13_soft_tissue')).toBe(false);
+  });
+
+  it('matches other chapters (chapter12, chapter04_diversified)', () => {
     expect(re.test('/chapter12_applied_kinesiology')).toBe(true);
-  });
-
-  it('matches /chapter04_diversified.html', () => {
     expect(re.test('/chapter04_diversified.html')).toBe(true);
   });
 
-  it('matches hyphenated chapter slugs like /chapter-2-fn', () => {
-    expect(re.test('/chapter-2-fn')).toBe(true);
+  it('matches hyphenated private chapter slugs', () => {
+    expect(re.test('/chapter-4-gonstead')).toBe(true);
   });
 
   it('does NOT match bare /chapter', () => {
-    // The :rest param is anchored with a charclass `(?:_|[a-zA-Z0-9-])` so
-    // the segment after "chapter" must consume at least one character.
     expect(re.test('/chapter')).toBe(false);
   });
 
@@ -360,9 +362,9 @@ describe('vercel.json — HTML must-revalidate', () => {
 // ---------------------------------------------------------------------------
 
 describe('vercel.json — /images/(.*) cache', () => {
-  it('serves images public, max-age=86400 (1 day)', () => {
+  it('serves images public, max-age=31536000, immutable (1 year)', () => {
     const h = headersFor('/images/(.*)');
-    expect(h['Cache-Control']).toBe('public, max-age=86400');
+    expect(h['Cache-Control']).toBe('public, max-age=31536000, immutable');
   });
 });
 
@@ -427,6 +429,15 @@ describe('vercel.json — header resolution model (sanity)', () => {
     const h = effectiveHeaders('/chapter04_gonstead.html');
     expect(h['Cache-Control']).toBe('public, max-age=0, must-revalidate');
     expect(h['X-Robots-Tag']).toBe('noindex, nofollow');
+  });
+
+  it('public chapters DO NOT receive X-Robots-Tag (indexable)', () => {
+    const h1 = effectiveHeaders('/chapter01_introduction');
+    const h2 = effectiveHeaders('/chapter02_functional_neurology');
+    const h13 = effectiveHeaders('/chapter13_soft_tissue');
+    expect(h1['X-Robots-Tag']).toBeUndefined();
+    expect(h2['X-Robots-Tag']).toBeUndefined();
+    expect(h13['X-Robots-Tag']).toBeUndefined();
   });
 
   it('/assets/* Cache-Control wins over the catch-all (first-match)', () => {
